@@ -1,0 +1,54 @@
+{
+  "title": "AION 2 Wartung: Angekündigte Fenster und Loginprüfungen",
+  "description": "Prüfe datierte Wartungsereignisse und das Startfenster am 5. Oktober. Trenne Ausfälle von Zugangs-, Kauf- und Kontoverknüpfungsproblemen.",
+  "summary": "Prüfe offizielle Wartungsmeldungen und ihre Zeitzonen und erkenne Loginprobleme, die ein Clientupdate oder Kontohilfe benötigen.",
+  "toc": [
+    {
+      "id": "announced-windows",
+      "title": "Letztes Ereignis und nächstes Fenster"
+    },
+    {
+      "id": "check-current-status",
+      "title": "Relevanten Status prüfen"
+    },
+    {
+      "id": "login-or-account-error",
+      "title": "Wartung oder Kontoproblem?"
+    },
+    {
+      "id": "patch-and-compensation",
+      "title": "Letzte Wartung und Entschädigung"
+    },
+    {
+      "id": "report-unresolved-errors",
+      "title": "Verbindungsfehler melden"
+    }
+  ],
+  "visuals": {
+    "workflow": {
+      "title": "Ordne einen Loginfehler ein",
+      "caption": "Wähle den nächsten Schritt anhand der neuesten offiziellen Meldung und der genauen Clientnachricht.",
+      "steps": [
+        {
+          "label": "Neueste Meldung lesen",
+          "description": "Prüfe Datum, Region, betroffene Dienste und eine mögliche Abschlussmeldung."
+        },
+        {
+          "label": "Zeitfenster vergleichen",
+          "description": "Nutze die angegebene Zeitzone und deine Ortszeit. Eine frühere Abschlussmeldung bestätigt keinen aktuellen Status."
+        },
+        {
+          "label": "Client und Identität prüfen",
+          "description": "Geht es um Zugang oder Konto, starte/aktualisiere den Client und prüfe deine tatsächliche Loginidentität."
+        },
+        {
+          "label": "Verbleibenden Fehler melden",
+          "description": "Notiere Fehler, Launcher, Region und Versuchszeit für den offiziellen Support."
+        }
+      ]
+    }
+  },
+  "inlineNext": [
+    "download"
+  ]
+}

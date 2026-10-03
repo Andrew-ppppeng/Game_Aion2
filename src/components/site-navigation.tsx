@@ -13,7 +13,7 @@ import {CouponCard} from './coupon-card';
 export type NavGroup = {
   id: CategoryId;
   label: string;
-  topics: {slug: TopicSlug; title: string}[];
+  topics: {slug: TopicSlug; title: string; published: boolean}[];
 };
 
 const icons = {
@@ -34,6 +34,7 @@ const icons = {
 function NavigationContent({groups, onNavigate}: {groups: NavGroup[]; onNavigate?: () => void}) {
   const pathname = usePathname();
   const t = useTranslations('ui');
+  const complete = groups.every((group) => group.topics.every((topic) => topic.published));
 
   return (
     <>
@@ -50,7 +51,7 @@ function NavigationContent({groups, onNavigate}: {groups: NavGroup[]; onNavigate
             if (group.topics.length === 1) {
               const topic = group.topics[0];
               return (
-                <Link key={group.id} href={`/${topic.slug}`} className={`nav-single ${active ? 'active' : ''}`} aria-current={active ? 'page' : undefined} onClick={onNavigate} title={`${topic.title} · ${t('comingSoon')}`}>
+                <Link key={group.id} href={`/${topic.slug}`} className={`nav-single ${active ? 'active' : ''}`} aria-current={active ? 'page' : undefined} onClick={onNavigate} title={topic.published ? topic.title : `${topic.title} · ${t('comingSoon')}`}>
                   <Icon size={16} aria-hidden="true" /><span>{group.label}</span><ArrowUpRight size={12} aria-hidden="true" />
                 </Link>
               );
@@ -60,7 +61,7 @@ function NavigationContent({groups, onNavigate}: {groups: NavGroup[]; onNavigate
                 <summary><Icon size={16} aria-hidden="true" /><span>{group.label}</span><ChevronDown size={13} className="nav-chevron" aria-hidden="true" /></summary>
                 <div className="nav-topics">
                   {group.topics.map((topic) => (
-                    <Link key={topic.slug} href={`/${topic.slug}`} onClick={onNavigate} className={pathname === `/${topic.slug}` ? 'active' : ''} aria-current={pathname === `/${topic.slug}` ? 'page' : undefined} title={t('comingSoon')}>
+                    <Link key={topic.slug} href={`/${topic.slug}`} onClick={onNavigate} className={pathname === `/${topic.slug}` ? 'active' : ''} aria-current={pathname === `/${topic.slug}` ? 'page' : undefined} title={topic.published ? topic.title : t('comingSoon')}>
                       <span>{topic.title}</span><span className="topic-dot" aria-hidden="true" />
                     </Link>
                   ))}
@@ -72,7 +73,7 @@ function NavigationContent({groups, onNavigate}: {groups: NavGroup[]; onNavigate
       </div>
       <div className="sidebar-bottom">
         <CouponCard />
-        <p className="sidebar-status"><span aria-hidden="true" />{t('contentStatus')}</p>
+        <p className="sidebar-status"><span aria-hidden="true" />{t(complete ? 'contentReady' : 'contentStatus')}</p>
       </div>
     </>
   );

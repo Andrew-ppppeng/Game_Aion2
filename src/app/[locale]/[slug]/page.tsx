@@ -7,7 +7,9 @@ import {Link} from '@/i18n/navigation';
 import {routing} from '@/i18n/routing';
 import {getSiteMessages} from '@/i18n/messages';
 import {getPageTitle, getTopic, legalSlugs, topics} from '@/lib/topics';
-import {localePath} from '@/lib/site';
+import {languageAlternates, localePath, site} from '@/lib/site';
+import {getArticle} from '@/lib/articles';
+import {ArticlePage} from '@/components/article-page';
 
 type Props = {params: Promise<{locale: string; slug: string}>};
 export function generateStaticParams() {return [...topics.map((topic) => topic.slug), ...legalSlugs].map((slug) => ({slug}));}
@@ -18,16 +20,25 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
   const m = getSiteMessages(locale);
   const title = getPageTitle(slug, m);
   if (!title) notFound();
+  const article = getArticle(locale, slug);
+  if (article) return {
+    title: {absolute: `${article.metadata.title} | ${m.footer.aboutTitle}`}, description: article.metadata.description,
+    robots: {index: true, follow: true},
+    alternates: {canonical: localePath(locale, `/${slug}`), languages: languageAlternates(`/${slug}`)},
+    openGraph: {type: 'article', title: article.metadata.title, description: article.metadata.description, url: localePath(locale, `/${slug}`), siteName: m.footer.aboutTitle, modifiedTime: article.data.checkedAt, images: [{url: `${site.url}/media/atreia.jpg`, alt: m.home.hero.title}]},
+    twitter: {card: 'summary_large_image', title: article.metadata.title, description: article.metadata.description, images: ['/media/atreia.jpg']},
+  };
   return {title: `${title} · ${m.ui.comingSoon}`, description: m.ui.placeholderDescription, robots: {index: false, follow: true}, alternates: {canonical: localePath(locale, `/${slug}`)}};
 }
 
-export default async function PlannedPage({params}: Props) {
+export default async function TopicPage({params}: Props) {
   const {locale, slug} = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
   const m = getSiteMessages(locale);
   const title = getPageTitle(slug, m);
   if (!title) notFound();
+  if (getArticle(locale, slug)) return <ArticlePage locale={locale} slug={slug} />;
   const topic = getTopic(slug);
   return <div className="placeholder-page">
     <nav className="breadcrumbs" aria-label={m.ui.navLabel}><Link href="/">{m.ui.home}</Link><ChevronRight size={13} aria-hidden="true" /><span>{title}</span></nav>

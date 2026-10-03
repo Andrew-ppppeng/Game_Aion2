@@ -24,7 +24,6 @@ export type Topic = {
   slug: TopicSlug;
   keyword: string;
   category: CategoryId;
-  status: 'planned';
 };
 
 export const topicGroups = plan.categories.map(({category, keywords}) => {
@@ -36,7 +35,7 @@ export const topicGroups = plan.categories.map(({category, keywords}) => {
     category,
     topics: keywords.map((keyword): Topic => {
       const slug = keyword.replace(/^aion 2 /, '').replaceAll(' ', '-') as TopicSlug;
-      return {id: slug, slug, keyword, category: id, status: 'planned'};
+      return {id: slug, slug, keyword, category: id};
     }),
   };
 });

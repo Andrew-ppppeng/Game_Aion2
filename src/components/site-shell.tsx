@@ -4,6 +4,7 @@ import {Link} from '@/i18n/navigation';
 import type {Locale} from '@/i18n/routing';
 import {getSiteMessages} from '@/i18n/messages';
 import {topicGroups} from '@/lib/topics';
+import {isArticlePublished} from '@/lib/articles';
 import {officialLinks, site} from '@/lib/site';
 import {LanguageSwitcher} from './language-switcher';
 import {SiteNavigation} from './site-navigation';
@@ -14,7 +15,7 @@ export function SiteShell({locale, children}: {locale: Locale; children: React.R
   const groups = topicGroups.map((group) => ({
     id: group.id,
     label: m.categories[group.id],
-    topics: group.topics.map((topic) => ({slug: topic.slug, title: m.topics[topic.slug]})),
+    topics: group.topics.map((topic) => ({slug: topic.slug, title: m.topics[topic.slug], published: isArticlePublished(locale, topic.slug)})),
   }));
 
   return (
