@@ -33,7 +33,7 @@ for (const locale of locales) {
   sameShape(source.metadata, m.metadata, `${locale}.metadata`);
   const {response, html} = await request(path(locale));
   assert.equal(response.status, 200, `${locale} homepage`);
-  assert.ok(html.includes(`<html lang="${locale}"`), `${locale} html language`);
+  assert.match(html, new RegExp(`<html\\b[^>]*\\blang="${locale}"`), `${locale} html language`);
   const canonical = new URL(html.match(/<link rel="canonical" href="([^"]+)"/)?.[1] || 'http://invalid');
   assert.equal(canonical.origin, new URL(origin).origin, `${locale} canonical origin`);
   assert.equal(canonical.pathname, path(locale), `${locale} canonical path`);
@@ -59,7 +59,7 @@ for (const locale of locales) {
       assert.ok(html.includes('application/ld+json'), `${locale}/${slug} structured data`);
       assert.doesNotMatch(html, /<[^>]+class="[^"]*\bplaceholder-content\b/, `${locale}/${slug} no rendered placeholder`);
     }
-    assert.ok(html.includes(`<html lang="${locale}"`));
+    assert.match(html, new RegExp(`<html\\b[^>]*\\blang="${locale}"`));
     assert.equal((html.match(/<h1[ >]/g) || []).length, 1);
     checks++;
   }));
@@ -75,9 +75,11 @@ const {response: englishRedirect} = await request('/en', {redirect: 'manual'});
 assert.ok([307, 308].includes(englishRedirect.status));
 assert.equal(new URL(englishRedirect.headers.get('location'), base).pathname, '/');
 const {html: rootWithPreference} = await request('/', {headers: {'Accept-Language': 'ja', Cookie: 'NEXT_LOCALE=de'}});
-assert.ok(rootWithPreference.includes('<html lang="en"'));
+assert.match(rootWithPreference, /<html\b[^>]*\blang="en"/);
 const {html: sitemap} = await request('/sitemap.xml');
-assert.equal((sitemap.match(/<loc>/g) || []).length, 84);
+const sitemapEntries = locales.length * (slugs.length + 2);
+assert.equal((sitemap.match(/<loc>/g) || []).length, sitemapEntries);
+for (const locale of locales) assert.ok(sitemap.includes(`${origin}${path(locale, 'tools/character')}</loc>`));
 for (const locale of locales) for (const slug of slugs) assert.ok(sitemap.includes(`${origin}${path(locale, slug)}</loc>`));
 assert.ok(!sitemap.includes('privacy-policy') && !sitemap.includes('terms-of-service'));
 const {html: robots} = await request('/robots.txt');
@@ -86,4 +88,4 @@ for (const asset of ['/media/hero.jpg', '/media/atreia.jpg', '/favicon.ico', '/s
   const response = await fetch(`${base}${asset}`, {method: 'HEAD'});
   assert.equal(response.status, 200, asset);
 }
-console.log(`PASS: ${checks} page checks; 80 published articles, legal placeholders, language alternates, redirects, 404s, 84 sitemap entries, robots and assets.`);
+console.log(`PASS: ${checks} page checks; ${locales.length * slugs.length} published articles, legal placeholders, language alternates, redirects, 404s, ${sitemapEntries} sitemap entries, robots and assets.`);

@@ -18,6 +18,10 @@ import {nextGuides} from '@/lib/reading-paths';
 import {guideMessages} from '@/i18n/guide-messages';
 import type {ComponentProps, ReactNode} from 'react';
 import {GuideTable} from './guide-table';
+import {GuideEquipment} from './tools/guide-equipment';
+import {EventTimers} from './tools/event-timers';
+import {BudgetPlanner} from './tools/budget-planner';
+import {gameEvents} from '@/lib/aion2/data';
 
 export async function ArticlePage({locale, slug}: {locale: Locale; slug: string}) {
   const article = getArticle(locale, slug);
@@ -45,6 +49,9 @@ export async function ArticlePage({locale, slug}: {locale: Locale; slug: string}
     GuideFaction: ({faction, children}: {faction: string; children: ReactNode}) => <div data-faction-section={faction}>{children}</div>,
     GuideRegion: ({region, children}: {region: string; children: ReactNode}) => <div data-region-section={region}>{children}</div>,
     GuideNext: ({slug: target}: {slug: string}) => <ArticleNext locale={locale} slug={target} inline />,
+    GuideEquipment: () => <GuideEquipment locale={locale} slug={slug} />,
+    GuideTimers: () => <EventTimers locale={locale} events={gameEvents.filter((event) => event.topics.includes(slug))} initialNow={Date.now()} />,
+    GuideBudget: () => <BudgetPlanner locale={locale} />,
   };
   const structuredData = {
     '@context': 'https://schema.org', '@graph': [

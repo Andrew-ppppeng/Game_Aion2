@@ -95,7 +95,7 @@ try {
       const meta = await readJson(`src/content/${locale}/${slug}.json`);
       await expect(page.locator('html')).toHaveAttribute('lang', locale);
       await expect(page.locator('h1')).toHaveText(meta.title);
-      await expect(page.locator('article')).toHaveAttribute('data-page-status', 'published');
+      await expect(page.locator('article.article-page')).toHaveAttribute('data-page-status', 'published');
       await expect(page.locator(`#${firstSection}`)).toBeVisible();
       const overflow = await page.evaluate(() => ({scroll: document.documentElement.scrollWidth, width: window.innerWidth}));
       assert.ok(overflow.scroll <= overflow.width + 1, `${locale}/${slug} overflow: ${JSON.stringify(overflow)}`);

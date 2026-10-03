@@ -6,6 +6,7 @@ import {getArticle} from '@/lib/articles';
 export default function sitemap(): MetadataRoute.Sitemap {
   return routing.locales.flatMap((locale) => [
     {url: `${site.url}${localePath(locale)}`, alternates: {languages: languageAlternates()}},
+    {url: `${site.url}${localePath(locale, '/tools/character')}`, alternates: {languages: languageAlternates('/tools/character')}},
     ...topics.flatMap((topic) => {
       const article = getArticle(locale, topic.slug);
       return article ? [{url: `${site.url}${localePath(locale, `/${topic.slug}`)}`, lastModified: article.data.checkedAt, alternates: {languages: languageAlternates(`/${topic.slug}`)}}] : [];

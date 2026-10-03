@@ -16,6 +16,78 @@
 
 * {box-sizing: border-box;}
 html {scroll-behavior: smooth; scroll-padding-top: 88px;}
+
+/* Shared data cards and player tools. */
+.tools-page {max-width: 1120px; margin: 0 auto; padding: 28px clamp(16px, 4vw, 44px) 72px;}
+.game-tool {min-width: 0; margin: 26px 0; padding: clamp(15px, 3vw, 24px); background: var(--surface); border: 1px solid #a6dfff23; border-radius: 9px;}
+.game-tool h3 {font-size: 19px; margin: 0 0 12px; color: var(--text);}
+.game-tool h4 {font-size: 15px; margin: 0; color: var(--text);}
+.game-tool h5 {font-size: 12px; color: var(--muted); margin: 14px 0 8px;}
+.game-tool p {margin: 10px 0;}
+.game-tool .tool-note, .tool-note {font-size: 12px; line-height: 1.7; color: var(--muted);}
+.tool-source {font-size: 11px; color: var(--quiet); overflow-wrap: anywhere; margin-top: 16px;}
+.tool-source a, .tool-link, .tool-note a {color: var(--accent); text-decoration: underline; text-underline-offset: 3px;}
+.tool-link {display: inline-block; margin-top: 16px; font-weight: 600;}
+.item-grid {display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 16px 0;}
+.item-card {min-width: 0; padding: 16px; border: 1px solid #ffffff15; border-radius: 6px; background: #080f1c;}
+.item-card-heading {display: flex; align-items: center; gap: 11px;}
+.item-card-heading img {flex-shrink: 0; border-radius: 4px;}
+.item-card-heading h4 {overflow-wrap: anywhere;}
+.item-card-heading span {font-size: 11px; color: var(--muted);}
+.item-requirements {display: flex; flex-wrap: wrap; gap: 12px; margin: 15px 0;}
+.item-requirements div {display: flex; flex-direction: column;}
+.item-requirements dt {font-size: 10px; color: var(--quiet);}
+.item-requirements dd {font-size: 13px; margin: 0; color: var(--text);}
+.tool-stats {margin: 8px 0 14px;}
+.tool-stats > div {display: flex; justify-content: space-between; gap: 14px; padding: 7px 0; border-bottom: 1px solid #ffffff08; font-size: 13px;}
+.tool-stats dt {min-width: 0; overflow-wrap: anywhere; color: var(--muted);}
+.tool-stats dt small {display: block; color: var(--quiet); font-size: 11px;}
+.tool-stats dd {margin: 0; flex-shrink: 0; max-width: 55%; overflow-wrap: anywhere; color: var(--text); font-variant-numeric: tabular-nums; text-align: right;}
+.tool-details {margin: 16px 0 0;}
+.tool-details > summary, .game-tool > summary, .event-card summary {cursor: pointer; padding: 9px 0; color: var(--accent); font-size: 13px;}
+.tool-field {display: flex; flex-direction: column; gap: 6px; min-width: 0; font-size: 12px; color: var(--muted);}
+.tool-field input, .tool-field select {width: 100%; min-height: 42px; padding: 9px 11px; border: 1px solid #ffffff25; border-radius: 4px; background: #080f1c; color: var(--text); font: inherit; font-size: 14px; min-width: 0;}
+.tool-field input:focus-visible {outline: 2px solid var(--accent); outline-offset: 2px;}
+.tool-form-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 14px; margin: 16px 0;}
+.tool-search {display: flex; align-items: end; gap: 12px; margin-top: 15px;}
+.tool-search .tool-field {flex: 1;}
+.tool-button {display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 8px 13px; color: var(--text); border: 1px solid #ffffff28; border-radius: 4px; background: #17263a; font-size: 12px; line-height: 1.5;}
+.tool-button:hover {background: #20354d;}
+.tool-button.primary, .tool-button[aria-pressed="true"] {background: #174764; border-color: #67cdf67a;}
+.tool-button:disabled {cursor: default;}
+.tool-actions, .tool-tabs {display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 16px 0;}
+.tool-error {color: #ffd19a; padding: 12px 14px; background: #5a381f38; border: 1px solid #e5b37133; border-radius: 5px; font-size: 13px;}
+.tool-loading {padding: 12px; color: var(--accent);}
+.event-card {margin: 16px 0; padding: 16px; background: #080f1c; border: 1px solid #ffffff16; border-radius: 5px;}
+.event-heading {display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px;}
+.tool-badge {font-size: 10px; padding: 3px 8px; background: #38bdf815; color: #a8daf5; border-radius: 20px;}
+.tool-badge.ended, .tool-badge.unconfirmed {color: var(--muted); background: #ffffff08;}
+.event-countdown span {font-family: monospace; font-size: 17px; color: var(--accent); font-variant-numeric: tabular-nums;}
+.tool-check {display: flex; align-items: center; gap: 9px; margin-top: 14px; font-size: 12px; color: var(--muted);}
+.tool-check input {width: 18px; height: 18px; accent-color: var(--accent);}
+.budget-row {min-width: 0; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 11px; margin: 18px 0; padding: 14px; border: 1px solid #ffffff17; border-radius: 5px;}
+.budget-row legend {font-size: 12px; color: var(--muted); padding: 0 5px;}
+.budget-result {margin-top: 20px; border-top: 1px solid #ffffff22; padding-top: 14px;}
+.budget-total {font-size: 18px; color: var(--accent);}
+.tool-table-scroll {overflow-x: auto;}
+.tool-table-scroll table {border-collapse: collapse; width: 100%; min-width: 380px; font-size: 13px;}
+.tool-table-scroll td, .tool-table-scroll th {padding: 10px; text-align: left; border-bottom: 1px solid #ffffff16;}
+.character-results, .equipped-grid {display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 14px 0;}
+.character-match, .equipped-item {display: flex; flex-direction: column; align-items: start; text-align: left; gap: 5px; min-width: 0; padding: 13px; border: 1px solid #ffffff20; border-radius: 5px; background: #080f1c; color: var(--text); overflow-wrap: anywhere;}
+.character-match span, .equipped-item span {font-size: 11px; color: var(--muted);}
+.equipped-item.selected {border-color: var(--accent);}
+.bookmark-row {display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0;}
+.growth-row {display: grid; grid-template-columns: 1fr auto; gap: 5px 15px; margin: 12px 0; font-size: 13px;}
+.growth-row progress {grid-column: 1 / -1; width: 100%; height: 6px; accent-color: var(--accent);}
+.skill-list {padding-left: 0; list-style: none;}
+.skill-list li {display: flex; flex-direction: column; padding: 9px 0; border-bottom: 1px solid #ffffff10;}
+.skill-list span {font-size: 12px; color: var(--muted);}
+@media (max-width: 600px) {
+  .item-grid, .character-results, .equipped-grid {grid-template-columns: 1fr;}
+  .budget-row {grid-template-columns: repeat(2, minmax(0, 1fr));}
+  .budget-row .tool-field:first-of-type {grid-column: 1 / -1;}
+  .tool-stats > div {font-size: 12px;}
+}
 body {margin: 0; background: var(--bg); color: var(--text); font-family: Arial, Helvetica, "Yu Gothic", Meiryo, sans-serif; font-size: 14px; line-height: 1.6; -webkit-font-smoothing: antialiased;}
 a {text-decoration: none; color: inherit;}
 button, select {font: inherit;}

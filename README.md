@@ -18,6 +18,7 @@ npm run dev
 ```sh
 npm run check
 npm run test:content
+npm run test:data
 npm run build
 npm run start
 ```
@@ -27,6 +28,7 @@ npm run start
 ```sh
 npm run test:smoke
 npm run test:browser
+npm run test:tools
 npm run test:performance
 ```
 
@@ -53,7 +55,7 @@ npm run test:performance
 - `src/i18n/guide-messages.ts`：图片放大、目录、筛选、清单和下一篇卡片的四语界面文字。
 - `src/lib/reading-paths.ts`：各主题推荐的下一篇攻略；正文卡片、页尾卡片和相关链接会去重。
 
-页面默认使用暗色冰蓝主题。完整攻略页使用 `index, follow`，具有独立 canonical、四语与 `x-default` 替代链接；站点地图包含 4 个首页和 80 个攻略页。法律占位页仍使用 `noindex, follow`。
+页面默认使用暗色冰蓝主题。完整攻略页使用 `index, follow`，具有独立 canonical、四语与 `x-default` 替代链接；站点地图包含 4 个首页、80 个攻略页和 4 个角色工具页。法律占位页和带查询参数的角色页不收录。
 
 修改英语事实稿后，须同步日、西、德对应正文和 metadata。四语保持目录 ID、引用链接、数值、地区与适用版本一致；`npm run test:content` 校验覆盖、来源、链接、锚点与编码，事实和翻译语义还需人工审校。正文不放视频时间点，视频证据保存在研究日志。
 
@@ -76,3 +78,9 @@ npm run test:performance
 本轮未接入统计。停留时间、跳出率和阅读路径的实际变化，须在后续取得访问数据后评估。
 
 原有资料、Discord导出、研究记录、主题文件和favicon原件均保留。主页所展示的维护日期为资料快照，不代表实时服务器状态。
+
+## 游戏数据与工具
+
+已加入 22 件人工选择的装备例子、公开角色查询与固定属性比较、活动时区/倒计时/日历，以及手动素材预算，均提供四语言界面。装备在 builds、cleric-build、chanter 中展示；计时器在 maintenance、twitch-drops、code、spacetime-rift 中展示；预算在 monetization 中展示，gathering 提供入口。
+
+接入、数据边界、缓存策略和维护方法见 [docs/AION2-DATA.md](docs/AION2-DATA.md)。浏览器测试使用已归档的真实公开角色响应，运行中的真实接口检查可用 `npm run test:api`；该检查会有限查询官方站，不能在未配置共享缓存的 Vercel 环境中通过。
