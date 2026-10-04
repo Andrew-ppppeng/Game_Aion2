@@ -1,4 +1,29 @@
-NotMeter es una herramienta comunitaria de registros y clasificaciones de combate de AION 2. Su web ofrece búsqueda de personajes de Corea, Taiwán y Global, filtros de mazmorras y registros de daño detallados.
+NotMeter es un **DPS meter de AION 2** de terceros, con un sitio de registros y rankings. Decide qué función necesitas antes de instalar: la búsqueda de personajes y los registros existentes se consultan en la web; capturar un combate nuevo requiere la herramienta de escritorio.
+
+<h2 id="website-or-desktop">¿Registros web o captura de daño en escritorio?</h2>
+
+| Objetivo | Por dónde empezar | Condición importante |
+| --- | --- | --- |
+| Buscar equipo, habilidades o registros de un personaje | [Web de NotMeter](https://notmeter.com/) | Selecciona KR, TW o Global y el servidor y nombre correctos |
+| Comparar registros de daño existentes | Filtros web de encuentro y rankings | Iguala jefe, dificultad, periodo y rango de CP |
+| Capturar tu propio combate | Distribución de escritorio del desarrollador | Comprueba compatibilidad con región y parche antes de instalar |
+
+**Global:** la búsqueda web de personajes está disponible; la compatibilidad actual de captura de escritorio no está confirmada.
+
+Esta guía cubre la instalación de NotMeter con Npcap. Las herramientas OCR leen texto de pantalla y se configuran de otra forma; no mezcles sus instrucciones con las de NotMeter.
+
+<h2 id="dps-meter-options">Elige un DPS meter por método y región</h2>
+
+| Herramienta | Método y configuración | Condiciones de región y coste |
+| --- | --- | --- |
+| [NotMeter](https://notmeter.com/) | Registros web y captura de escritorio con Npcap | Búsqueda web KR/TW/Global; compatibilidad actual de escritorio Global sin confirmar |
+| [aion2t DPS Meter](https://github.com/Grachy/aion2t-dps-meter) | Captura de red Windows con Npcap | Versiones para Global (EU) y TW; algunas funciones requieren Premium |
+| [Aletheia](https://github.com/p62003/aletheia_AION2_DPS_Meter) | Captura de red Windows con Npcap; interfaz inglesa y china | Enfocado en TW; overlay gratuito y funciones Sponsor; exige Discord y consentimiento de subida de informes |
+| [Projack OCR meter](https://github.com/ProjackL2/aion2_dps_meter) | Capturas del registro de combate; Windows, Python 3.12 y Tesseract | Requiere UI grande y controles Aion 1; compatibilidad actual Global sin confirmar |
+
+**Gratis no significa que incluya todas las funciones.** El overlay básico de Aletheia no necesita clave Sponsor; el análisis avanzado sí. Su modalidad gratuita sube automáticamente informes aptos tras el consentimiento. Revisa funciones y ajustes actuales de intercambio de datos antes de usar cada herramienta.
+
+Para OCR, mantén visible el registro con el tamaño y la posición configurados. Cambiar idioma, escala de UI o posición puede afectar al reconocimiento. Para captura de red, comprueba que la versión admite tu región y parche.
 
 <h2 id="source-and-global-support">Descarga la versión de escritorio adecuada</h2>
 
@@ -8,9 +33,10 @@ Antes de instalar, comprueba que la versión de escritorio sea compatible con tu
 
 <h2 id="maintainer-installation">Instala NotMeter en Windows</h2>
 
-1. Instalar Npcap si todavía no está instalado.
-2. Descargar el ZIP de NotMeter desde el enlace de su web.
-3. Extraer el ZIP y ejecutar `NotMeter.exe`.
+1. Abre [notmeter.com](https://notmeter.com/) y usa su enlace al [instalador Npcap](https://npcap.com/) si aún no está instalado.
+2. Descarga el ZIP de NotMeter desde los [releases del desarrollador](https://github.com/Not4You-Dev/NotMeter-Releases/releases) enlazados.
+3. Extrae el ZIP en una carpeta antes de ejecutar `NotMeter.exe`; conserva juntos los archivos incluidos.
+4. Confirma región y parche compatibles antes de capturar. Si no registra nada, usa las comprobaciones siguientes; instalar correctamente no garantiza compatibilidad.
 
 Npcap es una biblioteca y un controlador de captura de red para Windows. Usa la versión indicada por las instrucciones de NotMeter y revisa sus requisitos. Si aparece un error o permiso inesperado, guarda el mensaje exacto para el soporte de la herramienta.
 

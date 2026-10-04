@@ -5,7 +5,7 @@ Usa un mapa filtrado para rutas de recursos y uno con altura cuando un marcador 
 | Herramienta | Uso | Controles útiles |
 | --- | --- | --- |
 | [Aion2T Interactive Map](https://aion2t.com/map) | Rutas de recursos y coleccionables | Selector de zona, búsqueda y filtros |
-| [Aion2Maps](https://www.aion2maps.com) | Alturas, cuevas y progreso | Terreno voxel y código de sincronización |
+| [Aion2Maps](https://www.aion2maps.com) | Alturas, cuevas y progreso | Terreno voxel, alturas y exportación/importación del progreso |
 | [Aion2Hub Maps](https://aion2hub.com/maps) | Mapa alternativo de recursos y zonas | Filtros y planificación de rutas |
 
 La antigua dirección `aion2.app/map` redirige a Aion2T. Elige tu región y compara ubicaciones confusas con el mapa del juego.
@@ -33,6 +33,22 @@ Abre los ajustes de filtros del mapa grande para mostrar exploración. Busca **F
 
 Recoge objetos cercanos al subir de nivel. En una sesión de colección, completa una zona cada vez y sigue el progreso en tu pantalla de colección.
 
+<h2 id="gathering-map-filters">Mapa de recolección: muestra solo el recurso necesario</h2>
+
+Un **mapa de recolección de AION 2** es un mapa filtrado por recursos. Abre [Aion2T](https://aion2t.com/map), elige la zona, pulsa **Hide All** y activa la categoría necesaria. Despliégala y deja seleccionado solo el material que buscas.
+
+| Ingrediente | Capa que consultar |
+| --- | --- |
+| Metal o mineral | Ore |
+| Gema | Gems |
+| Hierba | Herbs |
+| Verdura | Vegetables |
+| Madera | Logs |
+
+Copia el nombre de la receta o misión. Un nombre parecido puede corresponder a otra calidad o a un objeto exclusivo de misión. El marcador indica una ubicación posible; no garantiza un nodo disponible ni suficiente competencia para recogerlo.
+
+En [Aion2Maps](https://www.aion2maps.com), escribe el recurso y pulsa **Enter** para destacar coincidencias. Comprueba la etiqueta **Global/TW** de la tarjeta antes de usar una ruta de regiones posteriores. Los mapas marcados **not open at launch** no están disponibles al lanzamiento de Global.
+
 <h2 id="resource-route">Construye una ruta práctica de recolección</h2>
 
 <GuideVisual id="workflow" />
@@ -47,16 +63,21 @@ En rutas de recursos, registra materiales obtenidos y tiempo para decidir si el 
 
 **Ejemplo para Elios:** abre [Aion2T](https://aion2t.com/map), selecciona **Global → Verteron**, pulsa **Hide All**, activa **Herbs** y desactiva **Targena** para dejar solo **Aria**. Para Asmodianos, selecciona **Altgard** antes del material. El mapa marca posibles nodos; comprueba su requisito al llegar.
 
-<h2 id="map-troubleshooting">Corrige marcadores ausentes y protege tu progreso</h2>
+<h2 id="map-troubleshooting">Encuentra nodos en cuevas y guarda el progreso</h2>
 
 | Problema | Qué probar |
 | --- | --- |
-| El marcador está sobre ti, pero no ves nada | Comprueba altura, cuevas y accesos adyacentes; usa el mapa de vóxeles para revisar la posición vertical |
-| No aparecen recursos | Confirma zona, categoría y filtro de búsqueda; compara los requisitos de nodos del juego |
-| Falta un cofre o nodo | Trata el punto como una posible ubicación de aparición; continúa sin suponer un tiempo exacto de reaparición |
-| El mismo coleccionable vuelve a salir en tu ruta | Márcalo como completado en la herramienta y compáralo con tu progreso del juego |
-| El progreso difiere entre dispositivos | Usa la función documentada de sincronización o exportación cuando exista y guarda los datos de recuperación antes de borrar datos del navegador |
+| Estás en el marcador, pero no ves el nodo | Comprueba su altura en la tarjeta y entradas de cueva o rampas cercanas |
+| Rocas o tejados lo ocultan en Aion2Maps | Mantén **Alt** para usar la lente transparente o cambia **Roofs over paths** en Settings |
+| Hay varios pisos superpuestos | Usa **Floor slice** o **PgUp/PgDn** para revisar las alturas |
+| No aparecen recursos | Revisa zona, capa y búsqueda; elimina la búsqueda anterior si hace falta |
+| Falta un nodo | Continúa: el marcador no informa de apariciones en tiempo real |
+| Un coleccionable completado sigue en la ruta | Márcalo con **F** en Aion2Maps y compáralo con el progreso del juego |
 
-Guarda el código de sincronización de Aion2Maps antes de cambiar de dispositivo o borrar datos del navegador. Lleva una nota de zonas completadas en recorridos largos. Informa de coordenadas erróneas con zona y versión del juego.
+Aion2Maps guarda el progreso en el navegador actual. Antes de borrar sus datos o cambiar de dispositivo, abre **Settings → Your progress → Export progress** y conserva el archivo. Usa **Import…** en el navegador de destino para restaurarlo. Anota también las zonas completadas durante sesiones largas.
+
+Consulta [recolección](/gathering) para requisitos, promociones y comparación de rendimiento.
+
+Usa la [guía de bases de datos](/database) para consultar estadísticas y obtención de un objeto.
 
 <GuideNext slug="gathering" />

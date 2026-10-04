@@ -1,4 +1,29 @@
-NotMeterはAION 2の戦闘記録とランキングを扱うコミュニティツールです。サイトでは韓国、台湾、Globalのキャラクター検索、ダンジョンの絞り込み、詳細なダメージ記録を利用できます。
+NotMeterは第三者製の**AION 2 DPSメーター**で、戦闘記録とランキングのサイトも提供します。導入前に目的を選びましょう。キャラクター検索と既存記録はWeb、戦闘の新規記録はデスクトップ版を使います。
+
+<h2 id="website-or-desktop">Webの記録を見る？デスクトップで記録する？</h2>
+
+| 目的 | 開始場所 | 重要な条件 |
+| --- | --- | --- |
+| 装備・スキル・キャラクター記録を探す | [NotMeterサイト](https://notmeter.com/) | KR・TW・Globalと正しいサーバー、名前を選ぶ |
+| 既存のダメージ記録を比較する | Webの戦闘・ランキングフィルター | ボス、難度、期間、CP帯をそろえる |
+| 自分の戦闘を記録する | 開発者のデスクトップ配布先 | 導入前にゲーム地域とパッチへの対応を確認する |
+
+**Global：** Webのキャラクター検索は利用できます。現行デスクトップ版の戦闘記録互換性は未確認です。
+
+このガイドはNpcapを必要とするNotMeterの導入手順です。OCRツールは画面の文字を読み取る別方式なので、その導入手順をNotMeterと混ぜないでください。
+
+<h2 id="dps-meter-options">記録方式と地域でDPSメーターを選ぶ</h2>
+
+| ツール | 記録方式と導入環境 | 地域・料金の条件 |
+| --- | --- | --- |
+| [NotMeter](https://notmeter.com/) | Web記録、Npcapを使うデスクトップ記録 | KR/TW/GlobalのWeb検索。現行Globalのデスクトップ互換性は未確認 |
+| [aion2t DPS Meter](https://github.com/Grachy/aion2t-dps-meter) | WindowsでNpcapによるネットワーク記録 | Global（EU）とTW向けのリリース。一部機能はPremium |
+| [Aletheia](https://github.com/p62003/aletheia_AION2_DPS_Meter) | WindowsとNpcap。英語・中国語の表示 | TW向け。無料オーバーレイとSponsor機能。Discordログインとレポート送信への同意が必要 |
+| [Projack OCR meter](https://github.com/ProjackL2/aion2_dps_meter) | 戦闘ログの画面撮影。Windows、Python 3.12、Tesseract | 大きいUIとAion 1操作モードが必要。現行Globalの互換性は未確認 |
+
+**無料でも全機能が含まれるとは限りません。** Aletheiaの基本オーバーレイにSponsorキーは不要ですが、高度な分析には必要です。無料版は同意後に対象レポートを自動送信します。利用前に、各ツールの現在の機能とデータ共有設定を確認しましょう。
+
+OCRでは、設定した大きさと位置で戦闘ログを表示します。ログ言語、UI倍率、ウィンドウ位置の変更は文字認識に影響します。ネットワーク記録ではサービス地域とパッチへの対応を確認してください。
 
 <h2 id="source-and-global-support">対応するデスクトップ版を選ぶ</h2>
 
@@ -8,9 +33,10 @@ NotMeterはAION 2の戦闘記録とランキングを扱うコミュニティツ
 
 <h2 id="maintainer-installation">WindowsでNotMeterを導入する</h2>
 
-1. Npcap が入っていなければインストールする。
-2. サイトのダウンロードリンクから NotMeter の ZIP を入手する。
-3. ZIP を展開して `NotMeter.exe` を起動する。
+1. [notmeter.com](https://notmeter.com/)を開き、Npcapがなければリンク先の[Npcapインストーラー](https://npcap.com/)を使います。
+2. リンクされている[開発者のリリース](https://github.com/Not4You-Dev/NotMeter-Releases/releases)からNotMeterのZIPを入手します。
+3. ZIPをフォルダーに展開してから`NotMeter.exe`を実行します。同梱ファイルはまとめて置いてください。
+4. 記録前に、そのリリースの対応地域とパッチを確認します。記録されない場合は下の確認項目を使い、導入成功だけで互換性があると判断しないでください。
 
 NpcapはWindowsの通信キャプチャ用ライブラリとドライバーです。NotMeterの導入説明で指定された版を使い、必要条件を確認してからインストールしてください。予期しないエラーや権限要求が出た場合は、全文を保存してツールのサポート窓口に伝えます。
 

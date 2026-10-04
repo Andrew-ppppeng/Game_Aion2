@@ -21,6 +21,9 @@ const categoryIds: Record<string, CategoryId> = {
   'player statistics': 'playerStatistics',
   factions: 'factions',
   macros: 'macros',
+  'wings and flight': 'wingsAndFlight',
+  'databases': 'databases',
+  'regional differences': 'regionalDifferences',
 };
 
 export type Topic = {

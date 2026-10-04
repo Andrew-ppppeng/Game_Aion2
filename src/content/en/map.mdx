@@ -5,7 +5,7 @@ Use a filtered map for resource routes and a map with height information when a 
 | Tool | Best use | Useful controls |
 | --- | --- | --- |
 | [Aion2T Interactive Map](https://aion2t.com/map) | Resource and collectible routes | Zone selector, search and category filters |
-| [Aion2Maps](https://www.aion2maps.com) | Heights, cave access and collection progress | Voxel terrain view and progress sync code |
+| [Aion2Maps](https://www.aion2maps.com) | Heights, cave access and collection progress | Voxel terrain, height cards and progress export/import |
 | [Aion2Hub Maps](https://aion2hub.com/maps) | Alternative resource and zone map | Filters and route planning |
 
 The old `aion2.app/map` address redirects to Aion2T. Choose your service region in the tool and compare unclear locations with the in-game map.
@@ -33,6 +33,22 @@ Open the large map and its filter settings to show exploration content. Look for
 
 Collect nearby exploration items while leveling. For a dedicated session, clear one area at a time and track completion in your collection screen.
 
+<h2 id="gathering-map-filters">Gathering map: show only the resource you need</h2>
+
+An **AION 2 gathering map** is a filtered resource map. Open [Aion2T](https://aion2t.com/map), select the zone, click **Hide All**, then enable the relevant resource category. Expand the category and leave only the material you need selected.
+
+| Recipe ingredient | Map layer to inspect |
+| --- | --- |
+| Metal or ore | Ore |
+| Gemstone | Gems |
+| Herb | Herbs |
+| Vegetable | Vegetables |
+| Wood | Logs |
+
+Copy the material name from the recipe or quest. A similar name may refer to a different quality or a quest-only item. A marker shows a possible location, rather than guaranteeing that a node is present or that your proficiency is sufficient.
+
+On [Aion2Maps](https://www.aion2maps.com), type a resource name into search and press **Enter** to highlight matches. Check the map card's **Global/TW** label before using a later-region route. Maps marked **not open at launch** are unavailable on Global at launch.
+
 <h2 id="resource-route">Build a practical gathering or collection route</h2>
 
 <GuideVisual id="workflow" />
@@ -47,16 +63,21 @@ For resource runs, record material yield and elapsed time so you can decide whet
 
 **Filter example for Elyos:** open [Aion2T](https://aion2t.com/map), select **Global → Verteron**, click **Hide All**, enable **Herbs** and turn off **Targena** to leave only **Aria**. For an Asmodian character, select **Altgard** before choosing a material. The map marks possible node locations; check the node's gathering requirement when you arrive.
 
-<h2 id="map-troubleshooting">Fix missing markers and protect progress</h2>
+<h2 id="map-troubleshooting">Find cave nodes and back up collection progress</h2>
 
 | Problem | What to try |
 | --- | --- |
-| Marker is directly on you, but nothing is visible | Check height, caves and adjacent access paths; use the voxel map to inspect vertical position |
-| No resources appear | Confirm the selected zone, category and search filter; compare with the game's displayed node requirements |
-| A chest or node is absent | Treat the point as a possible spawn location; move on rather than assuming an exact respawn timer |
-| The same collectible keeps appearing in your route | Mark completion in the tool and compare against your in-game progress |
-| Progress differs between devices | Use the tool's documented sync/export function where available and preserve its recovery information before clearing browser data |
+| The marker is at your position, but the node is missing | Check the marker card's height and nearby cave entrances or ramps |
+| Rock or a roof hides the location in Aion2Maps | Hold **Alt** for the see-through lens, or change **Roofs over paths** in Settings |
+| Several floors overlap | Use **Floor slice** or **PgUp/PgDn** to inspect vertical layers |
+| No resources appear | Confirm the zone, resource layer and search; clear a previous search if necessary |
+| A node is absent | Skip it and continue; a map marker is not a live spawn indicator |
+| A completed collectible remains on the route | Mark it complete with **F** in Aion2Maps and compare with in-game progress |
 
-Save the Aion2Maps progress sync code before switching devices or clearing browser data. Keep a separate note of completed zones during long collection runs. Report incorrect coordinates with the zone name and game version.
+Aion2Maps stores progress in the current browser. Before clearing browser data or moving to another device, open **Settings → Your progress → Export progress** and keep the file. Use **Import…** in the destination browser to restore it. Keep a separate note of completed zones during long sessions.
+
+Use [gathering](/gathering) for node requirements, promotion blocks and comparing material yield.
+
+Use the [database guide](/database) to look up an item's stats and acquisition route.
 
 <GuideNext slug="gathering" />

@@ -15,4 +15,7 @@ export const nextGuides: Record<TopicSlug, [TopicSlug, TopicSlug]> = {
   gladiator: ['builds', 'tier-list'], ranger: ['builds', 'pvp'],
   spiritmaster: ['builds', 'pvp'], races: ['server', 'character-creation'],
   'macro-guide': ['builds', 'notmeter'], 'server-transfer': ['server', 'maintenance'],
+  'wings': ['builds', 'pvp'],
+  'database': ['map', 'builds'],
+  'global-changes': ['guide', 'monetization'],
 };

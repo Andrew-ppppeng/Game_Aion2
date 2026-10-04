@@ -30,6 +30,9 @@ import data_races from '@/content/article-data/races.json';
 import data_spiritmaster from '@/content/article-data/spiritmaster.json';
 import data_ranger from '@/content/article-data/ranger.json';
 import data_gladiator from '@/content/article-data/gladiator.json';
+import data_wings from '@/content/article-data/wings.json';
+import data_database from '@/content/article-data/database.json';
+import data_global_changes from '@/content/article-data/global-changes.json';
 import meta_en_guide from '@/content/en/guide.json';
 import meta_en_gathering from '@/content/en/gathering.json';
 import meta_en_leveling from '@/content/en/leveling.json';
@@ -58,6 +61,9 @@ import meta_en_races from '@/content/en/races.json';
 import meta_en_spiritmaster from '@/content/en/spiritmaster.json';
 import meta_en_ranger from '@/content/en/ranger.json';
 import meta_en_gladiator from '@/content/en/gladiator.json';
+import meta_en_wings from '@/content/en/wings.json';
+import meta_en_database from '@/content/en/database.json';
+import meta_en_global_changes from '@/content/en/global-changes.json';
 import meta_ja_guide from '@/content/ja/guide.json';
 import meta_ja_gathering from '@/content/ja/gathering.json';
 import meta_ja_leveling from '@/content/ja/leveling.json';
@@ -86,6 +92,9 @@ import meta_ja_races from '@/content/ja/races.json';
 import meta_ja_spiritmaster from '@/content/ja/spiritmaster.json';
 import meta_ja_ranger from '@/content/ja/ranger.json';
 import meta_ja_gladiator from '@/content/ja/gladiator.json';
+import meta_ja_wings from '@/content/ja/wings.json';
+import meta_ja_database from '@/content/ja/database.json';
+import meta_ja_global_changes from '@/content/ja/global-changes.json';
 import meta_es_guide from '@/content/es/guide.json';
 import meta_es_gathering from '@/content/es/gathering.json';
 import meta_es_leveling from '@/content/es/leveling.json';
@@ -114,6 +123,9 @@ import meta_es_races from '@/content/es/races.json';
 import meta_es_spiritmaster from '@/content/es/spiritmaster.json';
 import meta_es_ranger from '@/content/es/ranger.json';
 import meta_es_gladiator from '@/content/es/gladiator.json';
+import meta_es_wings from '@/content/es/wings.json';
+import meta_es_database from '@/content/es/database.json';
+import meta_es_global_changes from '@/content/es/global-changes.json';
 import meta_de_guide from '@/content/de/guide.json';
 import meta_de_gathering from '@/content/de/gathering.json';
 import meta_de_leveling from '@/content/de/leveling.json';
@@ -142,6 +154,9 @@ import meta_de_races from '@/content/de/races.json';
 import meta_de_spiritmaster from '@/content/de/spiritmaster.json';
 import meta_de_ranger from '@/content/de/ranger.json';
 import meta_de_gladiator from '@/content/de/gladiator.json';
+import meta_de_wings from '@/content/de/wings.json';
+import meta_de_database from '@/content/de/database.json';
+import meta_de_global_changes from '@/content/de/global-changes.json';
 
 const sharedData = {
   'guide': data_guide,
@@ -172,6 +187,9 @@ const sharedData = {
   'spiritmaster': data_spiritmaster,
   'ranger': data_ranger,
   'gladiator': data_gladiator,
+  'wings': data_wings,
+  'database': data_database,
+  'global-changes': data_global_changes,
 } as Record<TopicSlug, ArticleData>;
 
 const entries: Record<Locale, Record<TopicSlug, ArticleEntry>> = {
@@ -204,6 +222,9 @@ const entries: Record<Locale, Record<TopicSlug, ArticleEntry>> = {
     'spiritmaster': {metadata: meta_en_spiritmaster, load: () => import('@/content/en/spiritmaster.mdx')},
     'ranger': {metadata: meta_en_ranger, load: () => import('@/content/en/ranger.mdx')},
     'gladiator': {metadata: meta_en_gladiator, load: () => import('@/content/en/gladiator.mdx')},
+    'wings': {metadata: meta_en_wings, load: () => import('@/content/en/wings.mdx')},
+    'database': {metadata: meta_en_database, load: () => import('@/content/en/database.mdx')},
+    'global-changes': {metadata: meta_en_global_changes, load: () => import('@/content/en/global-changes.mdx')},
   },
   ja: {
     'guide': {metadata: meta_ja_guide, load: () => import('@/content/ja/guide.mdx')},
@@ -234,6 +255,9 @@ const entries: Record<Locale, Record<TopicSlug, ArticleEntry>> = {
     'spiritmaster': {metadata: meta_ja_spiritmaster, load: () => import('@/content/ja/spiritmaster.mdx')},
     'ranger': {metadata: meta_ja_ranger, load: () => import('@/content/ja/ranger.mdx')},
     'gladiator': {metadata: meta_ja_gladiator, load: () => import('@/content/ja/gladiator.mdx')},
+    'wings': {metadata: meta_ja_wings, load: () => import('@/content/ja/wings.mdx')},
+    'database': {metadata: meta_ja_database, load: () => import('@/content/ja/database.mdx')},
+    'global-changes': {metadata: meta_ja_global_changes, load: () => import('@/content/ja/global-changes.mdx')},
   },
   es: {
     'guide': {metadata: meta_es_guide, load: () => import('@/content/es/guide.mdx')},
@@ -264,6 +288,9 @@ const entries: Record<Locale, Record<TopicSlug, ArticleEntry>> = {
     'spiritmaster': {metadata: meta_es_spiritmaster, load: () => import('@/content/es/spiritmaster.mdx')},
     'ranger': {metadata: meta_es_ranger, load: () => import('@/content/es/ranger.mdx')},
     'gladiator': {metadata: meta_es_gladiator, load: () => import('@/content/es/gladiator.mdx')},
+    'wings': {metadata: meta_es_wings, load: () => import('@/content/es/wings.mdx')},
+    'database': {metadata: meta_es_database, load: () => import('@/content/es/database.mdx')},
+    'global-changes': {metadata: meta_es_global_changes, load: () => import('@/content/es/global-changes.mdx')},
   },
   de: {
     'guide': {metadata: meta_de_guide, load: () => import('@/content/de/guide.mdx')},
@@ -294,6 +321,9 @@ const entries: Record<Locale, Record<TopicSlug, ArticleEntry>> = {
     'spiritmaster': {metadata: meta_de_spiritmaster, load: () => import('@/content/de/spiritmaster.mdx')},
     'ranger': {metadata: meta_de_ranger, load: () => import('@/content/de/ranger.mdx')},
     'gladiator': {metadata: meta_de_gladiator, load: () => import('@/content/de/gladiator.mdx')},
+    'wings': {metadata: meta_de_wings, load: () => import('@/content/de/wings.mdx')},
+    'database': {metadata: meta_de_database, load: () => import('@/content/de/database.mdx')},
+    'global-changes': {metadata: meta_de_global_changes, load: () => import('@/content/de/global-changes.mdx')},
   },
 };
 

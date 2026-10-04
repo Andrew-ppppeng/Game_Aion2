@@ -8,6 +8,7 @@ const plan = await json('content-topics.json');
 const keywords = plan.categories.flatMap(({keywords}) => keywords);
 const slugs = keywords.map((keyword) => keyword.replace(/^aion 2 /, '').replaceAll(' ', '-'));
 const locales = (process.env.CONTENT_LOCALES || 'en,ja,es,de').split(',');
+const publicToolPaths = new Set(['tools/character']);
 assert.equal(locales[0], 'en', 'English is the reference locale');
 assert.equal(new Set(plan.categories.map(({category}) => category)).size, plan.categories.length, 'Unique published categories');
 for (const {category, keywords: groupKeywords} of plan.categories) {
@@ -99,7 +100,7 @@ for (const locale of locales) {
     for (const [, href] of body.matchAll(/\]\((\/[^\s)]*)\)/g)) {
       const url = new URL(href, 'http://content.local');
       const target = url.pathname.slice(1);
-      assert.ok(slugs.includes(target), `${label}: known topic link ${href}`);
+      assert.ok(slugs.includes(target) || publicToolPaths.has(target), `${label}: known topic or tool link ${href}`);
     }
     checks++;
   }

@@ -3,7 +3,7 @@
 import {memo, useCallback, useEffect, useRef, useState} from 'react';
 import {
   ArrowUpRight, BookOpen, ChevronDown, Coins, Download, Gift, Home, Layers3, ChartNoAxesCombined,
-  Map, Menu, Monitor, Server, Sparkles, Swords, Ticket, WandSparkles, X, Flag, Keyboard, UserRound, Calculator, ListChecks,
+  Map, Menu, Monitor, Server, Sparkles, Swords, Ticket, WandSparkles, X, Flag, Keyboard, UserRound, Calculator, ListChecks, Feather, Database, Globe2,
 } from 'lucide-react';
 import {useTranslations} from 'next-intl';
 import {Link, usePathname} from '@/i18n/navigation';
@@ -33,6 +33,9 @@ const icons = {
   playerStatistics: ChartNoAxesCombined,
   factions: Flag,
   macros: Keyboard,
+  wingsAndFlight: Feather,
+  databases: Database,
+  regionalDifferences: Globe2,
 };
 
 const NavigationContent = memo(function NavigationContent({groups, onNavigate}: {groups: NavGroup[]; onNavigate?: () => void}) {

@@ -58,8 +58,10 @@ try {
   ];
   for (const [locale, width, height] of layouts) {
     await page.setViewportSize({width, height});
-    await page.goto(`${base}${locale === 'en' ? '/' : `/${locale}`}`, {waitUntil: 'networkidle'});
+    await page.goto(`${base}${locale === 'en' ? '/' : `/${locale}`}`, {waitUntil: 'domcontentloaded'});
     await expect(page.locator('html')).toHaveAttribute('lang', locale);
+    await expect(page.locator('h1')).toHaveText((await readJson(`src/messages/${locale}.json`)).home.hero.title);
+    await expect(page.locator('.hero-buttons')).toBeVisible();
     const overflow = await page.evaluate(() => ({scroll: document.documentElement.scrollWidth, width: window.innerWidth}));
     assert.ok(overflow.scroll <= overflow.width + 1, `${locale} ${width}px horizontal overflow: ${JSON.stringify(overflow)}`);
     for (const button of await page.locator('.hero-buttons a').all()) {

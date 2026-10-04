@@ -1,12 +1,20 @@
 # AION 2 内容更新与后续优先级
 
-更新日期：2026-10-03。目标：未来 30–90 天最大化可获得的 SEO 流量。原始完整词库实际为 **63 项**，历史第一版优先内容为 20 项；原文件保留，当前发布清单使用 `content-topics.json`。
+更新日期：2026-10-04。目标：未来 30–90 天最大化可获得的 SEO 流量。当前完整词库 **87 项**（原 63 项保留，新增 24 项），历史第一版优先内容为 20 项；当前发布清单使用 `content-topics.json`。
+
+## 10 月 4 日更新
+
+已实现 3 个新主题（Wings、Database、Global changes）与 11 个既有主题的四语更新，总计 **31 个主题、124 篇攻略**。实际 Google 联想和结果页用于选择内容方向；Classes、Max level、Wings、Database、Specs 均纳入本轮需求。详情与验收见 [本轮实施记录](SEO-CONTENT-UPDATE-2026-10-04.md)。
+
+下一步先补职业转换、单服容量、EU 机房城市等具体证据，以及 TW 境外访问、Global 主机/Brawler 日期等条件；资料成熟后才补相应答案。Private server、Raid 2026、Fishing release、AION 1 地图连接关系与 Japan VPN 继续暂缓。Database 本轮为查询入口指南，完整自建数据库另行评估。
+
+上线后 D+14、D+30 以 GSC 收录、页面/查询/国家曝光与点击调整顺序；未出数据不记零。逐词状态见 `research/keywords/2026-10-04/implementation/keyword-coverage.json`。以下保留 10 月 3 日历史批次和其余证据队列。
 
 ## 拓展 TODO（暂缓实施）
 
 - [ ] [游戏站拓展完整方案：成长目标、成本决策、分阶段配装、收藏路线与 Marketplace](AION2-EXPANSION-TODO.md)。2026-10-04 记录；用户明确要求暂时先不做，仅保存方案，不启动开发或行情数据验证。
 
-## 本轮已实现
+## 10 月 3 日历史批次
 
 | 内容组 | 承接页 | 实施范围 |
 | --- | --- | --- |

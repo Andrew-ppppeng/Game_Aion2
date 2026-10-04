@@ -1,4 +1,29 @@
-NotMeter ist ein Community-Werkzeug für AION 2-Kampfaufzeichnungen und Ranglisten. Die Website bietet Charaktersuche für Korea, Taiwan und Global, Dungeonfilter und detaillierte Schadensaufzeichnungen.
+NotMeter ist ein **AION 2 DPS-Meter** eines Drittanbieters mit einer Website für Kampfaufzeichnungen und Ranglisten. Wähle vor einer Installation die benötigte Funktion: Charaktere und bestehende Aufzeichnungen suchst du im Web; neue Kämpfe zeichnet das Desktop-Tool auf.
+
+<h2 id="website-or-desktop">Web-Aufzeichnungen oder Schadensaufnahme am Desktop?</h2>
+
+| Ziel | Einstieg | Wichtige Bedingung |
+| --- | --- | --- |
+| Ausrüstung, Fertigkeiten oder Charakteraufzeichnungen finden | [NotMeter-Website](https://notmeter.com/) | KR, TW oder Global sowie richtigen Server und Namen wählen |
+| Bestehende Schadensaufzeichnungen vergleichen | Web-Filter für Kämpfe und Ranglisten | Boss, Schwierigkeit, Zeitraum und CP-Bereich abgleichen |
+| Eigene Kämpfe aufzeichnen | Desktop-Verteilung des Entwicklers | Vor Installation Region und Patch-Unterstützung prüfen |
+
+**Global:** Die Web-Charaktersuche ist verfügbar; aktuelle Desktop-Kompatibilität für Kampfaufzeichnungen ist unbestätigt.
+
+Dieser Guide behandelt NotMeters Einrichtung mit Npcap. OCR-Tools lesen Bildschirmtext und werden anders eingerichtet; vermische ihre Installationsschritte nicht mit NotMeter.
+
+<h2 id="dps-meter-options">Wähle ein DPS-Meter nach Methode und Region</h2>
+
+| Tool | Methode und Einrichtung | Regions- und Kostenbedingungen |
+| --- | --- | --- |
+| [NotMeter](https://notmeter.com/) | Web-Aufzeichnungen; Desktop-Aufnahme mit Npcap | KR/TW/Global-Websuche; aktuelle Global-Desktop-Kompatibilität unbestätigt |
+| [aion2t DPS Meter](https://github.com/Grachy/aion2t-dps-meter) | Windows-Netzwerkaufnahme mit Npcap | Releases für Global (EU) und TW; einige Funktionen benötigen Premium |
+| [Aletheia](https://github.com/p62003/aletheia_AION2_DPS_Meter) | Windows-Netzwerkaufnahme mit Npcap; englische und chinesische Oberfläche | Auf TW ausgerichtet; kostenloses Overlay und Sponsor-Funktionen; Discord-Anmeldung und Zustimmung zum Berichtupload erforderlich |
+| [Projack OCR meter](https://github.com/ProjackL2/aion2_dps_meter) | Screenshots des Kampflogs; Windows, Python 3.12 und Tesseract | Große UI und Aion-1-Steuerungsmodus erforderlich; aktuelle Global-Kompatibilität unbestätigt |
+
+**Kostenlos bedeutet nicht, dass jede Funktion enthalten ist.** Aletheias Basis-Overlay braucht keinen Sponsor-Schlüssel, die erweiterte Analyse dagegen schon. Der kostenlose Tarif lädt nach Zustimmung geeignete Berichte automatisch hoch. Prüfe aktuelle Funktionen und Datenfreigabeeinstellungen vor der Nutzung.
+
+Für OCR bleibt das Kampflog in der eingestellten Größe und Position sichtbar. Änderungen an Sprache, UI-Skalierung oder Fensterposition können die Erkennung beeinflussen. Für Netzwerkaufnahme prüfst du Dienstregion und Patch-Unterstützung.
 
 <h2 id="source-and-global-support">Die passende Desktop-Version herunterladen</h2>
 
@@ -8,9 +33,10 @@ Prüfe vor der Installation, ob das Desktop-Release deine Service-Region und dei
 
 <h2 id="maintainer-installation">NotMeter unter Windows installieren</h2>
 
-1. Npcap installieren, sofern es noch nicht vorhanden ist.
-2. Das NotMeter-ZIP über den Downloadlink der Website beziehen.
-3. Das ZIP entpacken und `NotMeter.exe` starten.
+1. Öffne [notmeter.com](https://notmeter.com/) und nutze den verlinkten [Npcap-Installer](https://npcap.com/), falls Npcap noch fehlt.
+2. Lade die NotMeter-ZIP über die verlinkten [Entwickler-Releases](https://github.com/Not4You-Dev/NotMeter-Releases/releases) herunter.
+3. Entpacke die ZIP in einen Ordner, bevor du `NotMeter.exe` startest; halte die enthaltenen Dateien zusammen.
+4. Prüfe Dienstregion und Patch-Unterstützung vor einer Kampfaufnahme. Wenn nichts aufgezeichnet wird, nutze die folgenden Prüfungen; erfolgreiche Installation allein bestätigt keine Kompatibilität.
 
 Npcap ist eine Bibliothek und ein Treiber für Netzwerkaufzeichnung unter Windows. Nutze die in NotMeters Installationsanleitung genannte Version und prüfe die Voraussetzungen. Speichere unerwartete Fehler oder Berechtigungsanfragen für den Support des Werkzeugs.
 
