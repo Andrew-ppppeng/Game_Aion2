@@ -8,7 +8,7 @@ import {itemPropertyMessages, platformMessages} from '@/i18n/platform-messages';
 export function DataUpdated({meta, locale}: {meta: SourceMeta; locale: Locale}) {
   const m = toolMessages[locale];
   if (meta.freshness === 'snapshot') return null;
-  return <p className="tool-source">{meta.freshness === 'stale' && <strong>{m.stale} · </strong>}Global · {meta.region.toUpperCase()} · {m.readAt}: <time dateTime={meta.fetchedAt}>{new Intl.DateTimeFormat(locale, {dateStyle: 'medium', timeStyle: 'short', timeZone: 'UTC'}).format(new Date(meta.fetchedAt))} UTC</time></p>;
+  return <p className="tool-source">{meta.freshness === 'stale' && <strong>{m.stale} · </strong>}{meta.region.toUpperCase()} · {m.readAt}: <time dateTime={meta.fetchedAt}>{new Intl.DateTimeFormat(locale, {dateStyle: 'medium', timeStyle: 'short', timeZone: 'UTC'}).format(new Date(meta.fetchedAt))} UTC</time></p>;
 }
 export function ItemDetails({item, locale, meta, instance = false}: {item: Item; locale: Locale; meta?: SourceMeta | null; instance?: boolean}) {
   const m = toolMessages[locale];

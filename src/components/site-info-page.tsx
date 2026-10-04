@@ -1,6 +1,7 @@
 import type {Locale} from '@/i18n/routing';
 import {Link} from '@/i18n/navigation';
 import {getSiteMessages} from '@/i18n/messages';
+import {site} from '@/lib/site';
 import {AnalyticsPreference} from './analytics-preference';
 import {FeedbackTemplate} from './feedback-template';
 
@@ -24,7 +25,6 @@ const information = {
     corrections: 'Corrections and contact',
     correctionsBody: 'Include the page, region, client or patch date, the statement to correct and an official source or reproducible example. Avoid account secrets or other players’ private information. The template is prepared locally and is not submitted by this site.',
     contact: 'Open feedback contact',
-    unconfigured: 'A feedback contact has not been configured. You can copy this template for the maintainer; nothing is sent automatically.',
     templateLabel: 'Correction template', copy: 'Copy correction template', copied: 'Template copied. No report was sent.', select: 'Template selected. Copy it using your browser.',
     template: 'Page URL:\nRegion (Global / KR / TW):\nClient version or patch date:\nStatement to correct:\nProposed correction:\nSource URL / reproducible steps:\n',
   },
@@ -45,7 +45,7 @@ const information = {
       ['terms-of-use', 'ガイドとツールの利用', 'ガイドを出典付きの起点として使い、資源を消費する前に現在のクライアントと照合してください。当サイトはNCの運営・公認サイトではありません。ゲーム画像や商標は各権利者に帰属します。公開情報ツールはアカウントへのアクセスを提供せず、パスワードや非公開のアカウント情報を入力する必要はありません。'],
     ],
     corrections: '訂正と連絡', correctionsBody: 'ページ、地域、クライアントまたはパッチの日付、訂正箇所、公式出典や再現例を記入してください。アカウントの秘密や他のプレイヤーの非公開情報は含めないでください。テンプレートは端末内で準備し、このサイトからは送信しません。',
-    contact: 'フィードバックの連絡先を開く', unconfigured: '連絡先はまだ設定されていません。管理者に伝えるためにテンプレートをコピーできます。自動送信は行いません。',
+    contact: 'フィードバックの連絡先を開く',
     templateLabel: '訂正テンプレート', copy: '訂正テンプレートをコピー', copied: 'コピーしました。報告は送信していません。', select: 'テンプレートを選択しました。ブラウザでコピーしてください。',
     template: 'ページURL:\n地域（Global / KR / TW）:\nクライアント版またはパッチ日:\n訂正する記述:\n訂正案:\n出典URL / 再現手順:\n',
   },
@@ -66,7 +66,7 @@ const information = {
       ['terms-of-use', 'Uso de guías y herramientas', 'Usa las guías como punto de partida documentado y compara sus instrucciones fechadas con tu cliente antes de gastar recursos. NC no opera ni respalda este sitio. El arte y las marcas pertenecen a sus titulares. Las herramientas de datos públicos no dan acceso a cuentas; no introduzcas contraseñas ni información privada en ellas.'],
     ],
     corrections: 'Correcciones y contacto', correctionsBody: 'Incluye página, región, versión o fecha de parche, afirmación que corregir y fuente oficial o ejemplo reproducible. Evita secretos de cuentas e información privada de otros jugadores. La plantilla se prepara localmente y este sitio no la envía.',
-    contact: 'Abrir contacto para comentarios', unconfigured: 'No hay un contacto configurado. Puedes copiar la plantilla para el responsable; no se envía nada automáticamente.',
+    contact: 'Abrir contacto para comentarios',
     templateLabel: 'Plantilla de corrección', copy: 'Copiar plantilla de corrección', copied: 'Plantilla copiada. No se envió ningún informe.', select: 'Plantilla seleccionada. Cópiala con tu navegador.',
     template: 'URL de la página:\nRegión (Global / KR / TW):\nVersión del cliente o fecha del parche:\nAfirmación que corregir:\nCorrección propuesta:\nURL de fuente / pasos para reproducir:\n',
   },
@@ -87,29 +87,18 @@ const information = {
       ['terms-of-use', 'Guides und Tools verwenden', 'Nutze die Guides als belegten Ausgangspunkt und gleiche datierte Anweisungen vor dem Ressourceneinsatz mit deinem aktuellen Client ab. NC betreibt oder bestätigt diese Website nicht. Spielgrafiken und Marken gehören ihren jeweiligen Rechteinhabern. Öffentliche Datentools gewähren keinen Kontozugang; gib dort keine Passwörter oder privaten Kontodaten ein.'],
     ],
     corrections: 'Korrekturen und Kontakt', correctionsBody: 'Nenne Seite, Region, Clientversion oder Patchdatum, die zu korrigierende Aussage und eine offizielle Quelle oder ein reproduzierbares Beispiel. Vermeide Kontogeheimnisse und private Daten anderer Spieler. Die Vorlage wird lokal vorbereitet und von dieser Website nicht verschickt.',
-    contact: 'Rückmeldungskontakt öffnen', unconfigured: 'Ein Rückmeldungskontakt ist noch nicht eingerichtet. Du kannst die Vorlage für den Betreiber kopieren; nichts wird automatisch gesendet.',
+    contact: 'Rückmeldungskontakt öffnen',
     templateLabel: 'Korrekturvorlage', copy: 'Korrekturvorlage kopieren', copied: 'Vorlage kopiert. Kein Bericht wurde gesendet.', select: 'Vorlage ausgewählt. Kopiere sie mit deinem Browser.',
     template: 'Seiten-URL:\nRegion (Global / KR / TW):\nClientversion oder Patchdatum:\nZu korrigierende Aussage:\nVorgeschlagene Korrektur:\nQuellen-URL / Reproduktionsschritte:\n',
   },
 };
-
-function feedbackContact() {
-  const value = process.env.NEXT_PUBLIC_FEEDBACK_URL?.trim();
-  if (!value) return undefined;
-  try {
-    const url = new URL(value);
-    if (url.protocol === 'https:' && url.hostname && !url.username && !url.password) return url.href;
-    if (url.protocol === 'mailto:' && url.pathname.includes('@')) return url.href;
-  } catch {}
-  return undefined;
-}
 
 export function SiteInfoPage({locale, slug}: {locale: Locale; slug: 'privacy-policy' | 'terms-of-service'}) {
   const m = getSiteMessages(locale);
   const info = information[locale];
   const privacy = slug === 'privacy-policy';
   const title = privacy ? m.footer.privacyPolicy : m.footer.termsOfService;
-  const contact = feedbackContact();
+  const contact = `mailto:${site.feedbackEmail}`;
   return <article className="article-page site-info-page" data-page-status="site-info">
     <nav className="breadcrumbs" aria-label={m.ui.navLabel}><Link href="/">{m.ui.home}</Link><span> / </span><span>{title}</span></nav>
     <header className="article-header"><span className="eyebrow">AION 2 Wiki</span><h1>{title}</h1><p>{privacy ? info.privacySummary : info.termsSummary}</p></header>
@@ -120,7 +109,7 @@ export function SiteInfoPage({locale, slug}: {locale: Locale; slug: 'privacy-pol
       </section>)}
       <section>
         <h2 id="corrections">{info.corrections}</h2><p>{info.correctionsBody}</p>
-        {contact ? <p><a href={contact} rel="noopener noreferrer">{info.contact}</a></p> : <p>{info.unconfigured}</p>}
+        <p>{info.contact}: <a href={contact} data-feedback-contact>{site.feedbackEmail}</a></p>
         <FeedbackTemplate template={info.template} label={info.templateLabel} copyLabel={info.copy} copiedLabel={info.copied} selectLabel={info.select} />
       </section>
     </div>

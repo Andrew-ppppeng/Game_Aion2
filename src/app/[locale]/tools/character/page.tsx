@@ -38,7 +38,7 @@ export default async function CharacterPage({params, searchParams}: Props) {
   const metadata = Object.fromEntries(regions.map((region) => [region, snapshotMeta(region, locale).data!])) as Parameters<typeof CharacterTool>[0]['metadata'];
   const candidates = curatedIds.map((id) => snapshotItem(id, locale).data!);
   return <div className="tools-page"><nav className="breadcrumbs"><Link href="/">{getSiteMessages(locale).ui.home}</Link><span> / </span><span>{m.characterTitle}</span></nav>
-    <header className="article-header"><span className="eyebrow">Global</span><h1>{m.characterTitle}</h1><p>{m.characterIntro}</p></header>
+    <header className="article-header"><h1>{m.characterTitle}</h1><p>{m.characterIntro}</p></header>
     <CharacterTool locale={locale} metadata={metadata} candidates={candidates} initialCharacter={initialCharacter} />
   </div>;
 }

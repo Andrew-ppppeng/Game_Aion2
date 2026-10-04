@@ -17,6 +17,7 @@ const page = await context.newPage();
 const errors = [];
 const checks = [];
 const starterEditions = {'cleric-build': 'TW', chanter: 'TW', ranger: 'TW', gladiator: 'KR/TW', spiritmaster: 'KR/TW'};
+const feedbackPlaceholder = /has not been configured|No hay un contacto configurado|連絡先はまだ設定|noch nicht eingerichtet/i;
 let failure = null;
 page.on('pageerror', (error) => errors.push(error.message));
 const url = (locale, path = '') => `${base}${locale === 'en' ? '' : `/${locale}`}${path ? `/${path}` : '/'}`;
@@ -115,6 +116,11 @@ try {
     for (const legal of ['privacy-policy', 'terms-of-service']) {
       await page.goto(url(locale, legal), {waitUntil: 'networkidle'});
       await expect(page.locator('article')).toHaveAttribute('data-page-status', 'site-info');
+      assert.doesNotMatch(await page.locator('body').innerText(), feedbackPlaceholder, `${locale}/${legal}: no public contact placeholder`);
+      const contact = page.locator('#corrections').locator('..').locator('a[data-feedback-contact]');
+      await expect(contact).toHaveCount(1);
+      await expect(contact).toHaveAttribute('href', 'mailto:feedback@aion2wiki.space');
+      await expect(contact).toContainText('feedback@aion2wiki.space');
       const template = page.locator('.feedback-template textarea');
       await expect(template).toHaveAttribute('readonly', '');
       assert.ok((await template.inputValue()).length > 40);

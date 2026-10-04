@@ -73,7 +73,7 @@ export async function ArticlePage({locale, slug}: {locale: Locale; slug: string}
     <header className="article-header" id="article-top">
       <span className="eyebrow">{m.categories[topic.category]}</span>
       <h1>{metadata.title}</h1>
-      <div className="article-meta"><span data-article-edition>{data.edition || 'Global'}</span><span>{a.checkedAt}: <time dateTime={data.checkedAt}>{reviewed}</time></span><Link href="/terms-of-service#editorial-policy" data-article-author>{a.author}</Link></div>
+      <div className="article-meta">{data.edition && data.edition !== 'Global' && <span data-article-edition>{data.edition}</span>}<span>{a.checkedAt}: <time dateTime={data.checkedAt}>{reviewed}</time></span><Link href="/terms-of-service#editorial-policy" data-article-author>{a.author}</Link></div>
       <div className="article-answer"><span>{a.quickAnswer}</span><p>{metadata.quickAnswer}</p></div>
     </header>
     {slug === 'database' && <Catalogue locale={locale} entries={catalogue(locale)} />}

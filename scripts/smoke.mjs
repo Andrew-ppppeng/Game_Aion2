@@ -13,6 +13,7 @@ assert.equal(new Set(slugs).size, slugs.length, 'Unique published topic slugs');
 const existingTopics = ['guide', 'gathering', 'leveling', 'classes', 'chanter', 'tier-list', 'gladiator', 'ranger', 'spiritmaster', 'races', 'map', 'code', 'character-creation', 'presets', 'pvp', 'spacetime-rift', 'builds', 'cleric-build', 'macro-guide', 'twitch-drops', 'server', 'maintenance', 'server-transfer', 'steam', 'download', 'monetization', 'notmeter', 'player-count'];
 for (const slug of existingTopics) assert.ok(slugs.includes(slug), `Existing topic retained: ${slug}`);
 const path = (locale, slug = '') => `${locale === 'en' ? '' : `/${locale}`}${slug ? `/${slug}` : ''}` || '/';
+const feedbackPlaceholder = /has not been configured|No hay un contacto configurado|連絡先はまだ設定|noch nicht eingerichtet/i;
 let checks = 0;
 
 async function request(pathname, options) {
@@ -68,6 +69,12 @@ for (const locale of locales) {
       const required = slug === 'privacy-policy' ? ['local-data', 'usage-statistics', 'privacy-controls', 'requests-and-services', 'external-services', 'corrections'] : ['editorial-policy', 'maintenance-policy', 'terms-of-use', 'corrections'];
       for (const section of required) assert.ok(html.includes(`id="${section}"`), `${locale}/${slug}: complete site information ${section}`);
       assert.doesNotMatch(html, /class="[^"]*placeholder-content/, `${locale}/${slug}: no placeholder page`);
+      const contacts = [...html.matchAll(/<a\b(?=[^>]*\bdata-feedback-contact(?:[=\s>]))[^>]*>([\s\S]*?)<\/a>/g)];
+      assert.equal(contacts.length, 1, `${locale}/${slug}: one feedback contact`);
+      assert.equal(contacts[0][0].match(/\bhref="([^"]+)"/)?.[1], 'mailto:feedback@aion2wiki.space', `${locale}/${slug}: real feedback email target`);
+      assert.ok(contacts[0][1].replace(/<[^>]+>/g, '').includes('feedback@aion2wiki.space'), `${locale}/${slug}: feedback email visible`);
+      const publicText = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '').replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, '').replace(/<[^>]+>/g, '');
+      assert.doesNotMatch(publicText, feedbackPlaceholder, `${locale}/${slug}: no public contact placeholder`);
     }
     assert.doesNotMatch(html, /id="(?:article-sources|sources-title)"|class="(?:guide-asset-credit|source-context)"|href="#article-sources"/, `${locale}/${slug} research provenance stays internal`);
     assert.match(html, new RegExp(`<html\\b[^>]*\\blang="${locale}"`));

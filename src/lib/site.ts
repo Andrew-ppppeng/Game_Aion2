@@ -3,6 +3,7 @@ import {routing} from '@/i18n/routing';
 
 export const site = {
   name: 'AION 2 Wiki',
+  feedbackEmail: 'feedback@aion2wiki.space',
   url: (process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000').replace(/\/$/, ''),
   official: 'https://aion2.plaync.com/en-us/',
   steam: 'https://store.steampowered.com/app/3393110/AION_2/',

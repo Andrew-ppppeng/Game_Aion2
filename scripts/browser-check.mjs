@@ -328,16 +328,22 @@ try {
     await page.screenshot({path: fileURLToPath(new URL(`article-${locale}-${slug}-${width}-fold.png`, output))});
   }
 
+  // Keep full-page image screenshots separate from the clock-driven interactions.
+  const screenshotPage = await browser.newPage({reducedMotion: 'reduce'});
+  screenshotPage.on('pageerror', (error) => failures.push(error.message));
+  screenshotPage.on('console', (message) => {if (message.type() === 'error') failures.push(message.text());});
+  screenshotPage.on('response', (response) => {if (response.status() >= 400 && response.url().startsWith(base)) failures.push(`${response.status()} ${response.url()}`);});
   for (const [name, width, height] of [['desktop', 1440, 1000], ['mobile', 390, 844]]) {
-    await page.setViewportSize({width, height});
-    await page.goto(base, {waitUntil: 'networkidle'});
-    await page.locator('.about-visual').scrollIntoViewIfNeeded();
-    await expect(page.locator('.about-visual img')).toBeVisible();
-    await page.waitForFunction(() => [...document.images].every((image) => image.complete && image.naturalWidth > 0));
-    await page.evaluate(() => window.scrollTo(0, 0));
-    await page.screenshot({path: fileURLToPath(new URL(`home-${name}.png`, output)), fullPage: true});
-    await page.screenshot({path: fileURLToPath(new URL(`home-${name}-fold.png`, output))});
+    await screenshotPage.setViewportSize({width, height});
+    await screenshotPage.goto(base, {waitUntil: 'networkidle'});
+    await screenshotPage.locator('.about-visual').scrollIntoViewIfNeeded();
+    await expect(screenshotPage.locator('.about-visual img')).toBeVisible();
+    await screenshotPage.waitForFunction(() => [...document.images].every((image) => image.complete && image.naturalWidth > 0));
+    await screenshotPage.evaluate(() => window.scrollTo(0, 0));
+    await screenshotPage.screenshot({path: fileURLToPath(new URL(`home-${name}.png`, output)), fullPage: true});
+    await screenshotPage.screenshot({path: fileURLToPath(new URL(`home-${name}-fold.png`, output))});
   }
+  await screenshotPage.close();
   assert.deepEqual(failures, [], 'No runtime, console, or local network errors');
   console.log(`PASS: ${slugs.length * 4} enriched articles; responsive images, diagrams, class finder, checklist persistence/reset/blocked storage, faction/region filtering, zoom keyboard/focus, next steps and mobile contents; language query/hash, coupon behavior and no runtime errors.`);
 } finally {

@@ -43,7 +43,8 @@ export async function GET(_request: Request, {params}: Props) {
   if (!article && !character) return new Response('Not found', {status: 404});
   const m = getSiteMessages(locale);
   const title = article ? article.metadata.title : toolMessages[locale].characterTitle;
-  const edition = article?.data.edition || 'Global';
+  const edition = article?.data.edition;
+  const cardDetails = [edition && edition !== 'Global' ? edition : null, locale.toUpperCase(), slug].filter(Boolean).join(' · ');
   const label = topic ? m.categories[topic.category] : toolMessages[locale].characterTitle;
   const featured = article && Object.values(article.metadata.visuals || {}).find((visual) => visual.assetId)?.assetId;
   const asset = assets.find(({id}) => id === (featured || (topic && fallbackAssets[topic.category]) || 'class-gladiator'))!;
@@ -61,7 +62,7 @@ export async function GET(_request: Request, {params}: Props) {
           <div style={{display: 'flex', fontSize: 24, color: '#aec1d7'}}>{label}</div>
           <div style={{display: 'flex', fontSize: locale === 'ja' ? 48 : 58, lineHeight: 1.15, fontWeight: locale === 'ja' ? 600 : 400, letterSpacing: '-1px'}}>{title}</div>
         </div>
-        <div style={{display: 'flex', fontSize: 22, color: '#aec1d7'}}>{edition} · {locale.toUpperCase()} · {slug}</div>
+        <div style={{display: 'flex', fontSize: 22, color: '#aec1d7'}}>{cardDetails}</div>
       </div>
       {/* Already sourced game art or a real guide capture; never fabricated UI. */}
       {/* eslint-disable-next-line @next/next/no-img-element */}

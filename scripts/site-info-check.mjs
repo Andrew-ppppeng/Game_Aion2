@@ -11,6 +11,7 @@ const context = await browser.newContext({viewport: {width: 390, height: 844}, r
 await context.grantPermissions(['clipboard-read', 'clipboard-write'], {origin: base});
 const page = await context.newPage();
 const errors = [];
+const feedbackPlaceholder = /has not been configured|No hay un contacto configurado|連絡先はまだ設定|noch nicht eingerichtet/i;
 page.on('pageerror', (error) => errors.push(error.message));
 await mkdir(new URL('../.qa/', import.meta.url), {recursive: true});
 let checked = 0;
@@ -25,7 +26,12 @@ try {
       assert.match(await page.locator('meta[name="robots"]').getAttribute('content'), /noindex/, `${locale}/${slug}: noindex retained`);
       const body = await page.locator('main').innerText();
       assert.doesNotMatch(body, /\?{3,}|\uFFFD|[A-Za-z]\?[A-Za-z]/, `${locale}/${slug}: translated text encoding`);
+      assert.doesNotMatch(await page.locator('body').innerText(), feedbackPlaceholder, `${locale}/${slug}: no public contact placeholder`);
       await expect(page.locator('#corrections')).toHaveCount(1);
+      const contact = page.locator('#corrections').locator('..').locator('a[data-feedback-contact]');
+      await expect(contact).toHaveCount(1);
+      await expect(contact).toHaveAttribute('href', 'mailto:feedback@aion2wiki.space');
+      await expect(contact).toContainText('feedback@aion2wiki.space');
       if (slug === 'terms-of-service') await expect(page.locator('#editorial-policy')).toHaveCount(1);
       const template = page.locator('.feedback-template textarea');
       const value = await template.inputValue();

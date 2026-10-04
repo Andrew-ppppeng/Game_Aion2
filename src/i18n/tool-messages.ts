@@ -2,7 +2,7 @@ import type {Locale} from './routing';
 
 const en = {
   retry: 'Try again',
-  characterTitle: 'AION 2 character lookup', characterIntro: 'Find a public Global character, inspect equipped items, and compare fixed item attributes.',
+  characterTitle: 'AION 2 character lookup', characterIntro: 'Find a public character, inspect equipped items, and compare fixed item attributes.',
   openCharacter: 'Look up your character', region: 'Game region', allServers: 'All servers', server: 'Server', allClasses: 'All classes', class: 'Class', name: 'Character name', search: 'Search', loading: 'Loading…',
   empty: 'No matching characters.', previous: 'Previous', next: 'Next', select: 'View character', level: 'Level', power: 'Combat power', guild: 'Legion',
   equipment: 'Equipped items', inspect: 'Inspect', skills: 'Skill configuration', learned: 'Acquired', equipped: 'Equipped', passive: 'Passive / DP', unknown: 'Not provided',
@@ -12,7 +12,7 @@ const en = {
   comparisonNote: 'Compare base and enhancement attributes at your selected levels. Random attributes appear in the item details.',
   notEligible: 'This candidate has an unmet class or level requirement.', sameCategory: 'Choose an item from the same equipment category.',
   nextStep: 'Your next check', upgradeCheck: 'Compare enhancement attributes before budgeting materials.', growthCheck: 'Review uncompleted growth panels with the builds guide.',
-  itemsTitle: 'Global equipment examples', itemsNote: 'Compare equipment attributes, then choose items that match your class and level.',
+  itemsTitle: 'Equipment examples', itemsNote: 'Compare equipment attributes, then choose items that match your class and level.',
   moreItems: 'More equipment examples', requiredLevel: 'Required character level', itemLevel: 'Item level', maxEnhancement: 'Enhancement limit',
   baseAttributes: 'Base attributes and enhancement bonus', rolled: 'Actual item attributes', pool: 'Random attribute candidates', fixedSub: 'Fixed secondary attributes', rolls: 'Attribute slots',
   sockets: 'Magicstone / godstone slots', sources: 'Obtained from', details: 'Item details',
@@ -31,7 +31,7 @@ const en = {
 type Messages = {[K in keyof typeof en]: string};
 const ja: Messages = {
   retry: '再試行',
-  characterTitle: 'AION2キャラクター検索', characterIntro: 'Global版の公開キャラクターを検索し、装備の詳細と固定属性の差を確認できます。',
+  characterTitle: 'AION2キャラクター検索', characterIntro: '公開キャラクターを検索し、装備の詳細と固定属性の差を確認できます。',
   openCharacter: 'キャラクターを検索', region: 'ゲーム地域', allServers: '全サーバー', server: 'サーバー', allClasses: '全クラス', class: 'クラス', name: 'キャラクター名', search: '検索', loading: '読み込み中…',
   empty: '該当するキャラクターはありません。', previous: '前へ', next: '次へ', select: 'キャラクターを見る', level: 'レベル', power: '戦闘力', guild: 'レギオン',
   equipment: '装備中のアイテム', inspect: '詳細を見る', skills: 'スキル構成', learned: '習得済み', equipped: '装備済み', passive: 'パッシブ / DP', unknown: '情報なし',
@@ -41,7 +41,7 @@ const ja: Messages = {
   comparisonNote: '選択した強化レベルの基本属性と強化追加値を比較できます。ランダム属性はアイテム詳細に表示されます。',
   notEligible: '候補のクラスまたはレベル条件を満たしていません。', sameCategory: '同じ装備カテゴリから選んでください。',
   nextStep: '次に確認すること', upgradeCheck: '素材の予算を立てる前に、強化属性を比較しましょう。', growthCheck: 'ビルドガイドと未完了の成長パネルを確認しましょう。',
-  itemsTitle: 'Global装備の例', itemsNote: '装備属性を比較し、クラスとレベルに合うアイテムを選びましょう。',
+  itemsTitle: '装備の例', itemsNote: '装備属性を比較し、クラスとレベルに合うアイテムを選びましょう。',
   moreItems: '他の装備例', requiredLevel: '装備に必要なレベル', itemLevel: 'アイテムレベル', maxEnhancement: '強化上限',
   baseAttributes: '基本属性と強化追加値', rolled: '実際のアイテム属性', pool: 'ランダム属性の候補', fixedSub: '固定の追加属性', rolls: '属性枠',
   sockets: '魔石 / 神石のスロット', sources: '入手方法', details: 'アイテム詳細',
@@ -59,7 +59,7 @@ const ja: Messages = {
 };
 const es: Messages = {
   retry: 'Reintentar',
-  characterTitle: 'Buscador de personajes de AION 2', characterIntro: 'Busca un personaje público de Global, examina su equipo y compara atributos fijos.',
+  characterTitle: 'Buscador de personajes de AION 2', characterIntro: 'Busca un personaje público, examina su equipo y compara atributos fijos.',
   openCharacter: 'Buscar tu personaje', region: 'Región del juego', allServers: 'Todos los servidores', server: 'Servidor', allClasses: 'Todas las clases', class: 'Clase', name: 'Nombre del personaje', search: 'Buscar', loading: 'Cargando…',
   empty: 'No hay personajes coincidentes.', previous: 'Anterior', next: 'Siguiente', select: 'Ver personaje', level: 'Nivel', power: 'Poder de combate', guild: 'Legión',
   equipment: 'Objetos equipados', inspect: 'Examinar', skills: 'Configuración de habilidades', learned: 'Adquirida', equipped: 'Equipada', passive: 'Pasiva / DP', unknown: 'Sin información',
@@ -69,7 +69,7 @@ const es: Messages = {
   comparisonNote: 'Compara los atributos base y de mejora en los niveles seleccionados. Los atributos aleatorios aparecen en los detalles del objeto.',
   notEligible: 'No se cumple un requisito de clase o nivel del candidato.', sameCategory: 'Elige un objeto de la misma categoría de equipo.',
   nextStep: 'Tu siguiente comprobación', upgradeCheck: 'Compara los atributos de mejora antes de presupuestar materiales.', growthCheck: 'Revisa los paneles pendientes con la guía de builds.',
-  itemsTitle: 'Ejemplos de equipo Global', itemsNote: 'Compara los atributos y elige objetos adecuados para tu clase y nivel.',
+  itemsTitle: 'Ejemplos de equipo', itemsNote: 'Compara los atributos y elige objetos adecuados para tu clase y nivel.',
   moreItems: 'Más ejemplos de equipo', requiredLevel: 'Nivel de personaje requerido', itemLevel: 'Nivel del objeto', maxEnhancement: 'Límite de mejora',
   baseAttributes: 'Atributos base y bonificación de mejora', rolled: 'Atributos reales del objeto', pool: 'Posibles atributos aleatorios', fixedSub: 'Atributos secundarios fijos', rolls: 'Espacios de atributos',
   sockets: 'Ranuras de piedras mágicas / divinas', sources: 'Obtención', details: 'Detalles del objeto',
@@ -87,7 +87,7 @@ const es: Messages = {
 };
 const de: Messages = {
   retry: 'Erneut versuchen',
-  characterTitle: 'AION 2 Charaktersuche', characterIntro: 'Suche einen öffentlichen Global-Charakter, prüfe seine Ausrüstung und vergleiche feste Attribute.',
+  characterTitle: 'AION 2 Charaktersuche', characterIntro: 'Suche einen öffentlichen Charakter, prüfe seine Ausrüstung und vergleiche feste Attribute.',
   openCharacter: 'Deinen Charakter suchen', region: 'Spielregion', allServers: 'Alle Server', server: 'Server', allClasses: 'Alle Klassen', class: 'Klasse', name: 'Charaktername', search: 'Suchen', loading: 'Wird geladen…',
   empty: 'Keine passenden Charaktere.', previous: 'Zurück', next: 'Weiter', select: 'Charakter ansehen', level: 'Stufe', power: 'Kampfkraft', guild: 'Legion',
   equipment: 'Angelegte Ausrüstung', inspect: 'Prüfen', skills: 'Fertigkeiten', learned: 'Erworben', equipped: 'Angelegt', passive: 'Passiv / DP', unknown: 'Nicht angegeben',
@@ -97,7 +97,7 @@ const de: Messages = {
   comparisonNote: 'Vergleiche Grundattribute und Verstärkungswerte auf den gewählten Stufen. Zufallsattribute stehen in den Gegenstandsdetails.',
   notEligible: 'Eine Klassen- oder Stufenanforderung wird nicht erfüllt.', sameCategory: 'Wähle einen Gegenstand derselben Ausrüstungskategorie.',
   nextStep: 'Als Nächstes prüfen', upgradeCheck: 'Vergleiche Verstärkungswerte, bevor du Materialien einplanst.', growthCheck: 'Prüfe offene Fortschrittspanels mit dem Builds-Guide.',
-  itemsTitle: 'Global-Ausrüstungsbeispiele', itemsNote: 'Vergleiche Attribute und wähle Gegenstände passend zu deiner Klasse und Stufe.',
+  itemsTitle: 'Ausrüstungsbeispiele', itemsNote: 'Vergleiche Attribute und wähle Gegenstände passend zu deiner Klasse und Stufe.',
   moreItems: 'Weitere Ausrüstungsbeispiele', requiredLevel: 'Benötigte Charakterstufe', itemLevel: 'Gegenstandsstufe', maxEnhancement: 'Verstärkungsgrenze',
   baseAttributes: 'Grundattribute und Verstärkungsbonus', rolled: 'Tatsächliche Gegenstandsattribute', pool: 'Mögliche Zufallsattribute', fixedSub: 'Feste Zusatzattribute', rolls: 'Attributplätze',
   sockets: 'Manastein- / Gottsteinplätze', sources: 'Erhältlich durch', details: 'Gegenstandsdetails',

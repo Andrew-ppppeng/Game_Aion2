@@ -95,7 +95,7 @@ npm run test:performance
 
 设置服务端 `ANALYTICS_READ_TOKEN` 后，可用 `npm run analytics:report` 查看保护接口的汇总，默认显示今日 UTC；指定日期使用 `npm run analytics:report -- YYYY-MM-DD`，范围使用 `--from YYYY-MM-DD --to YYYY-MM-DD`。统计包含页面浏览、下一篇点击、工具使用/保存、LCP/INP/CLS 直方图的 p75 区间估计，以及首访后 1–7 天再次访问的浏览器计数。清除存储、切换设备或禁用统计会影响计数；它不是人数统计。回访率等首访 UTC 日期结束后再满 7 天才纳入报表，INP 需要用户互动，不能把没有样本写成零。
 
-`NEXT_PUBLIC_FEEDBACK_URL` 可设置真实的 HTTPS 或 mailto 联系地址。未设置时，纠错页只提供本地复制模板，明确没有发送报告或配置联系地址。更新日文字段后，可运行 `scripts/update-share-font.py` 维护分享图字体子集（维护脚本需要 fontTools；站点运行不需要 Python）。
+反馈邮箱为 `feedback@aion2wiki.space`，统一配置在 `src/lib/site.ts`；四语政策页显示邮箱及邮件链接，页脚纠错入口和复制模板保留。邮箱修改后重新构建，不依赖额外环境变量。更新日文字段后，可运行 `scripts/update-share-font.py` 维护分享图字体子集（维护脚本需要 fontTools；站点运行不需要 Python）。
 
 原有资料、Discord导出、研究记录、主题文件和favicon原件均保留。主页所展示的维护日期为资料快照，不代表实时服务器状态。
 

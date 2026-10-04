@@ -32,7 +32,6 @@ export function SiteShell({locale, children}: {locale: Locale; children: React.R
         </Link>
         <div className="header-tagline"><span className="header-divider" />{m.ui.community}</div>
         <div className="header-actions">
-          <span className="edition-label"><span aria-hidden="true" />{m.ui.edition}</span>
           <GlobalSearch entries={searchIndex(locale)} locale={locale} />
           <LanguageSwitcher />
           <a href={site.steam} className="header-game-link" target="_blank" rel="noopener noreferrer">{m.footer.playGame}<ArrowUpRight size={15} aria-hidden="true" /></a>
