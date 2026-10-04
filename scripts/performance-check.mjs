@@ -43,6 +43,7 @@ try {
     const samples = [];
     for (let sample = 0; sample < count; sample++) {
       const context = await browser.newContext({viewport: {width: 390, height: 844}, reducedMotion: 'reduce'});
+      if (process.env.QA_ANALYTICS_OPT_OUT === 'true') await context.addInitScript(() => localStorage.setItem('aion2-analytics-opt-out-v1', 'true'));
       const fixture = await installGameFixtures(context);
       const page = await context.newPage();
       const errors = [];
@@ -89,6 +90,9 @@ try {
       const sum = (type) => network.filter((entry) => !type || entry.type === type).reduce((total, entry) => total + entry.bytes, 0);
       load.htmlBytes = sum('Document');
       load.scriptBytes = sum('Script');
+      load.firstPartyScriptBytes = [...transfers.values()].filter((r) => r.type === 'Script' && new URL(r.url).origin === new URL(url).origin).reduce((total, r) => total + r.bytes, 0);
+      load.thirdPartyScriptBytes = load.scriptBytes - load.firstPartyScriptBytes;
+      load.largestScripts = [...transfers.values()].filter((r) => r.type === 'Script').toSorted((a, b) => b.bytes - a.bytes).slice(0, 5).map(({url, bytes}) => ({url, bytes}));
       load.fixtureResponseBytes = fixture.fulfilled.reduce((total, entry) => total + entry.bytes, 0);
       // Intercepted responses can report zero CDP wire bytes. Count the archived
       // JSON payload in that case so mocked tools do not get a free byte budget.
@@ -133,7 +137,7 @@ try {
   const output = {
     measuredAtUtc: new Date().toISOString(), baseUrl: base,
     environment: {appVersion: packageInfo.version, nextVersion: packageInfo.dependencies.next, node: process.version, chrome: browser.version(), executablePath: executablePath || 'Playwright Chromium', gitHead, buildId},
-    conditions: {viewport: '390x844', coldCache: true, latencyMs: 150, downloadBytesPerSecond: 200000, uploadBytesPerSecond: 93750, cpuSlowdown: 4, samples: count, aggregation: 'median per URL', paths},
+    conditions: {viewport: '390x844', coldCache: true, latencyMs: 150, downloadBytesPerSecond: 200000, uploadBytesPerSecond: 93750, cpuSlowdown: 4, samples: count, aggregation: 'median per URL', paths, analyticsOptOut: process.env.QA_ANALYTICS_OPT_OUT === 'true'},
     measurementNotes: ['CDP encoded transfer bytes include HTML and all completed initial-load resources.', 'Resource Timing including the navigation is retained as a second transfer measurement.', 'Fixture game API responses avoid live upstream queries. If CDP reports zero wire bytes for an intercepted response, its recorded JSON payload bytes are added to totalBytes as fixtureTransferAdjustmentBytes.', 'Scripted Event Timing is a laboratory interaction measurement, not real-user INP. readyMs includes Playwright and response waiting; it has no INP interpretation.'],
     thresholds: limits, results, failures, passed: failures.length === 0,
   };

@@ -4,6 +4,7 @@ import type {Locale} from '@/i18n/routing';
 import {toolMessages} from '@/i18n/tool-messages';
 import {budget} from '@/lib/aion2/model';
 import {useStored} from './local-store';
+import {StorageNotice} from '../platform/item-actions';
 
 type Row = {name: string; quantity: string; owned: string; price: string};
 type Plan = {mode: 'craft' | 'enhance'; goal: string; yield: string; fee: string; rows: Row[]};
@@ -53,6 +54,6 @@ export function BudgetPlanner({locale}: {locale: Locale}) {
       <div className="tool-table-scroll"><table><thead><tr><th>{m.material}</th><th>{m.required}</th><th>{m.missing}</th><th>Kina</th></tr></thead>
         <tbody>{result.rows.map((r, i) => <tr key={i}><td>{plan.rows[i].name}</td><td>{format.format(r.required)}</td><td>{format.format(r.missing)}</td><td>{format.format(r.cost)}</td></tr>)}</tbody></table></div>
       <p className="budget-total">{m.total}: <strong>{format.format(result.total)}</strong></p></div>}
-    <p className="tool-note">{m.budgetSaved}</p>
+    <StorageNotice locale={locale} keys={['aion2-budget-v1']} />
   </section>;
 }

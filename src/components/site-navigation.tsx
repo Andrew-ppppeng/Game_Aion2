@@ -5,7 +5,9 @@ import {
   ArrowUpRight, BookOpen, ChevronDown, Coins, Download, Gift, Home, Layers3, ChartNoAxesCombined,
   Map, Menu, Monitor, Server, Sparkles, Swords, Ticket, WandSparkles, X, Flag, Keyboard, UserRound, Calculator, ListChecks, Feather, Database, Globe2,
 } from 'lucide-react';
-import {useTranslations} from 'next-intl';
+import {useLocale, useTranslations} from 'next-intl';
+import type {Locale} from '@/i18n/routing';
+import {platformMessages} from '@/i18n/platform-messages';
 import {Link, usePathname} from '@/i18n/navigation';
 import type {CategoryId, TopicSlug} from '@/lib/topics';
 import {CouponCard} from './coupon-card';
@@ -41,6 +43,7 @@ const icons = {
 const NavigationContent = memo(function NavigationContent({groups, onNavigate}: {groups: NavGroup[]; onNavigate?: () => void}) {
   const pathname = usePathname();
   const t = useTranslations('ui');
+  const p = platformMessages[useLocale() as Locale];
 
   return (
     <>
@@ -51,6 +54,8 @@ const NavigationContent = memo(function NavigationContent({groups, onNavigate}: 
             <span className="nav-active-dot" aria-hidden="true" />
           </Link>
           <p className="nav-overline">{t('playerTools')}</p>
+          <Link className={`nav-single ${pathname === '/tools' ? 'active' : ''}`} href="/tools" onClick={onNavigate}><Layers3 size={16} aria-hidden="true" /><span>{p.tools}</span></Link>
+          <Link className={`nav-single ${pathname === '/workspace' ? 'active' : ''}`} href="/workspace" onClick={onNavigate}><BookmarkIcon /><span>{p.workspace}</span></Link>
           <Link className={`nav-single ${pathname === '/tools/character' ? 'active' : ''}`} href="/tools/character" aria-current={pathname === '/tools/character' ? 'page' : undefined} onClick={onNavigate}><UserRound size={16} aria-hidden="true" /><span>{t('characterLookup')}</span></Link>
           <Link className="nav-single" href="/monetization#material-budget" onClick={onNavigate}><Calculator size={16} aria-hidden="true" /><span>{t('materialBudget')}</span></Link>
           <Link className="nav-single" href="/guide#starter-checklist" onClick={onNavigate}><ListChecks size={16} aria-hidden="true" /><span>{t('starterChecklist')}</span></Link>
@@ -87,6 +92,7 @@ const NavigationContent = memo(function NavigationContent({groups, onNavigate}: 
     </>
   );
 });
+function BookmarkIcon() {return <ListChecks size={16} aria-hidden="true" />;}
 
 export function SiteNavigation({groups, gameTitle}: {groups: NavGroup[]; gameTitle: string}) {
   const t = useTranslations('ui');

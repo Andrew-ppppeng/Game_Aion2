@@ -4,6 +4,7 @@ import {cached, limited} from './cache';
 import {curatedIds, officialLocales, snapshotItem, snapshotMeta} from './data';
 import {characterId, DataError, positiveInteger, readRegion, validateCharacterInfo, validateEquipment, validateItem, validateSearch} from './model';
 import type {ApiResult, CharacterData, CharacterInfo, EquipmentData, GameLocale, Item, MetaData, Region, SearchData, SourceMeta} from './types';
+import {validateBoard, type BoardDetail} from './nodes';
 
 type Context = {region: Region; locale: GameLocale; lang: string};
 export function context(params: URLSearchParams): Context {
@@ -105,6 +106,17 @@ export async function getEquipped(id: string, slot: string, params: URLSearchPar
   return cached(key(source), minutes(15), minutes(45), async () => {
     const value = await upstream<Item>(source, ctx);
     return {...value, data: validateItem(value.data, equipped.id)};
+  });
+}
+export async function getBoard(id: string, board: string, params: URLSearchParams): Promise<ApiResult<BoardDetail>> {
+  const ctx = context(params);
+  const boardId = positiveInteger(board, 1000);
+  const character = await getCharacter(id, params);
+  if (!character.data?.info.daevanion?.boardList.some((b) => b.id === boardId)) throw new DataError('invalid-input', 400);
+  const source = url('/api/character/daevanion/detail', ctx, {characterId: characterId(id), serverId: positiveInteger(params.get('serverId')), boardId});
+  return cached(key(source), minutes(15), minutes(45), async () => {
+    const value = await upstream<BoardDetail>(source, ctx);
+    return {...value, data: validateBoard(value.data, boardId)};
   });
 }
 export async function getItem(id: string, params: URLSearchParams): Promise<ApiResult<Item>> {

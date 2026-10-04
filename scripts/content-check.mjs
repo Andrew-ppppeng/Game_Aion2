@@ -8,7 +8,8 @@ const plan = await json('content-topics.json');
 const keywords = plan.categories.flatMap(({keywords}) => keywords);
 const slugs = keywords.map((keyword) => keyword.replace(/^aion 2 /, '').replaceAll(' ', '-'));
 const locales = (process.env.CONTENT_LOCALES || 'en,ja,es,de').split(',');
-const publicToolPaths = new Set(['tools/character']);
+const equipmentIds = (await json('src/content/game-data/items.json')).map((record) => record.id);
+const publicToolPaths = new Set(['tools', 'tools/character', 'tools/compare', 'tools/budget', 'tools/calendar', 'workspace', ...equipmentIds.map((id) => `database/items/${id}`)]);
 assert.equal(locales[0], 'en', 'English is the reference locale');
 assert.equal(new Set(plan.categories.map(({category}) => category)).size, plan.categories.length, 'Unique published categories');
 for (const {category, keywords: groupKeywords} of plan.categories) {

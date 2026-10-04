@@ -5,6 +5,7 @@ import {toolMessages} from '@/i18n/tool-messages';
 import {calendarFile, eventStatus} from '@/lib/aion2/model';
 import type {EventRecord} from '@/lib/aion2/types';
 import {useClock, useStored} from './local-store';
+import {StorageNotice} from '../platform/item-actions';
 
 const noop = () => () => {};
 const isIds = (value: unknown): value is string[] => Array.isArray(value) && value.every((v) => typeof v === 'string');
@@ -50,5 +51,6 @@ export function EventTimers({events, locale, initialNow}: {events: EventRecord[]
     })}
     {events.some((e) => e.topics.includes('twitch-drops')) && <p className="tool-note">{m.claimNote}</p>}
     {error && <p role="alert">{error}</p>}
+    <StorageNotice locale={locale} keys={['aion2-timezone-v1', 'aion2-event-reminders-v1']} />
   </section>;
 }

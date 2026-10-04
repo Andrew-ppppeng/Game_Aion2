@@ -8,6 +8,9 @@ import {isArticlePublished} from '@/lib/articles';
 import {officialLinks, site} from '@/lib/site';
 import {LanguageSwitcher} from './language-switcher';
 import {SiteNavigation} from './site-navigation';
+import {GlobalSearch} from './platform/global-search';
+import {searchIndex} from '@/lib/aion2/catalogue';
+import {platformMessages} from '@/i18n/platform-messages';
 
 export function SiteShell({locale, children}: {locale: Locale; children: React.ReactNode}) {
   const m = getSiteMessages(locale);
@@ -30,6 +33,7 @@ export function SiteShell({locale, children}: {locale: Locale; children: React.R
         <div className="header-tagline"><span className="header-divider" />{m.ui.community}</div>
         <div className="header-actions">
           <span className="edition-label"><span aria-hidden="true" />{m.ui.edition}</span>
+          <GlobalSearch entries={searchIndex(locale)} locale={locale} />
           <LanguageSwitcher />
           <a href={site.steam} className="header-game-link" target="_blank" rel="noopener noreferrer">{m.footer.playGame}<ArrowUpRight size={15} aria-hidden="true" /></a>
         </div>
@@ -40,7 +44,7 @@ export function SiteShell({locale, children}: {locale: Locale; children: React.R
         <footer className="site-footer">
           <div className="footer-grid">
             <div className="footer-about"><Link href="/" className="footer-brand">{m.home.hero.title} <span>WIKI</span></Link><p>{m.footer.about}</p></div>
-            <div><h2>{m.ui.allGuides}</h2><Link href="/guide">{m.topics.guide}</Link><Link href="/classes">{m.topics.classes}</Link><Link href="/leveling">{m.topics.leveling}</Link><Link href="/pvp">{m.topics.pvp}</Link></div>
+            <div><h2>{m.ui.allGuides}</h2><Link href="/guide">{m.topics.guide}</Link><Link href="/classes">{m.topics.classes}</Link><Link href="/leveling">{m.topics.leveling}</Link><Link href="/pvp">{m.topics.pvp}</Link><Link href="/tools">{platformMessages[locale].tools}</Link><Link href="/workspace">{platformMessages[locale].workspace}</Link></div>
             <div><h2>{m.ui.resources}</h2>{[
               [m.footer.playGame, site.steam], [m.footer.officialDiscord, site.discord],
               [m.footer.officialYoutube, site.youtube], [m.ui.characterLookup, official.characters],
