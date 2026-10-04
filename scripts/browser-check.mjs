@@ -30,7 +30,7 @@ try {
   await page.goto(base, {waitUntil: 'networkidle'});
   await expect(page.locator('html')).toHaveAttribute('lang', 'en');
   await expect(page.locator('h1')).toHaveText('AION 2');
-  await expect(page.locator('.desktop-sidebar nav a')).toHaveCount(slugs.length + 6);
+  await expect(page.locator('.desktop-sidebar nav a')).toHaveCount(slugs.length + 4);
   await expect(page.locator('.desktop-sidebar .sidebar-status, .desktop-sidebar .coupon-details')).toHaveCount(0);
   await expect(page.locator('.journey-card')).toHaveCount(4);
   await expect(page.locator('.desktop-sidebar .coupon-state')).toHaveText('Announced');

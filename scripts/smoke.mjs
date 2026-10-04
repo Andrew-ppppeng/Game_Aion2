@@ -5,7 +5,6 @@ const base = process.env.QA_BASE_URL || 'http://127.0.0.1:3000';
 const origin = (process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000').replace(/\/$/, '');
 const plan = JSON.parse(await readFile(new URL('../content-topics.json', import.meta.url), 'utf8'));
 const source = JSON.parse(await readFile(new URL('../home.en.json', import.meta.url), 'utf8'));
-const itemRecords = JSON.parse(await readFile(new URL('../src/content/game-data/items.json', import.meta.url), 'utf8'));
 const locales = ['en', 'ja', 'es', 'de'];
 const slugs = plan.categories.flatMap((category) => category.keywords.map((keyword) => keyword.replace(/^aion 2 /, '').replaceAll(' ', '-')));
 assert.ok(slugs.length > 0, 'Published topics must not be empty');
@@ -95,13 +94,11 @@ assert.equal(new URL(englishRedirect.headers.get('location'), base).pathname, '/
 const {html: rootWithPreference} = await request('/', {headers: {'Accept-Language': 'ja', Cookie: 'NEXT_LOCALE=de'}});
 assert.match(rootWithPreference, /<html\b[^>]*\blang="en"/);
 const {html: sitemap} = await request('/sitemap.xml');
-const sitemapEntries = locales.length * (slugs.length + 6 + itemRecords.length);
+const sitemapEntries = locales.length * (slugs.length + 2);
 assert.equal((sitemap.match(/<loc>/g) || []).length, sitemapEntries);
 for (const locale of locales) assert.ok(sitemap.includes(`${origin}${path(locale, 'tools/character')}</loc>`));
 for (const locale of locales) for (const slug of slugs) assert.ok(sitemap.includes(`${origin}${path(locale, slug)}</loc>`));
 assert.ok(!sitemap.includes('privacy-policy') && !sitemap.includes('terms-of-service'));
-assert.ok(!sitemap.includes('/workspace'));
-for (const locale of locales) for (const item of itemRecords) assert.ok(sitemap.includes(`${origin}${path(locale, `database/items/${item.id}`)}</loc>`));
 const {html: robots} = await request('/robots.txt');
 assert.ok(robots.includes(`Sitemap: ${origin}/sitemap.xml`));
 for (const asset of ['/media/hero.jpg', '/media/atreia.jpg', '/favicon.ico', '/site.webmanifest']) {

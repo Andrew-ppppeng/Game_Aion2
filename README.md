@@ -104,7 +104,3 @@ npm run test:performance
 已加入 22 件人工选择的装备例子、公开角色查询与固定属性比较、活动时区/倒计时/日历，以及手动素材预算，均提供四语言界面。装备在 builds、cleric-build、chanter 中展示；计时器在 maintenance、twitch-drops、code、spacetime-rift 中展示；预算在 monetization 中展示，gathering 提供入口。
 
 接入、数据边界、缓存策略和维护方法见 [docs/AION2-DATA.md](docs/AION2-DATA.md)。浏览器测试使用已归档的真实公开角色响应，运行中的真实接口检查可用 `npm run test:api`；该检查会有限查询官方站，不能在未配置共享缓存的 Vercel 环境中通过。
-
-数据库及个人工具首版：`/database` 搜索/过滤已验证装备，`/database/items/[id]` 查询详情及强化模板，`/tools/compare` 比较固定属性，`/workspace` 保存收藏、升级目标、装备计划、清单与角色历史。装备计划可分享；JSON 备份包括工作台与已保存的角色书签、预算、提醒和新手清单，导入保留现有预算与配置并合并列表。角色成长节点可点击查看真实属性。工具目录在 `/tools`，预算和日历也有独立入口。浏览器拒绝持久存储时明确提示当前会话保存。
-
-地图和全量目录仍受官方数据门槛限制，客户端解析未执行。实施范围、竞品证据及后续条件见 [docs/AION2-PLATFORM-ROADMAP.md](docs/AION2-PLATFORM-ROADMAP.md)。新增交互验收：`npm run test:platform`，包含四语言手机/桌面、备份、分享、地区隔离、异常请求、节点和快照；使用归档响应，无额外官方请求。

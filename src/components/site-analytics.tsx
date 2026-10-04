@@ -72,9 +72,7 @@ export function SiteAnalytics({locale}: {locale: Locale}) {
         const destination = new URL(link.getAttribute('href')!, location.origin);
         if (destination.origin === location.origin) {
           if (destination.pathname.endsWith('/tools/character')) send('tool_use', 'character');
-          if (destination.hash === '#material-budget' || destination.pathname.endsWith('/tools/budget')) send('tool_use', 'budget');
-          if (destination.pathname.endsWith('/tools/calendar')) send('tool_use', 'calendar');
-          if (destination.pathname.endsWith('/tools/compare') || /\/database\/items\/\d+$/.test(destination.pathname)) send('tool_use', 'equipment');
+          if (destination.hash === '#material-budget') send('tool_use', 'budget');
           if (destination.hash === '#starter-checklist') send('tool_use', 'checklist');
         }
       }

@@ -4,11 +4,10 @@ import {validateEvents, isIsoDate} from '@/lib/analytics-model';
 import {storeEvents, readCounters} from '@/lib/analytics-store';
 import {takeQuota} from '@/lib/aion2/cache';
 import {DataError} from '@/lib/aion2/model';
-import {curatedIds} from '@/lib/aion2/data';
 
 export const dynamic = 'force-dynamic';
 const headers = {'Cache-Control': 'private, no-store', 'X-Robots-Tag': 'noindex, nofollow'};
-const pages = new Set(['/', '/tools', '/tools/character', '/tools/compare', '/tools/budget', '/tools/calendar', '/workspace', ...curatedIds.map((id) => `/database/items/${id}`), ...legalSlugs.map((slug) => `/${slug}`), ...topics.map(({slug}) => `/${slug}`)]);
+const pages = new Set(['/', '/tools/character', ...legalSlugs.map((slug) => `/${slug}`), ...topics.map(({slug}) => `/${slug}`)]);
 function sameOrigin(request: Request) {
   // Next can normalize request.url to localhost behind the local server or a
   // proxy. The Host authority is the address actually used by the browser.

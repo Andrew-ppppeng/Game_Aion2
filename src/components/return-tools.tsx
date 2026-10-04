@@ -4,7 +4,6 @@ import {useMemo, useSyncExternalStore} from 'react';
 import {ArrowRight, Calculator, ListChecks, UserRound} from 'lucide-react';
 import {Link} from '@/i18n/navigation';
 import type {Locale} from '@/i18n/routing';
-import {platformMessages} from '@/i18n/platform-messages';
 
 const copy = {
   en: {title: 'Your player tools', note: 'Pick up where you left off. Saved progress stays in this browser.', character: 'Character lookup', budget: 'Material budget', checklist: 'First-session checklist', bookmarks: 'saved characters', saved: 'Saved plan', create: 'Plan your next upgrade', complete: 'complete', lookup: 'Find and bookmark your character'},
@@ -38,8 +37,6 @@ export function ReturnTools({locale, checklistIds}: {locale: Locale; checklistId
   return <section className="player-tools" aria-labelledby="player-tools-title" data-return-tools>
     <div><h2 id="player-tools-title">{m.title}</h2><p>{m.note}</p></div>
     <div className="player-tools-grid">
-      <Link href="/database"><ListChecks size={20} aria-hidden="true" /><span><strong>{platformMessages[locale].database}</strong><small>{platformMessages[locale].catalogueIntro}</small></span><ArrowRight size={17} aria-hidden="true" /></Link>
-      <Link href="/workspace"><ListChecks size={20} aria-hidden="true" /><span><strong>{platformMessages[locale].workspace}</strong><small>{platformMessages[locale].workspaceDesc}</small></span><ArrowRight size={17} aria-hidden="true" /></Link>
       <Link href="/tools/character"><UserRound size={20} aria-hidden="true" /><span><strong>{m.character}</strong><small>{state.count ? `${state.count} ${m.bookmarks}` : m.lookup}</small></span><ArrowRight size={17} aria-hidden="true" /></Link>
       <Link href="/monetization#material-budget"><Calculator size={20} aria-hidden="true" /><span><strong>{m.budget}</strong><small>{state.plan ? m.saved : m.create}</small></span><ArrowRight size={17} aria-hidden="true" /></Link>
       <Link href="/guide#starter-checklist"><ListChecks size={20} aria-hidden="true" /><span><strong>{m.checklist}</strong><small>{state.completed} / {checklistIds.length} {m.complete}</small></span><ArrowRight size={17} aria-hidden="true" /></Link>

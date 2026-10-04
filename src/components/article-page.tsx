@@ -19,8 +19,6 @@ import {GuideTable} from './guide-table';
 import {GuideEquipment} from './tools/guide-equipment';
 import {gameEvents} from '@/lib/aion2/data';
 import {shareImagePath} from '@/lib/share-images';
-import {Catalogue} from './platform/catalogue';
-import {catalogue} from '@/lib/aion2/catalogue';
 
 export async function ArticlePage({locale, slug}: {locale: Locale; slug: string}) {
   const article = getArticle(locale, slug);
@@ -76,7 +74,6 @@ export async function ArticlePage({locale, slug}: {locale: Locale; slug: string}
       <div className="article-meta">{data.edition && data.edition !== 'Global' && <span data-article-edition>{data.edition}</span>}<span>{a.checkedAt}: <time dateTime={data.checkedAt}>{reviewed}</time></span><Link href="/terms-of-service#editorial-policy" data-article-author>{a.author}</Link></div>
       <div className="article-answer"><span>{a.quickAnswer}</span><p>{metadata.quickAnswer}</p></div>
     </header>
-    {slug === 'database' && <Catalogue locale={locale} entries={catalogue(locale)} />}
     <div className="article-layout">
       <ArticleToc sections={metadata.toc} title={a.onThisPage} locale={locale} />
       <div className="article-main">

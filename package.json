@@ -12,7 +12,6 @@
     "test:content": "node scripts/content-check.mjs",
     "test:data": "node --conditions=react-server --experimental-strip-types --test tests/*.test.ts",
     "test:tools": "node scripts/tools-browser-check.mjs",
-    "test:platform": "node scripts/platform-browser-check.mjs",
     "test:api": "node scripts/api-check.mjs",
     "test:smoke": "node scripts/smoke.mjs",
     "test:browser": "node scripts/browser-check.mjs",

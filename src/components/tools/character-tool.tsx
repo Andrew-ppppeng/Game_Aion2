@@ -9,9 +9,6 @@ import {compareStats} from '@/lib/aion2/model';
 import {regions} from '@/lib/aion2/types';
 import type {ApiResult, CharacterData, CharacterMatch, EquippedItem, Item, MetaData, Region, SearchData} from '@/lib/aion2/types';
 import {ItemDetails, DataUpdated} from './item-details';
-import {CharacterHistory} from '../platform/character-history';
-import {CharacterBoard} from '../platform/character-board';
-import {StorageNotice} from '../platform/item-actions';
 import {useStored} from './local-store';
 
 type Bookmark = {id: string; name: string; region: Region; serverId: number};
@@ -174,7 +171,7 @@ export function CharacterTool({locale, metadata, candidates, initialCharacter}: 
         <Difference current={comparison.current.data!} next={comparison.next.data!} locale={locale} />
         <div className="item-grid"><div><h4>{m.currentTemplate}</h4><ItemDetails item={comparison.current.data!} meta={comparison.current.meta} locale={locale} /></div><div><h4>{m.candidateTemplate}</h4><ItemDetails item={comparison.next.data!} meta={comparison.next.meta} locale={locale} /></div></div></section>}
       <section className="game-tool"><h3>{m.progress}</h3>
-        {character.data.info.daevanion?.boardList.map((b) => <div key={b.id}><div className="growth-row"><span>{b.name}</span><span>{b.openNodeCount} / {b.totalNodeCount}</span><progress value={b.openNodeCount} max={b.totalNodeCount} aria-label={b.name} /></div><CharacterBoard key={`${region}:${profile.serverId}:${profile.characterId}:${b.id}`} id={profile.characterId} serverId={profile.serverId} board={b} region={region} locale={locale} /></div>)}
+        {character.data.info.daevanion?.boardList.map((b) => <div className="growth-row" key={b.id}><span>{b.name}</span><span>{b.openNodeCount} / {b.totalNodeCount}</span><progress value={b.openNodeCount} max={b.totalNodeCount} aria-label={b.name} /></div>)}
         {character.data.info.title && <p>{m.titles}: {character.data.info.title.ownedCount} / {character.data.info.title.totalCount}</p>}
         {character.data.info.title?.titleList.filter((t) => t.name).map((t) => <p key={t.equipCategory}>{t.name}: {t.equipStatList?.map((s) => s.desc).join(', ')}</p>)}
         {character.data.equipment.petwing?.pet?.name && <p>{m.pet}: {character.data.equipment.petwing.pet.name}</p>}
@@ -183,9 +180,7 @@ export function CharacterTool({locale, metadata, candidates, initialCharacter}: 
       </section>
       <details className="game-tool"><summary>{m.attributes}</summary><dl className="tool-stats">{character.data.info.stat?.statList.map((s) => <div key={s.type}><dt>{s.name}<small>{s.statSecondList?.join(' · ')}</small></dt><dd>{s.value}</dd></div>)}</dl></details>
       <details className="game-tool"><summary>{m.skills}</summary><ul className="skill-list">{character.data.equipment.skill?.skillList.map((s) => <li key={s.id}><strong>{s.name}</strong><span>{m.level}: {s.skillLevel ?? s.level ?? m.unknown} · {s.category} · {s.acquired === 1 ? m.learned : m.unknown}{s.category === 'Active' && s.acquired === 1 && s.equip === 1 ? ` · ${m.equipped}` : ''}</span></li>)}</ul></details>
-      <CharacterHistory data={character.data} region={region} locale={locale} />
     </>}
-    <StorageNotice locale={locale} keys={['aion2-characters-v1', 'aion2-region-v1']} />
     <p className="tool-source"><a href="https://aion2.plaync.com/en-us/characters/index" target="_blank" rel="noopener noreferrer">{m.officialCharacter} ↗</a></p>
   </div>;
 }
