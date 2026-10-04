@@ -39,7 +39,6 @@ assert.ok(slugs.length > 0, 'Published topics must not be empty');
 assert.equal(new Set(slugs).size, slugs.length, 'Unique published topic slugs');
 for (const locale of locales) {
   const messages = await json(`src/messages/${locale}.json`);
-  assert.match(messages.ui.contentReady, /\{count\}/, `${locale}: dynamic published count`);
   assert.doesNotMatch(JSON.stringify(messages), /\?{3,}|\uFFFD/, `${locale}: UI encoding`);
   for (const slug of slugs) assert.ok(messages.topics[slug]?.trim(), `${locale}: published navigation label ${slug}`);
   const files = await readdir(new URL(`src/content/${locale}/`, root));

@@ -41,8 +41,6 @@ const icons = {
 const NavigationContent = memo(function NavigationContent({groups, onNavigate}: {groups: NavGroup[]; onNavigate?: () => void}) {
   const pathname = usePathname();
   const t = useTranslations('ui');
-  const complete = groups.every((group) => group.topics.every((topic) => topic.published));
-  const publishedCount = groups.reduce((count, group) => count + group.topics.filter((topic) => topic.published).length, 0);
 
   return (
     <>
@@ -85,7 +83,6 @@ const NavigationContent = memo(function NavigationContent({groups, onNavigate}: 
       </div>
       <div className="sidebar-bottom">
         <CouponCard />
-        <p className="sidebar-status"><span aria-hidden="true" />{complete ? t('contentReady', {count: publishedCount}) : t('contentStatus')}</p>
       </div>
     </>
   );

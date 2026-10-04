@@ -45,7 +45,7 @@ for (const locale of locales) {
   assert.ok(!html.includes('暂无'), 'The placeholder is not a coupon');
   for (const slug of slugs) assert.ok(html.includes(`href="${path(locale, slug)}"`), `${locale}/${slug} navigation`);
   for (const slug of ['tools/character', 'monetization#material-budget', 'guide#starter-checklist']) assert.ok(html.includes(`href="${path(locale, slug)}"`), `${locale}/${slug} tool navigation`);
-  assert.ok(html.includes(translated.ui.contentReady.replace('{count}', String(slugs.length))), `${locale}: current published count`);
+  assert.doesNotMatch(html, /class="(?:sidebar-status|coupon-details)"/, `${locale}: removed sidebar text`);
   checks++;
 
   await Promise.all([...slugs, 'privacy-policy', 'terms-of-service'].map(async (slug) => {

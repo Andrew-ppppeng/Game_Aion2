@@ -58,7 +58,6 @@ export function CouponCard() {
       <div className="coupon-bottom">
         <Link href="/code">{t('viewCodes')} <ExternalLink size={11} aria-hidden="true" /></Link>
       </div>
-      <p className="coupon-details">{t('couponLimit')}</p>
     </section>
   );
 }
