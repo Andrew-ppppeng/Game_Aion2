@@ -12,6 +12,7 @@ import {SiteNavigation} from './site-navigation';
 export function SiteShell({locale, children}: {locale: Locale; children: React.ReactNode}) {
   const m = getSiteMessages(locale);
   const official = officialLinks(locale);
+  const editorialLabels = {en: ['Editorial policy', 'Corrections'], ja: ['編集方針', '訂正・連絡'], es: ['Política editorial', 'Correcciones'], de: ['Redaktionsrichtlinien', 'Korrekturen']}[locale];
   const groups = topicGroups.map((group) => ({
     id: group.id,
     label: m.categories[group.id],
@@ -45,7 +46,7 @@ export function SiteShell({locale, children}: {locale: Locale; children: React.R
               [m.footer.officialYoutube, site.youtube], [m.ui.characterLookup, official.characters],
             ].map(([label, href]) => <a href={href} key={href} target="_blank" rel="noopener noreferrer">{label}<ExternalLink size={11} aria-hidden="true" /></a>)}</div>
           </div>
-          <div className="footer-bottom"><span>© {new Date().getUTCFullYear()} {m.footer.aboutTitle} · {m.ui.fanSite}</span><div><Link href="/privacy-policy">{m.footer.privacyPolicy}</Link><Link href="/terms-of-service">{m.footer.termsOfService}</Link></div></div>
+          <div className="footer-bottom"><span>© {new Date().getUTCFullYear()} {m.footer.aboutTitle} · {m.ui.fanSite}</span><div><Link href="/privacy-policy">{m.footer.privacyPolicy}</Link><Link href="/terms-of-service">{m.footer.termsOfService}</Link><Link href="/terms-of-service#editorial-policy">{editorialLabels[0]}</Link><Link href="/terms-of-service#corrections">{editorialLabels[1]}</Link></div></div>
         </footer>
       </div>
     </>

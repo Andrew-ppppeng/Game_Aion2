@@ -13,7 +13,7 @@ const redisUrl = process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_U
 const redisToken = process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN;
 const configured = Boolean(redisUrl && redisToken);
 
-async function redis(command: (string | number)[]): Promise<unknown> {
+export async function redis(command: (string | number)[]): Promise<unknown> {
   if (!redisUrl || !redisToken) throw new DataError('cache-unavailable', 503, 30);
   try {
     const response = await fetch(redisUrl, {method: 'POST', headers: {Authorization: `Bearer ${redisToken}`, 'Content-Type': 'application/json'},

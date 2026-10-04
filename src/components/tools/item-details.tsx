@@ -4,12 +4,10 @@ import {toolMessages} from '@/i18n/tool-messages';
 import {formatStat} from '@/lib/aion2/model';
 import type {Item, SourceMeta} from '@/lib/aion2/types';
 
-export function SourceLine({meta, locale}: {meta: SourceMeta; locale: Locale}) {
+export function DataUpdated({meta, locale}: {meta: SourceMeta; locale: Locale}) {
   const m = toolMessages[locale];
-  const states = {fresh: m.fresh, cached: m.cached, snapshot: m.snapshot, stale: m.stale, unavailable: m.unavailable};
-  return <p className="tool-source"><span>Global · {meta.region.toUpperCase()} · {states[meta.freshness]}</span><br />
-    <span>{m.readAt}: <time dateTime={meta.fetchedAt}>{new Intl.DateTimeFormat(locale, {dateStyle: 'medium', timeStyle: 'short', timeZone: 'UTC'}).format(new Date(meta.fetchedAt))} UTC</time></span>{' · '}
-    <a href={meta.sourceUrl} target="_blank" rel="noopener noreferrer">{m.source} ↗</a></p>;
+  if (meta.freshness === 'snapshot') return null;
+  return <p className="tool-source">Global · {meta.region.toUpperCase()} · {m.readAt}: <time dateTime={meta.fetchedAt}>{new Intl.DateTimeFormat(locale, {dateStyle: 'medium', timeStyle: 'short', timeZone: 'UTC'}).format(new Date(meta.fetchedAt))} UTC</time></p>;
 }
 export function ItemDetails({item, locale, meta, instance = false}: {item: Item; locale: Locale; meta?: SourceMeta | null; instance?: boolean}) {
   const m = toolMessages[locale];
@@ -25,8 +23,8 @@ export function ItemDetails({item, locale, meta, instance = false}: {item: Item;
         {!instance && item.subStatRandom && <p className="tool-note">{m.rolls}: {item.subStatCount ?? m.unknown}</p>}
         <dl className="tool-stats">{item.subStats.map((stat, index) => <div key={`${stat.id}-${index}`}><dt>{stat.name}</dt><dd>{formatStat(stat)}</dd></div>)}</dl></> : null}
       {(item.magicStoneSlotCount !== undefined || item.godStoneSlotCount !== undefined) && <p>{m.sockets}: {item.magicStoneSlotCount ?? m.unknown} / {item.godStoneSlotCount ?? m.unknown}</p>}
-      {item.sources?.length ? <><p>{m.sources}: {item.sources.join(', ')}</p><p className="tool-note">{m.sourceNote}</p></> : null}
+      {item.sources?.length ? <p>{m.sources}: {item.sources.join(', ')}</p> : null}
     </details>
-    {meta && <SourceLine meta={meta} locale={locale} />}
+    {meta && <DataUpdated meta={meta} locale={locale} />}
   </section>;
 }

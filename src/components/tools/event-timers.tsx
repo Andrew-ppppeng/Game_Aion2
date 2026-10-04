@@ -38,14 +38,13 @@ export function EventTimers({events, locale, initialNow}: {events: EventRecord[]
     {events.map((event) => {
       const status = eventStatus(event, now);
       return <article className="event-card" key={event.id} data-event={event.id} data-event-status={status}>
-        <div className="event-heading"><h4>{event.titles[locale]}</h4><span className={`tool-badge ${status}`}>{m[status]}</span></div>
+        <div className="event-heading"><h4>{event.titles[locale]}</h4>{status !== 'unconfirmed' && <span className={`tool-badge ${status}`}>{m[status]}</span>}</div>
         {event.startAt && <p>{m.start}: <time dateTime={event.startAt}>{format(event.startAt)}</time></p>}
         {event.endAt && <p>{m.end}: <time dateTime={event.endAt}>{format(event.endAt)}</time></p>}
         {status !== 'unconfirmed' && status !== 'ended' && <p className="event-countdown">{m.countdown}: <span>{remaining((status === 'upcoming' && !event.deadlineOnly ? event.startAt : event.endAt)!)}</span></p>}
         {event.dateRange && <p>{m.confirmedDates}: {event.dateRange}</p>}
         {(event.startAt || event.endAt) && <details><summary>{m.originalTime}</summary><p className="tool-note">{event.sourceTime}</p></details>}
-        <p className="tool-source">Global · {m.checkedAt}: {event.checkedAt} · <a href={event.sourceUrl} target="_blank" rel="noopener noreferrer">{m.source} ↗</a></p>
-        {event.startAt && event.endAt || event.deadlineOnly ? <button type="button" className="tool-button" onClick={() => download(event)}>{m.calendar}</button> : null}
+        {event.startAt && event.endAt || event.deadlineOnly ? <button type="button" className="tool-button" data-analytics="calendar" onClick={() => download(event)}>{m.calendar}</button> : null}
         {event.topics.includes('twitch-drops') && <label className="tool-check"><input type="checkbox" checked={claimed.includes(event.id)} onChange={(e) => setClaimed(e.target.checked ? [...claimed.filter((id) => id !== event.id), event.id] : claimed.filter((id) => id !== event.id))} />{m.claimed}</label>}
       </article>;
     })}

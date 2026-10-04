@@ -2,8 +2,9 @@
 
 import {useTransition} from 'react';
 import {ChevronDown, Globe2} from 'lucide-react';
+import {useRouter} from 'next/navigation';
 import {useLocale, useTranslations} from 'next-intl';
-import {usePathname, useRouter} from '@/i18n/navigation';
+import {getPathname, usePathname} from '@/i18n/navigation';
 import type {Locale} from '@/i18n/routing';
 
 const languages: {locale: Locale; label: string}[] = [
@@ -29,10 +30,8 @@ export function LanguageSwitcher() {
         disabled={isPending}
         onChange={(event) => {
           const nextLocale = event.target.value as Locale;
-          startTransition(() => router.replace(
-            `${pathname}${window.location.search}${window.location.hash}`,
-            {locale: nextLocale},
-          ));
+          const href = getPathname({locale: nextLocale, href: `${pathname}${window.location.search}${window.location.hash}`});
+          startTransition(() => router.replace(href));
         }}
       >
         {languages.map((language) => (

@@ -20,7 +20,7 @@ export function useStored<T>(key: string, initial: T, validate: (value: unknown)
     const serialized = JSON.stringify(next);
     memory.set(key, serialized);
     try {localStorage.setItem(key, serialized); failed.delete(key);} catch {failed.add(key);}
-    window.dispatchEvent(new Event('aion2-tool-storage'));
+    window.dispatchEvent(new CustomEvent('aion2-tool-storage', {detail: {key}}));
   }];
 }
 let now = 0;

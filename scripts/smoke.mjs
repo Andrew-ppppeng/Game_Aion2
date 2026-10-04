@@ -3,12 +3,14 @@ import {readFile} from 'node:fs/promises';
 
 const base = process.env.QA_BASE_URL || 'http://127.0.0.1:3000';
 const origin = (process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000').replace(/\/$/, '');
-const plan = JSON.parse(await readFile(new URL('../keywords-priority-20.json', import.meta.url), 'utf8'));
+const plan = JSON.parse(await readFile(new URL('../content-topics.json', import.meta.url), 'utf8'));
 const source = JSON.parse(await readFile(new URL('../home.en.json', import.meta.url), 'utf8'));
 const locales = ['en', 'ja', 'es', 'de'];
 const slugs = plan.categories.flatMap((category) => category.keywords.map((keyword) => keyword.replace(/^aion 2 /, '').replaceAll(' ', '-')));
-assert.equal(slugs.length, 20);
-assert.equal(new Set(slugs).size, 20);
+assert.ok(slugs.length > 0, 'Published topics must not be empty');
+assert.equal(new Set(slugs).size, slugs.length, 'Unique published topic slugs');
+const existingTopics = ['guide', 'gathering', 'leveling', 'classes', 'chanter', 'tier-list', 'gladiator', 'ranger', 'spiritmaster', 'races', 'map', 'code', 'character-creation', 'presets', 'pvp', 'spacetime-rift', 'builds', 'cleric-build', 'macro-guide', 'twitch-drops', 'server', 'maintenance', 'server-transfer', 'steam', 'download', 'monetization', 'notmeter', 'player-count'];
+for (const slug of existingTopics) assert.ok(slugs.includes(slug), `Existing topic retained: ${slug}`);
 const path = (locale, slug = '') => `${locale === 'en' ? '' : `/${locale}`}${slug ? `/${slug}` : ''}` || '/';
 let checks = 0;
 
@@ -42,6 +44,8 @@ for (const locale of locales) {
   assert.equal((html.match(/<h1[ >]/g) || []).length, 1);
   assert.ok(!html.includes('暂无'), 'The placeholder is not a coupon');
   for (const slug of slugs) assert.ok(html.includes(`href="${path(locale, slug)}"`), `${locale}/${slug} navigation`);
+  for (const slug of ['tools/character', 'monetization#material-budget', 'guide#starter-checklist']) assert.ok(html.includes(`href="${path(locale, slug)}"`), `${locale}/${slug} tool navigation`);
+  assert.ok(html.includes(translated.ui.contentReady.replace('{count}', String(slugs.length))), `${locale}: current published count`);
   checks++;
 
   await Promise.all([...slugs, 'privacy-policy', 'terms-of-service'].map(async (slug) => {
@@ -49,16 +53,22 @@ for (const locale of locales) {
     assert.equal(response.status, 200, `${locale}/${slug}`);
     const published = slugs.includes(slug);
     assert.match(html, published ? /<meta name="robots" content="index, follow"/ : /<meta name="robots" content="noindex, follow"/);
-    assert.match(html, published ? /data-page-status="published"/ : /data-page-status="planned"/);
+    assert.match(html, published ? /data-page-status="published"/ : /data-page-status="site-info"/);
     if (published) {
       const metadata = JSON.parse(await readFile(new URL(`../src/content/${locale}/${slug}.json`, import.meta.url), 'utf8'));
       assert.equal((html.match(/<link[^>]*rel="alternate"/g) || []).length, 5, `${locale}/${slug} language alternates`);
       assert.ok(html.includes(`href="${origin}${path(locale, slug)}"`), `${locale}/${slug} self canonical`);
       assert.ok(html.includes('class="article-body"'), `${locale}/${slug} article content`);
+      assert.ok(metadata.quickAnswer && metadata.quickAnswer !== metadata.summary, `${locale}/${slug} independent quick answer`);
       for (const section of metadata.toc) assert.ok(html.includes(`id="${section.id}"`), `${locale}/${slug} section ${section.id}`);
       assert.ok(html.includes('application/ld+json'), `${locale}/${slug} structured data`);
       assert.doesNotMatch(html, /<[^>]+class="[^"]*\bplaceholder-content\b/, `${locale}/${slug} no rendered placeholder`);
+    } else {
+      const required = slug === 'privacy-policy' ? ['local-data', 'usage-statistics', 'privacy-controls', 'requests-and-services', 'external-services', 'corrections'] : ['editorial-policy', 'maintenance-policy', 'terms-of-use', 'corrections'];
+      for (const section of required) assert.ok(html.includes(`id="${section}"`), `${locale}/${slug}: complete site information ${section}`);
+      assert.doesNotMatch(html, /class="[^"]*placeholder-content/, `${locale}/${slug}: no placeholder page`);
     }
+    assert.doesNotMatch(html, /id="(?:article-sources|sources-title)"|class="(?:guide-asset-credit|source-context)"|href="#article-sources"/, `${locale}/${slug} research provenance stays internal`);
     assert.match(html, new RegExp(`<html\\b[^>]*\\blang="${locale}"`));
     assert.equal((html.match(/<h1[ >]/g) || []).length, 1);
     checks++;
@@ -88,4 +98,4 @@ for (const asset of ['/media/hero.jpg', '/media/atreia.jpg', '/favicon.ico', '/s
   const response = await fetch(`${base}${asset}`, {method: 'HEAD'});
   assert.equal(response.status, 200, asset);
 }
-console.log(`PASS: ${checks} page checks; ${locales.length * slugs.length} published articles, legal placeholders, language alternates, redirects, 404s, ${sitemapEntries} sitemap entries, robots and assets.`);
+console.log(`PASS: ${checks} page checks; ${locales.length * slugs.length} published articles, complete site information, tool navigation, language alternates, redirects, 404s, ${sitemapEntries} sitemap entries, robots and assets.`);

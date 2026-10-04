@@ -1,15 +1,16 @@
 {
-  "title": "AION2 クレリックビルド：序盤PvEと回復選択",
-  "description": "資料に基づくStigma例、弱体順序、回復判断、チャンターの有無に合わせた調整で、クレリックのソロ・パーティーPvEを組みます。",
-  "summary": "回復、解除、復活を用意してから、開放スキルに合う攻撃を加えましょう。低レベルとTW経験の例を、後期上限をコピーせず比較します。",
+  "title": "AION 2 クレリックビルド：PvEと回復",
+  "description": "Stigma、弱体の順序、回復、解除、復活、編成別調整でクレリックのPvEビルドを作りましょう。",
+  "summary": "Stigma、弱体の順序、回復、解除、復活、編成別調整でクレリックのPvEビルドを作りましょう。",
+  "quickAnswer": "TW序盤PvE：パーティーPvEでは、直接回復・解除・復活を別々の届きやすい操作に置き、Debilitating Mark → Chains of Torment → Earth's Punishmentと使えるCondemnationで攻撃します。必要なパーティー防御とNoble Auraを装備し、立て直しが難しいなら攻撃枠を回復に交換しましょう。",
   "toc": [
     {
       "id": "choose-your-cleric-setup",
-      "title": "構成を選ぶ"
+      "title": "今日の内容に合わせて構成を選ぶ"
     },
     {
       "id": "starting-stigma-example",
-      "title": "序盤Stigma例"
+      "title": "具体的な序盤Stigma例"
     },
     {
       "id": "damage-and-debuff-order",
@@ -17,26 +18,26 @@
     },
     {
       "id": "healing-cleanse-and-resurrection",
-      "title": "回復・解除・復活"
+      "title": "回復・解除・復活の判断"
     },
     {
       "id": "gear-and-daevanion",
-      "title": "装備・Daevanionの優先順位"
+      "title": "装備とDaevanionの優先順位"
     },
     {
       "id": "older-guides-and-pvp",
-      "title": "古いガイドとPvP"
+      "title": "PvP用の構成を準備する"
     }
   ],
   "visuals": {
     "topic": {
       "assetId": "class-cleric",
-      "alt": "AION2公式のクレリッククラス立ち絵",
-      "caption": "公式のクレリック立ち絵です。以下は作者名を明示したプレイヤー解説の判断例で、検証済みGlobal加点画面を示す画像ではありません。"
+      "alt": "公式クレリッククラスアート",
+      "caption": "公式クレリッククラスアート"
     },
     "workflow": {
       "title": "ギミックに対応しながらパーティーを立て直す",
-      "caption": "状況別の対応手順です。原因に合う回復を選び、ギミックが許す場面で使用します。",
+      "caption": "被害に合う回復を選び、安全な機会で使います。",
       "steps": [
         {
           "label": "直近の危険を見る",
@@ -52,7 +53,7 @@
         },
         {
           "label": "有用な攻撃に戻る",
-          "description": "回復が足りたら実演の弱体を更新し、選択設定で動く攻撃連動だけを使います。"
+          "description": "仲間が安定したら弱体を更新し、使える攻撃へ戻ります。"
         }
       ]
     }

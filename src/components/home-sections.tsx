@@ -5,7 +5,8 @@ import {Link} from '@/i18n/navigation';
 import {getSiteMessages} from '@/i18n/messages';
 import type {Locale} from '@/i18n/routing';
 import {officialLinks, site} from '@/lib/site';
-import {isArticlePublished} from '@/lib/articles';
+import {getArticle, isArticlePublished} from '@/lib/articles';
+import {ReturnTools} from './return-tools';
 
 async function messages() {
   return getSiteMessages(await getLocale() as Locale);
@@ -21,7 +22,7 @@ export async function Hero() {
       <div className="hero-content">
         <div className="hero-eyebrow"><span aria-hidden="true" />{h.eyebrow}</div>
         <h1 id="hero-title">{h.title.slice(0, -1)}<span>{h.title.slice(-1)}</span></h1>
-        <p className="hero-description">{h.description}</p>
+        <p className="hero-description">{m.ui.heroSummary}</p>
         <div className="hero-buttons">
           <Link href="/guide" className="button button-primary"><BookOpen size={16} aria-hidden="true" />{h.primaryCta}<ArrowRight size={15} aria-hidden="true" /></Link>
           <Link href="/classes" className="button button-secondary">{h.secondaryCta}<ArrowUpRight size={15} aria-hidden="true" /></Link>
@@ -30,13 +31,18 @@ export async function Hero() {
         <div className="hero-stats">{h.stats.slice(2).map((stat) => <div key={stat}><strong>{stat.match(/^\d+/)?.[0]}</strong><span>{stat.replace(/^\d+[- ]?/, '')}</span></div>)}</div>
       </div>
       <a className="hero-trailer" href={site.steam} target="_blank" rel="noopener noreferrer"><span className="play-circle"><Play size={17} fill="currentColor" aria-hidden="true" /></span><span>{h.videoLabel}<small>STEAM <ArrowUpRight size={10} aria-hidden="true" /></small></span></a>
-      <span className="hero-image-credit" aria-hidden="true">ATREIA · NC</span>
     </section>
     <div className="announcement-strip">
       <a href={site.launchAnnouncement} target="_blank" rel="noopener noreferrer"><span className="announcement-dot" aria-hidden="true" /><span>{m.ui.launchLabel}<strong>{m.home.aboutGame.stats[3].value}</strong></span><ArrowUpRight size={13} aria-hidden="true" /></a>
       <a href={site.maintenanceAnnouncement} target="_blank" rel="noopener noreferrer" title={m.ui.maintenanceLabel}><Clock3 size={15} aria-hidden="true" /><span>{h.stats[1]}</span><ArrowUpRight size={13} aria-hidden="true" /></a>
     </div>
   </>;
+}
+
+export async function PlayerTools() {
+  const locale = await getLocale() as Locale;
+  const ids = getArticle(locale, 'guide')?.metadata.checklist?.items.map((item) => item.id) || [];
+  return <ReturnTools locale={locale} checklistIds={ids} />;
 }
 
 const journeyRoutes = ['/guide', '/classes', '/leveling', '/pvp'];
@@ -66,7 +72,7 @@ export async function AboutGame() {
     <div className="section-topline"><span className="eyebrow">{m.ui.aboutEyebrow}</span><span className="section-index">02 /</span></div>
     <div className="about-grid">
       <div className="about-copy"><h2 id="about-title">{about.title}</h2>{about.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}<Link href="/#journey" className="text-link">{about.cta}<ArrowRight size={15} aria-hidden="true" /></Link></div>
-      <div className="game-facts"><h3><Feather size={17} aria-hidden="true" />{m.ui.quickFacts}</h3><dl>{about.stats.map((stat) => <div key={stat.label}><dt>{stat.label}</dt><dd>{stat.value}</dd></div>)}</dl><div className="facts-region-note"><span aria-hidden="true" />{m.ui.globalNotice}</div></div>
+      <div className="game-facts"><h3><Feather size={17} aria-hidden="true" />{m.ui.quickFacts}</h3><dl>{about.stats.map((stat) => <div key={stat.label}><dt>{stat.label}</dt><dd>{stat.value}</dd></div>)}</dl></div>
     </div>
     <div className="about-visual"><Image src="/media/atreia.jpg" alt="" fill sizes="(min-width: 1024px) calc(100vw - 328px), calc(100vw - 40px)" /><div className="about-visual-shade" /><span>{m.footer.description}</span></div>
   </section>;

@@ -8,7 +8,7 @@ import identities from '@/content/class-identities.json';
 import {compareStats} from '@/lib/aion2/model';
 import {regions} from '@/lib/aion2/types';
 import type {ApiResult, CharacterData, CharacterMatch, EquippedItem, Item, MetaData, Region, SearchData} from '@/lib/aion2/types';
-import {ItemDetails, SourceLine} from './item-details';
+import {ItemDetails, DataUpdated} from './item-details';
 import {useStored} from './local-store';
 
 type Bookmark = {id: string; name: string; region: Region; serverId: number};
@@ -147,14 +147,14 @@ export function CharacterTool({locale, metadata, candidates, initialCharacter}: 
       <div className="character-results">{matches.data.list.map((match: CharacterMatch) => <button className="character-match" key={`${match.serverId}-${match.characterId}`} type="button" disabled={busy} onClick={() => void open({id: match.characterId, serverId: match.serverId, name: match.name, region})}>
         <strong>{match.name}</strong><span>{match.serverName} · {m.level} {match.level} · {classLabel(meta.pcData.find((p) => p.id === match.pcId)?.classText || '')}</span><span>{m.select} →</span></button>)}</div>
       <div className="tool-actions"><button type="button" className="tool-button" disabled={busy || matches.data.pagination.page <= 1} onClick={() => void search(matches.data!.pagination.page - 1)}>{m.previous}</button><span>{matches.data.pagination.page} / {matches.data.pagination.endPage}</span><button type="button" className="tool-button" disabled={busy || matches.data.pagination.page >= matches.data.pagination.endPage} onClick={() => void search(matches.data!.pagination.page + 1)}>{m.next}</button></div>
-      {matches.meta && <SourceLine meta={matches.meta} locale={locale} />}
+      {matches.meta && <DataUpdated meta={matches.meta} locale={locale} />}
     </section>}
     {profile && character?.data && <>
       <section className="game-tool"><h2>{profile.characterName}</h2><p>{profile.className} · {profile.serverName} · {profile.raceName}</p>
         <dl className="tool-stats"><div><dt>{m.level}</dt><dd>{profile.characterLevel}</dd></div><div><dt>{m.power}</dt><dd>{number.format(profile.combatPower)}</dd></div>{profile.regionName && <div><dt>{m.guild}</dt><dd>{profile.regionName}</dd></div>}</dl>
-        <button className="tool-button" type="button" onClick={bookmark}>{m.saveCharacter}</button>
+        <button className="tool-button" type="button" data-analytics="bookmark_save" onClick={bookmark}>{m.saveCharacter}</button>
         {saved && <p className="tool-note" role="status">{m.saved}</p>}
-        {character.meta && <SourceLine meta={character.meta} locale={locale} />}
+        {character.meta && <DataUpdated meta={character.meta} locale={locale} />}
         {character.meta?.freshness === 'stale' && <p className="tool-error" role="status">{m.stale}</p>}
       </section>
       <section className="game-tool"><h3>{m.equipment}</h3><div className="equipped-grid">{character.data.equipment.equipment.equipmentList.map((i) => <button type="button" className={`equipped-item ${slot?.slotPos === i.slotPos ? 'selected' : ''}`} key={i.slotPos} disabled={busy} aria-pressed={slot?.slotPos === i.slotPos} onClick={() => void inspect(i)}><span>{i.slotPosName} · {i.grade}</span><strong>{i.name} +{i.enchantLevel}</strong><span>{m.inspect} →</span></button>)}</div></section>

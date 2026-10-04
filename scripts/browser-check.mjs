@@ -3,18 +3,22 @@ import {existsSync} from 'node:fs';
 import {mkdir, readFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {chromium, expect} from '@playwright/test';
+import {installGameFixtures} from './qa-fixtures.mjs';
 
 const base = process.env.QA_BASE_URL || 'http://127.0.0.1:3000';
 const output = new URL('../.qa/', import.meta.url);
 const readJson = async (path) => JSON.parse(await readFile(new URL(`../${path}`, import.meta.url), 'utf8'));
-const plan = await readJson('keywords-priority-20.json');
+const plan = await readJson('content-topics.json');
 const slugs = plan.categories.flatMap(({keywords}) => keywords.map((keyword) => keyword.replace(/^aion 2 /, '').replaceAll(' ', '-')));
+const classIdentities = await readJson('src/content/class-identities.json');
+const guideAssets = await readJson('src/content/guide-assets.json');
 await mkdir(output, {recursive: true});
 const systemChrome = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 const executablePath = process.env.PLAYWRIGHT_BROWSER_PATH || (existsSync(systemChrome) ? systemChrome : undefined);
 const browser = await chromium.launch({headless: true, executablePath});
 const failures = [];
 const context = await browser.newContext({viewport: {width: 1440, height: 1000}, reducedMotion: 'reduce'});
+await installGameFixtures(context);
 await context.grantPermissions(['clipboard-read', 'clipboard-write'], {origin: base});
 const page = await context.newPage();
 page.on('pageerror', (error) => failures.push(error.message));
@@ -26,7 +30,8 @@ try {
   await page.goto(base, {waitUntil: 'networkidle'});
   await expect(page.locator('html')).toHaveAttribute('lang', 'en');
   await expect(page.locator('h1')).toHaveText('AION 2');
-  await expect(page.locator('.desktop-sidebar nav a')).toHaveCount(21);
+  await expect(page.locator('.desktop-sidebar nav a')).toHaveCount(slugs.length + 4);
+  await expect(page.locator('.desktop-sidebar .sidebar-status')).toHaveText((await readJson('src/messages/en.json')).ui.contentReady.replace('{count}', String(slugs.length)));
   await expect(page.locator('.journey-card')).toHaveCount(4);
   await expect(page.locator('.desktop-sidebar .coupon-state')).toHaveText('Announced');
   await page.locator('.desktop-sidebar .coupon-code-row button').click();
@@ -77,6 +82,8 @@ try {
   await expect(menuButton).toBeFocused();
   assert.equal(await page.evaluate(() => document.body.style.overflow), '');
   await menuButton.click();
+  const guideGroup = dialog.locator('details').filter({has: page.locator('a[href="/de/guide"]')});
+  if (await guideGroup.getAttribute('open') === null) await guideGroup.locator('summary').click();
   await dialog.getByRole('link', {name: 'Einsteigerguide', exact: true}).click();
   await page.waitForURL('**/de/guide');
   await expect(page.locator('h1')).toHaveText((await readJson('src/content/de/guide.json')).title);
@@ -95,7 +102,10 @@ try {
       const meta = await readJson(`src/content/${locale}/${slug}.json`);
       await expect(page.locator('html')).toHaveAttribute('lang', locale);
       await expect(page.locator('h1')).toHaveText(meta.title);
+      await expect(page.locator('.article-answer p')).toHaveText(meta.quickAnswer);
       await expect(page.locator('article.article-page')).toHaveAttribute('data-page-status', 'published');
+      await expect(page.locator('.article-answer p')).toHaveText(meta.quickAnswer);
+      assert.notEqual(meta.quickAnswer, meta.summary, `${locale}/${slug}: quick answer is a separate answer`);
       await expect(page.locator(`#${firstSection}`)).toBeVisible();
       const overflow = await page.evaluate(() => ({scroll: document.documentElement.scrollWidth, width: window.innerWidth}));
       assert.ok(overflow.scroll <= overflow.width + 1, `${locale}/${slug} overflow: ${JSON.stringify(overflow)}`);
@@ -105,11 +115,52 @@ try {
         assert.ok(href.startsWith(`${prefix}/`) && !href.startsWith('/en/'), `${locale}/${slug} localized internal link: ${href}`);
       }
       for (const section of meta.toc) await expect(page.locator(`#${section.id}`)).toHaveCount(1);
+      if (slug === 'tier-list') {
+        const comparison = page.locator('.article-body table').nth(0);
+        const priorities = page.locator('.article-body table').nth(1);
+        await expect(comparison.locator('tbody tr')).toHaveCount(8);
+        for (const width of [1440, 390]) {
+          await page.setViewportSize({width, height: 844});
+          const metrics = await priorities.evaluate((table) => {
+            const cells = table.querySelectorAll('tbody tr:first-child td');
+            return {firstColumn: cells[0].getBoundingClientRect().width, whiteSpace: getComputedStyle(cells[1]).whiteSpace, height: table.getBoundingClientRect().height};
+          });
+          assert.equal(metrics.whiteSpace, 'normal', `${locale}/${slug} ${width}px: activity guidance wraps`);
+          assert.ok(metrics.firstColumn >= 90, `${locale}/${slug} ${width}px: readable priority column, ${JSON.stringify(metrics)}`);
+          assert.ok(metrics.height < 900, `${locale}/${slug} ${width}px: activity table avoids excessive height, ${JSON.stringify(metrics)}`);
+        }
+        await page.setViewportSize({width: locale === 'en' ? 1440 : 390, height: locale === 'en' ? 1000 : 844});
+      }
+      if (slug === 'classes') {
+        const iconRows = page.locator('[data-class-icon]');
+        await expect(iconRows).toHaveCount(classIdentities.length);
+        assert.deepEqual(await iconRows.evaluateAll((rows) => rows.map((row) => row.dataset.classIcon)), classIdentities.map(({id}) => id), `${locale}: all eight class icons`);
+        for (const identity of classIdentities) {
+          const row = page.locator(`[data-class-icon="${identity.id}"]`);
+          const asset = guideAssets.find(({id}) => id === `emblem-${identity.id}`);
+          await expect(row.locator('td').nth(1)).toHaveText(identity.names.en);
+          await expect(row.locator('td').nth(2)).toHaveText(identity.names[locale]);
+          await expect(row.locator('img')).toHaveAttribute('width', String(asset.width));
+          await expect(row.locator('img')).toHaveAttribute('height', String(asset.height));
+          const source = await row.locator('img').evaluate((image) => {
+            const url = new URL(image.getAttribute('src'), location.origin);
+            return url.searchParams.get('url') || url.pathname;
+          });
+          assert.equal(source, asset.src, `${locale}/${identity.id}: matching official emblem`);
+          await expect(row.locator('button')).toHaveAttribute('aria-label', new RegExp(identity.names[locale]));
+        }
+        for (const classSlug of ['gladiator', 'ranger', 'spiritmaster'].filter((classSlug) => slugs.includes(classSlug))) {
+          await expect(page.locator(`.class-guide-card[data-class="${classSlug}"] a`)).toHaveAttribute('href', `${locale === 'en' ? '' : `/${locale}`}/${classSlug}`);
+        }
+      }
       await expect(page.locator('.guide-figure, .guide-diagram')).not.toHaveCount(0);
+      for (const [id, visual] of Object.entries(meta.visuals)) await expect(page.locator(`[data-visual-id="${id}"] figcaption p`)).toHaveText(visual.caption);
       await expect(page.locator('.article-next-section .article-next-card')).toHaveCount(2);
       const nextTargets = await page.locator('.article-next-card').evaluateAll((cards) => cards.map((card) => card.dataset.nextGuide));
       assert.equal(new Set(nextTargets).size, nextTargets.length, `${locale}/${slug}: no duplicate next cards`);
-      assert.ok(await page.evaluate(() => !!(document.querySelector('.article-next-section').compareDocumentPosition(document.querySelector('.article-sources')) & Node.DOCUMENT_POSITION_FOLLOWING)), `${locale}/${slug}: next step before sources`);
+      await expect(page.locator('#article-sources, #sources-title, .guide-asset-credit, .source-context')).toHaveCount(0);
+      await expect(page.locator('.article-toc a[href="#article-sources"], .article-toc-mobile a[href="#article-sources"]')).toHaveCount(0);
+      assert.ok(await page.evaluate(() => !!(document.querySelector('.article-next-section').compareDocumentPosition(document.querySelector('.article-related')) & Node.DOCUMENT_POSITION_FOLLOWING)), `${locale}/${slug}: next step before related guides`);
       if (locale !== 'en') assert.equal(await page.locator('.article-body').evaluate((element) => getComputedStyle(element).fontSize), '16px', `${locale}/${slug}: readable mobile body`);
     }
   }
@@ -134,6 +185,25 @@ try {
   await expect(page.locator('[data-checklist="guide"] input:checked')).toHaveCount(0);
 
   await page.goto(`${base}/classes`, {waitUntil: 'networkidle'});
+  for (const width of [390, 1440]) {
+    await page.setViewportSize({width, height: 844});
+    const iconTrigger = page.locator('[data-class-icon="gladiator"] .guide-image-button');
+    await iconTrigger.scrollIntoViewIfNeeded();
+    await iconTrigger.focus();
+    await page.keyboard.press('Enter');
+    await expect(page.locator('.guide-image-dialog')).toBeVisible();
+    const emblem = guideAssets.find(({id}) => id === 'emblem-gladiator');
+    await expect(page.locator('.guide-image-dialog img')).toHaveAttribute('src', emblem.src);
+    await expect(page.locator('.guide-image-dialog img')).toHaveJSProperty('complete', true);
+    assert.deepEqual(await page.locator('.guide-image-dialog img').evaluate((image) => [image.naturalWidth, image.naturalHeight]), [emblem.width, emblem.height], `${width}px: original icon resolution`);
+    await page.keyboard.press('Tab');
+    assert.ok(await page.evaluate(() => !!document.activeElement?.closest('dialog')), `${width}px: icon dialog traps focus`);
+    await page.keyboard.press('Escape');
+    await expect(page.locator('.guide-image-dialog')).toHaveCount(0);
+    await expect(iconTrigger).toBeFocused();
+    assert.equal(await page.evaluate(() => document.body.style.overflow), '', `${width}px: icon dialog restores scrolling`);
+  }
+  await page.setViewportSize({width: 390, height: 844});
   await expect(page.locator('.class-guide-card')).toHaveCount(8);
   await page.locator('.class-finder button').filter({hasText: 'Healing & recovery'}).click();
   await expect(page.locator('.class-guide-card')).toHaveCount(1);
@@ -151,8 +221,16 @@ try {
   await page.locator('.class-finder button').filter({hasText: 'Show all'}).click();
   await expect(page.locator('.class-guide-card')).toHaveCount(8);
   const compareRoleLink = page.locator('.class-guide-card[data-class="gladiator"] a');
-  await expect(compareRoleLink).toHaveAttribute('href', '#choose-a-role');
-  await compareRoleLink.click();
+  if (slugs.includes('gladiator')) {
+    await expect(compareRoleLink).toHaveAttribute('href', '/gladiator');
+    await compareRoleLink.click();
+    await page.waitForURL('**/gladiator');
+    await expect(page.locator('h1')).toHaveText((await readJson('src/content/en/gladiator.json')).title);
+    await page.goto(`${base}/classes`, {waitUntil: 'networkidle'});
+  }
+  const templarRoleLink = page.locator('.class-guide-card[data-class="templar"] a');
+  await expect(templarRoleLink).toHaveAttribute('href', '#choose-a-role');
+  await templarRoleLink.click();
   await expect(page.locator('#choose-a-role')).toBeInViewport();
 
   await page.goto(`${base}/leveling`, {waitUntil: 'networkidle'});
@@ -259,7 +337,7 @@ try {
     await page.screenshot({path: fileURLToPath(new URL(`home-${name}-fold.png`, output))});
   }
   assert.deepEqual(failures, [], 'No runtime, console, or local network errors');
-  console.log('PASS: 80 enriched articles; responsive images, diagrams, class finder, checklist persistence/reset/blocked storage, faction/region filtering, zoom keyboard/focus, next steps and mobile contents; language query/hash, coupon behavior and no runtime errors.');
+  console.log(`PASS: ${slugs.length * 4} enriched articles; responsive images, diagrams, class finder, checklist persistence/reset/blocked storage, faction/region filtering, zoom keyboard/focus, next steps and mobile contents; language query/hash, coupon behavior and no runtime errors.`);
 } finally {
   await context.close();
   await browser.close();

@@ -57,12 +57,8 @@ export function CouponCard() {
       <p className="coupon-expiry">{t('expires')}: <time dateTime={couponAnnouncement.expiresAt}>{expires} UTC</time></p>
       <div className="coupon-bottom">
         <Link href="/code">{t('viewCodes')} <ExternalLink size={11} aria-hidden="true" /></Link>
-        <a href={couponAnnouncement.source} target="_blank" rel="noopener noreferrer">{t('source')}</a>
       </div>
-      <details className="coupon-details">
-        <summary>{t('couponLimit')}</summary>
-        <p>{t('couponDisclaimer')}</p>
-      </details>
+      <p className="coupon-details">{t('couponLimit')}</p>
     </section>
   );
 }

@@ -1,9 +1,9 @@
 'use client';
 
-import {useEffect, useRef, useState} from 'react';
+import {memo, useCallback, useEffect, useRef, useState} from 'react';
 import {
-  ArrowUpRight, BookOpen, ChevronDown, Coins, Download, Gift, Home, Layers3,
-  Map, Menu, Monitor, Server, Sparkles, Swords, Ticket, WandSparkles, X,
+  ArrowUpRight, BookOpen, ChevronDown, Coins, Download, Gift, Home, Layers3, ChartNoAxesCombined,
+  Map, Menu, Monitor, Server, Sparkles, Swords, Ticket, WandSparkles, X, Flag, Keyboard, UserRound, Calculator, ListChecks,
 } from 'lucide-react';
 import {useTranslations} from 'next-intl';
 import {Link, usePathname} from '@/i18n/navigation';
@@ -29,12 +29,17 @@ const icons = {
   platforms: Monitor,
   installationAndControls: Download,
   monetizationAndTrading: Coins,
+  damageMeters: ChartNoAxesCombined,
+  playerStatistics: ChartNoAxesCombined,
+  factions: Flag,
+  macros: Keyboard,
 };
 
-function NavigationContent({groups, onNavigate}: {groups: NavGroup[]; onNavigate?: () => void}) {
+const NavigationContent = memo(function NavigationContent({groups, onNavigate}: {groups: NavGroup[]; onNavigate?: () => void}) {
   const pathname = usePathname();
   const t = useTranslations('ui');
   const complete = groups.every((group) => group.topics.every((topic) => topic.published));
+  const publishedCount = groups.reduce((count, group) => count + group.topics.filter((topic) => topic.published).length, 0);
 
   return (
     <>
@@ -44,6 +49,10 @@ function NavigationContent({groups, onNavigate}: {groups: NavGroup[]; onNavigate
             <Home size={17} aria-hidden="true" />{t('home')}
             <span className="nav-active-dot" aria-hidden="true" />
           </Link>
+          <p className="nav-overline">{t('playerTools')}</p>
+          <Link className={`nav-single ${pathname === '/tools/character' ? 'active' : ''}`} href="/tools/character" aria-current={pathname === '/tools/character' ? 'page' : undefined} onClick={onNavigate}><UserRound size={16} aria-hidden="true" /><span>{t('characterLookup')}</span></Link>
+          <Link className="nav-single" href="/monetization#material-budget" onClick={onNavigate}><Calculator size={16} aria-hidden="true" /><span>{t('materialBudget')}</span></Link>
+          <Link className="nav-single" href="/guide#starter-checklist" onClick={onNavigate}><ListChecks size={16} aria-hidden="true" /><span>{t('starterChecklist')}</span></Link>
           <p className="nav-overline">{t('browse')}</p>
           {groups.map((group) => {
             const Icon = icons[group.id];
@@ -57,7 +66,7 @@ function NavigationContent({groups, onNavigate}: {groups: NavGroup[]; onNavigate
               );
             }
             return (
-              <details className="nav-group" key={group.id} open>
+              <details className="nav-group" key={group.id} open={!onNavigate || active}>
                 <summary><Icon size={16} aria-hidden="true" /><span>{group.label}</span><ChevronDown size={13} className="nav-chevron" aria-hidden="true" /></summary>
                 <div className="nav-topics">
                   {group.topics.map((topic) => (
@@ -73,20 +82,20 @@ function NavigationContent({groups, onNavigate}: {groups: NavGroup[]; onNavigate
       </div>
       <div className="sidebar-bottom">
         <CouponCard />
-        <p className="sidebar-status"><span aria-hidden="true" />{t(complete ? 'contentReady' : 'contentStatus')}</p>
+        <p className="sidebar-status"><span aria-hidden="true" />{complete ? t('contentReady', {count: publishedCount}) : t('contentStatus')}</p>
       </div>
     </>
   );
-}
+});
 
 export function SiteNavigation({groups, gameTitle}: {groups: NavGroup[]; gameTitle: string}) {
   const t = useTranslations('ui');
   const dialog = useRef<HTMLDialogElement>(null);
   const [open, setOpen] = useState(false);
 
-  function closeMenu() {
+  const closeMenu = useCallback(() => {
     dialog.current?.close();
-  }
+  }, []);
 
   useEffect(() => {
     const media = window.matchMedia('(min-width: 1024px)');

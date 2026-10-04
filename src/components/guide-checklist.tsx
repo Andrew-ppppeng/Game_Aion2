@@ -34,7 +34,7 @@ export function GuideChecklist({slug, locale, title, items}: {slug: string; loca
     try {const ids: unknown = JSON.parse(value); return new Set(Array.isArray(ids) ? ids.filter((id) => typeof id === 'string' && items.some((item) => item.id === id)) : []);} catch {return new Set<string>();}
   }, [value, items]);
   const m = guideMessages[locale];
-  return <section className="guide-checklist" aria-label={title} data-checklist={slug}>
+  return <section className="guide-checklist" id="starter-checklist" aria-label={title} data-checklist={slug}>
     <div className="guide-checklist-heading"><h3>{title}</h3><button type="button" onClick={() => save(key, [])}><RotateCcw size={14} aria-hidden="true" />{m.reset}</button></div>
     <p className="guide-checklist-count" role="status">{selected.size} / {items.length} {m.complete}</p>
     <progress value={selected.size} max={items.length} aria-label={title} />

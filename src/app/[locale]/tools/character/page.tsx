@@ -6,7 +6,8 @@ import {Link} from '@/i18n/navigation';
 import {routing} from '@/i18n/routing';
 import {toolMessages} from '@/i18n/tool-messages';
 import {getSiteMessages} from '@/i18n/messages';
-import {languageAlternates, localePath} from '@/lib/site';
+import {languageAlternates, localePath, site} from '@/lib/site';
+import {shareImagePath} from '@/lib/share-images';
 import {curatedIds, snapshotItem, snapshotMeta} from '@/lib/aion2/data';
 import {characterId, positiveInteger, readRegion} from '@/lib/aion2/model';
 import {regions} from '@/lib/aion2/types';
@@ -20,6 +21,8 @@ export async function generateMetadata({params, searchParams}: Props): Promise<M
   const m = toolMessages[locale];
   const preview = process.env.VERCEL_ENV === 'preview';
   return {title: m.characterTitle, description: m.characterIntro, robots: {index: !preview && !Object.keys(query).length, follow: true},
+    openGraph: {type: 'website', title: m.characterTitle, description: m.characterIntro, url: localePath(locale, '/tools/character'), siteName: site.name, images: [{url: shareImagePath(locale, 'character', m.characterTitle), width: 1200, height: 630, alt: m.characterTitle}]},
+    twitter: {card: 'summary_large_image', title: m.characterTitle, description: m.characterIntro, images: [shareImagePath(locale, 'character', m.characterTitle)]},
     alternates: {canonical: localePath(locale, '/tools/character'), languages: languageAlternates('/tools/character')}};
 }
 export default async function CharacterPage({params, searchParams}: Props) {

@@ -1,4 +1,4 @@
-import {ArrowRight, ExternalLink} from 'lucide-react';
+import {ArrowRight} from 'lucide-react';
 import type {Locale} from '@/i18n/routing';
 import {guideMessages} from '@/i18n/guide-messages';
 import {getGuideAsset} from '@/lib/guide-assets';
@@ -11,7 +11,7 @@ export function GuideVisual({id, visual, locale}: {id: string; visual: GuideVisu
     const asset = getGuideAsset(visual.assetId);
     return <figure className="guide-figure" data-visual-id={id} data-asset-id={asset.id}>
       <GuideImage src={asset.src} width={asset.width} height={asset.height} alt={visual.alt || visual.caption} locale={locale} />
-      <figcaption><p>{visual.caption}</p><span className="guide-asset-credit"><a href={asset.sourceUrl} target="_blank" rel="noopener noreferrer">{m.source}: {asset.publisher}<ExternalLink size={12} aria-hidden="true" /></a> · {asset.region} · {asset.checkedAt}</span></figcaption>
+      <figcaption><p>{visual.caption}</p></figcaption>
     </figure>;
   }
   return <figure className={`guide-diagram${visual.rows ? ' comparison' : ''}`} data-visual-id={id} aria-label={visual.title}>

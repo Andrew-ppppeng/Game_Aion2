@@ -8,10 +8,29 @@ import {guideMessages} from '@/i18n/guide-messages';
 import type {GuideAsset} from '@/lib/article-types';
 import identities from '@/content/class-identities.json';
 import {GuideImage} from './guide-image';
+import {GuideTable} from './guide-table';
 
 type Role = 'all' | 'frontline' | 'melee' | 'ranged' | 'healing' | 'support';
+type ClassAsset = Pick<GuideAsset, 'id' | 'src' | 'width' | 'height'>;
 
-export function ClassFinder({locale, assets}: {locale: Locale; assets: GuideAsset[]}) {
+export function ClassIconTable({locale, assets}: {locale: Locale; assets: ClassAsset[]}) {
+  const m = guideMessages[locale];
+  return <section className="class-icon-reference" aria-label={m.iconTable}>
+    <p>{m.iconNote}</p>
+    <GuideTable><thead><tr><th scope="col">{m.classIcon}</th><th scope="col">{m.englishName}</th><th scope="col">{m.localName}</th></tr></thead>
+      <tbody>{identities.map((entry) => {
+        const emblem = assets.find((asset) => asset.id === `emblem-${entry.id}`);
+        if (!emblem) throw new Error(`Missing class emblem: ${entry.id}`);
+        return <tr key={entry.id} data-class-icon={entry.id}>
+          <td><div className="class-icon-preview"><GuideImage src={emblem.src} width={emblem.width} height={emblem.height} alt={`${entry.names[locale]} — ${m.classIcon}`} locale={locale} /></div></td>
+          <td lang="en">{entry.names.en}</td><td>{entry.names[locale]}</td>
+        </tr>;
+      })}</tbody>
+    </GuideTable>
+  </section>;
+}
+
+export function ClassFinder({locale, assets}: {locale: Locale; assets: ClassAsset[]}) {
   const [role, setRole] = useState<Role>('all');
   const m = guideMessages[locale];
   const visible = identities.filter((entry) => role === 'all' || entry.roles.includes(role));
@@ -28,6 +47,5 @@ export function ClassFinder({locale, assets}: {locale: Locale; assets: GuideAsse
         {entry.href.startsWith('/') ? <Link href={entry.href}>{m.next} →</Link> : <a href={entry.href}>{m.inspect} ↓</a>}
       </div>;
     })}</div>
-    <p className="guide-asset-credit"><a href="https://aion2.plaync.com/en-us/about/index" target="_blank" rel="noopener noreferrer">{m.source}: NC · Global</a></p>
   </section>;
 }

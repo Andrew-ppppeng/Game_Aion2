@@ -1,4 +1,4 @@
-import plan from '../../keywords-priority-20.json';
+import published from '../../content-topics.json';
 import type {SiteMessages} from '@/i18n/messages';
 
 export type TopicSlug = keyof SiteMessages['topics'];
@@ -17,6 +17,10 @@ const categoryIds: Record<string, CategoryId> = {
   platforms: 'platforms',
   'installation and controls': 'installationAndControls',
   'monetization and trading': 'monetizationAndTrading',
+  'damage meters': 'damageMeters',
+  'player statistics': 'playerStatistics',
+  factions: 'factions',
+  macros: 'macros',
 };
 
 export type Topic = {
@@ -26,7 +30,7 @@ export type Topic = {
   category: CategoryId;
 };
 
-export const topicGroups = plan.categories.map(({category, keywords}) => {
+export const topicGroups = published.categories.map(({category, keywords}) => {
   const id = categoryIds[category];
   if (!id) throw new Error(`Unmapped category: ${category}`);
 

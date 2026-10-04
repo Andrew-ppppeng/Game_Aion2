@@ -6,6 +6,7 @@ export type ArticleMetadata = {
   title: string;
   description: string;
   summary: string;
+  quickAnswer: string;
   toc: {id: string; title: string}[];
   visuals?: Record<string, GuideVisualData>;
   checklist?: {title: string; items: {id: string; label: string}[]};
@@ -50,6 +51,7 @@ export type ArticleSource = {
 
 export type ArticleData = {
   slug: TopicSlug;
+  edition?: 'Global' | 'TW' | 'KR/TW';
   keyword: string;
   checkedAt: string;
   revision: string;

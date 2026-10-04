@@ -1,6 +1,6 @@
 import type {Locale} from '@/i18n/routing';
 import type {TopicSlug} from './topics';
-import {getTopic} from './topics';
+import {getTopic, topics} from './topics';
 import type {ArticleData, ArticleEntry} from './article-types';
 import data_guide from '@/content/article-data/guide.json';
 import data_gathering from '@/content/article-data/gathering.json';
@@ -22,6 +22,14 @@ import data_maintenance from '@/content/article-data/maintenance.json';
 import data_steam from '@/content/article-data/steam.json';
 import data_download from '@/content/article-data/download.json';
 import data_monetization from '@/content/article-data/monetization.json';
+import data_notmeter from '@/content/article-data/notmeter.json';
+import data_player_count from '@/content/article-data/player-count.json';
+import data_server_transfer from '@/content/article-data/server-transfer.json';
+import data_macro_guide from '@/content/article-data/macro-guide.json';
+import data_races from '@/content/article-data/races.json';
+import data_spiritmaster from '@/content/article-data/spiritmaster.json';
+import data_ranger from '@/content/article-data/ranger.json';
+import data_gladiator from '@/content/article-data/gladiator.json';
 import meta_en_guide from '@/content/en/guide.json';
 import meta_en_gathering from '@/content/en/gathering.json';
 import meta_en_leveling from '@/content/en/leveling.json';
@@ -42,6 +50,14 @@ import meta_en_maintenance from '@/content/en/maintenance.json';
 import meta_en_steam from '@/content/en/steam.json';
 import meta_en_download from '@/content/en/download.json';
 import meta_en_monetization from '@/content/en/monetization.json';
+import meta_en_notmeter from '@/content/en/notmeter.json';
+import meta_en_player_count from '@/content/en/player-count.json';
+import meta_en_server_transfer from '@/content/en/server-transfer.json';
+import meta_en_macro_guide from '@/content/en/macro-guide.json';
+import meta_en_races from '@/content/en/races.json';
+import meta_en_spiritmaster from '@/content/en/spiritmaster.json';
+import meta_en_ranger from '@/content/en/ranger.json';
+import meta_en_gladiator from '@/content/en/gladiator.json';
 import meta_ja_guide from '@/content/ja/guide.json';
 import meta_ja_gathering from '@/content/ja/gathering.json';
 import meta_ja_leveling from '@/content/ja/leveling.json';
@@ -62,6 +78,14 @@ import meta_ja_maintenance from '@/content/ja/maintenance.json';
 import meta_ja_steam from '@/content/ja/steam.json';
 import meta_ja_download from '@/content/ja/download.json';
 import meta_ja_monetization from '@/content/ja/monetization.json';
+import meta_ja_notmeter from '@/content/ja/notmeter.json';
+import meta_ja_player_count from '@/content/ja/player-count.json';
+import meta_ja_server_transfer from '@/content/ja/server-transfer.json';
+import meta_ja_macro_guide from '@/content/ja/macro-guide.json';
+import meta_ja_races from '@/content/ja/races.json';
+import meta_ja_spiritmaster from '@/content/ja/spiritmaster.json';
+import meta_ja_ranger from '@/content/ja/ranger.json';
+import meta_ja_gladiator from '@/content/ja/gladiator.json';
 import meta_es_guide from '@/content/es/guide.json';
 import meta_es_gathering from '@/content/es/gathering.json';
 import meta_es_leveling from '@/content/es/leveling.json';
@@ -82,6 +106,14 @@ import meta_es_maintenance from '@/content/es/maintenance.json';
 import meta_es_steam from '@/content/es/steam.json';
 import meta_es_download from '@/content/es/download.json';
 import meta_es_monetization from '@/content/es/monetization.json';
+import meta_es_notmeter from '@/content/es/notmeter.json';
+import meta_es_player_count from '@/content/es/player-count.json';
+import meta_es_server_transfer from '@/content/es/server-transfer.json';
+import meta_es_macro_guide from '@/content/es/macro-guide.json';
+import meta_es_races from '@/content/es/races.json';
+import meta_es_spiritmaster from '@/content/es/spiritmaster.json';
+import meta_es_ranger from '@/content/es/ranger.json';
+import meta_es_gladiator from '@/content/es/gladiator.json';
 import meta_de_guide from '@/content/de/guide.json';
 import meta_de_gathering from '@/content/de/gathering.json';
 import meta_de_leveling from '@/content/de/leveling.json';
@@ -102,6 +134,14 @@ import meta_de_maintenance from '@/content/de/maintenance.json';
 import meta_de_steam from '@/content/de/steam.json';
 import meta_de_download from '@/content/de/download.json';
 import meta_de_monetization from '@/content/de/monetization.json';
+import meta_de_notmeter from '@/content/de/notmeter.json';
+import meta_de_player_count from '@/content/de/player-count.json';
+import meta_de_server_transfer from '@/content/de/server-transfer.json';
+import meta_de_macro_guide from '@/content/de/macro-guide.json';
+import meta_de_races from '@/content/de/races.json';
+import meta_de_spiritmaster from '@/content/de/spiritmaster.json';
+import meta_de_ranger from '@/content/de/ranger.json';
+import meta_de_gladiator from '@/content/de/gladiator.json';
 
 const sharedData = {
   'guide': data_guide,
@@ -124,6 +164,14 @@ const sharedData = {
   'steam': data_steam,
   'download': data_download,
   'monetization': data_monetization,
+  'notmeter': data_notmeter,
+  'player-count': data_player_count,
+  'server-transfer': data_server_transfer,
+  'macro-guide': data_macro_guide,
+  'races': data_races,
+  'spiritmaster': data_spiritmaster,
+  'ranger': data_ranger,
+  'gladiator': data_gladiator,
 } as Record<TopicSlug, ArticleData>;
 
 const entries: Record<Locale, Record<TopicSlug, ArticleEntry>> = {
@@ -148,6 +196,14 @@ const entries: Record<Locale, Record<TopicSlug, ArticleEntry>> = {
     'steam': {metadata: meta_en_steam, load: () => import('@/content/en/steam.mdx')},
     'download': {metadata: meta_en_download, load: () => import('@/content/en/download.mdx')},
     'monetization': {metadata: meta_en_monetization, load: () => import('@/content/en/monetization.mdx')},
+    'notmeter': {metadata: meta_en_notmeter, load: () => import('@/content/en/notmeter.mdx')},
+    'player-count': {metadata: meta_en_player_count, load: () => import('@/content/en/player-count.mdx')},
+    'server-transfer': {metadata: meta_en_server_transfer, load: () => import('@/content/en/server-transfer.mdx')},
+    'macro-guide': {metadata: meta_en_macro_guide, load: () => import('@/content/en/macro-guide.mdx')},
+    'races': {metadata: meta_en_races, load: () => import('@/content/en/races.mdx')},
+    'spiritmaster': {metadata: meta_en_spiritmaster, load: () => import('@/content/en/spiritmaster.mdx')},
+    'ranger': {metadata: meta_en_ranger, load: () => import('@/content/en/ranger.mdx')},
+    'gladiator': {metadata: meta_en_gladiator, load: () => import('@/content/en/gladiator.mdx')},
   },
   ja: {
     'guide': {metadata: meta_ja_guide, load: () => import('@/content/ja/guide.mdx')},
@@ -170,6 +226,14 @@ const entries: Record<Locale, Record<TopicSlug, ArticleEntry>> = {
     'steam': {metadata: meta_ja_steam, load: () => import('@/content/ja/steam.mdx')},
     'download': {metadata: meta_ja_download, load: () => import('@/content/ja/download.mdx')},
     'monetization': {metadata: meta_ja_monetization, load: () => import('@/content/ja/monetization.mdx')},
+    'notmeter': {metadata: meta_ja_notmeter, load: () => import('@/content/ja/notmeter.mdx')},
+    'player-count': {metadata: meta_ja_player_count, load: () => import('@/content/ja/player-count.mdx')},
+    'server-transfer': {metadata: meta_ja_server_transfer, load: () => import('@/content/ja/server-transfer.mdx')},
+    'macro-guide': {metadata: meta_ja_macro_guide, load: () => import('@/content/ja/macro-guide.mdx')},
+    'races': {metadata: meta_ja_races, load: () => import('@/content/ja/races.mdx')},
+    'spiritmaster': {metadata: meta_ja_spiritmaster, load: () => import('@/content/ja/spiritmaster.mdx')},
+    'ranger': {metadata: meta_ja_ranger, load: () => import('@/content/ja/ranger.mdx')},
+    'gladiator': {metadata: meta_ja_gladiator, load: () => import('@/content/ja/gladiator.mdx')},
   },
   es: {
     'guide': {metadata: meta_es_guide, load: () => import('@/content/es/guide.mdx')},
@@ -192,6 +256,14 @@ const entries: Record<Locale, Record<TopicSlug, ArticleEntry>> = {
     'steam': {metadata: meta_es_steam, load: () => import('@/content/es/steam.mdx')},
     'download': {metadata: meta_es_download, load: () => import('@/content/es/download.mdx')},
     'monetization': {metadata: meta_es_monetization, load: () => import('@/content/es/monetization.mdx')},
+    'notmeter': {metadata: meta_es_notmeter, load: () => import('@/content/es/notmeter.mdx')},
+    'player-count': {metadata: meta_es_player_count, load: () => import('@/content/es/player-count.mdx')},
+    'server-transfer': {metadata: meta_es_server_transfer, load: () => import('@/content/es/server-transfer.mdx')},
+    'macro-guide': {metadata: meta_es_macro_guide, load: () => import('@/content/es/macro-guide.mdx')},
+    'races': {metadata: meta_es_races, load: () => import('@/content/es/races.mdx')},
+    'spiritmaster': {metadata: meta_es_spiritmaster, load: () => import('@/content/es/spiritmaster.mdx')},
+    'ranger': {metadata: meta_es_ranger, load: () => import('@/content/es/ranger.mdx')},
+    'gladiator': {metadata: meta_es_gladiator, load: () => import('@/content/es/gladiator.mdx')},
   },
   de: {
     'guide': {metadata: meta_de_guide, load: () => import('@/content/de/guide.mdx')},
@@ -214,8 +286,28 @@ const entries: Record<Locale, Record<TopicSlug, ArticleEntry>> = {
     'steam': {metadata: meta_de_steam, load: () => import('@/content/de/steam.mdx')},
     'download': {metadata: meta_de_download, load: () => import('@/content/de/download.mdx')},
     'monetization': {metadata: meta_de_monetization, load: () => import('@/content/de/monetization.mdx')},
+    'notmeter': {metadata: meta_de_notmeter, load: () => import('@/content/de/notmeter.mdx')},
+    'player-count': {metadata: meta_de_player_count, load: () => import('@/content/de/player-count.mdx')},
+    'server-transfer': {metadata: meta_de_server_transfer, load: () => import('@/content/de/server-transfer.mdx')},
+    'macro-guide': {metadata: meta_de_macro_guide, load: () => import('@/content/de/macro-guide.mdx')},
+    'races': {metadata: meta_de_races, load: () => import('@/content/de/races.mdx')},
+    'spiritmaster': {metadata: meta_de_spiritmaster, load: () => import('@/content/de/spiritmaster.mdx')},
+    'ranger': {metadata: meta_de_ranger, load: () => import('@/content/de/ranger.mdx')},
+    'gladiator': {metadata: meta_de_gladiator, load: () => import('@/content/de/gladiator.mdx')},
   },
 };
+
+// Only complete, explicitly registered articles can enter the published manifest.
+for (const topic of topics) {
+  if (!sharedData[topic.slug] || sharedData[topic.slug].keyword !== topic.keyword) {
+    throw new Error(`Published topic has missing or mismatched source data: ${topic.slug}`);
+  }
+  for (const locale of Object.keys(entries) as Locale[]) {
+    if (!entries[locale][topic.slug]) {
+      throw new Error(`Published topic has no localized article: ${locale}/${topic.slug}`);
+    }
+  }
+}
 
 export function getArticle(locale: Locale, slug: string) {
   const topic = getTopic(slug);

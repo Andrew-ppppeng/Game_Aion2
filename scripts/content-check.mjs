@@ -4,11 +4,16 @@ import {readFile, readdir} from 'node:fs/promises';
 const root = new URL('../', import.meta.url);
 const read = (path) => readFile(new URL(path, root), 'utf8');
 const json = async (path) => JSON.parse(await read(path));
-const plan = await json('keywords-priority-20.json');
+const plan = await json('content-topics.json');
 const keywords = plan.categories.flatMap(({keywords}) => keywords);
 const slugs = keywords.map((keyword) => keyword.replace(/^aion 2 /, '').replaceAll(' ', '-'));
 const locales = (process.env.CONTENT_LOCALES || 'en,ja,es,de').split(',');
 assert.equal(locales[0], 'en', 'English is the reference locale');
+assert.equal(new Set(plan.categories.map(({category}) => category)).size, plan.categories.length, 'Unique published categories');
+for (const {category, keywords: groupKeywords} of plan.categories) {
+  assert.ok(category.trim() && groupKeywords.length > 0, 'Published categories must contain articles');
+  for (const keyword of groupKeywords) assert.match(keyword, /^aion 2 [a-z0-9]+(?: [a-z0-9]+)*$/, 'Canonical English keyword');
+}
 const metadata = {};
 const bodies = {};
 const reserved = ['article-top', 'article-sources', 'sources-title', 'related-title'];
@@ -24,9 +29,18 @@ for (const asset of assets) {
 }
 let checks = 0;
 
-assert.equal(slugs.length, 20);
-assert.equal(new Set(slugs).size, 20);
+for (const path of ['src/i18n/article-messages.ts', 'src/i18n/guide-messages.ts', 'src/i18n/tool-messages.ts', 'src/components/site-info-page.tsx']) {
+  const copy = (await read(path)).replace(/https?:\/\/[^\s)"'<]+/g, '');
+  assert.doesNotMatch(copy, /\?{3,}|\uFFFD|[A-Za-z]\?[A-Za-z]/, `${path}: localized UI encoding`);
+}
+
+assert.ok(slugs.length > 0, 'Published topics must not be empty');
+assert.equal(new Set(slugs).size, slugs.length, 'Unique published topic slugs');
 for (const locale of locales) {
+  const messages = await json(`src/messages/${locale}.json`);
+  assert.match(messages.ui.contentReady, /\{count\}/, `${locale}: dynamic published count`);
+  assert.doesNotMatch(JSON.stringify(messages), /\?{3,}|\uFFFD/, `${locale}: UI encoding`);
+  for (const slug of slugs) assert.ok(messages.topics[slug]?.trim(), `${locale}: published navigation label ${slug}`);
   const files = await readdir(new URL(`src/content/${locale}/`, root));
   assert.deepEqual(files.filter((file) => file.endsWith('.mdx')).sort(), slugs.map((slug) => `${slug}.mdx`).sort(), `${locale}: exact topic coverage`);
   metadata[locale] = {};
@@ -37,11 +51,13 @@ for (const locale of locales) {
     const body = await read(`src/content/${locale}/${slug}.mdx`);
     metadata[locale][slug] = meta;
     bodies[locale][slug] = body;
-    for (const key of ['title', 'description', 'summary']) assert.ok(typeof meta[key] === 'string' && meta[key].trim().length > (key === 'title' ? 7 : 20), `${label}: ${key}`);
+    for (const key of ['title', 'description', 'summary', 'quickAnswer']) assert.ok(typeof meta[key] === 'string' && meta[key].trim().length > (key === 'title' ? 7 : 20), `${label}: ${key}`);
+    assert.notEqual(meta.quickAnswer.trim(), meta.summary.trim(), `${label}: quick answer is independent of the preview`);
     assert.ok(Array.isArray(meta.toc) && meta.toc.length >= 4, `${label}: useful sections`);
     assert.ok(body.trim().length > (locale === 'ja' ? 900 : 1800), `${label}: substantive body`);
     assert.doesNotMatch(body, /(^#\s|<h1[\s>])/m, `${label}: H1 supplied by shell`);
     assert.doesNotMatch(JSON.stringify(meta) + body, /\bTODO\b|\bTBD\b|\?{3,}|\uFFFD/, `${label}: no placeholders or encoding damage`);
+    assert.doesNotMatch((JSON.stringify(meta) + body).replace(/https?:\/\/[^\s)"<]+/g, ''), /\d\?\d|\s\?(?=\s|\d)/, `${label}: intact arrows, ranges and quantity symbols`);
     if (['es', 'de'].includes(locale)) assert.doesNotMatch((JSON.stringify(meta) + body).replace(/https?:\/\/[^\s)"<]+/g, ''), /[A-Za-z]\?[A-Za-z]/, `${label}: no damaged accented words`);
     assert.doesNotMatch(JSON.stringify(meta), /Coming soon/, `${label}: published metadata`);
     if (locale !== 'ja') assert.doesNotMatch(JSON.stringify(meta) + body, /[\u3400-\u9fff]/, `${label}: no untranslated Chinese`);
@@ -74,7 +90,10 @@ for (const locale of locales) {
     assert.match(body, /<GuideNext\s+slug="[a-z0-9-]+"\s*\/>/, `${label}: contextual next step`);
     assert.deepEqual(meta.inlineNext, [...body.matchAll(/<GuideNext\s+slug="([a-z0-9-]+)"\s*\/>/g)].map((match) => match[1]), `${label}: registered inline next steps`);
     for (const [, target] of body.matchAll(/<GuideNext\s+slug="([a-z0-9-]+)"\s*\/>/g)) assert.ok(slugs.includes(target) && target !== slug, `${label}: next guide ${target}`);
-    if (slug === 'classes') assert.match(body, /<GuideClasses\s*\/>/);
+    if (slug === 'classes') {
+      assert.match(body, /<GuideClasses\s*\/>/, `${label}: class finder`);
+      assert.match(body, /<GuideClassIcons\s*\/>/, `${label}: class icon reference`);
+    }
     if (slug === 'leveling') for (const faction of ['elyos', 'asmodians']) assert.ok(body.includes(`<GuideFaction faction="${faction}">`), `${label}: faction group ${faction}`);
     if (slug === 'server') for (const region of ['eu', 'naWest', 'naEast', 'latam', 'asia']) assert.ok(body.includes(`<GuideRegion region="${region}">`), `${label}: region group ${region}`);
     for (const [, href] of body.matchAll(/\]\((\/[^\s)]*)\)/g)) {
@@ -84,8 +103,8 @@ for (const locale of locales) {
     }
     checks++;
   }
-  for (const key of ['title', 'description']) assert.equal(new Set(slugs.map((slug) => metadata[locale][slug][key])).size, 20, `${locale}: unique page ${key}`);
-  assert.equal(new Set(slugs.map((slug) => bodies[locale][slug].trim())).size, 20, `${locale}: distinct topic bodies`);
+  for (const key of ['title', 'description']) assert.equal(new Set(slugs.map((slug) => metadata[locale][slug][key])).size, slugs.length, `${locale}: unique page ${key}`);
+  assert.equal(new Set(slugs.map((slug) => bodies[locale][slug].trim())).size, slugs.length, `${locale}: distinct topic bodies`);
 }
 
 for (let i = 0; i < slugs.length; i++) {
@@ -119,7 +138,7 @@ for (let i = 0; i < slugs.length; i++) {
       assert.deepEqual(translated.rows?.map(({values}) => values), visual.rows?.map(({values}) => values), `${locale}/${slug}/${id}: preserved comparison values`);
     }
     if (metadata.en[slug].checklist) assert.deepEqual(metadata[locale][slug].checklist.items.map(({id}) => id), metadata.en[slug].checklist.items.map(({id}) => id), `${locale}/${slug}: shared checklist progress`);
-    const components = (body) => [...body.matchAll(/<Guide(?:Visual|Next|Faction|Region)\s+[^>]+>/g)].map(([tag]) => tag);
+    const components = (body) => [...body.matchAll(/<Guide(?:Visual|Next|Faction|Region)\s+[^>]+>|<Guide(?:Classes|ClassIcons)\s*\/>/g)].map(([tag]) => tag);
     assert.deepEqual(components(bodies[locale][slug]), components(bodies.en[slug]), `${locale}/${slug}: stable interactive and image placements`);
     assert.notEqual(bodies[locale][slug].trim(), bodies.en[slug].trim(), `${locale}/${slug}: translated body`);
     for (const paragraph of paragraphs) assert.ok(!bodies[locale][slug].includes(paragraph), `${locale}/${slug}: untranslated paragraph`);

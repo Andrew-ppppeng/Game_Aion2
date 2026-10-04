@@ -10,4 +10,9 @@ export const nextGuides: Record<TopicSlug, [TopicSlug, TopicSlug]> = {
   'twitch-drops': ['code', 'presets'], server: ['classes', 'character-creation'],
   maintenance: ['download', 'steam'], steam: ['download', 'server'],
   download: ['server', 'classes'], monetization: ['presets', 'builds'],
+  notmeter: ['builds', 'classes'],
+  'player-count': ['server', 'maintenance'],
+  gladiator: ['builds', 'tier-list'], ranger: ['builds', 'pvp'],
+  spiritmaster: ['builds', 'pvp'], races: ['server', 'character-creation'],
+  'macro-guide': ['builds', 'notmeter'], 'server-transfer': ['server', 'maintenance'],
 };

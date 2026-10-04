@@ -22,6 +22,7 @@ page.on('pageerror', (error) => errors.push(error.message));
 page.on('console', (message) => {if (message.type() === 'error' && !message.text().includes('Failed to load resource')) errors.push(message.text());});
 let mode = 'normal';
 let searchRequest;
+const equipmentRequests = [];
 const profile = fixture.character.data.info.profile;
 const cid = profile.characterId;
 const respond = (route, body, status = 200) => route.fulfill({status, contentType: 'application/json', body: JSON.stringify(body)});
@@ -33,6 +34,10 @@ await context.route('**/api/aion2/**', async (route) => {
   if (url.pathname.endsWith('/meta')) {
     const record = metadata[region];
     return respond(route, {data: {servers: record.servers.data.serverList, classes: record.classes.data.classList.map((c) => ({id: c.id, name: c.text || c.name})), pcData: record.pcdata.data.pcDataList}, meta: null, error: null});
+  }
+  if (url.pathname.endsWith('/equipment-examples')) {
+    equipmentRequests.push(url.href);
+    return respond(route, {items: items.slice(2).map((record) => ({data: record.locales[locale].item, meta: {...record.locales[locale].meta, service: 'Global', region: 'nae', locale, freshness: 'snapshot'}, error: null}))});
   }
   if (url.pathname.endsWith('/search')) {
     searchRequest = url;
@@ -61,8 +66,11 @@ try {
     await page.goto(path(locale, 'builds'));
     const equipment = page.locator('[data-equipment-cards]');
     await expect(equipment).toBeVisible();
-    await expect(equipment.locator('[data-item-id]')).toHaveCount(22);
+    await expect(equipment.locator('[data-item-id]')).toHaveCount(2);
+    assert.equal(equipmentRequests.length, ['en', 'ja', 'es', 'de'].indexOf(locale), 'Collapsed equipment does not request additional cards');
     await equipment.locator(':scope > details > summary').click();
+    await expect(equipment.locator('[data-item-id]')).toHaveCount(22);
+    assert.equal(equipmentRequests.length, ['en', 'ja', 'es', 'de'].indexOf(locale) + 1, 'First expansion makes one request');
     await expect(equipment.locator('[data-item-id="110760001"]')).toBeVisible();
     await overflow(`${locale} equipment cards`);
 
@@ -177,6 +185,16 @@ try {
   await blockedPage.locator('[data-budget-planner] button[type="submit"]').click();
   await expect(blockedPage.locator('.budget-total')).toContainText('47.5');
   await blocked.close();
+  await page.setViewportSize({width: 312, height: 844});
+  await page.clock.setSystemTime(new Date());
+  await page.goto(`${base}/de`, {waitUntil: 'networkidle'});
+  await page.evaluate(() => {
+    const sizes = [...document.querySelectorAll('*')].filter((element) => element instanceof HTMLElement && !['SCRIPT', 'STYLE', 'NOSCRIPT'].includes(element.tagName)).map((element) => [element, parseFloat(getComputedStyle(element).fontSize)]);
+    for (const [element, size] of sizes) if (Number.isFinite(size)) element.style.fontSize = `${size * 2}px`;
+  });
+  await overflow('de home 312px 200% text');
+  await mkdir(new URL('../review/', output), {recursive: true});
+  await page.screenshot({path: fileURLToPath(new URL('../review/de-mobile-200.png', output))});
   assert.deepEqual(errors, [], 'No hydration or runtime errors');
   console.log('PASS: four-language equipment and character UI; regions, filters, template comparison, bookmarks/reload, UTC boundaries, calendar, pending times, local plans, blocked storage and 320/390/1440px layouts.');
 } finally {
