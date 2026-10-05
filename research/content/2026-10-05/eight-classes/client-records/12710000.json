@@ -1,0 +1,1492 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/12710000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "12710000",
+    "name": "Enhance Health",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+    "kind": "passive",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": []
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "filterResolved": false
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "sword",
+        "name": "Longsword"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127100001",
+            "name": "Enhance Health",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases HP, Max HP, and Incoming Heal",
+            "effect": "+<desc_point>250</> HP\n+<desc_point>7.5%</> Max HP\n+<desc_point>6%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Enhance Health",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+              "id": "127100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": true,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "916",
+        "level": 1,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "917",
+        "level": 2,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "918",
+        "level": 3,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "919",
+        "level": 4,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "920",
+        "level": 5,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "921",
+        "level": 6,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "922",
+        "level": 7,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "923",
+        "level": 8,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "924",
+        "level": 9,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "925",
+        "level": 10,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "passive",
+    "kindName": "Passive",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "classes": [
+      {
+        "code": "templar",
+        "name": "Templar"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/passive"
+    ],
+    "name": "Enhance Health",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_001.webp",
+    "id": "12710000",
+    "entityType": "skill",
+    "description": "Increases the caster's HP by <chat_combat>250</>. Increases Max HP by an additional <chat_combat>7.5%</> and Incoming Heal by <chat_combat>6%</>."
+  }
+}

@@ -1,0 +1,963 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aion 2 Maps: every region and dungeon in 3D</title>
+<base href="/map/">
+<script>if(location.hash.length>1)location.replace("/guides/"+location.hash)</script>
+<script>if(/\.workers\.dev$/.test(location.hostname)||location.hostname==="www.aion2maps.com")location.replace("https://aion2maps.com"+location.pathname+location.search+location.hash)</script>
+<meta name="description" content="Fly over Aion 2 in 3D: 10 regions and 47 dungeons with teleports, gathering nodes, named monsters and every boss&#x27;s room.">
+<link rel="canonical" href="https://aion2maps.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Aion 2 Maps">
+<meta property="og:title" content="Aion 2 Maps: every region and dungeon in 3D">
+<meta property="og:description" content="Fly over Aion 2 in 3D: 10 regions and 47 dungeons with teleports, gathering nodes, named monsters and every boss&#x27;s room.">
+<meta property="og:url" content="https://aion2maps.com/">
+<meta property="og:image" content="https://aion2maps.com/map/assets/share/_site.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#05080C">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="author" content="MidirSkry">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Aion 2 Maps", "url": "https://aion2maps.com/"}</script>
+<style>/* the region's facts, at the end of the panel's list (tools/build_site.py zextra_script) */
+#zextra{margin:14px 2px 0;padding-top:8px;border-top:1px solid var(--line)}.zinfo{font-size:12px;color:var(--ink-2)}.zinfo summary{cursor:pointer;font-size:12.2px;color:var(--ink-2);padding:4px 0;list-style-position:inside}.zinfo[open] summary{color:var(--ink)}.zinfo h2{font-size:12px;margin:10px 0 4px;color:var(--ink)}.zinfo p,.zinfo ul{margin:4px 0}.zinfo ul{padding-left:16px}.zinfo a{color:var(--aether)}.zinfo .zc{color:var(--muted)}.ad-slot.ad-map{min-height:100px;margin:10px 0 4px}.btn.hubbtn{display:flex;justify-content:center;margin-top:8px;text-decoration:none;color:var(--aether);border-color:rgba(63,224,224,.45)}.btn.hubbtn:hover{border-color:var(--aether);color:#fff}</style>
+<script>window.A2SITE={"map": null, "path": "/", "slugs": {"World_L_A": "verteron", "World_D_A": "altgard", "World_L_Starter": "poeta", "World_D_Starter": "ishalgen", "Abyss_Reshanta_A": "chaotic-lower-reshanta", "Abyss_Reshanta_C": "chaotic-middle-reshanta", "Abyss_Battlefield_A": "abyss-rift-zone", "World_L_B": "eltnen", "World_D_B": "morheim", "Abyss_Reshanta_D": "chaotic-upper-reshanta", "Arkanis": "shattered-arkanis", "DeusCenter": "deus-research-base", "Draupnir": "draupnir", "Dungeon_0003": "nightmare", "Fire_Temple": "fire-temple", "KraoCave": "krao-cave", "ReforgedAbyss": "abyssal-forge-ludra", "Urugugu_Canyon": "urugugu-canyon", "Artifact_01": "abyss-corridor", "BakronIsland": "vakron-sky-island", "BlasphemyLab": "consumed-deus-research-base", "BlueBreathIsle": "azure-breath-island", "BrokenSword_01": "accursed-sword", "CradleNihility": "cradle-of-nihility", "DaevaCitadel": "citadel-of-the-fallen-daeva", "Daeva_Garrision": "graverobber-den-treasure-storage", "DeadDramataNest": "dying-dramatas-nest", "Desert_A01": "incursion-of-the-spirits", "Draconic_001": "subjugation-closed", "Draconic_002": "beritra-brigade-fortress", "Draconic_004": "orcuss-grave", "Draconic_005": "fafnite-forge", "Dragon_Garrision": "sanctum-outskirts-watch-treasure-storage", "DungeonWave": "daeva-bio-research-base", "ErosionPurifier": "corroded-decontamination-facility", "FafniteGully": "abyssal-horn-den", "FrozenLament": "snowfield-of-sorrow", "HornCave": "ferocious-horn-den", "Human_Garrision": "rubek-thieves-occupied-territory-treasure-storage", "LegacyNoiran": "noirans-hidden-legacy", "MirrorHeart": "mirror-of-scarlet-desire", "MusphelHolyGrail": "chalice-of-muspel", "PhantomsHall": "hall-of-illusion", "SunkenTemple": "submerged-life-temple", "TYPE_AWAKEN_001": "nightmare-altar", "TYPE_AWAKEN_002": "tyrants-hideout", "TYPE_AWAKEN_003": "sanctum-of-loathing", "TYPE_AWAKEN_004": "depository-of-fates", "TYPE_AWAKEN_005": "forgotten-repository", "TYPE_AWAKEN_006": "chamber-of-the-dead", "TYPE_FACTORY_A02": "crobakhis-secret-depository", "Battlefield_A_1": "odyle-shard-cradle", "Battlefield_B_1": "stormslumber-snowfield", "Battlefield_C_1": "sandstorm-temple", "Fire_Temple_Arena": "fire-temple-arena", "Impetusium_Arena": "impetusium-arena", "Legion_Agit_01": "pantheon"}, "hub": "/guides/", "mapRoot": "/", "brand": "Aion 2 Maps", "titleFmt": "{name} map Â· Aion 2 Maps", "build": "18f9223161", "v": {"assets/cube-items.json": "0804f241", "assets/dungeons/Arkanis/": "bd137bb1", "assets/dungeons/Artifact_01/": "b8d2fa29", "assets/dungeons/BakronIsland/": "26dd1010", "assets/dungeons/Battlefield_A_1/": "012727f6", "assets/dungeons/Battlefield_B_1/": "a7e7398d", "assets/dungeons/Battlefield_C_1/": "7e032eb6", "assets/dungeons/BlasphemyLab/": "b29a6f80", "assets/dungeons/BlueBreathIsle/": "a0bd54d6", "assets/dungeons/BrokenSword_01/": "af23491c", "assets/dungeons/CradleNihility/": "eab495d8", "assets/dungeons/DaevaCitadel/": "1be57b90", "assets/dungeons/Daeva_Garrision/": "b2cb21a3", "assets/dungeons/DeadDramataNest/": "1fa7e5a2", "assets/dungeons/Desert_A01/": "5f7c0786", "assets/dungeons/DeusCenter/": "9df7c46d", "assets/dungeons/Draconic_001/": "31dffc6f", "assets/dungeons/Draconic_002/": "51c13525", "assets/dungeons/Draconic_004/": "78676b9a", "assets/dungeons/Draconic_005/": "657350aa", "assets/dungeons/Dragon_Garrision/": "424a9e60", "assets/dungeons/Draupnir/": "61acacaa", "assets/dungeons/DungeonWave/": "ee886647", "assets/dungeons/Dungeon_0003/": "50ebc36d", "assets/dungeons/ErosionPurifier/": "093cc87f", "assets/dungeons/FafniteGully/": "2b73f3c9", "assets/dungeons/Fire_Temple/": "29bc407a", "assets/dungeons/Fire_Temple_Arena/": "f314393d", "assets/dungeons/FrozenLament/": "3c165b87", "assets/dungeons/HornCave/": "50b59dfc", "assets/dungeons/Human_Garrision/": "ac98cc3f", "assets/dungeons/Impetusium_Arena/": "bb69bd04", "assets/dungeons/KraoCave/": "90fe08fa", "assets/dungeons/LegacyNoiran/": "482e1eef", "assets/dungeons/Legion_Agit_01/": "6852990b", "assets/dungeons/MirrorHeart/": "11027228", "assets/dungeons/MusphelHolyGrail/": "82ab94d0", "assets/dungeons/PhantomsHall/": "380bc9d7", "assets/dungeons/ReforgedAbyss/": "1a1b1eb3", "assets/dungeons/SunkenTemple/": "62af56ad", "assets/dungeons/TYPE_AWAKEN_001/": "3685dbc9", "assets/dungeons/TYPE_AWAKEN_002/": "5e8b41dd", "assets/dungeons/TYPE_AWAKEN_003/": "be9adcbf", "assets/dungeons/TYPE_AWAKEN_004/": "86563949", "assets/dungeons/TYPE_AWAKEN_005/": "074e7aed", "assets/dungeons/TYPE_AWAKEN_006/": "a56c5c30", "assets/dungeons/TYPE_FACTORY_A02/": "5cdc8dd0", "assets/dungeons/Urugugu_Canyon/": "9f17d6d7", "assets/dungeons/bosses.json": "3523a888", "assets/dungeons/index.json": "d5570a6f", "assets/dungeons/list.json": "5bac6800", "assets/gather.json": "5296dfd2", "assets/icon_props.json": "d6764291", "assets/icons/": "5406a3e3", "assets/info-items-tw.json": "16ebbcf4", "assets/info-items.json": "8c5159e3", "assets/iteminfo-tw.json": "f3fefc39", "assets/iteminfo.json": "f4f19f7f", "assets/items-tw.json": "38d8fc5b", "assets/items.json": "6efbf5c9", "assets/mapdata.json": "8de54e01", "assets/maps/Abyss_Battlefield_A/": "0cac0d04", "assets/maps/Abyss_Reshanta_A/": "1d53da1a", "assets/maps/Abyss_Reshanta_B/": "f35deef8", "assets/maps/Abyss_Reshanta_C/": "ecada493", "assets/maps/Abyss_Reshanta_D/": "4bd08fca", "assets/maps/World_D_A/": "6157c713", "assets/maps/World_D_B/": "14456069", "assets/maps/World_D_Starter/": "f309a6ff", "assets/maps/World_L_A/": "fa1790b8", "assets/maps/World_L_B/": "8f14b11d", "assets/maps/World_L_Starter/": "dfe523e1", "assets/maps/index.json": "1e9c5a7d", "assets/maps/search.json": "7a4a3781", "assets/mon_portraits.webp": "ac3407ed", "assets/monfigs.bin": "ee207b2a", "assets/monsters.json": "cd352c11", "assets/pets.json": "afe5e58a", "assets/share/": "0703cdef", "assets/thumbs/": "0e51ead6", "assets/timers.json": "044349b8", "assets/traces.json": "02f09fbb", "assets/vox/": "4d05798d"}, "links": {"page": {}, "gather": {"aria": "/gathering/aria/", "asvata": "/gathering/asvata/", "azpha": "/gathering/azpha/", "calendula": "/gathering/calendula/", "conide": "/gathering/conide/", "coriolus": "/gathering/coriolus/", "cypri": "/gathering/cypri/", "diamond": "/gathering/diamond/", "inina": "/gathering/inina/", "kukuru": "/gathering/kukuru/", "mela": "/gathering/mela/", "morfa": "/gathering/morfa/", "odyle": "/gathering/odyle/", "ohkra": "/gathering/ohkra/", "orichalcum": "/gathering/orichalcum/", "pujery": "/gathering/pujery/", "raydam": "/gathering/raydam/", "ruby": "/gathering/ruby/", "sapphire": "/gathering/sapphire/", "targena": "/gathering/targena/", "yggdrasil": "/gathering/yggdrasil/"}, "item": {}}}</script>
+<meta name="google-adsense-account" content="ca-pub-5576144054694477">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5576144054694477" crossorigin="anonymous"></script>
+<style>
+/* round 6: the filters redesign. One row component everywhere (icon, label, count, switch), collapsible cards, a chips bar
+   over the map, the map settings in a gear popover, and a bottom sheet at phone width.
+   round 15: the cards became tabs (one panel at a time, a dot on a tab with something on the map), each layer has one row
+   and one switch, and the chips bar keeps only the highlights, the search's focus and the slice (sidebar.mjs). */
+:root{--bg:#070d12;--panel:rgba(11,17,24,.86);--panel-solid:#0c131b;--panel-2:rgba(255,255,255,.045);--panel-3:rgba(255,255,255,.075);--line:rgba(255,255,255,.075);--line-2:rgba(255,255,255,.13);
+  --ink:#eaf1f7;--ink-2:#b8c6d3;--muted:#7d90a2;--aether:#3fe0e0;--gold:#f2c14e;--gold-2:#ffdf8a;--good:#5fd39a;--hi:#ffd66b;--f:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--r:12px}
+*{box-sizing:border-box}html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--ink);font:13.5px/1.45 var(--f)}
+button,input,select{font:inherit;color:inherit}
+/* a dropdown's list is drawn by the browser: a see-through select gets a light grey list under the light text (Chrome and
+   Edge on Windows), so the list is dark with solid rows */
+select{color-scheme:dark}select option,select optgroup{background:var(--panel-solid);color:var(--ink)}
+button{cursor:pointer}
+:focus-visible{outline:2px solid rgba(63,224,224,.8);outline-offset:1px;border-radius:6px}
+#view{position:fixed;inset:0}
+#view canvas{display:block}
+.panel{position:fixed;z-index:10;background:var(--panel);border:1px solid var(--line);border-radius:16px;backdrop-filter:blur(16px) saturate(1.25);-webkit-backdrop-filter:blur(16px) saturate(1.25);box-shadow:0 12px 40px rgba(0,0,0,.38)}
+kbd{font:600 10px/1 ui-monospace,monospace;color:var(--ink);background:rgba(255,255,255,.1);border:1px solid var(--line-2);border-bottom-width:2px;border-radius:4px;padding:1px 4px}
+
+/* ---------- sidebar ---------- */
+.left{left:14px;top:14px;bottom:14px;width:320px;display:flex;flex-direction:column;padding:0;overflow:hidden}
+.sb-top{padding:14px 14px 10px;border-bottom:1px solid var(--line);flex:none}
+.sb-head{display:flex;align-items:center;gap:10px}
+.brand{display:flex;align-items:center;gap:9px;flex:1;min-width:0}
+.brand .dot{width:9px;height:9px;border-radius:50%;background:radial-gradient(circle,#fff3c4,var(--gold) 60%,#b07a12);box-shadow:0 0 10px var(--gold);flex:none}
+.brand h1{font-size:16px;margin:0;letter-spacing:.2px;line-height:1.1}
+.brand .sub{color:var(--muted);font-size:11.3px}
+.iconbtn{width:34px;height:34px;border-radius:10px;border:1px solid var(--line-2);background:var(--panel-2);display:grid;place-items:center;color:var(--ink-2);flex:none;padding:0}
+.iconbtn:hover,.iconbtn[aria-expanded=true]{color:var(--ink);border-color:rgba(242,193,78,.55);background:var(--panel-3)}
+.iconbtn svg{width:18px;height:18px}
+/* 2026-09-28: the guides, a labelled aether button in the header (the user: "most wouldn't even see it or know it exists") */
+.guidesbtn{height:34px;display:inline-flex;align-items:center;gap:6px;padding:0 12px 0 9px;border-radius:10px;border:1px solid rgba(63,224,224,.62);background:linear-gradient(180deg,rgba(63,224,224,.24),rgba(63,224,224,.08));color:#c9fbfb;font-weight:720;font-size:13.5px;letter-spacing:.2px;text-decoration:none;flex:none;box-shadow:0 2px 12px rgba(63,224,224,.14)}
+.guidesbtn svg{width:17px;height:17px;color:var(--aether)}
+.guidesbtn:hover{background:linear-gradient(180deg,rgba(63,224,224,.36),rgba(63,224,224,.14));border-color:var(--aether);color:#fff}
+.searchwrap{position:relative;margin-top:12px}
+.searchwrap>svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--muted);pointer-events:none}
+.searchwrap>kbd{position:absolute;right:10px;top:50%;transform:translateY(-50%);opacity:.6}
+.search{width:100%;padding:9px 11px 9px 34px;border-radius:11px;border:1px solid var(--line-2);background:rgba(0,0,0,.28);outline:none;font-size:13.2px}
+.search:focus{border-color:rgba(63,224,224,.6);background:rgba(0,0,0,.4)}
+.search::placeholder{color:#6f8395}
+.results{display:none;position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:5;max-height:min(460px,60vh);overflow:auto;background:var(--panel-solid);border:1px solid var(--line-2);border-radius:12px;padding:6px;box-shadow:0 16px 40px rgba(0,0,0,.5);scrollbar-width:thin}
+.results.on{display:block}
+.results .rg{font-size:10.3px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);font-weight:700;padding:8px 8px 3px;display:flex;justify-content:space-between}
+.results .rg span{letter-spacing:0;font-weight:600}
+.results button{display:flex;width:100%;text-align:left;gap:9px;border:0;background:none;padding:5px 8px;border-radius:8px;align-items:center;color:var(--ink-2);font-size:12.8px;min-height:34px}
+.results button:hover,.results button.cur{background:var(--panel-3);color:var(--ink)}
+.results .ric{width:24px;height:24px;display:grid;place-items:center;flex:none}.results .ric img{max-width:22px;max-height:22px;image-rendering:auto}
+.results .rn{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.results small{color:var(--muted);white-space:nowrap;font-size:11.3px}
+.results .empty{margin:8px;color:var(--muted);font-size:12.3px}
+.tabs{display:grid;grid-template-columns:repeat(var(--n,4),minmax(0,1fr));gap:3px;margin-top:10px;padding:3px;border-radius:12px;background:rgba(0,0,0,.28);border:1px solid var(--line)}
+.tab{position:relative;display:flex;flex-direction:column;align-items:center;gap:3px;min-width:0;border:0;background:none;border-radius:9px;padding:7px 2px 6px;font-size:11.5px;font-weight:650;letter-spacing:.2px;color:var(--muted);transition:background .12s,color .12s}
+.tab .li{width:20px;height:20px;opacity:.72;filter:saturate(.75);transition:opacity .12s,filter .12s}
+.tab span{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tab:hover{color:var(--ink-2);background:var(--panel-2)}.tab:hover .li{opacity:.95;filter:none}
+.tab[aria-selected=true]{color:var(--ink);background:linear-gradient(180deg,rgba(242,193,78,.18),rgba(242,193,78,.06));box-shadow:inset 0 0 0 1px rgba(242,193,78,.6)}
+.tab[aria-selected=true] .li{opacity:1;filter:none}
+.tab:focus-visible{outline-offset:-2px}
+.tab.flash{animation:flash 1.1s ease-out}
+.tdot{position:absolute;top:5px;left:calc(50% + 8px);width:7px;height:7px;border-radius:50%;background:var(--aether);box-shadow:0 0 0 2px #0b1118,0 0 6px rgba(63,224,224,.8);display:none}
+.tab.lit .tdot{display:block}
+#cards{flex:1;overflow:auto;padding:6px 10px 14px;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.15) transparent;overscroll-behavior:contain}
+.sb-foot{flex:none;padding:6px 14px 9px;border-top:1px solid var(--line);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.legal{flex-basis:100%;font-size:10.5px;color:var(--muted);line-height:1.4;opacity:.8}
+.legal a{color:var(--ink);text-decoration:underline;text-underline-offset:2px}.legal a:hover{color:#fff}
+/* the site edition's tip link (tools/build_site.py write_map): gold words in the legal line, and a heart in the header
+   where the side button was (the side is in Settings now): the header's own button style, only the heart gold */
+.legal a.tiplink{color:var(--gold);font-weight:650}
+.sb-head .tipheart{color:var(--gold)}
+.sb-head .tipheart svg{width:17px;height:17px}
+.sb-head .tipheart:hover{border-color:rgba(242,193,78,.7);background:rgba(242,193,78,.12)}
+.stream{font-size:11px;color:var(--muted);display:flex;align-items:center;gap:6px;flex:1;min-width:0}
+.stream i{width:6px;height:6px;border-radius:50%;background:var(--aether);box-shadow:0 0 6px var(--aether);animation:p 1s infinite alternate}@keyframes p{to{opacity:.2}}
+
+/* the tab panels (round 15; they replaced the round-6 cards): one shows at a time */
+@keyframes flash{0%{box-shadow:0 0 0 2px rgba(242,193,78,.7)}100%{box-shadow:0 0 0 2px rgba(242,193,78,0)}}
+.tabp{display:none;padding-top:2px}.tabp.on{display:block}
+.sech{display:flex;align-items:baseline;gap:8px;font-size:10.5px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);font-weight:700;margin:12px 0 2px;padding:12px 6px 2px;border-top:1px solid var(--line)}
+.sech small{text-transform:none;letter-spacing:0;font-weight:500;font-size:11px}
+.sech .lnk{margin-left:auto;text-transform:none;letter-spacing:0;font-weight:600;font-size:11.5px}
+.pfoot{margin-top:14px;padding:2px 0 0;border-top:1px solid var(--line)}
+.chev{width:9px;height:9px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg) translate(-2px,-2px);transition:transform .15s;flex:none;display:inline-block}
+/* the switch */
+.sw{position:relative;display:inline-flex;flex:none;cursor:pointer}
+.sw input{position:absolute;opacity:0;width:100%;height:100%;margin:0;cursor:pointer}
+.sw i{width:30px;height:17px;border-radius:10px;background:rgba(255,255,255,.13);position:relative;transition:background .15s;display:block}
+.sw i::after{content:"";position:absolute;left:2px;top:2px;width:13px;height:13px;border-radius:50%;background:#cfd8e0;transition:transform .15s;box-shadow:0 1px 2px rgba(0,0,0,.4)}
+.sw input:checked+i{background:rgba(63,224,224,.6)}.sw input:checked+i::after{transform:translateX(13px);background:#fff}
+.sw input:indeterminate+i{background:rgba(63,224,224,.3)}.sw input:indeterminate+i::after{transform:translateX(6.5px)}
+.sw input:focus-visible+i{outline:2px solid rgba(63,224,224,.8);outline-offset:2px}
+/* the row */
+.lrow{display:flex;align-items:center;gap:9px;padding:6px 6px;border-radius:9px;cursor:pointer;flex-wrap:wrap;min-height:40px}
+.lrow:hover{background:var(--panel-2)}
+.li{width:22px;height:22px;flex:none;object-fit:contain;display:block}
+.lt{flex:1;display:flex;flex-direction:column;min-width:0}
+.ln{font-size:12.9px;color:var(--ink);font-weight:560;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ls{font-size:11.2px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ls b.timer{color:var(--gold-2)}
+.lc{font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums;min-width:22px;text-align:right}
+.pn{font-variant-numeric:tabular-nums}.pn b{color:var(--ink);font-weight:700}
+.pb{flex-basis:100%;height:4px;border-radius:3px;background:rgba(255,255,255,.08);overflow:hidden;margin:1px 0 0 31px}
+.pb i{display:block;height:100%;background:linear-gradient(90deg,#c9962a,var(--gold));border-radius:3px;transition:width .3s}
+[data-prog="tele"] .pb i{background:linear-gradient(90deg,#2a8fd0,#57b8ff)}
+.nb{border:0;background:none;width:26px;height:26px;border-radius:7px;color:var(--muted);display:grid;place-items:center;padding:0;flex:none}
+.nb svg{width:15px;height:15px}.nb:hover{background:var(--panel-3);color:var(--gold-2)}
+.crow2{display:flex;align-items:center;gap:8px;margin:8px 2px 2px;justify-content:space-between}
+.tog{display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none;color:var(--ink-2);font-size:12.5px}
+.tog input{appearance:none;width:26px;height:15px;border-radius:9px;background:rgba(255,255,255,.13);position:relative;cursor:pointer;flex:none;transition:background .15s;margin:0}
+.tog input::after{content:"";position:absolute;left:2px;top:2px;width:11px;height:11px;border-radius:50%;background:#cfd8e0;transition:transform .15s}
+.tog input:checked{background:rgba(63,224,224,.6)}.tog input:checked::after{transform:translateX(11px);background:#fff}
+.btn{border:1px solid var(--line-2);background:var(--panel-2);border-radius:9px;padding:7px 10px;font-size:12.5px;color:var(--ink-2)}
+.btn:hover{color:var(--ink);border-color:rgba(242,193,78,.5);background:var(--panel-3)}
+.btn.pri{background:linear-gradient(180deg,rgba(242,193,78,.24),rgba(242,193,78,.1));border-color:rgba(242,193,78,.55);color:#ffe7ac;font-weight:650}
+.btn.pri:hover{background:linear-gradient(180deg,rgba(242,193,78,.34),rgba(242,193,78,.16))}
+.btn.sm2{padding:5px 10px;font-size:12px}
+.btn.sm{flex:none;padding:3px 8px;font-size:10px;line-height:1.2}.btn.sm:disabled{opacity:.35;cursor:default}
+.lnk{border:0;background:none;padding:0;color:#8fe9e9;font-size:inherit;text-decoration:underline;text-decoration-color:rgba(143,233,233,.35);text-underline-offset:2px}
+.lnk:hover{color:#c6fbfb}
+.linkrow{display:flex;gap:6px;align-items:center;font-size:11.8px;color:var(--muted);margin:8px 2px 0}
+.hintline{font-size:11.3px;color:var(--muted);margin:8px 2px 2px;line-height:1.55}
+details.areas{margin:6px 2px 0}details.areas summary{cursor:pointer;font-size:12.2px;color:var(--ink-2);padding:4px 0;list-style-position:inside}details.areas summary span{color:var(--muted)}
+#pareas{max-height:210px;overflow:auto;margin-top:2px;scrollbar-width:thin}
+.row{display:flex;gap:9px;align-items:center;padding:5px 6px;cursor:pointer;border-radius:8px}.row:hover{background:var(--panel-2)}.row .nm{flex:1;color:var(--ink-2);min-width:0}.row small{color:var(--gold);font-weight:700;font-variant-numeric:tabular-nums}
+.row .rk{width:auto}.row .nm em{font-style:normal;color:var(--muted);font-size:11px;margin-left:6px}
+.arow{padding:4px 6px}.arow .nm{font-size:12.3px}.arow small{color:var(--ink-2)!important;font-weight:600!important}.arow.full .nm{color:var(--muted)}.arow.full small{color:var(--good)!important}
+.empty.prompt{display:block;border:1px dashed rgba(242,193,78,.35);background:rgba(242,193,78,.05);border-radius:10px;padding:9px 11px;margin:2px 0 8px;font-size:11.8px;color:var(--ink-2)}
+.empty.prompt b{display:block;color:var(--gold-2);font-size:12.8px;margin-bottom:1px}
+.empty.prompt[hidden]{display:none}
+/* gather */
+.gg{margin:4px 0 6px}
+.ggh{display:flex;align-items:center;gap:7px;font-size:10.8px;text-transform:uppercase;letter-spacing:.9px;color:var(--muted);font-weight:700;padding:6px 6px 3px}
+.ggh .li{width:15px;height:15px;opacity:.85}.ggh small{text-transform:none;letter-spacing:0;font-weight:500;margin-left:auto;font-size:10.8px}
+.ggh .lnk{text-transform:none;letter-spacing:0;font-weight:600;font-size:11px;margin-left:6px}
+.ggh span:nth-of-type(1)+small{margin-left:auto}
+.starh{color:var(--gold);font-size:12px}
+.grow{display:flex;align-items:center;gap:2px;border-radius:9px}
+.grow:hover{background:var(--panel-2)}
+.gsel{flex:1;display:flex;align-items:center;gap:9px;border:0;background:none;padding:5px 6px;border-radius:9px;text-align:left;min-width:0;min-height:36px}
+.gsel .li{width:22px;height:22px;image-rendering:pixelated}
+.gn{flex:1;font-size:12.9px;color:var(--ink-2);font-weight:560}
+.ck{width:16px;height:16px;border-radius:5px;border:1.5px solid rgba(255,255,255,.22);flex:none;position:relative}
+.grow.on .gsel .ck,.srow.on .ck,.petrow.on .ck{background:var(--hi);border-color:var(--hi)}
+.grow .lc{display:inline-flex;align-items:center;gap:4px}.grow .tgt{display:none;color:var(--gold-2)}.grow .tgt svg{width:12px;height:12px}.grow.on .tgt{display:inline-flex}   /* round 15: a row that is shown: gold, with the target (as in Hunt) */
+.grow.on .gsel .ck::after,.srow.on .ck::after,.petrow.on .ck::after{content:"";position:absolute;left:4.5px;top:1.5px;width:4px;height:8px;border:solid #062026;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.grow.on{background:rgba(255,214,107,.08);box-shadow:inset 0 0 0 1px rgba(255,214,107,.28)}.grow.on .gn{color:var(--ink)}
+.star,.gexp{border:0;background:none;width:26px;height:30px;border-radius:7px;color:rgba(255,255,255,.2);font-size:13px;padding:0;display:grid;place-items:center;flex:none}
+.star:hover,.gexp:hover{background:var(--panel-3);color:var(--ink-2)}
+.star[aria-pressed=true]{color:var(--gold)}
+.gexp .chev{transform:rotate(45deg) translate(-2px,-2px);width:7px;height:7px}
+.gexp[aria-expanded=true] .chev{transform:rotate(225deg) translate(-1px,-1px)}
+.gy{margin:0 4px 6px 37px;padding:6px 8px;border-left:2px solid rgba(63,224,224,.35);background:rgba(0,0,0,.18);border-radius:0 8px 8px 0}
+.yrow{display:flex;align-items:center;gap:8px;width:100%;border:0;background:none;padding:3px 4px;border-radius:6px;text-align:left;font-size:12.3px;color:var(--ink-2)}
+.yrow:hover{background:var(--panel-3);color:var(--ink)}.yrow .nm{flex:1}.yrow small{color:var(--muted);font-size:11px}
+.gd{width:8px;height:8px;border-radius:2px;flex:none;box-shadow:0 0 0 1px rgba(0,0,0,.4)}
+.ya{font-size:11.2px;color:var(--muted);margin-top:4px}
+.gfoot[hidden]{display:none}
+.h{font-size:10.5px;text-transform:uppercase;letter-spacing:1.1px;color:var(--muted);margin:12px 0 5px;font-weight:700;display:flex;justify-content:space-between}
+.h span{letter-spacing:0;text-transform:none;font-weight:600;color:var(--ink-2)}
+.arow2{position:relative;display:flex;width:100%;border:0;background:none;padding:5px 7px 8px;border-radius:7px;font-size:12.3px;color:var(--ink-2);text-align:left;gap:8px}
+.arow2:hover{background:var(--panel-2);color:var(--ink)}.arow2 span{flex:1}.arow2 small{color:var(--muted);font-variant-numeric:tabular-nums}
+.arow2 i{position:absolute;left:7px;bottom:3px;height:3px;border-radius:2px;background:linear-gradient(90deg,rgba(63,224,224,.9),rgba(63,224,224,.35));max-width:calc(100% - 14px)}
+/* hunt */
+.sbox{position:relative;margin:8px 0 4px}.sbox svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);width:14px;height:14px;color:var(--muted)}
+.search.sm{padding:7px 10px 7px 31px;font-size:12.6px}
+.selbar{display:flex;flex-wrap:wrap;gap:5px;align-items:center;font-size:11.5px;color:var(--gold-2);margin:6px 2px}
+.selbar[hidden]{display:none}
+.selbar .mini{color:var(--ink-2);border:1px solid rgba(255,214,107,.4);border-radius:999px;padding:1px 3px 1px 8px;background:rgba(255,214,107,.06)}
+.selbar .mini button{border:0;background:none;color:var(--muted);padding:0 4px;font-size:13px}
+.selbar .lnk{margin-left:auto}
+.selbar.g{margin:2px 2px 8px}.selbar .mini{display:inline-flex;align-items:center;gap:5px}.selbar .mini img,.selbar .mini .mth,.selbar .mini .ph{width:16px!important;height:16px!important;flex:none;object-fit:contain;image-rendering:pixelated;border-radius:4px}
+.slist{margin:2px -4px 0}
+.srow{display:flex;align-items:center;gap:9px;width:100%;border:0;background:none;padding:4px 6px;border-radius:9px;text-align:left;min-height:40px}
+.srow:hover{background:var(--panel-2)}
+.srow.on{background:rgba(255,214,107,.08);box-shadow:inset 0 0 0 1px rgba(255,214,107,.28)}
+
+.sl{flex:1;display:flex;flex-direction:column;min-width:0}
+.srow .nm{font-size:12.7px;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ss{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.srow .ct{color:var(--ink-2);font-size:11.5px;font-variant-numeric:tabular-nums}
+.more{display:block;margin:6px auto 2px;font-size:12px}
+/* round 15: the Pets tab (sidebar.mjs renderPets) */
+.ppro{margin:4px 4px 6px}.ppro .pt{display:flex;justify-content:space-between;font-size:12.5px;color:var(--ink-2)}.ppro .pt b{color:var(--ink)}
+.ppro .pb{margin:6px 0 0;flex-basis:auto}.ppro .pb i{background:linear-gradient(90deg,#249a5a,var(--good))}
+.petrow{display:flex;align-items:center;gap:3px;border-radius:9px}
+.phint{font-size:11.8px;color:var(--ink-2);margin:0 4px 6px;line-height:1.45}.phint b{color:#9ff0c6;font-weight:650}
+/* a monster's pet, in the Hunt list: on the second line, its "Owned" box at the line's end (the name keeps the full width) */
+/* round 15: the completed pets, under the Hunt list's count ("Show") */
+.ppro .pt .lnk{font-size:11.5px}
+.pdl{margin:8px -2px 2px;padding:4px 0 0;border-top:1px solid var(--line);max-height:260px;overflow:auto;scrollbar-width:thin}
+.pdl .petrow{margin:1px 0}.pdl .pmain{min-height:34px;padding:3px 6px}.pdl .pmain .ss{padding-right:90px}
+.pall{margin:6px 4px 2px;font-size:11.5px;color:var(--muted)}.pall b{color:var(--ink-2)}
+/* round 15: an area card's monster rows: the pet's mark (a paw; with a tick when the pet is complete) */
+.zpet{flex:none;display:inline-flex;align-items:center;gap:1px;margin-right:6px;opacity:.75}.zpet .li{width:14px;height:14px}
+.zpet.done{opacity:1;color:#5fd39a;font-weight:900;font-size:12px;background:rgba(47,191,113,.14);border-radius:6px;padding:0 4px 0 2px}
+.ppet{color:#cfe9d9}.ppet .li{display:inline-block;width:12px;height:12px;vertical-align:-2px;margin-right:3px}
+.petrow.haspet{position:relative;display:block}.petrow.haspet .pmain{width:100%;align-items:flex-start}
+.petrow.haspet .pmain .ss{padding-right:90px}.petrow.haspet .pmain .ct{margin-top:3px}
+.petrow.haspet .pdone{position:absolute;right:3px;bottom:5px}
+.pmain .ct{display:inline-flex;align-items:center;gap:4px}.pmain .ct svg{width:12px;height:12px;color:var(--gold-2)}
+/* the groups (by area or by type), folding */
+.pgrp{margin:1px 0}
+.pgh{display:flex;align-items:center;gap:8px;width:100%;border:0;background:none;padding:7px 8px;border-radius:9px;text-align:left;color:var(--ink-2);font-size:12.8px;font-weight:650}
+.pgh:hover{background:var(--panel-2);color:var(--ink)}
+.pgh .chev{transform:rotate(-45deg) translate(-1px,-1px);width:7px;height:7px;margin:0 2px}
+.pgrp.open>.pgh .chev{transform:rotate(45deg) translate(-2px,-2px)}
+.pgh span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.pgh small{color:var(--muted);font-weight:500;font-size:11.3px;white-space:nowrap}
+.pgrp.open{padding-bottom:4px}
+.pmain{flex:1;display:flex;align-items:center;gap:9px;border:0;background:none;padding:4px 6px;border-radius:9px;text-align:left;min-height:40px;min-width:0}
+.pmain:hover{background:var(--panel-2)}
+.petrow.on .pmain{background:rgba(255,214,107,.08);box-shadow:inset 0 0 0 1px rgba(255,214,107,.28)}
+.pmain .nm{font-size:12.7px;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pmain .ct{color:var(--ink-2);font-size:11.5px;font-variant-numeric:tabular-nums}
+/* round 15: "Best spot" (sidebar.mjs goSpot), on the chips over the map and the pinned lists */
+.spotb{border:0;background:rgba(255,255,255,.06);width:22px;height:22px;border-radius:50%;color:var(--gold-2);padding:0;display:inline-grid;place-items:center;flex:none;vertical-align:middle}
+.spotb svg{width:14px;height:14px}.spotb:hover{background:rgba(242,193,78,.25);color:#fff}
+.selbar .mini .spotb{width:20px;height:20px;background:none;margin:0 -2px 0 0}.selbar .mini .spotb svg{width:13px;height:13px}
+/* round 15: a monster's (or a pet's) card: the pet, and its "Owned" box (the Hunt list's, a little larger) */
+.mpet{display:flex;align-items:center;gap:10px;margin-top:12px;padding:8px 8px 8px 9px;border-radius:11px;background:rgba(95,211,154,.06);border:1px solid rgba(95,211,154,.24)}
+.mpet .mpi{flex:none;width:30px;height:30px;border-radius:8px;background:rgba(236,210,166,.1);display:grid;place-items:center}.mpet .mpi .li{width:19px;height:19px}
+.mpet .mpt{flex:1;min-width:0;display:flex;flex-direction:column;gap:1px;line-height:1.3}.mpet .mpt b{color:var(--ink);font-size:13px;font-weight:650}.mpet .mpt small{color:var(--muted);font-size:11.5px}
+.mpet.own{background:rgba(47,191,113,.1);border-color:rgba(95,211,154,.45)}
+/* round 15: a pet's "Complete" box (all of its souls collected): a tick, then the word */
+.pdone{flex:none;display:inline-flex;align-items:center;gap:6px;height:24px;border:1px solid transparent;border-radius:8px;background:none;color:var(--muted);font-size:11.5px;font-weight:600;padding:0 7px 0 6px;white-space:nowrap}
+.pdone .ob{width:14px;height:14px;border-radius:4px;border:1.5px solid rgba(255,255,255,.32);position:relative;flex:none}
+.pdone:hover{color:var(--ink-2);background:var(--panel-2)}.pdone:hover .ob{border-color:#5fd39a}
+.pdone[aria-pressed=true]{color:#9ff0c6}.pdone[aria-pressed=true] .ob{background:#2fbf71;border-color:#2fbf71}
+.pdone[aria-pressed=true] .ob::after{content:"";position:absolute;left:3.5px;top:.5px;width:3.5px;height:7.5px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.mpet .pdone{height:30px;padding:0 10px 0 8px;border-color:rgba(255,255,255,.14);border-radius:9px;font-size:12.3px;color:var(--ink-2)}
+.mpet .pdone:hover{border-color:rgba(95,211,154,.6)}.mpet.own .pdone{border-color:rgba(95,211,154,.55)}
+.more[hidden]{display:none}
+.mth{display:inline-block;flex:none;border-radius:7px;background-repeat:no-repeat;box-shadow:0 0 0 1px rgba(255,255,255,.12);background-color:#1a232c}
+.rk{font-size:9.5px;font-weight:800;color:#ffd76a;border:1px solid rgba(242,193,78,.5);border-radius:5px;padding:0 4px;margin-left:3px;vertical-align:1px}
+.seg{display:flex;background:rgba(0,0,0,.25);border:1px solid var(--line);border-radius:10px;padding:3px;gap:2px}
+.seg button{flex:1;border:0;background:none;border-radius:7px;padding:6px 4px;font-size:12.3px;color:var(--ink-2);white-space:nowrap}
+.seg button[aria-pressed=true]{background:rgba(255,255,255,.1);color:var(--ink);box-shadow:inset 0 0 0 1px rgba(242,193,78,.55)}
+.seg button:hover{color:var(--ink)}
+.seg.mini{flex-basis:100%;margin:4px 0 0 31px;padding:2px}.seg.mini button{padding:3px 4px;font-size:11.3px}
+.cnote{color:var(--muted);font-size:11.5px;margin:8px 2px 0;line-height:1.5}
+.cnote.lead{color:var(--ink-2);font-size:12.3px}
+.timer{font-variant-numeric:tabular-nums;font-weight:700;color:var(--gold)}
+.empty{color:var(--muted);font-size:12px;margin:8px 4px}
+
+/* ---------- chips over the map ---------- */
+.chipbar{position:fixed;z-index:9;top:14px;left:348px;right:14px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;pointer-events:none;max-height:66px;overflow:hidden}
+body.cardon .chipbar{right:344px}
+/* round 7: a soft shade behind the chips, so map icons and badges under the bar don't compete with it (place names are kept out of it in main.mjs) */
+.chipbar:not(:empty)::before{content:"";position:fixed;z-index:-1;left:334px;right:0;top:0;height:64px;background:linear-gradient(180deg,rgba(7,13,18,.5),rgba(7,13,18,.22) 55%,rgba(7,13,18,0));pointer-events:none}
+body.cardon .chipbar:not(:empty)::before{right:330px}
+.chip{pointer-events:auto;display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 3px 0 8px;border-radius:999px;background:rgba(11,17,24,.84);border:1px solid var(--line-2);font-size:12px;color:var(--ink-2);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 4px 14px rgba(0,0,0,.3);cursor:pointer;white-space:nowrap}
+.chip:hover{border-color:rgba(255,255,255,.25);color:var(--ink)}
+.chip img,.chip .li,.chip .mth{width:18px!important;height:18px!important;flex:none;object-fit:contain}
+.chip .cl b{color:var(--ink);font-weight:650}
+.chip button{border:0;background:rgba(255,255,255,.06);width:22px;height:22px;border-radius:50%;color:var(--muted);font-size:14px;line-height:1;padding:0;display:grid;place-items:center}
+.chip button:hover{background:rgba(255,255,255,.16);color:var(--ink)}
+.chip.focus{border-color:rgba(255,214,107,.6);background:linear-gradient(180deg,rgba(60,44,10,.9),rgba(30,22,6,.88));color:#ffeab5}
+.chclear{pointer-events:auto;flex:none;white-space:nowrap;height:30px;border-radius:999px;border:1px solid var(--line-2);background:rgba(11,17,24,.84);color:var(--muted);font-size:11.8px;padding:0 11px}
+.chclear:hover{color:var(--ink);border-color:rgba(242,193,78,.5)}
+.gi{display:inline-block;width:14px;height:14px;flex:none;border-radius:4px}
+.gi.grade{background:var(--c);box-shadow:0 0 0 1px rgba(0,0,0,.5),inset 0 0 0 2px rgba(255,255,255,.18);transform:rotate(45deg) scale(.75)}
+.gi.place{border-radius:50%;border:2px solid var(--aether);width:12px;height:12px}
+.gi.heat{border-radius:50%;background:radial-gradient(circle,#ffd66b,rgba(255,150,40,.2) 70%,transparent)}
+.gi.slice{background:linear-gradient(180deg,transparent 45%,var(--aether) 45%,var(--aether) 60%,transparent 60%)}
+
+/* ---------- the match highlight's count badges ---------- */
+#hlover{position:fixed;inset:0;pointer-events:none;z-index:6;overflow:hidden}
+/* round 15: the highlight's badges (highlight.mjs): the thing's own icon on a white badge, a pointer down to the spot; where
+   matches crowd, one badge with the icon and the count (larger for larger counts). No colours: the icon says what it is */
+.hlmk{position:absolute;left:0;top:0;display:none;align-items:center;height:32px;min-width:32px;padding:3px;border-radius:999px;background:#fff;box-shadow:0 0 0 2px rgba(8,10,14,.9),0 4px 12px rgba(0,0,0,.55);transform-origin:50% calc(100% + 7px);will-change:transform;pointer-events:none}
+.hlmk::after{content:"";position:absolute;left:50%;top:100%;margin:1px 0 0 -7px;border:7px solid transparent;border-top:8px solid #fff;border-bottom:0;filter:drop-shadow(0 2px 0 rgba(8,10,14,.9))}
+.hlmk .hi{width:26px;height:26px;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:#18212a;flex:none}
+.hlmk .hi img{width:22px;height:22px;object-fit:contain;image-rendering:pixelated}
+.hlmk .hi .mth,.hlmk .hi .ph{border-radius:50%;box-shadow:none}
+.hlmk b{font:850 13.5px/1 var(--f);color:#0b0f14;padding:0 7px 0 4px;font-variant-numeric:tabular-nums}
+.hlmk[data-s="1"]{height:34px}.hlmk[data-s="1"] b{font-size:14.5px}
+.hlmk[data-s="2"]{height:37px;padding:4px}.hlmk[data-s="2"] .hi{width:29px;height:29px}.hlmk[data-s="2"] b{font-size:16px}
+.hlmk[data-s="3"]{height:40px;padding:4px}.hlmk[data-s="3"] .hi{width:32px;height:32px}.hlmk[data-s="3"] b{font-size:17px;padding-right:9px}
+
+/* ---------- settings popover ---------- */
+.pop{left:346px;top:14px;width:300px;max-height:calc(100vh - 28px);overflow:auto;padding:14px 16px 12px;z-index:12;background:var(--panel-solid);scrollbar-width:thin}
+.pop[hidden]{display:none}
+.poph{display:flex;align-items:center;justify-content:space-between;margin-bottom:2px}.poph b{font-size:14.5px}
+.pop .iconbtn{width:28px;height:28px}
+.sg{margin-top:12px}.sgt{font-size:10.5px;text-transform:uppercase;letter-spacing:1.1px;color:var(--muted);font-weight:700;margin-bottom:6px;display:flex;justify-content:space-between}
+.sgt span{letter-spacing:0;text-transform:none;font-weight:600;color:var(--ink-2)}
+.pop .tog{padding:4px 0}
+#progsec .hintline{margin:0 2px 2px}#progsec .hintline:empty{display:none}#progsec .linkrow{margin-top:6px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:2px 10px}
+.rng{display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--ink-2)}.rng input{flex:1;accent-color:var(--aether)}
+.slice{display:flex;align-items:center;gap:6px;margin-top:2px}.slice .tog{flex:none}.slice output{margin-left:auto;font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.slr{margin:2px 0 0}.slr.off{opacity:.35;pointer-events:none}
+.lensopts{margin:0 0 2px 34px}.lensopts.off{opacity:.35;pointer-events:none}.lensopts .rng span{font-size:12px;color:var(--muted)}
+.stand{display:flex;align-items:center;gap:8px;font-size:12.3px;color:var(--ink-2)}.stand select{flex:1;min-width:0;background:rgba(0,0,0,.25);border:1px solid var(--line-2);border-radius:8px;padding:4px 6px;color:var(--ink);font-size:12px}
+details.about{margin-top:14px}details.about summary{cursor:pointer;font-size:10.5px;text-transform:uppercase;letter-spacing:1.1px;color:var(--muted);font-weight:700}
+.note{color:var(--muted);font-size:11.3px;margin-top:10px;line-height:1.5}
+.btns{display:flex;gap:6px}.btns .btn{flex:1}
+
+/* ---------- the view switch and compass ---------- */
+.viewsw{right:14px;bottom:100px;padding:3px;border-radius:12px}
+/* round 15: the roofs' quick switch (main.mjs setRoofs; R cycles see-through, hidden, solid) */
+.roofsw{right:14px;bottom:146px;padding:3px;border-radius:12px}
+.roofsw button{display:flex;align-items:center;gap:7px;border:0;background:none;padding:6px 9px 6px 8px;border-radius:9px;font-size:12px;color:var(--ink-2);white-space:nowrap}
+.roofsw button:hover{color:var(--ink);background:var(--panel-3)}
+.roofsw svg{width:17px;height:17px}.roofsw .rf{fill:#cfd8e0;stroke:#cfd8e0;stroke-width:1.6;stroke-linejoin:round}
+.roofsw [data-v=ghost] .rf{fill:rgba(207,216,224,.38)}.roofsw [data-v=hidden] .rf{fill:none;stroke-dasharray:2.4 2.2;opacity:.8}
+.roofsw kbd{font-size:9px;opacity:.75}
+.viewsw .seg{border:0;background:none;padding:0}.viewsw .seg button{padding:6px 11px;font-size:12px}
+.compass{position:fixed;right:14px;bottom:46px;z-index:10;width:44px;height:44px;border-radius:50%;padding:0;display:grid;place-items:center}
+.compass svg{width:34px;height:34px;display:block}.compass:hover{border-color:rgba(242,193,78,.6)}
+.compass .tl{position:absolute;bottom:-15px;left:50%;transform:translateX(-50%);font:600 9.5px/1 ui-monospace,monospace;color:var(--muted);white-space:nowrap}
+
+/* ---------- the detail card ---------- */
+.card{right:14px;top:14px;width:316px;padding:16px;display:none;z-index:11;max-height:calc(100vh - 28px);overflow:auto;scrollbar-width:thin}.card.on{display:block}
+.card .x{position:absolute;right:10px;top:8px;border:0;background:none;color:var(--muted);font-size:18px;z-index:1}
+.card .cback{display:block;border:0;background:none;color:var(--aether);font:inherit;font-size:12.5px;padding:0 24px 8px 0;cursor:pointer;text-align:left}.card .cback:hover{text-decoration:underline}
+.card h3{margin:0 0 2px;font-size:15px;display:flex;gap:8px;align-items:center;padding-right:18px}.card .where{color:var(--muted);font-size:12.5px}
+.chead{display:flex;gap:11px;align-items:center;margin-right:16px}.cico{width:34px;height:34px;object-fit:contain;flex:none;image-rendering:auto}
+.card .row{padding:5px 4px}.card .h{margin:13px 0 4px}
+.ri{width:20px;height:20px;object-fit:contain;image-rendering:pixelated;flex:none}
+.cbtns{margin-top:12px}
+.big{font-size:30px;font-weight:800;color:var(--gold-2);margin-top:10px;font-variant-numeric:tabular-nums;line-height:1.1}.big small{display:block;font-size:12px;color:var(--muted);font-weight:500;margin-top:2px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:12.5px;margin-top:10px}.kv dt{color:var(--muted)}.kv dd{margin:0;font-variant-numeric:tabular-nums}
+.tag{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:20px;border:1px solid rgba(242,193,78,.4);color:var(--gold-2);margin-top:10px}
+.tag.w{border-color:rgba(63,224,224,.45);color:#aef3f3}
+.mut{color:var(--muted)!important;font-weight:500!important}
+.mcard{display:flex;gap:12px;align-items:center;margin-right:18px}.mcard .mth{border-radius:10px}.mcard h3{margin:0}
+.mbeh{font-size:12px;margin-top:4px;color:var(--ink-2)}.mbeh.ag{color:#ff9b8e}
+.mdrops{max-height:260px;overflow:auto;scrollbar-width:thin}
+/* 2026-09-28: drop chances (monster and item cards) and the item's stat card (mapui.mjs itemCardHtml) */
+.row .dc{color:var(--gold-2);font-weight:700;font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap;min-width:58px;text-align:right}
+.row .gq{font-size:10.5px;font-weight:600;color:var(--muted)}
+.g-Common{color:#cfd6dd!important}.g-Rare{color:#5fb4ff!important}.g-Legend{color:#f2a93b!important}.g-Unique{color:#e0b0ff!important}.g-Epic{color:#c77dff!important}.g-Special{color:#7de0b5!important}
+.dbun>summary{list-style:none}.dbun>summary::-webkit-details-marker{display:none}
+/* (2026-09-28, the maintainer: the groups read as sub-items of the line above) a group is a line like an item's: its
+   likeliest piece's icon with the piece count (util.mjs groupIcon), a chevron after "any of N"; open, its pieces hang
+   under it on a guide line */
+.gic{position:relative;display:inline-block;flex:none;margin-right:6px;vertical-align:-5px}.gic .iic{margin-right:0;vertical-align:top}
+.gic b{position:absolute;right:-5px;bottom:-4px;min-width:13px;height:13px;padding:0 3px;border-radius:7px;background:#0b1118;border:1px solid var(--line-2);color:var(--ink-2);font-size:9px;line-height:11px;font-weight:700;text-align:center;box-sizing:border-box}
+.dcar{display:inline-block;width:5px;height:5px;border-right:1.5px solid var(--muted);border-bottom:1.5px solid var(--muted);transform:rotate(45deg);margin:0 0 3px 7px;transition:transform .15s}
+.dbun[open]>summary .dcar{transform:rotate(225deg);margin-bottom:0}
+.dbun>summary:hover .dcar{border-color:var(--ink)}
+.dbun[open]>summary{background:rgba(255,255,255,.035)}
+.dbun>div.row{margin-left:15px;padding-top:3px;padding-bottom:3px;font-size:12.3px;border-left:1px solid var(--line-2);border-radius:0 8px 8px 0}
+.istat .isub{color:var(--ink-2);font-size:12.3px;margin-top:8px}
+.istat .ist{grid-template-columns:1fr auto;margin-top:6px}.istat .ist dd{text-align:right}
+.istat .idesc{white-space:normal}
+/* 2026-09-28: item icons (util.mjs itemIcon), the drop card (mapui.mjs dropCard) */
+.iic{display:inline-block;flex:none;vertical-align:-5px;margin-right:6px;border-radius:5px;border:1.5px solid var(--c,#8a949e);background:rgba(0,0,0,.35);box-sizing:border-box;object-fit:cover}
+.iic.ph{background:linear-gradient(135deg,color-mix(in srgb,var(--c) 45%,transparent),color-mix(in srgb,var(--c) 15%,transparent))}
+.dcard .iic{margin-right:0;border-width:2px;border-radius:9px}
+.dcard h3{margin:0;line-height:1.2}
+.dchance{margin:10px 0 4px;font-size:13px;color:var(--ink-2)}.dchance b{color:var(--gold-2);font-size:16px;margin-right:4px;font-variant-numeric:tabular-nums}.dchance small{color:var(--muted)}
+.btn.pri[hidden]{display:none}
+.sbt{width:100%;border-collapse:collapse;font-size:12px;font-variant-numeric:tabular-nums}
+.sbt td{padding:2px 4px;border-bottom:1px solid rgba(255,255,255,.05);color:var(--ink-2)}
+.sbt td:nth-child(2){color:var(--ink);text-align:right;white-space:nowrap}.sbt td:nth-child(3){color:var(--muted);text-align:right;width:44px}
+.mc{display:flex;align-items:center;gap:10px;width:100%;margin-top:12px;padding:0 14px;height:48px;border-radius:12px;border:1px solid rgba(255,214,120,.8);
+  background:linear-gradient(180deg,#f7cf62,#e2a92d);color:#241703;font-weight:800;font-size:15.5px;letter-spacing:.2px;box-shadow:0 4px 18px rgba(242,193,78,.25),inset 0 1px 0 rgba(255,255,255,.45)}
+.mc:hover{filter:brightness(1.07)}.mc:active{transform:translateY(1px)}
+.mc .mcl{flex:1;text-align:left}.mc kbd{background:rgba(36,23,3,.14);border-color:rgba(36,23,3,.35);color:#241703;font-size:12px;padding:3px 7px}
+.mc.done{cursor:default;background:rgba(47,191,113,.12);border-color:rgba(95,211,154,.55);color:#9ff0c6;box-shadow:none;padding-right:6px}
+.mc.done .mcu{border:1px solid var(--line-2);background:rgba(0,0,0,.25);color:var(--ink-2);border-radius:8px;padding:7px 12px;font-weight:600;font-size:12.5px}
+.mc.done .mcu:hover{color:var(--ink);border-color:rgba(242,193,78,.5)}
+
+/* ---------- map overlays (labels, Traces, monsters, tooltips, toast) ---------- */
+/* the controls hint (round 14): a bar at the bottom right, left of the compass, when it fits beside the quick strip and
+   the sidebar (main.mjs layoutHint measures that), else a shorter bar, else a "?" button whose hint opens beside it (over the quick strip), wrapped */
+.hint{right:66px;bottom:14px;padding:7px 14px;font-size:11.8px;color:var(--ink-2);white-space:nowrap}
+.hint b{color:var(--ink);font-weight:600}
+.hintq{display:none}
+.hint.min{padding:0;border-radius:50%;background:none;border:0;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+.hint.min .hintq{display:grid;place-items:center;width:32px;height:32px;padding:0;border-radius:50%;border:1px solid var(--line);background:var(--panel);backdrop-filter:blur(16px) saturate(1.25);-webkit-backdrop-filter:blur(16px) saturate(1.25);box-shadow:0 12px 40px rgba(0,0,0,.38);color:var(--ink-2);font:750 15px/1 var(--f)}
+.hint.min .hintq:hover,.hint.min.open .hintq{color:var(--ink);border-color:rgba(242,193,78,.6)}
+.hint.min .hintb{display:none;position:absolute;right:calc(100% + 10px);bottom:0;width:max-content;max-width:max(240px,min(430px,calc(100vw - 480px)));white-space:normal;line-height:2.1;padding:6px 14px;border-radius:14px;background:var(--panel-solid,var(--panel));border:1px solid var(--line-2);box-shadow:0 12px 40px rgba(0,0,0,.5)}
+.hint.min .hintb::after{content:"";position:absolute;top:0;bottom:0;left:100%;width:12px}   /* the hover bridge to the button */
+.hint.min:hover .hintb,.hint.min.open .hintb,.hint.min .hintq:focus-visible+.hintb{display:block}
+.hint .hintb .keys{white-space:nowrap}
+.hint.short .hopt{display:none}   /* a shorter bar: search and all maps have their own key hints in the sidebar */
+.keys{display:inline-flex;gap:3px;align-items:center}
+.tip{position:fixed;z-index:20;pointer-events:none;background:rgba(10,17,24,.94);border:1px solid var(--line-2);border-radius:8px;padding:5px 9px;font-size:12px;display:none;white-space:nowrap}
+.tip b{color:var(--gold-2)}.tip kbd{margin-left:2px}
+.lbl{color:#fff6e2;font-weight:650;font-size:calc(12px + 2px * var(--flat, 0));letter-spacing:calc(.3px + .9px * var(--flat, 0));text-shadow:0 1px 2px #000,0 0 8px rgba(0,0,0,.9);white-space:nowrap;pointer-events:none;transition:opacity .25s}
+.lbl.sz{font-size:calc(10.5px + 1px * var(--flat, 0));font-weight:600;color:#e9f3f7;letter-spacing:.2px;opacity:0}
+.dep{color:#bff7ff;font-size:10.5px;font-weight:700;background:rgba(6,40,50,.7);border:1px solid rgba(120,230,240,.35);padding:1px 5px;border-radius:6px;pointer-events:none;white-space:nowrap}
+/* 2026-10-01: the timers (js/timers.mjs): the Timers tab, the countdown tags over Rifts and scheduled bosses, the "next" button */
+.tmclock{display:flex;align-items:flex-end;gap:10px;margin:4px 4px 0}
+.tmclk{display:flex;flex-direction:column;gap:2px}
+.tmclk b{font:700 22px/1.05 ui-monospace,"SF Mono",Consolas,monospace;color:var(--gold-2);font-variant-numeric:tabular-nums;letter-spacing:.4px;min-width:6.2ch}
+.tmclk span,.tmreg span{font-size:10.3px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);font-weight:700}
+.tmreg{margin-left:auto;display:flex;flex-direction:column;gap:3px;align-items:flex-end}
+.tmreg select{background:rgba(0,0,0,.3);border:1px solid var(--line-2);border-radius:9px;padding:6px 8px;font-size:12.5px;color:var(--ink)}
+.tmreg select option{background:var(--panel-solid)}
+.tmrow{display:flex;align-items:center;gap:9px;padding:6px 6px;border-radius:9px;cursor:pointer;flex-wrap:wrap;min-height:40px}
+.tmrow:hover{background:var(--panel-2)}
+.tmrow .ls{white-space:normal}
+.tmleft{font-size:12.6px;color:var(--ink);font-weight:650;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tmrow.live{background:rgba(95,211,154,.06)}.tmrow.live .tmleft{color:var(--good)}
+.tmhome{color:var(--aether);font-weight:650}
+.tmbell{border:0;background:none;width:28px;height:28px;border-radius:7px;color:var(--muted);display:grid;place-items:center;padding:0;flex:none}
+.tmbell svg{width:16px;height:16px}.tmbell:hover{background:var(--panel-3);color:var(--ink)}
+.tmbell[aria-pressed=true]{color:var(--gold)}.tmbell[aria-pressed=true] svg path{fill:rgba(242,193,78,.28)}
+.tmdet{flex-basis:100%;margin:2px 0 2px 31px;font-size:11.6px;color:var(--ink-2);line-height:1.55;cursor:auto}
+.tmdet .lnk{font-size:11.6px}
+.tmtag{font:700 11px/1 var(--f);color:#fff3dc;background:rgba(22,14,36,.84);border:1px solid rgba(195,155,255,.6);padding:3px 6px;border-radius:7px;white-space:nowrap;pointer-events:none;font-variant-numeric:tabular-nums;margin-top:-6px}
+.tmtag.past{border-color:rgba(95,211,154,.65);color:#dcffec}
+.tmpill{top:14px;right:14px;z-index:9;display:flex;align-items:center;gap:7px;padding:6px 11px;border-radius:11px;font-size:12px;color:var(--ink-2)}
+.tmpill .li{width:15px;height:15px;color:var(--gold)}.tmpill b{color:var(--gold-2);font-variant-numeric:tabular-nums}
+.tmpill .tmpn{max-width:170px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tmpill:hover{color:var(--ink)}.tmpill[hidden],body.cardon .tmpill,body.shot .tmpill{display:none}
+body:has(#tmpill:not([hidden])) .chipbar{right:240px}
+@media (max-width:760px){.tmpill{display:none}body:has(#tmpill:not([hidden])) .chipbar{right:10px}}   /* (the phone: the Timers tab only) */
+#loading{position:fixed;inset:0;display:grid;place-items:center;z-index:30;background:radial-gradient(ellipse at 50% 40%,#11202c,#05090d 70%);transition:opacity .6s}
+#loading .box{width:min(360px,80vw);text-align:center}
+#loading .t{font-size:15px;font-weight:650;letter-spacing:.3px}#loading .s{color:var(--muted);font-size:12px;margin-top:4px;min-height:18px}
+#loading .bar{height:4px;border-radius:4px;background:rgba(255,255,255,.08);margin-top:14px;overflow:hidden}#loading .bar div{height:100%;width:0;background:linear-gradient(90deg,var(--aether),var(--gold));transition:width .2s}
+#fps{position:fixed;right:14px;bottom:14px;z-index:10;font:11px ui-monospace,monospace;color:var(--muted);background:var(--panel);padding:4px 8px;border-radius:8px;display:none}
+body.shot .panel,body.shot .tip,body.shot #fps,body.shot .chipbar{display:none!important}
+body.shot.hud #fps{display:block!important;font-size:22px}
+body.shotui .hint,body.shotui #fps{display:none!important}
+body.shot .compass,body.shot .toast{display:none!important}
+#tover{position:fixed;inset:0;pointer-events:none;z-index:5;overflow:hidden}
+.tcl{position:absolute;left:0;top:0;font:850 11px/1 var(--f);color:#1d1405;padding:2px 5px;min-width:17px;text-align:center;border-radius:9px;background:#f6c75a;border:1.5px solid #1d1405;box-shadow:0 1px 3px rgba(0,0,0,.55);white-space:nowrap;will-change:transform;font-variant-numeric:tabular-nums}
+.tcl.behind{opacity:.72}.tcl.done{background:#aab3b8}
+.tcl.hov{background:#ffe39a}
+.monfarh{display:none}body.monfar .monfarh{display:inline;color:#f2c14e}
+.edgearrow{position:absolute;left:0;top:0;pointer-events:auto;cursor:pointer;will-change:transform}
+.edgearrow i{position:absolute;left:0;top:0;width:0;height:0;border-left:30px solid var(--gold-2);border-top:9px solid transparent;border-bottom:9px solid transparent;filter:drop-shadow(0 0 2px #000) drop-shadow(0 0 6px rgba(255,200,90,.7))}
+.edgearrow span{position:absolute;left:0;top:0;white-space:nowrap;font:700 11.5px/1 var(--f);color:#fff3cf;background:rgba(10,17,24,.8);border:1px solid rgba(242,193,78,.5);padding:3px 6px;border-radius:6px}
+#mover{position:fixed;inset:0;pointer-events:none;z-index:5;overflow:hidden}
+/* round 7: count badges for overlapping map icons (teleports, dungeons, Rifts...) when zoomed out */
+#pover{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.pcl{position:absolute;left:0;top:0;display:flex;align-items:center;gap:1px;height:20px;padding:0 6px 0 3px;border-radius:10px;background:rgba(10,14,18,.74);border:1px solid rgba(255,255,255,.2);box-shadow:0 1px 4px rgba(0,0,0,.45);will-change:transform;white-space:nowrap}
+.pcl img{width:13px;height:13px;object-fit:contain;image-rendering:pixelated}
+.pcl b{font:750 11px/1 var(--f);color:#f3ead8;margin-left:3px;text-shadow:0 1px 2px #000}
+.pcl.hov{border-color:rgba(242,193,78,.8);background:rgba(34,24,6,.85)}
+.mlbl{position:absolute;left:0;top:0;white-space:nowrap;font:650 11.5px/1.15 var(--f);color:#f3ead8;background:rgba(10,14,18,.66);border:1px solid rgba(255,255,255,.14);border-radius:8px;padding:3px 7px;text-align:center;will-change:transform;text-shadow:0 1px 2px #000}
+.mlbl b{font-weight:750;color:#fff}.mlbl span{display:block;font-size:10.3px;font-weight:600;color:#b9c8d6}
+.mlbl.named{border-color:rgba(242,193,78,.75);background:rgba(34,24,6,.78)}.mlbl.named b{color:#ffe29a}
+body.shot #mover .mlbl{font-size:12.5px}
+.toast{position:fixed;left:50%;bottom:58px;z-index:25;transform:translate(-50%,16px);opacity:0;pointer-events:none;transition:opacity .18s,transform .18s;display:flex;gap:12px;align-items:center;
+  background:rgba(10,17,24,.95);border:1px solid rgba(95,211,154,.45);border-radius:12px;padding:8px 8px 8px 14px;font-size:13px;box-shadow:0 10px 30px rgba(0,0,0,.4);max-width:calc(100vw - 28px)}
+.toast.on{opacity:1;transform:translate(-50%,0);pointer-events:auto}.toast .tm b{color:#9ff0c6}.toast .tm small{color:var(--muted)}
+.toast .tu{border:1px solid var(--line-2);background:rgba(255,255,255,.06);border-radius:8px;padding:5px 10px;font-weight:600;font-size:12.5px;color:var(--ink);display:flex;gap:4px;align-items:center;white-space:nowrap}
+.toast .tu kbd{font-size:9.5px}
+#cfx{position:fixed;inset:0;pointer-events:none;z-index:6;overflow:hidden}
+.cburst{position:absolute;left:0;top:0}
+.cburst i{position:absolute;left:-26px;top:-26px;width:52px;height:52px;border-radius:50%;border:3px solid #ffe7a3;box-shadow:0 0 12px rgba(255,210,110,.7);animation:cb-ring .6s ease-out forwards}
+.cburst b{position:absolute;left:0;top:0;transform:translate(-50%,-50%);font:900 22px/1 var(--f);color:#fff;text-shadow:0 0 6px #2fbf71,0 1px 2px #000;animation:cb-tick .85s ease-out forwards}
+.cburst.off i{border-color:#9fb0bf;box-shadow:none}
+@keyframes cb-ring{from{transform:scale(.3);opacity:1}to{transform:scale(1.9);opacity:0}}
+@keyframes cb-tick{0%{transform:translate(-50%,-20%) scale(.5);opacity:0}25%{transform:translate(-50%,-80%) scale(1.15);opacity:1}100%{transform:translate(-50%,-190%) scale(1);opacity:0}}
+#grab{display:none}
+[hidden]{display:none!important}
+
+/* ---------- round 8: the map switcher, the side prompt, map changes ---------- */
+.mapbtn{flex:1;min-width:0;display:flex;align-items:center;gap:9px;border:0;background:none;padding:4px 6px 4px 2px;margin:-4px 0 -4px -2px;border-radius:10px;text-align:left}
+.mapbtn:hover,.mapbtn[aria-expanded=true]{background:var(--panel-2)}
+.mapbtn .dot{width:9px;height:9px;border-radius:50%;background:radial-gradient(circle,#fff3c4,var(--gold) 60%,#b07a12);box-shadow:0 0 10px var(--gold);flex:none}
+.mapbtn[data-fac=Asmodian] .dot{background:radial-gradient(circle,#e6dcff,#8f6bff 60%,#4a2fb0);box-shadow:0 0 10px #8f6bff}
+.mapbtn[data-fac=Abyss] .dot{background:radial-gradient(circle,#dfe6ff,#7d8fe0 60%,#34408a);box-shadow:0 0 10px #7d8fe0}
+.mapbtn .mb{display:flex;flex-direction:column;min-width:0;flex:1}
+.mapbtn h1{font-size:16px;margin:0;letter-spacing:.2px;line-height:1.15;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mapbtn .sub{color:var(--muted);font-size:11.3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mapbtn .chev{margin-right:4px}
+.mapbtn[aria-expanded=true] .chev{transform:rotate(225deg) translate(-2px,-2px)}
+#facbtn svg{width:20px;height:20px}
+.siderow{display:flex;align-items:center;gap:10px}.sidenote{font-size:12px;color:var(--muted);line-height:1.35}
+.mmenu{left:14px;top:66px;width:320px;max-height:calc(100vh - 84px);overflow:auto;padding:10px 10px 10px;z-index:13;background:var(--panel-solid);scrollbar-width:thin}
+.mmh{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:2px 4px 8px}
+.mmh b{font-size:12px;text-transform:uppercase;letter-spacing:1.1px;color:var(--muted)}
+.mmh .seg{flex:none}.mmh .seg button{padding:4px 10px;font-size:12px}
+.mg{margin:2px 0 6px}
+.mgh{display:flex;align-items:center;gap:7px;font-size:10.8px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);font-weight:700;padding:6px 6px 4px}
+.mgh svg{width:16px;height:16px}
+.mrow{display:flex;align-items:center;gap:8px;width:100%;border:0;background:none;padding:7px 9px;border-radius:9px;text-align:left;color:var(--ink-2);min-height:38px}
+.mrow:hover,.mrow:focus-visible{background:var(--panel-3);color:var(--ink)}
+.mrow.on{background:linear-gradient(180deg,rgba(242,193,78,.13),rgba(242,193,78,.04));box-shadow:inset 0 0 0 1px rgba(242,193,78,.45);color:var(--ink)}
+.mrow .mt{flex:1;display:flex;flex-direction:column;min-width:0}
+.mrow .mn{font-size:13.4px;font-weight:620}
+.mrow .ml{font-size:11px;color:#e7c98a;line-height:1.35;margin-top:1px}
+.mrow .mck{color:var(--gold-2);font-weight:800}
+.mfoot{border-top:1px solid var(--line);margin-top:6px;padding:8px 4px 0;display:flex;flex-direction:column;gap:6px}
+.mfoot .cnote{margin:0}
+#facdlg{position:fixed;inset:0;z-index:40;display:grid;place-items:center;background:rgba(3,6,10,.55);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);opacity:0;transition:opacity .18s}
+#facdlg.on{opacity:1}
+.fbox{position:relative;width:min(400px,calc(100vw - 32px));background:var(--panel-solid);border:1px solid var(--line-2);border-radius:18px;padding:20px 20px 16px;box-shadow:0 24px 60px rgba(0,0,0,.55);transform:translateY(6px);transition:transform .18s}
+#facdlg.on .fbox{transform:none}
+.fbox h2{margin:0;font-size:17px;letter-spacing:.2px}
+.fbox p{margin:4px 0 14px;color:var(--muted);font-size:12.5px;line-height:1.5}
+.fpick{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fskip{display:block;margin:8px auto 0;padding:6px 8px;border:0;background:none;color:var(--aether);font:inherit;font-size:12.5px;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.fpick button{display:flex;flex-direction:column;align-items:center;gap:6px;padding:14px 8px 12px;border-radius:14px;border:1px solid var(--line-2);background:var(--panel-2);color:var(--ink)}
+.fpick button svg{width:40px;height:40px}
+.fpick button b{font-size:14.5px}
+.fpick button small{color:var(--muted);font-size:11px;line-height:1.35;text-align:center}
+.fpick button[data-pick=Elyos]:hover,.fpick button[data-pick=Elyos][aria-pressed=true]{border-color:rgba(246,217,138,.7);background:linear-gradient(180deg,rgba(246,217,138,.14),rgba(246,217,138,.03))}
+.fpick button[data-pick=Asmodian]:hover,.fpick button[data-pick=Asmodian][aria-pressed=true]{border-color:rgba(169,139,255,.75);background:linear-gradient(180deg,rgba(169,139,255,.16),rgba(169,139,255,.03))}
+.fbox .fnote{margin:12px 0 0;font-size:11.3px}
+#facx{position:absolute;right:10px;top:10px;width:28px;height:28px}
+.results button.xr{min-height:40px}.results button.xr .rn{display:flex;flex-direction:column;gap:1px}.results button.xr .xn{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.results button.xr small{font-size:10.8px}
+.results .xmap{display:inline-block;font-weight:650;color:#cfe3f5;background:rgba(63,224,224,.1);border:1px solid rgba(63,224,224,.28);border-radius:6px;padding:0 5px;margin-right:3px}
+.results .xload{font-style:italic}
+#loading.hid{display:none}
+/* once a map's panel is built, the curtain covers only the 3D view: search and the filters work while the blocks come
+   in (main.mjs buildMap: "canvas-only") */
+#loading.canvas-only{z-index:9}
+@media (min-width:761px){#loading.canvas-only{padding-left:334px}}
+@media (max-width:760px){#loading.canvas-only{place-items:start center;padding-top:16vh}}
+/* ---------- round 9: dungeons ---------- */
+.mapbtn[data-fac=Instance] .dot{background:radial-gradient(circle,#efe4ff,#b59cff 60%,#5a3fb0);box-shadow:0 0 10px #b59cff}
+.mgh small{margin-left:auto;text-transform:none;letter-spacing:0;font-weight:500;font-size:10.8px}
+.dsec{border-top:1px solid var(--line);margin-top:6px;padding-top:4px}
+.dsec .sbox{margin:2px 2px 6px}
+details.dg{margin:1px 0}details.dg>summary{display:flex;align-items:center;gap:6px;cursor:pointer;padding:6px 8px;border-radius:8px;font-size:12.6px;font-weight:650;color:var(--ink-2);list-style:none}
+details.dg>summary::-webkit-details-marker{display:none}
+details.dg>summary::before{content:"";width:6px;height:6px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(-45deg);margin:0 4px 0 2px;transition:transform .15s}
+details.dg[open]>summary::before{transform:rotate(45deg)}
+details.dg>summary:hover{background:var(--panel-2);color:var(--ink)}details.dg>summary small{margin-left:auto;color:var(--muted);font-weight:500}
+details.dg .cnote{margin:2px 10px 6px}
+.dgh{font-size:10.5px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);font-weight:700;padding:8px 8px 2px}
+.drow{min-height:34px;padding:5px 9px 5px 18px}.drow .mn{font-size:12.8px;font-weight:600}.drow .ds{font-size:10.8px;color:var(--muted);line-height:1.3}
+.drow.nb{opacity:.5;cursor:default}
+.gtag{display:inline-block;font-size:9.5px;font-weight:750;color:#9ff0c6;border:1px solid rgba(95,211,154,.45);border-radius:5px;padding:0 4px;vertical-align:1px;margin-left:3px}
+.backbtn{display:flex;align-items:center;gap:7px;width:100%;margin-top:10px;border:1px solid rgba(181,156,255,.45);background:linear-gradient(180deg,rgba(181,156,255,.16),rgba(181,156,255,.05));border-radius:10px;padding:7px 10px;color:#e6dcff;font-weight:650;font-size:12.6px;text-align:left}
+.backbtn:hover{border-color:rgba(181,156,255,.8);color:#fff}.backbtn small{color:var(--muted);font-weight:500;margin-left:auto;white-space:nowrap}
+.backbtn svg{width:15px;height:15px;flex:none}
+.dcard select{width:100%;background:rgba(0,0,0,.28);border:1px solid var(--line-2);border-radius:8px;padding:6px 8px;color:var(--ink);font-size:12.5px;margin:4px 0 2px}
+.brow{display:flex;align-items:center;gap:9px;width:100%;border:0;background:none;padding:5px 6px;border-radius:9px;text-align:left;min-height:38px;color:var(--ink-2)}
+.brow:hover{background:var(--panel-2);color:var(--ink)}.brow.on{background:rgba(255,214,107,.08);box-shadow:inset 0 0 0 1px rgba(255,214,107,.28)}
+.brow .sl{flex:1;min-width:0}.brow .nm{font-size:12.7px;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}.brow .ss{font-size:11px;color:var(--muted)}
+.ph{display:inline-grid;place-items:center;flex:none;border-radius:7px;background:#2a3038;box-shadow:0 0 0 1px rgba(255,255,255,.14);color:#aeb8c2;font-weight:800}
+/* 2026-09-28: what an item is for (iteminfo.mjs): its facts on the card, the item links, the details fold */
+.ifacts{margin:8px 0 2px;display:grid;gap:5px}.ifacts p{margin:0;font-size:12.4px;line-height:1.5;color:var(--ink-2)}
+.ifacts .dc,.ifull .dc{color:var(--gold-2);font-weight:700;font-variant-numeric:tabular-nums}
+a.il{text-decoration:none;border-bottom:1px dotted currentColor;cursor:pointer}a.il:hover{border-bottom-style:solid}
+.mut{color:var(--muted);font-weight:400}
+.ifull{margin-top:8px;border:1px solid var(--line-2);border-radius:9px;padding:4px 10px 8px}.ifull>summary{cursor:pointer;font-weight:650;font-size:12.5px;color:var(--ink);padding:4px 0}
+.ifull .h{margin:10px 0 4px}.irow{display:flex;gap:10px;justify-content:space-between;align-items:baseline;font-size:12.2px;padding:2px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.irow>span{min-width:0;color:var(--ink-2)}.irow>b{white-space:nowrap;color:var(--gold-2);font-variant-numeric:tabular-nums;font-weight:650}
+.glink{display:inline-flex;align-items:center;gap:6px;margin-top:10px;color:#9ff0c6;font-size:12.5px;font-weight:650;text-decoration:none;border:1px solid rgba(95,211,154,.4);border-radius:9px;padding:6px 10px;background:rgba(47,191,113,.08)}
+.glink:hover{border-color:rgba(95,211,154,.8);color:#c9ffe3}
+.ibtn{margin-top:10px}.ibtn .btn{width:100%}.ibtn .btn:disabled{opacity:.45;cursor:default}
+/* 2026-09-28: an item card's details (mapui.mjs fillDetail): the site's item page, less what the card shows already, at
+   the card's end; the tables fit the card's width (the site's pages fold the long ones) */
+.idetail{font-size:12.4px;line-height:1.5;color:var(--ink-2)}.idetail:empty{display:none}
+.idetail .page-hero-in:empty,.idetail .page-hero:has(.page-hero-in:empty){display:none}
+.idetail .gnote{display:block;margin:10px 0 0}
+.idetail p{margin:6px 0}.idetail ul{margin:4px 0;padding-left:16px}.idetail li{margin:2px 0}
+.idetail h2{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700;margin:16px 0 4px;border-bottom:1px solid var(--line);padding-bottom:3px}
+.idetail h3{font-size:12.8px;color:var(--ink);margin:12px 0 4px;padding:0}
+.idetail a{color:#9ff0c6}.idetail a.il{color:inherit}
+.idetail .map-a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:650;font-size:12px;border:1px solid rgba(95,211,154,.4);border-radius:9px;padding:4px 9px;background:rgba(47,191,113,.08)}
+.idetail .map-a:hover{border-color:rgba(95,211,154,.8);color:#c9ffe3}
+.idetail .map-a .ico{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2;stroke-linejoin:round}
+.idetail .tablewrap{overflow-x:auto;margin:4px 0}
+.idetail table{width:100%;border-collapse:collapse;font-size:12px}
+.idetail th{text-align:left;font-size:10.5px;font-weight:600;color:var(--muted);padding:3px 6px 3px 0;border-bottom:1px solid var(--line-2);white-space:nowrap}
+.idetail td{padding:3px 6px 3px 0;border-bottom:1px solid rgba(255,255,255,.05);vertical-align:top}
+.idetail td:last-child{text-align:right;padding-right:0}.idetail th:last-child{text-align:right;padding-right:0}
+.idetail td b{font-size:10px;color:var(--gold-2);margin-left:4px}
+.idetail details{border:1px solid var(--line-2);border-radius:9px;margin-top:10px!important}
+.idetail details>summary{cursor:pointer;font-weight:650;color:var(--ink);padding:6px 10px;display:flex;justify-content:space-between;gap:8px}
+.idetail details>summary small{color:var(--muted);font-weight:500}
+.idetail details>div{padding:0 10px 8px!important}
+.ilist{margin-top:4px;font-size:11.5px;color:var(--muted)}
+.mlbl.boss{border-color:rgba(255,120,90,.8);background:rgba(40,12,8,.82)}.mlbl.boss b{color:#ffd2c4}
+.mlbl.ph{border-color:rgba(200,210,220,.45);background:rgba(20,24,28,.7)}.mlbl.ph b{color:#dfe6ec;font-weight:650}
+#loading .t small{display:block;font-size:11.5px;color:var(--muted);font-weight:500;margin-top:2px;letter-spacing:0}
+#loading .err{margin-top:12px;display:flex;gap:8px;justify-content:center}
+
+/* ---------- phone width: the sidebar is a bottom sheet ---------- */
+@media (max-width:760px){
+  /* 2026-09-29: three heights (js/sheet.mjs): the map's name only (sheet-min), half (the first) and nearly all
+     (sheet-open); --sheet is the height, and a drag sets it by the pixel (sheet-drag) */
+  body{--sheet:46vh;--sheet-min:calc(68px + env(safe-area-inset-bottom,0px))}
+  body.sheet-open{--sheet:84vh}
+  body.sheet-min{--sheet:var(--sheet-min)}
+  .left{left:0;right:0;top:auto;bottom:0;width:auto;height:var(--sheet);border-radius:18px 18px 0 0;border-bottom:0;transition:height .25s ease}
+  #grab,.sb-head,.mapbar{touch-action:none}   /* (they drag the sheet) */
+  body.sheet-min .sb-head,body.sheet-min .mapsub{display:none}
+  body.sheet-min .sb-top>:not(.mapbar),body.sheet-min #cards,body.sheet-min .sb-foot{visibility:hidden}
+  #grab{display:block;width:100%;height:18px;border:0;background:none;padding:0;flex:none;position:relative}
+  #grab::before{content:"";position:absolute;left:50%;top:7px;width:40px;height:4px;border-radius:3px;background:rgba(255,255,255,.25);transform:translateX(-50%)}
+  .sb-top{padding:0 14px 8px}
+  .chipbar:not(:empty)::before{left:0}
+  .chipbar{left:10px;right:10px;top:10px;flex-wrap:nowrap;overflow-x:auto;max-height:none;padding-bottom:4px;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent)}
+  body.cardon .chipbar{right:10px}
+  .card{top:52px;left:10px;right:10px;width:auto;max-height:calc(100vh - var(--sheet) - 66px)}
+  body.sheet-open .card{display:none}
+  .pop{left:10px;right:10px;top:52px;width:auto;max-height:calc(54vh - 60px)}
+  .hint{display:none}
+  .viewsw{right:10px;bottom:calc(var(--sheet) + 64px)}.compass{right:10px;bottom:calc(var(--sheet) + 12px)}
+  .roofsw{right:10px;bottom:calc(var(--sheet) + 110px)}.roofsw kbd{display:none}
+  .viewsw,.compass,.roofsw{transition:bottom .25s ease}
+  body.sheet-drag .left,body.sheet-drag .viewsw,body.sheet-drag .compass,body.sheet-drag .roofsw{transition:none}
+  body.sheet-open .viewsw,body.sheet-open .compass,body.sheet-open .roofsw{display:none}
+  body.northup .compass{display:none}   /* the map view, north up: nothing to show (main.mjs) */
+  .toast{bottom:calc(var(--sheet) + 10px)}   /* round 15: over the sheet, not on its tabs */
+}
+
+/* ---------- round 12: map selection (atlas.mjs) ---------- */
+#atlas{position:fixed;inset:0;z-index:35;display:grid;place-items:center;background:rgba(3,6,10,.62);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);opacity:0;transition:opacity .16s}
+#atlas.on{opacity:1}
+.atl{width:min(1240px,calc(100vw - 40px));height:min(900px,calc(100vh - 40px));display:flex;flex-direction:column;background:var(--panel-solid);border:1px solid var(--line-2);border-radius:18px;box-shadow:0 30px 80px rgba(0,0,0,.6);overflow:hidden;transform:translateY(8px) scale(.99);transition:transform .16s}
+#atlas.on .atl{transform:none}
+.ahd{display:flex;align-items:center;gap:12px;padding:12px 14px;border-bottom:1px solid var(--line);flex:none}
+.att{display:flex;align-items:center;gap:8px;font-size:16px}.att svg{width:20px;height:20px;color:var(--gold)}
+.atabs{display:flex;gap:4px}
+.atabs button{border:1px solid var(--line);background:var(--panel-2);border-radius:9px;padding:6px 12px;color:var(--ink-2);font-size:12.8px;font-weight:600}
+.atabs button:hover{color:var(--ink)}
+.atabs button[aria-pressed=true]{color:var(--ink);border-color:rgba(242,193,78,.55);background:linear-gradient(180deg,rgba(242,193,78,.13),rgba(242,193,78,.04))}
+.atabs small{color:var(--muted);font-weight:500}
+.asrch{position:relative;flex:1;min-width:160px;max-width:420px;margin-left:auto}
+.asrch svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--muted);pointer-events:none}
+.afac{flex:none}.afac button{padding:5px 10px;font-size:12px}
+.abody{flex:1;overflow:auto;padding:14px 16px 18px;scrollbar-width:thin;overscroll-behavior:contain}
+.aw{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+.acol{position:relative;border:1px solid var(--line);border-radius:16px;padding:10px;overflow:hidden;background:rgba(255,255,255,.02);transition:opacity .15s,filter .15s}
+.acol .abd{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.24;pointer-events:none;-webkit-mask-image:linear-gradient(180deg,#000,rgba(0,0,0,.15));mask-image:linear-gradient(180deg,#000,rgba(0,0,0,.15))}
+.acol .abyssbd{background:radial-gradient(ellipse at 50% 20%,rgba(125,143,224,.3),transparent 70%);opacity:1}
+.acol.other{opacity:.6;filter:saturate(.55)}
+.acol.other:hover,.acol.other:focus-within{opacity:1;filter:none}
+.acol[data-side=Elyos]:not(.other){border-color:rgba(246,217,138,.45)}
+.acol[data-side=Asmodian]:not(.other){border-color:rgba(169,139,255,.5)}
+.acol.abyss{border-color:rgba(125,143,224,.42)}
+.acol.flash{animation:flash 1.1s ease-out}
+.acolh{position:relative;display:flex;align-items:center;gap:8px;padding:2px 4px 10px}
+.acolh svg{width:22px;height:22px}.acolh b{font-size:14.5px}.acolh small{margin-left:auto;color:var(--muted);font-size:11.5px}
+.acol:not(.other):not(.abyss) .acolh small{color:var(--gold-2)}
+.acards{position:relative;display:flex;flex-direction:column;gap:8px}
+.acard{display:flex;gap:10px;align-items:stretch;width:100%;text-align:left;border:1px solid var(--line-2);background:rgba(10,15,21,.8);border-radius:12px;padding:7px;color:var(--ink-2);transition:border-color .12s,transform .12s}
+.acard:hover,.acard:focus-visible{border-color:rgba(242,193,78,.6);color:var(--ink);transform:translateY(-1px)}
+.acard.cur{border-color:rgba(242,193,78,.85);box-shadow:inset 0 0 0 1px rgba(242,193,78,.5),0 0 18px rgba(242,193,78,.12)}
+.athb{position:relative;flex:none;width:92px;height:92px;border-radius:9px;overflow:hidden;background:#1a232c}
+.athb img{width:100%;height:100%;object-fit:cover;display:block}
+.anum{position:absolute;left:4px;top:4px;opacity:.9;background:rgba(0,0,0,.55)}
+.acb{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1;padding:2px 0}
+.an{font-size:14px;color:var(--ink);font-weight:650;line-height:1.2}
+.asub{font-size:11.5px;color:var(--muted)}
+.alater{color:#e7c98a}
+.apr{display:block;margin-top:auto;font-size:11.3px;color:var(--ink-2);padding-bottom:6px;position:relative;background:linear-gradient(rgba(255,255,255,.09),rgba(255,255,255,.09)) left bottom/100% 3px no-repeat;border-radius:2px}
+.apr b{color:var(--ink)}
+.apr i{position:absolute;left:0;bottom:0;height:3px;border-radius:2px;background:linear-gradient(90deg,#c9962a,var(--gold));max-width:100%}
+.apr.none{color:var(--muted);background:none;padding-bottom:0}
+.ahere{align-self:flex-start;font-size:9.8px;font-weight:800;letter-spacing:.4px;color:#241703;background:var(--gold);border-radius:5px;padding:1px 6px;text-transform:uppercase}
+#adung{margin-top:18px}
+.ash{display:flex;align-items:center;gap:8px;padding:4px 2px 8px}.ash span{display:flex;align-items:center;gap:8px}.ash svg{width:20px;height:20px}.ash b{font-size:14.5px}.ash small{color:var(--muted)}
+.afilt{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.afilt button{border:1px solid var(--line-2);background:var(--panel-2);border-radius:999px;padding:5px 11px;font-size:12px;color:var(--ink-2)}
+.afilt button:hover{color:var(--ink);border-color:rgba(242,193,78,.5)}
+.afilt button small{color:var(--muted);margin-left:2px}
+.afilt button[aria-pressed=true]{color:#241703;background:var(--gold);border-color:var(--gold);font-weight:650}.afilt button[aria-pressed=true] small{color:rgba(36,23,3,.7)}
+.agrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.adc{position:relative}
+.adcb{display:flex;flex-direction:column;width:100%;height:100%;text-align:left;border:1px solid var(--line-2);background:rgba(10,15,21,.8);border-radius:12px;padding:0;overflow:hidden;color:var(--ink-2);transition:border-color .12s,transform .12s}
+.adcb:hover,.adcb:focus-visible{border-color:rgba(181,156,255,.8);color:var(--ink);transform:translateY(-1px)}
+.adc.cur .adcb{border-color:rgba(242,193,78,.85);box-shadow:inset 0 0 0 1px rgba(242,193,78,.5)}
+.adth{display:block;aspect-ratio:16/9;background:#26244a;overflow:hidden}.adth img{width:100%;height:100%;object-fit:cover;display:block}
+.adbd{display:flex;flex-direction:column;gap:2px;padding:8px 10px 10px}
+.aent{font-size:11.5px;color:var(--ink-2)}.afrom{font-size:11px;color:var(--muted)}
+.agl{position:absolute;right:8px;top:8px;font-size:10.5px;font-weight:750;color:#9ff0c6;background:rgba(6,30,18,.88);border:1px solid rgba(95,211,154,.6);border-radius:6px;padding:1px 7px;text-decoration:none}
+.agl:hover{color:#fff;border-color:#5fd39a}
+.aempty{color:var(--muted);text-align:center;margin:40px 0}
+.afoot{margin-top:18px}
+/* the quick strip: a dock at the map's bottom-left edge (desktop), a row in the sheet (phone) */
+.dock{left:348px;bottom:14px;display:flex;align-items:flex-end;gap:2px;padding:5px 6px;border-radius:14px;max-width:calc(100vw - 348px - 118px);overflow-x:auto;scrollbar-width:none}
+.dock:empty{display:none}
+.qi{display:flex;flex-direction:column;align-items:center;gap:3px;border:0;background:none;padding:3px 3px 2px;border-radius:9px;color:var(--ink-2);flex:none;width:62px}
+.qi:hover,.qi:focus-visible{background:var(--panel-3);color:var(--ink)}
+.qth{position:relative;width:54px;height:36px;border-radius:7px;overflow:hidden;background:#1a232c;box-shadow:0 0 0 1px rgba(255,255,255,.14)}
+.qth img{width:100%;height:100%;object-fit:cover;display:block}
+.qth::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--fc,transparent)}
+.qi[data-fac=Elyos]{--fc:#f6d98a}.qi[data-fac=Asmodian]{--fc:#8f6bff}.qi[data-fac=Abyss]{--fc:#7d8fe0}.qi[data-fac=Instance]{--fc:#b59cff}
+.qth kbd{position:absolute;left:2px;top:2px;font-size:9px;padding:0 3px;background:rgba(0,0,0,.6);opacity:0;transition:opacity .12s}
+.dock:hover .qth kbd,.qi:focus-visible .qth kbd{opacity:.95}
+.qn{font-size:10.8px;line-height:1.15;max-width:60px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:600}
+.qi.cur .qth{box-shadow:0 0 0 2px var(--gold),0 0 12px rgba(242,193,78,.45)}.qi.cur .qn{color:var(--gold-2)}
+.qatlas .qth{display:grid;place-items:center;background:linear-gradient(180deg,rgba(242,193,78,.22),rgba(242,193,78,.06));color:var(--gold);box-shadow:0 0 0 1px rgba(242,193,78,.45)}
+.qatlas .qth svg{width:20px;height:20px}.qatlas .qn{max-width:none}.qatlas .qn kbd{font-size:8.5px;padding:0 3px;margin-left:1px}
+.qsep{width:1px;align-self:stretch;margin:6px 3px;background:var(--line-2);flex:none}
+.qhint{font-size:11px;color:var(--muted);align-self:center;padding:0 6px;max-width:150px;line-height:1.3}
+.qstrip{display:none}
+/* the breadcrumb over the map name */
+.crumbs{display:flex;align-items:center;gap:1px;font-size:11.3px;color:var(--muted);margin:-6px 0 6px -4px;min-height:18px;white-space:nowrap;overflow:hidden}
+.crumbs:empty{display:none}
+.crumbs button{border:0;background:none;padding:1px 5px;border-radius:6px;color:#8fc4e0;font-size:11.3px;font-weight:600}
+.crumbs button:hover{background:var(--panel-3);color:var(--ink)}
+.crumbs .csep{opacity:.7;padding:0 1px}
+.crumbs .ccur{color:var(--ink-2);padding:0 4px;overflow:hidden;text-overflow:ellipsis}
+/* the loading screen shows where you are going */
+#lthumb{display:block;width:176px;height:176px;object-fit:cover;border-radius:18px;margin:0 auto 16px;box-shadow:0 14px 44px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.14);animation:lth 1.4s ease-in-out infinite alternate}
+@keyframes lth{from{filter:brightness(.82) saturate(.9)}to{filter:brightness(1.04)}}
+/* the search: maps first, and an eye on everything that can be shown all at once */
+.results .rthumb{width:24px!important;height:24px!important;max-width:none!important;max-height:none!important;border-radius:6px;object-fit:cover;box-shadow:0 0 0 1px rgba(255,255,255,.15)}
+.results button.mr .rn{color:var(--ink);font-weight:600}
+.results button .rsh{flex:none;width:28px;height:26px;display:grid;place-items:center;border-radius:7px;color:var(--muted);margin:0 -4px 0 2px;border:1px solid var(--line)}
+.results button .rsh svg{width:16px;height:16px}
+.results button .rsh:hover{color:var(--ink);background:rgba(255,255,255,.08);border-color:var(--line-2)}
+.results button .rsh.on{color:#241703;background:var(--gold);border-color:var(--gold)}
+.qtip{display:flex;gap:6px;align-items:flex-start;margin:8px 0 0;font-size:11.5px;color:var(--ink-2);background:rgba(63,224,224,.06);border:1px dashed rgba(63,224,224,.35);border-radius:9px;padding:6px 4px 6px 10px;line-height:1.45}
+.qtip button{border:0;background:none;color:var(--muted);font-size:15px;line-height:1;padding:0 5px;flex:none}.qtip button:hover{color:var(--ink)}
+/* round 12: the highlights: a chip each, in its colour; the focus switch; the cards' "Show all" button */
+.chip.hlc{border-color:rgba(255,214,107,.62);background:linear-gradient(180deg,rgba(52,40,12,.92),rgba(20,16,8,.9));color:var(--ink-2)}
+.chip.hlc .cl b{color:#fff}
+.hdot{width:9px;height:9px;border-radius:50%;background:var(--hi);box-shadow:0 0 0 2px rgba(0,0,0,.45);flex:none;display:inline-block}   /* round 15: no highlight colours */
+.chfocus{pointer-events:auto;flex:none;display:inline-flex;align-items:center;gap:5px;height:30px;border-radius:999px;border:1px solid var(--line-2);background:rgba(11,17,24,.84);color:var(--ink-2);font-size:12px;padding:0 11px 0 8px;white-space:nowrap}
+.chfocus svg{width:14px;height:14px}.chfocus:hover{color:var(--ink);border-color:rgba(242,193,78,.5)}
+.chfocus[aria-pressed=true]{color:#241703;background:var(--gold);border-color:var(--gold);font-weight:650}
+.btn.showall{display:flex;align-items:center;gap:8px;width:100%;margin-top:10px;text-align:left;font-weight:600;color:var(--ink);padding:8px 10px}
+.btn.showall svg{width:17px;height:17px;color:var(--gold);flex:none}
+.btn.showall small{color:var(--muted);font-weight:500;margin-left:3px}
+.btn.showall .sal{flex:1;min-width:0}
+.btn.showall.on{border-color:rgba(255,255,255,.22);background:rgba(255,255,255,.05)}
+.btn.showall .sax{font-size:11.5px;color:var(--muted);border:1px solid var(--line-2);border-radius:7px;padding:1px 8px}
+@media (min-width:761px){.toast{bottom:96px}}
+@media (max-width:760px){
+  .dock{display:none}
+  .qstrip{display:flex;gap:1px;margin:8px -4px 0;overflow-x:auto;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}
+  .qstrip .qi{width:58px}.qstrip .qth{width:50px;height:32px}
+  #atlas{place-items:stretch;background:var(--panel-solid)}
+  .atl{width:100vw;height:100%;border-radius:0;border:0}
+  .ahd{flex-wrap:wrap;gap:8px;padding:10px 10px 8px}
+  .asrch{order:5;flex-basis:100%;max-width:none;margin:0}
+  .afac{margin-left:auto}
+  .aw{grid-template-columns:1fr}
+  .athb{width:72px;height:72px}
+  .agrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .abody{padding:10px}
+  .crumbs{margin:0 0 4px -4px}
+}
+
+/* ---------- round 13: the map bar, the launch hierarchy in the atlas and the strip, the first-run hint ---------- */
+.sb-head .crumbs{flex:1;margin:0 0 0 -4px;min-width:0}
+.sb-head .crumbs:empty{display:block}
+.mapbar{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:10px;row-gap:1px;align-items:center;margin-top:8px}
+.mapbar .mapbtn{grid-column:1;margin:0 0 0 -4px;padding:3px 6px 3px 4px;align-items:center;gap:9px;flex:none}
+.mapbar .mapbtn .dot{width:11px;height:11px}
+.mapbar .mapbtn h1{font-size:21px;font-weight:760;letter-spacing:.1px;line-height:1.15;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+.mapsbtn{grid-column:2;grid-row:1;display:flex;align-items:center;gap:7px;height:40px;padding:0 10px 0 11px;border-radius:12px;border:1px solid rgba(242,193,78,.62);background:linear-gradient(180deg,rgba(242,193,78,.26),rgba(242,193,78,.09));color:#ffe7ac;font-weight:720;font-size:14.5px;letter-spacing:.2px;box-shadow:0 2px 12px rgba(242,193,78,.14)}
+.mapsbtn svg{width:17px;height:17px;color:var(--gold)}
+.mapsbtn kbd{font-size:9.5px;background:rgba(0,0,0,.3);border-color:rgba(242,193,78,.45);color:#ffe7ac}
+.mapsbtn:hover,.mapsbtn[aria-expanded=true]{background:linear-gradient(180deg,rgba(242,193,78,.38),rgba(242,193,78,.15));border-color:rgba(242,193,78,.95);color:#fff3cf}
+.mapsub{grid-column:1/3;margin:0 0 0 17px;font-size:11.6px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mapsub b{color:var(--ink-2);font-weight:650}.mapsub .tl{color:#ffe29a;font-weight:650}.mapsub .tl.later{color:#e7c98a;font-weight:600}.mapsub .tl.dun{color:#d9ccff}
+/* the first-run hint: a callout next to the Maps button (atlas.mjs hint()) */
+.maphint{position:fixed;z-index:26;display:flex;align-items:center;gap:8px;max-width:min(300px,calc(100vw - 24px));padding:9px 6px 9px 13px;border-radius:12px;background:linear-gradient(180deg,#f7cf62,#e2a92d);color:#241703;font-weight:700;font-size:13.2px;line-height:1.35;box-shadow:0 10px 30px rgba(0,0,0,.45),0 0 0 1px rgba(255,230,160,.8);animation:mh-in .35s ease-out}
+.maphint kbd{background:rgba(36,23,3,.14);border-color:rgba(36,23,3,.35);color:#241703;font-size:10.5px}
+.maphint button{border:0;background:rgba(36,23,3,.12);color:#241703;width:24px;height:24px;border-radius:7px;font-size:16px;line-height:1;padding:0;flex:none}
+.maphint button:hover{background:rgba(36,23,3,.25)}
+.maphint::before{content:"";position:absolute;width:12px;height:12px;background:#f2c556;transform:rotate(45deg)}
+.maphint.mh-left::before{left:-6px;top:calc(50% - 6px)}
+.maphint.mh-down::before{bottom:-6px;right:var(--ax,24px);background:#e5ad31}
+@keyframes mh-in{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+body.shot .maphint{display:none}
+body:has(#settings:not([hidden])) .maphint{display:none}   /* (2026-09-28) it would cover Settings' "Your progress" */
+/* the atlas: region tabs, then the main regions large, the rest of the launch world smaller, later maps folded */
+.atabs button{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.atabs button svg{width:17px;height:17px}
+.atabs .tsep{width:1px;align-self:stretch;margin:4px 3px;background:var(--line-2);flex:none}
+.atier{margin:0 0 16px}
+.atierh{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 2px 9px;font-size:11px;text-transform:uppercase;letter-spacing:1.1px;color:var(--muted);font-weight:750;min-height:30px}
+.atierh small{text-transform:none;letter-spacing:0;font-weight:500;font-size:11.5px}
+.atierh .afacw{margin-left:auto;display:flex;align-items:center;gap:8px;text-transform:none;letter-spacing:0;font-weight:500;font-size:11.5px}
+.ahero{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.anext{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.acard.hero{flex-direction:column;padding:0;gap:0;overflow:hidden;border-radius:16px;background:rgba(10,15,21,.92)}
+.acard.hero .athb{width:100%;height:auto;aspect-ratio:2.1/1;border-radius:0}
+.acard.hero .athb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(6,10,14,.88))}
+.acard.hero .ahn{position:absolute;left:14px;bottom:10px;z-index:1;display:flex;align-items:center;gap:9px}
+.acard.hero .ahn svg{width:28px;height:28px;filter:drop-shadow(0 1px 2px #000)}
+.acard.hero .ahn b{font-size:27px;font-weight:800;color:#fff;letter-spacing:.2px;text-shadow:0 2px 6px rgba(0,0,0,.8)}
+.acard.hero .acb{padding:10px 14px 12px;gap:6px;flex-direction:column}
+.acard.hero .anum{left:10px;top:10px;z-index:1}
+.acard.hero .arow1{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.acard.hero[data-side=Elyos]:not(.other){border-color:rgba(246,217,138,.6)}
+.acard.hero[data-side=Asmodian]:not(.other){border-color:rgba(169,139,255,.65)}
+.acard.hero.cur{border-color:rgba(242,193,78,.95)}
+.atag{display:inline-flex;align-items:center;gap:5px;align-self:flex-start;font-size:11.2px;font-weight:750;letter-spacing:.2px;padding:2px 8px;border-radius:999px;border:1px solid rgba(242,193,78,.55);color:#ffe29a;background:rgba(242,193,78,.1);white-space:nowrap}
+.atag.st{border-color:rgba(95,211,154,.5);color:#9ff0c6;background:rgba(47,191,113,.08)}
+.atag.ab{border-color:rgba(125,143,224,.6);color:#c9d3ff;background:rgba(125,143,224,.12)}
+.atag.lat{border-color:rgba(231,201,138,.45);color:#e7c98a;background:none;font-weight:650}
+.acard .asub svg{width:14px;height:14px;vertical-align:-2px;margin-right:3px}
+.acard.other{opacity:.55;filter:saturate(.5)}
+.acard.other:hover,.acard.other:focus-visible{opacity:1;filter:none}
+.acard .aoth{font-size:10.8px;color:var(--muted)}
+details.alatergrp{border:1px dashed var(--line-2);border-radius:14px;padding:0 10px;background:rgba(255,255,255,.015)}
+details.alatergrp>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:9px;padding:11px 4px;color:var(--ink-2);font-size:12.8px;font-weight:650}
+details.alatergrp>summary::-webkit-details-marker{display:none}
+details.alatergrp>summary::before{content:"";width:7px;height:7px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(-45deg);transition:transform .15s;flex:none;margin-right:2px}
+details.alatergrp[open]>summary::before{transform:rotate(45deg)}
+details.alatergrp>summary small{color:var(--muted);font-weight:500;margin-left:auto}
+details.alatergrp>summary:hover{color:var(--ink)}
+details.alatergrp .anext{padding:0 0 12px}
+.acard.small .athb{width:64px;height:64px}
+.acard.small .an{font-size:13.2px}
+/* the quick strip: your main region first and larger */
+.qi.main{width:84px}
+.qi.main .qth{width:76px;height:46px;box-shadow:0 0 0 1.5px rgba(242,193,78,.85),0 0 12px rgba(242,193,78,.25)}
+.qi.main .qn{max-width:82px;font-size:11.5px;font-weight:750;color:#ffe29a}
+.qi.main .qtag{position:absolute;right:3px;bottom:6px;font:800 8.5px/1 var(--f);letter-spacing:.3px;text-transform:uppercase;color:#241703;background:var(--gold);border-radius:4px;padding:2px 4px}
+.qi.main.cur .qth{box-shadow:0 0 0 2.5px var(--gold),0 0 14px rgba(242,193,78,.55)}
+.qatlas{width:auto;padding:3px 6px 2px}.qatlas .qth{width:44px}.qatlas .qn{color:var(--gold-2)}
+@media (max-width:760px){
+  .mapbar{margin-top:4px}
+  .mapbar .mapbtn h1{font-size:19px;-webkit-line-clamp:1}
+  .mapsbtn{height:38px}
+  .ahero{grid-template-columns:1fr;gap:10px}
+  .acard.hero .athb{aspect-ratio:2.7/1}
+  .acard.hero .ahn b{font-size:22px}
+  .anext{grid-template-columns:1fr}
+  .atabs{order:4;flex-basis:100%;overflow-x:auto;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 90%,transparent);mask-image:linear-gradient(90deg,#000 90%,transparent)}
+  #ax{margin-left:auto}
+  .atabs button{flex:none;padding:6px 10px}
+  .qstrip .qi.main{width:74px}.qstrip .qi.main .qth{width:66px;height:40px}
+}
+/* round 13: a dungeon's start: the pin over the start gate (main.mjs startMarker) and the "Go to start" buttons */
+.startpin{pointer-events:auto;cursor:pointer;display:flex;flex-direction:column;align-items:center}
+.startpin b{display:flex;align-items:center;gap:5px;padding:5px 11px 5px 8px;border-radius:999px;background:linear-gradient(180deg,#7df0b6,#2fbf71);color:#04230f;font:850 14px/1 var(--f);letter-spacing:.4px;white-space:nowrap;box-shadow:0 0 0 2px rgba(255,255,255,.9),0 4px 16px rgba(0,0,0,.55),0 0 22px rgba(95,211,154,.65)}
+.startpin b svg{width:15px;height:15px}
+.startpin b small{font-weight:650;font-size:10.5px;opacity:.8;letter-spacing:0}
+.startpin i{width:3px;height:22px;border-radius:2px;background:linear-gradient(#fff,rgba(255,255,255,.1))}
+.startpin:hover b{filter:brightness(1.08)}
+.startpin.flash b{animation:sp-flash .9s ease-out 2}
+@keyframes sp-flash{0%{box-shadow:0 0 0 2px #fff,0 0 0 2px rgba(95,211,154,.9)}100%{box-shadow:0 0 0 2px #fff,0 0 0 18px rgba(95,211,154,0)}}
+.dnav{display:flex;gap:6px;margin-top:10px}
+.dnav:not(:has(> :not([hidden]))){display:none}
+.dnav .backbtn{margin-top:0;flex:1;min-width:0}
+.startbtn{flex:none;display:flex;align-items:center;gap:6px;border:1px solid rgba(95,211,154,.6);background:linear-gradient(180deg,rgba(95,211,154,.22),rgba(95,211,154,.07));border-radius:10px;padding:7px 11px 7px 9px;color:#bff5d8;font-weight:700;font-size:12.6px;white-space:nowrap}
+.startbtn:hover{border-color:rgba(95,211,154,.95);color:#fff}
+.startbtn svg{width:15px;height:15px;color:#5fd39a}
+</style>
+<script type="importmap">{"imports":{"three":"./js/vendor/three/three.module.js","three/addons/":"./js/vendor/three/addons/","fflate":"./js/vendor/fflate/browser.js"}}</script>
+</head>
+<body>
+<div id="loading"><div class="box"><img id="lthumb" alt="" hidden><div class="t" id="lt">Aion 2 Maps</div><div class="s" id="ls">Startingâ¦</div><div class="bar"><div id="lb"></div></div></div></div>
+<div id="view"></div>
+<aside class="panel left" id="left" aria-label="Map filters">
+  <button id="grab" aria-label="Expand or collapse the panel"></button>
+  <div class="sb-top">
+    <div class="sb-head">
+      <nav class="crumbs" id="crumbs" aria-label="Where you are"></nav>
+      <a class="guidesbtn" id="hubbtn" href="/guides/" title="Guides for every dungeon, class and system"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5a2 2 0 0 1 2-2h12v15H7a2 2 0 0 0-2 2z"/><path d="M5 20a2 2 0 0 1 2-2h12v3H7a2 2 0 0 1-2-1zM9 7.5h6M9 11h4"/></svg><span>Guides</span></a><a class="iconbtn tipheart" href="https://ko-fi.com/midirskry" rel="noopener" target="_blank" title="Support the site on Ko-fi" aria-label="Support the site on Ko-fi"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3s-7.3-4.5-7.3-10.1A4.2 4.2 0 0 1 12 7.3a4.2 4.2 0 0 1 7.3 2.9c0 5.6-7.3 10.1-7.3 10.1z" fill="currentColor"/></svg></a>
+      <button class="iconbtn" id="gear" aria-label="Settings and your progress" aria-expanded="false" aria-controls="settings" title="Settings Â· back up your progress"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></button>
+    </div>
+    <div class="mapbar" id="mapbar">
+      <button class="mapbtn" id="mapbtn" aria-haspopup="dialog" aria-expanded="false" title="All maps and dungeons (G)"><i class="dot"></i><h1 id="mapname">Aion 2</h1></button>
+      <button class="mapsbtn" id="mapsbtn" aria-haspopup="dialog" aria-expanded="false" title="Switch regions and dungeons (G)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6" fill="currentColor"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.6" fill="currentColor" opacity=".7"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.6" fill="currentColor" opacity=".7"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6" fill="currentColor" opacity=".45"/></svg><span>Maps</span><kbd>G</kbd></button>
+      <p class="mapsub" id="mapsub">Game client data</p>
+    </div>
+    <div class="searchwrap"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15 15 5 5" stroke="currentColor" stroke-width="2"/></svg>
+      <input class="search" id="q" placeholder="Ruby, a monster, a place, a mapâ¦" autocomplete="off" role="combobox" aria-controls="qr" aria-expanded="false" aria-label="Search the map"><kbd>/</kbd><div class="results" id="qr" role="listbox"></div></div>
+    <p class="qtip" id="qtip" hidden><span>Type a resource or monster (Ruby, a monster's nameâ¦) and press <kbd>Enter</kbd> to show all of it on the map.</span><button id="qtipx" aria-label="Dismiss the tip">&times;</button></p>
+    <nav class="qstrip" id="qstrip" aria-label="Quick switch"></nav>
+    <div class="dnav"><button class="startbtn" id="startbtn" hidden title="Frame the dungeon's start"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 21V4h10l-2 3.5 2 3.5H8v10z" fill="currentColor"/></svg><span>Go to start</span></button><button class="backbtn" id="backbtn" hidden></button></div>
+    <div class="tabs" id="tabs" role="tablist" aria-label="What to show on the map"></div>
+  </div>
+  <div id="cards"><div id="zextra"><details class="zinfo"><summary>Every map</summary><h2>Regions</h2><ul><li><a href="/verteron/">Verteron</a></li><li><a href="/altgard/">Altgard</a></li><li><a href="/poeta/">Poeta</a></li><li><a href="/ishalgen/">Ishalgen</a></li><li><a href="/chaotic-lower-reshanta/">Chaotic Lower Reshanta</a></li><li><a href="/chaotic-middle-reshanta/">Chaotic Middle Reshanta</a></li><li><a href="/abyss-rift-zone/">Abyss Rift Zone</a></li><li><a href="/eltnen/">Eltnen</a></li><li><a href="/morheim/">Morheim</a></li><li><a href="/chaotic-upper-reshanta/">Chaotic Upper Reshanta</a></li></ul><h2>Dungeons</h2><ul><li><a href="/shattered-arkanis/">Shattered Arkanis</a></li><li><a href="/deus-research-base/">Deus Research Base</a></li><li><a href="/draupnir/">Draupnir</a></li><li><a href="/nightmare/">Nightmare</a></li><li><a href="/fire-temple/">Fire Temple</a></li><li><a href="/krao-cave/">Krao Cave</a></li><li><a href="/abyssal-forge-ludra/">Abyssal Forge: Ludra</a></li><li><a href="/urugugu-canyon/">Urugugu Canyon</a></li><li><a href="/abyss-corridor/">Abyss Corridor</a></li><li><a href="/vakron-sky-island/">Vakron Sky Island</a></li><li><a href="/consumed-deus-research-base/">Consumed Deus Research Base</a></li><li><a href="/azure-breath-island/">Azure Breath Island</a></li><li><a href="/accursed-sword/">Accursed Sword</a></li><li><a href="/cradle-of-nihility/">Cradle of Nihility</a></li><li><a href="/citadel-of-the-fallen-daeva/">Citadel of the Fallen Daeva</a></li><li><a href="/graverobber-den-treasure-storage/">Graverobber Den Treasure Storage</a></li><li><a href="/dying-dramatas-nest/">Dying Dramata&#x27;s Nest</a></li><li><a href="/incursion-of-the-spirits/">Incursion of the Spirits</a></li><li><a href="/subjugation-closed/">Subjugation Closed</a></li><li><a href="/beritra-brigade-fortress/">Beritra Brigade Fortress</a></li><li><a href="/orcuss-grave/">Orcus&#x27;s Grave</a></li><li><a href="/fafnite-forge/">Fafnite Forge</a></li><li><a href="/sanctum-outskirts-watch-treasure-storage/">Sanctum Outskirts Watch Treasure Storage</a></li><li><a href="/daeva-bio-research-base/">Daeva Bio-Research Base</a></li><li><a href="/corroded-decontamination-facility/">Corroded Decontamination Facility</a></li><li><a href="/abyssal-horn-den/">Abyssal Horn Den</a></li><li><a href="/snowfield-of-sorrow/">Snowfield of Sorrow</a></li><li><a href="/ferocious-horn-den/">Ferocious Horn Den</a></li><li><a href="/rubek-thieves-occupied-territory-treasure-storage/">Rubek Thieves&#x27; Occupied Territory Treasure Storage</a></li><li><a href="/noirans-hidden-legacy/">Noiran&#x27;s Hidden Legacy</a></li><li><a href="/mirror-of-scarlet-desire/">Mirror of Scarlet Desire</a></li><li><a href="/chalice-of-muspel/">Chalice of Muspel</a></li><li><a href="/hall-of-illusion/">Hall of Illusion</a></li><li><a href="/submerged-life-temple/">Submerged Life Temple</a></li><li><a href="/nightmare-altar/">Nightmare Altar</a></li><li><a href="/tyrants-hideout/">Tyrant&#x27;s Hideout</a></li><li><a href="/sanctum-of-loathing/">Sanctum of Loathing</a></li><li><a href="/depository-of-fates/">Depository of Fates</a></li><li><a href="/forgotten-repository/">Forgotten Repository</a></li><li><a href="/chamber-of-the-dead/">Chamber of the Dead</a></li><li><a href="/crobakhis-secret-depository/">Crobakhi&#x27;s Secret Depository</a></li><li><a href="/odyle-shard-cradle/">Odyle Shard Cradle</a></li><li><a href="/stormslumber-snowfield/">Stormslumber Snowfield</a></li><li><a href="/sandstorm-temple/">Sandstorm Temple</a></li><li><a href="/fire-temple-arena/">Fire Temple Arena</a></li><li><a href="/impetusium-arena/">Impetusium Arena</a></li><li><a href="/pantheon/">Pantheon</a></li></ul><p><a href="/gathering/">Gathering locations</a> Â· <a href="/items/">Items</a> Â· <a href="/guides/">Guides</a></p></details></div></div>
+  <div class="sb-foot"><div class="stream" id="stream"></div><div class="legal">Unofficial fan site, not affiliated with NCSOFT. Â© NC Corporation. All Rights Reserved. Guides and site code Â© 2026 Aion 2 Maps. <a class="tiplink" href="https://ko-fi.com/midirskry" rel="noopener" target="_blank">Support the site</a> Â· <a href="https://www.youtube.com/@MidirSkry" rel="noopener" target="_blank">YouTube</a> Â· <a href="https://discord.gg/aion2global" rel="noopener" target="_blank">Discord</a> Â· <a href="/privacy/">Privacy</a></div></div>
+</aside>
+<div class="chipbar" id="chips" aria-label="What's shown"></div>
+<nav class="panel dock" id="dock" aria-label="Quick switch between maps"></nav>
+<div class="maphint" id="maphint" role="note" hidden><span>Switch regions and dungeons here <kbd>G</kbd></span><button id="maphintx" aria-label="Dismiss the tip">&times;</button></div>
+<div id="facdlg" hidden role="dialog" aria-modal="true" aria-labelledby="fach">
+  <div class="fbox"><button class="iconbtn" id="facx" aria-label="Close">&times;</button>
+    <h2 id="fach">Which side do you play?</h2>
+    <p>The map opens on your side's main region and lists it first. Change it any time in Settings (the gear at the top of the panel).</p>
+    <div class="fpick">
+      <button data-pick="Elyos" aria-pressed="false"><span data-em="Elyos"></span><b>Elyos</b><small>Main region: Verteron<br>Starter zone: Poeta</small></button>
+      <button data-pick="Asmodian" aria-pressed="false"><span data-em="Asmodian"></span><b>Asmodian</b><small>Main region: Altgard<br>Starter zone: Ishalgen</small></button>
+    </div>
+    <p class="fnote">Saved in this browser only. <button type="button" class="fskip" data-skip>Not sure yet? Just show me the map</button></p>
+  </div>
+</div>
+<div class="panel pop" id="settings" hidden role="dialog" aria-label="Settings">
+  <div class="poph"><b>Settings</b><button class="iconbtn" id="setx" aria-label="Close settings">&times;</button></div>
+  <!-- 2026-09-28: progress lives here, not in the Collect tab, which dungeon maps don't have (collect.mjs ProgressUI binds
+       Export / Import and fills #pnow; on the site sync.mjs fills #psync) -->
+  <!-- 2026-09-28 (the user: the side button was mostly unnecessary in the header, since the map list switches maps):
+       your side lives here now (switcher.mjs binds #facbtn and draws its emblem) -->
+  <div class="sg"><div class="sgt">Your side</div>
+    <div class="siderow"><button class="iconbtn" id="facbtn" aria-label="Your side" title="Your side"></button><span class="sidenote">Which side's maps the map list shows first. Pick it here any time.</span></div>
+  </div>
+  <div class="sg" id="progsec"><div class="sgt">Your progress</div>
+    <p class="hintline" id="pnow" title="Empyrean Traces, sealed dungeons and visited teleport statues on every region"></p>
+    <div id="psync"></div>
+    <div class="linkrow"><button class="lnk" id="pexp" title="Save your completed targets on every map to a small JSON file">Export progress</button><span>Â·</span><button class="lnk" id="pimp" title="Load completed targets from an exported file">Import&hellip;</button><input type="file" id="pimpf" accept=".json,application/json" hidden></div>
+  </div>
+  <div class="sg"><div class="sgt">Labels &amp; Traces</div>
+    <label class="tog"><input type="checkbox" data-layer="labels"> Place names</label>
+    <label class="tog" title="Far-off Traces that overlap on screen merge into one glow with a count"><input type="checkbox" id="tclus" checked> Group far Traces</label>
+  </div>
+  <div class="sg"><div class="sgt">See inside</div>
+    <div class="sgt" style="margin:2px 0 5px">Roofs over paths</div>
+    <div class="seg" id="roofs" aria-label="Roofs over paths"><button data-v="solid" aria-pressed="false">Solid</button><button data-v="ghost" aria-pressed="true">See-through</button><button data-v="hidden" aria-pressed="false">Hidden</button></div>
+    <div class="cnote" id="roofnote" style="margin:4px 0 8px"></div>
+    <label class="tog"><input type="checkbox" id="xlens" checked> See-through lens (hold <kbd>Alt</kbd>)</label>
+    <div id="xlopts" class="lensopts"><div class="rng"><span>Size</span><input type="range" id="xlr" min=".6" max="1.8" step=".1" value="1" aria-label="Lens size"></div>
+      <div class="cnote" style="margin:2px 0 4px">Hold <kbd>Alt</kbd> to see through rock, roofs and trees at the cursor. A selected marker that is covered gets one too.</div></div>
+    <label class="tog"><input type="checkbox" id="xray" checked> Show markers through walls</label>
+    <div class="slice"><label class="tog"><input type="checkbox" id="slon"> Floor slice</label><button class="btn sm" id="sldn" title="Down one floor here (PageDown)">&#9660;</button><button class="btn sm" id="slup" title="Up one floor here (PageUp)">&#9650;</button><output id="slo"></output></div>
+    <div class="rng slr"><input type="range" id="sly" min="0" max="920" step="1" value="200" aria-label="Slice height"></div>
+  </div>
+  <div class="sg"><div class="sgt">Markers</div>
+    <div class="stand"><span>Collectibles stand out by</span><select id="stand" aria-label="How collectibles stand out"><option value="1">Outline</option><option value="13">Outline + ground plate</option><option value="2">Contrast colour</option><option value="3">Ground plate</option><option value="4">Calmer world</option><option value="0">Nothing extra</option></select></div>
+  </div>
+  <div class="sg"><div class="sgt">Display</div>
+    <div class="sgt" style="margin:4px 0 5px">Block size <span>nearest the camera</span></div>
+    <div class="seg" id="block"><button data-v="1" aria-pressed="false" hidden>1 m</button><button data-v="2" aria-pressed="false">2 m</button><button data-v="4" aria-pressed="true">4 m</button><button data-v="8" aria-pressed="false">8 m</button></div>
+    <div class="sgt" style="margin:10px 0 5px">Quality</div>
+    <div class="seg" id="qual"><button data-v="high" aria-pressed="true">High</button><button data-v="low" aria-pressed="false">Low</button></div>
+    <div class="cnote" id="qualnote" style="margin:4px 0 0"></div>
+    <label class="tog" style="margin-top:6px"><input type="checkbox" id="grid" checked> Block seams</label>
+  </div>
+  <details class="about"><summary>About this map</summary>
+    <p class="note"><b>Roofs over paths:</b> rock, building and tree blocks that stand over walkable ground (an overhang, an arch, a cave roof, a canopy over a road, a house roof) are drawn as a light see-through film with a soft outline where they end, so the path under them shows from any angle; large, thin walkable surfaces over other paths (city tiers, bridge and ship decks) count as real floors and stay solid. Which is which is worked out from the navmesh; where a roof looks wrong, switch to Solid or Hidden in this panel. Far away the ghosts turn solid again.</p>
+    <p class="note"><b>See inside:</b> while you hold <kbd>Alt</kbd>, the rock, building and tree blocks around the cursor between you and the floor you are aiming at fade away (a cave roof, a canopy, a bridge, an upper floor, a wall), so you see the cave floor, the forest floor or the room behind. A selected marker gets the same lens when something covers it. The slice hides every rock, building and tree block above a height; its arrows (<kbd>PgUp</kbd> <kbd>PgDn</kbd>) step through the floors under the view centre, for stacked floors such as a city built in levels. On the Abyss maps every island is made of these blocks, so the slice cuts through islands too.</p>
+    <p class="note">Markers are small voxel models, most of them the game's own map icons. Monsters are the game's models turned into blocks. Searching never zooms in: matches are outlined in gold (the rest of their layer greys out), the view pans and backs out only if needed; <kbd>Esc</kbd> clears it. Tilting toward straight down turns the view into a flat map by degrees (<kbd>M</kbd> tilts all the way).</p>
+    <p class="note"><b>This is a stylised view.</b> Ground heights are rounded to the block size, so use the cards for heights. Built from the game client's own map data: the heightmap, simplified rock and building models, tree positions, and the spawn, object, gathering and NPC tables. The maps and dungeons in Global's client take their spawns, objects and tables from the Global launch client; Eltnen, Morheim, the Rift Zone and the three dungeons Global lacks from the Asian release's (TW) client, as the tag on each card says. Tree shapes are stand-ins and the lighting is this viewer's. Maps marked "not open at launch" are closed on Global at launch.</p>
+  </details>
+</div>
+<div class="panel roofsw" id="roofsw" hidden><button id="roofq" data-v="ghost" title="Roofs over paths: see-through. Click or press R for solid, then hidden" aria-label="Roofs over paths"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="rf" d="M3.5 11.5 12 4.5l8.5 7H18v8H6v-8z"/></svg><span id="roofql">See-through</span><kbd>R</kbd></button></div>
+<div class="panel viewsw"><div class="seg" id="vmode" aria-label="View"><button data-v="3d" aria-pressed="true">3D</button><button data-v="top" aria-pressed="false">Map</button></div></div>
+<div class="panel card" id="card" role="dialog" aria-label="Details"></div>
+<div class="panel hint min" id="hint"><button class="hintq" id="hintq" aria-label="Controls" aria-expanded="false" aria-controls="hintb" title="Controls">?</button><div class="hintb" id="hintb" title="No right button (a trackpad)? Shift+drag or Ctrl+drag turns and tilts too. Touch: one finger pans, two fingers zoom. In 3D, twist two fingers to turn, or move them up or down together to tilt."><span id="hintTxt"><b>Drag</b> pan Â· <b>Right-drag</b> turn &amp; tilt Â· <b>Scroll</b> zoom</span> Â· <span class="keys"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span> move Â· <span class="keys"><kbd>Q</kbd><kbd>E</kbd></span> down/up Â· <span class="keys"><kbd>F</kbd></span> mark complete<span class="hopt"> Â· <span class="keys"><kbd>/</kbd></span> search</span> Â· <span class="keys"><kbd>M</kbd></span> map view<span class="hopt"> Â· <span class="keys"><kbd>R</kbd></span> roofs</span><span class="hopt"> Â· <span class="keys"><kbd>G</kbd></span> all maps</span></div></div>
+<button class="panel compass" id="compass" title="North up (N)" aria-label="Turn north up"><svg viewBox="-20 -20 40 40"><g id="needle"><path d="M0-15 L5.5 1 L-5.5 1Z" fill="#f2c14e"/><path d="M0 15 L5.5 1 L-5.5 1Z" fill="#6b7c8c"/><text x="0" y="-5.5" font-size="7.5" font-weight="800" text-anchor="middle" fill="#241703" font-family="system-ui">N</text></g></svg><span class="tl" id="tiltl"></span></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div id="cfx"></div>
+<div id="hlover"></div>
+<div class="tip" id="tip"></div>
+<div id="fps"></div>
+<script type="module" src="js/main.mjs" onerror="var s=document.getElementById('ls');if(s)s.textContent='The 3D map couldn\u2019t load. Check your connection, then reload.'"></script>
+<script>(function(){var x=document.getElementById('zextra'),c=document.getElementById('cards'),done=0;if(!x||!c)return;function put(){if(c.lastElementChild!==x)c.appendChild(x);if(!done&&c.querySelector('.tabp')){done=1;}}new MutationObserver(put).observe(c,{childList:true});put()})()</script>
+</body>
+</html>

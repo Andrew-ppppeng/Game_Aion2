@@ -1,0 +1,1637 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/18120000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "18120000",
+    "name": "Recuperation",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_013.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 8,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 8,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 11,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "18120010",
+        "description": "+1 consecutive use and Heal over Time can stack up to 2 times",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18120020",
+        "description": "Removes up to 2 debuffs",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18120030",
+        "description": "+4s healing duration",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18120040",
+        "description": "+5% HP restored",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18120050",
+        "description": "-3s cooldown",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Nontarget | Mobile | Cleansing</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "relation": "allies",
+      "shape": {
+        "code": "circle"
+      },
+      "reachMeters": 40,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "staff",
+        "name": "Staff"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 2,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 3,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 4,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 5,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 6,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 7,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 8,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 9,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 10,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 11,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 12,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 13,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 14,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 15,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 16,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 17,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 18,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 19,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 20,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 21,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 22,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 23,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 24,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 25,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 26,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 27,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 28,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 29,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 30,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 31,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 32,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 33,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 34,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 35,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 36,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 37,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 38,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 39,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "181200001",
+            "name": "Recuperation",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+            "effectLevel": 40,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Recuperation",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_012.webp",
+              "id": "181200001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "4160",
+        "level": 1,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 8,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4161",
+        "level": 2,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 8,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4162",
+        "level": 3,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 11,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4163",
+        "level": 4,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4164",
+        "level": 5,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4165",
+        "level": 6,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4166",
+        "level": 7,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4167",
+        "level": 8,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4168",
+        "level": 9,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4169",
+        "level": 10,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "18120010",
+        "skillId": "18120010",
+        "name": "Recuperation",
+        "description": "+1 consecutive use and Heal over Time can stack up to 2 times",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18120020",
+        "skillId": "18120020",
+        "name": "Recuperation",
+        "description": "Removes up to 2 debuffs",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18120030",
+        "skillId": "18120030",
+        "name": "Recuperation",
+        "description": "+4s healing duration",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18120040",
+        "skillId": "18120040",
+        "name": "Recuperation",
+        "description": "+5% HP restored",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18120050",
+        "skillId": "18120050",
+        "name": "Recuperation",
+        "description": "-3s cooldown",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "cooldownSeconds": 15,
+    "classes": [
+      {
+        "code": "chanter",
+        "name": "Chanter"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Recuperation",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_013.webp",
+    "id": "18120000",
+    "entityType": "skill",
+    "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff(s) for the caster and party members within 40m. Restores <chat_combat>[[hot]]</> HP every 2s for 8s."
+  }
+}

@@ -1,0 +1,1496 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/16770000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "16770000",
+    "name": "Spirit Communion",
+    "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+    "kind": "passive",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": []
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "shape": {
+        "code": "self"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "orb",
+        "name": "Orb"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167700001",
+            "name": "Spirit Communion",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Accuracy, has a chance to restore the caster's and Spirit's HP on attack",
+            "effect": "+100 Accuracy\n10% chance to restore <desc_point>[[heal]]-[[heal]]</> HP to the caster and Spirit on attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit Communion",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+              "id": "167700001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "3186",
+        "level": 1,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3187",
+        "level": 2,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3188",
+        "level": 3,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3189",
+        "level": 4,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3190",
+        "level": 5,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3191",
+        "level": 6,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3192",
+        "level": 7,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3193",
+        "level": 8,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3194",
+        "level": 9,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3195",
+        "level": 10,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "passive",
+    "kindName": "Passive",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "classes": [
+      {
+        "code": "elementalist",
+        "name": "Spiritmaster"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/passive"
+    ],
+    "name": "Spirit Communion",
+    "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_007.webp",
+    "id": "16770000",
+    "entityType": "skill",
+    "description": "Increases the caster's Accuracy by 100. Has a 10% chance to restore the caster's and Spirit's HP by <chat_combat>[[heal]]-[[heal]]</> when landing an attack.\n\nCooldown: 1s"
+  }
+}

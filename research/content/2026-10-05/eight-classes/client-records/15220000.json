@@ -1,0 +1,1504 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/15220000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "15220000",
+    "name": "Frost Burst",
+    "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_022.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 34,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "15220010",
+        "description": "Absorbs 7% HP",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15220020",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15220030",
+        "description": "75% chance to Knock Back 2m",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15220040",
+        "description": "Ignores Block and Evasion and lands as a Critical Hit",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15220050",
+        "description": "50% chance to reset cooldown",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "circle"
+      },
+      "reachMeters": 4,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [
+      {
+        "id": "15000003",
+        "target": {
+          "code": "target"
+        },
+        "type": {
+          "code": "hasabnormaleffecttype"
+        },
+        "description": "Frost Target",
+        "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+        "abnormalEffect": {
+          "code": "frozen"
+        }
+      },
+      {
+        "id": "15000005",
+        "target": {
+          "code": "target"
+        },
+        "type": {
+          "code": "hasabnormalgroupid"
+        },
+        "description": "On attacking Incapacitated Immunity Target",
+        "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_immuneabnormal.webp",
+        "abnormalGroupId": 152200381
+      }
+    ],
+    "requiredWeapons": [
+      {
+        "code": "magicbook",
+        "name": "Spellbook"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:395:155:1:1]]-[[damage:max:395:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 395,
+            "baseMax": 395,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 395,
+            "baseMax": 395,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:519:155:1:1]]-[[damage:max:519:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 519,
+            "baseMax": 519,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 519,
+            "baseMax": 519,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:667:155:1:1]]-[[damage:max:667:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 667,
+            "baseMax": 667,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 667,
+            "baseMax": 667,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:791:155:1:1]]-[[damage:max:791:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 791,
+            "baseMax": 791,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 791,
+            "baseMax": 791,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:916:155:1:1]]-[[damage:max:916:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 916,
+            "baseMax": 916,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 916,
+            "baseMax": 916,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:1040:155:1:1]]-[[damage:max:1040:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 1040,
+            "baseMax": 1040,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 1040,
+            "baseMax": 1040,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:1164:155:1:1]]-[[damage:max:1164:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 1164,
+            "baseMax": 1164,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 1164,
+            "baseMax": 1164,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:1312:155:1:1]]-[[damage:max:1312:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 1312,
+            "baseMax": 1312,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 1312,
+            "baseMax": 1312,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:1436:155:1:1]]-[[damage:max:1436:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 1436,
+            "baseMax": 1436,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 1436,
+            "baseMax": 1436,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:1527:155:1:1]]-[[damage:max:1527:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 1527,
+            "baseMax": 1527,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 1527,
+            "baseMax": 1527,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:1594:155:1:1]]-[[damage:max:1594:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 1594,
+            "baseMax": 1594,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 1594,
+            "baseMax": 1594,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:1685:155:1:1]]-[[damage:max:1685:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 1685,
+            "baseMax": 1685,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 1685,
+            "baseMax": 1685,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:1776:155:1:1]]-[[damage:max:1776:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 1776,
+            "baseMax": 1776,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 1776,
+            "baseMax": 1776,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:1866:155:1:1]]-[[damage:max:1866:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 1866,
+            "baseMax": 1866,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 1866,
+            "baseMax": 1866,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:1957:155:1:1]]-[[damage:max:1957:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 1957,
+            "baseMax": 1957,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 1957,
+            "baseMax": 1957,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:2025:155:1:1]]-[[damage:max:2025:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 2025,
+            "baseMax": 2025,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 2025,
+            "baseMax": 2025,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:2092:155:1:1]]-[[damage:max:2092:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 2092,
+            "baseMax": 2092,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 2092,
+            "baseMax": 2092,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:2159:155:1:1]]-[[damage:max:2159:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 2159,
+            "baseMax": 2159,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 2159,
+            "baseMax": 2159,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:2227:155:1:1]]-[[damage:max:2227:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 2227,
+            "baseMax": 2227,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 2227,
+            "baseMax": 2227,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:2294:155:1:1]]-[[damage:max:2294:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 2294,
+            "baseMax": 2294,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 2294,
+            "baseMax": 2294,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:2362:155:1:1]]-[[damage:max:2362:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 2362,
+            "baseMax": 2362,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 2362,
+            "baseMax": 2362,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:2429:155:1:1]]-[[damage:max:2429:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 2429,
+            "baseMax": 2429,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 2429,
+            "baseMax": 2429,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:2497:155:1:1]]-[[damage:max:2497:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 2497,
+            "baseMax": 2497,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 2497,
+            "baseMax": 2497,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:2564:155:1:1]]-[[damage:max:2564:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 2564,
+            "baseMax": 2564,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 2564,
+            "baseMax": 2564,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:2631:155:1:1]]-[[damage:max:2631:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 2631,
+            "baseMax": 2631,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 2631,
+            "baseMax": 2631,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:2699:155:1:1]]-[[damage:max:2699:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 2699,
+            "baseMax": 2699,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 2699,
+            "baseMax": 2699,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:2766:155:1:1]]-[[damage:max:2766:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 2766,
+            "baseMax": 2766,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 2766,
+            "baseMax": 2766,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:2834:155:1:1]]-[[damage:max:2834:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 2834,
+            "baseMax": 2834,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 2834,
+            "baseMax": 2834,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:2901:155:1:1]]-[[damage:max:2901:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 2901,
+            "baseMax": 2901,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 2901,
+            "baseMax": 2901,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:2969:155:1:1]]-[[damage:max:2969:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 2969,
+            "baseMax": 2969,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 2969,
+            "baseMax": 2969,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:3036:155:1:1]]-[[damage:max:3036:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 3036,
+            "baseMax": 3036,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 3036,
+            "baseMax": 3036,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:3103:155:1:1]]-[[damage:max:3103:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 3103,
+            "baseMax": 3103,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 3103,
+            "baseMax": 3103,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:3171:155:1:1]]-[[damage:max:3171:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 3171,
+            "baseMax": 3171,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 3171,
+            "baseMax": 3171,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:3238:155:1:1]]-[[damage:max:3238:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 3238,
+            "baseMax": 3238,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 3238,
+            "baseMax": 3238,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:3306:155:1:1]]-[[damage:max:3306:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 3306,
+            "baseMax": 3306,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 3306,
+            "baseMax": 3306,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:3373:155:1:1]]-[[damage:max:3373:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 3373,
+            "baseMax": 3373,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 3373,
+            "baseMax": 3373,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:3441:155:1:1]]-[[damage:max:3441:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 3441,
+            "baseMax": 3441,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 3441,
+            "baseMax": 3441,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:3508:155:1:1]]-[[damage:max:3508:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 3508,
+            "baseMax": 3508,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 3508,
+            "baseMax": 3508,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:3575:155:1:1]]-[[damage:max:3575:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 3575,
+            "baseMax": 3575,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 3575,
+            "baseMax": 3575,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:3643:155:1:1]]-[[damage:max:3643:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1522000011",
+            "effectGroupId": "152200001",
+            "baseMin": 3643,
+            "baseMax": 3643,
+            "attackRatioPercent": 155
+          },
+          {
+            "effectId": "1522000012",
+            "effectGroupId": "152200001",
+            "baseMin": 3643,
+            "baseMax": 3643,
+            "attackRatioPercent": 155
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "2520",
+        "level": 1,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2521",
+        "level": 2,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2522",
+        "level": 3,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2523",
+        "level": 4,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2524",
+        "level": 5,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2525",
+        "level": 6,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2526",
+        "level": 7,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2527",
+        "level": 8,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2528",
+        "level": 9,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2529",
+        "level": 10,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 34,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "15220010",
+        "skillId": "15220010",
+        "name": "Frost Burst",
+        "description": "Absorbs 7% HP",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15220020",
+        "skillId": "15220020",
+        "name": "Frost Burst",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15220030",
+        "skillId": "15220030",
+        "name": "Frost Burst",
+        "description": "75% chance to Knock Back 2m",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15220040",
+        "skillId": "15220040",
+        "name": "Frost Burst",
+        "description": "Ignores Block and Evasion and lands as a Critical Hit",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15220050",
+        "skillId": "15220050",
+        "name": "Frost Burst",
+        "description": "50% chance to reset cooldown",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 10,
+    "classes": [
+      {
+        "code": "sorcerer",
+        "name": "Sorcerer"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Frost Burst",
+    "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_022.webp",
+    "id": "15220000",
+    "entityType": "skill",
+    "description": "Selects a target afflicted with Frost within 20m and deals <chat_combat>[[damage:min:395:155:1:1]]-[[damage:max:395:155:1:1]]</> Water damage to up to 4 enemies within 4m of the target. Has a 7% chance to trigger on attacking a target with Incapacitated Immunity.\n\n7 Stagger Gauge Damage"
+  }
+}

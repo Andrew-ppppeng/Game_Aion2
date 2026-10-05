@@ -1,0 +1,156 @@
+# aion2
+
+Unofficial client for the AION 2 website's JSON API. Supports KR, TW and Global.
+
+```go
+import aion2 "github.com/nuriland/aion2-api"
+
+kr, _ := aion2.New(aion2.ConfigOpts{Region: aion2.RegionKR, Locale: aion2.LocaleEN})
+tw, _ := aion2.New(aion2.ConfigOpts{Region: aion2.RegionTW})
+eu, _ := aion2.New(aion2.ConfigOpts{Region: aion2.RegionEU, Locale: aion2.LocaleDE})
+```
+
+Since Global's launch, KR's site API answers every route with 404 from outside Korea. Those calls return
+`ErrNoRoute`, and a `Logger` gets a warning. KR's boards and styleshop still work.
+
+## Global
+
+Global is five shards, each its own region: `RegionNAE`, `RegionNAW`, `RegionEU`, `RegionSA` and `RegionAsia`.
+Locales are `LocaleEN` (the default), `LocaleDE`, `LocaleES`, `LocaleFR`, `LocaleJA` and `LocalePTBR`.
+
+```go
+res, _ := eu.SearchCharacters(ctx, aion2.CharacterSearch{Keyword: "a"})
+ch, _ := eu.Character(ctx, res.Items[0].Ref)
+```
+
+Global has no item catalog (`Item` by id works), and in Early Access its styleshop and player boards are empty.
+
+## Servers and classes
+
+```go
+servers, _ := kr.Servers(ctx) // 42 on KR, 36 on TW, a handful per Global shard
+classes, _ := kr.Classes(ctx)
+```
+
+## Characters
+
+```go
+res, _ := tw.SearchCharacters(ctx, aion2.CharacterSearch{
+    Keyword:  "a",
+    RaceID:   1,        // 1 Ely, 2 Asmo
+    ServerID: 1001,     // optional
+    ClassIDs: []int{2}, // optional
+})
+
+ref := res.Items[0].Ref
+
+ch, _    := tw.Character(ctx, ref)
+eq, _    := tw.Equipment(ctx, ref)
+item, _  := tw.EquippedItem(ctx, ref, eq.Slots[0])
+board, _ := tw.Daevanion(ctx, ref, ch.Daevanion[0].ID)
+
+fmt.Println(ch.Profile.Name, ch.Profile.CombatPower, len(eq.Slots))
+
+for hit, err := range tw.Characters(ctx, aion2.CharacterSearch{Keyword: "a", RaceID: 1}) {
+    if err != nil {
+        return err
+    }
+    fmt.Println(hit.Name, hit.Level)
+}
+```
+
+Got a profile URL instead? Paste the id straight in:
+
+```go
+ch, _ := kr.Character(ctx, aion2.CharacterRef{
+    ServerID:    1001,
+    CharacterID: "<the id from the profile URL>",
+})
+```
+
+## Items
+
+```go
+item, _ := kr.Item(ctx, 110120001) // the definition at +0 with its stats, one request
+
+page, _ := tw.SearchItems(ctx, aion2.ItemSearch{
+    Query:       "巨劍",
+    Grade:       "Epic",
+    Category:    "Equip_Weapon",
+    SubCategory: "Greatsword",
+    ClassID:     2,
+    Size:        200,
+})
+
+for it, err := range tw.Items(ctx, aion2.ItemSearch{Grade: "Epic", Category: "Equip_Weapon"}) {
+    if err != nil {
+        return err
+    }
+    fmt.Println(it.ID, it.Name)
+}
+
+names, _ := tw.SuggestItems(ctx, "巨劍") // the item page's autocomplete, up to 10 names, no ids
+
+grades, _ := tw.ItemGrades(ctx)         // the ids ItemSearch.Grade takes, with localized names
+categories, _ := tw.ItemCategories(ctx) // same for Category / SubCategory
+```
+
+## Rankings
+
+NC took the public boards down in 2026 and until they return, every board answers `ErrNoSeason`.
+
+```go
+board, err := kr.Rankings(ctx, aion2.RankingQuery{ContentsType: aion2.RankingAbyss, ServerID: 1001})
+if errors.Is(err, aion2.ErrNoSeason) {
+    return nil
+}
+fmt.Println(board.Season.SeasonNo, len(board.Entries))
+```
+
+## Styles
+
+```go
+top, _ := kr.TopStyles(ctx, aion2.StyleTop{Period: "DAY_30", SortBy: "LIKES"})
+
+page, _ := kr.SearchStyles(ctx, aion2.StyleSearch{Field: "item", Keyword: "대검", Gender: "MALE", Size: 20})
+
+for look, err := range kr.Styles(ctx, aion2.StyleSearch{Field: "tag", Keyword: "러블리"}) {
+    if err != nil {
+        return err
+    }
+    fmt.Println(look.Title, look.Author.Name, look.Images[0])
+}
+
+style, _ := kr.Style(ctx, top[0].ID)
+replies, _ := kr.StyleComments(ctx, top[0].ID)
+```
+
+## News
+
+```go
+for note, err := range kr.Posts(ctx, aion2.BoardPatchNotes) {
+    if err != nil {
+        return err
+    }
+    if note.PostedAt.Before(since) {
+        break
+    }
+    latest, _ := kr.Post(ctx, aion2.BoardPatchNotes, note.ID)
+    fmt.Println(latest.Title, latest.PostedAt, len(latest.HTML))
+}
+pinned, _ := kr.PinnedPosts(ctx, aion2.BoardNotices)
+```
+
+### Player boards 
+
+```go
+for post, err := range tw.Posts(ctx, aion2.BoardFree) {
+    if err != nil {
+        return err
+    }
+    ch, _ := tw.Character(ctx, post.Author.Ref)
+    comments, _ := tw.Comments(ctx, aion2.BoardFree, post.ID)
+    break
+}
+```
+

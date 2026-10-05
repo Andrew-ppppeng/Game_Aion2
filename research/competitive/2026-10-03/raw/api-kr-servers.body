@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko"
+      data-country="KR" >
+<head>
+    
+    <title>찾을 수 없는 페이지입니다.</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="https://assets.playnccdn.com/common/plaync-global.png">
+    <link rel="shortcut icon" href="https://assets.playnccdn.com/common/plaync-global.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://assets.playnccdn.com/common/plaync-global_home.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="https://assets.playnccdn.com/common/plaync-global_home.png">
+
+    
+    <!-- css -->
+    <link rel="stylesheet" href="https://assets.playnccdn.com/uikit/uikit-ncui-support/error.css">
+</head>
+
+<body class="pc page-error">
+
+<div class="error-container" id="container">
+
+    <div class="logo"><img class="logo-link" src="https://assets.playnccdn.com/uikit/uikit-ncui-support/img/nc.png" alt="NC"/></div>
+
+    <div class="error-contents-wrap">
+
+    <header class="error-header">
+        <h1 class="title">찾을 수 없는 페이지입니다.</h1>
+        <p class="subcopy">동일한 문제가 지속적으로 발생할 경우, 고객지원으로 문의해 주시기 바랍니다.</p>
+    </header>
+    <div class="error-contents">
+        <div class="error-btn-wrap">
+            <button class="btn btn-error btn-error--o btn-back" onclick="history.go(-2);">이전 페이지</button>
+            
+                <a href="https://help.plaync.com" class="btn btn-error btn-inquiry">
+                    고객지원
+                </a>
+            
+        </div>
+    </div>
+
+</div>
+    <footer id="footer" class="error-footer-wrap">
+        <p class="copyright">Ⓒ NC Corporation. All Rights Reserved.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

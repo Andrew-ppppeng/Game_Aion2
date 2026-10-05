@@ -1,0 +1,1497 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/17770000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "17770000",
+    "name": "Prayer of Concentration",
+    "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+    "kind": "passive",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 17,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 35,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 38,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 41,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": []
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "relation": "anyone",
+      "shape": {
+        "code": "self"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "mace",
+        "name": "Mace"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>424</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>624</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>729</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>893</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>1056</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>1155</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>1351</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>1451</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>1581</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>1648</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>1848</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>1956</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>2128</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>2334</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>2418</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>2502</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>2587</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>2672</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>2758</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>2844</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>2930</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>3017</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>3104</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>3192</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>3279</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>3367</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>3456</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>3545</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>3634</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>3724</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>3814</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>3904</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>3994</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>4086</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>4177</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>4269</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>4361</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>4454</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>4547</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Forms a Protective Shield which blocks <chat_combat>4640</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177700001",
+            "name": "Prayer of Concentration",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Forms a Protective Shield and receives Heal Boost increase when HP is 50% or less",
+            "effect": "Forms a <desc_point>424</> Protective Shield when HP is 50% or less, +20% Heal Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Prayer of Concentration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+              "id": "177700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": true,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "3723",
+        "level": 1,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 17,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3724",
+        "level": 2,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3725",
+        "level": 3,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3726",
+        "level": 4,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3727",
+        "level": 5,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3728",
+        "level": 6,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3729",
+        "level": 7,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3730",
+        "level": 8,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 35,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3731",
+        "level": 9,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 38,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3732",
+        "level": 10,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 41,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "passive",
+    "kindName": "Passive",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "classes": [
+      {
+        "code": "cleric",
+        "name": "Cleric"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/passive"
+    ],
+    "name": "Prayer of Concentration",
+    "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+    "id": "17770000",
+    "entityType": "skill",
+    "description": "Forms a Protective Shield which blocks <chat_combat>424</> damage and increases the caster's Heal Boost by 20% for 30s when HP is 50% or less.\n\nCooldown: 60s"
+  }
+}

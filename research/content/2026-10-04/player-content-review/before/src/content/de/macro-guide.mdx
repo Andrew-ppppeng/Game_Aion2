@@ -1,0 +1,45 @@
+Beginne mit AION 2s eingebautem Fertigkeitsmakro: Lege die Aktivierungstaste fest, wähle im Fertigkeitsmenü einen Stapel der Leiste und teste eine kurze Schadensfolge. [Karsten Scholz zeigt diesen Menüweg am 30. September zur Veröffentlichung](https://mein-mmo.de/aion-2-makro-mehr-schaden/). Die folgenden Schritte beschreiben diese Spieler-Demonstration; diese Website hat die Einrichtung nicht in einer Global-Spielsitzung nachgestellt.
+
+<h2 id="bind-and-open">Makrotaste festlegen und Editor öffnen</h2>
+
+In der gezeigten Oberfläche liegt die Makro-Belegung unter **Tasten-Einstellungen → Allgemein → Gameplay**. Wähle einen gut erreichbaren Knopf und öffne dann den Fertigkeitsmakro-Editor im Skill-Menü. Füge ein Makro hinzu und wähle den Platz der Leiste mit deinem Fertigkeitsstapel. Im Beispiel wiederholt das Halten der belegten Taste den Stapel; dauerndes einzelnes Drücken der Fertigkeitstaste ist nicht nötig.
+
+Die Menünamen hängen von der Sprache des Clients ab. Suche die Fertigkeitsmakro-Steuerung des Spiels, kein Skript einer Maussoftware und kein Befehlsmakro aus dem ursprünglichen AION. Wenn das Menü anders aussieht, prüfe die aktuelle Client-Hilfe, statt einen alten Screenshot vorauszusetzen. Teste zuerst einen einzelnen Stapel, um die tatsächlich ausgelösten Fertigkeiten zu erkennen.
+
+<GuideVisual id="macro-global-keybind" />
+
+<GuideVisual id="macro-global-editor" />
+
+<h2 id="priority-stack">Priorität verstehen, bevor du mehr Fertigkeiten ergänzt</h2>
+
+Scholz beschreibt eine Prioritätsliste, die zuerst die unterste Fertigkeit und dann die darüber prüft. Eine Fertigkeit ohne Abklingzeit auf hoher Priorität kann die oberen Einträge verdrängen. Beginne mit wenigen wiederholbaren Angriffen und beobachte, ob jeder vorgesehene Angriff tatsächlich ausgeführt wird.
+
+Überlege vor dem Einordnen, welche Aufgabe jeder Knopf erfüllt. Ein Angriff, den du bei Verfügbarkeit verwenden willst, unterscheidet sich von einem Angriff, der einen bestimmten Zielzustand benötigt. Notiere Bedingungen, Reichweite und Ressourcen und prüfe sie in einem manuellen Versuch. Alle freigeschalteten Fertigkeiten hinzuzufügen erschwert die Suche nach einem nicht verfügbaren Eintrag oder einer ungünstigen Priorität.
+
+<GuideVisual id="workflow" />
+
+<h2 id="manual-actions">Entscheidungen auf eigenen Tasten lassen</h2>
+
+Für den Einstieg empfehlen wir, Bewegung, gezielte Unterbrechungen, Schutz und Erholung auf gut erreichbaren eigenen Tasten zu lassen. Beim Kleriker bleiben Heilung, Reinigung und Wiederbelebung für den Bedarf der Gruppe verfügbar. Beim Jäger behältst du die Kontrolle über Abstand und einen Schuss, der ein bestimmtes Zeitfenster oder Vorbereitung braucht. Das ist eine praktische Empfehlung zur Bedienung, keine verifizierte Klassenmakro-Vorlage.
+
+Eine kurze Schadensfolge muss dir Zeit für die Begegnung lassen. Teste vor schwierigen Gruppenkämpfen, ob du das Makro stoppen, einer Mechanik ausweichen und eine Reaktionsfertigkeit nutzen kannst. Wenn das umständlich wird, ändere die Belegung oder verkleinere den Stapel. Mehr Schaden an einem unbewegten Ziel gleicht eine verpasste Mechanik nicht aus.
+
+<h2 id="delay-and-basic-attack">Verzögerung und Basisangriff testen</h2>
+
+Die Anleitung zur Veröffentlichung zeigt einen separat ausgelösten Basisangriff bei gehaltener Makrotaste. Behandle das als Konfiguration zum Vergleich im eigenen Client, nicht als garantierten Schadensgewinn für jede Klasse und jeden Patch. Wiederhole denselben kurzen Versuch manuell und mit dem eingebauten Makro bei vergleichbarem Build und Gegner.
+
+Ältere Anleitungen empfehlen manchmal feste Verzögerungen nach Ping. [aLuckyROs Kleriker-Demonstration](https://www.youtube.com/watch?v=UPjsUVC0DtA) erklärt Verzögerungen mit einem niedrigstufigen Charakter auf einem bestehenden Server als Modell für Global. Das ist keine auf Global getestete Verzögerungstabelle. Falls der aktuelle Editor eine Verzögerung anbietet, notiere den Ausgangswert und ändere jeweils eine Einstellung. Prüfe ausgefallene Angriffe und Reaktionsfähigkeit, statt den kleinsten Wert grundsätzlich für optimal zu halten.
+
+<h2 id="debug-one-stack">Einen Stapel nach dem anderen prüfen</h2>
+
+Wenn nichts ausgelöst wird, prüfe zuerst Aktivierungstaste und den gewählten Platz der Fertigkeitsleiste. Wiederholt sich nur ein Angriff, kontrolliere dessen Priorität und Verfügbarkeit. Fehlen Angriffe, teste sie manuell am selben Ziel: Abklingzeit, Reichweite, Ressourcen oder eine notwendige Bedingung können den Unterschied erklären.
+
+Wiederhole den Ablauf anschließend in Bewegung und nach einem Zielwechsel. Notiere deine Änderungen. Wenn eine neue Fertigkeitsoption oder ein Patch einen Angriff verändert, teste den Stapel erneut, bevor du eine andere Vorlage kopierst. Ein Beispiel für entwickelte KR/TW-Fertigkeiten kann Wechselwirkungen enthalten, die dein Global-Charakter noch nicht freigeschaltet hat.
+
+<h2 id="built-in-and-policy">Eingebaute Makros und NC-Richtlinie</h2>
+
+Verwende für diese Schritte den Editor des Spiels. Die [Global-Betriebsrichtlinie](https://www.plaync.com/policy/operation/aion2global/en) sanktioniert Programme oder Geräte, die Schutzmaßnahmen umgehen oder den normalen Betrieb beeinträchtigen. Diese Anleitung belegt keine Erlaubnis für externe Eingabeautomatisierung. Wenn du eine barrierefreie Anpassung über die eingebauten Kontrollen hinaus brauchst, kläre sie anhand der aktuellen Richtlinie mit NC.
+
+Wähle zuerst Fertigkeiten und Rolle und vereinfache dann die Bedienung. Der [Build-Guide](/builds) trennt wiederholbare Angriffe von Entscheidungen, die Aufmerksamkeit verlangen.
+
+<GuideNext slug="builds" />

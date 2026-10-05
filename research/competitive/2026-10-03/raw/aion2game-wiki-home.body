@@ -1,0 +1,447 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"><link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/manifest.json"><link rel="alternate" type="application/rss+xml" title="AION 2 Wiki" href="/rss.xml"><meta name="generator" content="Astro v5.18.2"><title>AION 2 Wiki - Release Date, Classes, Dungeons &amp; Monetization</title><meta name="description" content="Unofficial AION 2 wiki. Global launch October 5, early access September 30. Class list, dungeon budgets, PvP modes, PC specs, membership and Founder's Packs - every claim sourced."><link rel="canonical" href="https://aion2game.wiki/"><link rel="alternate" hreflang="en" href="https://aion2game.wiki/"><link rel="alternate" hreflang="ko" href="https://aion2game.wiki/ko/"><link rel="alternate" hreflang="zh-cn" href="https://aion2game.wiki/zh-cn/"><link rel="alternate" hreflang="ja" href="https://aion2game.wiki/ja/"><link rel="alternate" hreflang="es" href="https://aion2game.wiki/es/"><link rel="alternate" hreflang="ru" href="https://aion2game.wiki/ru/"><link rel="alternate" hreflang="de" href="https://aion2game.wiki/de/"><link rel="alternate" hreflang="fr" href="https://aion2game.wiki/fr/"><link rel="alternate" hreflang="x-default" href="https://aion2game.wiki/"><meta property="og:type" content="website"><meta property="og:title" content="AION 2 Wiki - Release Date, Classes, Dungeons &#38; Monetization"><meta property="og:description" content="Unofficial AION 2 wiki. Global launch October 5, early access September 30. Class list, dungeon budgets, PvP modes, PC specs, membership and Founder's Packs - every claim sourced."><meta property="og:image" content="https://aion2game.wiki/images/hero.webp"><meta property="og:image:alt" content="Two winged Daeva heroes in the official AION 2 key art under a deep blue night sky"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:url" content="https://aion2game.wiki/"><meta property="og:site_name" content="AION 2 Wiki"><meta property="og:locale" content="en"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="AION 2 Wiki - Release Date, Classes, Dungeons &#38; Monetization"><meta name="twitter:description" content="Unofficial AION 2 wiki. Global launch October 5, early access September 30. Class list, dungeon budgets, PvP modes, PC specs, membership and Founder's Packs - every claim sourced."><meta name="twitter:image" content="https://aion2game.wiki/images/hero.webp"><meta name="twitter:image:alt" content="Two winged Daeva heroes in the official AION 2 key art under a deep blue night sky"><meta name="theme-color" content="hsl(var(--brand))"><script>(function(){const gaId = "G-F79N046863";
+const adsConfigured = true;
+const activeGlobalScripts = [{"id":"socialBar","scriptUrl":"https://russiaexternalknew.com/af/4f/09/af4f0933bbcc55fd3fe2df1943aa3ff1.js"}];
+const consentMode = "geo";
+const gatedCountries = ["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","GB","GI","IM","JE","GG","CH","GP","MQ","GF","RE","YT","BL","MF","PM"];
+const gatedTimeZones = ["Africa/Ceuta","Arctic/Longyearbyen","Asia/Nicosia","Atlantic/Azores","Atlantic/Canary","Atlantic/Madeira","Atlantic/Reykjavik","Europe/Amsterdam","Europe/Andorra","Europe/Athens","Europe/Berlin","Europe/Bratislava","Europe/Brussels","Europe/Bucharest","Europe/Budapest","Europe/Busingen","Europe/Copenhagen","Europe/Dublin","Europe/Gibraltar","Europe/Guernsey","Europe/Helsinki","Europe/Isle_of_Man","Europe/Jersey","Europe/Ljubljana","Europe/London","Europe/Luxembourg","Europe/Madrid","Europe/Malta","Europe/Mariehamn","Europe/Monaco","Europe/Nicosia","Europe/Oslo","Europe/Paris","Europe/Prague","Europe/Riga","Europe/Rome","Europe/San_Marino","Europe/Sofia","Europe/Stockholm","Europe/Tallinn","Europe/Vaduz","Europe/Vatican","Europe/Vienna","Europe/Vilnius","Europe/Warsaw","Europe/Zagreb","Europe/Zurich"];
+
+        /**
+         * Resolves the visitor's ISO 3166-1 country in the browser.
+         *
+         * Cloudflare answers `/cdn-cgi/trace` at the edge. The request never
+         * reaches this Pages project, so it costs no Functions invocation and
+         * needs no server-side code — the site stays a pure static deployment.
+         * The body is plain text containing `loc=XX`, the request is same-origin
+         * (no CORS), and the visitor's IP is not shared with any third party.
+         *
+         * Resolves to '' on any failure (offline, a content blocker, DNS no
+         * longer proxied through Cloudflare) so `__awNeedsConsent` falls back to
+         * the time-zone heuristic. The 800 ms cap keeps a slow trace from holding
+         * the consent banner back.
+         *
+         * Only `geo` needs the country; `strict` and `none` never read it, so
+         * they skip the request entirely.
+         */
+        window.__awGeo = '';
+        window.__awGeoReady =
+          consentMode === 'geo'
+            ? Promise.race([
+                fetch('/cdn-cgi/trace', { cache: 'no-store' })
+                  .then((response) => (response.ok ? response.text() : ''))
+                  .then((trace) => {
+                    const match = /^loc=([A-Z]{2})$/m.exec(trace || '');
+                    return match ? match[1] : '';
+                  })
+                  .catch(() => ''),
+                new Promise((resolve) => setTimeout(() => resolve(''), 800)),
+              ]).then((country) => {
+                window.__awGeo = country;
+                return country;
+              })
+            : Promise.resolve('');
+
+        /**
+         * Does this visitor need to opt in before any tracker runs?
+         *
+         * `consentMode: 'strict'` → yes. `'none'` → no. `'geo'` (default) → only
+         * for the territories listed in ~/lib/consent.ts. Evaluated lazily, so
+         * `window.__awGeo` has resolved by the time it is called; callers under a
+         * `geo` policy must await `window.__awGeoReady` first.
+         */
+        window.__awNeedsConsent = () => {
+          if (consentMode === 'strict') return true;
+          if (consentMode === 'none') return false;
+          if (window.__awGeo) return gatedCountries.indexOf(window.__awGeo) !== -1;
+          try {
+            const zone = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+            if (zone && gatedTimeZones.indexOf(zone) !== -1) return true;
+          } catch {
+            /* Intl unavailable — fall through to the not-gated default */
+          }
+          return false;
+        };
+        /** ISO country from /cdn-cgi/trace; see `__awGeoReady` above. */
+        window.__awGaId = gaId;
+        /** The stored choice, if the visitor ever made one. */
+        window.__awStoredConsent = () => {
+          try {
+            return localStorage.getItem('aw-cookie-consent');
+          } catch {
+            return null;
+          }
+        };
+        /**
+         * May trackers run right now? A stored choice always wins; otherwise the
+         * visitor is gated only when the policy says their territory is.
+         */
+        window.__awGaAllowedNow = () => {
+          const stored = window.__awStoredConsent();
+          if (stored === 'accepted') return true;
+          if (stored === 'declined') return false;
+          return !window.__awNeedsConsent();
+        };
+        window.__awAdsterraSlots = window.__awAdsterraSlots || [];
+        window.__awAdsterraLoaded = window.__awAdsterraLoaded || new Set();
+        window.__awNativeBanners = window.__awNativeBanners || [];
+        window.__awNativeBannersLoaded = window.__awNativeBannersLoaded || new Set();
+        window.__awGlobalScripts = window.__awGlobalScripts || activeGlobalScripts;
+        window.__awGlobalScriptsLoaded = window.__awGlobalScriptsLoaded || new Set();
+        window.__awLoadAdsterraSlots = () => {
+          if (!adsConfigured) return;
+          for (const slot of window.__awAdsterraSlots) {
+            if (window.__awAdsterraLoaded.has(slot.containerId)) continue;
+            const container = document.getElementById(slot.containerId);
+            if (!container) continue;
+            const options = JSON.stringify({
+              key: slot.key,
+              format: slot.format,
+              height: slot.height,
+              width: slot.width,
+              params: slot.params,
+            }).replaceAll('<', '\\u003c');
+            const scriptUrl = JSON.stringify(slot.scriptUrl).replaceAll('<', '\\u003c');
+            const frame = document.createElement('iframe');
+            frame.title = 'Advertisement';
+            frame.width = String(slot.width);
+            frame.height = String(slot.height);
+            frame.loading = 'lazy';
+            frame.style.border = '0';
+            frame.style.maxWidth = '100%';
+            frame.setAttribute('sandbox', 'allow-scripts allow-popups allow-popups-to-escape-sandbox');
+            const lessThan = String.fromCharCode(60);
+            const greaterThan = String.fromCharCode(62);
+            const scriptElementOpen = lessThan + 'script' + greaterThan;
+            const scriptElementClose = lessThan + '/script' + greaterThan;
+            frame.srcdoc = [
+              lessThan + '!doctype html' + greaterThan,
+              lessThan + 'html' + greaterThan,
+              lessThan + 'body style="margin:0;overflow:hidden"' + greaterThan,
+              scriptElementOpen,
+              `window.atOptions=${options}`,
+              scriptElementClose,
+              lessThan + 'script src=' + scriptUrl + greaterThan,
+              scriptElementClose,
+              lessThan + '/body' + greaterThan,
+              lessThan + '/html' + greaterThan,
+            ].join('');
+            container.append(frame);
+            window.__awAdsterraLoaded.add(slot.containerId);
+          }
+        };
+        window.__awLoadNativeBanners = () => {
+          if (!adsConfigured) return;
+          for (const banner of window.__awNativeBanners) {
+            if (window.__awNativeBannersLoaded.has(banner.containerId)) continue;
+            const container = document.getElementById(banner.containerId);
+            if (!container) continue;
+            const script = document.createElement('script');
+            script.async = true;
+            script.setAttribute('data-cfasync', 'false');
+            script.src = banner.scriptUrl;
+            document.head.appendChild(script);
+            window.__awNativeBannersLoaded.add(banner.containerId);
+          }
+        };
+        /**
+         * Container-less formats: one script tag per URL, per page, appended to
+         * `document.body` at the end of the document — Adsterra asks for the code
+         * just before the closing body tag, and a dynamically appended tag lands
+         * in exactly that position.
+         *
+         * (Do not spell that closing tag out literally in this block: the HTML
+         * parser in eslint-plugin-astro stops early on it and the file stops
+         * linting.)
+         *
+         * Deduped by URL and not by config key, because Adsterra warns that two
+         * copies of a code on one page do not multiply impressions — it only
+         * risks double-counting and a duplicate bar. The Set lives on `window`,
+         * so an in-page navigation (e.g. View Transitions, if a site adds them)
+         * cannot re-inject.
+         */
+        window.__awLoadGlobalScripts = () => {
+          if (!adsConfigured) return;
+          for (const entry of window.__awGlobalScripts) {
+            if (window.__awGlobalScriptsLoaded.has(entry.scriptUrl)) continue;
+            window.__awGlobalScriptsLoaded.add(entry.scriptUrl);
+            const script = document.createElement('script');
+            script.async = true;
+            script.setAttribute('data-cfasync', 'false');
+            script.src = entry.scriptUrl;
+            document.body.appendChild(script);
+          }
+        };
+        window.__awLoadGa = () => {
+          if (window.__awGaLoaded || !gaId) return;
+          window.__awGaLoaded = true;
+          if (gaId) {
+            const s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=' + gaId;
+            document.head.appendChild(s);
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+              dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', gaId);
+          }
+        };
+        // Ads are outside the consent gate by policy: they always load when
+        // configured, and only Google Analytics waits for a choice. See the policy
+        // note in src/lib/consent.ts; scripts/check-consent-behavior.mjs asserts
+        // both halves so a future change to that split is a visible decision.
+        //
+        // The country arrives asynchronously from /cdn-cgi/trace, so the GA
+        // check waits for `__awGeoReady` before deciding. That wait is bounded
+        // by the promise's 800 ms cap, and a missing country falls back to the
+        // time zone.
+        window.addEventListener(
+          'DOMContentLoaded',
+          async () => {
+            window.__awLoadAdsterraSlots?.();
+            window.__awLoadNativeBanners?.();
+            window.__awLoadGlobalScripts?.();
+            await window.__awGeoReady;
+            if (window.__awGaAllowedNow()) window.__awLoadGa?.();
+          },
+          { once: true },
+        );
+      })();</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"AION 2 Wiki","url":"https://aion2game.wiki","logo":"https://aion2game.wiki/android-chrome-512x512.png","image":"https://aion2game.wiki/images/og.jpg","description":"Unofficial AION 2 wiki with sourced guides to classes, dungeons, PvP, the Founder's Packs, system requirements and the October 5 global launch."}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"AION 2 Wiki","url":"https://aion2game.wiki","description":"Unofficial AION 2 wiki with sourced guides to classes, dungeons, PvP, the Founder's Packs, system requirements and the October 5 global launch.","inLanguage":"en"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"AION 2","description":"Unofficial AION 2 wiki with sourced guides to classes, dungeons, PvP, the Founder's Packs, system requirements and the October 5 global launch.","url":"https://aion2game.wiki","genre":"Open-world MMORPG","gamePlatform":"PC (Steam / PURPLE)","publisher":{"@type":"Organization","name":"NC (NCSOFT)"},"datePublished":"2026-10-05"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"When does AION 2 launch?","acceptedAnswer":{"@type":"Answer","text":"October 5, 2026 worldwide, on PC only - Steam and PURPLE. A Founder's Pack gets you in five days earlier, from September 30."}},{"@type":"Question","name":"Can I play it on PS5 or mobile?","acceptedAnswer":{"@type":"Answer","text":"Launch is PC only. NC's development PD confirmed a PS5 version is in development but gave no date. Mobile exists only in Korea and Taiwan; the global version officially has none."}},{"@type":"Question","name":"How many classes are there?","acceptedAnswer":{"@type":"Answer","text":"The official Korean class guide says eight. Global launch is expected to be those eight. The ninth, Brawler, shipped only in Korea and Taiwan."}},{"@type":"Question","name":"Will Brawler be in the global launch?","acceptedAnswer":{"@type":"Answer","text":"NC has published no global roster as of September 18, 2026. Creators who play the Korea/Taiwan service believe global launches with eight and no Brawler - but that is a creator report, not an official announcement."}},{"@type":"Question","name":"Can my PC run it?","acceptedAnswer":{"@type":"Answer","text":"Minimum is Ryzen 5 2600 / i5-10500, 8 GB RAM and GTX 1050 Ti (4GB). Recommended is Ryzen 7 3700X / i7-11700, 16 GB and RTX 2070 (8GB). Both tiers need 100 GB and both recommend an SSD."}},{"@type":"Question","name":"Is AION 2 pay to win?","acceptedAnswer":{"@type":"Answer","text":"It is free to play with an optional USD 15/month membership. The membership unlocks the Market and the Kina-to-Quna exchange. The shop is cosmetics and consumables, which NC says do not affect power. Whether buying Kina with real money crosses your line is your call."}},{"@type":"Question","name":"Are the Founder's Packs worth it?","acceptedAnswer":{"@type":"Answer","text":"All three include five days of early access, a supply chest, a unique title and 30 days of membership. The extra tiers are entirely cosmetics - no power. Worth it only if you want those looks or the day-one head start."}},{"@type":"Question","name":"Is there another beta I can join?","acceptedAnswer":{"@type":"Answer","text":"No. The only test was the Launch Scale Test on September 17-18, six hours a day, no keys, progress wiped. The only way to play earlier now is Founder's Pack early access."}}]}</script><script>(function(){const defaultTheme = "dark";
+
+      (() => {
+        const stored = localStorage.getItem('theme');
+        const useDarkTheme = stored === 'dark'
+          || (!stored && defaultTheme === 'dark')
+          || (!stored && defaultTheme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        if (useDarkTheme) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    })();</script><link rel="stylesheet" href="/_astro/_slug_.Bv1ny9Zm.css">
+<style>:where([data-astro-image]){-o-object-fit:var(--fit);object-fit:var(--fit);-o-object-position:var(--pos);object-position:var(--pos);height:auto}:where([data-astro-image=full-width]){width:100%}:where([data-astro-image=constrained]){max-width:100%}
+</style>
+<link rel="stylesheet" href="/_astro/_slug_.BdbK5v_X.css"><script type="module" src="/_astro/page.DGRhADao.js"></script></head> <body class="min-h-screen bg-background text-foreground antialiased">  <header class="site-header sticky top-0 z-40 w-full border-b border-border bg-background/80 backdrop-blur"> <div class="mx-auto flex h-14 max-w-7xl items-center gap-4 px-4">  <a href="/" class="flex items-center gap-2 font-bold text-foreground" aria-label="AION 2 Wiki"> <img src="/favicon-96x96.png" alt="" width="24" height="24" class="h-6 w-6"> <span class="hidden bg-gradient-to-r from-nav via-foreground to-nav/75 bg-clip-text text-transparent sm:inline leading-tight"> AION 2<br>Wiki </span> </a>  <nav class="hidden flex-1 items-center gap-1 md:flex"> <a href="/#release" class="rounded-md px-3 py-1.5 text-sm font-medium transition text-foreground/70 hover:bg-muted hover:text-foreground"> Release &amp; buying </a><a href="/#classes" class="rounded-md px-3 py-1.5 text-sm font-medium transition text-foreground/70 hover:bg-muted hover:text-foreground"> Classes </a><a href="/#combat" class="rounded-md px-3 py-1.5 text-sm font-medium transition text-foreground/70 hover:bg-muted hover:text-foreground"> Combat &amp; dungeons </a><a href="/#guide" class="rounded-md px-3 py-1.5 text-sm font-medium transition text-foreground/70 hover:bg-muted hover:text-foreground"> Guides </a><a href="/#review" class="rounded-md px-3 py-1.5 text-sm font-medium transition text-foreground/70 hover:bg-muted hover:text-foreground"> Reviews &amp; monetization </a> </nav>  <div class="ml-auto flex items-center gap-1"> <button id="search-trigger" type="button" aria-label="Search" title="Search" class="inline-flex h-9 w-9 items-center justify-center rounded-md text-foreground transition hover:bg-muted" data-astro-cid-jk6rk5hg> <svg width="1em" height="1em" class="h-5 w-5" data-astro-cid-jk6rk5hg="true" data-icon="lucide:search">   <symbol id="ai:lucide:search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m21 21l-4.34-4.34"/><circle cx="11" cy="11" r="8"/></g></symbol><use href="#ai:lucide:search"></use>  </svg> </button>  <dialog id="search-modal" aria-label="Search" data-astro-cid-jk6rk5hg> <div class="search-shell" data-astro-cid-jk6rk5hg>  <div id="search-modal-inner" data-pagefind-ui data-no-results="No matches found" data-placeholder="Search the wiki..." data-astro-cid-jk6rk5hg></div>  <footer class="search-footer" data-astro-cid-jk6rk5hg> <div class="search-footer-hints" data-astro-cid-jk6rk5hg> <span class="hint" data-astro-cid-jk6rk5hg> <kbd data-astro-cid-jk6rk5hg>Esc</kbd> Close </span> <span class="hint-divider" data-astro-cid-jk6rk5hg>·</span> <span class="hint" data-astro-cid-jk6rk5hg> <kbd data-astro-cid-jk6rk5hg>↵</kbd> Search </span> </div> <span class="search-footer-brand" data-astro-cid-jk6rk5hg> <svg width="1em" height="1em" class="h-3 w-3" data-astro-cid-jk6rk5hg="true" data-icon="lucide:zap">   <symbol id="ai:lucide:zap" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.914 4a1.5 1.5 0 0 0-2.474-1.561l-9 9A1.5 1.5 0 0 0 5.5 14h4.002a.5.5 0 0 1 .471.666L8.086 20a1.5 1.5 0 0 0 2.475 1.56l9-9A1.5 1.5 0 0 0 18.5 10h-3.997a.5.5 0 0 1-.472-.667z"/></symbol><use href="#ai:lucide:zap"></use>  </svg>
+Powered by Pagefind
+</span> </footer> </div> </dialog>  <script>
+  (() => {
+    const trigger = document.getElementById('search-trigger');
+    const modal = document.getElementById('search-modal');
+    if (!trigger || !modal) return;
+
+    let pagefindLoaded = false;
+
+    const openModal = async () => {
+      if (typeof modal.showModal === 'function') {
+        modal.showModal();
+      } else {
+        modal.setAttribute('open', '');
+      }
+      if (!pagefindLoaded) {
+        pagefindLoaded = true;
+        try {
+          await import('/pagefind/pagefind-ui.js');
+          const PFUI = window.PagefindUI;
+          const target = document.getElementById('search-modal-inner');
+          const noResults = target?.getAttribute('data-no-results') ?? 'No matches found';
+          const placeholder = target?.getAttribute('data-placeholder') ?? 'Search';
+          if (target && typeof PFUI === 'function') {
+            new PFUI({
+              element: '#' + target.id,
+              showSubResults: true,
+              showImages: false,
+              showEmptyFilters: false,
+              // Pagefind maps dist/<dir>/index.html → "/<dir>/". The site uses
+              // trailingSlash:'always', so the trailing slash is the served URL
+              // and must be kept.
+              processResult: (result) => {
+                if (result?.url) {
+                  result.url = result.url.replace(/\/+$/, '') || '/';
+                }
+                if (result?.meta?.url) {
+                  result.meta.url = result.meta.url.endsWith('/')
+                    ? result.meta.url
+                    : `${result.meta.url}/`;
+                }
+                return result;
+              },
+              translations: {
+                placeholder,
+                zero_results: noResults,
+              },
+            });
+            // processResult covers main results, but sub-results (nested
+            // anchors like /bosses/my-entry/#section) are rendered separately.
+            // Intercept all clicks inside the results area and make sure the
+            // href keeps the trailing slash the host actually serves.
+            target.addEventListener('click', (e) => {
+              const link = e.target.closest('a[href]');
+              if (!link) return;
+              const href = link.getAttribute('href');
+              if (!href) return;
+              // Normalize: every internal URL must end with a slash, either
+              // at the end or right before the #anchor.
+              // "/bosses/my-entry" → "/bosses/my-entry/"
+              // "/bosses/my-entry#anchor" → "/bosses/my-entry/#anchor"
+              const fixed = href.startsWith('/')
+                ? href.replace(/([^/])#/, '$1/#').replace(/([^/])$/, '$1/')
+                : href;
+              if (fixed !== href) {
+                e.preventDefault();
+                window.location.href = fixed;
+              }
+            });
+            setTimeout(() => {
+              target.querySelector('input')?.focus();
+            }, 60);
+          } else {
+            console.warn('[search] PagefindUI not found on window after loading pagefind-ui.js');
+          }
+        } catch (err) {
+          console.warn('[search] Pagefind failed to load — run `pnpm build` first.', err);
+        }
+      } else {
+        setTimeout(() => {
+          modal.querySelector('input')?.focus();
+        }, 50);
+      }
+    };
+
+    trigger.addEventListener('click', openModal);
+
+    document.addEventListener('keydown', (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        openModal();
+      }
+    });
+
+    // Click outside the inner shell closes the modal (native dialog backdrop click).
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.close();
+      }
+    });
+
+    // Lock body scroll while the dialog is open (backup for the CSS
+    // :has() rule, for older browsers). Also prevent wheel events from
+    // scrolling the background page when the results list reaches its
+    // scroll boundary.
+    const setBodyLock = (lock) => {
+      document.body.style.overflow = lock ? 'hidden' : '';
+    };
+    modal.addEventListener('toggle', (e) => {
+      setBodyLock(e.newState === 'open');
+    });
+    // showModal/close don't always fire 'toggle' in every browser, so
+    // also hook the open/close calls directly.
+    const origShow = modal.showModal?.bind(modal);
+    const origClose = modal.close?.bind(modal);
+    if (origShow) modal.showModal = () => { origShow(); setBodyLock(true); };
+    if (origClose) modal.close = (rv) => { origClose(rv); setBodyLock(false); };
+
+    // Prevent scroll-through: when wheeling inside the results area and
+    // hitting the top/bottom boundary, stop the event so the background
+    // page doesn't start scrolling.
+    modal.addEventListener('wheel', (e) => {
+      const scroller = modal.querySelector('.pagefind-ui__results-area');
+      if (!scroller) return;
+      const { scrollTop, scrollHeight, clientHeight } = scroller;
+      const atTop = scrollTop === 0;
+      const atBottom = scrollTop + clientHeight >= scrollHeight;
+      const goingUp = e.deltaY < 0;
+      const goingDown = e.deltaY > 0;
+      if ((atTop && goingUp) || (atBottom && goingDown)) {
+        e.preventDefault();
+      }
+    }, { passive: false });
+  })();
+</script> <button id="theme-toggle" type="button" aria-label="Toggle theme" class="inline-flex h-9 w-9 items-center justify-center rounded-md text-foreground transition hover:bg-muted"> <svg width="1em" height="1em" class="h-5 w-5 dark:hidden" data-icon="lucide:sun">   <symbol id="ai:lucide:sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></g></symbol><use href="#ai:lucide:sun"></use>  </svg> <svg width="1em" height="1em" class="hidden h-5 w-5 dark:block" data-icon="lucide:moon">   <symbol id="ai:lucide:moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></symbol><use href="#ai:lucide:moon"></use>  </svg> </button> <script>
+  (() => {
+    const btn = document.getElementById('theme-toggle');
+    btn?.addEventListener('click', () => {
+      const html = document.documentElement;
+      const isDark = html.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  })();
+</script> <details class="relative"> <summary class="inline-flex cursor-pointer list-none items-center gap-1 rounded-md px-3 py-1.5 text-sm font-medium text-foreground transition hover:bg-muted"> <svg width="1em" height="1em" class="h-4 w-4" data-icon="lucide:globe">   <symbol id="ai:lucide:globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20a14.5 14.5 0 0 0 0-20M2 12h20"/></g></symbol><use href="#ai:lucide:globe"></use>  </svg> <span>English</span> <svg width="1em" height="1em" class="h-3 w-3" data-icon="lucide:chevron-down">   <symbol id="ai:lucide:chevron-down" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9l6 6l6-6"/></symbol><use href="#ai:lucide:chevron-down"></use>  </svg> </summary> <div class="absolute right-0 z-50 mt-2 w-40 overflow-hidden rounded-md border bg-card shadow-lg"> <a href="/" class="block px-3 py-2 text-sm transition hover:bg-muted font-semibold text-nav"> English </a><a href="/ko/" class="block px-3 py-2 text-sm transition hover:bg-muted"> 한국어 </a><a href="/zh-cn/" class="block px-3 py-2 text-sm transition hover:bg-muted"> 中文 </a><a href="/ja/" class="block px-3 py-2 text-sm transition hover:bg-muted"> 日本語 </a><a href="/es/" class="block px-3 py-2 text-sm transition hover:bg-muted"> Español </a><a href="/ru/" class="block px-3 py-2 text-sm transition hover:bg-muted"> Русский </a><a href="/de/" class="block px-3 py-2 text-sm transition hover:bg-muted"> Deutsch </a><a href="/fr/" class="block px-3 py-2 text-sm transition hover:bg-muted"> Français </a> </div> </details>  <details class="relative md:hidden"> <summary class="inline-flex h-9 w-9 cursor-pointer list-none items-center justify-center rounded-md text-foreground transition hover:bg-muted"> <svg width="1em" height="1em" class="h-5 w-5" data-icon="lucide:menu">   <symbol id="ai:lucide:menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5h16M4 12h16M4 19h16"/></symbol><use href="#ai:lucide:menu"></use>  </svg> </summary> <div class="absolute right-0 mt-2 w-48 overflow-hidden rounded-md border bg-card shadow-lg"> <a href="/#release" class="block px-3 py-2 text-sm transition hover:bg-muted"> Release &amp; buying </a><a href="/#classes" class="block px-3 py-2 text-sm transition hover:bg-muted"> Classes </a><a href="/#combat" class="block px-3 py-2 text-sm transition hover:bg-muted"> Combat &amp; dungeons </a><a href="/#guide" class="block px-3 py-2 text-sm transition hover:bg-muted"> Guides </a><a href="/#review" class="block px-3 py-2 text-sm transition hover:bg-muted"> Reviews &amp; monetization </a> </div> </details> </div> </div> </header> <div id="sticky-banner" class="sticky top-14 z-30 hidden border-b border-border bg-background/95 py-2 backdrop-blur md:block"><div class="relative mx-auto max-w-4xl px-4"><div id="adsterra-sticky" class="adsterra-slot mx-auto" style="width:min(100%, 728px); min-height:90px" aria-label="Advertisement"></div><script>(function(){const position = "sticky";
+const adKey = "aba3a2ae6d017c65107331a246fd348f";
+const scriptUrl = "https://russiaexternalknew.com/aba3a2ae6d017c65107331a246fd348f/invoke.js";
+const format = "iframe";
+const width = 728;
+const height = 90;
+const params = {};
+const containerId = "adsterra-sticky";
+
+    (() => {
+      if (format === 'native') {
+        const nativeBanners = (window.__awNativeBanners = window.__awNativeBanners || []);
+        if (!nativeBanners.some((banner) => banner.containerId === containerId)) {
+          nativeBanners.push({ scriptUrl, containerId });
+        }
+        window.__awLoadNativeBanners?.();
+        return;
+      }
+      const registeredSlots = (window.__awAdsterraSlots = window.__awAdsterraSlots || []);
+      if (!registeredSlots.some((slot) => slot.containerId === containerId)) {
+        registeredSlots.push({ position, key: adKey, scriptUrl, format, width, height, params, containerId });
+      }
+      window.__awLoadAdsterraSlots?.();
+    })();
+  })();</script><button id="dismiss-sticky" type="button" aria-label="Close ad" class="absolute -right-1 -top-1 rounded-full border bg-background p-1 text-muted-foreground transition hover:bg-muted"><svg width="1em" height="1em" class="h-3 w-3" data-icon="lucide:x">   <symbol id="ai:lucide:x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6L6 18M6 6l12 12"/></symbol><use href="#ai:lucide:x"></use>  </svg></button></div></div><script>
+  (() => {
+    const banner = document.getElementById('sticky-banner');
+    const btn = document.getElementById('dismiss-sticky');
+    if (!banner || !btn) return;
+    btn.addEventListener('click', () => {
+      banner.remove();
+    });
+  })();
+</script><div class="page-stage relative"> <div class="page-backdrop" aria-hidden="true"> <img src="/images/hero.webp" alt="" class="page-backdrop__image" style="object-position: center" loading="eager" decoding="async"> <div class="page-backdrop__overlay"></div> </div> <main class="relative z-10 mx-auto min-h-[calc(100vh-3.5rem)] max-w-7xl px-4 py-8"> <section class="hero-media relative flex items-center py-6 md:py-8"> <div class="relative grid w-full items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12"> <div class="max-w-3xl"> <p class="text-sm font-semibold uppercase tracking-wider text-foreground">Fan-Made Community Wiki</p> <h1 class="theme-title mt-3 max-w-3xl text-3xl font-black tracking-tight sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl"> AION 2<br>Wiki </h1> <p class="mt-5 max-w-xl text-base text-muted-foreground md:text-lg">AION 2 is NC&#39;s open-world MMORPG where the world is 36 times bigger than the original and flight is not travel - it is how you fight. Pick Elyos or Asmodian, become a Daeva, and take the faction war into the Abyss. This wiki checks every claim against official pages and marks what is still only a creator report.</p> <div class="mt-8 flex flex-wrap gap-3"> <a href="/guide/steam-and-purple/" class="btn-primary"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="mr-2 h-4 w-4" data-icon="lucide:external-link">   <use href="#ai:lucide:external-link"></use>  </svg> View on Steam </a> <a href="/guide/beginner-guide/" class="btn-outline"> Start with the beginner guide </a> </div> </div> <div class="w-full lg:justify-self-end"> <section class="w-full video-section"><div class="w-full px-0"><div data-video-id="IZ_zw2GksRY" class="group relative aspect-video w-full overflow-hidden rounded-lg bg-black shadow-lg ring-1 ring-border/60"><button type="button" class="absolute inset-0 z-10 flex cursor-pointer items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-nav focus-visible:ring-inset" aria-label="Play video: AION 2 trailer"><span class="flex h-16 w-16 items-center justify-center rounded-full bg-red-600 shadow-lg transition group-hover:scale-110 group-hover:bg-red-500"><svg width="1em" height="1em" class="ml-1 h-7 w-7 text-white" data-icon="lucide:play">   <symbol id="ai:lucide:play" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/></symbol><use href="#ai:lucide:play"></use>  </svg></span></button><img src="https://i.ytimg.com/vi/IZ_zw2GksRY/hqdefault.jpg" alt="AION 2 trailer" class="h-full w-full object-cover opacity-85 transition duration-300 group-hover:opacity-100" loading="eager" fetchpriority="high" decoding="async" width="480" height="360"></div></div></section><script>
+  document.querySelectorAll('[data-video-id]').forEach((container) => {
+    const id = container.getAttribute('data-video-id');
+    const button = container.querySelector('button');
+    if (!id || !button) return;
+    button.addEventListener('click', () => {
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0`;
+      iframe.title = button.getAttribute('aria-label') || 'YouTube video';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      iframe.className = 'absolute inset-0 h-full w-full border-0';
+      container.replaceChildren(iframe);
+    }, { once: true });
+  });
+</script> </div> </div> </section> <section class="section pt-4 md:pt-6"><p class="text-sm font-semibold uppercase tracking-wider text-foreground">Start Here</p><h2 class="mt-1 text-2xl font-bold tracking-tight md:text-3xl">Your first week in AION 2</h2><div class="mt-6 grid gap-4 sm:grid-cols-2 md:mt-8"><a href="/guide/beginner-guide/" class="card group overflow-hidden"><div class="aspect-video w-full overflow-hidden"><img src="/images/start-beginner-guide.jpg" alt="Official screenshot of a sunlit island with player characters, the first region new players explore" class="h-full w-full object-cover transition group-hover:scale-[1.02]" loading="lazy" decoding="async" width="640" height="360"></div><div class="p-5"><h3 class="font-semibold leading-snug">Beginner guide: what to do week one</h3><p class="mt-1 line-clamp-2 text-sm text-muted-foreground">The three decisions to make before launch, a five-step day one, and the three mistakes that cost the most time.</p><span class="mt-3 inline-flex items-center gap-1 text-xs font-medium text-foreground hover:text-nav"><span class="border-b border-transparent transition group-hover:border-nav">Read more</span><svg width="1em" height="1em" class="h-3 w-3 transition group-hover:translate-x-0.5" data-icon="lucide:arrow-right">   <symbol id="ai:lucide:arrow-right" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"/></symbol><use href="#ai:lucide:arrow-right"></use>  </svg></span></div></a><a href="/release/release-date/" class="card group overflow-hidden"><div class="aspect-video w-full overflow-hidden"><img src="/images/start-release-date.jpg" alt="Official key art of a golden citadel above the clouds, marking the global launch" class="h-full w-full object-cover transition group-hover:scale-[1.02]" loading="lazy" decoding="async" width="640" height="360"></div><div class="p-5"><h3 class="font-semibold leading-snug">Release date and early access</h3><p class="mt-1 line-clamp-2 text-sm text-muted-foreground">October 5 worldwide, September 30 for the 5-day head start, plus the exact hours of the launch test and how to convert them.</p><span class="mt-3 inline-flex items-center gap-1 text-xs font-medium text-foreground hover:text-nav"><span class="border-b border-transparent transition group-hover:border-nav">Read more</span><svg width="1em" height="1em" viewBox="0 0 24 24" class="h-3 w-3 transition group-hover:translate-x-0.5" data-icon="lucide:arrow-right">   <use href="#ai:lucide:arrow-right"></use>  </svg></span></div></a></div></section> <section class="section"> <div class="grid gap-8 lg:grid-cols-2">  <div> <div class="flex items-baseline justify-between"> <h2 class="text-2xl font-bold">Recent updates and changes</h2> <a href="/release/" class="text-sm text-foreground hover:text-nav hover:underline">Browse all</a> </div> <div class="mt-4 grid gap-4 sm:grid-cols-2"> <a href="/classes/chanter/" class="card overflow-hidden"> <img src="/_astro/chanter-cover.BhfD0qZq_Z14CHUF.webp" srcset="/_astro/chanter-cover.BhfD0qZq_Z1Oz4rS.webp 200w, /_astro/chanter-cover.BhfD0qZq_Z14CHUF.webp 400w, /_astro/chanter-cover.BhfD0qZq_Z1T0qrE.webp 800w" alt="Official AION 2 screenshot of a winged fighter casting a blue energy attack" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-[16/9] w-full object-cover"> <div class="p-4"> <h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug"> AION 2 Chanter: A Support That Deals Real Damage </h3> <p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground"> Chanter is the staff support class. Undefeated Mantra buffs the whole party, and on a correct build its own damage lands close to a damage class. </p> </div> </a><a href="/classes/cleric/" class="card overflow-hidden"> <img src="/_astro/cleric-cover.BuGjByTc_Z27LwKG.webp" srcset="/_astro/cleric-cover.BuGjByTc_Z23eDNt.webp 200w, /_astro/cleric-cover.BuGjByTc_Z27LwKG.webp 400w, /_astro/cleric-cover.BuGjByTc_UFBlr.webp 800w" alt="Official AION 2 screenshot of a party of winged characters gathered in a dark hall" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-[16/9] w-full object-cover"> <div class="p-4"> <h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug"> AION 2 Cleric: Keep the Boss Debuffed, Then Heal </h3> <p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground"> Cleric is the mace-and-shield healer that spends most of a fight on debuffs and damage. Global season 1 allows only four stigma skills at once. </p> </div> </a> </div> </div>  <div> <h2 class="text-2xl font-bold">The two pages to read first</h2> <div class="mt-4 grid gap-4 sm:grid-cols-2"> <a href="/classes/class-list/" class="card overflow-hidden"> <img src="/images/popular-class-list.jpg" alt="Official wallpaper of two armoured Daeva characters, representing class choice" width="400" height="225" loading="lazy" decoding="async" class="aspect-video w-full object-cover"> <div class="p-4"> <h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug"> All eight classes and their weapons </h3> <p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground"> The official Korean class guide says there are eight classes. The ninth, Brawler, only exists in Korea and Taiwan. Read this table before you pick a main. </p> </div> </a><a href="/release/founders-pack/" class="card overflow-hidden"> <img src="/images/popular-founders-pack.jpg" alt="Official Deluxe Founder's Pack artwork" width="400" height="225" loading="lazy" decoding="async" class="aspect-video w-full object-cover"> <div class="p-4"> <h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug"> Founder&#39;s Pack: all three tiers </h3> <p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground"> What USD 24.99, 49.99 and 99.99 actually include, where the difference sits, and how Steam and PURPLE purchase rules differ. </p> </div> </a> </div> </div> </div> <div class="native-banner-slot my-8 flex flex-col items-center" data-ad-format="native-banner"><span class="mb-1 text-[10px] uppercase tracking-wider text-muted-foreground">Advertisement</span><div id="container-f7063624774800dcf880b5b8652d8878" class="adsterra-slot" style="width:min(100%, 728px); min-height:250px" aria-label="Advertisement"></div><script>(function(){const position = "native";
+const adKey = "f7063624774800dcf880b5b8652d8878";
+const scriptUrl = "https://russiaexternalknew.com/f7063624774800dcf880b5b8652d8878/invoke.js";
+const format = "native";
+const width = 728;
+const height = 250;
+const params = {};
+const containerId = "container-f7063624774800dcf880b5b8652d8878";
+
+    (() => {
+      if (format === 'native') {
+        const nativeBanners = (window.__awNativeBanners = window.__awNativeBanners || []);
+        if (!nativeBanners.some((banner) => banner.containerId === containerId)) {
+          nativeBanners.push({ scriptUrl, containerId });
+        }
+        window.__awLoadNativeBanners?.();
+        return;
+      }
+      const registeredSlots = (window.__awAdsterraSlots = window.__awAdsterraSlots || []);
+      if (!registeredSlots.some((slot) => slot.containerId === containerId)) {
+        registeredSlots.push({ position, key: adKey, scriptUrl, format, width, height, params, containerId });
+      }
+      window.__awLoadAdsterraSlots?.();
+    })();
+  })();</script></div> </section> <section id="release" class="section scroll-mt-20"><div class="flex items-baseline justify-between gap-4"><h2 class="text-2xl font-bold">Release &amp; buying</h2><a href="/release/" class="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-foreground hover:text-nav">View more<svg width="1em" height="1em" viewBox="0 0 24 24" class="h-4 w-4" data-icon="lucide:arrow-right">   <use href="#ai:lucide:arrow-right"></use>  </svg></a></div><div class="mt-4 flex flex-wrap items-start gap-4"><a href="/release/mac-and-steam-deck/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/platforms-cover.Duxq5tMV_ZbSA7S.webp" srcset="/_astro/platforms-cover.Duxq5tMV_1VVWps.webp 200w, /_astro/platforms-cover.Duxq5tMV_ZbSA7S.webp 400w, /_astro/platforms-cover.Duxq5tMV_27ucJA.webp 800w" alt="Illustration made for this wiki: a winged golden crest above a stone plinth with translucent panes shaped like a laptop, handheld, tablet and desktop" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">Can You Play AION 2 on Mac or Steam Deck?</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">The global version is Windows PC only, through Steam and PURPLE. Mac, Steam Deck and other non-Windows devices have no official support.</p></div></a><a href="/release/beta-test/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/beta-test-cover.DR4DJBBW_10pkT3.webp" srcset="/_astro/beta-test-cover.DR4DJBBW_Z1UVfmx.webp 200w, /_astro/beta-test-cover.DR4DJBBW_10pkT3.webp 400w, /_astro/beta-test-cover.DR4DJBBW_Z1Ko02p.webp 800w" alt="Official AION 2 screenshot of a winged Daeva gliding above an ocean archipelago" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">AION 2 Beta: The Launch Scale Test Is Over</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">Global had one test: the Launch Scale Test on September 17-18, six hours a day, no keys, level cap 37, progress wiped. Founder&#39;s Pack is now the only early route.</p></div></a><a href="/release/ps5-console/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/ps5-console-cover.B3rP7sBT_Z13sesF.webp" srcset="/_astro/ps5-console-cover.B3rP7sBT_Zw3fHK.webp 200w, /_astro/ps5-console-cover.B3rP7sBT_Z13sesF.webp 400w, /_astro/ps5-console-cover.B3rP7sBT_1FsntR.webp 800w" alt="Official AION 2 key art of a floating fortress under a deep blue night sky" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">AION 2 on PS5: Confirmed in Development, Not at Launch</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">AION 2 is not on PS5 at launch; it arrives on PC on 5 October 2026. NC&#39;s development PD confirmed in July 2026 that a PS5 version is in development, with no date.</p></div></a><a href="/release/founders-pack/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/founders-pack-cover.DCX3t_Pn_HVTo2.webp" srcset="/_astro/founders-pack-cover.DCX3t_Pn_1ttOTl.webp 200w, /_astro/founders-pack-cover.DCX3t_Pn_HVTo2.webp 400w, /_astro/founders-pack-cover.DCX3t_Pn_Z11Y1ka.webp 800w" alt="Official Ultimate Founder's Pack artwork showing two characters in premium armour skins" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">AION 2 Founder&#39;s Pack Guide: 24.99 vs 49.99 vs 99.99</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">All three tiers include five days of early access, a supply chest, a unique title and 30 days of membership. Extra tiers buy cosmetics only.</p></div></a><a href="/release/release-date/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/release-date-cover.g-juDFhp_10M7hm.webp" srcset="/_astro/release-date-cover.g-juDFhp_ZOKHVN.webp 200w, /_astro/release-date-cover.g-juDFhp_10M7hm.webp 400w, /_astro/release-date-cover.g-juDFhp_qhlvW.webp 800w" alt="Official AION 2 key art of a golden citadel above the clouds" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 100vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">AION 2 Release Date: October 5 Worldwide, September 30 Early</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">AION 2 launches October 5, 2026 on PC - Steam and PURPLE. Founder&#39;s Pack owners get in September 30. Test hours, time zones and where to re-check.</p></div></a></div></section><section id="classes" class="section scroll-mt-20"><div class="flex items-baseline justify-between gap-4"><h2 class="text-2xl font-bold">Classes</h2><a href="/classes/" class="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-foreground hover:text-nav">View more<svg width="1em" height="1em" viewBox="0 0 24 24" class="h-4 w-4" data-icon="lucide:arrow-right">   <use href="#ai:lucide:arrow-right"></use>  </svg></a></div><div class="mt-4 flex flex-wrap items-start gap-4"><a href="/classes/chanter/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/chanter-cover.BhfD0qZq_Z14CHUF.webp" srcset="/_astro/chanter-cover.BhfD0qZq_Z1Oz4rS.webp 200w, /_astro/chanter-cover.BhfD0qZq_Z14CHUF.webp 400w, /_astro/chanter-cover.BhfD0qZq_Z1T0qrE.webp 800w" alt="Official AION 2 screenshot of a winged fighter casting a blue energy attack" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">AION 2 Chanter: A Support That Deals Real Damage</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">Chanter is the staff support class. Undefeated Mantra buffs the whole party, and on a correct build its own damage lands close to a damage class.</p></div></a><a href="/classes/cleric/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/cleric-cover.BuGjByTc_Z27LwKG.webp" srcset="/_astro/cleric-cover.BuGjByTc_Z23eDNt.webp 200w, /_astro/cleric-cover.BuGjByTc_Z27LwKG.webp 400w, /_astro/cleric-cover.BuGjByTc_UFBlr.webp 800w" alt="Official AION 2 screenshot of a party of winged characters gathered in a dark hall" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">AION 2 Cleric: Keep the Boss Debuffed, Then Heal</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">Cleric is the mace-and-shield healer that spends most of a fight on debuffs and damage. Global season 1 allows only four stigma skills at once.</p></div></a><a href="/classes/gladiator/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/gladiator-cover.Zaq-iyoC_Z1dTQ2B.webp" srcset="/_astro/gladiator-cover.Zaq-iyoC_TUGuJ.webp 200w, /_astro/gladiator-cover.Zaq-iyoC_Z1dTQ2B.webp 400w, /_astro/gladiator-cover.Zaq-iyoC_15sVOR.webp 800w" alt="Official AION 2 screenshot of an armoured fighter swinging a glowing weapon" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">AION 2 Gladiator: Off-Tank Damage and a Positional Tax</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">Gladiator is the greatsword off-tank. It tops one-minute dummy parses, drops in live dungeons, and shares a buff that does not stack with Templar.</p></div></a><a href="/classes/ranger/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/ranger-cover.3WiiUllp_Z1rc8c6.webp" srcset="/_astro/ranger-cover.3WiiUllp_Z1mEfeS.webp 200w, /_astro/ranger-cover.3WiiUllp_Z1rc8c6.webp 400w, /_astro/ranger-cover.3WiiUllp_1Bg0U2.webp 800w" alt="Official AION 2 screenshot of characters flying over floating islands" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">AION 2 Ranger: The Most Consistent Class in the Game</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">Ranger is a bow class with no positional requirement. It sits in the top three or four in nearly every fight, and its mana bar is the early bottleneck.</p></div></a><a href="/classes/spiritmaster/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/spiritmaster-cover.OU-IyZP8_1dqgPd.webp" srcset="/_astro/spiritmaster-cover.OU-IyZP8_ZC7ynW.webp 200w, /_astro/spiritmaster-cover.OU-IyZP8_1dqgPd.webp 400w, /_astro/spiritmaster-cover.OU-IyZP8_CUv4N.webp 800w" alt="Official AION 2 screenshot of a robed caster surrounded by swirling blue magic" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">AION 2 Spiritmaster: Five Spirits, One Rotation</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">Spiritmaster is a ranged magic summoner that rotates five elemental spirits, builds four element stacks and dumps Elemental Fusion for 15-20% of its damage.</p></div></a><a href="/classes/best-class/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/best-class-cover.BFmm4tmg_ZJuVzK.webp" srcset="/_astro/best-class-cover.BFmm4tmg_1EDApS.webp 200w, /_astro/best-class-cover.BFmm4tmg_ZJuVzK.webp 400w, /_astro/best-class-cover.BFmm4tmg_VTgwB.webp 800w" alt="Official AION 2 wallpaper of a robed caster holding a staff before a giant masked statue in a blue hall" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">AION 2 Best Class: What All Eight Are Actually Good At</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">What each of the eight launch classes does best, which are easiest and hardest to play, and why no verified global tier list exists yet. Four steps to pick a main.</p></div></a><a href="/classes/brawler/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/brawler-cover.DOBeYcm1_Z2oTsTX.webp" srcset="/_astro/brawler-cover.DOBeYcm1_1UljmK.webp 200w, /_astro/brawler-cover.DOBeYcm1_Z2oTsTX.webp 400w, /_astro/brawler-cover.DOBeYcm1_1PTWmY.webp 800w" alt="Official AION 2 key art of a dark-winged melee fighter against a stormy sky" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">AION 2 Brawler: Gauntlets, Rage and Whether Global Gets It</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">Brawler fights with gauntlets and builds Rage into a Rampage state. It arrived with Chapter 1 in Korea and Taiwan on July 1, 2026. It is not on the global roster.</p></div></a><a href="/classes/class-list/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/class-list-cover.CMEaEBnn_1kgd3b.webp" srcset="/_astro/class-list-cover.CMEaEBnn_Z1kLnK7.webp 200w, /_astro/class-list-cover.CMEaEBnn_1kgd3b.webp 400w, /_astro/class-list-cover.CMEaEBnn_Z23vHDo.webp 800w" alt="Official AION 2 screenshot of the character customisation screen with sliders and colour swatches" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">AION 2 Classes: All Eight, Their Roles and Weapons</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">The official Korean class guide says eight classes exist, expected for global launch too. Brawler shipped only in Korea and Taiwan. One main weapon each.</p></div></a></div></section><section id="combat" class="section scroll-mt-20"><div class="flex items-baseline justify-between gap-4"><h2 class="text-2xl font-bold">Combat &amp; dungeons</h2><a href="/combat/" class="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-foreground hover:text-nav">View more<svg width="1em" height="1em" viewBox="0 0 24 24" class="h-4 w-4" data-icon="lucide:arrow-right">   <use href="#ai:lucide:arrow-right"></use>  </svg></a></div><div class="mt-4 flex flex-wrap items-start gap-4"><a href="/combat/dungeons/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/dungeons-cover.VNuqLPnq_Z1v1xYM.webp" srcset="/_astro/dungeons-cover.VNuqLPnq_Z2tOxnx.webp 200w, /_astro/dungeons-cover.VNuqLPnq_Z1v1xYM.webp 400w, /_astro/dungeons-cover.VNuqLPnq_ZDsxJT.webp 800w" alt="Official AION 2 screenshot of a party fighting inside a glowing teal cavern" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">AION 2 Dungeons and PvE: How to Spend Week One</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">Over 200 dungeons across solo, 5-player and 10-player formats, with four named 5-player Expeditions. Week one, run what raises your item level first.</p></div></a><a href="/combat/pvp/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/pvp-cover.D95HpPtc_16Ei0M.webp" srcset="/_astro/pvp-cover.D95HpPtc_ZJiSz3.webp 200w, /_astro/pvp-cover.D95HpPtc_16Ei0M.webp 400w, /_astro/pvp-cover.D95HpPtc_VWGCU.webp 800w" alt="Official AION 2 key art of winged fighters over a red-lit canyon" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">AION 2 PvP: Faction War, Capped Battlefields, Real Complaints</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">Two levels of PvP: open-world Abyss and faction war, plus rule-bound modes. NC confirmed Chaotic Upper Reshanta and Battlefield: Siege.</p></div></a><a href="/combat/gameplay/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/gameplay-cover.BcZih5Kc_FhhoE.webp" srcset="/_astro/gameplay-cover.BcZih5Kc_ZivGY6.webp 200w, /_astro/gameplay-cover.BcZih5Kc_FhhoE.webp 400w, /_astro/gameplay-cover.BcZih5Kc_1wPhDx.webp 800w" alt="Official AION 2 screenshot of a rocky highland region seen from the air" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">AION 2 Gameplay: Why Flight Counts As Combat</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">A world 36 times the original on Unreal Engine 5, where flight is not travel but the way you fight. Over 200 dungeons, tied together by the Abyss.</p></div></a></div></section><section id="guide" class="section scroll-mt-20"><div class="flex items-baseline justify-between gap-4"><h2 class="text-2xl font-bold">Guides</h2><a href="/guide/" class="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-foreground hover:text-nav">View more<svg width="1em" height="1em" viewBox="0 0 24 24" class="h-4 w-4" data-icon="lucide:arrow-right">   <use href="#ai:lucide:arrow-right"></use>  </svg></a></div><div class="mt-4 flex flex-wrap items-start gap-4"><a href="/guide/kinah/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/kinah-cover.Cqruej6__Z1VGOY2.webp" srcset="/_astro/kinah-cover.Cqruej6__1UBnK1.webp 200w, /_astro/kinah-cover.Cqruej6__Z1VGOY2.webp 400w, /_astro/kinah-cover.Cqruej6__pmnkY.webp 800w" alt="Illustration made for this wiki: a torch-lit floating market with crates, potions and glowing coin sigils" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">AION 2 Kinah: The Two Currencies and Your First Week</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">Bound and unbound Kinah, dungeon energy farming, alchemy and crafting maths, open-world versus Abyss caps, and where early Kinah should go first.</p></div></a><a href="/guide/steam-and-purple/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/steam-and-purple-cover.CqD0ranT_Z1FPzv5.webp" srcset="/_astro/steam-and-purple-cover.CqD0ranT_Z1bDsjW.webp 200w, /_astro/steam-and-purple-cover.CqD0ranT_Z1FPzv5.webp 400w, /_astro/steam-and-purple-cover.CqD0ranT_Z4sKmO.webp 800w" alt="Official AION 2 wallpaper with the AION emblem on a bright sky background" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">AION 2 Download Guide: Steam or PURPLE, Five Prep Steps</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">Two official entry points: Steam (app 3393110) and NC&#39;s PURPLE launcher. Eight in-game languages and four server regions, plus five things to do before launch.</p></div></a><a href="/guide/beginner-guide/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/beginner-guide-cover.1aWWUyuO_Z1SiBNA.webp" srcset="/_astro/beginner-guide-cover.1aWWUyuO_Z1D1fhu.webp 200w, /_astro/beginner-guide-cover.1aWWUyuO_Z1SiBNA.webp 400w, /_astro/beginner-guide-cover.1aWWUyuO_J3x8i.webp 800w" alt="Official AION 2 screenshot of a sunlit island with a large tree and player characters" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">AION 2 Beginner Guide: Three Decisions, Then Week One</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">Before launch, lock faction, server and class. On day one, test both control modes, follow the main quest and run one dungeon. The traps that cost the most time.</p></div></a><a href="/guide/system-requirements/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/system-requirements-cover.D9om65Hx_jAqnU.webp" srcset="/_astro/system-requirements-cover.D9om65Hx_Z15jEDY.webp 200w, /_astro/system-requirements-cover.D9om65Hx_jAqnU.webp 400w, /_astro/system-requirements-cover.D9om65Hx_Z1dKlMh.webp 800w" alt="Official AION 2 screenshot of a detailed blue-lit crystal cavern" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">AION 2 System Requirements: Minimum, Recommended, 100 GB</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">Official minimum: Ryzen 5 2600 / i5-10500, 8 GB RAM, GTX 1050 Ti, 100 GB. Recommended: Ryzen 7 3700X / i7-11700, 16 GB, RTX 2070. Both tiers recommend an SSD.</p></div></a></div></section><section id="review" class="section scroll-mt-20"><div class="flex items-baseline justify-between gap-4"><h2 class="text-2xl font-bold">Reviews &amp; monetization</h2><a href="/review/" class="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-foreground hover:text-nav">View more<svg width="1em" height="1em" viewBox="0 0 24 24" class="h-4 w-4" data-icon="lucide:arrow-right">   <use href="#ai:lucide:arrow-right"></use>  </svg></a></div><div class="mt-4 flex flex-wrap items-start gap-4"><a href="/review/monetization/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/monetization-cover.BD7ISUBs_Z1rxO83.webp" srcset="/_astro/monetization-cover.BD7ISUBs_1M5trI.webp 200w, /_astro/monetization-cover.BD7ISUBs_Z1rxO83.webp 400w, /_astro/monetization-cover.BD7ISUBs_Z223zSs.webp 800w" alt="Official AION 2 screenshot of a character with blazing golden wings and a flame weapon" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">Is AION 2 Pay To Win? Every Charge, Line By Line</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">Free to play with an optional USD 15/month membership unlocking the Market and Kina-to-Quna exchange. The shop is cosmetics and consumables, NC says no power.</p></div></a><a href="/review/worth-playing/" class="card basis-[260px] grow overflow-hidden"><img src="/_astro/worth-playing-cover.D-GmiHGJ_2pJSmq.webp" srcset="/_astro/worth-playing-cover.D-GmiHGJ_Z1STjVc.webp 200w, /_astro/worth-playing-cover.D-GmiHGJ_2pJSmq.webp 400w, /_astro/worth-playing-cover.D-GmiHGJ_ENWDe.webp 800w" alt="Official AION 2 wallpaper of two Daeva characters with the AION emblem between them" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw" loading="lazy" decoding="async" fetchpriority="auto" width="400" height="225" class="aspect-video w-full object-cover"><div class="p-4"><h3 class="line-clamp-2 min-h-[2.75rem] font-semibold leading-snug">Is AION 2 Worth Playing? The Answer Splits By Player Type</h3><p class="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted-foreground">Reviews agree on the visuals and progression pacing, and agree on the mobile-feel UI, repetitive endgame and simplified combat. Global is untested.</p></div></a></div></section> <section id="faq" class="section scroll-mt-20"> <h2 class="text-3xl font-extrabold tracking-tight md:text-4xl">AION 2 FAQ</h2> <p class="mt-2 text-muted-foreground">Release, platforms, classes, dungeons, monetization and PC specs - every answer traces back to an official page.</p> <div class="mt-8 grid items-start gap-3 lg:grid-cols-2" data-faq-group> <details class="card group rounded-md"> <summary class="flex cursor-pointer list-none items-center justify-between p-4 font-medium" aria-expanded="false"> When does AION 2 launch? <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-4 w-4 transition group-open:rotate-180" data-icon="lucide:chevron-down">   <use href="#ai:lucide:chevron-down"></use>  </svg> </summary> <div class="px-4 pb-4 text-sm text-muted-foreground"> <p>October 5, 2026 worldwide, on PC only - Steam and PURPLE. A Founder&#39;s Pack gets you in five days earlier, from September 30.</p> <a href="/release/release-date/" class="mt-3 inline-flex items-center gap-1 font-medium text-nav hover:underline"> See the full timeline <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-3.5 w-3.5" data-icon="lucide:arrow-right">   <use href="#ai:lucide:arrow-right"></use>  </svg> </a> </div> </details><details class="card group rounded-md"> <summary class="flex cursor-pointer list-none items-center justify-between p-4 font-medium" aria-expanded="false"> Can I play it on PS5 or mobile? <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-4 w-4 transition group-open:rotate-180" data-icon="lucide:chevron-down">   <use href="#ai:lucide:chevron-down"></use>  </svg> </summary> <div class="px-4 pb-4 text-sm text-muted-foreground"> <p>Launch is PC only. NC&#39;s development PD confirmed a PS5 version is in development but gave no date. Mobile exists only in Korea and Taiwan; the global version officially has none.</p> <a href="/release/ps5-console/" class="mt-3 inline-flex items-center gap-1 font-medium text-nav hover:underline"> See platform status <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-3.5 w-3.5" data-icon="lucide:arrow-right">   <use href="#ai:lucide:arrow-right"></use>  </svg> </a> </div> </details><details class="card group rounded-md"> <summary class="flex cursor-pointer list-none items-center justify-between p-4 font-medium" aria-expanded="false"> How many classes are there? <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-4 w-4 transition group-open:rotate-180" data-icon="lucide:chevron-down">   <use href="#ai:lucide:chevron-down"></use>  </svg> </summary> <div class="px-4 pb-4 text-sm text-muted-foreground"> <p>The official Korean class guide says eight. Global launch is expected to be those eight. The ninth, Brawler, shipped only in Korea and Taiwan.</p> <a href="/classes/class-list/" class="mt-3 inline-flex items-center gap-1 font-medium text-nav hover:underline"> See the class list <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-3.5 w-3.5" data-icon="lucide:arrow-right">   <use href="#ai:lucide:arrow-right"></use>  </svg> </a> </div> </details><details class="card group rounded-md"> <summary class="flex cursor-pointer list-none items-center justify-between p-4 font-medium" aria-expanded="false"> Will Brawler be in the global launch? <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-4 w-4 transition group-open:rotate-180" data-icon="lucide:chevron-down">   <use href="#ai:lucide:chevron-down"></use>  </svg> </summary> <div class="px-4 pb-4 text-sm text-muted-foreground"> <p>NC has published no global roster as of September 18, 2026. Creators who play the Korea/Taiwan service believe global launches with eight and no Brawler - but that is a creator report, not an official announcement.</p> <a href="/classes/brawler/" class="mt-3 inline-flex items-center gap-1 font-medium text-nav hover:underline"> See how Brawler plays <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-3.5 w-3.5" data-icon="lucide:arrow-right">   <use href="#ai:lucide:arrow-right"></use>  </svg> </a> </div> </details><details class="card group rounded-md"> <summary class="flex cursor-pointer list-none items-center justify-between p-4 font-medium" aria-expanded="false"> Can my PC run it? <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-4 w-4 transition group-open:rotate-180" data-icon="lucide:chevron-down">   <use href="#ai:lucide:chevron-down"></use>  </svg> </summary> <div class="px-4 pb-4 text-sm text-muted-foreground"> <p>Minimum is Ryzen 5 2600 / i5-10500, 8 GB RAM and GTX 1050 Ti (4GB). Recommended is Ryzen 7 3700X / i7-11700, 16 GB and RTX 2070 (8GB). Both tiers need 100 GB and both recommend an SSD.</p> <a href="/guide/system-requirements/" class="mt-3 inline-flex items-center gap-1 font-medium text-nav hover:underline"> See the spec table <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-3.5 w-3.5" data-icon="lucide:arrow-right">   <use href="#ai:lucide:arrow-right"></use>  </svg> </a> </div> </details><details class="card group rounded-md"> <summary class="flex cursor-pointer list-none items-center justify-between p-4 font-medium" aria-expanded="false"> Is AION 2 pay to win? <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-4 w-4 transition group-open:rotate-180" data-icon="lucide:chevron-down">   <use href="#ai:lucide:chevron-down"></use>  </svg> </summary> <div class="px-4 pb-4 text-sm text-muted-foreground"> <p>It is free to play with an optional USD 15/month membership. The membership unlocks the Market and the Kina-to-Quna exchange. The shop is cosmetics and consumables, which NC says do not affect power. Whether buying Kina with real money crosses your line is your call.</p> <a href="/review/monetization/" class="mt-3 inline-flex items-center gap-1 font-medium text-nav hover:underline"> See the full breakdown <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-3.5 w-3.5" data-icon="lucide:arrow-right">   <use href="#ai:lucide:arrow-right"></use>  </svg> </a> </div> </details><details class="card group rounded-md"> <summary class="flex cursor-pointer list-none items-center justify-between p-4 font-medium" aria-expanded="false"> Are the Founder&#39;s Packs worth it? <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-4 w-4 transition group-open:rotate-180" data-icon="lucide:chevron-down">   <use href="#ai:lucide:chevron-down"></use>  </svg> </summary> <div class="px-4 pb-4 text-sm text-muted-foreground"> <p>All three include five days of early access, a supply chest, a unique title and 30 days of membership. The extra tiers are entirely cosmetics - no power. Worth it only if you want those looks or the day-one head start.</p> <a href="/release/founders-pack/" class="mt-3 inline-flex items-center gap-1 font-medium text-nav hover:underline"> Compare the three tiers <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-3.5 w-3.5" data-icon="lucide:arrow-right">   <use href="#ai:lucide:arrow-right"></use>  </svg> </a> </div> </details><details class="card group rounded-md"> <summary class="flex cursor-pointer list-none items-center justify-between p-4 font-medium" aria-expanded="false"> Is there another beta I can join? <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-4 w-4 transition group-open:rotate-180" data-icon="lucide:chevron-down">   <use href="#ai:lucide:chevron-down"></use>  </svg> </summary> <div class="px-4 pb-4 text-sm text-muted-foreground"> <p>No. The only test was the Launch Scale Test on September 17-18, six hours a day, no keys, progress wiped. The only way to play earlier now is Founder&#39;s Pack early access.</p> <a href="/release/beta-test/" class="mt-3 inline-flex items-center gap-1 font-medium text-nav hover:underline"> Read the test recap <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-3.5 w-3.5" data-icon="lucide:arrow-right">   <use href="#ai:lucide:arrow-right"></use>  </svg> </a> </div> </details> </div> </section> <script>
+  // Sync aria-expanded on FAQ summaries when details toggle.
+  document.querySelectorAll('[data-faq-group] details').forEach((d) => {
+    const sync = () =>
+      d.querySelector('summary')?.setAttribute('aria-expanded', d.open ? 'true' : 'false');
+    sync();
+    d.addEventListener('toggle', sync);
+  });
+</script><section class="section"> <div class="card p-8 text-center md:p-12"> <h2 class="text-2xl font-bold md:text-3xl">Get the facts straight before you spend anything</h2> <p class="mx-auto mt-2 max-w-xl text-muted-foreground">Release, classes, dungeon budgets, monetization and specs all trace back to official pages. Where nothing has been published, this wiki says so.</p> <div class="mt-6 flex justify-center gap-3"> <a href="/guide/steam-and-purple/" class="btn-primary"> View on Steam </a> <a href="/guide/" class="btn-outline"> Browse all pages </a> </div> </div> </section> </main> </div> <footer class="site-footer mt-16 border-t border-border"> <div class="mx-auto max-w-7xl px-4 py-10"> <div class="grid gap-8 md:grid-cols-3">  <div> <div class="flex items-center gap-2 font-bold"> <img src="/favicon-96x96.png" alt="" width="24" height="24" class="h-6 w-6"> <span class="bg-gradient-to-r from-nav via-foreground to-nav/75 bg-clip-text text-transparent"> AION 2 Wiki </span> </div> <p class="mt-2 text-sm text-muted-foreground"> The sky is the battlefield - verified AION 2 guides </p> </div>  <div> <h2 class="text-sm font-semibold uppercase tracking-wider text-muted-foreground"> Official links </h2> <ul class="mt-3 space-y-2"> <li> <a href="https://aion2.plaync.com/en-us/conts/teaser" rel="noopener noreferrer" target="_blank" class="inline-flex items-center gap-2 text-sm text-foreground/80 transition hover:text-nav"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-4 w-4" data-icon="lucide:globe">   <use href="#ai:lucide:globe"></use>  </svg> Official website </a> </li><li> <a href="https://store.steampowered.com/app/3393110/AION_2/" rel="noopener noreferrer" target="_blank" class="inline-flex items-center gap-2 text-sm text-foreground/80 transition hover:text-nav"> <svg width="1em" height="1em" class="h-4 w-4" data-icon="lucide:external-link">   <symbol id="ai:lucide:external-link" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol><use href="#ai:lucide:external-link"></use>  </svg> View on Steam </a> </li><li> <a href="https://discord.gg/FFE9VNKqhF" rel="noopener noreferrer" target="_blank" class="inline-flex items-center gap-2 text-sm text-foreground/80 transition hover:text-nav"> <svg width="1em" height="1em" class="h-4 w-4" data-icon="lucide:message-circle">   <symbol id="ai:lucide:message-circle" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092a10 10 0 1 0-4.777-4.719"/></symbol><use href="#ai:lucide:message-circle"></use>  </svg> Official Discord </a> </li><li> <a href="https://www.youtube.com/@AION2Official" rel="noopener noreferrer" target="_blank" class="inline-flex items-center gap-2 text-sm text-foreground/80 transition hover:text-nav"> <svg width="1em" height="1em" class="h-4 w-4" data-icon="lucide:youtube">   <symbol id="ai:lucide:youtube" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2.5 17a24.1 24.1 0 0 1 0-10a2 2 0 0 1 1.4-1.4a49.6 49.6 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.1 24.1 0 0 1 0 10a2 2 0 0 1-1.4 1.4a49.6 49.6 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15l5-3l-5-3z"/></g></symbol><use href="#ai:lucide:youtube"></use>  </svg> Official YouTube </a> </li><li> <a href="https://x.com/AION2Official" rel="noopener noreferrer" target="_blank" class="inline-flex items-center gap-2 text-sm text-foreground/80 transition hover:text-nav"> <svg width="1em" height="1em" class="h-4 w-4" data-icon="lucide:twitter">   <symbol id="ai:lucide:twitter" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6c2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4c-.9-4.2 4-6.6 7-3.8c1.1 0 3-1.2 3-1.2"/></symbol><use href="#ai:lucide:twitter"></use>  </svg> Official X </a> </li><li> <a href="https://www.reddit.com/r/Aion2/" rel="noopener noreferrer" target="_blank" class="inline-flex items-center gap-2 text-sm text-foreground/80 transition hover:text-nav"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-4 w-4" data-icon="lucide:globe">   <use href="#ai:lucide:globe"></use>  </svg> Reddit community </a> </li> </ul> </div>  <div> <h2 class="text-sm font-semibold uppercase tracking-wider text-muted-foreground"> Legal &amp; contact </h2> <ul class="mt-3 space-y-2"> <li> <a href="/about/" class="text-sm text-foreground/80 transition hover:text-nav"> About </a> </li><li> <a href="/privacy-policy/" class="text-sm text-foreground/80 transition hover:text-nav"> Privacy Policy </a> </li><li> <a href="/terms-of-service/" class="text-sm text-foreground/80 transition hover:text-nav"> Terms of Service </a> </li><li> <a href="/copyright/" class="text-sm text-foreground/80 transition hover:text-nav"> Copyright </a> </li><li> <a href="/contact/" class="text-sm text-foreground/80 transition hover:text-nav"> Contact </a> </li> </ul> <button type="button" data-consent-open class="mt-3 text-sm text-foreground/80 transition hover:text-nav"> Cookie settings </button> </div> </div> <div class="mt-8 border-t border-border pt-6"> <p class="text-xs text-muted-foreground">(c) 2026 AION 2 Wiki. Unofficial community resource.</p> </div> </div> </footer>   <div id="cookie-consent" hidden class="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-card p-4 shadow-lg" role="dialog" aria-live="polite" aria-label="Cookies"> <div class="mx-auto flex max-w-7xl flex-col items-center gap-3 sm:flex-row"> <p class="text-sm text-muted-foreground"> <span class="font-semibold text-foreground">Cookies: </span>We use cookies for analytics to keep this site free. </p> <div class="flex shrink-0 items-center gap-2 sm:ml-auto"> <button type="button" data-consent-decline class="rounded-md px-3 py-1.5 text-sm font-medium text-muted-foreground transition hover:text-foreground"> Decline </button> <button type="button" data-consent-accept class="btn-primary px-3 py-1.5"> Accept </button> </div> </div> </div> <script type="module">(async()=>{const n="aw-cookie-consent",e=document.getElementById("cookie-consent");if(!e)return;const r=()=>{try{return localStorage.getItem(n)}catch{return null}},c=t=>{try{localStorage.setItem(n,t)}catch{}},a=()=>{e.hidden=!1},o=()=>{e.hidden=!0};document.addEventListener("click",t=>{const d=t.target;d instanceof Element&&d.closest("[data-consent-open]")&&(t.preventDefault(),a())});const i=()=>{c("accepted"),o(),window.__awLoadGa?.()},s=()=>{c("declined"),o(),window.__awGaId&&(window["ga-disable-"+window.__awGaId]=!0)};e.querySelector("[data-consent-accept]")?.addEventListener("click",i),e.querySelector("[data-consent-decline]")?.addEventListener("click",s),!r()&&(await window.__awGeoReady,!window.__awGaAllowedNow?.()&&a())})();</script> </body></html>

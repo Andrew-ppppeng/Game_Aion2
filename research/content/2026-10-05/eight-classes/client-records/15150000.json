@@ -1,0 +1,2204 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/15150000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "15150000",
+    "name": "Frost",
+    "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_015.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "15150010",
+        "description": "Restores 200 MP",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15150020",
+        "description": "-5s cooldown",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15150030",
+        "description": "Reset [Frost Burst] cooldown on landing Frost",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15150040",
+        "description": "+25% PC target Frost Chance",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15150050",
+        "description": "+1s Frost duration",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Mobile</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "circle"
+      },
+      "reachMeters": 4,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 100
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "magicbook",
+        "name": "Spellbook"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:178:94:1:1]]-[[damage:max:178:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 178,
+            "baseMax": 178,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:239:94:1:1]]-[[damage:max:239:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 239,
+            "baseMax": 239,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:315:94:1:1]]-[[damage:max:315:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 315,
+            "baseMax": 315,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:404:94:1:1]]-[[damage:max:404:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 404,
+            "baseMax": 404,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:480:94:1:1]]-[[damage:max:480:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 480,
+            "baseMax": 480,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:555:94:1:1]]-[[damage:max:555:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 555,
+            "baseMax": 555,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:630:94:1:1]]-[[damage:max:630:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 630,
+            "baseMax": 630,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:706:94:1:1]]-[[damage:max:706:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 706,
+            "baseMax": 706,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:795:94:1:1]]-[[damage:max:795:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 795,
+            "baseMax": 795,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:871:94:1:1]]-[[damage:max:871:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 871,
+            "baseMax": 871,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:926:94:1:1]]-[[damage:max:926:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 926,
+            "baseMax": 926,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:967:94:1:1]]-[[damage:max:967:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 967,
+            "baseMax": 967,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1022:94:1:1]]-[[damage:max:1022:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1022,
+            "baseMax": 1022,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1077:94:1:1]]-[[damage:max:1077:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1077,
+            "baseMax": 1077,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1132:94:1:1]]-[[damage:max:1132:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1132,
+            "baseMax": 1132,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1187:94:1:1]]-[[damage:max:1187:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1187,
+            "baseMax": 1187,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1228:94:1:1]]-[[damage:max:1228:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1228,
+            "baseMax": 1228,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1269:94:1:1]]-[[damage:max:1269:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1269,
+            "baseMax": 1269,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1309:94:1:1]]-[[damage:max:1309:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1309,
+            "baseMax": 1309,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1350:94:1:1]]-[[damage:max:1350:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1350,
+            "baseMax": 1350,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1391:94:1:1]]-[[damage:max:1391:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1391,
+            "baseMax": 1391,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1432:94:1:1]]-[[damage:max:1432:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1432,
+            "baseMax": 1432,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1473:94:1:1]]-[[damage:max:1473:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1473,
+            "baseMax": 1473,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1514:94:1:1]]-[[damage:max:1514:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1514,
+            "baseMax": 1514,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1555:94:1:1]]-[[damage:max:1555:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1555,
+            "baseMax": 1555,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1596:94:1:1]]-[[damage:max:1596:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1596,
+            "baseMax": 1596,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1637:94:1:1]]-[[damage:max:1637:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1637,
+            "baseMax": 1637,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1677:94:1:1]]-[[damage:max:1677:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1677,
+            "baseMax": 1677,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1718:94:1:1]]-[[damage:max:1718:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1718,
+            "baseMax": 1718,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1759:94:1:1]]-[[damage:max:1759:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1759,
+            "baseMax": 1759,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1800:94:1:1]]-[[damage:max:1800:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1800,
+            "baseMax": 1800,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1841:94:1:1]]-[[damage:max:1841:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1841,
+            "baseMax": 1841,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1882:94:1:1]]-[[damage:max:1882:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1882,
+            "baseMax": 1882,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1923:94:1:1]]-[[damage:max:1923:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1923,
+            "baseMax": 1923,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1964:94:1:1]]-[[damage:max:1964:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 1964,
+            "baseMax": 1964,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2005:94:1:1]]-[[damage:max:2005:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 2005,
+            "baseMax": 2005,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2045:94:1:1]]-[[damage:max:2045:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 2045,
+            "baseMax": 2045,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2086:94:1:1]]-[[damage:max:2086:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 2086,
+            "baseMax": 2086,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2127:94:1:1]]-[[damage:max:2127:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 2127,
+            "baseMax": 2127,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2168:94:1:1]]-[[damage:max:2168:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1515000011",
+            "effectGroupId": "151500001",
+            "baseMin": 2168,
+            "baseMax": 2168,
+            "attackRatioPercent": 94
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "151500001",
+            "name": "Frost status",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Frost status",
+            "effect": "Frost status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Frost status",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+              "id": "151500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "2499",
+        "level": 1,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2500",
+        "level": 2,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2501",
+        "level": 3,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2502",
+        "level": 4,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2503",
+        "level": 5,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2504",
+        "level": 6,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2505",
+        "level": 7,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2506",
+        "level": 8,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2507",
+        "level": 9,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2508",
+        "level": 10,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "15150010",
+        "skillId": "15150010",
+        "name": "Frost",
+        "description": "Restores 200 MP",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15150020",
+        "skillId": "15150020",
+        "name": "Frost",
+        "description": "-5s cooldown",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15150030",
+        "skillId": "15150030",
+        "name": "Frost",
+        "description": "Reset [Frost Burst] cooldown on landing Frost",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15150040",
+        "skillId": "15150040",
+        "name": "Frost",
+        "description": "+25% PC target Frost Chance",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15150050",
+        "skillId": "15150050",
+        "name": "Frost",
+        "description": "+1s Frost duration",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 30,
+    "classes": [
+      {
+        "code": "sorcerer",
+        "name": "Sorcerer"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Frost",
+    "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_015.webp",
+    "id": "15150000",
+    "entityType": "skill",
+    "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:178:94:1:1]]-[[damage:max:178:94:1:1]]</> Water damage to up to 4 enemies within 4m of the target, with a 50% chance to inflict Frost on the target for 3s.\n100% chance to inflict Frost on NPC targets.\n\n10 Stagger Gauge Damage"
+  }
+}

@@ -1,0 +1,1735 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/11050000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "11050000",
+    "name": "Crushing Wave",
+    "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_005.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 8,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 8,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 11,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "11050010",
+        "description": "Absorbs 2% HP",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11050020",
+        "description": "Restores 50 MP on landing a Critical Hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11050030",
+        "description": "Up to +20% damage when more targets hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11050040",
+        "description": "Resets cooldown on landing a Critical Hit",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11050050",
+        "description": "50% chance to pull",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Nontarget</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "mainself"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "circle"
+      },
+      "reachMeters": 5,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 250
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "greatsword",
+        "name": "Greatsword"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:206:105:2:2]]-[[damage:max:206:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 206,
+            "baseMax": 206,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 206,
+            "baseMax": 206,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:277:105:2:2]]-[[damage:max:277:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 277,
+            "baseMax": 277,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 277,
+            "baseMax": 277,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:363:105:2:2]]-[[damage:max:363:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 363,
+            "baseMax": 363,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 363,
+            "baseMax": 363,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:466:105:2:2]]-[[damage:max:466:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 466,
+            "baseMax": 466,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 466,
+            "baseMax": 466,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:552:105:2:2]]-[[damage:max:552:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 552,
+            "baseMax": 552,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 552,
+            "baseMax": 552,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:639:105:2:2]]-[[damage:max:639:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 639,
+            "baseMax": 639,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 639,
+            "baseMax": 639,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:726:105:2:2]]-[[damage:max:726:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 726,
+            "baseMax": 726,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 726,
+            "baseMax": 726,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:812:105:2:2]]-[[damage:max:812:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 812,
+            "baseMax": 812,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 812,
+            "baseMax": 812,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:915:105:2:2]]-[[damage:max:915:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 915,
+            "baseMax": 915,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 915,
+            "baseMax": 915,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1001:105:2:2]]-[[damage:max:1001:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 1001,
+            "baseMax": 1001,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 1001,
+            "baseMax": 1001,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1064:105:2:2]]-[[damage:max:1064:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 1064,
+            "baseMax": 1064,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 1064,
+            "baseMax": 1064,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1111:105:2:2]]-[[damage:max:1111:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 1111,
+            "baseMax": 1111,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 1111,
+            "baseMax": 1111,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1174:105:2:2]]-[[damage:max:1174:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 1174,
+            "baseMax": 1174,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 1174,
+            "baseMax": 1174,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1237:105:2:2]]-[[damage:max:1237:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 1237,
+            "baseMax": 1237,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 1237,
+            "baseMax": 1237,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1300:105:2:2]]-[[damage:max:1300:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 1300,
+            "baseMax": 1300,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 1300,
+            "baseMax": 1300,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1363:105:2:2]]-[[damage:max:1363:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 1363,
+            "baseMax": 1363,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 1363,
+            "baseMax": 1363,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1411:105:2:2]]-[[damage:max:1411:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 1411,
+            "baseMax": 1411,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 1411,
+            "baseMax": 1411,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1458:105:2:2]]-[[damage:max:1458:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 1458,
+            "baseMax": 1458,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 1458,
+            "baseMax": 1458,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1505:105:2:2]]-[[damage:max:1505:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 1505,
+            "baseMax": 1505,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 1505,
+            "baseMax": 1505,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1552:105:2:2]]-[[damage:max:1552:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 1552,
+            "baseMax": 1552,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 1552,
+            "baseMax": 1552,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1600:105:2:2]]-[[damage:max:1600:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 1600,
+            "baseMax": 1600,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 1600,
+            "baseMax": 1600,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1647:105:2:2]]-[[damage:max:1647:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 1647,
+            "baseMax": 1647,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 1647,
+            "baseMax": 1647,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1694:105:2:2]]-[[damage:max:1694:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 1694,
+            "baseMax": 1694,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 1694,
+            "baseMax": 1694,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1741:105:2:2]]-[[damage:max:1741:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 1741,
+            "baseMax": 1741,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 1741,
+            "baseMax": 1741,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1789:105:2:2]]-[[damage:max:1789:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 1789,
+            "baseMax": 1789,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 1789,
+            "baseMax": 1789,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1836:105:2:2]]-[[damage:max:1836:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 1836,
+            "baseMax": 1836,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 1836,
+            "baseMax": 1836,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1883:105:2:2]]-[[damage:max:1883:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 1883,
+            "baseMax": 1883,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 1883,
+            "baseMax": 1883,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1930:105:2:2]]-[[damage:max:1930:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 1930,
+            "baseMax": 1930,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 1930,
+            "baseMax": 1930,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1978:105:2:2]]-[[damage:max:1978:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 1978,
+            "baseMax": 1978,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 1978,
+            "baseMax": 1978,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2025:105:2:2]]-[[damage:max:2025:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 2025,
+            "baseMax": 2025,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 2025,
+            "baseMax": 2025,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2072:105:2:2]]-[[damage:max:2072:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 2072,
+            "baseMax": 2072,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 2072,
+            "baseMax": 2072,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2119:105:2:2]]-[[damage:max:2119:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 2119,
+            "baseMax": 2119,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 2119,
+            "baseMax": 2119,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2167:105:2:2]]-[[damage:max:2167:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 2167,
+            "baseMax": 2167,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 2167,
+            "baseMax": 2167,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2214:105:2:2]]-[[damage:max:2214:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 2214,
+            "baseMax": 2214,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 2214,
+            "baseMax": 2214,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2261:105:2:2]]-[[damage:max:2261:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 2261,
+            "baseMax": 2261,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 2261,
+            "baseMax": 2261,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2308:105:2:2]]-[[damage:max:2308:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 2308,
+            "baseMax": 2308,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 2308,
+            "baseMax": 2308,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2356:105:2:2]]-[[damage:max:2356:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 2356,
+            "baseMax": 2356,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 2356,
+            "baseMax": 2356,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2403:105:2:2]]-[[damage:max:2403:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 2403,
+            "baseMax": 2403,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 2403,
+            "baseMax": 2403,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2450:105:2:2]]-[[damage:max:2450:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 2450,
+            "baseMax": 2450,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 2450,
+            "baseMax": 2450,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2497:105:2:2]]-[[damage:max:2497:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1105000011",
+            "effectGroupId": "110500001",
+            "baseMin": 2497,
+            "baseMax": 2497,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1105000021",
+            "effectGroupId": "110500002",
+            "baseMin": 2497,
+            "baseMax": 2497,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "315",
+        "level": 1,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 8,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "316",
+        "level": 2,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 8,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "317",
+        "level": 3,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 11,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "318",
+        "level": 4,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "319",
+        "level": 5,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "320",
+        "level": 6,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "321",
+        "level": 7,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "322",
+        "level": 8,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "323",
+        "level": 9,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "324",
+        "level": 10,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "11050010",
+        "skillId": "11050010",
+        "name": "Crushing Wave",
+        "description": "Absorbs 2% HP",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11050020",
+        "skillId": "11050020",
+        "name": "Crushing Wave",
+        "description": "Restores 50 MP on landing a Critical Hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11050030",
+        "skillId": "11050030",
+        "name": "Crushing Wave",
+        "description": "Up to +20% damage when more targets hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11050040",
+        "skillId": "11050040",
+        "name": "Crushing Wave",
+        "description": "Resets cooldown on landing a Critical Hit",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11050050",
+        "skillId": "11050050",
+        "name": "Crushing Wave",
+        "description": "50% chance to pull",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [
+      {
+        "mainCategoryId": "skills",
+        "name": "Frenzied Wave",
+        "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_006.webp",
+        "id": "11060000"
+      }
+    ],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 4,
+    "cooldownSeconds": 20,
+    "classes": [
+      {
+        "code": "gladiator",
+        "name": "Gladiator"
+      }
+    ],
+    "chainRole": {
+      "code": "opening",
+      "name": "Opening Skill"
+    },
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Crushing Wave",
+    "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_005.webp",
+    "id": "11050000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:206:105:2:2]]-[[damage:max:206:105:2:2]]</> damage to up to 4 enemies within 5m of the caster.\n\n5 Stagger Gauge Damage"
+  }
+}

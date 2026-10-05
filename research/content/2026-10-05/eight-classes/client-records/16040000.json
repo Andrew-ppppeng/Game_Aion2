@@ -1,0 +1,1683 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/16040000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "16040000",
+    "name": "Combustion",
+    "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_004.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "16040010",
+        "description": "-20% MP consumed",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16040020",
+        "description": "Deals up to 12% more damage when less targets are hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16040030",
+        "description": "+100 Skill Accuracy",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16040040",
+        "description": "+20% Skill Speed",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16040050",
+        "description": "Adds [Ashy Call] Chain Skill",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<Unique>Mobile</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "circle"
+      },
+      "reachMeters": 4,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 120
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "orb",
+        "name": "Orb"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:63:67.25:1:1]]-[[damage:max:63:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 63,
+            "baseMax": 63,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 63,
+            "baseMax": 63,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:91:67.25:1:1]]-[[damage:max:91:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 91,
+            "baseMax": 91,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 91,
+            "baseMax": 91,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:119:67.25:1:1]]-[[damage:max:119:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 119,
+            "baseMax": 119,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 119,
+            "baseMax": 119,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:148:67.25:1:1]]-[[damage:max:148:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 148,
+            "baseMax": 148,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 148,
+            "baseMax": 148,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:190:67.25:1:1]]-[[damage:max:190:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 190,
+            "baseMax": 190,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 190,
+            "baseMax": 190,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:242:67.25:1:1]]-[[damage:max:242:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 242,
+            "baseMax": 242,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 242,
+            "baseMax": 242,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:305:67.25:1:1]]-[[damage:max:305:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 305,
+            "baseMax": 305,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 305,
+            "baseMax": 305,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:357:67.25:1:1]]-[[damage:max:357:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 357,
+            "baseMax": 357,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 357,
+            "baseMax": 357,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:410:67.25:1:1]]-[[damage:max:410:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 410,
+            "baseMax": 410,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 410,
+            "baseMax": 410,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:462:67.25:1:1]]-[[damage:max:462:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 462,
+            "baseMax": 462,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 462,
+            "baseMax": 462,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:515:67.25:1:1]]-[[damage:max:515:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 515,
+            "baseMax": 515,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 515,
+            "baseMax": 515,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:577:67.25:1:1]]-[[damage:max:577:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 577,
+            "baseMax": 577,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 577,
+            "baseMax": 577,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:630:67.25:1:1]]-[[damage:max:630:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 630,
+            "baseMax": 630,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 630,
+            "baseMax": 630,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:668:67.25:1:1]]-[[damage:max:668:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 668,
+            "baseMax": 668,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 668,
+            "baseMax": 668,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:696:67.25:1:1]]-[[damage:max:696:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 696,
+            "baseMax": 696,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 696,
+            "baseMax": 696,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:735:67.25:1:1]]-[[damage:max:735:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 735,
+            "baseMax": 735,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 735,
+            "baseMax": 735,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:773:67.25:1:1]]-[[damage:max:773:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 773,
+            "baseMax": 773,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 773,
+            "baseMax": 773,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:811:67.25:1:1]]-[[damage:max:811:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 811,
+            "baseMax": 811,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 811,
+            "baseMax": 811,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:850:67.25:1:1]]-[[damage:max:850:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 850,
+            "baseMax": 850,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 850,
+            "baseMax": 850,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:878:67.25:1:1]]-[[damage:max:878:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 878,
+            "baseMax": 878,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 878,
+            "baseMax": 878,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:906:67.25:1:1]]-[[damage:max:906:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 906,
+            "baseMax": 906,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 906,
+            "baseMax": 906,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:934:67.25:1:1]]-[[damage:max:934:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 934,
+            "baseMax": 934,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 934,
+            "baseMax": 934,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:963:67.25:1:1]]-[[damage:max:963:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 963,
+            "baseMax": 963,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 963,
+            "baseMax": 963,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:991:67.25:1:1]]-[[damage:max:991:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 991,
+            "baseMax": 991,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 991,
+            "baseMax": 991,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1019:67.25:1:1]]-[[damage:max:1019:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 1019,
+            "baseMax": 1019,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 1019,
+            "baseMax": 1019,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1047:67.25:1:1]]-[[damage:max:1047:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 1047,
+            "baseMax": 1047,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 1047,
+            "baseMax": 1047,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1076:67.25:1:1]]-[[damage:max:1076:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 1076,
+            "baseMax": 1076,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 1076,
+            "baseMax": 1076,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1104:67.25:1:1]]-[[damage:max:1104:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 1104,
+            "baseMax": 1104,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 1104,
+            "baseMax": 1104,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1132:67.25:1:1]]-[[damage:max:1132:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 1132,
+            "baseMax": 1132,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 1132,
+            "baseMax": 1132,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1160:67.25:1:1]]-[[damage:max:1160:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 1160,
+            "baseMax": 1160,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 1160,
+            "baseMax": 1160,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1189:67.25:1:1]]-[[damage:max:1189:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 1189,
+            "baseMax": 1189,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 1189,
+            "baseMax": 1189,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1217:67.25:1:1]]-[[damage:max:1217:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 1217,
+            "baseMax": 1217,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 1217,
+            "baseMax": 1217,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1245:67.25:1:1]]-[[damage:max:1245:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 1245,
+            "baseMax": 1245,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 1245,
+            "baseMax": 1245,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1273:67.25:1:1]]-[[damage:max:1273:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 1273,
+            "baseMax": 1273,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 1273,
+            "baseMax": 1273,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1302:67.25:1:1]]-[[damage:max:1302:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 1302,
+            "baseMax": 1302,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 1302,
+            "baseMax": 1302,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1330:67.25:1:1]]-[[damage:max:1330:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 1330,
+            "baseMax": 1330,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 1330,
+            "baseMax": 1330,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1358:67.25:1:1]]-[[damage:max:1358:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 1358,
+            "baseMax": 1358,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 1358,
+            "baseMax": 1358,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1386:67.25:1:1]]-[[damage:max:1386:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 1386,
+            "baseMax": 1386,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 1386,
+            "baseMax": 1386,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1415:67.25:1:1]]-[[damage:max:1415:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 1415,
+            "baseMax": 1415,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 1415,
+            "baseMax": 1415,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1443:67.25:1:1]]-[[damage:max:1443:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1604000011",
+            "effectGroupId": "160400001",
+            "baseMin": 1443,
+            "baseMax": 1443,
+            "attackRatioPercent": 67.25
+          },
+          {
+            "effectId": "1604000012",
+            "effectGroupId": "160400001",
+            "baseMin": 1443,
+            "baseMax": 1443,
+            "attackRatioPercent": 67.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "3004",
+        "level": 1,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3005",
+        "level": 2,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3006",
+        "level": 3,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3007",
+        "level": 4,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3008",
+        "level": 5,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3009",
+        "level": 6,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3010",
+        "level": 7,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3011",
+        "level": 8,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3012",
+        "level": 9,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3013",
+        "level": 10,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "16040010",
+        "skillId": "16040010",
+        "name": "Combustion",
+        "description": "-20% MP consumed",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16040020",
+        "skillId": "16040020",
+        "name": "Combustion",
+        "description": "Deals up to 12% more damage when less targets are hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16040030",
+        "skillId": "16040030",
+        "name": "Combustion",
+        "description": "+100 Skill Accuracy",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16040040",
+        "skillId": "16040040",
+        "name": "Combustion",
+        "description": "+20% Skill Speed",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16040050",
+        "skillId": "16040050",
+        "name": "Combustion",
+        "description": "Adds [Ashy Call] Chain Skill",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "classes": [
+      {
+        "code": "elementalist",
+        "name": "Spiritmaster"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Combustion",
+    "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_004.webp",
+    "id": "16040000",
+    "entityType": "skill",
+    "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:63:67.25:1:1]]-[[damage:max:63:67.25:1:1]]</> Fire damage to up to 4 enemies within 4m of the target.\n\n3 Stagger Gauge Damage"
+  }
+}

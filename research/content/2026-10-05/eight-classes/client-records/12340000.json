@@ -1,0 +1,2010 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/12340000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "12340000",
+    "name": "Flash Rampage",
+    "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_027.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 5,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 5,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 8,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 11,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "12340010",
+        "description": "Absorbs 5% HP",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12340020",
+        "description": "Restores 120 MP on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12340030",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12340040",
+        "description": "Multi-Hit on hit",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12340050",
+        "description": "-1s to all skill cooldowns on hit",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [
+      {
+        "id": "12000006",
+        "target": {
+          "code": "target"
+        },
+        "type": {
+          "code": "hasabnormaleffecttype"
+        },
+        "description": "Stagger Target",
+        "iconPath": "/images/ui/resource/texture/skill/icon_cond_groggy.webp",
+        "abnormalEffect": {
+          "code": "groggy"
+        }
+      }
+    ],
+    "requiredWeapons": [
+      {
+        "code": "sword",
+        "name": "Longsword"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:152:108:4:4]]-[[damage:max:152:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 152,
+            "baseMax": 152,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 152,
+            "baseMax": 152,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 152,
+            "baseMax": 152,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 152,
+            "baseMax": 152,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:197:108:4:4]]-[[damage:max:197:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 197,
+            "baseMax": 197,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 197,
+            "baseMax": 197,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 197,
+            "baseMax": 197,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 197,
+            "baseMax": 197,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:265:108:4:4]]-[[damage:max:265:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 265,
+            "baseMax": 265,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 265,
+            "baseMax": 265,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 265,
+            "baseMax": 265,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 265,
+            "baseMax": 265,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:349:108:4:4]]-[[damage:max:349:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 349,
+            "baseMax": 349,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 349,
+            "baseMax": 349,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 349,
+            "baseMax": 349,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 349,
+            "baseMax": 349,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:450:108:4:4]]-[[damage:max:450:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 450,
+            "baseMax": 450,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 450,
+            "baseMax": 450,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 450,
+            "baseMax": 450,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 450,
+            "baseMax": 450,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:534:108:4:4]]-[[damage:max:534:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 534,
+            "baseMax": 534,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 534,
+            "baseMax": 534,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 534,
+            "baseMax": 534,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 534,
+            "baseMax": 534,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:618:108:4:4]]-[[damage:max:618:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 618,
+            "baseMax": 618,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 618,
+            "baseMax": 618,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 618,
+            "baseMax": 618,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 618,
+            "baseMax": 618,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:703:108:4:4]]-[[damage:max:703:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 703,
+            "baseMax": 703,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 703,
+            "baseMax": 703,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 703,
+            "baseMax": 703,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 703,
+            "baseMax": 703,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:787:108:4:4]]-[[damage:max:787:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 787,
+            "baseMax": 787,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 787,
+            "baseMax": 787,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 787,
+            "baseMax": 787,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 787,
+            "baseMax": 787,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:887:108:4:4]]-[[damage:max:887:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 887,
+            "baseMax": 887,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 887,
+            "baseMax": 887,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 887,
+            "baseMax": 887,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 887,
+            "baseMax": 887,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:972:108:4:4]]-[[damage:max:972:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 972,
+            "baseMax": 972,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 972,
+            "baseMax": 972,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 972,
+            "baseMax": 972,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 972,
+            "baseMax": 972,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1033:108:4:4]]-[[damage:max:1033:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 1033,
+            "baseMax": 1033,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 1033,
+            "baseMax": 1033,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 1033,
+            "baseMax": 1033,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 1033,
+            "baseMax": 1033,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1078:108:4:4]]-[[damage:max:1078:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 1078,
+            "baseMax": 1078,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 1078,
+            "baseMax": 1078,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 1078,
+            "baseMax": 1078,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 1078,
+            "baseMax": 1078,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1140:108:4:4]]-[[damage:max:1140:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 1140,
+            "baseMax": 1140,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 1140,
+            "baseMax": 1140,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 1140,
+            "baseMax": 1140,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 1140,
+            "baseMax": 1140,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1202:108:4:4]]-[[damage:max:1202:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 1202,
+            "baseMax": 1202,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 1202,
+            "baseMax": 1202,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 1202,
+            "baseMax": 1202,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 1202,
+            "baseMax": 1202,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1263:108:4:4]]-[[damage:max:1263:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 1263,
+            "baseMax": 1263,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 1263,
+            "baseMax": 1263,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 1263,
+            "baseMax": 1263,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 1263,
+            "baseMax": 1263,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1325:108:4:4]]-[[damage:max:1325:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 1325,
+            "baseMax": 1325,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 1325,
+            "baseMax": 1325,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 1325,
+            "baseMax": 1325,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 1325,
+            "baseMax": 1325,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1370:108:4:4]]-[[damage:max:1370:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 1370,
+            "baseMax": 1370,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 1370,
+            "baseMax": 1370,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 1370,
+            "baseMax": 1370,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 1370,
+            "baseMax": 1370,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1415:108:4:4]]-[[damage:max:1415:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 1415,
+            "baseMax": 1415,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 1415,
+            "baseMax": 1415,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 1415,
+            "baseMax": 1415,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 1415,
+            "baseMax": 1415,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1461:108:4:4]]-[[damage:max:1461:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 1461,
+            "baseMax": 1461,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 1461,
+            "baseMax": 1461,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 1461,
+            "baseMax": 1461,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 1461,
+            "baseMax": 1461,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1506:108:4:4]]-[[damage:max:1506:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 1506,
+            "baseMax": 1506,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 1506,
+            "baseMax": 1506,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 1506,
+            "baseMax": 1506,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 1506,
+            "baseMax": 1506,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1551:108:4:4]]-[[damage:max:1551:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 1551,
+            "baseMax": 1551,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 1551,
+            "baseMax": 1551,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 1551,
+            "baseMax": 1551,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 1551,
+            "baseMax": 1551,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1597:108:4:4]]-[[damage:max:1597:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 1597,
+            "baseMax": 1597,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 1597,
+            "baseMax": 1597,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 1597,
+            "baseMax": 1597,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 1597,
+            "baseMax": 1597,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1642:108:4:4]]-[[damage:max:1642:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 1642,
+            "baseMax": 1642,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 1642,
+            "baseMax": 1642,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 1642,
+            "baseMax": 1642,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 1642,
+            "baseMax": 1642,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1688:108:4:4]]-[[damage:max:1688:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 1688,
+            "baseMax": 1688,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 1688,
+            "baseMax": 1688,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 1688,
+            "baseMax": 1688,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 1688,
+            "baseMax": 1688,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1733:108:4:4]]-[[damage:max:1733:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 1733,
+            "baseMax": 1733,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 1733,
+            "baseMax": 1733,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 1733,
+            "baseMax": 1733,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 1733,
+            "baseMax": 1733,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1778:108:4:4]]-[[damage:max:1778:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 1778,
+            "baseMax": 1778,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 1778,
+            "baseMax": 1778,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 1778,
+            "baseMax": 1778,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 1778,
+            "baseMax": 1778,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1824:108:4:4]]-[[damage:max:1824:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 1824,
+            "baseMax": 1824,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 1824,
+            "baseMax": 1824,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 1824,
+            "baseMax": 1824,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 1824,
+            "baseMax": 1824,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1869:108:4:4]]-[[damage:max:1869:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 1869,
+            "baseMax": 1869,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 1869,
+            "baseMax": 1869,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 1869,
+            "baseMax": 1869,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 1869,
+            "baseMax": 1869,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1914:108:4:4]]-[[damage:max:1914:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 1914,
+            "baseMax": 1914,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 1914,
+            "baseMax": 1914,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 1914,
+            "baseMax": 1914,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 1914,
+            "baseMax": 1914,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1960:108:4:4]]-[[damage:max:1960:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 1960,
+            "baseMax": 1960,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 1960,
+            "baseMax": 1960,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 1960,
+            "baseMax": 1960,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 1960,
+            "baseMax": 1960,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2005:108:4:4]]-[[damage:max:2005:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 2005,
+            "baseMax": 2005,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 2005,
+            "baseMax": 2005,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 2005,
+            "baseMax": 2005,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 2005,
+            "baseMax": 2005,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2050:108:4:4]]-[[damage:max:2050:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 2050,
+            "baseMax": 2050,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 2050,
+            "baseMax": 2050,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 2050,
+            "baseMax": 2050,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 2050,
+            "baseMax": 2050,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2096:108:4:4]]-[[damage:max:2096:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 2096,
+            "baseMax": 2096,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 2096,
+            "baseMax": 2096,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 2096,
+            "baseMax": 2096,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 2096,
+            "baseMax": 2096,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2141:108:4:4]]-[[damage:max:2141:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 2141,
+            "baseMax": 2141,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 2141,
+            "baseMax": 2141,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 2141,
+            "baseMax": 2141,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 2141,
+            "baseMax": 2141,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2187:108:4:4]]-[[damage:max:2187:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 2187,
+            "baseMax": 2187,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 2187,
+            "baseMax": 2187,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 2187,
+            "baseMax": 2187,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 2187,
+            "baseMax": 2187,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2232:108:4:4]]-[[damage:max:2232:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 2232,
+            "baseMax": 2232,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 2232,
+            "baseMax": 2232,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 2232,
+            "baseMax": 2232,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 2232,
+            "baseMax": 2232,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2277:108:4:4]]-[[damage:max:2277:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 2277,
+            "baseMax": 2277,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 2277,
+            "baseMax": 2277,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 2277,
+            "baseMax": 2277,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 2277,
+            "baseMax": 2277,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2323:108:4:4]]-[[damage:max:2323:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 2323,
+            "baseMax": 2323,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 2323,
+            "baseMax": 2323,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 2323,
+            "baseMax": 2323,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 2323,
+            "baseMax": 2323,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2368:108:4:4]]-[[damage:max:2368:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1234000011",
+            "effectGroupId": "123400001",
+            "baseMin": 2368,
+            "baseMax": 2368,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000021",
+            "effectGroupId": "123400002",
+            "baseMin": 2368,
+            "baseMax": 2368,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000031",
+            "effectGroupId": "123400003",
+            "baseMin": 2368,
+            "baseMax": 2368,
+            "attackRatioPercent": 108
+          },
+          {
+            "effectId": "1234000041",
+            "effectGroupId": "123400004",
+            "baseMin": 2368,
+            "baseMax": 2368,
+            "attackRatioPercent": 108
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "844",
+        "level": 1,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 5,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "845",
+        "level": 2,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 5,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "846",
+        "level": 3,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 8,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "847",
+        "level": 4,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 11,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "848",
+        "level": 5,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "849",
+        "level": 6,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "850",
+        "level": 7,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "851",
+        "level": 8,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "852",
+        "level": 9,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "853",
+        "level": 10,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "12340010",
+        "skillId": "12340010",
+        "name": "Flash Rampage",
+        "description": "Absorbs 5% HP",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12340020",
+        "skillId": "12340020",
+        "name": "Flash Rampage",
+        "description": "Restores 120 MP on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12340030",
+        "skillId": "12340030",
+        "name": "Flash Rampage",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12340040",
+        "skillId": "12340040",
+        "name": "Flash Rampage",
+        "description": "Multi-Hit on hit",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12340050",
+        "skillId": "12340050",
+        "name": "Flash Rampage",
+        "description": "-1s to all skill cooldowns on hit",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 4,
+    "classes": [
+      {
+        "code": "templar",
+        "name": "Templar"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Flash Rampage",
+    "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_027.webp",
+    "id": "12340000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:152:108:4:4]]-[[damage:max:152:108:4:4]]</> damage to a target afflicted with Stagger within 4m and increases Enmity."
+  }
+}

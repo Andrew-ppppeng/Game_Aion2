@@ -1,0 +1,41 @@
+NotMeter is a community tool for AION 2 combat records and rankings. Start from the [maintainer's website](https://notmeter.com/) to identify the project and its download destination. The site has separate Korean, Taiwanese and Global character-search choices; that interface alone does not establish that every desktop release works with the current Global patch.
+
+<h2 id="source-and-global-support">Find the source and check Global support</h2>
+
+The website links to the [Not4You-Dev release repository](https://github.com/Not4You-Dev/NotMeter-Releases/releases). At this review, that repository labels **v1.0.246**, published August 29, 2026, as its latest release. Its release body contains no Global compatibility explanation. Follow the current destination from the maintainer's site rather than assuming an older similarly named repository is the active distribution channel.
+
+Before using a desktop build, record its version and check the maintainer's current compatibility information for your service and patch. This guide has not run the executable or tested packet capture in a Global game session. A working website search, a downloadable ZIP and a working combat overlay are three different checks.
+
+<h2 id="maintainer-installation">What the maintainer's installation instructions say</h2>
+
+The maintainer presents this Windows sequence:
+
+1. Install Npcap if it is not already present.
+2. Download NotMeter's ZIP through the website's download link.
+3. Extract the ZIP and run `NotMeter.exe`.
+
+[Npcap's own site](https://npcap.com/) describes it as a Windows network-capture library and driver. Read the current Npcap requirements and the maintainer's instructions together before choosing a driver version. The site's linked installer and the newest version on Npcap's own page may differ; a newer driver is not evidence of tested NotMeter compatibility.
+
+These are the project's published steps, not a setup we have reproduced. If an instruction or permission request differs from the documentation, establish the cause with the maintainer before changing game or security settings. No NC credentials are needed to read the public pages linked here.
+
+<h2 id="read-combat-records">Read DPS and nDPS in context</h2>
+
+The public interface distinguishes DPS from nDPS and describes nDPS rankings as adjusted for party-buff contribution. It offers dungeon, boss, difficulty, CP-range and period filters, and combat details such as total damage, duration and skill contribution. These are the tool's metrics; they are not an NC class-balance verdict.
+
+For a useful comparison, write down the encounter, character configuration and outcome before looking at the headline number. A longer fight, a movement mechanic, a different party or time spent recovering an ally can change the result. Compare several similar attempts, then change one controllable part of your build. Do not treat an isolated leaderboard record as a universal target for levelling or healing.
+
+<GuideVisual id="workflow" />
+
+<h2 id="missing-records">When a search or record is missing</h2>
+
+First separate three problems: the character search cannot load, the desktop tool records no combat, or a recorded fight is absent from the public ranking. They need different evidence. For a search, check service, server and exact name. For capture, report the game patch and tool version. For a ranking, read the site's current eligibility and update notes.
+
+A blank panel does not prove zero damage, zero players or an unsupported class. Keep the exact error and the time it occurred. Ask through the support destination linked by the maintainer, without sending passwords or authentication codes. Avoid changing several settings at once; otherwise you lose the information needed to identify which change mattered.
+
+<h2 id="nc-policy">Is NotMeter officially approved?</h2>
+
+We have not verified NC approval of NotMeter. The [Global operation policy](https://www.plaync.com/policy/operation/aion2global/en) sanctions programs or devices that circumvent protection or interfere with normal service. Its general wording does not specifically classify this tool. For a decision about your account, use NC support and the current Global policy; a maintainer's technical claim cannot establish publisher permission.
+
+To improve a build without relying on a leaderboard number, start with unlocked skills, equipped options and a repeatable manual attack loop in the [builds guide](/builds).
+
+<GuideNext slug="builds" />

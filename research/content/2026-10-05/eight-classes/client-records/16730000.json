@@ -1,0 +1,1496 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/16730000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "16730000",
+    "name": "Spirit's Descent",
+    "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+    "kind": "passive",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 9,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 9,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": []
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "shape": {
+        "code": "self"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "orb",
+        "name": "Orb"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:47:26:1:1]]-[[damage:max:47:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:63:26:1:1]]-[[damage:max:63:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:84:26:1:1]]-[[damage:max:84:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:108:26:1:1]]-[[damage:max:108:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:128:26:1:1]]-[[damage:max:128:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:148:26:1:1]]-[[damage:max:148:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:169:26:1:1]]-[[damage:max:169:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:189:26:1:1]]-[[damage:max:189:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:213:26:1:1]]-[[damage:max:213:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:224:26:1:1]]-[[damage:max:224:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:239:26:1:1]]-[[damage:max:239:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:254:26:1:1]]-[[damage:max:254:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:269:26:1:1]]-[[damage:max:269:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:283:26:1:1]]-[[damage:max:283:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:294:26:1:1]]-[[damage:max:294:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:309:26:1:1]]-[[damage:max:309:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:324:26:1:1]]-[[damage:max:324:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:335:26:1:1]]-[[damage:max:335:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:346:26:1:1]]-[[damage:max:346:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:357:26:1:1]]-[[damage:max:357:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:368:26:1:1]]-[[damage:max:368:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:379:26:1:1]]-[[damage:max:379:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:390:26:1:1]]-[[damage:max:390:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:400:26:1:1]]-[[damage:max:400:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:411:26:1:1]]-[[damage:max:411:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:422:26:1:1]]-[[damage:max:422:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:433:26:1:1]]-[[damage:max:433:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:444:26:1:1]]-[[damage:max:444:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:455:26:1:1]]-[[damage:max:455:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:466:26:1:1]]-[[damage:max:466:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:477:26:1:1]]-[[damage:max:477:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:488:26:1:1]]-[[damage:max:488:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:499:26:1:1]]-[[damage:max:499:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:510:26:1:1]]-[[damage:max:510:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:521:26:1:1]]-[[damage:max:521:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:531:26:1:1]]-[[damage:max:531:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:542:26:1:1]]-[[damage:max:542:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:553:26:1:1]]-[[damage:max:553:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:564:26:1:1]]-[[damage:max:564:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:575:26:1:1]]-[[damage:max:575:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300001",
+            "name": "Spirit's Descent",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "3136",
+        "level": 1,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 9,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3137",
+        "level": 2,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 9,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3138",
+        "level": 3,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3139",
+        "level": 4,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3140",
+        "level": 5,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3141",
+        "level": 6,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3142",
+        "level": 7,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3143",
+        "level": 8,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3144",
+        "level": 9,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3145",
+        "level": 10,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "passive",
+    "kindName": "Passive",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "classes": [
+      {
+        "code": "elementalist",
+        "name": "Spiritmaster"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/passive"
+    ],
+    "name": "Spirit's Descent",
+    "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+    "id": "16730000",
+    "entityType": "skill",
+    "description": "Has a 50% chance to deal <chat_combat>[[damage:min:47:26:1:1]]-[[damage:max:47:26:1:1]]</> extra damage whenever the Spiritmaster's attacks land within 10 seconds of summoning a Spirit. Duration is increased to 30s when an Ancient Spirit is summoned.\n\nCooldown: 1s"
+  }
+}

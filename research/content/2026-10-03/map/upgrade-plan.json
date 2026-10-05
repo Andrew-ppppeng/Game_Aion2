@@ -1,0 +1,211 @@
+{
+  "next": "<GuideNext slug=\"gathering\" />",
+  "sourceUpdates": [
+    {
+      "id": "aion2t",
+      "version": "Global-mode Verteron selector and Hide All → Herbs → Aria filter interaction verified in browser 2026-10-03; screenshot and AX saved; no live-node or respawn verification"
+    }
+  ],
+  "locales": {
+    "en": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "aion2t-verteron-aria",
+            "alt": "Aion2T's English map interface with only Aria herb markers selected in Verteron",
+            "caption": "Aion2T community-tool screenshot, checked October 3, 2026: Global mode, Verteron, Herbs → Aria. English labels are retained. These are tool markers, not a live spawn counter."
+          },
+          "workflow": {
+            "title": "Build a route you can verify",
+            "caption": "Start with one material and one zone. An external marker is a candidate stop, not proof of a live spawn.",
+            "steps": [
+              {
+                "label": "Match faction and zone",
+                "description": "Use the zone displayed by your character, then choose the same zone in the tool."
+              },
+              {
+                "label": "Show one resource",
+                "description": "Hide unrelated layers and select only the material needed by your recipe."
+              },
+              {
+                "label": "Check access and height",
+                "description": "Compare landmarks, paths and cave entrances before ordering nearby stops."
+              },
+              {
+                "label": "Test and record",
+                "description": "Run the compact loop once; note missing nodes, yield and completion before repeating."
+              }
+            ]
+          }
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "choose-map",
+          "position": "sectionEnd",
+          "text": "<GuideVisual id=\"topic\" />"
+        },
+        {
+          "anchor": "resource-route",
+          "position": "afterHeading",
+          "text": "<GuideVisual id=\"workflow\" />"
+        },
+        {
+          "anchor": "resource-route",
+          "position": "sectionEnd",
+          "text": "**Try this exact filter exercise:** open [Aion2T](https://aion2t.com/map), confirm its Global mode and choose **Verteron**. Click **Hide All**, enable **Herbs**, then turn off **Targena** so that only **Aria** remains selected. We tested those controls on October 3. Use the resulting cluster to understand the tool; it does not establish your character's gathering requirement or the location of a currently spawned node. For an Asmodian character, choose **Altgard** first instead of following this Elyos-zone view."
+        }
+      ]
+    },
+    "ja": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "aion2t-verteron-aria",
+            "alt": "VerteronでAriaの草薬マーカーだけを選択したAion2Tの英語マップ画面",
+            "caption": "2026年10月3日確認のコミュニティツールAion2Tの画面。Globalモード、Verteron、Herbs → Ariaを選択しています。英語の表示名を保持しています。印の数は現在出現しているノードの数ではありません。"
+          },
+          "workflow": {
+            "title": "確認できる採集ルートを組む",
+            "caption": "素材と地域を一つずつ選びます。外部マップの印は候補地点であり、現在の出現を保証しません。",
+            "steps": [
+              {
+                "label": "陣営と地域を合わせる",
+                "description": "キャラクターに表示された地域を確認し、ツールでも同じ地域を選びます。"
+              },
+              {
+                "label": "素材を一種類に絞る",
+                "description": "不要なレイヤーを非表示にして、レシピで必要な素材だけを選びます。"
+              },
+              {
+                "label": "進入経路と高さを確認する",
+                "description": "近くの地点を並べる前に、目印、道、洞窟の入口を比較します。"
+              },
+              {
+                "label": "試して記録する",
+                "description": "短いルートを一度回り、不在のノード、収量、完了状況を記録してから繰り返します。"
+              }
+            ]
+          }
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "choose-map",
+          "position": "sectionEnd",
+          "text": "<GuideVisual id=\"topic\" />"
+        },
+        {
+          "anchor": "resource-route",
+          "position": "afterHeading",
+          "text": "<GuideVisual id=\"workflow\" />"
+        },
+        {
+          "anchor": "resource-route",
+          "position": "sectionEnd",
+          "text": "**同じ絞り込みを試す例：** [Aion2T](https://aion2t.com/map)を開き、Globalモードを確認して**Verteron**を選びます。**Hide All**を押し、**Herbs**を有効にしてから**Targena**をオフにし、**Aria**だけを残します。この操作は10月3日に確認しました。表示されたまとまりはツールの使い方を理解するためのものです。キャラクターの採集条件や、現在出現しているノードの位置を保証するものではありません。魔族のキャラクターでは、この天族側の画面を追う前に**Altgard**を選んでください。"
+        }
+      ]
+    },
+    "es": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "aion2t-verteron-aria",
+            "alt": "Interfaz inglesa del mapa de Aion2T con solo los marcadores de la hierba Aria seleccionados en Verteron",
+            "caption": "Captura de la herramienta comunitaria Aion2T, comprobada el 3 de octubre de 2026: modo Global, Verteron, Herbs → Aria. Se conservan las etiquetas inglesas. Son marcadores de la herramienta, no un contador de nodos disponibles."
+          },
+          "workflow": {
+            "title": "Traza una ruta que puedas comprobar",
+            "caption": "Empieza con un material y una zona. Un marcador externo es una parada posible y no confirma que el nodo esté disponible.",
+            "steps": [
+              {
+                "label": "Comprueba facción y zona",
+                "description": "Mira la zona que muestra tu personaje y selecciona la misma en la herramienta."
+              },
+              {
+                "label": "Muestra un recurso",
+                "description": "Oculta las capas ajenas al objetivo y selecciona solo el material de tu receta."
+              },
+              {
+                "label": "Comprueba acceso y altura",
+                "description": "Compara referencias, caminos y entradas de cuevas antes de ordenar las paradas."
+              },
+              {
+                "label": "Prueba y anota",
+                "description": "Recorre el circuito una vez y registra nodos ausentes, rendimiento y progreso antes de repetirlo."
+              }
+            ]
+          }
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "choose-map",
+          "position": "sectionEnd",
+          "text": "<GuideVisual id=\"topic\" />"
+        },
+        {
+          "anchor": "resource-route",
+          "position": "afterHeading",
+          "text": "<GuideVisual id=\"workflow\" />"
+        },
+        {
+          "anchor": "resource-route",
+          "position": "sectionEnd",
+          "text": "**Prueba este filtro concreto:** abre [Aion2T](https://aion2t.com/map), confirma su modo Global y selecciona **Verteron**. Pulsa **Hide All**, activa **Herbs** y desactiva **Targena** para dejar solo **Aria**. Comprobamos esos controles el 3 de octubre. Usa el grupo resultante para aprender la interfaz; no establece los requisitos de recolección de tu personaje ni la posición de un nodo disponible ahora. Si juegas con un Asmodiano, selecciona primero **Altgard** en vez de seguir esta vista de la zona Elios."
+        }
+      ]
+    },
+    "de": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "aion2t-verteron-aria",
+            "alt": "Englische Kartenoberfläche von Aion2T mit ausschließlich ausgewählten Aria-Kräutermarkern in Verteron",
+            "caption": "Screenshot des Community-Werkzeugs Aion2T, geprüft am 3. Oktober 2026: Global-Modus, Verteron, Herbs → Aria. Englische Beschriftungen bleiben erhalten. Die Marker zählen keine aktuell verfügbaren Knoten."
+          },
+          "workflow": {
+            "title": "Eine überprüfbare Route planen",
+            "caption": "Beginne mit einem Material und einer Zone. Ein externer Marker bezeichnet einen möglichen Halt und bestätigt keinen aktuellen Spawn.",
+            "steps": [
+              {
+                "label": "Fraktion und Zone abgleichen",
+                "description": "Prüfe die Zone deines Charakters und wähle dieselbe Zone im Werkzeug."
+              },
+              {
+                "label": "Ein Material anzeigen",
+                "description": "Blende andere Ebenen aus und wähle nur das Material für dein Rezept."
+              },
+              {
+                "label": "Zugang und Höhe prüfen",
+                "description": "Vergleiche Orientierungspunkte, Wege und Höhleneingänge, bevor du nahe Stationen ordnest."
+              },
+              {
+                "label": "Testen und dokumentieren",
+                "description": "Laufe die kurze Runde einmal und notiere fehlende Knoten, Ausbeute und Fortschritt vor der Wiederholung."
+              }
+            ]
+          }
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "choose-map",
+          "position": "sectionEnd",
+          "text": "<GuideVisual id=\"topic\" />"
+        },
+        {
+          "anchor": "resource-route",
+          "position": "afterHeading",
+          "text": "<GuideVisual id=\"workflow\" />"
+        },
+        {
+          "anchor": "resource-route",
+          "position": "sectionEnd",
+          "text": "**Probiere genau diesen Filter aus:** Öffne [Aion2T](https://aion2t.com/map), prüfe den Global-Modus und wähle **Verteron**. Klicke auf **Hide All**, aktiviere **Herbs** und deaktiviere **Targena**, sodass nur **Aria** ausgewählt bleibt. Diese Bedienung haben wir am 3. Oktober geprüft. Die angezeigte Gruppe erklärt die Werkzeugoberfläche; sie bestätigt weder die Sammelanforderung deines Charakters noch einen aktuell verfügbaren Knoten. Wähle als Asmodier zuerst **Altgard**, statt dieser Ansicht einer Elyos-Zone zu folgen."
+        }
+      ]
+    }
+  }
+}

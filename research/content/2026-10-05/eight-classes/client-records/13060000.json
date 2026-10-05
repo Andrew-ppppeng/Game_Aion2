@@ -1,0 +1,1723 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/13060000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "13060000",
+    "name": "Ambush",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_006.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 3,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 3,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 6,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 9,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "13060010",
+        "description": "Engraves 2 Insignias for 10s on landing as a Back attack",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13060020",
+        "description": "Absorbs 3% HP",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13060030",
+        "description": "Breaks Protective Shields on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13060040",
+        "description": "50% chance to trigger [Whirlwind Slice] on hit",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13060050",
+        "description": "+2 consecutive uses",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "rectangle"
+      },
+      "reachMeters": 5.9,
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 100
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "dagger",
+        "name": "Dagger"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:126:138:1:1]]-[[damage:max:126:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 126,
+            "baseMax": 126,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 164,
+            "baseMax": 164,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:180:138:1:1]]-[[damage:max:180:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 180,
+            "baseMax": 180,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 234,
+            "baseMax": 234,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:233:138:1:1]]-[[damage:max:233:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 233,
+            "baseMax": 233,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 304,
+            "baseMax": 304,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:314:138:1:1]]-[[damage:max:314:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 314,
+            "baseMax": 314,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 409,
+            "baseMax": 409,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:416:138:1:1]]-[[damage:max:416:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 416,
+            "baseMax": 416,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 540,
+            "baseMax": 540,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:538:138:1:1]]-[[damage:max:538:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 538,
+            "baseMax": 538,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 699,
+            "baseMax": 699,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:639:138:1:1]]-[[damage:max:639:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 639,
+            "baseMax": 639,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 831,
+            "baseMax": 831,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:741:138:1:1]]-[[damage:max:741:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 741,
+            "baseMax": 741,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 963,
+            "baseMax": 963,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:842:138:1:1]]-[[damage:max:842:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 842,
+            "baseMax": 842,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 1095,
+            "baseMax": 1095,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:943:138:1:1]]-[[damage:max:943:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 943,
+            "baseMax": 943,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 1227,
+            "baseMax": 1227,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1066:138:1:1]]-[[damage:max:1066:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 1066,
+            "baseMax": 1066,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 1385,
+            "baseMax": 1385,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1167:138:1:1]]-[[damage:max:1167:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 1167,
+            "baseMax": 1167,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 1517,
+            "baseMax": 1517,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1242:138:1:1]]-[[damage:max:1242:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 1242,
+            "baseMax": 1242,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 1614,
+            "baseMax": 1614,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1295:138:1:1]]-[[damage:max:1295:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 1295,
+            "baseMax": 1295,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 1684,
+            "baseMax": 1684,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1370:138:1:1]]-[[damage:max:1370:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 1370,
+            "baseMax": 1370,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 1781,
+            "baseMax": 1781,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1444:138:1:1]]-[[damage:max:1444:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 1444,
+            "baseMax": 1444,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 1878,
+            "baseMax": 1878,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1519:138:1:1]]-[[damage:max:1519:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 1519,
+            "baseMax": 1519,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 1975,
+            "baseMax": 1975,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1593:138:1:1]]-[[damage:max:1593:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 1593,
+            "baseMax": 1593,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 2072,
+            "baseMax": 2072,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1647:138:1:1]]-[[damage:max:1647:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 1647,
+            "baseMax": 1647,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 2142,
+            "baseMax": 2142,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1701:138:1:1]]-[[damage:max:1701:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 1701,
+            "baseMax": 1701,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 2212,
+            "baseMax": 2212,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1755:138:1:1]]-[[damage:max:1755:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 1755,
+            "baseMax": 1755,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 2281,
+            "baseMax": 2281,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1809:138:1:1]]-[[damage:max:1809:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 1809,
+            "baseMax": 1809,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 2351,
+            "baseMax": 2351,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1863:138:1:1]]-[[damage:max:1863:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 1863,
+            "baseMax": 1863,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 2421,
+            "baseMax": 2421,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1916:138:1:1]]-[[damage:max:1916:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 1916,
+            "baseMax": 1916,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 2491,
+            "baseMax": 2491,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1970:138:1:1]]-[[damage:max:1970:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 1970,
+            "baseMax": 1970,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 2561,
+            "baseMax": 2561,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2024:138:1:1]]-[[damage:max:2024:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 2024,
+            "baseMax": 2024,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 2631,
+            "baseMax": 2631,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2078:138:1:1]]-[[damage:max:2078:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 2078,
+            "baseMax": 2078,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 2701,
+            "baseMax": 2701,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2132:138:1:1]]-[[damage:max:2132:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 2132,
+            "baseMax": 2132,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 2771,
+            "baseMax": 2771,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2185:138:1:1]]-[[damage:max:2185:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 2185,
+            "baseMax": 2185,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 2841,
+            "baseMax": 2841,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2239:138:1:1]]-[[damage:max:2239:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 2239,
+            "baseMax": 2239,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 2911,
+            "baseMax": 2911,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2293:138:1:1]]-[[damage:max:2293:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 2293,
+            "baseMax": 2293,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 2981,
+            "baseMax": 2981,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2347:138:1:1]]-[[damage:max:2347:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 2347,
+            "baseMax": 2347,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 3051,
+            "baseMax": 3051,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2401:138:1:1]]-[[damage:max:2401:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 2401,
+            "baseMax": 2401,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 3121,
+            "baseMax": 3121,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2455:138:1:1]]-[[damage:max:2455:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 2455,
+            "baseMax": 2455,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 3191,
+            "baseMax": 3191,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2508:138:1:1]]-[[damage:max:2508:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 2508,
+            "baseMax": 2508,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 3261,
+            "baseMax": 3261,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2562:138:1:1]]-[[damage:max:2562:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 2562,
+            "baseMax": 2562,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 3331,
+            "baseMax": 3331,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2616:138:1:1]]-[[damage:max:2616:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 2616,
+            "baseMax": 2616,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 3401,
+            "baseMax": 3401,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2670:138:1:1]]-[[damage:max:2670:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 2670,
+            "baseMax": 2670,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 3471,
+            "baseMax": 3471,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2724:138:1:1]]-[[damage:max:2724:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 2724,
+            "baseMax": 2724,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 3541,
+            "baseMax": 3541,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2777:138:1:1]]-[[damage:max:2777:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1306000011",
+            "effectGroupId": "130600001",
+            "baseMin": 2777,
+            "baseMax": 2777,
+            "attackRatioPercent": 138
+          },
+          {
+            "effectId": "1306000012",
+            "effectGroupId": "130600001",
+            "baseMin": 3611,
+            "baseMax": 3611,
+            "attackRatioPercent": 179.4
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "1372",
+        "level": 1,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 3,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1373",
+        "level": 2,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 3,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1374",
+        "level": 3,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 6,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1375",
+        "level": 4,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 9,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1376",
+        "level": 5,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1377",
+        "level": 6,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1378",
+        "level": 7,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1379",
+        "level": 8,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1380",
+        "level": 9,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1381",
+        "level": 10,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "13060010",
+        "skillId": "13060010",
+        "name": "Ambush",
+        "description": "Engraves 2 Insignias for 10s on landing as a Back attack",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13060020",
+        "skillId": "13060020",
+        "name": "Ambush",
+        "description": "Absorbs 3% HP",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13060030",
+        "skillId": "13060030",
+        "name": "Ambush",
+        "description": "Breaks Protective Shields on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13060040",
+        "skillId": "13060040",
+        "name": "Ambush",
+        "description": "50% chance to trigger [Whirlwind Slice] on hit",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13060050",
+        "skillId": "13060050",
+        "name": "Ambush",
+        "description": "+2 consecutive uses",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 4,
+    "cooldownSeconds": 10,
+    "classes": [
+      {
+        "code": "assassin",
+        "name": "Assassin"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Ambush",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_006.webp",
+    "id": "13060000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:126:138:1:1]]-[[damage:max:126:138:1:1]]</> damage to a target within 4m. Increases damage by 30% on landing as a Back attack.\n\n7 Stagger Gauge Damage"
+  }
+}

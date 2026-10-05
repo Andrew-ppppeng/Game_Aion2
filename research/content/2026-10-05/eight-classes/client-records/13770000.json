@@ -1,0 +1,1497 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/13770000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "13770000",
+    "name": "Ambush Stance",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+    "kind": "passive",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 17,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 35,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 38,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 41,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": []
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "relation": "anyone",
+      "shape": {
+        "code": "self"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "dagger",
+        "name": "Dagger"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:152:39:1:1]]-[[damage:max:152:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:180:39:1:1]]-[[damage:max:180:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:209:39:1:1]]-[[damage:max:209:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:238:39:1:1]]-[[damage:max:238:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:266:39:1:1]]-[[damage:max:266:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:301:39:1:1]]-[[damage:max:301:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:329:39:1:1]]-[[damage:max:329:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:351:39:1:1]]-[[damage:max:351:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:366:39:1:1]]-[[damage:max:366:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:387:39:1:1]]-[[damage:max:387:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:408:39:1:1]]-[[damage:max:408:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:429:39:1:1]]-[[damage:max:429:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:450:39:1:1]]-[[damage:max:450:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:465:39:1:1]]-[[damage:max:465:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:480:39:1:1]]-[[damage:max:480:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:496:39:1:1]]-[[damage:max:496:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:511:39:1:1]]-[[damage:max:511:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:526:39:1:1]]-[[damage:max:526:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:541:39:1:1]]-[[damage:max:541:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:556:39:1:1]]-[[damage:max:556:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:572:39:1:1]]-[[damage:max:572:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:587:39:1:1]]-[[damage:max:587:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:602:39:1:1]]-[[damage:max:602:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:617:39:1:1]]-[[damage:max:617:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:632:39:1:1]]-[[damage:max:632:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:648:39:1:1]]-[[damage:max:648:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:663:39:1:1]]-[[damage:max:663:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:678:39:1:1]]-[[damage:max:678:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:693:39:1:1]]-[[damage:max:693:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:709:39:1:1]]-[[damage:max:709:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:724:39:1:1]]-[[damage:max:724:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:739:39:1:1]]-[[damage:max:739:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:754:39:1:1]]-[[damage:max:754:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:769:39:1:1]]-[[damage:max:769:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:785:39:1:1]]-[[damage:max:785:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:800:39:1:1]]-[[damage:max:800:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:815:39:1:1]]-[[damage:max:815:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:830:39:1:1]]-[[damage:max:830:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:845:39:1:1]]-[[damage:max:845:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:861:39:1:1]]-[[damage:max:861:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137700001",
+            "name": "Ambush Stance",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effect": "Applies Ambush Stance effect for 10s when using a movement skill",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Ambush Stance",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+              "id": "137700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "1525",
+        "level": 1,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 17,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1526",
+        "level": 2,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1527",
+        "level": 3,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1528",
+        "level": 4,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1529",
+        "level": 5,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1530",
+        "level": 6,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1531",
+        "level": 7,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1532",
+        "level": 8,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 35,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1533",
+        "level": 9,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 38,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1534",
+        "level": 10,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 41,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "passive",
+    "kindName": "Passive",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "classes": [
+      {
+        "code": "assassin",
+        "name": "Assassin"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/passive"
+    ],
+    "name": "Ambush Stance",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_007.webp",
+    "id": "13770000",
+    "entityType": "skill",
+    "description": "Grants Ambush Stance for 10s when using skills that rush or involve movement.\nAmbush Stance: Has a 50% chance to deal <chat_combat>[[damage:min:152:39:1:1]]-[[damage:max:152:39:1:1]]</> damage on landing an attack.\n\nCooldown: 1s"
+  }
+}

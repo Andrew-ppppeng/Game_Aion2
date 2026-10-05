@@ -1,0 +1,1497 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/18780000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "18780000",
+    "name": "Earth's Promise",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_010.webp",
+    "kind": "passive",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": []
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "relation": "anyone",
+      "shape": {
+        "code": "self"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "staff",
+        "name": "Staff"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>5.4%</> and PvP Damage Tolerance by <chat_combat>2.7%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>5.8%</> and PvP Damage Tolerance by <chat_combat>2.9%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>6.2%</> and PvP Damage Tolerance by <chat_combat>3.1%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>6.6%</> and PvP Damage Tolerance by <chat_combat>3.3%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>7%</> and PvP Damage Tolerance by <chat_combat>3.5%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>7.4%</> and PvP Damage Tolerance by <chat_combat>3.7%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>7.8%</> and PvP Damage Tolerance by <chat_combat>3.9%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>8.2%</> and PvP Damage Tolerance by <chat_combat>4.1%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>8.6%</> and PvP Damage Tolerance by <chat_combat>4.3%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>9%</> and PvP Damage Tolerance by <chat_combat>4.5%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>9.4%</> and PvP Damage Tolerance by <chat_combat>4.7%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>9.8%</> and PvP Damage Tolerance by <chat_combat>4.9%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>10.2%</> and PvP Damage Tolerance by <chat_combat>5.1%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>10.6%</> and PvP Damage Tolerance by <chat_combat>5.3%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>11%</> and PvP Damage Tolerance by <chat_combat>5.5%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>11.4%</> and PvP Damage Tolerance by <chat_combat>5.7%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>11.8%</> and PvP Damage Tolerance by <chat_combat>5.9%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>12.2%</> and PvP Damage Tolerance by <chat_combat>6.1%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>12.6%</> and PvP Damage Tolerance by <chat_combat>6.3%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>13%</> and PvP Damage Tolerance by <chat_combat>6.5%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>13.4%</> and PvP Damage Tolerance by <chat_combat>6.7%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>13.8%</> and PvP Damage Tolerance by <chat_combat>6.9%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>14.2%</> and PvP Damage Tolerance by <chat_combat>7.1%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>14.6%</> and PvP Damage Tolerance by <chat_combat>7.3%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>15%</> and PvP Damage Tolerance by <chat_combat>7.5%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>15.4%</> and PvP Damage Tolerance by <chat_combat>7.7%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>15.8%</> and PvP Damage Tolerance by <chat_combat>7.9%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>16.2%</> and PvP Damage Tolerance by <chat_combat>8.1%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>16.6%</> and PvP Damage Tolerance by <chat_combat>8.3%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>17%</> and PvP Damage Tolerance by <chat_combat>8.5%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>17.4%</> and PvP Damage Tolerance by <chat_combat>8.7%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>17.8%</> and PvP Damage Tolerance by <chat_combat>8.9%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>18.2%</> and PvP Damage Tolerance by <chat_combat>9.1%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>18.6%</> and PvP Damage Tolerance by <chat_combat>9.3%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>19%</> and PvP Damage Tolerance by <chat_combat>9.5%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>19.4%</> and PvP Damage Tolerance by <chat_combat>9.7%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>19.8%</> and PvP Damage Tolerance by <chat_combat>9.9%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>20.2%</> and PvP Damage Tolerance by <chat_combat>10.1%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>20.6%</> and PvP Damage Tolerance by <chat_combat>10.3%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>21%</> and PvP Damage Tolerance by <chat_combat>10.5%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "187800001",
+            "name": "Earth's Promise",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Reduces target PvE Damage Tolerance and PvP Damage Tolerance on landing an attack",
+            "effect": "Reduces target PvE Damage Tolerance by <desc_point>5.4%</> and PvP Damage Tolerance by <desc_point>2.7%</> on hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Earth's Promise",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_008.webp",
+              "id": "187800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": true,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "4282",
+        "level": 1,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4283",
+        "level": 2,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4284",
+        "level": 3,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4285",
+        "level": 4,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4286",
+        "level": 5,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4287",
+        "level": 6,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4288",
+        "level": 7,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4289",
+        "level": 8,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4290",
+        "level": 9,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4291",
+        "level": 10,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "passive",
+    "kindName": "Passive",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "classes": [
+      {
+        "code": "chanter",
+        "name": "Chanter"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/passive"
+    ],
+    "name": "Earth's Promise",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_passive_010.webp",
+    "id": "18780000",
+    "entityType": "skill",
+    "description": "Reduces the target's PvE Damage Tolerance by <chat_combat>5.4%</> and PvP Damage Tolerance by <chat_combat>2.7%</> for 5s each time an attack lands.\n\n[Earth's Promise]'s PvE/PvP Damage Tolerance reduction effect does not apply when used together with the Cleric skill [Chain of Torment].\n\nCooldown: 10s"
+  }
+}

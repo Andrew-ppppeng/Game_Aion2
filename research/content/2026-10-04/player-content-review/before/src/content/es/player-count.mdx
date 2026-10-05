@@ -1,0 +1,39 @@
+Al buscar el número de jugadores de AION 2, suele interesar la concurrencia en Steam. En nuestra revisión del 3 de octubre de 2026, [las gráficas de AION 2 en SteamDB](https://steamdb.info/app/3393110/charts/) mostraban **146,250 jugadores** y un máximo registrado de **171,530**. Estas cifras son una instantánea de un servicio independiente para la aplicación de Steam **3393110**. Consulta la fuente para ver su última lectura.
+
+<h2 id="steam-snapshot">Instantánea del número de jugadores en Steam</h2>
+
+Revisado el **3 de octubre de 2026 a las 15:48 UTC**. Es la hora a la que leímos la página, no una marca de medición indicada por el proveedor.
+
+| Métrica de SteamDB | Valor | Cómo interpretarla |
+| --- | --- | --- |
+| Jugadores mostrados al revisar | 146,250 | La concurrencia que aparecía durante la revisión de esta guía |
+| Máximo de las 24 horas anteriores | 146,250 | La mayor concurrencia dentro de la ventana móvil del proveedor |
+| Máximo histórico registrado | 171,530 | El máximo que registra el proveedor, fechado el 2026-09-30 |
+
+Esta guía no actualiza automáticamente esos valores. SteamDB es un servicio independiente: leímos su gráfica en el navegador y la consulta directa a la API oficial no produjo un JSON utilizable durante la revisión. Un fallo de consulta no debe convertirse en un recuento de cero.
+
+<h2 id="what-count-means">Concurrencia, jugadores diarios y cuentas totales</h2>
+
+[La documentación de jugadores actuales de Steam](https://partner.steamgames.com/doc/webapi/ISteamUserStats) describe jugadores activos en una aplicación de Steam y excluye a quienes no están conectados a Steam. Incluye ese alcance junto al número cuando lo compartas.
+
+La concurrencia describe actividad simultánea. No revela cuántas personas distintas entraron durante todo el día, cuántas cuentas existen ni cuántos usuarios emplean otro cliente. No sumes un valor actual y un máximo: sus mediciones se solapan. No tenemos un total verificado que combine Steam, PURPLE y los servicios regionales.
+
+<GuideVisual id="workflow" />
+
+<h2 id="steamcharts-and-steamdb">Encontrar AION 2 en SteamCharts y SteamDB</h2>
+
+Antes de comparar, confirma la identidad de la aplicación: **AION 2**, ID **3393110**, desarrollador y editor **NC**. La pestaña Charts de SteamDB proporcionó la instantánea anterior. Su pestaña Metadata tiene otra función, como identificar la aplicación y sus cambios.
+
+La [consulta de la aplicación 3393110 en SteamCharts](https://steamcharts.com/app/3393110) devolvió Page Not Found durante esta revisión. Por ello no tenemos una cifra de SteamCharts para comparar. La ausencia de una página informa de la disponibilidad de esa fuente, no de la población del juego. Si aparece posteriormente, comprueba fecha, aplicación y etiquetas de las métricas antes de tratar ambos servicios como equivalentes.
+
+<h2 id="compare-over-time">Comparar sin mezclar ventanas temporales</h2>
+
+Guarda la fuente, la hora de lectura, la zona horaria y la métrica de cada observación. Compara días de la semana y franjas horarias similares, y anota anuncios que puedan afectar al acceso. La [guía de mantenimiento](/maintenance) reúne anuncios fechados de Global.
+
+Una única lectura inferior no demuestra un descenso a largo plazo. Comprueba primero si una lectura es actual y la otra un máximo, o si sus ventanas son distintas. Varias observaciones comparables ayudan a interpretar una tendencia. Aquí no calculamos una variación porcentual porque no hemos capturado una serie con condiciones equivalentes.
+
+<h2 id="choose-a-server">Usar los datos al elegir servidor</h2>
+
+La concurrencia de Steam para todo el juego no muestra el equilibrio de facciones, los grupos disponibles en tu servidor ni sus colas. Elige región y servidor con la [guía de servidores de Global](/server), y después evalúa la actividad que afecta a tus horas de juego. La gráfica aporta contexto, no un censo por servidor.
+
+<GuideNext slug="server" />

@@ -1,0 +1,5204 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/13130000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "13130000",
+    "name": "Insignia Explosion",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_013.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 14,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 35,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 38,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "13130010",
+        "description": "Adds rotate effect",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13130020",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13130030",
+        "description": "Keep 2 stacks of Insignias after [Insignia Explosion]",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13130040",
+        "description": "+1s Stun duration",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13130050",
+        "description": "-3s cooldown",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Mobile</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "circle"
+      },
+      "reachMeters": 4,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 200
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "dagger",
+        "name": "Dagger"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:663:220:1:1]]-[[damage:max:663:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:742:246.4:1:1]]-[[damage:max:742:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:822:272.8:1:1]]-[[damage:max:822:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:902:299.2:1:1]]-[[damage:max:902:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:981:325.6:1:1]]-[[damage:max:981:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:1061:352:1:1]]-[[damage:max:1061:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 663,
+            "baseMax": 663,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 663,
+            "baseMax": 663,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 742,
+            "baseMax": 742,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 742,
+            "baseMax": 742,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 822,
+            "baseMax": 822,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 822,
+            "baseMax": 822,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 902,
+            "baseMax": 902,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 902,
+            "baseMax": 902,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 981,
+            "baseMax": 981,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 981,
+            "baseMax": 981,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 1061,
+            "baseMax": 1061,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 1061,
+            "baseMax": 1061,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:858:220:1:1]]-[[damage:max:858:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:960:246.4:1:1]]-[[damage:max:960:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:1063:272.8:1:1]]-[[damage:max:1063:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:1166:299.2:1:1]]-[[damage:max:1166:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:1269:325.6:1:1]]-[[damage:max:1269:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:1372:352:1:1]]-[[damage:max:1372:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 858,
+            "baseMax": 858,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 858,
+            "baseMax": 858,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 960,
+            "baseMax": 960,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 960,
+            "baseMax": 960,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 1063,
+            "baseMax": 1063,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 1063,
+            "baseMax": 1063,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 1166,
+            "baseMax": 1166,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 1166,
+            "baseMax": 1166,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 1269,
+            "baseMax": 1269,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 1269,
+            "baseMax": 1269,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 1372,
+            "baseMax": 1372,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 1372,
+            "baseMax": 1372,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1019:220:1:1]]-[[damage:max:1019:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:1142:246.4:1:1]]-[[damage:max:1142:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:1264:272.8:1:1]]-[[damage:max:1264:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:1386:299.2:1:1]]-[[damage:max:1386:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:1509:325.6:1:1]]-[[damage:max:1509:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:1631:352:1:1]]-[[damage:max:1631:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 1019,
+            "baseMax": 1019,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 1019,
+            "baseMax": 1019,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 1142,
+            "baseMax": 1142,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 1142,
+            "baseMax": 1142,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 1264,
+            "baseMax": 1264,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 1264,
+            "baseMax": 1264,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 1386,
+            "baseMax": 1386,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 1386,
+            "baseMax": 1386,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 1509,
+            "baseMax": 1509,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 1509,
+            "baseMax": 1509,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 1631,
+            "baseMax": 1631,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 1631,
+            "baseMax": 1631,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1181:220:1:1]]-[[damage:max:1181:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:1323:246.4:1:1]]-[[damage:max:1323:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:1464:272.8:1:1]]-[[damage:max:1464:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:1606:299.2:1:1]]-[[damage:max:1606:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:1748:325.6:1:1]]-[[damage:max:1748:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:1890:352:1:1]]-[[damage:max:1890:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 1181,
+            "baseMax": 1181,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 1181,
+            "baseMax": 1181,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 1323,
+            "baseMax": 1323,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 1323,
+            "baseMax": 1323,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 1464,
+            "baseMax": 1464,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 1464,
+            "baseMax": 1464,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 1606,
+            "baseMax": 1606,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 1606,
+            "baseMax": 1606,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 1748,
+            "baseMax": 1748,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 1748,
+            "baseMax": 1748,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 1890,
+            "baseMax": 1890,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 1890,
+            "baseMax": 1890,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1343:220:1:1]]-[[damage:max:1343:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:1504:246.4:1:1]]-[[damage:max:1504:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:1665:272.8:1:1]]-[[damage:max:1665:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:1826:299.2:1:1]]-[[damage:max:1826:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:1987:325.6:1:1]]-[[damage:max:1987:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:2148:352:1:1]]-[[damage:max:2148:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 1343,
+            "baseMax": 1343,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 1343,
+            "baseMax": 1343,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 1504,
+            "baseMax": 1504,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 1504,
+            "baseMax": 1504,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 1665,
+            "baseMax": 1665,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 1665,
+            "baseMax": 1665,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 1826,
+            "baseMax": 1826,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 1826,
+            "baseMax": 1826,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 1987,
+            "baseMax": 1987,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 1987,
+            "baseMax": 1987,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 2148,
+            "baseMax": 2148,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 2148,
+            "baseMax": 2148,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1504:220:1:1]]-[[damage:max:1504:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:1685:246.4:1:1]]-[[damage:max:1685:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:1865:272.8:1:1]]-[[damage:max:1865:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:2046:299.2:1:1]]-[[damage:max:2046:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:2227:325.6:1:1]]-[[damage:max:2227:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:2407:352:1:1]]-[[damage:max:2407:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 1504,
+            "baseMax": 1504,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 1504,
+            "baseMax": 1504,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 1685,
+            "baseMax": 1685,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 1685,
+            "baseMax": 1685,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 1865,
+            "baseMax": 1865,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 1865,
+            "baseMax": 1865,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 2046,
+            "baseMax": 2046,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 2046,
+            "baseMax": 2046,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 2227,
+            "baseMax": 2227,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 2227,
+            "baseMax": 2227,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 2407,
+            "baseMax": 2407,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 2407,
+            "baseMax": 2407,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1699:220:1:1]]-[[damage:max:1699:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:1903:246.4:1:1]]-[[damage:max:1903:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:2107:272.8:1:1]]-[[damage:max:2107:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:2311:299.2:1:1]]-[[damage:max:2311:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:2515:325.6:1:1]]-[[damage:max:2515:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:2719:352:1:1]]-[[damage:max:2719:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 1699,
+            "baseMax": 1699,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 1699,
+            "baseMax": 1699,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 1903,
+            "baseMax": 1903,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 1903,
+            "baseMax": 1903,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 2107,
+            "baseMax": 2107,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 2107,
+            "baseMax": 2107,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 2311,
+            "baseMax": 2311,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 2311,
+            "baseMax": 2311,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 2515,
+            "baseMax": 2515,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 2515,
+            "baseMax": 2515,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 2719,
+            "baseMax": 2719,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 2719,
+            "baseMax": 2719,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1861:220:1:1]]-[[damage:max:1861:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:2084:246.4:1:1]]-[[damage:max:2084:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:2307:272.8:1:1]]-[[damage:max:2307:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:2531:299.2:1:1]]-[[damage:max:2531:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:2754:325.6:1:1]]-[[damage:max:2754:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:2977:352:1:1]]-[[damage:max:2977:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 1861,
+            "baseMax": 1861,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 1861,
+            "baseMax": 1861,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 2084,
+            "baseMax": 2084,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 2084,
+            "baseMax": 2084,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 2307,
+            "baseMax": 2307,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 2307,
+            "baseMax": 2307,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 2531,
+            "baseMax": 2531,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 2531,
+            "baseMax": 2531,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 2754,
+            "baseMax": 2754,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 2754,
+            "baseMax": 2754,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 2977,
+            "baseMax": 2977,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 2977,
+            "baseMax": 2977,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1980:220:1:1]]-[[damage:max:1980:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:2217:246.4:1:1]]-[[damage:max:2217:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:2455:272.8:1:1]]-[[damage:max:2455:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:2692:299.2:1:1]]-[[damage:max:2692:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:2930:325.6:1:1]]-[[damage:max:2930:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:3168:352:1:1]]-[[damage:max:3168:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 1980,
+            "baseMax": 1980,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 1980,
+            "baseMax": 1980,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 2217,
+            "baseMax": 2217,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 2217,
+            "baseMax": 2217,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 2455,
+            "baseMax": 2455,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 2455,
+            "baseMax": 2455,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 2692,
+            "baseMax": 2692,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 2692,
+            "baseMax": 2692,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 2930,
+            "baseMax": 2930,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 2930,
+            "baseMax": 2930,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 3168,
+            "baseMax": 3168,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 3168,
+            "baseMax": 3168,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2065:220:1:1]]-[[damage:max:2065:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:2313:246.4:1:1]]-[[damage:max:2313:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:2561:272.8:1:1]]-[[damage:max:2561:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:2809:299.2:1:1]]-[[damage:max:2809:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:3057:325.6:1:1]]-[[damage:max:3057:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:3305:352:1:1]]-[[damage:max:3305:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 2065,
+            "baseMax": 2065,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 2065,
+            "baseMax": 2065,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 2313,
+            "baseMax": 2313,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 2313,
+            "baseMax": 2313,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 2561,
+            "baseMax": 2561,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 2561,
+            "baseMax": 2561,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 2809,
+            "baseMax": 2809,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 2809,
+            "baseMax": 2809,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 3057,
+            "baseMax": 3057,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 3057,
+            "baseMax": 3057,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 3305,
+            "baseMax": 3305,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 3305,
+            "baseMax": 3305,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2184:220:1:1]]-[[damage:max:2184:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:2446:246.4:1:1]]-[[damage:max:2446:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:2708:272.8:1:1]]-[[damage:max:2708:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:2971:299.2:1:1]]-[[damage:max:2971:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:3233:325.6:1:1]]-[[damage:max:3233:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:3495:352:1:1]]-[[damage:max:3495:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 2184,
+            "baseMax": 2184,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 2184,
+            "baseMax": 2184,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 2446,
+            "baseMax": 2446,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 2446,
+            "baseMax": 2446,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 2708,
+            "baseMax": 2708,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 2708,
+            "baseMax": 2708,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 2971,
+            "baseMax": 2971,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 2971,
+            "baseMax": 2971,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 3233,
+            "baseMax": 3233,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 3233,
+            "baseMax": 3233,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 3495,
+            "baseMax": 3495,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 3495,
+            "baseMax": 3495,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2303:220:1:1]]-[[damage:max:2303:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:2579:246.4:1:1]]-[[damage:max:2579:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:2856:272.8:1:1]]-[[damage:max:2856:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:3132:299.2:1:1]]-[[damage:max:3132:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:3409:325.6:1:1]]-[[damage:max:3409:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:3685:352:1:1]]-[[damage:max:3685:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 2303,
+            "baseMax": 2303,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 2303,
+            "baseMax": 2303,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 2579,
+            "baseMax": 2579,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 2579,
+            "baseMax": 2579,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 2856,
+            "baseMax": 2856,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 2856,
+            "baseMax": 2856,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 3132,
+            "baseMax": 3132,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 3132,
+            "baseMax": 3132,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 3409,
+            "baseMax": 3409,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 3409,
+            "baseMax": 3409,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 3685,
+            "baseMax": 3685,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 3685,
+            "baseMax": 3685,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2422:220:1:1]]-[[damage:max:2422:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:2712:246.4:1:1]]-[[damage:max:2712:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:3003:272.8:1:1]]-[[damage:max:3003:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:3294:299.2:1:1]]-[[damage:max:3294:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:3584:325.6:1:1]]-[[damage:max:3584:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:3875:352:1:1]]-[[damage:max:3875:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 2422,
+            "baseMax": 2422,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 2422,
+            "baseMax": 2422,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 2712,
+            "baseMax": 2712,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 2712,
+            "baseMax": 2712,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 3003,
+            "baseMax": 3003,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 3003,
+            "baseMax": 3003,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 3294,
+            "baseMax": 3294,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 3294,
+            "baseMax": 3294,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 3584,
+            "baseMax": 3584,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 3584,
+            "baseMax": 3584,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 3875,
+            "baseMax": 3875,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 3875,
+            "baseMax": 3875,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2541:220:1:1]]-[[damage:max:2541:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:2845:246.4:1:1]]-[[damage:max:2845:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:3150:272.8:1:1]]-[[damage:max:3150:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:3455:299.2:1:1]]-[[damage:max:3455:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:3760:325.6:1:1]]-[[damage:max:3760:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:4065:352:1:1]]-[[damage:max:4065:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 2541,
+            "baseMax": 2541,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 2541,
+            "baseMax": 2541,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 2845,
+            "baseMax": 2845,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 2845,
+            "baseMax": 2845,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 3150,
+            "baseMax": 3150,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 3150,
+            "baseMax": 3150,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 3455,
+            "baseMax": 3455,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 3455,
+            "baseMax": 3455,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 3760,
+            "baseMax": 3760,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 3760,
+            "baseMax": 3760,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 4065,
+            "baseMax": 4065,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 4065,
+            "baseMax": 4065,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2626:220:1:1]]-[[damage:max:2626:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:2942:246.4:1:1]]-[[damage:max:2942:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:3257:272.8:1:1]]-[[damage:max:3257:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:3572:299.2:1:1]]-[[damage:max:3572:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:3887:325.6:1:1]]-[[damage:max:3887:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:4202:352:1:1]]-[[damage:max:4202:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 2626,
+            "baseMax": 2626,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 2626,
+            "baseMax": 2626,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 2942,
+            "baseMax": 2942,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 2942,
+            "baseMax": 2942,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 3257,
+            "baseMax": 3257,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 3257,
+            "baseMax": 3257,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 3572,
+            "baseMax": 3572,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 3572,
+            "baseMax": 3572,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 3887,
+            "baseMax": 3887,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 3887,
+            "baseMax": 3887,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 4202,
+            "baseMax": 4202,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 4202,
+            "baseMax": 4202,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2712:220:1:1]]-[[damage:max:2712:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:3038:246.4:1:1]]-[[damage:max:3038:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:3363:272.8:1:1]]-[[damage:max:3363:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:3689:299.2:1:1]]-[[damage:max:3689:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:4014:325.6:1:1]]-[[damage:max:4014:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:4340:352:1:1]]-[[damage:max:4340:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 2712,
+            "baseMax": 2712,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 2712,
+            "baseMax": 2712,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 3038,
+            "baseMax": 3038,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 3038,
+            "baseMax": 3038,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 3363,
+            "baseMax": 3363,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 3363,
+            "baseMax": 3363,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 3689,
+            "baseMax": 3689,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 3689,
+            "baseMax": 3689,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 4014,
+            "baseMax": 4014,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 4014,
+            "baseMax": 4014,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 4340,
+            "baseMax": 4340,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 4340,
+            "baseMax": 4340,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2798:220:1:1]]-[[damage:max:2798:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:3134:246.4:1:1]]-[[damage:max:3134:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:3470:272.8:1:1]]-[[damage:max:3470:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:3805:299.2:1:1]]-[[damage:max:3805:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:4141:325.6:1:1]]-[[damage:max:4141:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:4477:352:1:1]]-[[damage:max:4477:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 2798,
+            "baseMax": 2798,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 2798,
+            "baseMax": 2798,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 3134,
+            "baseMax": 3134,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 3134,
+            "baseMax": 3134,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 3470,
+            "baseMax": 3470,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 3470,
+            "baseMax": 3470,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 3805,
+            "baseMax": 3805,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 3805,
+            "baseMax": 3805,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 4141,
+            "baseMax": 4141,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 4141,
+            "baseMax": 4141,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 4477,
+            "baseMax": 4477,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 4477,
+            "baseMax": 4477,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2884:220:1:1]]-[[damage:max:2884:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:3230:246.4:1:1]]-[[damage:max:3230:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:3576:272.8:1:1]]-[[damage:max:3576:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:3922:299.2:1:1]]-[[damage:max:3922:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:4268:325.6:1:1]]-[[damage:max:4268:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:4614:352:1:1]]-[[damage:max:4614:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 2884,
+            "baseMax": 2884,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 2884,
+            "baseMax": 2884,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 3230,
+            "baseMax": 3230,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 3230,
+            "baseMax": 3230,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 3576,
+            "baseMax": 3576,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 3576,
+            "baseMax": 3576,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 3922,
+            "baseMax": 3922,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 3922,
+            "baseMax": 3922,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 4268,
+            "baseMax": 4268,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 4268,
+            "baseMax": 4268,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 4614,
+            "baseMax": 4614,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 4614,
+            "baseMax": 4614,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2970:220:1:1]]-[[damage:max:2970:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:3326:246.4:1:1]]-[[damage:max:3326:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:3682:272.8:1:1]]-[[damage:max:3682:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:4039:299.2:1:1]]-[[damage:max:4039:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:4395:325.6:1:1]]-[[damage:max:4395:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:4752:352:1:1]]-[[damage:max:4752:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 2970,
+            "baseMax": 2970,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 2970,
+            "baseMax": 2970,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 3326,
+            "baseMax": 3326,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 3326,
+            "baseMax": 3326,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 3682,
+            "baseMax": 3682,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 3682,
+            "baseMax": 3682,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 4039,
+            "baseMax": 4039,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 4039,
+            "baseMax": 4039,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 4395,
+            "baseMax": 4395,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 4395,
+            "baseMax": 4395,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 4752,
+            "baseMax": 4752,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 4752,
+            "baseMax": 4752,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3055:220:1:1]]-[[damage:max:3055:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:3422:246.4:1:1]]-[[damage:max:3422:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:3789:272.8:1:1]]-[[damage:max:3789:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:4155:299.2:1:1]]-[[damage:max:4155:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:4522:325.6:1:1]]-[[damage:max:4522:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:4889:352:1:1]]-[[damage:max:4889:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 3055,
+            "baseMax": 3055,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 3055,
+            "baseMax": 3055,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 3422,
+            "baseMax": 3422,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 3422,
+            "baseMax": 3422,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 3789,
+            "baseMax": 3789,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 3789,
+            "baseMax": 3789,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 4155,
+            "baseMax": 4155,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 4155,
+            "baseMax": 4155,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 4522,
+            "baseMax": 4522,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 4522,
+            "baseMax": 4522,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 4889,
+            "baseMax": 4889,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 4889,
+            "baseMax": 4889,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3141:220:1:1]]-[[damage:max:3141:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:3518:246.4:1:1]]-[[damage:max:3518:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:3895:272.8:1:1]]-[[damage:max:3895:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:4272:299.2:1:1]]-[[damage:max:4272:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:4649:325.6:1:1]]-[[damage:max:4649:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:5026:352:1:1]]-[[damage:max:5026:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 3141,
+            "baseMax": 3141,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 3141,
+            "baseMax": 3141,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 3518,
+            "baseMax": 3518,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 3518,
+            "baseMax": 3518,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 3895,
+            "baseMax": 3895,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 3895,
+            "baseMax": 3895,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 4272,
+            "baseMax": 4272,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 4272,
+            "baseMax": 4272,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 4649,
+            "baseMax": 4649,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 4649,
+            "baseMax": 4649,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 5026,
+            "baseMax": 5026,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 5026,
+            "baseMax": 5026,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3227:220:1:1]]-[[damage:max:3227:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:3614:246.4:1:1]]-[[damage:max:3614:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:4001:272.8:1:1]]-[[damage:max:4001:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:4389:299.2:1:1]]-[[damage:max:4389:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:4776:325.6:1:1]]-[[damage:max:4776:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:5163:352:1:1]]-[[damage:max:5163:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 3227,
+            "baseMax": 3227,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 3227,
+            "baseMax": 3227,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 3614,
+            "baseMax": 3614,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 3614,
+            "baseMax": 3614,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 4001,
+            "baseMax": 4001,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 4001,
+            "baseMax": 4001,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 4389,
+            "baseMax": 4389,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 4389,
+            "baseMax": 4389,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 4776,
+            "baseMax": 4776,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 4776,
+            "baseMax": 4776,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 5163,
+            "baseMax": 5163,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 5163,
+            "baseMax": 5163,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3313:220:1:1]]-[[damage:max:3313:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:3710:246.4:1:1]]-[[damage:max:3710:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:4108:272.8:1:1]]-[[damage:max:4108:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:4505:299.2:1:1]]-[[damage:max:4505:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:4903:325.6:1:1]]-[[damage:max:4903:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:5301:352:1:1]]-[[damage:max:5301:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 3313,
+            "baseMax": 3313,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 3313,
+            "baseMax": 3313,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 3710,
+            "baseMax": 3710,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 3710,
+            "baseMax": 3710,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 4108,
+            "baseMax": 4108,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 4108,
+            "baseMax": 4108,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 4505,
+            "baseMax": 4505,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 4505,
+            "baseMax": 4505,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 4903,
+            "baseMax": 4903,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 4903,
+            "baseMax": 4903,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 5301,
+            "baseMax": 5301,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 5301,
+            "baseMax": 5301,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3399:220:1:1]]-[[damage:max:3399:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:3806:246.4:1:1]]-[[damage:max:3806:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:4214:272.8:1:1]]-[[damage:max:4214:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:4622:299.2:1:1]]-[[damage:max:4622:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:5030:325.6:1:1]]-[[damage:max:5030:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:5438:352:1:1]]-[[damage:max:5438:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 3399,
+            "baseMax": 3399,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 3399,
+            "baseMax": 3399,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 3806,
+            "baseMax": 3806,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 3806,
+            "baseMax": 3806,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 4214,
+            "baseMax": 4214,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 4214,
+            "baseMax": 4214,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 4622,
+            "baseMax": 4622,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 4622,
+            "baseMax": 4622,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 5030,
+            "baseMax": 5030,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 5030,
+            "baseMax": 5030,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 5438,
+            "baseMax": 5438,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 5438,
+            "baseMax": 5438,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3484:220:1:1]]-[[damage:max:3484:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:3902:246.4:1:1]]-[[damage:max:3902:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:4321:272.8:1:1]]-[[damage:max:4321:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:4739:299.2:1:1]]-[[damage:max:4739:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:5157:325.6:1:1]]-[[damage:max:5157:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:5575:352:1:1]]-[[damage:max:5575:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 3484,
+            "baseMax": 3484,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 3484,
+            "baseMax": 3484,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 3902,
+            "baseMax": 3902,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 3902,
+            "baseMax": 3902,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 4321,
+            "baseMax": 4321,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 4321,
+            "baseMax": 4321,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 4739,
+            "baseMax": 4739,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 4739,
+            "baseMax": 4739,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 5157,
+            "baseMax": 5157,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 5157,
+            "baseMax": 5157,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 5575,
+            "baseMax": 5575,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 5575,
+            "baseMax": 5575,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3570:220:1:1]]-[[damage:max:3570:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:3999:246.4:1:1]]-[[damage:max:3999:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:4427:272.8:1:1]]-[[damage:max:4427:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:4856:299.2:1:1]]-[[damage:max:4856:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:5284:325.6:1:1]]-[[damage:max:5284:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:5712:352:1:1]]-[[damage:max:5712:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 3570,
+            "baseMax": 3570,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 3570,
+            "baseMax": 3570,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 3999,
+            "baseMax": 3999,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 3999,
+            "baseMax": 3999,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 4427,
+            "baseMax": 4427,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 4427,
+            "baseMax": 4427,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 4856,
+            "baseMax": 4856,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 4856,
+            "baseMax": 4856,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 5284,
+            "baseMax": 5284,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 5284,
+            "baseMax": 5284,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 5712,
+            "baseMax": 5712,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 5712,
+            "baseMax": 5712,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3656:220:1:1]]-[[damage:max:3656:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:4095:246.4:1:1]]-[[damage:max:4095:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:4533:272.8:1:1]]-[[damage:max:4533:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:4972:299.2:1:1]]-[[damage:max:4972:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:5411:325.6:1:1]]-[[damage:max:5411:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:5850:352:1:1]]-[[damage:max:5850:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 3656,
+            "baseMax": 3656,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 3656,
+            "baseMax": 3656,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 4095,
+            "baseMax": 4095,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 4095,
+            "baseMax": 4095,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 4533,
+            "baseMax": 4533,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 4533,
+            "baseMax": 4533,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 4972,
+            "baseMax": 4972,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 4972,
+            "baseMax": 4972,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 5411,
+            "baseMax": 5411,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 5411,
+            "baseMax": 5411,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 5850,
+            "baseMax": 5850,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 5850,
+            "baseMax": 5850,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3742:220:1:1]]-[[damage:max:3742:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:4191:246.4:1:1]]-[[damage:max:4191:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:4640:272.8:1:1]]-[[damage:max:4640:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:5089:299.2:1:1]]-[[damage:max:5089:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:5538:325.6:1:1]]-[[damage:max:5538:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:5987:352:1:1]]-[[damage:max:5987:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 3742,
+            "baseMax": 3742,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 3742,
+            "baseMax": 3742,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 4191,
+            "baseMax": 4191,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 4191,
+            "baseMax": 4191,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 4640,
+            "baseMax": 4640,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 4640,
+            "baseMax": 4640,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 5089,
+            "baseMax": 5089,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 5089,
+            "baseMax": 5089,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 5538,
+            "baseMax": 5538,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 5538,
+            "baseMax": 5538,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 5987,
+            "baseMax": 5987,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 5987,
+            "baseMax": 5987,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3828:220:1:1]]-[[damage:max:3828:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:4287:246.4:1:1]]-[[damage:max:4287:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:4746:272.8:1:1]]-[[damage:max:4746:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:5206:299.2:1:1]]-[[damage:max:5206:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:5665:325.6:1:1]]-[[damage:max:5665:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:6124:352:1:1]]-[[damage:max:6124:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 3828,
+            "baseMax": 3828,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 3828,
+            "baseMax": 3828,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 4287,
+            "baseMax": 4287,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 4287,
+            "baseMax": 4287,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 4746,
+            "baseMax": 4746,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 4746,
+            "baseMax": 4746,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 5206,
+            "baseMax": 5206,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 5206,
+            "baseMax": 5206,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 5665,
+            "baseMax": 5665,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 5665,
+            "baseMax": 5665,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 6124,
+            "baseMax": 6124,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 6124,
+            "baseMax": 6124,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3913:220:1:1]]-[[damage:max:3913:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:4383:246.4:1:1]]-[[damage:max:4383:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:4853:272.8:1:1]]-[[damage:max:4853:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:5322:299.2:1:1]]-[[damage:max:5322:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:5792:325.6:1:1]]-[[damage:max:5792:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:6262:352:1:1]]-[[damage:max:6262:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 3913,
+            "baseMax": 3913,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 3913,
+            "baseMax": 3913,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 4383,
+            "baseMax": 4383,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 4383,
+            "baseMax": 4383,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 4853,
+            "baseMax": 4853,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 4853,
+            "baseMax": 4853,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 5322,
+            "baseMax": 5322,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 5322,
+            "baseMax": 5322,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 5792,
+            "baseMax": 5792,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 5792,
+            "baseMax": 5792,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 6262,
+            "baseMax": 6262,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 6262,
+            "baseMax": 6262,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3999:220:1:1]]-[[damage:max:3999:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:4479:246.4:1:1]]-[[damage:max:4479:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:4959:272.8:1:1]]-[[damage:max:4959:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:5439:299.2:1:1]]-[[damage:max:5439:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:5919:325.6:1:1]]-[[damage:max:5919:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:6399:352:1:1]]-[[damage:max:6399:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 3999,
+            "baseMax": 3999,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 3999,
+            "baseMax": 3999,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 4479,
+            "baseMax": 4479,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 4479,
+            "baseMax": 4479,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 4959,
+            "baseMax": 4959,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 4959,
+            "baseMax": 4959,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 5439,
+            "baseMax": 5439,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 5439,
+            "baseMax": 5439,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 5919,
+            "baseMax": 5919,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 5919,
+            "baseMax": 5919,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 6399,
+            "baseMax": 6399,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 6399,
+            "baseMax": 6399,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4085:220:1:1]]-[[damage:max:4085:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:4575:246.4:1:1]]-[[damage:max:4575:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:5065:272.8:1:1]]-[[damage:max:5065:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:5556:299.2:1:1]]-[[damage:max:5556:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:6046:325.6:1:1]]-[[damage:max:6046:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:6536:352:1:1]]-[[damage:max:6536:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 4085,
+            "baseMax": 4085,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 4085,
+            "baseMax": 4085,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 4575,
+            "baseMax": 4575,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 4575,
+            "baseMax": 4575,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 5065,
+            "baseMax": 5065,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 5065,
+            "baseMax": 5065,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 5556,
+            "baseMax": 5556,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 5556,
+            "baseMax": 5556,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 6046,
+            "baseMax": 6046,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 6046,
+            "baseMax": 6046,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 6536,
+            "baseMax": 6536,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 6536,
+            "baseMax": 6536,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4171:220:1:1]]-[[damage:max:4171:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:4671:246.4:1:1]]-[[damage:max:4671:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:5172:272.8:1:1]]-[[damage:max:5172:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:5672:299.2:1:1]]-[[damage:max:5672:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:6173:325.6:1:1]]-[[damage:max:6173:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:6673:352:1:1]]-[[damage:max:6673:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 4171,
+            "baseMax": 4171,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 4171,
+            "baseMax": 4171,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 4671,
+            "baseMax": 4671,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 4671,
+            "baseMax": 4671,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 5172,
+            "baseMax": 5172,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 5172,
+            "baseMax": 5172,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 5672,
+            "baseMax": 5672,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 5672,
+            "baseMax": 5672,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 6173,
+            "baseMax": 6173,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 6173,
+            "baseMax": 6173,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 6673,
+            "baseMax": 6673,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 6673,
+            "baseMax": 6673,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4257:220:1:1]]-[[damage:max:4257:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:4767:246.4:1:1]]-[[damage:max:4767:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:5278:272.8:1:1]]-[[damage:max:5278:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:5789:299.2:1:1]]-[[damage:max:5789:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:6300:325.6:1:1]]-[[damage:max:6300:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:6811:352:1:1]]-[[damage:max:6811:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 4257,
+            "baseMax": 4257,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 4257,
+            "baseMax": 4257,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 4767,
+            "baseMax": 4767,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 4767,
+            "baseMax": 4767,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 5278,
+            "baseMax": 5278,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 5278,
+            "baseMax": 5278,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 5789,
+            "baseMax": 5789,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 5789,
+            "baseMax": 5789,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 6300,
+            "baseMax": 6300,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 6300,
+            "baseMax": 6300,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 6811,
+            "baseMax": 6811,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 6811,
+            "baseMax": 6811,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4342:220:1:1]]-[[damage:max:4342:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:4863:246.4:1:1]]-[[damage:max:4863:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:5385:272.8:1:1]]-[[damage:max:5385:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:5906:299.2:1:1]]-[[damage:max:5906:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:6427:325.6:1:1]]-[[damage:max:6427:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:6948:352:1:1]]-[[damage:max:6948:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 4342,
+            "baseMax": 4342,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 4342,
+            "baseMax": 4342,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 4863,
+            "baseMax": 4863,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 4863,
+            "baseMax": 4863,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 5385,
+            "baseMax": 5385,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 5385,
+            "baseMax": 5385,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 5906,
+            "baseMax": 5906,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 5906,
+            "baseMax": 5906,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 6427,
+            "baseMax": 6427,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 6427,
+            "baseMax": 6427,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 6948,
+            "baseMax": 6948,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 6948,
+            "baseMax": 6948,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4428:220:1:1]]-[[damage:max:4428:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:4960:246.4:1:1]]-[[damage:max:4960:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:5491:272.8:1:1]]-[[damage:max:5491:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:6022:299.2:1:1]]-[[damage:max:6022:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:6554:325.6:1:1]]-[[damage:max:6554:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:7085:352:1:1]]-[[damage:max:7085:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 4428,
+            "baseMax": 4428,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 4428,
+            "baseMax": 4428,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 4960,
+            "baseMax": 4960,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 4960,
+            "baseMax": 4960,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 5491,
+            "baseMax": 5491,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 5491,
+            "baseMax": 5491,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 6022,
+            "baseMax": 6022,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 6022,
+            "baseMax": 6022,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 6554,
+            "baseMax": 6554,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 6554,
+            "baseMax": 6554,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 7085,
+            "baseMax": 7085,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 7085,
+            "baseMax": 7085,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4514:220:1:1]]-[[damage:max:4514:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:5056:246.4:1:1]]-[[damage:max:5056:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:5597:272.8:1:1]]-[[damage:max:5597:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:6139:299.2:1:1]]-[[damage:max:6139:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:6681:325.6:1:1]]-[[damage:max:6681:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:7223:352:1:1]]-[[damage:max:7223:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 4514,
+            "baseMax": 4514,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 4514,
+            "baseMax": 4514,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 5056,
+            "baseMax": 5056,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 5056,
+            "baseMax": 5056,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 5597,
+            "baseMax": 5597,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 5597,
+            "baseMax": 5597,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 6139,
+            "baseMax": 6139,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 6139,
+            "baseMax": 6139,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 6681,
+            "baseMax": 6681,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 6681,
+            "baseMax": 6681,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 7223,
+            "baseMax": 7223,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 7223,
+            "baseMax": 7223,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4600:220:1:1]]-[[damage:max:4600:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:5152:246.4:1:1]]-[[damage:max:5152:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:5704:272.8:1:1]]-[[damage:max:5704:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:6256:299.2:1:1]]-[[damage:max:6256:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:6808:325.6:1:1]]-[[damage:max:6808:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:7360:352:1:1]]-[[damage:max:7360:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 4600,
+            "baseMax": 4600,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 4600,
+            "baseMax": 4600,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 5152,
+            "baseMax": 5152,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 5152,
+            "baseMax": 5152,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 5704,
+            "baseMax": 5704,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 5704,
+            "baseMax": 5704,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 6256,
+            "baseMax": 6256,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 6256,
+            "baseMax": 6256,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 6808,
+            "baseMax": 6808,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 6808,
+            "baseMax": 6808,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 7360,
+            "baseMax": 7360,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 7360,
+            "baseMax": 7360,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4686:220:1:1]]-[[damage:max:4686:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:5248:246.4:1:1]]-[[damage:max:5248:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:5810:272.8:1:1]]-[[damage:max:5810:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:6372:299.2:1:1]]-[[damage:max:6372:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:6935:325.6:1:1]]-[[damage:max:6935:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:7497:352:1:1]]-[[damage:max:7497:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 4686,
+            "baseMax": 4686,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 4686,
+            "baseMax": 4686,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 5248,
+            "baseMax": 5248,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 5248,
+            "baseMax": 5248,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 5810,
+            "baseMax": 5810,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 5810,
+            "baseMax": 5810,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 6372,
+            "baseMax": 6372,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 6372,
+            "baseMax": 6372,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 6935,
+            "baseMax": 6935,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 6935,
+            "baseMax": 6935,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 7497,
+            "baseMax": 7497,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 7497,
+            "baseMax": 7497,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4771:220:1:1]]-[[damage:max:4771:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:5344:246.4:1:1]]-[[damage:max:5344:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:5917:272.8:1:1]]-[[damage:max:5917:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:6489:299.2:1:1]]-[[damage:max:6489:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:7062:325.6:1:1]]-[[damage:max:7062:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:7634:352:1:1]]-[[damage:max:7634:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1313000011",
+            "effectGroupId": "131300001",
+            "baseMin": 4771,
+            "baseMax": 4771,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000012",
+            "effectGroupId": "131300001",
+            "baseMin": 4771,
+            "baseMax": 4771,
+            "attackRatioPercent": 220
+          },
+          {
+            "effectId": "1313000013",
+            "effectGroupId": "131300001",
+            "baseMin": 5344,
+            "baseMax": 5344,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000014",
+            "effectGroupId": "131300001",
+            "baseMin": 5344,
+            "baseMax": 5344,
+            "attackRatioPercent": 246.4
+          },
+          {
+            "effectId": "1313000015",
+            "effectGroupId": "131300001",
+            "baseMin": 5917,
+            "baseMax": 5917,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000016",
+            "effectGroupId": "131300001",
+            "baseMin": 5917,
+            "baseMax": 5917,
+            "attackRatioPercent": 272.8
+          },
+          {
+            "effectId": "1313000017",
+            "effectGroupId": "131300001",
+            "baseMin": 6489,
+            "baseMax": 6489,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000018",
+            "effectGroupId": "131300001",
+            "baseMin": 6489,
+            "baseMax": 6489,
+            "attackRatioPercent": 299.2
+          },
+          {
+            "effectId": "1313000019",
+            "effectGroupId": "131300001",
+            "baseMin": 7062,
+            "baseMax": 7062,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000020",
+            "effectGroupId": "131300001",
+            "baseMin": 7062,
+            "baseMax": 7062,
+            "attackRatioPercent": 325.6
+          },
+          {
+            "effectId": "1313000021",
+            "effectGroupId": "131300001",
+            "baseMin": 7634,
+            "baseMax": 7634,
+            "attackRatioPercent": 352
+          },
+          {
+            "effectId": "1313000022",
+            "effectGroupId": "131300001",
+            "baseMin": 7634,
+            "baseMax": 7634,
+            "attackRatioPercent": 352
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "1444",
+        "level": 1,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 14,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1445",
+        "level": 2,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1446",
+        "level": 3,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1447",
+        "level": 4,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1448",
+        "level": 5,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1449",
+        "level": 6,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1450",
+        "level": 7,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1451",
+        "level": 8,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1452",
+        "level": 9,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 35,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1453",
+        "level": 10,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 38,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "13130010",
+        "skillId": "13130010",
+        "name": "Insignia Explosion",
+        "description": "Adds rotate effect",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13130020",
+        "skillId": "13130020",
+        "name": "Insignia Explosion",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13130030",
+        "skillId": "13130030",
+        "name": "Insignia Explosion",
+        "description": "Keep 2 stacks of Insignias after [Insignia Explosion]",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13130040",
+        "skillId": "13130040",
+        "name": "Insignia Explosion",
+        "description": "+1s Stun duration",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13130050",
+        "skillId": "13130050",
+        "name": "Insignia Explosion",
+        "description": "-3s cooldown",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 10,
+    "classes": [
+      {
+        "code": "assassin",
+        "name": "Assassin"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Insignia Explosion",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_013.webp",
+    "id": "13130000",
+    "entityType": "skill",
+    "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:663:220:1:1]]-[[damage:max:663:220:1:1]]</> damage to up to 4 enemies within 4m, inflicting Stun for 3s.\nStun chance is doubled on NPC targets.\n\nDamage and Stun chance increase based on Insignia stacks.\n1 stack: <chat_combat>[[damage:min:742:246.4:1:1]]-[[damage:max:742:246.4:1:1]]</> damage, 10% Stun chance\n2 stacks: <chat_combat>[[damage:min:822:272.8:1:1]]-[[damage:max:822:272.8:1:1]]</> damage, 20% Stun chance\n3 stacks: <chat_combat>[[damage:min:902:299.2:1:1]]-[[damage:max:902:299.2:1:1]]</> damage, 30% Stun chance\n4 stacks: <chat_combat>[[damage:min:981:325.6:1:1]]-[[damage:max:981:325.6:1:1]]</> damage, 40% Stun chance\n5 stacks: <chat_combat>[[damage:min:1061:352:1:1]]-[[damage:max:1061:352:1:1]]</> damage, 50% Stun chance\n\n7 Stagger Gauge Damage"
+  }
+}

@@ -1,0 +1,1901 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/12430000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "12430000",
+    "name": "Shield Rush",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_015.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 34,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "12430010",
+        "description": "Restores 300 Stamina on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12430020",
+        "description": "+10m range",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12430030",
+        "description": "Changes to Charge Skill and deals AoE damage",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12430040",
+        "description": "-10s cooldown",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12430050",
+        "description": "+25% Stun Chance",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [
+      {
+        "id": "12000007",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormalgroupid"
+        },
+        "description": "On Dodge",
+        "iconPath": "/images/ui/resource/texture/skill/icon_cond_evade.webp",
+        "abnormalGroupId": 3015
+      },
+      {
+        "id": "12000013",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormalgroupid"
+        },
+        "description": "In Flight",
+        "iconPath": "/images/ui/resource/texture/abnormal/icon_abnormal_wing.webp",
+        "abnormalGroupId": 100000002
+      }
+    ],
+    "requiredWeapons": [
+      {
+        "code": "sword",
+        "name": "Longsword"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:258:105:1:1]]-[[damage:max:258:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 258,
+            "baseMax": 258,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:340:105:1:1]]-[[damage:max:340:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 340,
+            "baseMax": 340,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:437:105:1:1]]-[[damage:max:437:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 437,
+            "baseMax": 437,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:519:105:1:1]]-[[damage:max:519:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 519,
+            "baseMax": 519,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:601:105:1:1]]-[[damage:max:601:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 601,
+            "baseMax": 601,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:683:105:1:1]]-[[damage:max:683:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 683,
+            "baseMax": 683,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:765:105:1:1]]-[[damage:max:765:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 765,
+            "baseMax": 765,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:863:105:1:1]]-[[damage:max:863:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 863,
+            "baseMax": 863,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:945:105:1:1]]-[[damage:max:945:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 945,
+            "baseMax": 945,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1004:105:1:1]]-[[damage:max:1004:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1004,
+            "baseMax": 1004,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1048:105:1:1]]-[[damage:max:1048:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1048,
+            "baseMax": 1048,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1108:105:1:1]]-[[damage:max:1108:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1108,
+            "baseMax": 1108,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1168:105:1:1]]-[[damage:max:1168:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1168,
+            "baseMax": 1168,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1228:105:1:1]]-[[damage:max:1228:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1228,
+            "baseMax": 1228,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1288:105:1:1]]-[[damage:max:1288:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1288,
+            "baseMax": 1288,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1332:105:1:1]]-[[damage:max:1332:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1332,
+            "baseMax": 1332,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1376:105:1:1]]-[[damage:max:1376:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1376,
+            "baseMax": 1376,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1420:105:1:1]]-[[damage:max:1420:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1420,
+            "baseMax": 1420,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1464:105:1:1]]-[[damage:max:1464:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1464,
+            "baseMax": 1464,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1508:105:1:1]]-[[damage:max:1508:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1508,
+            "baseMax": 1508,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1552:105:1:1]]-[[damage:max:1552:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1552,
+            "baseMax": 1552,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1597:105:1:1]]-[[damage:max:1597:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1597,
+            "baseMax": 1597,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1641:105:1:1]]-[[damage:max:1641:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1641,
+            "baseMax": 1641,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1685:105:1:1]]-[[damage:max:1685:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1685,
+            "baseMax": 1685,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1729:105:1:1]]-[[damage:max:1729:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1729,
+            "baseMax": 1729,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1773:105:1:1]]-[[damage:max:1773:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1773,
+            "baseMax": 1773,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1817:105:1:1]]-[[damage:max:1817:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1817,
+            "baseMax": 1817,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1861:105:1:1]]-[[damage:max:1861:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1861,
+            "baseMax": 1861,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1905:105:1:1]]-[[damage:max:1905:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1905,
+            "baseMax": 1905,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1949:105:1:1]]-[[damage:max:1949:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1949,
+            "baseMax": 1949,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:1993:105:1:1]]-[[damage:max:1993:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 1993,
+            "baseMax": 1993,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:2038:105:1:1]]-[[damage:max:2038:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 2038,
+            "baseMax": 2038,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:2082:105:1:1]]-[[damage:max:2082:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 2082,
+            "baseMax": 2082,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:2126:105:1:1]]-[[damage:max:2126:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 2126,
+            "baseMax": 2126,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:2170:105:1:1]]-[[damage:max:2170:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 2170,
+            "baseMax": 2170,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:2214:105:1:1]]-[[damage:max:2214:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 2214,
+            "baseMax": 2214,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:2258:105:1:1]]-[[damage:max:2258:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 2258,
+            "baseMax": 2258,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:2302:105:1:1]]-[[damage:max:2302:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 2302,
+            "baseMax": 2302,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:2346:105:1:1]]-[[damage:max:2346:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 2346,
+            "baseMax": 2346,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:2390:105:1:1]]-[[damage:max:2390:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1243000021",
+            "effectGroupId": "124300002",
+            "baseMin": 2390,
+            "baseMax": 2390,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "874",
+        "level": 1,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "875",
+        "level": 2,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "876",
+        "level": 3,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "877",
+        "level": 4,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "878",
+        "level": 5,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "879",
+        "level": 6,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "880",
+        "level": 7,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "881",
+        "level": 8,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "882",
+        "level": 9,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "883",
+        "level": 10,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 34,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "12430010",
+        "skillId": "12430010",
+        "name": "Shield Rush",
+        "description": "Restores 300 Stamina on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12430020",
+        "skillId": "12430020",
+        "name": "Shield Rush",
+        "description": "+10m range",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12430030",
+        "skillId": "12430030",
+        "name": "Shield Rush",
+        "description": "Changes to Charge Skill and deals AoE damage",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12430040",
+        "skillId": "12430040",
+        "name": "Shield Rush",
+        "description": "-10s cooldown",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12430050",
+        "skillId": "12430050",
+        "name": "Shield Rush",
+        "description": "+25% Stun Chance",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 10,
+    "cooldownSeconds": 20,
+    "classes": [
+      {
+        "code": "templar",
+        "name": "Templar"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Shield Rush",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_015.webp",
+    "id": "12430000",
+    "entityType": "skill",
+    "description": "Rushes to a target within 10m and deals <chat_combat>[[damage:min:258:105:1:1]]-[[damage:max:258:105:1:1]]</> damage after using [Dodge] or while flying. Has a 30% chance to inflict Stun for 3s. Triggers [Judgment] for 2s.\n100% chance to inflict Stun on NPC targets.\n\n20 Stagger Gauge Damage"
+  }
+}

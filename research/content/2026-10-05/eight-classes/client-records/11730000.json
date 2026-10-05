@@ -1,0 +1,1492 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/11730000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "11730000",
+    "name": "Blood Absorption",
+    "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+    "kind": "passive",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 9,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 9,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": []
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "filterResolved": false
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "greatsword",
+        "name": "Greatsword"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>1.6%</> Max HP on landing an attack.\nImmediately restores <chat_combat>26%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>1.6%</> Max HP\nImmediately restores 26% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>1.7%</> Max HP on landing an attack.\nImmediately restores <chat_combat>27%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>1.7%</> Max HP\nImmediately restores 27% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>1.8%</> Max HP on landing an attack.\nImmediately restores <chat_combat>28%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>1.8%</> Max HP\nImmediately restores 28% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>1.9%</> Max HP on landing an attack.\nImmediately restores <chat_combat>29%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>1.9%</> Max HP\nImmediately restores 29% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>2%</> Max HP on landing an attack.\nImmediately restores <chat_combat>30%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>2%</> Max HP\nImmediately restores 30% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>2.1%</> Max HP on landing an attack.\nImmediately restores <chat_combat>31%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>2.1%</> Max HP\nImmediately restores 31% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>2.2%</> Max HP on landing an attack.\nImmediately restores <chat_combat>32%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>2.2%</> Max HP\nImmediately restores 32% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>2.3%</> Max HP on landing an attack.\nImmediately restores <chat_combat>33%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>2.3%</> Max HP\nImmediately restores 33% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>2.4%</> Max HP on landing an attack.\nImmediately restores <chat_combat>34%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>2.4%</> Max HP\nImmediately restores 34% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>2.5%</> Max HP on landing an attack.\nImmediately restores <chat_combat>35%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>2.5%</> Max HP\nImmediately restores 35% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>2.6%</> Max HP on landing an attack.\nImmediately restores <chat_combat>36%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>2.6%</> Max HP\nImmediately restores 36% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>2.7%</> Max HP on landing an attack.\nImmediately restores <chat_combat>37%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>2.7%</> Max HP\nImmediately restores 37% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>2.8%</> Max HP on landing an attack.\nImmediately restores <chat_combat>38%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>2.8%</> Max HP\nImmediately restores 38% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>2.9%</> Max HP on landing an attack.\nImmediately restores <chat_combat>39%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>2.9%</> Max HP\nImmediately restores 39% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>3%</> Max HP on landing an attack.\nImmediately restores <chat_combat>40%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>3%</> Max HP\nImmediately restores 40% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>3.1%</> Max HP on landing an attack.\nImmediately restores <chat_combat>41%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>3.1%</> Max HP\nImmediately restores 41% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>3.2%</> Max HP on landing an attack.\nImmediately restores <chat_combat>42%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>3.2%</> Max HP\nImmediately restores 42% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>3.3%</> Max HP on landing an attack.\nImmediately restores <chat_combat>43%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>3.3%</> Max HP\nImmediately restores 43% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>3.4%</> Max HP on landing an attack.\nImmediately restores <chat_combat>44%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>3.4%</> Max HP\nImmediately restores 44% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>3.5%</> Max HP on landing an attack.\nImmediately restores <chat_combat>45%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>3.5%</> Max HP\nImmediately restores 45% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>3.6%</> Max HP on landing an attack.\nImmediately restores <chat_combat>46%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>3.6%</> Max HP\nImmediately restores 46% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>3.7%</> Max HP on landing an attack.\nImmediately restores <chat_combat>47%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>3.7%</> Max HP\nImmediately restores 47% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>3.8%</> Max HP on landing an attack.\nImmediately restores <chat_combat>48%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>3.8%</> Max HP\nImmediately restores 48% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>3.9%</> Max HP on landing an attack.\nImmediately restores <chat_combat>49%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>3.9%</> Max HP\nImmediately restores 49% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>4%</> Max HP on landing an attack.\nImmediately restores <chat_combat>50%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>4%</> Max HP\nImmediately restores 50% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>4.1%</> Max HP on landing an attack.\nImmediately restores <chat_combat>51%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>4.1%</> Max HP\nImmediately restores 51% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>4.2%</> Max HP on landing an attack.\nImmediately restores <chat_combat>52%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>4.2%</> Max HP\nImmediately restores 52% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>4.3%</> Max HP on landing an attack.\nImmediately restores <chat_combat>53%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>4.3%</> Max HP\nImmediately restores 53% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>4.4%</> Max HP on landing an attack.\nImmediately restores <chat_combat>54%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>4.4%</> Max HP\nImmediately restores 54% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>4.5%</> Max HP on landing an attack.\nImmediately restores <chat_combat>55%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>4.5%</> Max HP\nImmediately restores 55% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>4.6%</> Max HP on landing an attack.\nImmediately restores <chat_combat>56%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>4.6%</> Max HP\nImmediately restores 56% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>4.7%</> Max HP on landing an attack.\nImmediately restores <chat_combat>57%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>4.7%</> Max HP\nImmediately restores 57% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>4.8%</> Max HP on landing an attack.\nImmediately restores <chat_combat>58%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>4.8%</> Max HP\nImmediately restores 58% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>4.9%</> Max HP on landing an attack.\nImmediately restores <chat_combat>59%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>4.9%</> Max HP\nImmediately restores 59% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>5%</> Max HP on landing an attack.\nImmediately restores <chat_combat>60%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>5%</> Max HP\nImmediately restores 60% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>5.1%</> Max HP on landing an attack.\nImmediately restores <chat_combat>61%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>5.1%</> Max HP\nImmediately restores 61% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>5.2%</> Max HP on landing an attack.\nImmediately restores <chat_combat>62%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>5.2%</> Max HP\nImmediately restores 62% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>5.3%</> Max HP on landing an attack.\nImmediately restores <chat_combat>63%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>5.3%</> Max HP\nImmediately restores 63% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>5.4%</> Max HP on landing an attack.\nImmediately restores <chat_combat>64%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>5.4%</> Max HP\nImmediately restores 64% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>5.5%</> Max HP on landing an attack.\nImmediately restores <chat_combat>65%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "117300001",
+            "name": "Blood Absorption",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "50% chance to restore HP on landing an attack, immediately restores HP when HP is 50% or less",
+            "effect": "50% chance to\nRestore <desc_point>[[heal]]-[[heal]]</> HP on landing an attack\nRestore <desc_point>5.5%</> Max HP\nImmediately restores 65% Max HP when HP is 50% or less",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Blood Absorption",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+              "id": "117300001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "387",
+        "level": 1,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 9,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "388",
+        "level": 2,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 9,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "389",
+        "level": 3,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "390",
+        "level": 4,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "391",
+        "level": 5,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "392",
+        "level": 6,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "393",
+        "level": 7,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "394",
+        "level": 8,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "395",
+        "level": 9,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "396",
+        "level": 10,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "passive",
+    "kindName": "Passive",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "classes": [
+      {
+        "code": "gladiator",
+        "name": "Gladiator"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/passive"
+    ],
+    "name": "Blood Absorption",
+    "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_passive_003.webp",
+    "id": "11730000",
+    "entityType": "skill",
+    "description": "The caster has a 50% chance to restore <chat_combat>[[heal]]-[[heal]]</> HP and <chat_combat>1.6%</> Max HP on landing an attack.\nImmediately restores <chat_combat>26%</> Max HP when HP drops to 50% or less.\n\nCooldown: 1s\nInstant Healing Cooldown: 60s"
+  }
+}

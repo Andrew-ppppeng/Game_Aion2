@@ -1,0 +1,1723 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/14010000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "14010000",
+    "name": "Deadshot",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_002.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 14,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 35,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 38,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "14010010",
+        "description": "Removes MP consumed",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14010020",
+        "description": "+30% Skill Speed",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14010030",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14010040",
+        "description": "Ignores Block and Evasion and lands as Multi-Hit",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14010050",
+        "description": "[Deadshot] grants extra damage on hit",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Charge Skill</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 200
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "bow",
+        "name": "Bow"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:599:188.25:1:1]]-[[damage:max:1798:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 599,
+            "baseMax": 599,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 809,
+            "baseMax": 809,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:772:188.25:1:1]]-[[damage:max:2316:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 772,
+            "baseMax": 772,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 1042,
+            "baseMax": 1042,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:917:188.25:1:1]]-[[damage:max:2751:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 917,
+            "baseMax": 917,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 1237,
+            "baseMax": 1237,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1061:188.25:1:1]]-[[damage:max:3185:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 1061,
+            "baseMax": 1061,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 1433,
+            "baseMax": 1433,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1206:188.25:1:1]]-[[damage:max:3619:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 1206,
+            "baseMax": 1206,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 1628,
+            "baseMax": 1628,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1351:188.25:1:1]]-[[damage:max:4053:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 1351,
+            "baseMax": 1351,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 1824,
+            "baseMax": 1824,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1524:188.25:1:1]]-[[damage:max:4572:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 1524,
+            "baseMax": 1524,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 2057,
+            "baseMax": 2057,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1668:188.25:1:1]]-[[damage:max:5006:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 1668,
+            "baseMax": 1668,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 2252,
+            "baseMax": 2252,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1774:188.25:1:1]]-[[damage:max:5324:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 1774,
+            "baseMax": 1774,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 2395,
+            "baseMax": 2395,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1852:188.25:1:1]]-[[damage:max:5557:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 1852,
+            "baseMax": 1852,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 2500,
+            "baseMax": 2500,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1958:188.25:1:1]]-[[damage:max:5874:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 1958,
+            "baseMax": 1958,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 2643,
+            "baseMax": 2643,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2064:188.25:1:1]]-[[damage:max:6192:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 2064,
+            "baseMax": 2064,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 2786,
+            "baseMax": 2786,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2170:188.25:1:1]]-[[damage:max:6510:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 2170,
+            "baseMax": 2170,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 2929,
+            "baseMax": 2929,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2275:188.25:1:1]]-[[damage:max:6827:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 2275,
+            "baseMax": 2275,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 3072,
+            "baseMax": 3072,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2353:188.25:1:1]]-[[damage:max:7060:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 2353,
+            "baseMax": 2353,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 3177,
+            "baseMax": 3177,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2431:188.25:1:1]]-[[damage:max:7293:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 2431,
+            "baseMax": 2431,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 3282,
+            "baseMax": 3282,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2508:188.25:1:1]]-[[damage:max:7526:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 2508,
+            "baseMax": 2508,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 3387,
+            "baseMax": 3387,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2586:188.25:1:1]]-[[damage:max:7759:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 2586,
+            "baseMax": 2586,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 3491,
+            "baseMax": 3491,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2664:188.25:1:1]]-[[damage:max:7992:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 2664,
+            "baseMax": 2664,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 3596,
+            "baseMax": 3596,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2741:188.25:1:1]]-[[damage:max:8225:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 2741,
+            "baseMax": 2741,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 3701,
+            "baseMax": 3701,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2819:188.25:1:1]]-[[damage:max:8458:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 2819,
+            "baseMax": 2819,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 3806,
+            "baseMax": 3806,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2897:188.25:1:1]]-[[damage:max:8691:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 2897,
+            "baseMax": 2897,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 3911,
+            "baseMax": 3911,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2974:188.25:1:1]]-[[damage:max:8924:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 2974,
+            "baseMax": 2974,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 4016,
+            "baseMax": 4016,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3052:188.25:1:1]]-[[damage:max:9157:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 3052,
+            "baseMax": 3052,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 4120,
+            "baseMax": 4120,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3130:188.25:1:1]]-[[damage:max:9390:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 3130,
+            "baseMax": 3130,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 4225,
+            "baseMax": 4225,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3207:188.25:1:1]]-[[damage:max:9623:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 3207,
+            "baseMax": 3207,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 4330,
+            "baseMax": 4330,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3285:188.25:1:1]]-[[damage:max:9856:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 3285,
+            "baseMax": 3285,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 4435,
+            "baseMax": 4435,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3363:188.25:1:1]]-[[damage:max:10089:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 3363,
+            "baseMax": 3363,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 4540,
+            "baseMax": 4540,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3440:188.25:1:1]]-[[damage:max:10322:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 3440,
+            "baseMax": 3440,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 4645,
+            "baseMax": 4645,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3518:188.25:1:1]]-[[damage:max:10555:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 3518,
+            "baseMax": 3518,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 4749,
+            "baseMax": 4749,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3596:188.25:1:1]]-[[damage:max:10788:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 3596,
+            "baseMax": 3596,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 4854,
+            "baseMax": 4854,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3673:188.25:1:1]]-[[damage:max:11021:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 3673,
+            "baseMax": 3673,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 4959,
+            "baseMax": 4959,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3751:188.25:1:1]]-[[damage:max:11254:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 3751,
+            "baseMax": 3751,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 5064,
+            "baseMax": 5064,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3829:188.25:1:1]]-[[damage:max:11487:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 3829,
+            "baseMax": 3829,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 5169,
+            "baseMax": 5169,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3906:188.25:1:1]]-[[damage:max:11719:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 3906,
+            "baseMax": 3906,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 5274,
+            "baseMax": 5274,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3984:188.25:1:1]]-[[damage:max:11952:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 3984,
+            "baseMax": 3984,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 5378,
+            "baseMax": 5378,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4061:188.25:1:1]]-[[damage:max:12185:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 4061,
+            "baseMax": 4061,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 5483,
+            "baseMax": 5483,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4139:188.25:1:1]]-[[damage:max:12418:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 4139,
+            "baseMax": 4139,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 5588,
+            "baseMax": 5588,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4217:188.25:1:1]]-[[damage:max:12651:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 4217,
+            "baseMax": 4217,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 5693,
+            "baseMax": 5693,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4294:188.25:1:1]]-[[damage:max:12884:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1401000011",
+            "effectGroupId": "140100001",
+            "baseMin": 4294,
+            "baseMax": 4294,
+            "attackRatioPercent": 188.25
+          },
+          {
+            "effectId": "1401000012",
+            "effectGroupId": "140100001",
+            "baseMin": 5798,
+            "baseMax": 5798,
+            "attackRatioPercent": 254.14
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "1992",
+        "level": 1,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 14,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1993",
+        "level": 2,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1994",
+        "level": 3,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1995",
+        "level": 4,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1996",
+        "level": 5,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1997",
+        "level": 6,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1998",
+        "level": 7,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1999",
+        "level": 8,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2000",
+        "level": 9,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 35,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2001",
+        "level": 10,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 38,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "14010010",
+        "skillId": "14010010",
+        "name": "Deadshot",
+        "description": "Removes MP consumed",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14010020",
+        "skillId": "14010020",
+        "name": "Deadshot",
+        "description": "+30% Skill Speed",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14010030",
+        "skillId": "14010030",
+        "name": "Deadshot",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14010040",
+        "skillId": "14010040",
+        "name": "Deadshot",
+        "description": "Ignores Block and Evasion and lands as Multi-Hit",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14010050",
+        "skillId": "14010050",
+        "name": "Deadshot",
+        "description": "[Deadshot] grants extra damage on hit",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 20,
+    "classes": [
+      {
+        "code": "ranger",
+        "name": "Ranger"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Deadshot",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_002.webp",
+    "id": "14010000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:599:188.25:1:1]]-[[damage:max:1798:564.75:1:1]]</> Wind damage to a target within 20m. Deals 35% more damage if the caster has Precision.\n\nMax 3 Charge Levels\n10-16 Stagger Gauge Damage"
+  }
+}

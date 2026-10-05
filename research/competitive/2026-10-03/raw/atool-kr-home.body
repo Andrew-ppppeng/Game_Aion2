@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>건축설계 도우미 | Architect Pro</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 배경 그리드 패턴 -->
+    <div class="grid-background"></div>
+    
+    <!-- 헤더 -->
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="4" y="20" width="12" height="16" stroke="currentColor" stroke-width="2"/>
+                        <rect x="20" y="12" width="16" height="24" stroke="currentColor" stroke-width="2"/>
+                        <line x1="8" y1="24" x2="12" y2="24" stroke="currentColor" stroke-width="2"/>
+                        <line x1="8" y1="28" x2="12" y2="28" stroke="currentColor" stroke-width="2"/>
+                        <line x1="8" y1="32" x2="12" y2="32" stroke="currentColor" stroke-width="2"/>
+                        <rect x="24" y="16" width="4" height="4" stroke="currentColor" stroke-width="1.5"/>
+                        <rect x="30" y="16" width="4" height="4" stroke="currentColor" stroke-width="1.5"/>
+                        <rect x="24" y="22" width="4" height="4" stroke="currentColor" stroke-width="1.5"/>
+                        <rect x="30" y="22" width="4" height="4" stroke="currentColor" stroke-width="1.5"/>
+                        <rect x="24" y="28" width="4" height="4" stroke="currentColor" stroke-width="1.5"/>
+                        <rect x="30" y="28" width="4" height="4" stroke="currentColor" stroke-width="1.5"/>
+                        <line x1="0" y1="36" x2="40" y2="36" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">ARCHITECT</span>
+                    <span class="logo-sub">PRO</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="header-info">
+                    <span class="version">v2.0</span>
+                    <span class="divider">|</span>
+                    <span class="date" id="currentDate"></span>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="메뉴 열기">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 모바일 오버레이 -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- 메인 컨테이너 -->
+    <div class="main-container">
+        <!-- 사이드바 네비게이션 -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-content">
+            <div class="nav-section">
+                <div class="nav-title">
+                    <span class="nav-icon">§</span>
+                    법규 / 규정
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item active" data-content="law" data-type="iframe">
+                        <span class="item-marker"></span>
+                        건축법규링크
+                    </li>
+                    <li class="nav-item" data-content="building" data-type="iframe">
+                        <span class="item-marker"></span>
+                        건축물의용도
+                    </li>
+                    <li class="nav-item" data-content="korea-rule" data-type="iframe">
+                        <span class="item-marker"></span>
+                        한국건축규정
+                    </li>
+                    <li class="nav-item" data-content="facility" data-type="iframe">
+                        <span class="item-marker"></span>
+                        편의시설기준
+                    </li>
+                    <li class="nav-item" data-content="fire-facility" data-type="iframe">
+                        <span class="item-marker"></span>
+                        소방시설설치기준표
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-title">
+                    <span class="nav-icon">◈</span>
+                    재료 / 성능
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item" data-content="material" data-type="iframe">
+                        <span class="item-marker"></span>
+                        건축재료링크
+                    </li>
+                    <li class="nav-item" data-content="thermal" data-type="iframe">
+                        <span class="item-marker"></span>
+                        재료열관류율
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-title">
+                    <span class="nav-icon">◎</span>
+                    설비 / 계산
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item" data-content="sewage" data-type="iframe">
+                        <span class="item-marker"></span>
+                        오수발생량
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-title">
+                    <span class="nav-icon">⊞</span>
+                    계산 도구
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item" data-content="area-calc" data-type="calculator">
+                        <span class="item-marker"></span>
+                        면적/건폐율/용적률
+                    </li>
+                    <li class="nav-item" data-content="parking-calc" data-type="calculator">
+                        <span class="item-marker"></span>
+                        주차대수 계산
+                    </li>
+                    <li class="nav-item" data-content="landscape-calc" data-type="calculator">
+                        <span class="item-marker"></span>
+                        조경면적 계산
+                    </li>
+                    <li class="nav-item" data-content="sunlight-calc" data-type="calculator">
+                        <span class="item-marker"></span>
+                        일조권/높이제한
+                    </li>
+                    <li class="nav-item" data-content="septic-calc" data-type="calculator">
+                        <span class="item-marker"></span>
+                        정화조 용량
+                    </li>
+                    <li class="nav-item" data-content="elevator-calc" data-type="calculator">
+                        <span class="item-marker"></span>
+                        승강기 설치기준
+                    </li>
+                    <li class="nav-item" data-content="unit-converter" data-type="calculator">
+                        <span class="item-marker"></span>
+                        단위 변환기
+                    </li>
+                    <li class="nav-item" data-content="evacuation-calc" data-type="calculator">
+                        <span class="item-marker"></span>
+                        피난/방화 기준
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-title">
+                    <span class="nav-icon">🔗</span>
+                    유용한 링크
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item" data-content="links-page" data-type="links">
+                        <span class="item-marker"></span>
+                        관련 사이트 모음
+                    </li>
+                </ul>
+            </div>
+            </div><!-- /.sidebar-content -->
+        </nav>
+
+        <!-- 콘텐츠 영역 -->
+        <main class="content-area">
+            <div class="content-header">
+                <div class="content-title-wrap">
+                    <h1 class="content-title" id="contentTitle">건축법규링크</h1>
+                    <div class="content-breadcrumb">
+                        <span>홈</span>
+                        <span class="breadcrumb-sep">›</span>
+                        <span id="breadcrumbCategory">법규 / 규정</span>
+                        <span class="breadcrumb-sep">›</span>
+                        <span id="breadcrumbCurrent">건축법규링크</span>
+                    </div>
+                </div>
+                <div class="content-actions">
+                    <button class="action-btn" id="refreshBtn" title="새로고침">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M23 4v6h-6M1 20v-6h6"/>
+                            <path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/>
+                        </svg>
+                    </button>
+                    <button class="action-btn" id="fullscreenBtn" title="전체화면">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3m0 18h3a2 2 0 002-2v-3M3 16v3a2 2 0 002 2h3"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- iframe 컨테이너 -->
+            <div class="iframe-container" id="iframeContainer">
+                <div class="loading-overlay" id="loadingOverlay">
+                    <div class="loading-spinner">
+                        <div class="spinner-ring"></div>
+                        <div class="spinner-ring"></div>
+                        <div class="spinner-ring"></div>
+                    </div>
+                    <span class="loading-text">데이터를 불러오는 중...</span>
+                </div>
+                <iframe 
+                    id="contentFrame" 
+                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQVdaZqaZGPtQZ01570lbkOk5U2xWz-aJxDnTpU8BGcZdEZLfkP8mr3i9YDpZdaa7Z70XdjGth_yphG/pubhtml?gid=192283359&single=true"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <!-- 계산기 컨테이너 -->
+            <div class="calculator-container" id="calculatorContainer" style="display: none;">
+                <!-- 면적/건폐율/용적률 계산기 -->
+                <div class="calc-panel" id="area-calc-panel">
+                    <div class="calc-grid">
+                        <div class="calc-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">📐</span>
+                                대지면적 입력
+                            </h3>
+                            <div class="input-group">
+                                <label>대지면적 (㎡)</label>
+                                <input type="number" id="landArea" placeholder="예: 500" step="0.01">
+                                <span class="unit-display" id="landAreaPyeong">0 평</span>
+                            </div>
+                            <div class="input-group">
+                                <label>건폐율 한도 (%)</label>
+                                <input type="number" id="bcr" placeholder="예: 60" value="60" step="0.01">
+                            </div>
+                            <div class="input-group">
+                                <label>용적률 한도 (%)</label>
+                                <input type="number" id="far" placeholder="예: 200" value="200" step="0.01">
+                            </div>
+                        </div>
+
+                        <div class="calc-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">🏗️</span>
+                                건축면적 입력
+                            </h3>
+                            <div class="input-group">
+                                <label>건축면적 (㎡)</label>
+                                <input type="number" id="buildingArea" placeholder="예: 300" step="0.01">
+                                <span class="unit-display" id="buildingAreaPyeong">0 평</span>
+                            </div>
+                            <div class="input-group">
+                                <label>연면적 (㎡)</label>
+                                <input type="number" id="totalFloorArea" placeholder="예: 1000" step="0.01">
+                                <span class="unit-display" id="totalFloorAreaPyeong">0 평</span>
+                            </div>
+                            <div class="input-group">
+                                <label>지상 층수</label>
+                                <input type="number" id="floors" placeholder="예: 5" value="1">
+                            </div>
+                        </div>
+
+                        <div class="calc-card result-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">📊</span>
+                                계산 결과
+                            </h3>
+                            <div class="result-group">
+                                <div class="result-item">
+                                    <span class="result-label">건폐율</span>
+                                    <span class="result-value" id="resultBCR">0.00%</span>
+                                    <span class="result-status" id="statusBCR">-</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">용적률</span>
+                                    <span class="result-value" id="resultFAR">0.00%</span>
+                                    <span class="result-status" id="statusFAR">-</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">최대 건축면적</span>
+                                    <span class="result-value" id="maxBuildingArea">0 ㎡</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">최대 연면적</span>
+                                    <span class="result-value" id="maxFloorArea">0 ㎡</span>
+                                </div>
+                            </div>
+                            <button class="calc-btn" onclick="Calculators.calculateArea()">계산하기</button>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>📌 건폐율/용적률 참고 기준 (국토계획법)</h4>
+                        <table class="info-table">
+                            <thead>
+                                <tr>
+                                    <th>용도지역</th>
+                                    <th>건폐율</th>
+                                    <th>용적률</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>제1종전용주거지역</td><td>50%</td><td>50~100%</td></tr>
+                                <tr><td>제2종전용주거지역</td><td>50%</td><td>100~150%</td></tr>
+                                <tr><td>제1종일반주거지역</td><td>60%</td><td>100~200%</td></tr>
+                                <tr><td>제2종일반주거지역</td><td>60%</td><td>150~250%</td></tr>
+                                <tr><td>제3종일반주거지역</td><td>50%</td><td>200~300%</td></tr>
+                                <tr><td>준주거지역</td><td>70%</td><td>200~500%</td></tr>
+                                <tr><td>일반상업지역</td><td>80%</td><td>300~1300%</td></tr>
+                                <tr><td>준공업지역</td><td>70%</td><td>200~400%</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 주차대수 계산기 -->
+                <div class="calc-panel" id="parking-calc-panel" style="display: none;">
+                    <div class="calc-grid">
+                        <div class="calc-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">🏠</span>
+                                건축물 정보
+                            </h3>
+                            <div class="input-group">
+                                <label>시설 용도</label>
+                                <select id="parkingUseType">
+                                    <option value="apartment">공동주택 (아파트)</option>
+                                    <option value="multi-family">다세대/다가구주택</option>
+                                    <option value="officetel">오피스텔</option>
+                                    <option value="neighborhood">근린생활시설 (1,2종)</option>
+                                    <option value="office">업무시설</option>
+                                    <option value="sales">판매시설</option>
+                                    <option value="accommodation">숙박시설</option>
+                                    <option value="medical">의료시설</option>
+                                    <option value="education">교육연구시설</option>
+                                    <option value="factory">공장</option>
+                                    <option value="warehouse">창고시설</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label>시설면적 (㎡)</label>
+                                <input type="number" id="parkingFacilityArea" placeholder="예: 1000" step="0.01">
+                            </div>
+                            <div class="input-group" id="unitCountGroup">
+                                <label>세대수 (주택의 경우)</label>
+                                <input type="number" id="unitCount" placeholder="예: 50">
+                            </div>
+                        </div>
+
+                        <div class="calc-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">📍</span>
+                                지역 설정
+                            </h3>
+                            <div class="input-group">
+                                <label>지역 구분</label>
+                                <select id="parkingRegion">
+                                    <option value="special">특별시/광역시</option>
+                                    <option value="city">시 지역</option>
+                                    <option value="county">군 지역</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label>부설주차장 완화율 (%)</label>
+                                <input type="number" id="parkingReduction" value="0" min="0" max="100">
+                                <small class="input-hint">대중교통 접근성 등에 따른 완화</small>
+                            </div>
+                        </div>
+
+                        <div class="calc-card result-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">🚗</span>
+                                주차대수 계산 결과
+                            </h3>
+                            <div class="result-group">
+                                <div class="result-item">
+                                    <span class="result-label">적용 기준</span>
+                                    <span class="result-value" id="parkingStandard">-</span>
+                                </div>
+                                <div class="result-item highlight">
+                                    <span class="result-label">필요 주차대수</span>
+                                    <span class="result-value" id="requiredParking">0 대</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">완화 후 주차대수</span>
+                                    <span class="result-value" id="reducedParking">0 대</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">장애인 주차구획</span>
+                                    <span class="result-value" id="disabledParking">0 대</span>
+                                </div>
+                            </div>
+                            <button class="calc-btn" onclick="Calculators.calculateParking()">계산하기</button>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>📌 주차장법 시행령 부설주차장 설치기준 (요약)</h4>
+                        <table class="info-table">
+                            <thead>
+                                <tr>
+                                    <th>시설물</th>
+                                    <th>설치기준</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>공동주택</td><td>세대당 0.7~1.5대 (지역/면적별 차등)</td></tr>
+                                <tr><td>근린생활시설</td><td>시설면적 134~200㎡당 1대</td></tr>
+                                <tr><td>업무시설</td><td>시설면적 100~150㎡당 1대</td></tr>
+                                <tr><td>판매시설</td><td>시설면적 100~150㎡당 1대</td></tr>
+                                <tr><td>숙박시설</td><td>객실 3~5실당 1대</td></tr>
+                            </tbody>
+                        </table>
+                        <p class="info-note">※ 지자체 조례에 따라 기준이 다를 수 있습니다.</p>
+                    </div>
+                </div>
+
+                <!-- 조경면적 계산기 -->
+                <div class="calc-panel" id="landscape-calc-panel" style="display: none;">
+                    <div class="calc-grid">
+                        <div class="calc-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">🌳</span>
+                                대지 정보
+                            </h3>
+                            <div class="input-group">
+                                <label>대지면적 (㎡)</label>
+                                <input type="number" id="landscapeLandArea" placeholder="예: 1000" step="0.01">
+                            </div>
+                            <div class="input-group">
+                                <label>건축 용도</label>
+                                <select id="landscapeUseType">
+                                    <option value="general">일반건축물</option>
+                                    <option value="factory">공장</option>
+                                    <option value="school">학교</option>
+                                    <option value="apartment">공동주택</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label>용도지역</label>
+                                <select id="landscapeZone">
+                                    <option value="commercial">상업지역</option>
+                                    <option value="industrial">공업지역</option>
+                                    <option value="residential">주거지역</option>
+                                    <option value="green">녹지지역</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="calc-card result-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">🌿</span>
+                                조경면적 계산 결과
+                            </h3>
+                            <div class="result-group">
+                                <div class="result-item">
+                                    <span class="result-label">적용 조경률</span>
+                                    <span class="result-value" id="landscapeRatio">0%</span>
+                                </div>
+                                <div class="result-item highlight">
+                                    <span class="result-label">필요 조경면적</span>
+                                    <span class="result-value" id="requiredLandscape">0 ㎡</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">옥상조경 인정 범위</span>
+                                    <span class="result-value" id="rooftopLandscape">0 ㎡</span>
+                                </div>
+                            </div>
+                            <button class="calc-btn" onclick="Calculators.calculateLandscape()">계산하기</button>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>📌 건축법 시행령 조경 설치 기준</h4>
+                        <table class="info-table">
+                            <thead>
+                                <tr>
+                                    <th>면적 기준</th>
+                                    <th>조경률</th>
+                                    <th>비고</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>200㎡ 이상 ~ 1,000㎡ 미만</td><td>5% 이상</td><td>-</td></tr>
+                                <tr><td>1,000㎡ 이상 ~ 2,000㎡ 미만</td><td>10% 이상</td><td>-</td></tr>
+                                <tr><td>2,000㎡ 이상</td><td>15% 이상</td><td>상업/공업: 완화가능</td></tr>
+                            </tbody>
+                        </table>
+                        <p class="info-note">※ 옥상조경은 조경면적의 2/3까지 인정 (지자체별 상이)</p>
+                    </div>
+                </div>
+
+                <!-- 일조권/높이제한 계산기 -->
+                <div class="calc-panel" id="sunlight-calc-panel" style="display: none;">
+                    <div class="calc-grid">
+                        <div class="calc-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">☀️</span>
+                                일조권 사선제한
+                            </h3>
+                            <div class="input-group">
+                                <label>정북방향 인접대지경계선까지 거리 (m)</label>
+                                <input type="number" id="northDistance" placeholder="예: 10" step="0.01">
+                            </div>
+                            <div class="input-group">
+                                <label>용도지역</label>
+                                <select id="sunlightZone">
+                                    <option value="exclusive1">전용주거지역</option>
+                                    <option value="general1">일반주거지역</option>
+                                    <option value="semi-residential">준주거지역</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label>9m 이하 부분 적용</label>
+                                <select id="under9m">
+                                    <option value="1.5">1.5배 적용</option>
+                                    <option value="1">1배 적용</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="calc-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">🏢</span>
+                                도로사선제한
+                            </h3>
+                            <div class="input-group">
+                                <label>전면도로 너비 (m)</label>
+                                <input type="number" id="roadWidth" placeholder="예: 12" step="0.01">
+                            </div>
+                            <div class="input-group">
+                                <label>도로 반대측 경계선까지 거리 (m)</label>
+                                <input type="number" id="roadDistance" placeholder="예: 15" step="0.01">
+                            </div>
+                        </div>
+
+                        <div class="calc-card result-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">📏</span>
+                                높이제한 계산 결과
+                            </h3>
+                            <div class="result-group">
+                                <div class="result-item">
+                                    <span class="result-label">일조권 높이제한</span>
+                                    <span class="result-value" id="sunlightHeight">0 m</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">도로사선 높이제한</span>
+                                    <span class="result-value" id="roadHeight">0 m</span>
+                                </div>
+                                <div class="result-item highlight">
+                                    <span class="result-label">적용 최대높이</span>
+                                    <span class="result-value" id="maxHeight">0 m</span>
+                                </div>
+                            </div>
+                            <button class="calc-btn" onclick="Calculators.calculateSunlight()">계산하기</button>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>📌 건축법 일조권 사선제한 (정북방향)</h4>
+                        <table class="info-table">
+                            <thead>
+                                <tr>
+                                    <th>용도지역</th>
+                                    <th>높이 9m 이하</th>
+                                    <th>높이 9m 초과</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>전용주거지역</td><td>인접경계선으로부터 1.5m 이격</td><td>인접경계선으로부터 해당 건축물 각 부분 높이의 1/2 이상</td></tr>
+                                <tr><td>일반주거지역</td><td>인접경계선으로부터 1m 이격</td><td>인접경계선으로부터 해당 건축물 각 부분 높이의 1/2 이상</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 정화조 용량 계산기 -->
+                <div class="calc-panel" id="septic-calc-panel" style="display: none;">
+                    <div class="calc-grid">
+                        <div class="calc-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">🚽</span>
+                                건축물 정보
+                            </h3>
+                            <div class="input-group">
+                                <label>건축물 용도</label>
+                                <select id="septicUseType">
+                                    <option value="apartment">공동주택</option>
+                                    <option value="single">단독주택</option>
+                                    <option value="office">업무시설</option>
+                                    <option value="neighborhood">근린생활시설</option>
+                                    <option value="sales">판매시설</option>
+                                    <option value="accommodation">숙박시설</option>
+                                    <option value="restaurant">음식점</option>
+                                </select>
+                            </div>
+                            <div class="input-group" id="septicUnitGroup">
+                                <label>세대수/실수</label>
+                                <input type="number" id="septicUnits" placeholder="예: 50">
+                            </div>
+                            <div class="input-group" id="septicAreaGroup">
+                                <label>연면적 (㎡)</label>
+                                <input type="number" id="septicArea" placeholder="예: 3000" step="0.01">
+                            </div>
+                            <div class="input-group" id="septicPersonGroup" style="display:none;">
+                                <label>수용인원 (명)</label>
+                                <input type="number" id="septicPerson" placeholder="예: 100">
+                            </div>
+                        </div>
+
+                        <div class="calc-card result-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">💧</span>
+                                정화조 용량 결과
+                            </h3>
+                            <div class="result-group">
+                                <div class="result-item">
+                                    <span class="result-label">산정 처리대상인원</span>
+                                    <span class="result-value" id="septicPopulation">0 인</span>
+                                </div>
+                                <div class="result-item highlight">
+                                    <span class="result-label">필요 정화조 용량</span>
+                                    <span class="result-value" id="septicCapacity">0 인조</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">일일 오수발생량</span>
+                                    <span class="result-value" id="dailySewage">0 ㎥/일</span>
+                                </div>
+                            </div>
+                            <button class="calc-btn" onclick="Calculators.calculateSeptic()">계산하기</button>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>📌 오수처리시설 처리대상인원 산정기준</h4>
+                        <table class="info-table">
+                            <thead>
+                                <tr>
+                                    <th>건축물 용도</th>
+                                    <th>산정기준</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>공동주택</td><td>연면적 85㎡ 이하: 3.5인/세대, 초과: 5인/세대</td></tr>
+                                <tr><td>단독주택</td><td>5인/세대</td></tr>
+                                <tr><td>업무시설</td><td>연면적 10㎡당 0.5인</td></tr>
+                                <tr><td>근린생활시설</td><td>연면적 10㎡당 0.5인</td></tr>
+                                <tr><td>숙박시설</td><td>객실당 2인</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 승강기 설치기준 계산기 -->
+                <div class="calc-panel" id="elevator-calc-panel" style="display: none;">
+                    <div class="calc-grid">
+                        <div class="calc-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">🛗</span>
+                                건축물 정보
+                            </h3>
+                            <div class="input-group">
+                                <label>건축물 용도</label>
+                                <select id="elevatorUseType">
+                                    <option value="apartment">공동주택</option>
+                                    <option value="general">일반 건축물</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label>층수</label>
+                                <input type="number" id="elevatorFloors" placeholder="예: 15" value="6">
+                            </div>
+                            <div class="input-group">
+                                <label>연면적 (㎡)</label>
+                                <input type="number" id="elevatorArea" placeholder="예: 5000" step="0.01">
+                            </div>
+                            <div class="input-group" id="elevatorUnitGroup">
+                                <label>세대수 (공동주택)</label>
+                                <input type="number" id="elevatorUnits" placeholder="예: 100">
+                            </div>
+                        </div>
+
+                        <div class="calc-card result-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">📋</span>
+                                승강기 설치 결과
+                            </h3>
+                            <div class="result-group">
+                                <div class="result-item">
+                                    <span class="result-label">승강기 설치 의무</span>
+                                    <span class="result-value" id="elevatorRequired">-</span>
+                                </div>
+                                <div class="result-item highlight">
+                                    <span class="result-label">필요 승용승강기</span>
+                                    <span class="result-value" id="passengerElevator">0 대</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">비상용승강기</span>
+                                    <span class="result-value" id="emergencyElevator">-</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">장애인용 승강기</span>
+                                    <span class="result-value" id="disabledElevator">-</span>
+                                </div>
+                            </div>
+                            <button class="calc-btn" onclick="Calculators.calculateElevator()">계산하기</button>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>📌 건축법 승강기 설치 기준</h4>
+                        <table class="info-table">
+                            <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>설치 기준</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>승용승강기</td><td>6층 이상 또는 연면적 2,000㎡ 이상</td></tr>
+                                <tr><td>비상용승강기</td><td>높이 31m 초과 건축물</td></tr>
+                                <tr><td>장애인용 승강기</td><td>장애인등편의법 적용 대상</td></tr>
+                                <tr><td>피난용승강기</td><td>고층건축물 (30층 이상 또는 높이 120m 이상)</td></tr>
+                            </tbody>
+                        </table>
+                        <p class="info-note">※ 공동주택: 6층 이상은 의무 설치</p>
+                    </div>
+                </div>
+
+                <!-- 단위 변환기 -->
+                <div class="calc-panel" id="unit-converter-panel" style="display: none;">
+                    <div class="calc-grid converter-grid">
+                        <div class="calc-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">📐</span>
+                                면적 변환
+                            </h3>
+                            <div class="converter-row">
+                                <div class="input-group">
+                                    <label>제곱미터 (㎡)</label>
+                                    <input type="number" id="sqMeter" placeholder="0" step="0.01" oninput="Calculators.convertArea('sqm')">
+                                </div>
+                                <span class="converter-arrow">⟷</span>
+                                <div class="input-group">
+                                    <label>평 (坪)</label>
+                                    <input type="number" id="pyeong" placeholder="0" step="0.01" oninput="Calculators.convertArea('pyeong')">
+                                </div>
+                            </div>
+                            <div class="converter-row">
+                                <div class="input-group">
+                                    <label>제곱피트 (ft²)</label>
+                                    <input type="number" id="sqFeet" placeholder="0" step="0.01" oninput="Calculators.convertArea('sqft')">
+                                </div>
+                                <span class="converter-arrow">⟷</span>
+                                <div class="input-group">
+                                    <label>에이커 (acre)</label>
+                                    <input type="number" id="acre" placeholder="0" step="0.0001" oninput="Calculators.convertArea('acre')">
+                                </div>
+                            </div>
+                            <p class="converter-note">1평 = 3.3058㎡ | 1㎡ = 0.3025평</p>
+                        </div>
+
+                        <div class="calc-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">📏</span>
+                                길이 변환
+                            </h3>
+                            <div class="converter-row">
+                                <div class="input-group">
+                                    <label>미터 (m)</label>
+                                    <input type="number" id="meter" placeholder="0" step="0.01" oninput="Calculators.convertLength('m')">
+                                </div>
+                                <span class="converter-arrow">⟷</span>
+                                <div class="input-group">
+                                    <label>피트 (ft)</label>
+                                    <input type="number" id="feet" placeholder="0" step="0.01" oninput="Calculators.convertLength('ft')">
+                                </div>
+                            </div>
+                            <div class="converter-row">
+                                <div class="input-group">
+                                    <label>센티미터 (cm)</label>
+                                    <input type="number" id="centimeter" placeholder="0" step="0.01" oninput="Calculators.convertLength('cm')">
+                                </div>
+                                <span class="converter-arrow">⟷</span>
+                                <div class="input-group">
+                                    <label>인치 (in)</label>
+                                    <input type="number" id="inch" placeholder="0" step="0.01" oninput="Calculators.convertLength('in')">
+                                </div>
+                            </div>
+                            <p class="converter-note">1m = 3.281ft | 1ft = 0.3048m</p>
+                        </div>
+
+                        <div class="calc-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">🧊</span>
+                                부피/용적 변환
+                            </h3>
+                            <div class="converter-row">
+                                <div class="input-group">
+                                    <label>세제곱미터 (㎥)</label>
+                                    <input type="number" id="cubicMeter" placeholder="0" step="0.01" oninput="Calculators.convertVolume('cbm')">
+                                </div>
+                                <span class="converter-arrow">⟷</span>
+                                <div class="input-group">
+                                    <label>리터 (L)</label>
+                                    <input type="number" id="liter" placeholder="0" step="0.01" oninput="Calculators.convertVolume('l')">
+                                </div>
+                            </div>
+                            <div class="converter-row">
+                                <div class="input-group">
+                                    <label>세제곱피트 (ft³)</label>
+                                    <input type="number" id="cubicFeet" placeholder="0" step="0.01" oninput="Calculators.convertVolume('cbft')">
+                                </div>
+                                <span class="converter-arrow">⟷</span>
+                                <div class="input-group">
+                                    <label>갤런 (US gal)</label>
+                                    <input type="number" id="gallon" placeholder="0" step="0.01" oninput="Calculators.convertVolume('gal')">
+                                </div>
+                            </div>
+                            <p class="converter-note">1㎥ = 1,000L | 1ft³ = 28.317L</p>
+                        </div>
+
+                        <div class="calc-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">⚖️</span>
+                                하중/압력 변환
+                            </h3>
+                            <div class="converter-row">
+                                <div class="input-group">
+                                    <label>kN/㎡</label>
+                                    <input type="number" id="knPerSqm" placeholder="0" step="0.01" oninput="Calculators.convertPressure('kn')">
+                                </div>
+                                <span class="converter-arrow">⟷</span>
+                                <div class="input-group">
+                                    <label>kg/㎡</label>
+                                    <input type="number" id="kgPerSqm" placeholder="0" step="0.01" oninput="Calculators.convertPressure('kg')">
+                                </div>
+                            </div>
+                            <div class="converter-row">
+                                <div class="input-group">
+                                    <label>PSI (lb/in²)</label>
+                                    <input type="number" id="psi" placeholder="0" step="0.01" oninput="Calculators.convertPressure('psi')">
+                                </div>
+                                <span class="converter-arrow">⟷</span>
+                                <div class="input-group">
+                                    <label>MPa</label>
+                                    <input type="number" id="mpa" placeholder="0" step="0.0001" oninput="Calculators.convertPressure('mpa')">
+                                </div>
+                            </div>
+                            <p class="converter-note">1kN/㎡ = 101.97kg/㎡ | 1MPa = 145.04PSI</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 피난/방화 기준 계산기 -->
+                <div class="calc-panel" id="evacuation-calc-panel" style="display: none;">
+                    <div class="calc-grid">
+                        <div class="calc-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">🚪</span>
+                                피난시설 기준
+                            </h3>
+                            <div class="input-group">
+                                <label>건축물 용도</label>
+                                <select id="evacuationUseType">
+                                    <option value="apartment">공동주택</option>
+                                    <option value="office">업무시설</option>
+                                    <option value="sales">판매시설</option>
+                                    <option value="assembly">집회/문화시설</option>
+                                    <option value="medical">의료시설</option>
+                                    <option value="education">교육연구시설</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label>해당 층 바닥면적 (㎡)</label>
+                                <input type="number" id="evacuationFloorArea" placeholder="예: 500" step="0.01">
+                            </div>
+                            <div class="input-group">
+                                <label>건축물 높이 (m)</label>
+                                <input type="number" id="evacuationHeight" placeholder="예: 50" step="0.01">
+                            </div>
+                            <div class="input-group">
+                                <label>층수</label>
+                                <input type="number" id="evacuationFloors" placeholder="예: 15">
+                            </div>
+                        </div>
+
+                        <div class="calc-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">🔥</span>
+                                방화구획 기준
+                            </h3>
+                            <div class="input-group">
+                                <label>연면적 (㎡)</label>
+                                <input type="number" id="fireArea" placeholder="예: 5000" step="0.01">
+                            </div>
+                            <div class="input-group">
+                                <label>스프링클러 설치</label>
+                                <select id="sprinklerInstalled">
+                                    <option value="no">미설치</option>
+                                    <option value="yes">설치</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label>내화구조 여부</label>
+                                <select id="fireResistant">
+                                    <option value="yes">내화구조</option>
+                                    <option value="no">비내화구조</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="calc-card result-card">
+                            <h3 class="calc-card-title">
+                                <span class="calc-icon">📋</span>
+                                피난/방화 결과
+                            </h3>
+                            <div class="result-group">
+                                <div class="result-item">
+                                    <span class="result-label">직통계단 설치</span>
+                                    <span class="result-value" id="directStairs">-</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">피난계단/특별피난계단</span>
+                                    <span class="result-value" id="evacuationStairs">-</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">방화구획 면적</span>
+                                    <span class="result-value" id="fireCompartment">-</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">피난안전구역</span>
+                                    <span class="result-value" id="safetyZone">-</span>
+                                </div>
+                            </div>
+                            <button class="calc-btn" onclick="Calculators.calculateEvacuation()">계산하기</button>
+                        </div>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>📌 피난시설 설치 기준 (건축법 시행령)</h4>
+                        <table class="info-table">
+                            <thead>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>설치 기준</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>직통계단 2개소</td><td>바닥면적 합계 200㎡ 이상 (공동주택: 300㎡)</td></tr>
+                                <tr><td>피난계단</td><td>5층 이상 또는 지하 2층 이하</td></tr>
+                                <tr><td>특별피난계단</td><td>11층 이상 (공동주택: 16층 이상)</td></tr>
+                                <tr><td>피난안전구역</td><td>초고층 건축물 (50층 이상 또는 200m 이상)</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 링크 페이지 컨테이너 -->
+            <div class="links-container" id="linksContainer" style="display: none;">
+                <div class="links-grid">
+                    <div class="link-category">
+                        <h3 class="link-category-title">
+                            <span class="link-icon">🏛️</span>
+                            정부 / 공공기관
+                        </h3>
+                        <div class="link-items">
+                            <a href="https://www.eais.go.kr" target="_blank" class="link-card">
+                                <div class="link-card-icon">📋</div>
+                                <div class="link-card-content">
+                                    <h4>세움터 (건축행정시스템)</h4>
+                                    <p>건축허가, 사용승인 등 건축행정 민원처리</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                            <a href="https://www.law.go.kr" target="_blank" class="link-card">
+                                <div class="link-card-icon">⚖️</div>
+                                <div class="link-card-content">
+                                    <h4>국가법령정보센터</h4>
+                                    <p>건축법, 건축법시행령 등 법령 검색</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                            <a href="https://www.molit.go.kr" target="_blank" class="link-card">
+                                <div class="link-card-icon">🏢</div>
+                                <div class="link-card-content">
+                                    <h4>국토교통부</h4>
+                                    <p>건축 정책, 고시, 지침 등</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                            <a href="https://www.eum.go.kr" target="_blank" class="link-card">
+                                <div class="link-card-icon">🗺️</div>
+                                <div class="link-card-content">
+                                    <h4>토지이음</h4>
+                                    <p>토지이용규제, 용도지역/지구 확인</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                            <a href="https://www.nsdi.go.kr" target="_blank" class="link-card">
+                                <div class="link-card-icon">📍</div>
+                                <div class="link-card-content">
+                                    <h4>국가공간정보포털</h4>
+                                    <p>지적도, 수치지형도 등 공간정보</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="link-category">
+                        <h3 class="link-category-title">
+                            <span class="link-icon">🔍</span>
+                            부동산 / 토지정보
+                        </h3>
+                        <div class="link-items">
+                            <a href="https://kras.go.kr" target="_blank" class="link-card">
+                                <div class="link-card-icon">📊</div>
+                                <div class="link-card-content">
+                                    <h4>부동산공시가격 알리미</h4>
+                                    <p>공시지가, 개별주택가격 조회</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                            <a href="http://www.onnara.go.kr" target="_blank" class="link-card">
+                                <div class="link-card-icon">🏠</div>
+                                <div class="link-card-content">
+                                    <h4>온나라 부동산정보</h4>
+                                    <p>부동산 종합정보 서비스</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                            <a href="http://www.gov.kr/portal/service/serviceInfo/PTR000050450" target="_blank" class="link-card">
+                                <div class="link-card-icon">📄</div>
+                                <div class="link-card-content">
+                                    <h4>건축물대장 열람</h4>
+                                    <p>정부24 건축물대장 발급/열람</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                            <a href="http://www.realtyprice.kr" target="_blank" class="link-card">
+                                <div class="link-card-icon">💰</div>
+                                <div class="link-card-content">
+                                    <h4>부동산거래관리시스템</h4>
+                                    <p>실거래가 조회, 거래신고</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="link-category">
+                        <h3 class="link-category-title">
+                            <span class="link-icon">🔬</span>
+                            연구 / 기술기관
+                        </h3>
+                        <div class="link-items">
+                            <a href="https://www.kict.re.kr" target="_blank" class="link-card">
+                                <div class="link-card-icon">🏗️</div>
+                                <div class="link-card-content">
+                                    <h4>한국건설기술연구원</h4>
+                                    <p>건설기술 연구개발, 기술기준</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                            <a href="https://www.auri.re.kr" target="_blank" class="link-card">
+                                <div class="link-card-icon">🏙️</div>
+                                <div class="link-card-content">
+                                    <h4>건축도시공간연구소</h4>
+                                    <p>건축정책, 도시공간 연구</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                            <a href="https://www.kbig.kr" target="_blank" class="link-card">
+                                <div class="link-card-icon">📚</div>
+                                <div class="link-card-content">
+                                    <h4>한국BIM학회</h4>
+                                    <p>BIM 기술정보, 가이드라인</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                            <a href="https://www.kiaedu.net" target="_blank" class="link-card">
+                                <div class="link-card-icon">📖</div>
+                                <div class="link-card-content">
+                                    <h4>대한건축사협회 교육원</h4>
+                                    <p>건축사 교육, 세미나</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="link-category">
+                        <h3 class="link-category-title">
+                            <span class="link-icon">📋</span>
+                            인허가 / 인증
+                        </h3>
+                        <div class="link-items">
+                            <a href="https://www.g-seed.or.kr" target="_blank" class="link-card">
+                                <div class="link-card-icon">🌱</div>
+                                <div class="link-card-content">
+                                    <h4>녹색건축인증 (G-SEED)</h4>
+                                    <p>친환경 건축물 인증 시스템</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                            <a href="https://beep.molit.go.kr" target="_blank" class="link-card">
+                                <div class="link-card-icon">⚡</div>
+                                <div class="link-card-content">
+                                    <h4>건축물에너지효율등급</h4>
+                                    <p>에너지효율등급 인증</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                            <a href="https://www.kfire.or.kr" target="_blank" class="link-card">
+                                <div class="link-card-icon">🔥</div>
+                                <div class="link-card-content">
+                                    <h4>한국소방산업기술원</h4>
+                                    <p>소방시설 성능인증, 기준</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                            <a href="https://barrier-free.or.kr" target="_blank" class="link-card">
+                                <div class="link-card-icon">♿</div>
+                                <div class="link-card-content">
+                                    <h4>장애물없는생활환경인증</h4>
+                                    <p>BF인증 (Barrier Free)</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="link-category">
+                        <h3 class="link-category-title">
+                            <span class="link-icon">🛠️</span>
+                            표준 / 적산
+                        </h3>
+                        <div class="link-items">
+                            <a href="https://www.standard.go.kr" target="_blank" class="link-card">
+                                <div class="link-card-icon">📏</div>
+                                <div class="link-card-content">
+                                    <h4>국가표준인증통합정보시스템</h4>
+                                    <p>KS표준, 건축자재 인증</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                            <a href="https://www.kcs.re.kr" target="_blank" class="link-card">
+                                <div class="link-card-icon">💵</div>
+                                <div class="link-card-content">
+                                    <h4>한국건설기술연구원 적산</h4>
+                                    <p>건설공사 표준품셈, 단가</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                            <a href="https://www.csi.go.kr" target="_blank" class="link-card">
+                                <div class="link-card-icon">📊</div>
+                                <div class="link-card-content">
+                                    <h4>건설산업정보센터</h4>
+                                    <p>시공능력평가, 건설업 정보</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="link-category">
+                        <h3 class="link-category-title">
+                            <span class="link-icon">🎨</span>
+                            설계 자료
+                        </h3>
+                        <div class="link-items">
+                            <a href="https://www.archidata.co.kr" target="_blank" class="link-card">
+                                <div class="link-card-icon">📐</div>
+                                <div class="link-card-content">
+                                    <h4>아키데이터</h4>
+                                    <p>건축디테일, CAD데이터</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                            <a href="https://www.archdaily.com" target="_blank" class="link-card">
+                                <div class="link-card-icon">🌐</div>
+                                <div class="link-card-content">
+                                    <h4>ArchDaily</h4>
+                                    <p>세계 건축 프로젝트, 뉴스</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                            <a href="https://www.dezeen.com" target="_blank" class="link-card">
+                                <div class="link-card-icon">✨</div>
+                                <div class="link-card-content">
+                                    <h4>Dezeen</h4>
+                                    <p>건축/인테리어 디자인 매거진</p>
+                                </div>
+                                <span class="link-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- 푸터 -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <span class="footer-copyright">© 2024 Architect Pro. 건축설계 전문가를 위한 도구</span>
+            </div>
+            <div class="footer-right">
+                <span class="footer-tech">Built with precision</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/calculators.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

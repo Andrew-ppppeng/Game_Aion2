@@ -1,0 +1,45 @@
+Start with AION 2's built-in skill macro: bind its activation key, select a hotbar stack in the skill menu and test a short damage sequence. [Karsten Scholz's September 30 launch-period walkthrough](https://mein-mmo.de/aion-2-makro-mehr-schaden/) shows this menu flow. The steps below describe that player demonstration; this site has not reproduced the setup in a Global game session.
+
+<h2 id="bind-and-open">Bind the macro key and open the editor</h2>
+
+In the demonstrated interface, find the ability-macro binding under **Key Settings → General → Gameplay**. Choose a reachable button, then open the skill menu's ability-macro editor. Add a macro and select the hotbar slot containing your skill stack. In that example, holding the bound button repeats the stack; you do not have to tap the individual skill key continuously.
+
+Menu wording varies by client language. Identify the game's skill-macro control, not a mouse-vendor script or a text-command macro from the original AION. If the menu differs, check the current client help before assuming an old screenshot applies. Make the first test with one stack so you can see exactly which skills the input activates.
+
+<GuideVisual id="macro-global-keybind" />
+
+<GuideVisual id="macro-global-editor" />
+
+<h2 id="priority-stack">Understand priority before adding more skills</h2>
+
+Scholz describes the stack as a priority list that checks the bottom skill first and then the skills above it. A skill with no cooldown at high priority can prevent higher entries from being used. Start with a small list of repeatable attacks and watch whether each intended attack actually occurs.
+
+Think about the job of each button before arranging it. A damage button you want whenever available is different from an attack that needs a particular target state. Write down any condition, range or resource requirement, and verify it during a manual attempt. Adding every unlocked skill makes it harder to identify an unavailable entry or a poorly chosen priority.
+
+<GuideVisual id="workflow" />
+
+<h2 id="manual-actions">Keep decisions on separate controls</h2>
+
+Our starting recommendation is to leave movement, interrupt timing, protection and recovery on reachable separate buttons. For Cleric, keep healing, cleanse and resurrection available when the party needs them. For Ranger, retain control over distance and a shot that must be aimed or prepared for a specific opening. This is a practical design recommendation, not a verified class-specific macro template.
+
+A short repeatable damage sequence should leave you able to respond to the encounter. Test stopping the macro, moving out of a mechanic and using a reactive skill before trying it in a difficult party fight. If those actions become awkward, change the binding or reduce the stack. A higher damage result on a stationary target does not compensate for missing a mechanic.
+
+<h2 id="delay-and-basic-attack">Delay and the basic attack need testing</h2>
+
+The launch-period walkthrough demonstrates using the basic attack separately while holding the skill macro. Treat that as a configuration to compare in your own client, not a guaranteed damage increase for every class and patch. Make the same short attempt manually and with the built-in macro, keeping the build and encounter comparable.
+
+Older guides may recommend a fixed delay based on ping. [aLuckyRO's Cleric demonstration](https://www.youtube.com/watch?v=UPjsUVC0DtA) discusses delay on a lower-level live-server character intended to model Global progression. That is not a tested Global delay table. If your current editor exposes a delay setting, note the starting value and change one setting at a time. Check missed attacks and responsiveness rather than assuming the smallest number is always best.
+
+<h2 id="debug-one-stack">Troubleshoot one stack at a time</h2>
+
+If nothing fires, first check the activation binding and that the macro refers to the intended hotbar slot. If only one attack repeats, inspect its priority and availability. If some attacks disappear, test those attacks manually against the same target: cooldown, range, resource or a required condition may explain the difference.
+
+Then reproduce the sequence while moving and after changing target. Keep a note of what you changed. When a new skill option or patch changes the attack, retest the stack before copying a newer-looking template. A template designed for developed KR/TW skills can contain interactions your Global character has not unlocked.
+
+<h2 id="built-in-and-policy">Built-in macros and NC policy</h2>
+
+Use the game's own editor for this procedure. The [Global operation policy](https://www.plaync.com/policy/operation/aion2global/en) sanctions programs or devices that circumvent protection or interfere with normal operation. This guide does not establish permission for external input automation. If you need an accessibility arrangement beyond the built-in controls, confirm it with NC using the current policy.
+
+Choose the skills and role first, then simplify their controls. The [builds guide](/builds) helps separate repeatable attacks from decisions that require attention.
+
+<GuideNext slug="builds" />

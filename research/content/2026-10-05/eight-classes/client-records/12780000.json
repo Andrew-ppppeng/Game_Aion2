@@ -1,0 +1,1496 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/12780000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "12780000",
+    "name": "Fury",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+    "kind": "passive",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": []
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "shape": {
+        "code": "self"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "sword",
+        "name": "Longsword"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>5.5%</> and PvP Damage Boost by <chat_combat>2.75%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>6%</> and PvP Damage Boost by <chat_combat>3%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>6.5%</> and PvP Damage Boost by <chat_combat>3.25%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>7%</> and PvP Damage Boost by <chat_combat>3.5%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>7.5%</> and PvP Damage Boost by <chat_combat>3.75%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>8%</> and PvP Damage Boost by <chat_combat>4%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>8.5%</> and PvP Damage Boost by <chat_combat>4.25%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>9%</> and PvP Damage Boost by <chat_combat>4.5%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>9.5%</> and PvP Damage Boost by <chat_combat>4.75%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>10%</> and PvP Damage Boost by <chat_combat>5%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>10.5%</> and PvP Damage Boost by <chat_combat>5.25%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>11%</> and PvP Damage Boost by <chat_combat>5.5%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>11.5%</> and PvP Damage Boost by <chat_combat>5.75%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>12%</> and PvP Damage Boost by <chat_combat>6%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>12.5%</> and PvP Damage Boost by <chat_combat>6.25%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>13%</> and PvP Damage Boost by <chat_combat>6.5%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>13.5%</> and PvP Damage Boost by <chat_combat>6.75%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>14%</> and PvP Damage Boost by <chat_combat>7%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>14.5%</> and PvP Damage Boost by <chat_combat>7.25%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>15%</> and PvP Damage Boost by <chat_combat>7.5%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>15.5%</> and PvP Damage Boost by <chat_combat>7.75%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>16%</> and PvP Damage Boost by <chat_combat>8%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>16.5%</> and PvP Damage Boost by <chat_combat>8.25%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>17%</> and PvP Damage Boost by <chat_combat>8.5%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>17.5%</> and PvP Damage Boost by <chat_combat>8.75%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>18%</> and PvP Damage Boost by <chat_combat>9%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>18.5%</> and PvP Damage Boost by <chat_combat>9.25%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>19%</> and PvP Damage Boost by <chat_combat>9.5%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>19.5%</> and PvP Damage Boost by <chat_combat>9.75%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>20%</> and PvP Damage Boost by <chat_combat>10%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>20.5%</> and PvP Damage Boost by <chat_combat>10.25%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>21%</> and PvP Damage Boost by <chat_combat>10.5%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>21.5%</> and PvP Damage Boost by <chat_combat>10.75%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>22%</> and PvP Damage Boost by <chat_combat>11%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>22.5%</> and PvP Damage Boost by <chat_combat>11.25%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>23%</> and PvP Damage Boost by <chat_combat>11.5%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>23.5%</> and PvP Damage Boost by <chat_combat>11.75%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>24%</> and PvP Damage Boost by <chat_combat>12%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>24.5%</> and PvP Damage Boost by <chat_combat>12.25%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>25%</> and PvP Damage Boost by <chat_combat>12.5%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127800001",
+            "name": "Fury",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Front Attack Damage Boost, increases PvE Damage Boost and PvP Damage Boost for caster and party members on Block",
+            "effect": "+<desc_point>0.3%</> Front Attack Damage Boost\n+<desc_point>5.5%</> PvE Damage Boost and +<desc_point>2.75%</> PvP Damage Boost to caster and party members on Block",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Fury",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+              "id": "127800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": true,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "986",
+        "level": 1,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "987",
+        "level": 2,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "988",
+        "level": 3,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "989",
+        "level": 4,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "990",
+        "level": 5,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "991",
+        "level": 6,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "992",
+        "level": 7,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "993",
+        "level": 8,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "994",
+        "level": 9,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "995",
+        "level": 10,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "passive",
+    "kindName": "Passive",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "classes": [
+      {
+        "code": "templar",
+        "name": "Templar"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/passive"
+    ],
+    "name": "Fury",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_008.webp",
+    "id": "12780000",
+    "entityType": "skill",
+    "description": "Increases Front Attack Damage Boost by <chat_combat>0.3%</> for the caster, and increases PvE Damage Boost by <chat_combat>5.5%</> and PvP Damage Boost by <chat_combat>2.75%</> for 20s for the caster and party members on Block.\n\nCooldown: 1s"
+  }
+}

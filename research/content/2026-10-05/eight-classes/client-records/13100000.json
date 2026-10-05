@@ -1,0 +1,2174 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/13100000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "13100000",
+    "name": "Savage Roar",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_009.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "13100010",
+        "description": "-20% MP consumed",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13100020",
+        "description": "+20% Skill Speed",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13100030",
+        "description": "Deals up to 12% more damage when less targets are hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13100040",
+        "description": "-1s [Shadowstrike] cooldown on hit",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13100050",
+        "description": "Pulls nearby targets on using [Savage Smash]",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Nontarget | Mobile</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "mainself"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "rectangle"
+      },
+      "reachMeters": 5.9,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 120
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "dagger",
+        "name": "Dagger"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:68:83.5:1:1]]-[[damage:max:68:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 68,
+            "baseMax": 68,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:101:83.5:1:1]]-[[damage:max:101:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 101,
+            "baseMax": 101,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:133:83.5:1:1]]-[[damage:max:133:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 133,
+            "baseMax": 133,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:166:83.5:1:1]]-[[damage:max:166:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 166,
+            "baseMax": 166,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:215:83.5:1:1]]-[[damage:max:215:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 215,
+            "baseMax": 215,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:276:83.5:1:1]]-[[damage:max:276:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 276,
+            "baseMax": 276,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:350:83.5:1:1]]-[[damage:max:350:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 350,
+            "baseMax": 350,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:412:83.5:1:1]]-[[damage:max:412:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 412,
+            "baseMax": 412,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:473:83.5:1:1]]-[[damage:max:473:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 473,
+            "baseMax": 473,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:534:83.5:1:1]]-[[damage:max:534:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 534,
+            "baseMax": 534,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:596:83.5:1:1]]-[[damage:max:596:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 596,
+            "baseMax": 596,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:670:83.5:1:1]]-[[damage:max:670:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 670,
+            "baseMax": 670,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:731:83.5:1:1]]-[[damage:max:731:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 731,
+            "baseMax": 731,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:776:83.5:1:1]]-[[damage:max:776:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 776,
+            "baseMax": 776,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:809:83.5:1:1]]-[[damage:max:809:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 809,
+            "baseMax": 809,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:854:83.5:1:1]]-[[damage:max:854:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 854,
+            "baseMax": 854,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:899:83.5:1:1]]-[[damage:max:899:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 899,
+            "baseMax": 899,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:944:83.5:1:1]]-[[damage:max:944:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 944,
+            "baseMax": 944,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:989:83.5:1:1]]-[[damage:max:989:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 989,
+            "baseMax": 989,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1021:83.5:1:1]]-[[damage:max:1021:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 1021,
+            "baseMax": 1021,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1054:83.5:1:1]]-[[damage:max:1054:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 1054,
+            "baseMax": 1054,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1087:83.5:1:1]]-[[damage:max:1087:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 1087,
+            "baseMax": 1087,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1119:83.5:1:1]]-[[damage:max:1119:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 1119,
+            "baseMax": 1119,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1152:83.5:1:1]]-[[damage:max:1152:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 1152,
+            "baseMax": 1152,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1184:83.5:1:1]]-[[damage:max:1184:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 1184,
+            "baseMax": 1184,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1217:83.5:1:1]]-[[damage:max:1217:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 1217,
+            "baseMax": 1217,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1249:83.5:1:1]]-[[damage:max:1249:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 1249,
+            "baseMax": 1249,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1282:83.5:1:1]]-[[damage:max:1282:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 1282,
+            "baseMax": 1282,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1315:83.5:1:1]]-[[damage:max:1315:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 1315,
+            "baseMax": 1315,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1347:83.5:1:1]]-[[damage:max:1347:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 1347,
+            "baseMax": 1347,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1380:83.5:1:1]]-[[damage:max:1380:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 1380,
+            "baseMax": 1380,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1412:83.5:1:1]]-[[damage:max:1412:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 1412,
+            "baseMax": 1412,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1445:83.5:1:1]]-[[damage:max:1445:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 1445,
+            "baseMax": 1445,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1477:83.5:1:1]]-[[damage:max:1477:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 1477,
+            "baseMax": 1477,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1510:83.5:1:1]]-[[damage:max:1510:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 1510,
+            "baseMax": 1510,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1543:83.5:1:1]]-[[damage:max:1543:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 1543,
+            "baseMax": 1543,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1575:83.5:1:1]]-[[damage:max:1575:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 1575,
+            "baseMax": 1575,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1608:83.5:1:1]]-[[damage:max:1608:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 1608,
+            "baseMax": 1608,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1640:83.5:1:1]]-[[damage:max:1640:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 1640,
+            "baseMax": 1640,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1673:83.5:1:1]]-[[damage:max:1673:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1310000011",
+            "effectGroupId": "131000001",
+            "baseMin": 1673,
+            "baseMax": 1673,
+            "attackRatioPercent": 83.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "130000011",
+            "name": "Insignia",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Combat Speed",
+            "effect": "-<desc_point>2%</> Combat Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Insignia",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_008.webp",
+              "id": "130000011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "1352",
+        "level": 1,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1353",
+        "level": 2,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1354",
+        "level": 3,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1355",
+        "level": 4,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1356",
+        "level": 5,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1357",
+        "level": 6,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1358",
+        "level": 7,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1359",
+        "level": 8,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1360",
+        "level": 9,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1361",
+        "level": 10,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "13100010",
+        "skillId": "13100010",
+        "name": "Savage Roar",
+        "description": "-20% MP consumed",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13100020",
+        "skillId": "13100020",
+        "name": "Savage Roar",
+        "description": "+20% Skill Speed",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13100030",
+        "skillId": "13100030",
+        "name": "Savage Roar",
+        "description": "Deals up to 12% more damage when less targets are hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13100040",
+        "skillId": "13100040",
+        "name": "Savage Roar",
+        "description": "-1s [Shadowstrike] cooldown on hit",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13100050",
+        "skillId": "13100050",
+        "name": "Savage Roar",
+        "description": "Pulls nearby targets on using [Savage Smash]",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [
+      {
+        "mainCategoryId": "skills",
+        "name": "Savage Back Kick",
+        "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_010.webp",
+        "id": "13110000"
+      }
+    ],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 4,
+    "classes": [
+      {
+        "code": "assassin",
+        "name": "Assassin"
+      }
+    ],
+    "chainRole": {
+      "code": "opening",
+      "name": "Opening Skill"
+    },
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Savage Roar",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_009.webp",
+    "id": "13100000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:68:83.5:1:1]]-[[damage:max:68:83.5:1:1]]</> damage to up to 4 enemies within 4m and engraves 1 Insignia for 10s.\n\n2 Stagger Gauge Damage"
+  }
+}

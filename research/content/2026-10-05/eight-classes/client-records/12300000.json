@@ -1,0 +1,2243 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/12300000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "12300000",
+    "name": "Annihilate",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_028.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 36,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "12300010",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12300020",
+        "description": "+20% Knockdown Chance",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12300030",
+        "description": "+100% damage to targets with Incapacitated Immunity",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12300040",
+        "description": "-10s cooldown",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12300050",
+        "description": "Changes to AoE Skill",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 200
+      }
+    ],
+    "conditions": [
+      {
+        "id": "12000003",
+        "target": {
+          "code": "target"
+        },
+        "type": {
+          "code": "hasabnormaleffecttype"
+        },
+        "description": "Knockdown Target",
+        "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+        "abnormalEffect": {
+          "code": "knockdowninstant"
+        }
+      },
+      {
+        "id": "12000005",
+        "target": {
+          "code": "target"
+        },
+        "type": {
+          "code": "hasabnormaleffecttype"
+        },
+        "description": "Stun Target",
+        "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_stun.webp",
+        "abnormalEffect": {
+          "code": "stun"
+        }
+      },
+      {
+        "id": "12000009",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormalgroupid"
+        },
+        "description": "On attacking Incapacitated Immunity Target",
+        "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_immuneabnormal.webp",
+        "abnormalGroupId": 123000001
+      }
+    ],
+    "requiredWeapons": [
+      {
+        "code": "sword",
+        "name": "Longsword"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:791:321.75:1:1]]-[[damage:max:791:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 791,
+            "baseMax": 791,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1042:321.75:1:1]]-[[damage:max:1042:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 1042,
+            "baseMax": 1042,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1341:321.75:1:1]]-[[damage:max:1341:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 1341,
+            "baseMax": 1341,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1592:321.75:1:1]]-[[damage:max:1592:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 1592,
+            "baseMax": 1592,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1843:321.75:1:1]]-[[damage:max:1843:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 1843,
+            "baseMax": 1843,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2094:321.75:1:1]]-[[damage:max:2094:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 2094,
+            "baseMax": 2094,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2345:321.75:1:1]]-[[damage:max:2345:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 2345,
+            "baseMax": 2345,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2644:321.75:1:1]]-[[damage:max:2644:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 2644,
+            "baseMax": 2644,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2895:321.75:1:1]]-[[damage:max:2895:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 2895,
+            "baseMax": 2895,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3079:321.75:1:1]]-[[damage:max:3079:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 3079,
+            "baseMax": 3079,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3214:321.75:1:1]]-[[damage:max:3214:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 3214,
+            "baseMax": 3214,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3397:321.75:1:1]]-[[damage:max:3397:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 3397,
+            "baseMax": 3397,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3581:321.75:1:1]]-[[damage:max:3581:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 3581,
+            "baseMax": 3581,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3764:321.75:1:1]]-[[damage:max:3764:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 3764,
+            "baseMax": 3764,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3947:321.75:1:1]]-[[damage:max:3947:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 3947,
+            "baseMax": 3947,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4083:321.75:1:1]]-[[damage:max:4083:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 4083,
+            "baseMax": 4083,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4218:321.75:1:1]]-[[damage:max:4218:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 4218,
+            "baseMax": 4218,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4353:321.75:1:1]]-[[damage:max:4353:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 4353,
+            "baseMax": 4353,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4488:321.75:1:1]]-[[damage:max:4488:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 4488,
+            "baseMax": 4488,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4623:321.75:1:1]]-[[damage:max:4623:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 4623,
+            "baseMax": 4623,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4758:321.75:1:1]]-[[damage:max:4758:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 4758,
+            "baseMax": 4758,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4893:321.75:1:1]]-[[damage:max:4893:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 4893,
+            "baseMax": 4893,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:5028:321.75:1:1]]-[[damage:max:5028:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 5028,
+            "baseMax": 5028,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:5164:321.75:1:1]]-[[damage:max:5164:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 5164,
+            "baseMax": 5164,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:5299:321.75:1:1]]-[[damage:max:5299:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 5299,
+            "baseMax": 5299,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:5434:321.75:1:1]]-[[damage:max:5434:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 5434,
+            "baseMax": 5434,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:5569:321.75:1:1]]-[[damage:max:5569:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 5569,
+            "baseMax": 5569,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:5704:321.75:1:1]]-[[damage:max:5704:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 5704,
+            "baseMax": 5704,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:5839:321.75:1:1]]-[[damage:max:5839:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 5839,
+            "baseMax": 5839,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:5974:321.75:1:1]]-[[damage:max:5974:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 5974,
+            "baseMax": 5974,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:6110:321.75:1:1]]-[[damage:max:6110:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 6110,
+            "baseMax": 6110,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:6245:321.75:1:1]]-[[damage:max:6245:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 6245,
+            "baseMax": 6245,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:6380:321.75:1:1]]-[[damage:max:6380:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 6380,
+            "baseMax": 6380,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:6515:321.75:1:1]]-[[damage:max:6515:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 6515,
+            "baseMax": 6515,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:6650:321.75:1:1]]-[[damage:max:6650:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 6650,
+            "baseMax": 6650,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:6785:321.75:1:1]]-[[damage:max:6785:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 6785,
+            "baseMax": 6785,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:6920:321.75:1:1]]-[[damage:max:6920:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 6920,
+            "baseMax": 6920,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:7055:321.75:1:1]]-[[damage:max:7055:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 7055,
+            "baseMax": 7055,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:7191:321.75:1:1]]-[[damage:max:7191:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 7191,
+            "baseMax": 7191,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:7326:321.75:1:1]]-[[damage:max:7326:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1230000011",
+            "effectGroupId": "123000001",
+            "baseMin": 7326,
+            "baseMax": 7326,
+            "attackRatioPercent": 321.75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "885",
+        "level": 1,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "886",
+        "level": 2,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "887",
+        "level": 3,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "888",
+        "level": 4,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "889",
+        "level": 5,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "890",
+        "level": 6,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "891",
+        "level": 7,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "892",
+        "level": 8,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "893",
+        "level": 9,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "894",
+        "level": 10,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 36,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "12300010",
+        "skillId": "12300010",
+        "name": "Annihilate",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12300020",
+        "skillId": "12300020",
+        "name": "Annihilate",
+        "description": "+20% Knockdown Chance",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12300030",
+        "skillId": "12300030",
+        "name": "Annihilate",
+        "description": "+100% damage to targets with Incapacitated Immunity",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12300040",
+        "skillId": "12300040",
+        "name": "Annihilate",
+        "description": "-10s cooldown",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12300050",
+        "skillId": "12300050",
+        "name": "Annihilate",
+        "description": "Changes to AoE Skill",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 4,
+    "cooldownSeconds": 20,
+    "classes": [
+      {
+        "code": "templar",
+        "name": "Templar"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Annihilate",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_028.webp",
+    "id": "12300000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:791:321.75:1:1]]-[[damage:max:791:321.75:1:1]]</> damage to a target afflicted with Stun or Knockdown within 4m with a 30% chance to inflict Knockdown for 3s.\n100% chance to inflict Knockdown on NPC targets.\nHas a 5% chance to trigger when attacking a target with Incapacitated Immunity.\n\n10 Stagger Gauge Damage"
+  }
+}

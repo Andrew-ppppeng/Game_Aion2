@@ -1,0 +1,1497 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/13720000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "13720000",
+    "name": "Exploit Weakness",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+    "kind": "passive",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 6,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 6,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 9,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": []
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "relation": "anyone",
+      "shape": {
+        "code": "self"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "dagger",
+        "name": "Dagger"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>5.5%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:17:13.75:1:1]]-[[damage:max:17:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>6%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:23:13.75:1:1]]-[[damage:max:23:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>6.5%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:31:13.75:1:1]]-[[damage:max:31:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>7%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:41:13.75:1:1]]-[[damage:max:41:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>7.5%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:53:13.75:1:1]]-[[damage:max:53:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>8%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:63:13.75:1:1]]-[[damage:max:63:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>8.5%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:73:13.75:1:1]]-[[damage:max:73:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>9%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:83:13.75:1:1]]-[[damage:max:83:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>9.5%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:94:13.75:1:1]]-[[damage:max:94:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>10%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:106:13.75:1:1]]-[[damage:max:106:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>10.5%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:111:13.75:1:1]]-[[damage:max:111:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>11%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:119:13.75:1:1]]-[[damage:max:119:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>11.5%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:126:13.75:1:1]]-[[damage:max:126:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>12%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:133:13.75:1:1]]-[[damage:max:133:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>12.5%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:141:13.75:1:1]]-[[damage:max:141:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>13%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:146:13.75:1:1]]-[[damage:max:146:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>13.5%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:154:13.75:1:1]]-[[damage:max:154:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>14%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:161:13.75:1:1]]-[[damage:max:161:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>14.5%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:166:13.75:1:1]]-[[damage:max:166:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>15%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:172:13.75:1:1]]-[[damage:max:172:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>15.5%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:177:13.75:1:1]]-[[damage:max:177:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>16%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:182:13.75:1:1]]-[[damage:max:182:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>16.5%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:188:13.75:1:1]]-[[damage:max:188:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>17%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:193:13.75:1:1]]-[[damage:max:193:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>17.5%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:199:13.75:1:1]]-[[damage:max:199:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>18%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:204:13.75:1:1]]-[[damage:max:204:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>18.5%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:209:13.75:1:1]]-[[damage:max:209:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>19%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:215:13.75:1:1]]-[[damage:max:215:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>19.5%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:220:13.75:1:1]]-[[damage:max:220:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>20%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:225:13.75:1:1]]-[[damage:max:225:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>20.5%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:231:13.75:1:1]]-[[damage:max:231:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>21%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:236:13.75:1:1]]-[[damage:max:236:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>21.5%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:241:13.75:1:1]]-[[damage:max:241:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>22%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:247:13.75:1:1]]-[[damage:max:247:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>22.5%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:252:13.75:1:1]]-[[damage:max:252:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>23%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:258:13.75:1:1]]-[[damage:max:258:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>23.5%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:263:13.75:1:1]]-[[damage:max:263:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>24%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:268:13.75:1:1]]-[[damage:max:268:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>24.5%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:274:13.75:1:1]]-[[damage:max:274:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>25%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:279:13.75:1:1]]-[[damage:max:279:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137200001",
+            "name": "Exploit Weakness",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit and has a fixed chance to summon clone on landing Critical Hit",
+            "effect": "+<desc_point>100</>Critical Hit\n<desc_point>25%</> chance to increase <desc_point>5.5%</> Attack on landing Critical Hit\n<desc_point>7%</> chance for each of up to 5 clones to deal extra damage and engrave Insignia on landing Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Exploit Weakness",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+              "id": "137200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "1475",
+        "level": 1,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 6,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1476",
+        "level": 2,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 6,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1477",
+        "level": 3,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 9,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1478",
+        "level": 4,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1479",
+        "level": 5,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1480",
+        "level": 6,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1481",
+        "level": 7,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1482",
+        "level": 8,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1483",
+        "level": 9,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1484",
+        "level": 10,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "passive",
+    "kindName": "Passive",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "classes": [
+      {
+        "code": "assassin",
+        "name": "Assassin"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/passive"
+    ],
+    "name": "Exploit Weakness",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_002.webp",
+    "id": "13720000",
+    "entityType": "skill",
+    "description": "Increases caster's Critical Hit by <chat_combat>100</>. Has a 25% chance to increase Attack by <chat_combat>5.5%</> for 10s, and a 7% chance to summon up to 5 clones on landing a Critical Hit. Each clone deals <chat_combat>[[damage:min:17:13.75:1:1]]-[[damage:max:17:13.75:1:1]]</> damage and inflicts Insignia that lasts for 10s (up to 5 Insignia stacks).\n\nClone cooldown: 1s\nAttack increase cooldown: 1s"
+  }
+}

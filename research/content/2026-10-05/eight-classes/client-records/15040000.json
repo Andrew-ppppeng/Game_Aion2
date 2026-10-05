@@ -1,0 +1,2563 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/15040000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "15040000",
+    "name": "Firestorm",
+    "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_004.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "15040010",
+        "description": "-50% MP Cost",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15040020",
+        "description": "+20% Skill Speed",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15040030",
+        "description": "-60% Incoming Heal for 5s on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15040040",
+        "description": "-2s [Hellfire] cooldown per fireball",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15040050",
+        "description": "+15% damage per fireball, up to +75%",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Mobile</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 250
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "magicbook",
+        "name": "Spellbook"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:114:192.5:5:5]]-[[damage:max:114:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 114,
+            "baseMax": 114,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 114,
+            "baseMax": 114,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 114,
+            "baseMax": 114,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 114,
+            "baseMax": 114,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 114,
+            "baseMax": 114,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:197:192.5:5:5]]-[[damage:max:197:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 197,
+            "baseMax": 197,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 197,
+            "baseMax": 197,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 197,
+            "baseMax": 197,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 197,
+            "baseMax": 197,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 197,
+            "baseMax": 197,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:281:192.5:5:5]]-[[damage:max:281:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 281,
+            "baseMax": 281,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 281,
+            "baseMax": 281,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 281,
+            "baseMax": 281,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 281,
+            "baseMax": 281,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 281,
+            "baseMax": 281,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:365:192.5:5:5]]-[[damage:max:365:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 365,
+            "baseMax": 365,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 365,
+            "baseMax": 365,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 365,
+            "baseMax": 365,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 365,
+            "baseMax": 365,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 365,
+            "baseMax": 365,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:490:192.5:5:5]]-[[damage:max:490:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 490,
+            "baseMax": 490,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 490,
+            "baseMax": 490,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 490,
+            "baseMax": 490,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 490,
+            "baseMax": 490,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 490,
+            "baseMax": 490,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:645:192.5:5:5]]-[[damage:max:645:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 645,
+            "baseMax": 645,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 645,
+            "baseMax": 645,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 645,
+            "baseMax": 645,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 645,
+            "baseMax": 645,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 645,
+            "baseMax": 645,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:828:192.5:5:5]]-[[damage:max:828:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 828,
+            "baseMax": 828,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 828,
+            "baseMax": 828,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 828,
+            "baseMax": 828,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 828,
+            "baseMax": 828,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 828,
+            "baseMax": 828,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:983:192.5:5:5]]-[[damage:max:983:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 983,
+            "baseMax": 983,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 983,
+            "baseMax": 983,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 983,
+            "baseMax": 983,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 983,
+            "baseMax": 983,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 983,
+            "baseMax": 983,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1137:192.5:5:5]]-[[damage:max:1137:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 1137,
+            "baseMax": 1137,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 1137,
+            "baseMax": 1137,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 1137,
+            "baseMax": 1137,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 1137,
+            "baseMax": 1137,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 1137,
+            "baseMax": 1137,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1292:192.5:5:5]]-[[damage:max:1292:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 1292,
+            "baseMax": 1292,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 1292,
+            "baseMax": 1292,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 1292,
+            "baseMax": 1292,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 1292,
+            "baseMax": 1292,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 1292,
+            "baseMax": 1292,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1446:192.5:5:5]]-[[damage:max:1446:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 1446,
+            "baseMax": 1446,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 1446,
+            "baseMax": 1446,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 1446,
+            "baseMax": 1446,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 1446,
+            "baseMax": 1446,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 1446,
+            "baseMax": 1446,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1629:192.5:5:5]]-[[damage:max:1629:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 1629,
+            "baseMax": 1629,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 1629,
+            "baseMax": 1629,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 1629,
+            "baseMax": 1629,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 1629,
+            "baseMax": 1629,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 1629,
+            "baseMax": 1629,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1784:192.5:5:5]]-[[damage:max:1784:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 1784,
+            "baseMax": 1784,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 1784,
+            "baseMax": 1784,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 1784,
+            "baseMax": 1784,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 1784,
+            "baseMax": 1784,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 1784,
+            "baseMax": 1784,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1897:192.5:5:5]]-[[damage:max:1897:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 1897,
+            "baseMax": 1897,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 1897,
+            "baseMax": 1897,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 1897,
+            "baseMax": 1897,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 1897,
+            "baseMax": 1897,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 1897,
+            "baseMax": 1897,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1980:192.5:5:5]]-[[damage:max:1980:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 1980,
+            "baseMax": 1980,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 1980,
+            "baseMax": 1980,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 1980,
+            "baseMax": 1980,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 1980,
+            "baseMax": 1980,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 1980,
+            "baseMax": 1980,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2093:192.5:5:5]]-[[damage:max:2093:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 2093,
+            "baseMax": 2093,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 2093,
+            "baseMax": 2093,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 2093,
+            "baseMax": 2093,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 2093,
+            "baseMax": 2093,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 2093,
+            "baseMax": 2093,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2206:192.5:5:5]]-[[damage:max:2206:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 2206,
+            "baseMax": 2206,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 2206,
+            "baseMax": 2206,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 2206,
+            "baseMax": 2206,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 2206,
+            "baseMax": 2206,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 2206,
+            "baseMax": 2206,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2318:192.5:5:5]]-[[damage:max:2318:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 2318,
+            "baseMax": 2318,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 2318,
+            "baseMax": 2318,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 2318,
+            "baseMax": 2318,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 2318,
+            "baseMax": 2318,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 2318,
+            "baseMax": 2318,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2431:192.5:5:5]]-[[damage:max:2431:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 2431,
+            "baseMax": 2431,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 2431,
+            "baseMax": 2431,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 2431,
+            "baseMax": 2431,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 2431,
+            "baseMax": 2431,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 2431,
+            "baseMax": 2431,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2515:192.5:5:5]]-[[damage:max:2515:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 2515,
+            "baseMax": 2515,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 2515,
+            "baseMax": 2515,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 2515,
+            "baseMax": 2515,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 2515,
+            "baseMax": 2515,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 2515,
+            "baseMax": 2515,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2598:192.5:5:5]]-[[damage:max:2598:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 2598,
+            "baseMax": 2598,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 2598,
+            "baseMax": 2598,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 2598,
+            "baseMax": 2598,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 2598,
+            "baseMax": 2598,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 2598,
+            "baseMax": 2598,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2682:192.5:5:5]]-[[damage:max:2682:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 2682,
+            "baseMax": 2682,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 2682,
+            "baseMax": 2682,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 2682,
+            "baseMax": 2682,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 2682,
+            "baseMax": 2682,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 2682,
+            "baseMax": 2682,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2766:192.5:5:5]]-[[damage:max:2766:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 2766,
+            "baseMax": 2766,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 2766,
+            "baseMax": 2766,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 2766,
+            "baseMax": 2766,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 2766,
+            "baseMax": 2766,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 2766,
+            "baseMax": 2766,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2849:192.5:5:5]]-[[damage:max:2849:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 2849,
+            "baseMax": 2849,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 2849,
+            "baseMax": 2849,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 2849,
+            "baseMax": 2849,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 2849,
+            "baseMax": 2849,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 2849,
+            "baseMax": 2849,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2933:192.5:5:5]]-[[damage:max:2933:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 2933,
+            "baseMax": 2933,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 2933,
+            "baseMax": 2933,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 2933,
+            "baseMax": 2933,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 2933,
+            "baseMax": 2933,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 2933,
+            "baseMax": 2933,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3017:192.5:5:5]]-[[damage:max:3017:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 3017,
+            "baseMax": 3017,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 3017,
+            "baseMax": 3017,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 3017,
+            "baseMax": 3017,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 3017,
+            "baseMax": 3017,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 3017,
+            "baseMax": 3017,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3101:192.5:5:5]]-[[damage:max:3101:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 3101,
+            "baseMax": 3101,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 3101,
+            "baseMax": 3101,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 3101,
+            "baseMax": 3101,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 3101,
+            "baseMax": 3101,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 3101,
+            "baseMax": 3101,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3184:192.5:5:5]]-[[damage:max:3184:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 3184,
+            "baseMax": 3184,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 3184,
+            "baseMax": 3184,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 3184,
+            "baseMax": 3184,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 3184,
+            "baseMax": 3184,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 3184,
+            "baseMax": 3184,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3268:192.5:5:5]]-[[damage:max:3268:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 3268,
+            "baseMax": 3268,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 3268,
+            "baseMax": 3268,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 3268,
+            "baseMax": 3268,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 3268,
+            "baseMax": 3268,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 3268,
+            "baseMax": 3268,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3352:192.5:5:5]]-[[damage:max:3352:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 3352,
+            "baseMax": 3352,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 3352,
+            "baseMax": 3352,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 3352,
+            "baseMax": 3352,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 3352,
+            "baseMax": 3352,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 3352,
+            "baseMax": 3352,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3436:192.5:5:5]]-[[damage:max:3436:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 3436,
+            "baseMax": 3436,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 3436,
+            "baseMax": 3436,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 3436,
+            "baseMax": 3436,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 3436,
+            "baseMax": 3436,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 3436,
+            "baseMax": 3436,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3519:192.5:5:5]]-[[damage:max:3519:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 3519,
+            "baseMax": 3519,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 3519,
+            "baseMax": 3519,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 3519,
+            "baseMax": 3519,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 3519,
+            "baseMax": 3519,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 3519,
+            "baseMax": 3519,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3603:192.5:5:5]]-[[damage:max:3603:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 3603,
+            "baseMax": 3603,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 3603,
+            "baseMax": 3603,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 3603,
+            "baseMax": 3603,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 3603,
+            "baseMax": 3603,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 3603,
+            "baseMax": 3603,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3687:192.5:5:5]]-[[damage:max:3687:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 3687,
+            "baseMax": 3687,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 3687,
+            "baseMax": 3687,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 3687,
+            "baseMax": 3687,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 3687,
+            "baseMax": 3687,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 3687,
+            "baseMax": 3687,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3771:192.5:5:5]]-[[damage:max:3771:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 3771,
+            "baseMax": 3771,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 3771,
+            "baseMax": 3771,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 3771,
+            "baseMax": 3771,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 3771,
+            "baseMax": 3771,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 3771,
+            "baseMax": 3771,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3854:192.5:5:5]]-[[damage:max:3854:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 3854,
+            "baseMax": 3854,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 3854,
+            "baseMax": 3854,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 3854,
+            "baseMax": 3854,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 3854,
+            "baseMax": 3854,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 3854,
+            "baseMax": 3854,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3938:192.5:5:5]]-[[damage:max:3938:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 3938,
+            "baseMax": 3938,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 3938,
+            "baseMax": 3938,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 3938,
+            "baseMax": 3938,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 3938,
+            "baseMax": 3938,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 3938,
+            "baseMax": 3938,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4022:192.5:5:5]]-[[damage:max:4022:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 4022,
+            "baseMax": 4022,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 4022,
+            "baseMax": 4022,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 4022,
+            "baseMax": 4022,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 4022,
+            "baseMax": 4022,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 4022,
+            "baseMax": 4022,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4106:192.5:5:5]]-[[damage:max:4106:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 4106,
+            "baseMax": 4106,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 4106,
+            "baseMax": 4106,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 4106,
+            "baseMax": 4106,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 4106,
+            "baseMax": 4106,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 4106,
+            "baseMax": 4106,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4189:192.5:5:5]]-[[damage:max:4189:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1504000011",
+            "effectGroupId": "150400001",
+            "baseMin": 4189,
+            "baseMax": 4189,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000021",
+            "effectGroupId": "150400002",
+            "baseMin": 4189,
+            "baseMax": 4189,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000031",
+            "effectGroupId": "150400003",
+            "baseMin": 4189,
+            "baseMax": 4189,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000041",
+            "effectGroupId": "150400004",
+            "baseMin": 4189,
+            "baseMax": 4189,
+            "attackRatioPercent": 192.5
+          },
+          {
+            "effectId": "1504000051",
+            "effectGroupId": "150400005",
+            "baseMin": 4189,
+            "baseMax": 4189,
+            "attackRatioPercent": 192.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "2459",
+        "level": 1,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2460",
+        "level": 2,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2461",
+        "level": 3,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2462",
+        "level": 4,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2463",
+        "level": 5,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2464",
+        "level": 6,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2465",
+        "level": 7,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2466",
+        "level": 8,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2467",
+        "level": 9,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2468",
+        "level": 10,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "15040010",
+        "skillId": "15040010",
+        "name": "Firestorm",
+        "description": "-50% MP Cost",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15040020",
+        "skillId": "15040020",
+        "name": "Firestorm",
+        "description": "+20% Skill Speed",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15040030",
+        "skillId": "15040030",
+        "name": "Firestorm",
+        "description": "-60% Incoming Heal for 5s on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15040040",
+        "skillId": "15040040",
+        "name": "Firestorm",
+        "description": "-2s [Hellfire] cooldown per fireball",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15040050",
+        "skillId": "15040050",
+        "name": "Firestorm",
+        "description": "+15% damage per fireball, up to +75%",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 5,
+    "classes": [
+      {
+        "code": "sorcerer",
+        "name": "Sorcerer"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Firestorm",
+    "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_004.webp",
+    "id": "15040000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:114:192.5:5:5]]-[[damage:max:114:192.5:5:5]]</> Fire damage to a target within 20m.\n\n5 Stagger Gauge Damage"
+  }
+}

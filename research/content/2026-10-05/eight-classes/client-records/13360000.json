@@ -1,0 +1,2181 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/13360000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "13360000",
+    "name": "Infiltrate",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_036.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 34,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "13360010",
+        "description": "Restores 300 Stamina on landing [Infiltrate]",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13360020",
+        "description": "+10m [Infiltrate] range",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13360030",
+        "description": "Breaks Protective Shields on landing [Infiltrate]",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13360040",
+        "description": "Adds [Dark Strike] Chain Skill",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13360050",
+        "description": "+20% [Infiltrate] Blind Chance",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [
+      {
+        "id": "13000004",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormalgroupid"
+        },
+        "description": "On Dodge",
+        "iconPath": "/images/ui/resource/texture/skill/icon_cond_evade.webp",
+        "abnormalGroupId": 3015
+      },
+      {
+        "id": "13000012",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormalgroupid"
+        },
+        "description": "In Flight",
+        "iconPath": "/images/ui/resource/texture/abnormal/icon_abnormal_wing.webp",
+        "abnormalGroupId": 100000002
+      }
+    ],
+    "requiredWeapons": [
+      {
+        "code": "dagger",
+        "name": "Dagger"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:239:105:2:2]]-[[damage:max:239:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 239,
+            "baseMax": 239,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 239,
+            "baseMax": 239,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:316:105:2:2]]-[[damage:max:316:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 316,
+            "baseMax": 316,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 316,
+            "baseMax": 316,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:409:105:2:2]]-[[damage:max:409:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 409,
+            "baseMax": 409,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 409,
+            "baseMax": 409,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:486:105:2:2]]-[[damage:max:486:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 486,
+            "baseMax": 486,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 486,
+            "baseMax": 486,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:563:105:2:2]]-[[damage:max:563:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 563,
+            "baseMax": 563,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 563,
+            "baseMax": 563,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:641:105:2:2]]-[[damage:max:641:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 641,
+            "baseMax": 641,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 641,
+            "baseMax": 641,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:718:105:2:2]]-[[damage:max:718:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 718,
+            "baseMax": 718,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 718,
+            "baseMax": 718,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:811:105:2:2]]-[[damage:max:811:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 811,
+            "baseMax": 811,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 811,
+            "baseMax": 811,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:888:105:2:2]]-[[damage:max:888:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 888,
+            "baseMax": 888,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 888,
+            "baseMax": 888,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:945:105:2:2]]-[[damage:max:945:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 945,
+            "baseMax": 945,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 945,
+            "baseMax": 945,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:985:105:2:2]]-[[damage:max:985:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 985,
+            "baseMax": 985,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 985,
+            "baseMax": 985,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1042:105:2:2]]-[[damage:max:1042:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1042,
+            "baseMax": 1042,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1042,
+            "baseMax": 1042,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1099:105:2:2]]-[[damage:max:1099:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1099,
+            "baseMax": 1099,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1099,
+            "baseMax": 1099,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1156:105:2:2]]-[[damage:max:1156:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1156,
+            "baseMax": 1156,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1156,
+            "baseMax": 1156,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1212:105:2:2]]-[[damage:max:1212:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1212,
+            "baseMax": 1212,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1212,
+            "baseMax": 1212,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1253:105:2:2]]-[[damage:max:1253:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1253,
+            "baseMax": 1253,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1253,
+            "baseMax": 1253,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1294:105:2:2]]-[[damage:max:1294:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1294,
+            "baseMax": 1294,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1294,
+            "baseMax": 1294,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1335:105:2:2]]-[[damage:max:1335:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1335,
+            "baseMax": 1335,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1335,
+            "baseMax": 1335,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1376:105:2:2]]-[[damage:max:1376:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1376,
+            "baseMax": 1376,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1376,
+            "baseMax": 1376,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1417:105:2:2]]-[[damage:max:1417:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1417,
+            "baseMax": 1417,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1417,
+            "baseMax": 1417,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1458:105:2:2]]-[[damage:max:1458:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1458,
+            "baseMax": 1458,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1458,
+            "baseMax": 1458,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1499:105:2:2]]-[[damage:max:1499:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1499,
+            "baseMax": 1499,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1499,
+            "baseMax": 1499,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1540:105:2:2]]-[[damage:max:1540:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1540,
+            "baseMax": 1540,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1540,
+            "baseMax": 1540,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1581:105:2:2]]-[[damage:max:1581:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1581,
+            "baseMax": 1581,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1581,
+            "baseMax": 1581,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1622:105:2:2]]-[[damage:max:1622:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1622,
+            "baseMax": 1622,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1622,
+            "baseMax": 1622,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1663:105:2:2]]-[[damage:max:1663:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1663,
+            "baseMax": 1663,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1663,
+            "baseMax": 1663,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1704:105:2:2]]-[[damage:max:1704:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1704,
+            "baseMax": 1704,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1704,
+            "baseMax": 1704,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1745:105:2:2]]-[[damage:max:1745:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1745,
+            "baseMax": 1745,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1745,
+            "baseMax": 1745,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1786:105:2:2]]-[[damage:max:1786:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1786,
+            "baseMax": 1786,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1786,
+            "baseMax": 1786,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1827:105:2:2]]-[[damage:max:1827:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1827,
+            "baseMax": 1827,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1827,
+            "baseMax": 1827,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1867:105:2:2]]-[[damage:max:1867:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1867,
+            "baseMax": 1867,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1867,
+            "baseMax": 1867,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1908:105:2:2]]-[[damage:max:1908:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1908,
+            "baseMax": 1908,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1908,
+            "baseMax": 1908,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1949:105:2:2]]-[[damage:max:1949:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1949,
+            "baseMax": 1949,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1949,
+            "baseMax": 1949,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:1990:105:2:2]]-[[damage:max:1990:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 1990,
+            "baseMax": 1990,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 1990,
+            "baseMax": 1990,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:2031:105:2:2]]-[[damage:max:2031:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 2031,
+            "baseMax": 2031,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 2031,
+            "baseMax": 2031,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:2072:105:2:2]]-[[damage:max:2072:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 2072,
+            "baseMax": 2072,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 2072,
+            "baseMax": 2072,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:2113:105:2:2]]-[[damage:max:2113:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 2113,
+            "baseMax": 2113,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 2113,
+            "baseMax": 2113,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:2154:105:2:2]]-[[damage:max:2154:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 2154,
+            "baseMax": 2154,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 2154,
+            "baseMax": 2154,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:2195:105:2:2]]-[[damage:max:2195:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 2195,
+            "baseMax": 2195,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 2195,
+            "baseMax": 2195,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:2236:105:2:2]]-[[damage:max:2236:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1336000021",
+            "effectGroupId": "133600002",
+            "baseMin": 2236,
+            "baseMax": 2236,
+            "attackRatioPercent": 105
+          },
+          {
+            "effectId": "1336000031",
+            "effectGroupId": "133600003",
+            "baseMin": 2236,
+            "baseMax": 2236,
+            "attackRatioPercent": 105
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "1423",
+        "level": 1,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1424",
+        "level": 2,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1425",
+        "level": 3,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1426",
+        "level": 4,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1427",
+        "level": 5,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1428",
+        "level": 6,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1429",
+        "level": 7,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1430",
+        "level": 8,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1431",
+        "level": 9,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1432",
+        "level": 10,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 34,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "13360010",
+        "skillId": "13360010",
+        "name": "Infiltrate",
+        "description": "Restores 300 Stamina on landing [Infiltrate]",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13360020",
+        "skillId": "13360020",
+        "name": "Infiltrate",
+        "description": "+10m [Infiltrate] range",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13360030",
+        "skillId": "13360030",
+        "name": "Infiltrate",
+        "description": "Breaks Protective Shields on landing [Infiltrate]",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13360040",
+        "skillId": "13360040",
+        "name": "Infiltrate",
+        "description": "Adds [Dark Strike] Chain Skill",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13360050",
+        "skillId": "13360050",
+        "name": "Infiltrate",
+        "description": "+20% [Infiltrate] Blind Chance",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 10,
+    "cooldownSeconds": 20,
+    "classes": [
+      {
+        "code": "assassin",
+        "name": "Assassin"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Infiltrate",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_036.webp",
+    "id": "13360000",
+    "entityType": "skill",
+    "description": "Moves behind a target within 10m and deals <chat_combat>[[damage:min:239:105:2:2]]-[[damage:max:239:105:2:2]]</> damage with a 50% chance to inflict Blind for 3s after using [Dodge] or while flying.\n100% chance to inflict Blind on NPC targets.\n\n10 Stagger Gauge Damage"
+  }
+}

@@ -1,0 +1,1676 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/16200000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "16200000",
+    "name": "Defiance",
+    "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 34,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 37,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 40,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "16200010",
+        "description": "Adds [Curse of Despair] Chain Skill",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16200020",
+        "description": "Restores 1000 Stamina on using [Defiance]",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16200030",
+        "description": "Restores 20% HP on using [Defiance]",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16200040",
+        "description": "+2s Tenacity duration",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16200050",
+        "description": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Nontarget</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "shape": {
+        "code": "self"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [
+      {
+        "id": "16000001",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormalgroupid"
+        },
+        "description": "Impact-type Status\n\n-Stun, Knockdown, Airborne, Grab",
+        "iconPath": "/images/ui/resource/texture/abnormal/icon_abnormal_stun.webp",
+        "abnormalGroupId": 100
+      },
+      {
+        "id": "16000005",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormaleffecttype"
+        },
+        "description": "Frost Status",
+        "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_frozen.webp",
+        "abnormalEffect": {
+          "code": "frozen"
+        }
+      },
+      {
+        "id": "16000007",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormaleffecttype"
+        },
+        "description": "Fear Status",
+        "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_fear.webp",
+        "abnormalEffect": {
+          "code": "deletablefear"
+        }
+      }
+    ],
+    "requiredWeapons": [
+      {
+        "code": "orb",
+        "name": "Orb"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 60,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 59,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 58,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 57,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 56,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 55,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 54,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 53,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 52,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 51,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 50,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 49,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 48,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 47,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 46,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 45,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 44,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 43,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 42,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 41,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 40,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 39,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 38,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 37,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 36,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 35,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 34,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 33,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 32,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 31,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 29,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 28,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 27,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 26,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 25,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 24,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 23,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 22,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 21,
+        "costs": [],
+        "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "100200001",
+            "name": "Tenacity",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Status Effect Immunity",
+            "effect": "Status Effect Immunity",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Tenacity",
+              "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+              "id": "100200001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": true,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "3105",
+        "level": 1,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3106",
+        "level": 2,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3107",
+        "level": 3,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3108",
+        "level": 4,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3109",
+        "level": 5,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3110",
+        "level": 6,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3111",
+        "level": 7,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3112",
+        "level": 8,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 34,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3113",
+        "level": 9,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 37,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3114",
+        "level": 10,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 40,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "16200010",
+        "skillId": "16200010",
+        "name": "Defiance",
+        "description": "Adds [Curse of Despair] Chain Skill",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16200020",
+        "skillId": "16200020",
+        "name": "Defiance",
+        "description": "Restores 1000 Stamina on using [Defiance]",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16200030",
+        "skillId": "16200030",
+        "name": "Defiance",
+        "description": "Restores 20% HP on using [Defiance]",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16200040",
+        "skillId": "16200040",
+        "name": "Defiance",
+        "description": "+2s Tenacity duration",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16200050",
+        "skillId": "16200050",
+        "name": "Defiance",
+        "description": "+50% PvE Damage Tolerance and +25% PvP Damage Tolerance for Tenacity duration",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "cooldownSeconds": 60,
+    "classes": [
+      {
+        "code": "elementalist",
+        "name": "Spiritmaster"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Defiance",
+    "iconPath": "/images/ui/resource/texture/skill/icon_co_skill_002.webp",
+    "id": "16200000",
+    "entityType": "skill",
+    "description": "Removes Stun, Knockdown, Airborne, Grab, Frost, and Fear from the caster and grants Tenacity for 5s.\nTenacity: Grants Status Effect Immunity\n\nUnaffected by cooldown reduction effects."
+  }
+}

@@ -1,0 +1,26 @@
+# TW account and overseas-access follow-up
+
+Reviewed 2026-10-04. Intent: determine what the current public Taiwan login/help/contract pages establish about registration, account verification and service regions. No account created, authenticated or registered; no contract accepted; no credentials used.
+
+## Current official facts
+
+- Taiwan official download: https://tw.ncsoft.com/aion2/download/index . Retrieved by secondary-updates on 2026-10-04, archive `../secondary-updates/tw-download.html`. The current page's footer points to TW-specific support `https://help.plaync.com/faq/aion2_tw` (underscore required), service contract `https://www.plaync.com/policy/api/view/tw_game_service/aion2_tw`, and membership terms `https://tw.ncsoft.com/ap/wb/legal/termsOfUse`. The login function routes to `https://login.plaync.com/nclogin/signin?prelogin_country_code=TW`. A TW login route or a page requested from HK is not proof of overseas-game eligibility.
+- Official AION2 TW service contract: https://www.plaync.com/policy/api/view/tw_game_service/aion2_tw . HTTP 200, archived in `tw-service-contract.json` and `tw-service-contract-text.txt`, retrieval timestamp recorded in JSON. Contract version explicitly 2026/09/30. Article 6: account registration follows the application flow, submitted personal data must match identity documents and be verifiable; incorrect/outdated data can lead to access suspension until corrected, subject to the stated identity-proof exception. Article 10: the account and password obtained through registration are for the registrant's own use. This is a currently applicable game-specific requirement, not a specific claim that every player must upload an ID at every login. The page does not specify supported residence countries, accepted foreign phone codes or a universal SMS-verification sequence.
+- NC Taiwan membership terms: https://tw.ncsoft.com/ap/wb/legal/termsOfUse . Web tool read successfully on Oct 4; separate CLI archival attempt timed out and is preserved in `tw-membership-terms.json`. The public text requires accurate personal registration information and a verifiable email; account renting, lending, transferring and sharing are restricted. Publication/version date not visible in the inspected text. The game-specific current contract is used for the article update, avoiding reliance on older email-only registration instructions.
+- Public TW support page: https://help.plaync.com/faq/aion2_tw?locale=zh-TW . HTTP 200; `tw-public-faq-shell.json` records the current JavaScript shell, which does not expose FAQ articles in its HTML. Web tool could not render this localized route. Official public support JavaScript `https://help.plaync.com/static/js/main.a35ec0a7.js` archived in `support-public-script.json`; it recognizes `aion2_tw`, public services GET and FAQ GET routes. The public services API attempt at `https://nc3-api.plaync.com/v1.0/services/appGroupCode/aion2_tw` with `Accept-Language: zh-TW` timed out connecting after 25 seconds. No authenticated endpoint was used. API failure does not establish that no FAQ exists.
+- Public login route: https://login.plaync.com/nclogin/signin?prelogin_country_code=TW . HTTP 200; archive `tw-login-public-page.json` and text. It is a JavaScript login shell and does not establish required phone countries or game availability. No login/registration interaction performed.
+
+## Search and excluded material
+
+Searched official TW notice, guide and help pages with AION2 + registration / verification / phone number / service region / overseas terms. Search results repeatedly mixed Global, AION1, Lineage2, generic PURPLE account integration, and user-written community posts. No current official AION2 TW overseas-registration procedure was found.
+
+- https://tw.ncsoft.com/lineage2/news/notice/view.aspx?nn=3564 (2025-09-12): old AION2 pre-registration promotional email-code flow, not current account verification or service-region requirements; reward dates have passed.
+- https://tw.ncsoft.com/lineage2/news/notice/view.aspx?nn=3577 (2025-09-22): Lineage2 account integration, not proof of AION2 TW signup eligibility.
+- Official-domain community posts are player submissions, not official eligibility rules. Reddit/VPN/foreign-phone workarounds and Wikipedia region claims were excluded.
+- Global support `aion2global` and Korea in-person/phone-help identity policies were not copied into Taiwan requirements.
+
+## Applied and unresolved
+
+- All four `/download` language bodies now add the current TW account requirement in direct player language: own account; complete the service's account checks; verifiable registration details matching identity documents; TW support action if blocked. Existing regional installer steps and progress separation remain.
+- No claim that Global Steam installs TW, that all countries may enter TW, that a Taiwan phone is universally required, that foreign numbers are supported, or that VPN/account-country changes solve access.
+- Full Taiwan overseas registration/access remains **covered_with_limits**. Installation and the baseline account requirement are covered; supported countries/residence, accepted phone verification and payment/account-specific access remain unestablished. Do not mark this intent fully covered or advertise a complete overseas signup guide from these sources.

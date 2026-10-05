@@ -1,0 +1,55 @@
+{
+  "title": "AION 2 NotMeter：導入とDPS記録",
+  "description": "NotMeter 開発者の配布元、公開されている Windows 導入手順、DPS 記録の読み方を確認。Global 対応と NC の許可に関する未確認事項も説明します。",
+  "summary": "開発者の現在の配布リンクを使い、地域と版を確認して、条件の近い戦闘を比較しましょう。当サイトでは Global でのデスクトップ動作と NC の承認を確認していません。",
+  "quickAnswer": "notmeter.comから現在の配布リンクを確認します。作者の手順はNpcapの導入、ZIPの展開、NotMeter.exeの実行です。GlobalのWeb検索はありますが、現在のGlobalパッチでのデスクトップ版動作は本ガイドでは未検証です。",
+  "toc": [
+    {
+      "id": "source-and-global-support",
+      "title": "配布元と Global 対応"
+    },
+    {
+      "id": "maintainer-installation",
+      "title": "公開されている導入手順"
+    },
+    {
+      "id": "read-combat-records",
+      "title": "DPS と nDPS の読み方"
+    },
+    {
+      "id": "missing-records",
+      "title": "検索や記録がない場合"
+    },
+    {
+      "id": "nc-policy",
+      "title": "NC の運営ポリシー"
+    }
+  ],
+  "visuals": {
+    "workflow": {
+      "title": "戦闘比較を改善につなげる",
+      "caption": "編集上の比較方法です。NotMeter の通信取得を実際にテストした図ではありません。",
+      "steps": [
+        {
+          "label": "条件を記録",
+          "description": "サービス地域、パッチ、ツールの版、相手、構成を記録する。"
+        },
+        {
+          "label": "似た条件で比較",
+          "description": "複数の近い条件の試行を使い、パーティーと役割も揃える。"
+        },
+        {
+          "label": "一項目だけ変更",
+          "description": "一つのスキルや構成だけを変え、結果の原因を追えるようにする。"
+        },
+        {
+          "label": "結果を確認",
+          "description": "ダメージに加え、クリア、生存、パーティーへの貢献を見る。"
+        }
+      ]
+    }
+  },
+  "inlineNext": [
+    "builds"
+  ]
+}

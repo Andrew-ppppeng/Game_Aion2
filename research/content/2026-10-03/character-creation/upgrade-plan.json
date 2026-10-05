@@ -1,0 +1,247 @@
+{
+  "next": "<GuideNext slug=\"presets\" />",
+  "sourceUpdates": [
+    {
+      "id": "style-shop",
+      "version": "Public Global Style Shop region/period/sort UI checked in browser 2026-10-03; screenshot saved under presets; not initial-creation import evidence"
+    }
+  ],
+  "locales": {
+    "en": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "style-shop-global-filters",
+            "alt": "Official Global Style Shop showing region filters and player-created appearance previews",
+            "caption": "The official Style Shop is an inspiration and sharing page, shown here in English on October 3, 2026. This is not the initial character editor and does not prove that website presets can be imported before a character exists."
+          },
+          "workflow": {
+            "title": "Create the character without losing track of the decision",
+            "caption": "Set the gameplay choices first, then edit one appearance layer at a time and review the final screen.",
+            "steps": [
+              {
+                "label": "Fix the group choices",
+                "description": "Confirm region, faction, exact server and class before working on sliders."
+              },
+              {
+                "label": "Start with a close template",
+                "description": "Choose a base near your goal and establish the overall face/body silhouette."
+              },
+              {
+                "label": "Refine one layer",
+                "description": "Adjust face features, then hair and markings; record the original value when available."
+              },
+              {
+                "label": "Compare several views",
+                "description": "Rotate front, profile and three-quarter views and inspect full body under different light."
+              },
+              {
+                "label": "Read the final validation",
+                "description": "Recheck class/server and the current naming message before creating the character."
+              }
+            ]
+          }
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "appearance-workflow",
+          "position": "afterHeading",
+          "text": "<GuideVisual id=\"workflow\" />"
+        },
+        {
+          "anchor": "appearance-workflow",
+          "position": "sectionEnd",
+          "text": "**A reproducible editing test:** keep the starting template, hairstyle and lighting fixed. Inspect the nose and chin from the front and profile, then change only one relevant slider. If a numerical value is shown, note it before adjusting. Rotate again before moving a second slider; restore the noted value if the profile became worse. This makes the effect of one edit visible instead of masking it with several simultaneous changes."
+        },
+        {
+          "anchor": "preview-checklist",
+          "position": "sectionEnd",
+          "text": "**When the final action fails:** read the message before changing unrelated settings. A name-validation message should be resolved using that screen's allowed format; it does not prove a particular universal length or deletion timer. A creation restriction should be checked against the selected server and current notice. If the appearance alone looks wrong, return to its preview and compare the same camera and light before starting the character over."
+        },
+        {
+          "anchor": "shared-presets",
+          "position": "sectionEnd",
+          "text": "<GuideVisual id=\"topic\" />"
+        }
+      ]
+    },
+    "ja": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "style-shop-global-filters",
+            "alt": "地域フィルターとプレイヤー制作の外観プレビューがある公式Global Style Shop",
+            "caption": "公式Style Shopは参考外観と共有のページです。画像は2026年10月3日の英語画面です。初回作成エディターではなく、キャラクターが存在する前にサイトのプリセットを取り込める証拠でもありません。"
+          },
+          "workflow": {
+            "title": "選択を確認しながらキャラクターを作る",
+            "caption": "先にプレイ上の選択を決め、外観を一段階ずつ編集して最後の画面を確認します。",
+            "steps": [
+              {
+                "label": "仲間との選択を確定する",
+                "description": "スライダーを触る前に地域、種族、正確なサーバー名、クラスを確認します。"
+              },
+              {
+                "label": "目標に近いテンプレートから始める",
+                "description": "基本外観を選び、顔と体の全体的なシルエットを決めます。"
+              },
+              {
+                "label": "一つの層を整える",
+                "description": "顔、髪、模様の順に調整し、表示される場合は元の値を控えます。"
+              },
+              {
+                "label": "複数の角度で比べる",
+                "description": "正面、側面、斜めを見て、異なる光で全身も確認します。"
+              },
+              {
+                "label": "最後の入力条件を読む",
+                "description": "作成前にクラスとサーバー、現在の名前確認メッセージを再確認します。"
+              }
+            ]
+          }
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "appearance-workflow",
+          "position": "afterHeading",
+          "text": "<GuideVisual id=\"workflow\" />"
+        },
+        {
+          "anchor": "appearance-workflow",
+          "position": "sectionEnd",
+          "text": "**再現できる調整テスト：** 初期テンプレート、髪型、照明を固定します。鼻と顎を正面と側面から確認し、関連するスライダーを一つだけ動かします。数値が表示される場合は、変更前に控えます。二つ目を動かす前にもう一度回転し、側面が悪くなったら記録した値に戻します。複数の同時変更で影響を隠さず、一つの編集の効果を見分けられます。"
+        },
+        {
+          "anchor": "preview-checklist",
+          "position": "sectionEnd",
+          "text": "**最後の操作が失敗したら：** 無関係な設定を変更する前にメッセージを読みます。名前の確認メッセージは、その画面の許可形式に合わせて解決してください。一律の文字数や削除待機時間の証拠にはなりません。作成制限なら選択したサーバーと現在の告知を確認します。外観だけが違って見える場合は、作り直す前にプレビューへ戻り、同じカメラと光で比べてください。"
+        },
+        {
+          "anchor": "shared-presets",
+          "position": "sectionEnd",
+          "text": "<GuideVisual id=\"topic\" />"
+        }
+      ]
+    },
+    "es": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "style-shop-global-filters",
+            "alt": "Style Shop oficial de Global con filtros regionales y vistas de apariencias creadas por jugadores",
+            "caption": "Style Shop oficial es una página de inspiración y publicación, aquí en inglés el 3 de octubre de 2026. No es el editor inicial y no demuestra que los estilos web puedan importarse antes de que exista el personaje."
+          },
+          "workflow": {
+            "title": "Crea el personaje sin perder las decisiones de vista",
+            "caption": "Fija primero las opciones de juego, edita una capa de apariencia cada vez y revisa la pantalla final.",
+            "steps": [
+              {
+                "label": "Confirma las opciones del grupo",
+                "description": "Comprueba región, facción, servidor exacto y clase antes de tocar los deslizadores."
+              },
+              {
+                "label": "Parte de una plantilla cercana",
+                "description": "Elige una base próxima a tu objetivo y define la silueta general de cara y cuerpo."
+              },
+              {
+                "label": "Ajusta una capa",
+                "description": "Refina facciones, pelo y marcas; anota el valor original cuando esté disponible."
+              },
+              {
+                "label": "Compara varias vistas",
+                "description": "Gira a frente, perfil y tres cuartos y revisa el cuerpo completo con luces distintas."
+              },
+              {
+                "label": "Lee la validación final",
+                "description": "Revisa clase/servidor y el mensaje actual del nombre antes de crear el personaje."
+              }
+            ]
+          }
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "appearance-workflow",
+          "position": "afterHeading",
+          "text": "<GuideVisual id=\"workflow\" />"
+        },
+        {
+          "anchor": "appearance-workflow",
+          "position": "sectionEnd",
+          "text": "**Una prueba de edición repetible:** mantén fijos plantilla inicial, peinado e iluminación. Mira nariz y barbilla de frente y perfil y cambia solo un deslizador relevante. Si aparece un valor numérico, anótalo antes. Gira de nuevo antes de mover un segundo deslizador; restaura el valor anotado si empeoró el perfil. Así identificas el efecto de un cambio en vez de ocultarlo con varios ajustes simultáneos."
+        },
+        {
+          "anchor": "preview-checklist",
+          "position": "sectionEnd",
+          "text": "**Si falla la acción final:** lee el mensaje antes de modificar ajustes ajenos al problema. Resuelve un aviso de nombre siguiendo el formato permitido en esa pantalla; no demuestra una longitud universal ni un plazo de eliminación. Comprueba las restricciones de creación con el servidor seleccionado y el aviso actual. Si solo falla el aspecto, vuelve a la vista previa y compara la misma cámara y luz antes de empezar de nuevo."
+        },
+        {
+          "anchor": "shared-presets",
+          "position": "sectionEnd",
+          "text": "<GuideVisual id=\"topic\" />"
+        }
+      ]
+    },
+    "de": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "style-shop-global-filters",
+            "alt": "Offizieller Global Style Shop mit Regionsfiltern und Vorschauen von Spielern erstellter Aussehen",
+            "caption": "Der offizielle Style Shop dient Inspiration und Veröffentlichung; hier ist seine englische Ansicht vom 3. Oktober 2026 zu sehen. Das ist nicht der anfängliche Charaktereditor und kein Beleg für einen Website-Import vor der Erstellung."
+          },
+          "workflow": {
+            "title": "Den Charakter mit klaren Entscheidungen erstellen",
+            "caption": "Lege zuerst die Spielauswahl fest, bearbeite jeweils einen Teil des Aussehens und prüfe die abschließende Ansicht.",
+            "steps": [
+              {
+                "label": "Gruppenwahl festlegen",
+                "description": "Prüfe Region, Fraktion, genauen Server und Klasse vor der Schiebereglerarbeit."
+              },
+              {
+                "label": "Mit einer passenden Vorlage beginnen",
+                "description": "Wähle eine nahe Ausgangsform und lege die Gesamtform von Gesicht und Körper fest."
+              },
+              {
+                "label": "Eine Ebene verfeinern",
+                "description": "Bearbeite Gesicht, Haare und Markierungen; notiere den Ausgangswert, falls angezeigt."
+              },
+              {
+                "label": "Mehrere Ansichten vergleichen",
+                "description": "Prüfe Vorderseite, Profil und Dreiviertelansicht sowie den ganzen Körper bei unterschiedlichem Licht."
+              },
+              {
+                "label": "Abschließende Prüfung lesen",
+                "description": "Kontrolliere Klasse/Server und die aktuelle Namensmeldung vor der Charaktererstellung."
+              }
+            ]
+          }
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "appearance-workflow",
+          "position": "afterHeading",
+          "text": "<GuideVisual id=\"workflow\" />"
+        },
+        {
+          "anchor": "appearance-workflow",
+          "position": "sectionEnd",
+          "text": "**Ein wiederholbarer Bearbeitungstest:** Halte Ausgangsvorlage, Frisur und Licht gleich. Prüfe Nase und Kinn von vorne und im Profil und ändere nur einen passenden Regler. Notiere einen angezeigten Zahlenwert vor der Änderung. Drehe erneut, bevor du einen zweiten Regler bewegst; stelle den notierten Wert wieder her, falls das Profil schlechter wurde. So erkennst du die Wirkung einer Änderung, statt sie mit mehreren gleichzeitigen Eingriffen zu verdecken."
+        },
+        {
+          "anchor": "preview-checklist",
+          "position": "sectionEnd",
+          "text": "**Wenn der letzte Schritt fehlschlägt:** Lies die Meldung vor Änderungen an unbeteiligten Einstellungen. Löse eine Namensmeldung anhand des erlaubten Formats dieser Oberfläche; daraus folgt keine allgemeine Zeichenlänge oder Löschwartezeit. Prüfe Erstellungsbeschränkungen anhand des gewählten Servers und der aktuellen Mitteilung. Wirkt nur das Aussehen falsch, kehre vor einer Neuerstellung zur Vorschau zurück und vergleiche dieselbe Kamera und Beleuchtung."
+        },
+        {
+          "anchor": "shared-presets",
+          "position": "sectionEnd",
+          "text": "<GuideVisual id=\"topic\" />"
+        }
+      ]
+    }
+  }
+}

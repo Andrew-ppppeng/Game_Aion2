@@ -1,0 +1,1496 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/12770000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "12770000",
+    "name": "Insulting Roar",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+    "kind": "passive",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 17,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 35,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 38,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 41,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": []
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "shape": {
+        "code": "self"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "sword",
+        "name": "Longsword"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>5.5%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>6%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>6.5%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>7%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>7.5%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>8%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>8.5%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>9%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>9.5%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>10%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>10.5%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>11%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>11.5%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>12%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>12.5%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>13%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>13.5%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>14%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>14.5%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>15%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>15.5%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>16%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>16.5%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>17%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>17.5%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>18%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>18.5%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>19%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>19.5%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>20%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>20.5%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>21%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>21.5%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>22%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>22.5%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>23%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>23.5%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>24%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>24.5%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>25%</> for 5s on landing a Front Attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127700001",
+            "name": "Insulting Roar",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Enmity Boost and increases Attack on landing Front Attack",
+            "effect": "+<desc_point>100%</> Enmity Boost\n+<desc_point>5.5%</> Attack on Front Attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Insulting Roar",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+              "id": "127700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": true,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "976",
+        "level": 1,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 17,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "977",
+        "level": 2,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "978",
+        "level": 3,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "979",
+        "level": 4,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "980",
+        "level": 5,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "981",
+        "level": 6,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "982",
+        "level": 7,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "983",
+        "level": 8,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 35,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "984",
+        "level": 9,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 38,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "985",
+        "level": 10,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 41,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "passive",
+    "kindName": "Passive",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "classes": [
+      {
+        "code": "templar",
+        "name": "Templar"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/passive"
+    ],
+    "name": "Insulting Roar",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_007.webp",
+    "id": "12770000",
+    "entityType": "skill",
+    "description": "Increases Enmity Boost by 100% for the caster and increases Attack by <chat_combat>5.5%</> for 5s on landing a Front Attack.\n\nCooldown: 5s"
+  }
+}

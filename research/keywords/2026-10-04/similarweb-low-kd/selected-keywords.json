@@ -1,0 +1,1582 @@
+{
+  "schemaVersion": 1,
+  "source": "Similarweb browser UI",
+  "market": "Worldwide",
+  "searchEngine": "Google",
+  "device": "All traffic",
+  "dataAsOf": "2026-09-30",
+  "timeWindow": "Last 28 days",
+  "collectedAt": "2026-10-04T02:47:32.146Z",
+  "timezone": "Asia/Shanghai",
+  "summary": {
+    "observations": 180,
+    "uniqueRawQueries": 131,
+    "readTableCounts": {
+      "phraseMatch": 98,
+      "relatedKeywords": 72,
+      "questions": 10
+    },
+    "selectedEnglishRawQueries": 26,
+    "selectedEnglishIntentGroups": 22,
+    "groupsWithRepresentativeKDAtMost10": 15,
+    "groupsWithRepresentative28dVolumeAtLeast50": 13,
+    "groupsWithRepresentative28dVolumeBelow50": 9,
+    "priorities": {
+      "P1": 6,
+      "P2": 11,
+      "P3": 5
+    },
+    "exactCanonicalQueriesAlreadyIn63WordLibrary": 0,
+    "unselectedUniqueQueries": 105
+  },
+  "selectionPolicy": [
+    "人工选取更具体的玩家任务、条件或工具查询，合并同一答案的词序/拼写变体。",
+    "代表词统一 aion 2 前缀；只纠错、重排已有词和统一主题，不拼接未出现的长尾词。",
+    "精选组均有实际读取的 KD 1–20；优先 KD ≤10。",
+    "同义词各自指标保留，不相加、不跨词形转移 KD。",
+    "同一承接页的不同问题仍可分组；22 组不等于 22 张新页。",
+    "低 KD 不是实战 SERP 竞争结论；本轮不验证游戏机制、不实施内页。",
+    "保留 <50 和缺失标记；28 天体量与平均体量分列。"
+  ],
+  "groups": [
+    {
+      "keyword": "aion 2 max level",
+      "category": "level cap",
+      "priority": "P1",
+      "representativeRawQuery": "aion 2 max level",
+      "rawQueries": [
+        {
+          "rawQuery": "aion 2 max level",
+          "volume28dDisplay": "8.6K",
+          "averageVolumeDisplay": "443",
+          "kd": 1,
+          "zeroClickDisplay": "85%",
+          "intentDisplay": "-",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/leveling#global-leveling",
+      "action": "维护已有答案",
+      "contentGap": "已有 Global/KR/TW 等级上限说明；优化关键词入口，更新时复核官方版本。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    },
+    {
+      "keyword": "aion 2 dps meter",
+      "category": "damage meters",
+      "priority": "P1",
+      "representativeRawQuery": "aion 2 dps meter",
+      "rawQueries": [
+        {
+          "rawQuery": "aion 2 dps meter",
+          "volume28dDisplay": "5.1K",
+          "averageVolumeDisplay": "1K",
+          "kd": 6,
+          "zeroClickDisplay": "88%",
+          "intentDisplay": "INFO",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/notmeter",
+      "action": "补充已有页",
+      "contentGap": "已有 NotMeter 安装与 DPS 说明；可加强通用 DPS meter 意图和 Global 兼容说明。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    },
+    {
+      "keyword": "aion 2 global changes",
+      "category": "regional version differences",
+      "priority": "P1",
+      "representativeRawQuery": "aion 2 global changes",
+      "rawQueries": [
+        {
+          "rawQuery": "aion 2 global changes",
+          "volume28dDisplay": "1.2K",
+          "averageVolumeDisplay": "140",
+          "kd": 7,
+          "zeroClickDisplay": "64%",
+          "intentDisplay": "-",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            },
+            {
+              "mode": "relatedKeywords",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=relatedKeywords&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:46:02.174Z"
+            }
+          ]
+        },
+        {
+          "rawQuery": "aion 2 global change",
+          "volume28dDisplay": "< 50",
+          "averageVolumeDisplay": "62",
+          "kd": 8,
+          "zeroClickDisplay": "83%",
+          "intentDisplay": "INFO",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            },
+            {
+              "mode": "relatedKeywords",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=relatedKeywords&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:46:02.174Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/global-changes（计划）",
+      "action": "候选新页",
+      "contentGap": "独立整理 Global 与 KR/TW 差异；逐项补地区、版本与官方证据。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    },
+    {
+      "keyword": "aion 2 how to play on taiwan server",
+      "category": "regional installation",
+      "priority": "P2",
+      "representativeRawQuery": "how to play aion 2 on taiwan server",
+      "rawQueries": [
+        {
+          "rawQuery": "how to play aion 2 on taiwan server",
+          "volume28dDisplay": "890",
+          "averageVolumeDisplay": "147",
+          "kd": 2,
+          "zeroClickDisplay": "82%",
+          "intentDisplay": "INFO",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            },
+            {
+              "mode": "relatedKeywords",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=relatedKeywords&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:46:02.174Z"
+            },
+            {
+              "mode": "questions",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=questions&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:46:33.170Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/download；/taiwan-server-guide（计划）",
+      "action": "候选区域教程",
+      "contentGap": "已有地区入口说明；完整 TW 注册、客户端、语言、地区限制步骤仍需核验。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    },
+    {
+      "keyword": "aion 2 private server",
+      "category": "private servers",
+      "priority": "P3",
+      "representativeRawQuery": "aion 2 private server",
+      "rawQueries": [
+        {
+          "rawQuery": "aion 2 private server",
+          "volume28dDisplay": "2.1K",
+          "averageVolumeDisplay": "651",
+          "kd": 19,
+          "zeroClickDisplay": "83%",
+          "intentDisplay": "INFO",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            },
+            {
+              "mode": "relatedKeywords",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=relatedKeywords&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:46:02.174Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/private-server（计划）",
+      "action": "暂缓",
+      "contentGap": "需求存在；须核实是否为 AION 2，避免混入 AION 1 私服和未证实服务。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    },
+    {
+      "keyword": "aion 2 global server",
+      "category": "server regions",
+      "priority": "P2",
+      "representativeRawQuery": "aion2 global server",
+      "rawQueries": [
+        {
+          "rawQuery": "aion2 global server",
+          "volume28dDisplay": "640",
+          "averageVolumeDisplay": "329",
+          "kd": 20,
+          "zeroClickDisplay": "83%",
+          "intentDisplay": "INFO",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            },
+            {
+              "mode": "relatedKeywords",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=relatedKeywords&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:46:02.174Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/server",
+      "action": "维护已有页",
+      "contentGap": "已有 Global 大区和服务器；继续区分 TW/KR 与 Global 服务。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    },
+    {
+      "keyword": "aion 2 console release",
+      "category": "console availability",
+      "priority": "P2",
+      "representativeRawQuery": "aion 2 console release",
+      "rawQueries": [
+        {
+          "rawQuery": "aion 2 console release",
+          "volume28dDisplay": "460",
+          "averageVolumeDisplay": "53",
+          "kd": 20,
+          "zeroClickDisplay": "87%",
+          "intentDisplay": "INFO",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            },
+            {
+              "mode": "relatedKeywords",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=relatedKeywords&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:46:02.174Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/steam#platform-and-controller-support",
+      "action": "补充已有 FAQ",
+      "contentGap": "核实主机发行公告；缺少公告不能写成永久不支持。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    },
+    {
+      "keyword": "aion 2 how to play",
+      "category": "getting started",
+      "priority": "P2",
+      "representativeRawQuery": "aion 2 how to play",
+      "rawQueries": [
+        {
+          "rawQuery": "aion 2 how to play",
+          "volume28dDisplay": "420",
+          "averageVolumeDisplay": "744",
+          "kd": 13,
+          "zeroClickDisplay": "74%",
+          "intentDisplay": "-",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            }
+          ]
+        },
+        {
+          "rawQuery": "how to play aion2",
+          "volume28dDisplay": "< 50",
+          "averageVolumeDisplay": "540",
+          "kd": 6,
+          "zeroClickDisplay": "50%",
+          "intentDisplay": "INFO",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            },
+            {
+              "mode": "relatedKeywords",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=relatedKeywords&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:46:02.174Z"
+            },
+            {
+              "mode": "questions",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=questions&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:46:33.170Z"
+            }
+          ]
+        },
+        {
+          "rawQuery": "how to play aion 2",
+          "volume28dDisplay": "< 50",
+          "averageVolumeDisplay": "1.5K",
+          "kd": 6,
+          "zeroClickDisplay": "70%",
+          "intentDisplay": "-",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            },
+            {
+              "mode": "relatedKeywords",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=relatedKeywords&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:46:02.174Z"
+            },
+            {
+              "mode": "questions",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=questions&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:46:33.170Z"
+            }
+          ]
+        },
+        {
+          "rawQuery": "aion 2 how tp play",
+          "volume28dDisplay": "< 50",
+          "averageVolumeDisplay": "61",
+          "kd": 13,
+          "zeroClickDisplay": "76%",
+          "intentDisplay": "INFO",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            },
+            {
+              "mode": "relatedKeywords",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=relatedKeywords&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:46:02.174Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/guide；/download",
+      "action": "合并到已有页",
+      "contentGap": "统一入门与安装意图；不同原始问法的搜索量和 KD 分别保留，不相加。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    },
+    {
+      "keyword": "aion 2 new class",
+      "category": "class availability",
+      "priority": "P2",
+      "representativeRawQuery": "aion 2 new class",
+      "rawQueries": [
+        {
+          "rawQuery": "aion 2 new class",
+          "volume28dDisplay": "390",
+          "averageVolumeDisplay": "162",
+          "kd": 9,
+          "zeroClickDisplay": "73%",
+          "intentDisplay": "-",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/classes#brawler-and-regional-guides",
+      "action": "维护已有答案",
+      "contentGap": "已有 Brawler 地区区别；Global 新职业开放状态待官方更新。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    },
+    {
+      "keyword": "aion 2 eu release date",
+      "category": "regional release schedule",
+      "priority": "P2",
+      "representativeRawQuery": "aion2 eu release date",
+      "rawQueries": [
+        {
+          "rawQuery": "aion2 eu release date",
+          "volume28dDisplay": "340",
+          "averageVolumeDisplay": "129",
+          "kd": 6,
+          "zeroClickDisplay": "48%",
+          "intentDisplay": "INFO",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            },
+            {
+              "mode": "relatedKeywords",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=relatedKeywords&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:46:02.174Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/steam#access-schedule",
+      "action": "维护已有答案",
+      "contentGap": "已有 Global 开放时间；按欧洲时区和当前阶段核对。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    },
+    {
+      "keyword": "aion 2 class change",
+      "category": "class switching",
+      "priority": "P1",
+      "representativeRawQuery": "aion 2 class change",
+      "rawQueries": [
+        {
+          "rawQuery": "aion 2 class change",
+          "volume28dDisplay": "220",
+          "averageVolumeDisplay": "< 50",
+          "kd": 9,
+          "zeroClickDisplay": "83%",
+          "intentDisplay": "-",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/classes（拟补 FAQ）",
+      "action": "补充已有页",
+      "contentGap": "现有职业页没有完整转职答案；先核实是否支持、操作与限制，不推断机制。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    },
+    {
+      "keyword": "aion 2 gathering map",
+      "category": "gathering locations",
+      "priority": "P1",
+      "representativeRawQuery": "aion 2 gathering map",
+      "rawQueries": [
+        {
+          "rawQuery": "aion 2 gathering map",
+          "volume28dDisplay": "180",
+          "averageVolumeDisplay": "96",
+          "kd": 1,
+          "zeroClickDisplay": "57%",
+          "intentDisplay": "INFO",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/gathering#gathering-routes；/map",
+      "action": "维护已有答案",
+      "contentGap": "已有地图筛选与采集路线；可增强资源筛选示例和入口。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    },
+    {
+      "keyword": "aion 2 talent calculator",
+      "category": "talent planning tools",
+      "priority": "P1",
+      "representativeRawQuery": "aion 2 talent calculator",
+      "rawQueries": [
+        {
+          "rawQuery": "aion 2 talent calculator",
+          "volume28dDisplay": "120",
+          "averageVolumeDisplay": "< 50",
+          "kd": 2,
+          "zeroClickDisplay": "86%",
+          "intentDisplay": "-",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/builds；/talent-calculator（计划）",
+      "action": "候选工具",
+      "contentGap": "需核对 Global 天赋数据、节点与点数规则；不能把现有角色查询工具算作天赋计算器。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    },
+    {
+      "keyword": "aion 2 what does quna do",
+      "category": "premium currency uses",
+      "priority": "P2",
+      "representativeRawQuery": "aion 2 what does quna do",
+      "rawQueries": [
+        {
+          "rawQuery": "aion 2 what does quna do",
+          "volume28dDisplay": "< 50",
+          "averageVolumeDisplay": "186",
+          "kd": 9,
+          "zeroClickDisplay": "77%",
+          "intentDisplay": "INFO",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/monetization#currency-and-trading",
+      "action": "维护已有答案",
+      "contentGap": "已有 Quna 用途与兑换说明；当前 28 天量低于 50，先做 FAQ。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    },
+    {
+      "keyword": "aion 2 how many players per server",
+      "category": "server capacity",
+      "priority": "P2",
+      "representativeRawQuery": "how many players has an aion 2 server",
+      "rawQueries": [
+        {
+          "rawQuery": "how many players has an aion 2 server",
+          "volume28dDisplay": "< 50",
+          "averageVolumeDisplay": "65",
+          "kd": 9,
+          "zeroClickDisplay": "76%",
+          "intentDisplay": "INFO",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            },
+            {
+              "mode": "questions",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=questions&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:46:33.170Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/server（拟补 FAQ）",
+      "action": "补充已有页",
+      "contentGap": "这是单服容量/人数需求；与全游戏并发不同，缺官方容量数字时不编造。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    },
+    {
+      "keyword": "aion 2 eu server location",
+      "category": "server hosting locations",
+      "priority": "P2",
+      "representativeRawQuery": "aion 2 eu server location",
+      "rawQueries": [
+        {
+          "rawQuery": "aion 2 eu server location",
+          "volume28dDisplay": "< 50",
+          "averageVolumeDisplay": "62",
+          "kd": 13,
+          "zeroClickDisplay": "82%",
+          "intentDisplay": "INFO",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            },
+            {
+              "mode": "relatedKeywords",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=relatedKeywords&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:46:02.174Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/server（拟补 FAQ）",
+      "action": "补充已有页",
+      "contentGap": "需要欧洲服务器物理部署地点证据；不能从大区名称推出机房城市。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    },
+    {
+      "keyword": "aion 2 raid 2026",
+      "category": "raid access",
+      "priority": "P3",
+      "representativeRawQuery": "aion 2 raid 2026",
+      "rawQueries": [
+        {
+          "rawQuery": "aion 2 raid 2026",
+          "volume28dDisplay": "< 50",
+          "averageVolumeDisplay": "58",
+          "kd": 9,
+          "zeroClickDisplay": "83%",
+          "intentDisplay": "INFO",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            },
+            {
+              "mode": "relatedKeywords",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=relatedKeywords&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:46:02.174Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/raid-guide（计划）",
+      "action": "待核实意图",
+      "contentGap": "需要确认指向哪一地区、版本、团本与入口；低量宽泛词先观察。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    },
+    {
+      "keyword": "aion 2 taiwan discord",
+      "category": "regional community resources",
+      "priority": "P2",
+      "representativeRawQuery": "aion 2 taiwan discord",
+      "rawQueries": [
+        {
+          "rawQuery": "aion 2 taiwan discord",
+          "volume28dDisplay": "< 50",
+          "averageVolumeDisplay": "78",
+          "kd": 6,
+          "zeroClickDisplay": "53%",
+          "intentDisplay": "INFO",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/guide#community-resources",
+      "action": "补充已有页",
+      "contentGap": "以地区社区导航满足需求；核验邀请链接与官方/社区身份。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    },
+    {
+      "keyword": "aion 2 fishing release",
+      "category": "fishing availability",
+      "priority": "P3",
+      "representativeRawQuery": "aion2 fishing release",
+      "rawQueries": [
+        {
+          "rawQuery": "aion2 fishing release",
+          "volume28dDisplay": "< 50",
+          "averageVolumeDisplay": "56",
+          "kd": 20,
+          "zeroClickDisplay": "83%",
+          "intentDisplay": "INFO",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            },
+            {
+              "mode": "relatedKeywords",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=relatedKeywords&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:46:02.174Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/fishing（计划）",
+      "action": "待核实意图",
+      "contentGap": "需要确认真实机制、地区和开放公告；本轮工具词不能证明钓鱼已经开放。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    },
+    {
+      "keyword": "aion 2 are maps connected to aion 1",
+      "category": "world map continuity",
+      "priority": "P3",
+      "representativeRawQuery": "are aion 2 maps connected to aion 1",
+      "rawQueries": [
+        {
+          "rawQuery": "are aion 2 maps connected to aion 1",
+          "volume28dDisplay": "< 50",
+          "averageVolumeDisplay": "57",
+          "kd": 13,
+          "zeroClickDisplay": "84%",
+          "intentDisplay": "INFO",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            },
+            {
+              "mode": "relatedKeywords",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=relatedKeywords&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:46:02.174Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/map（拟补 FAQ）",
+      "action": "补充已有页",
+      "contentGap": "核实两代地图/世界关系和区域名称；先按简短 FAQ 处理。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    },
+    {
+      "keyword": "aion 2 can i use vpn and connect to japan to play",
+      "category": "regional service access",
+      "priority": "P3",
+      "representativeRawQuery": "can i use vpn and connect to japan to play aion 2?",
+      "rawQueries": [
+        {
+          "rawQuery": "can i use vpn and connect to japan to play aion 2?",
+          "volume28dDisplay": "< 50",
+          "averageVolumeDisplay": "114",
+          "kd": 1,
+          "zeroClickDisplay": "71%",
+          "intentDisplay": "INFO",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/download（拟补 FAQ）",
+      "action": "补充已有页",
+      "contentGap": "核实服务地区、账号与平台限制；不把 VPN 当作已实测可用结论。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    },
+    {
+      "keyword": "aion 2 how much do i have to p2w in global release",
+      "category": "global spending expectations",
+      "priority": "P2",
+      "representativeRawQuery": "how much do i have to p2w in aion 2 global release",
+      "rawQueries": [
+        {
+          "rawQuery": "how much do i have to p2w in aion 2 global release",
+          "volume28dDisplay": "< 50",
+          "averageVolumeDisplay": "76",
+          "kd": 2,
+          "zeroClickDisplay": "89%",
+          "intentDisplay": "INFO",
+          "cpcDisplay": "-",
+          "observations": [
+            {
+              "mode": "phraseMatch",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=phraseMatch&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:45:31.690Z"
+            },
+            {
+              "mode": "relatedKeywords",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=relatedKeywords&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:46:02.174Z"
+            },
+            {
+              "mode": "questions",
+              "sourceUrl": "https://pro.similarweb.com/#/digitalsuite/acquisition/findkeywords/keyword-generator-tool/999/28d?searchEngine=google&keyword=aion%202&webSource=Total&isWWW=*&tab=questions&difficultyFromValue=1&difficultyToValue=20&multiIncludeExcludeKeywords=%5B%5D",
+              "observedAt": "2026-10-04T02:46:33.170Z"
+            }
+          ]
+        }
+      ],
+      "currentOrPlannedPath": "/monetization",
+      "action": "补充已有页",
+      "contentGap": "已有商业模式；不能仅凭需求给付费强度或最小花费数字，需实际 Global 依据。",
+      "serpCompetition": "本轮未检查 SERP；仅有 Similarweb 工具 KD",
+      "gameFactsValidatedThisRun": false
+    }
+  ],
+  "unselectedQueries": [
+    {
+      "rawQuery": "22 plastic surgery consultaion free",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "61",
+      "kd": 4,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "2why do datbase aprtitiaioning and how its done, instead of multiplying the datanses",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "58",
+      "kd": 20,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "adobe premiorpro 2026 min configartaion",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "293",
+      "kd": 16,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "aeon 2 release date",
+      "volume28dDisplay": "1.8K",
+      "averageVolumeDisplay": "264",
+      "kd": 20,
+      "reason": "主题或拼写存在歧义，保留原词待核实；不擅自纠正为新需求。"
+    },
+    {
+      "rawQuery": "aeon game",
+      "volume28dDisplay": "4K",
+      "averageVolumeDisplay": "876",
+      "kd": 10,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "aion 1",
+      "volume28dDisplay": "36K",
+      "averageVolumeDisplay": "5.1K",
+      "kd": 17,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "aion 2 beta",
+      "volume28dDisplay": "16.4K",
+      "averageVolumeDisplay": "1K",
+      "kd": 20,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "aion 2 characters",
+      "volume28dDisplay": "2.9K",
+      "averageVolumeDisplay": "428",
+      "kd": 1,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "aion 2 classes",
+      "volume28dDisplay": "142.4K",
+      "averageVolumeDisplay": "11.7K",
+      "kd": 3,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "aion 2 combien de slot characters max",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "77",
+      "kd": 2,
+      "reason": "非英语观察；保留原词和原指标，不能直接当成英语搜索量。"
+    },
+    {
+      "rawQuery": "aion 2 currency",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "126",
+      "kd": 3,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "aion 2 database",
+      "volume28dDisplay": "910",
+      "averageVolumeDisplay": "521",
+      "kd": 6,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "aion 2 mmorpg reddit",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "< 50",
+      "kd": 2,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "aion 2 monetization",
+      "volume28dDisplay": "4.8K",
+      "averageVolumeDisplay": "447",
+      "kd": 1,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "aion 2 poeta",
+      "volume28dDisplay": "150",
+      "averageVolumeDisplay": "136",
+      "kd": 6,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "aion 2 publisher",
+      "volume28dDisplay": "190",
+      "averageVolumeDisplay": "603",
+      "kd": 20,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "aion 2 pvp",
+      "volume28dDisplay": "3.1K",
+      "averageVolumeDisplay": "1.1K",
+      "kd": 6,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "aion 2 quels sont les classes les plus jouées a taiwan",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "84",
+      "kd": 1,
+      "reason": "非英语观察；保留原词和原指标，不能直接当成英语搜索量。"
+    },
+    {
+      "rawQuery": "aion 2 reddit",
+      "volume28dDisplay": "36K",
+      "averageVolumeDisplay": "7K",
+      "kd": 2,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "aion 2 reddit ad",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "66",
+      "kd": 3,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "aion 2 requirements",
+      "volume28dDisplay": "760",
+      "averageVolumeDisplay": "554",
+      "kd": 20,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "aion 2 review",
+      "volume28dDisplay": "5.6K",
+      "averageVolumeDisplay": "1.4K",
+      "kd": 20,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "aion 2 specs",
+      "volume28dDisplay": "680",
+      "averageVolumeDisplay": "343",
+      "kd": 20,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "aion 2 strongholds",
+      "volume28dDisplay": "90",
+      "averageVolumeDisplay": "71",
+      "kd": 10,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "aion 2 twitch",
+      "volume28dDisplay": "6.4K",
+      "averageVolumeDisplay": "293",
+      "kd": 1,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "aion 2 wings",
+      "volume28dDisplay": "1.3K",
+      "averageVolumeDisplay": "308",
+      "kd": 1,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "aion 2 в россии",
+      "volume28dDisplay": "4.6K",
+      "averageVolumeDisplay": "1.5K",
+      "kd": 20,
+      "reason": "非英语观察；保留原词和原指标，不能直接当成英语搜索量。"
+    },
+    {
+      "rawQuery": "aion 2 дата выхода в россии",
+      "volume28dDisplay": "3.4K",
+      "averageVolumeDisplay": "833",
+      "kd": 20,
+      "reason": "非英语观察；保留原词和原指标，不能直接当成英语搜索量。"
+    },
+    {
+      "rawQuery": "aion 2 системные требования",
+      "volume28dDisplay": "2.2K",
+      "averageVolumeDisplay": "492",
+      "kd": 20,
+      "reason": "非英语观察；保留原词和原指标，不能直接当成英语搜索量。"
+    },
+    {
+      "rawQuery": "aion america",
+      "volume28dDisplay": "3K",
+      "averageVolumeDisplay": "5.2K",
+      "kd": 3,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "aion empire",
+      "volume28dDisplay": "3K",
+      "averageVolumeDisplay": "2.7K",
+      "kd": 7,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "aion gamez",
+      "volume28dDisplay": "1.5K",
+      "averageVolumeDisplay": "364",
+      "kd": 12,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "aion mmo",
+      "volume28dDisplay": "8.7K",
+      "averageVolumeDisplay": "5.7K",
+      "kd": 15,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "aion mod",
+      "volume28dDisplay": "130",
+      "averageVolumeDisplay": "78",
+      "kd": 8,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "aion online",
+      "volume28dDisplay": "12K",
+      "averageVolumeDisplay": "6.9K",
+      "kd": 14,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "aion origin",
+      "volume28dDisplay": "12.4K",
+      "averageVolumeDisplay": "1.8K",
+      "kd": 5,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "aion origin shop",
+      "volume28dDisplay": "930",
+      "averageVolumeDisplay": "67",
+      "kd": 20,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "aion reddit",
+      "volume28dDisplay": "2.1K",
+      "averageVolumeDisplay": "1.2K",
+      "kd": 2,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "aion v 2026",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "531",
+      "kd": 8,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "aion\" reddit",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "76",
+      "kd": 2,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "aion2 eddit",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "53",
+      "kd": 2,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "aion2 reddit",
+      "volume28dDisplay": "5.4K",
+      "averageVolumeDisplay": "1.8K",
+      "kd": 3,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "aion2 サービス開始",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "59",
+      "kd": 4,
+      "reason": "非英语观察；保留原词和原指标，不能直接当成英语搜索量。"
+    },
+    {
+      "rawQuery": "aion2 スペック",
+      "volume28dDisplay": "1.6K",
+      "averageVolumeDisplay": "290",
+      "kd": 20,
+      "reason": "非英语观察；保留原词和原指标，不能直接当成英语搜索量。"
+    },
+    {
+      "rawQuery": "aion2 台湾グローバルに移動できるのか",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "71",
+      "kd": 8,
+      "reason": "非英语观察；保留原词和原指标，不能直接当成英语搜索量。"
+    },
+    {
+      "rawQuery": "aion2 日本から",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "107",
+      "kd": 4,
+      "reason": "非英语观察；保留原词和原指标，不能直接当成英语搜索量。"
+    },
+    {
+      "rawQuery": "aion2chapterone",
+      "volume28dDisplay": "320",
+      "averageVolumeDisplay": "473",
+      "kd": 6,
+      "reason": "主题或拼写存在歧义，保留原词待核实；不擅自纠正为新需求。"
+    },
+    {
+      "rawQuery": "aion2　日本から",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "< 50",
+      "kd": 5,
+      "reason": "非英语观察；保留原词和原指标，不能直接当成英语搜索量。"
+    },
+    {
+      "rawQuery": "aionr eddit",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "75",
+      "kd": 2,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "anon 2",
+      "volume28dDisplay": "120",
+      "averageVolumeDisplay": "85",
+      "kd": 19,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "ap aion classic",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "384",
+      "kd": 4,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "archeage chronicles release",
+      "volume28dDisplay": "3.4K",
+      "averageVolumeDisplay": "804",
+      "kd": 19,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "avaion 2026",
+      "volume28dDisplay": "570",
+      "averageVolumeDisplay": "96",
+      "kd": 18,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "aybu mediinei internaional student 2026 2027 tuition",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "79",
+      "kd": 20,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "base staion 2.0",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "59",
+      "kd": 12,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "best animaion movie 2026",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "77",
+      "kd": 7,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "como está le nuevo plan de vacaiones 2026 en cdmx",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "100",
+      "kd": 1,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "culture digitali e della comunicaione 26/27 piano di studi",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "53",
+      "kd": 16,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "cyberpunk 20277 playstaion",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "60",
+      "kd": 16,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "descargar aion",
+      "volume28dDisplay": "60",
+      "averageVolumeDisplay": "93",
+      "kd": 4,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "did japan experience lots of low skilled labor immigrtaion post 2015",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "103",
+      "kd": 14,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "eclypse",
+      "volume28dDisplay": "2K",
+      "averageVolumeDisplay": "4.7K",
+      "kd": 16,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "ex 20:5 explaioned",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "57",
+      "kd": 19,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "first champaions leage game 26/27",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "63",
+      "kd": 16,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "free download aion online server files 8.0",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "72",
+      "kd": 12,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "gac aion y plus 2026",
+      "volume28dDisplay": "50",
+      "averageVolumeDisplay": "123",
+      "kd": 9,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "global aion",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "194",
+      "kd": 20,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "how do u control ur 2 hand while plying the paiono",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "91",
+      "kd": 1,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "iaon game",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "58",
+      "kd": 19,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "infer iexplanaion to grade 2",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "70",
+      "kd": 4,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "is iaon 2 already released in some places",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "58",
+      "kd": 1,
+      "reason": "主题或拼写存在歧义，保留原词待核实；不擅自纠正为新需求。"
+    },
+    {
+      "rawQuery": "karlach",
+      "volume28dDisplay": "92K",
+      "averageVolumeDisplay": "95.9K",
+      "kd": 8,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "kyiv, shevchenko raion, 25 viacheslava chornovola street, apt 77 postal code",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "56",
+      "kd": 1,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "loreal infllaible 24 hour foundtaion ingredients",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "58",
+      "kd": 6,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "maharashtra dse 2026 final merit list notifictaion24",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "55",
+      "kd": 8,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "mmo 2026",
+      "volume28dDisplay": "6.9K",
+      "averageVolumeDisplay": "4.3K",
+      "kd": 13,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "mmo 新作",
+      "volume28dDisplay": "3.4K",
+      "averageVolumeDisplay": "2.5K",
+      "kd": 13,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "mmorpg 2026",
+      "volume28dDisplay": "25.7K",
+      "averageVolumeDisplay": "25.3K",
+      "kd": 9,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "natataion lac annecy 2026",
+      "volume28dDisplay": "100",
+      "averageVolumeDisplay": "122",
+      "kd": 11,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "nombres de postes agrégaion 2025",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "52",
+      "kd": 8,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "not aion",
+      "volume28dDisplay": "590",
+      "averageVolumeDisplay": "232",
+      "kd": 8,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "organigrama de la iglesia adventita 20206 organizaion union iglesia como es todo eso",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "56",
+      "kd": 9,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "origin aion",
+      "volume28dDisplay": "20.8K",
+      "averageVolumeDisplay": "3.2K",
+      "kd": 2,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "planificaion red de transporte 26 31",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "61",
+      "kd": 14,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "prima giornata caionato 202 2026",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "65",
+      "kd": 19,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "recent aion 2 chances",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "128",
+      "kd": 15,
+      "reason": "主题或拼写存在歧义，保留原词待核实；不擅自纠正为新需求。"
+    },
+    {
+      "rawQuery": "reddit aion 2",
+      "volume28dDisplay": "5.6K",
+      "averageVolumeDisplay": "2.2K",
+      "kd": 2,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "reddit aion2",
+      "volume28dDisplay": "2.2K",
+      "averageVolumeDisplay": "969",
+      "kd": 2,
+      "reason": "核心短词、导航词或模糊需求；保留低 KD 观察，不计入精选长尾组。"
+    },
+    {
+      "rawQuery": "reddit playstaion 2 best games",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "54",
+      "kd": 1,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "roggero gioielliere",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "10.9K",
+      "kd": 2,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "rrb junior engineer je online form 2026official notificaion",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "201",
+      "kd": 14,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "strategic management society 2026 aregistrtaion discount students",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "56",
+      "kd": 16,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "tabla de clasificaiones fase de grupos copa mundial 2026",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "56",
+      "kd": 13,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "the captaion 2019",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "63",
+      "kd": 11,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "thule aion 28l",
+      "volume28dDisplay": "5.9K",
+      "averageVolumeDisplay": "5K",
+      "kd": 2,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "thule aion 28l travel backpack",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "60",
+      "kd": 3,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "thule aion travel backpack 28l black",
+      "volume28dDisplay": "50",
+      "averageVolumeDisplay": "200",
+      "kd": 3,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "thule aion travel pack - 28 l",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "106",
+      "kd": 3,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "velvet lounge 2 athinaion",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "128",
+      "kd": 2,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "what trasnaportattaion acanada when items sold more thatn 2000 k to the us",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "61",
+      "kd": 14,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "when does class registraion end for valencia 2026",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "54",
+      "kd": 4,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "where to make a class of 2020 gradutaion annoucement",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "158",
+      "kd": 8,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "айон 2 в россии",
+      "volume28dDisplay": "570",
+      "averageVolumeDisplay": "411",
+      "kd": 20,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "фшщт",
+      "volume28dDisplay": "310",
+      "averageVolumeDisplay": "264",
+      "kd": 20,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    },
+    {
+      "rawQuery": "タワー オブ アイオン 現在",
+      "volume28dDisplay": "< 50",
+      "averageVolumeDisplay": "< 50",
+      "kd": 13,
+      "reason": "未确认属于 AION 2：同名商品、其他游戏或无关查询，排除英语长尾主清单。"
+    }
+  ]
+}

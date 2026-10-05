@@ -1,0 +1,2516 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/12130000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "12130000",
+    "name": "Poach",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_013.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "12130010",
+        "description": "Moves to the target if target has Incapacitated Immunity",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12130020",
+        "description": "-20% Status Effect Resist for 5s on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12130030",
+        "description": "Resets cooldown on defeating an enemy",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12130040",
+        "description": "10% Max HP Protective Shield",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12130050",
+        "description": "50% chance to Stun for 3s",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "sword",
+        "name": "Longsword"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:49:87.5:1:1]]-[[damage:max:49:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 49,
+            "baseMax": 49,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:86:87.5:1:1]]-[[damage:max:86:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 86,
+            "baseMax": 86,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:123:87.5:1:1]]-[[damage:max:123:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 123,
+            "baseMax": 123,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:160:87.5:1:1]]-[[damage:max:160:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 160,
+            "baseMax": 160,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:215:87.5:1:1]]-[[damage:max:215:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 215,
+            "baseMax": 215,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:283:87.5:1:1]]-[[damage:max:283:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 283,
+            "baseMax": 283,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:364:87.5:1:1]]-[[damage:max:364:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 364,
+            "baseMax": 364,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:433:87.5:1:1]]-[[damage:max:433:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 433,
+            "baseMax": 433,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:501:87.5:1:1]]-[[damage:max:501:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 501,
+            "baseMax": 501,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:569:87.5:1:1]]-[[damage:max:569:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 569,
+            "baseMax": 569,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:637:87.5:1:1]]-[[damage:max:637:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 637,
+            "baseMax": 637,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:719:87.5:1:1]]-[[damage:max:719:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 719,
+            "baseMax": 719,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:787:87.5:1:1]]-[[damage:max:787:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 787,
+            "baseMax": 787,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:837:87.5:1:1]]-[[damage:max:837:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 837,
+            "baseMax": 837,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:874:87.5:1:1]]-[[damage:max:874:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 874,
+            "baseMax": 874,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:924:87.5:1:1]]-[[damage:max:924:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 924,
+            "baseMax": 924,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:973:87.5:1:1]]-[[damage:max:973:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 973,
+            "baseMax": 973,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1023:87.5:1:1]]-[[damage:max:1023:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1023,
+            "baseMax": 1023,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1073:87.5:1:1]]-[[damage:max:1073:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1073,
+            "baseMax": 1073,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1110:87.5:1:1]]-[[damage:max:1110:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1110,
+            "baseMax": 1110,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1147:87.5:1:1]]-[[damage:max:1147:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1147,
+            "baseMax": 1147,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1183:87.5:1:1]]-[[damage:max:1183:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1183,
+            "baseMax": 1183,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1220:87.5:1:1]]-[[damage:max:1220:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1220,
+            "baseMax": 1220,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1257:87.5:1:1]]-[[damage:max:1257:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1257,
+            "baseMax": 1257,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1294:87.5:1:1]]-[[damage:max:1294:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1294,
+            "baseMax": 1294,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1330:87.5:1:1]]-[[damage:max:1330:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1330,
+            "baseMax": 1330,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1367:87.5:1:1]]-[[damage:max:1367:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1367,
+            "baseMax": 1367,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1404:87.5:1:1]]-[[damage:max:1404:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1404,
+            "baseMax": 1404,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1441:87.5:1:1]]-[[damage:max:1441:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1441,
+            "baseMax": 1441,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1477:87.5:1:1]]-[[damage:max:1477:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1477,
+            "baseMax": 1477,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1514:87.5:1:1]]-[[damage:max:1514:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1514,
+            "baseMax": 1514,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1551:87.5:1:1]]-[[damage:max:1551:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1551,
+            "baseMax": 1551,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1588:87.5:1:1]]-[[damage:max:1588:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1588,
+            "baseMax": 1588,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1624:87.5:1:1]]-[[damage:max:1624:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1624,
+            "baseMax": 1624,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1661:87.5:1:1]]-[[damage:max:1661:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1661,
+            "baseMax": 1661,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1698:87.5:1:1]]-[[damage:max:1698:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1698,
+            "baseMax": 1698,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1735:87.5:1:1]]-[[damage:max:1735:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1735,
+            "baseMax": 1735,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1771:87.5:1:1]]-[[damage:max:1771:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1771,
+            "baseMax": 1771,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1808:87.5:1:1]]-[[damage:max:1808:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1808,
+            "baseMax": 1808,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1845:87.5:1:1]]-[[damage:max:1845:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1213000011",
+            "effectGroupId": "121300001",
+            "baseMin": 1845,
+            "baseMax": 1845,
+            "attackRatioPercent": 87.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "121300001",
+            "name": "Pulled",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Pull Status",
+            "effect": "Pull Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Pulled",
+              "id": "121300001"
+            }
+          },
+          {
+            "id": "100000201",
+            "name": "Root",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Immobilized",
+            "effect": "Immobilized",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Root",
+              "id": "100000201"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "814",
+        "level": 1,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "815",
+        "level": 2,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "816",
+        "level": 3,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "817",
+        "level": 4,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "818",
+        "level": 5,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "819",
+        "level": 6,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "820",
+        "level": 7,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "821",
+        "level": 8,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "822",
+        "level": 9,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "823",
+        "level": 10,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "12130010",
+        "skillId": "12130010",
+        "name": "Poach",
+        "description": "Moves to the target if target has Incapacitated Immunity",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12130020",
+        "skillId": "12130020",
+        "name": "Poach",
+        "description": "-20% Status Effect Resist for 5s on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12130030",
+        "skillId": "12130030",
+        "name": "Poach",
+        "description": "Resets cooldown on defeating an enemy",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12130040",
+        "skillId": "12130040",
+        "name": "Poach",
+        "description": "10% Max HP Protective Shield",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12130050",
+        "skillId": "12130050",
+        "name": "Poach",
+        "description": "50% chance to Stun for 3s",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 15,
+    "classes": [
+      {
+        "code": "templar",
+        "name": "Templar"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Poach",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_013.webp",
+    "id": "12130000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:49:87.5:1:1]]-[[damage:max:49:87.5:1:1]]</> damage to a target within 20m and pulls them in front of the caster, with a 75% chance to inflict Root for 2s.\n100% chance to inflict Root on NPC targets. \n\n10 Stagger Gauge Damage"
+  }
+}

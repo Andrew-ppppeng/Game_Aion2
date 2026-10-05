@@ -1,0 +1,393 @@
+{
+  "next": "<GuideNext slug=\"guide\" />",
+  "locales": {
+    "en": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "world-elyos",
+            "alt": "Official Global Elyos world scene",
+            "caption": "Official Global setting image. The installation workflow is explained in text; this is not a screenshot of Steam, PURPLE or a download-progress window."
+          },
+          "workflow": {
+            "title": "Separate installing the game from being able to enter",
+            "caption": "Follow the official platform, finish its updates, then diagnose the actual account or service message.",
+            "steps": [
+              {
+                "label": "Choose the official platform",
+                "description": "Use Steam's main game App 3393110 or the official PURPLE launcher."
+              },
+              {
+                "label": "Check the selected drive",
+                "description": "Compare your PC and free space with the listed requirements and the current installer estimate."
+              },
+              {
+                "label": "Finish the main-client update",
+                "description": "Let installation and patches complete; a Launch Scale Test entry is not the released main game."
+              },
+              {
+                "label": "Confirm account and service",
+                "description": "Use the intended playing identity and Global service; follow country-specific PURPLE guidance only where applicable."
+              },
+              {
+                "label": "Read the first-launch message",
+                "description": "Separate access eligibility, maintenance and damaged files before choosing a fix."
+              }
+            ]
+          }
+        },
+        "checklist": {
+          "title": "Installation readiness checklist",
+          "items": [
+            {
+              "id": "choose-platform",
+              "label": "Choose the official Steam or PURPLE entry"
+            },
+            {
+              "id": "confirm-main-game",
+              "label": "On Steam, confirm the main game is App 3393110"
+            },
+            {
+              "id": "check-requirements",
+              "label": "Check Windows, processor, memory and graphics requirements"
+            },
+            {
+              "id": "free-space",
+              "label": "Check free space on the selected installation drive"
+            },
+            {
+              "id": "complete-updates",
+              "label": "Finish the client download and all pending updates"
+            },
+            {
+              "id": "account-region",
+              "label": "Confirm the intended account and Global service"
+            },
+            {
+              "id": "access-notices",
+              "label": "Read current access or maintenance messages before troubleshooting"
+            }
+          ]
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "official-downloads",
+          "position": "sectionEnd",
+          "text": "<GuideVisual id=\"workflow\" />\n\n<GuideChecklist />"
+        },
+        {
+          "anchor": "pc-requirements",
+          "position": "sectionEnd",
+          "text": "**If installation stops for space:** inspect the drive you actually selected, not a different disk with more free space. Read the current installer message and resume after meeting that requirement. The published 100 GB is required available storage; a video showing a smaller transfer does not override the installation check."
+        },
+        {
+          "anchor": "steam-installation",
+          "position": "sectionEnd",
+          "text": "**Worked Steam case: the main game is installed, but reports missing files.** Check that you opened **AION 2, App 3393110**, then use **Properties → Installed Files → Verify integrity of game files** and let the process finish before retrying. If the next attempt instead shows an access or maintenance message, move to that message's remedy. File verification does not grant Advance Access or make an unavailable service open."
+        },
+        {
+          "anchor": "purple-installation",
+          "position": "sectionEnd",
+          "text": "**Worked PURPLE case for the published country list:** if a player in **Singapore** cannot see AION 2, the cited official notice tells them to set the **launcher region to Global**, inspect the game list and restart PURPLE if necessary. Apply this as the published launcher fix for a listed country; changing an account country or choosing a KR/TW service is a different action."
+        },
+        {
+          "anchor": "launch-troubleshooting",
+          "position": "sectionEnd",
+          "text": "<GuideVisual id=\"topic\" />"
+        }
+      ]
+    },
+    "ja": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "world-elyos",
+            "alt": "公式Global版天族の世界風景",
+            "caption": "公式Globalの舞台イメージです。インストール手順は本文で説明しています。Steam、PURPLE、ダウンロード進行画面のスクリーンショットではありません。"
+          },
+          "workflow": {
+            "title": "インストールと入場できる状態を区別する",
+            "caption": "公式プラットフォームで更新を終えてから、実際のアカウントやサービスのメッセージで原因を調べます。",
+            "steps": [
+              {
+                "label": "公式プラットフォームを選ぶ",
+                "description": "Steamの本体App 3393110、または公式PURPLEランチャーを使います。"
+              },
+              {
+                "label": "選んだドライブを確認する",
+                "description": "PCと空き容量を公開要件および現在のインストーラー表示と比較します。"
+              },
+              {
+                "label": "本体の更新を完了する",
+                "description": "インストールとパッチを終えます。Launch Scale Testの項目は正式版本体とは別です。"
+              },
+              {
+                "label": "アカウントとサービスを確認する",
+                "description": "プレイ用のログインとGlobalサービスを使います。PURPLEの地域別案内は該当時に適用します。"
+              },
+              {
+                "label": "初回起動のメッセージを読む",
+                "description": "参加資格、メンテナンス、破損ファイルを区別して対処を選びます。"
+              }
+            ]
+          }
+        },
+        "checklist": {
+          "title": "インストール準備の確認リスト",
+          "items": [
+            {
+              "id": "choose-platform",
+              "label": "公式SteamまたはPURPLEの入口を選ぶ"
+            },
+            {
+              "id": "confirm-main-game",
+              "label": "Steamでは本体がApp 3393110であることを確認する"
+            },
+            {
+              "id": "check-requirements",
+              "label": "Windows、CPU、メモリー、GPUの要件を確認する"
+            },
+            {
+              "id": "free-space",
+              "label": "実際のインストール先ドライブの空き容量を確認する"
+            },
+            {
+              "id": "complete-updates",
+              "label": "クライアントのダウンロードと残りの更新を完了する"
+            },
+            {
+              "id": "account-region",
+              "label": "プレイ用アカウントとGlobalサービスを確認する"
+            },
+            {
+              "id": "access-notices",
+              "label": "対処前に現在の参加資格やメンテナンス表示を読む"
+            }
+          ]
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "official-downloads",
+          "position": "sectionEnd",
+          "text": "<GuideVisual id=\"workflow\" />\n\n<GuideChecklist />"
+        },
+        {
+          "anchor": "pc-requirements",
+          "position": "sectionEnd",
+          "text": "**空き容量で止まる場合：** 別の空いているディスクではなく、実際に選んだドライブを確認します。現在のインストーラーの表示を読み、その条件を満たしてから再開してください。公開されている100 GBは必要な空き容量です。動画で転送量が小さく見えても、インストール時の確認条件は変わりません。"
+        },
+        {
+          "anchor": "steam-installation",
+          "position": "sectionEnd",
+          "text": "**Steamの具体例：本体はインストール済みだが、ファイル不足と表示される。** **AION 2、App 3393110**を開いたことを確認し、**Properties → Installed Files → Verify integrity of game files**を使います。処理完了を待ってから再試行してください。次に参加資格やメンテナンスの表示が出たら、その原因への対処に移ります。ファイル確認によって先行プレイの資格が付いたり、停止中のサービスが開いたりはしません。"
+        },
+        {
+          "anchor": "purple-installation",
+          "position": "sectionEnd",
+          "text": "**公式対象国でのPURPLEの具体例：** **シンガポール**のプレイヤーにAION 2が見えない場合、引用した公式告知は**ランチャーの地域をGlobalにする**、ゲーム一覧を見る、必要ならPURPLEを再起動するよう案内しています。対象国に公開されたランチャーの対処として適用してください。アカウントの国変更やKR/TWサービス選択とは別の操作です。"
+        },
+        {
+          "anchor": "launch-troubleshooting",
+          "position": "sectionEnd",
+          "text": "<GuideVisual id=\"topic\" />"
+        }
+      ]
+    },
+    "es": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "world-elyos",
+            "alt": "Escena oficial del mundo Elios de Global",
+            "caption": "Imagen oficial del entorno Global. El flujo de instalación se explica en el texto; no es una captura de Steam, PURPLE o una ventana de progreso de descarga."
+          },
+          "workflow": {
+            "title": "Distingue instalar el juego de poder entrar",
+            "caption": "Elige la plataforma oficial, termina sus actualizaciones y después identifica el mensaje real de cuenta o servicio.",
+            "steps": [
+              {
+                "label": "Elige la plataforma oficial",
+                "description": "Usa el juego principal de Steam App 3393110 o el lanzador oficial PURPLE."
+              },
+              {
+                "label": "Comprueba la unidad elegida",
+                "description": "Compara PC y espacio libre con los requisitos publicados y la estimación actual del instalador."
+              },
+              {
+                "label": "Termina la actualización del cliente principal",
+                "description": "Completa instalación y parches; una entrada del Launch Scale Test no es el juego principal publicado."
+              },
+              {
+                "label": "Confirma cuenta y servicio",
+                "description": "Usa tu identidad de juego y el servicio Global; aplica la guía regional de PURPLE solo cuando corresponda."
+              },
+              {
+                "label": "Lee el mensaje del primer inicio",
+                "description": "Distingue elegibilidad, mantenimiento y archivos dañados antes de elegir una solución."
+              }
+            ]
+          }
+        },
+        "checklist": {
+          "title": "Lista de preparación de la instalación",
+          "items": [
+            {
+              "id": "choose-platform",
+              "label": "Elige la entrada oficial de Steam o PURPLE"
+            },
+            {
+              "id": "confirm-main-game",
+              "label": "En Steam, confirma que el juego principal es App 3393110"
+            },
+            {
+              "id": "check-requirements",
+              "label": "Comprueba los requisitos de Windows, procesador, memoria y gráficos"
+            },
+            {
+              "id": "free-space",
+              "label": "Revisa el espacio libre en la unidad de instalación elegida"
+            },
+            {
+              "id": "complete-updates",
+              "label": "Completa la descarga del cliente y las actualizaciones pendientes"
+            },
+            {
+              "id": "account-region",
+              "label": "Confirma la cuenta prevista y el servicio Global"
+            },
+            {
+              "id": "access-notices",
+              "label": "Lee los mensajes actuales de acceso o mantenimiento antes de buscar soluciones"
+            }
+          ]
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "official-downloads",
+          "position": "sectionEnd",
+          "text": "<GuideVisual id=\"workflow\" />\n\n<GuideChecklist />"
+        },
+        {
+          "anchor": "pc-requirements",
+          "position": "sectionEnd",
+          "text": "**Si la instalación se detiene por espacio:** revisa la unidad elegida realmente, no otra con más espacio. Lee el mensaje actual del instalador y reanuda tras cumplir ese requisito. Los 100 GB publicados son espacio disponible necesario; un vídeo con una transferencia menor no anula la comprobación de instalación."
+        },
+        {
+          "anchor": "steam-installation",
+          "position": "sectionEnd",
+          "text": "**Caso concreto de Steam: el juego principal está instalado, pero informa de archivos ausentes.** Comprueba que abriste **AION 2, App 3393110**, usa **Properties → Installed Files → Verify integrity of game files** y espera a que termine antes de reintentar. Si después aparece un mensaje de acceso o mantenimiento, sigue la solución de ese mensaje. Verificar archivos no concede Advance Access ni abre un servicio que no está disponible."
+        },
+        {
+          "anchor": "purple-installation",
+          "position": "sectionEnd",
+          "text": "**Caso PURPLE para la lista de países publicada:** si un jugador en **Singapur** no ve AION 2, el aviso oficial citado le indica poner la **región del lanzador en Global**, revisar la lista y reiniciar PURPLE si hace falta. Es la solución publicada del lanzador para un país incluido; cambiar el país de la cuenta o seleccionar el servicio KR/TW es otra acción."
+        },
+        {
+          "anchor": "launch-troubleshooting",
+          "position": "sectionEnd",
+          "text": "<GuideVisual id=\"topic\" />"
+        }
+      ]
+    },
+    "de": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "world-elyos",
+            "alt": "Offizielle Global-Weltszene der Elyos",
+            "caption": "Offizielles Motiv der Global-Spielwelt. Der Installationsablauf steht im Text; dies ist kein Screenshot von Steam, PURPLE oder einem Downloadfortschritt."
+          },
+          "workflow": {
+            "title": "Installation und Spielzugang auseinanderhalten",
+            "caption": "Wähle die offizielle Plattform, schließe ihre Updates ab und prüfe dann die tatsächliche Konto- oder Servicemeldung.",
+            "steps": [
+              {
+                "label": "Offizielle Plattform wählen",
+                "description": "Nutze Steams Hauptspiel App 3393110 oder den offiziellen PURPLE-Launcher."
+              },
+              {
+                "label": "Gewähltes Laufwerk prüfen",
+                "description": "Vergleiche PC und freien Platz mit den veröffentlichten Anforderungen und der aktuellen Installer-Schätzung."
+              },
+              {
+                "label": "Hauptclient vollständig aktualisieren",
+                "description": "Beende Installation und Patches; ein Launch-Scale-Test-Eintrag ist nicht das veröffentlichte Hauptspiel."
+              },
+              {
+                "label": "Konto und Dienst bestätigen",
+                "description": "Nutze dein Spielkonto und den Global-Dienst; länderspezifische PURPLE-Hilfe nur bei zutreffendem Land."
+              },
+              {
+                "label": "Erste Startmeldung lesen",
+                "description": "Trenne Zugangsberechtigung, Wartung und beschädigte Dateien vor der passenden Maßnahme."
+              }
+            ]
+          }
+        },
+        "checklist": {
+          "title": "Checkliste für die Installationsbereitschaft",
+          "items": [
+            {
+              "id": "choose-platform",
+              "label": "Offiziellen Steam- oder PURPLE-Einstieg wählen"
+            },
+            {
+              "id": "confirm-main-game",
+              "label": "Bei Steam das Hauptspiel App 3393110 bestätigen"
+            },
+            {
+              "id": "check-requirements",
+              "label": "Windows-, Prozessor-, Speicher- und Grafikanforderungen prüfen"
+            },
+            {
+              "id": "free-space",
+              "label": "Freien Platz auf dem gewählten Installationslaufwerk prüfen"
+            },
+            {
+              "id": "complete-updates",
+              "label": "Clientdownload und sämtliche ausstehenden Updates abschließen"
+            },
+            {
+              "id": "account-region",
+              "label": "Vorgesehenes Konto und Global-Dienst bestätigen"
+            },
+            {
+              "id": "access-notices",
+              "label": "Aktuelle Zugangs- oder Wartungsmeldungen vor der Fehlersuche lesen"
+            }
+          ]
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "official-downloads",
+          "position": "sectionEnd",
+          "text": "<GuideVisual id=\"workflow\" />\n\n<GuideChecklist />"
+        },
+        {
+          "anchor": "pc-requirements",
+          "position": "sectionEnd",
+          "text": "**Wenn die Installation wegen Platzmangels stoppt:** Prüfe das tatsächlich gewählte Laufwerk statt einer anderen freien Festplatte. Lies die aktuelle Installermeldung und erfülle diese Anforderung vor dem Fortsetzen. Die veröffentlichten 100 GB sind erforderlicher freier Platz; ein Video mit kleinerer Übertragungsmenge ersetzt die Installationsprüfung nicht."
+        },
+        {
+          "anchor": "steam-installation",
+          "position": "sectionEnd",
+          "text": "**Konkreter Steam-Fall: Das Hauptspiel ist installiert, meldet aber fehlende Dateien.** Prüfe, ob du **AION 2, App 3393110** geöffnet hast, und nutze **Properties → Installed Files → Verify integrity of game files**. Warte vor dem erneuten Start auf das Ende der Prüfung. Erscheint danach eine Zugangs- oder Wartungsmeldung, wechsle zu deren Lösung. Eine Dateiprüfung gewährt weder Advance Access noch öffnet sie einen nicht verfügbaren Dienst."
+        },
+        {
+          "anchor": "purple-installation",
+          "position": "sectionEnd",
+          "text": "**Konkreter PURPLE-Fall für die veröffentlichte Länderliste:** Sieht ein Spieler in **Singapur** AION 2 nicht, nennt die zitierte offizielle Mitteilung **Launcher-Region Global**, Kontrolle der Spielliste und nötigenfalls einen PURPLE-Neustart. Das ist die veröffentlichte Launcher-Maßnahme für ein aufgeführtes Land; eine Änderung des Kontolandes oder die Wahl des KR/TW-Dienstes ist eine andere Handlung."
+        },
+        {
+          "anchor": "launch-troubleshooting",
+          "position": "sectionEnd",
+          "text": "<GuideVisual id=\"topic\" />"
+        }
+      ]
+    }
+  }
+}

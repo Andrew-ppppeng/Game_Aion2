@@ -1,0 +1,400 @@
+{
+  "next": "<GuideNext slug=\"leveling\" />",
+  "sources": [
+    {
+      "id": "global-test-firsthand",
+      "title": "AION 2 Beginner Guide: 11 Tips You Should Know Before You Start",
+      "url": "https://space4games.com/en/games-en/aion-2-beginner-guide/",
+      "kind": "player",
+      "region": "Global",
+      "publishedAt": "2026-09-28",
+      "version": "Kevin Link's own Global Launch Scale Test observations mixed with explicitly labeled Korean experience; test UI labels not guaranteed unchanged at launch; snapshot checked 2026-10-03"
+    }
+  ],
+  "locales": {
+    "en": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "world-elyos",
+            "alt": "Official Global Elyos world artwork",
+            "caption": "Official Global world artwork for orientation. It is a setting image, not a screenshot of a quest, inventory or unlock screen."
+          },
+          "workflow": {
+            "title": "Turn a first session into one clear next objective",
+            "caption": "Use your current client to decide the next action. A level, a gear requirement and an Ascension objective are different checks.",
+            "steps": [
+              {
+                "label": "Prepare the account and group",
+                "description": "Finish the official client update and agree on region, faction, server and combat role."
+              },
+              {
+                "label": "Follow the campaign",
+                "description": "Complete the current main-story objective and read the next journal entry."
+              },
+              {
+                "label": "Identify the actual blocker",
+                "description": "Write down whether the gate is character level, a quest, Ascension or an equipment requirement."
+              },
+              {
+                "label": "Solve that requirement",
+                "description": "Choose nearby accepted content or a targeted skill/equipment improvement instead of unrelated grinding."
+              },
+              {
+                "label": "Save the next action",
+                "description": "Before stopping, record the quest destination or requirement and check bag space for the next session."
+              }
+            ]
+          }
+        },
+        "checklist": {
+          "title": "First-session checklist",
+          "items": [
+            {
+              "id": "official-client",
+              "label": "Install and update the official Global client"
+            },
+            {
+              "id": "coordinate-server",
+              "label": "Agree on region, faction and exact server with friends"
+            },
+            {
+              "id": "choose-class",
+              "label": "Choose a class for the role you want to play"
+            },
+            {
+              "id": "create-character",
+              "label": "Create the intended character on that server"
+            },
+            {
+              "id": "check-controls",
+              "label": "Check movement, camera, combat and loot settings"
+            },
+            {
+              "id": "follow-story",
+              "label": "Complete the current main-story objective"
+            },
+            {
+              "id": "inspect-blocker",
+              "label": "Read the specific requirement when progress stops"
+            },
+            {
+              "id": "save-next-goal",
+              "label": "Record one next action and check inventory space"
+            }
+          ]
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "start-global",
+          "position": "sectionEnd",
+          "text": "**Before the first quest:** inspect potion auto-use, loot selection and HUD readability. [A Global Launch Scale Test player](https://space4games.com/en/games-en/aion-2-beginner-guide/) shows **Combat → Auto Use**, **Combat → Looting** and **HUD Edit**. These are test-client labels; use your current equivalent and read its tooltip rather than copying an unverified threshold or automatic disposal filter.\n\n<GuideChecklist />"
+        },
+        {
+          "anchor": "main-story-first",
+          "position": "sectionEnd",
+          "text": "**Example: the story destination is visible, but you cannot continue.** Open that objective and copy its requirement into a short note: “Current objective / required level or progression / next accepted action.” If it asks for Ascension progress, inspect the accepted regional objectives. If it asks for an item requirement, compare your equipment. After satisfying the displayed gate, return to the same campaign objective. This is a troubleshooting method, not an invented Global quest chain."
+        },
+        {
+          "anchor": "exploration-checklist",
+          "position": "sectionEnd",
+          "text": "<GuideVisual id=\"topic\" />"
+        },
+        {
+          "anchor": "next-session",
+          "position": "afterHeading",
+          "text": "<GuideVisual id=\"workflow\" />"
+        }
+      ]
+    },
+    "ja": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "world-elyos",
+            "alt": "公式Global版の天族世界アート",
+            "caption": "場所の雰囲気を示す公式Global世界アートです。クエスト、所持品、解放条件の画面を撮影した画像ではありません。"
+          },
+          "workflow": {
+            "title": "初回プレイから次の目標を一つ決める",
+            "caption": "次の行動は現在のクライアントで決めます。レベル、装備条件、覚醒の目標はそれぞれ別の確認項目です。",
+            "steps": [
+              {
+                "label": "アカウントと仲間の準備をする",
+                "description": "公式クライアントを更新し、地域、陣営、サーバー、戦闘での役割を合わせます。"
+              },
+              {
+                "label": "メインストーリーを進める",
+                "description": "現在のメイン目標を終え、次のジャーナル項目を読みます。"
+              },
+              {
+                "label": "停止理由を特定する",
+                "description": "キャラクターレベル、クエスト、覚醒、装備条件のどれが原因か控えます。"
+              },
+              {
+                "label": "その条件を満たす",
+                "description": "無関係な狩りではなく、近くの有効なコンテンツや目的に合うスキル・装備改善を選びます。"
+              },
+              {
+                "label": "次の行動を保存する",
+                "description": "終了前に次の目的地や条件を控え、次回用の所持品の空きを確認します。"
+              }
+            ]
+          }
+        },
+        "checklist": {
+          "title": "初回プレイの確認リスト",
+          "items": [
+            {
+              "id": "official-client",
+              "label": "公式Globalクライアントをインストールして更新する"
+            },
+            {
+              "id": "coordinate-server",
+              "label": "仲間と地域、陣営、正確なサーバー名を合わせる"
+            },
+            {
+              "id": "choose-class",
+              "label": "希望する役割に合うクラスを選ぶ"
+            },
+            {
+              "id": "create-character",
+              "label": "そのサーバーに目的のキャラクターを作る"
+            },
+            {
+              "id": "check-controls",
+              "label": "移動、カメラ、戦闘、拾得の設定を確認する"
+            },
+            {
+              "id": "follow-story",
+              "label": "現在のメインストーリー目標を完了する"
+            },
+            {
+              "id": "inspect-blocker",
+              "label": "進行が止まったら具体的な条件を読む"
+            },
+            {
+              "id": "save-next-goal",
+              "label": "次の行動を一つ控えて所持品の空きを確認する"
+            }
+          ]
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "start-global",
+          "position": "sectionEnd",
+          "text": "**最初のクエスト前に：** ポーションの自動使用、拾得対象、HUDの読みやすさを確認します。[Global Launch Scale Testのプレイヤー](https://space4games.com/en/games-en/aion-2-beginner-guide/)は**Combat → Auto Use**、**Combat → Looting**、**HUD Edit**を示しています。これはテスト版の名称です。現在の対応項目と説明を読み、未確認の閾値や自動処分フィルターをそのままコピーしないでください。\n\n<GuideChecklist />"
+        },
+        {
+          "anchor": "main-story-first",
+          "position": "sectionEnd",
+          "text": "**例：次のストーリー目的地は見えるが進めない。** 目標を開き、「現在の目標／必要レベルまたは進行条件／次に認められる行動」を短く控えます。覚醒の進行が条件なら、対象となる地域目標を確認します。装備条件なら、現在の装備と比較します。表示条件を満たしたら同じメイン目標へ戻ります。これは原因を切り分ける方法であり、架空のGlobalクエスト順ではありません。"
+        },
+        {
+          "anchor": "exploration-checklist",
+          "position": "sectionEnd",
+          "text": "<GuideVisual id=\"topic\" />"
+        },
+        {
+          "anchor": "next-session",
+          "position": "afterHeading",
+          "text": "<GuideVisual id=\"workflow\" />"
+        }
+      ]
+    },
+    "es": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "world-elyos",
+            "alt": "Ilustración oficial del mundo Elios en Global",
+            "caption": "Ilustración oficial del mundo Global para orientarte. Representa el entorno; no es una captura de misiones, inventario o desbloqueos."
+          },
+          "workflow": {
+            "title": "Acaba la primera sesión con un objetivo concreto",
+            "caption": "Decide el siguiente paso con tu cliente actual. El nivel, un requisito de equipo y un objetivo de Ascension son comprobaciones diferentes.",
+            "steps": [
+              {
+                "label": "Prepara cuenta y grupo",
+                "description": "Actualiza el cliente oficial y acuerda región, facción, servidor y función de combate."
+              },
+              {
+                "label": "Sigue la campaña",
+                "description": "Completa el objetivo principal actual y lee la siguiente entrada del diario."
+              },
+              {
+                "label": "Identifica el bloqueo real",
+                "description": "Anota si el requisito es nivel de personaje, misión, Ascension o equipo."
+              },
+              {
+                "label": "Resuelve ese requisito",
+                "description": "Elige contenido cercano válido o una mejora concreta de habilidades/equipo en vez de combatir sin relación."
+              },
+              {
+                "label": "Guarda la siguiente acción",
+                "description": "Antes de cerrar, anota destino o requisito y revisa el espacio de inventario para la próxima sesión."
+              }
+            ]
+          }
+        },
+        "checklist": {
+          "title": "Lista de la primera sesión",
+          "items": [
+            {
+              "id": "official-client",
+              "label": "Instala y actualiza el cliente oficial de Global"
+            },
+            {
+              "id": "coordinate-server",
+              "label": "Acuerda región, facción y servidor exacto con tus amigos"
+            },
+            {
+              "id": "choose-class",
+              "label": "Elige una clase para la función que deseas jugar"
+            },
+            {
+              "id": "create-character",
+              "label": "Crea el personaje previsto en ese servidor"
+            },
+            {
+              "id": "check-controls",
+              "label": "Revisa movimiento, cámara, combate y botín"
+            },
+            {
+              "id": "follow-story",
+              "label": "Completa el objetivo principal actual"
+            },
+            {
+              "id": "inspect-blocker",
+              "label": "Lee el requisito concreto cuando se detenga el progreso"
+            },
+            {
+              "id": "save-next-goal",
+              "label": "Anota una siguiente acción y revisa el espacio de inventario"
+            }
+          ]
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "start-global",
+          "position": "sectionEnd",
+          "text": "**Antes de la primera misión:** revisa el uso automático de pociones, la selección de botín y la legibilidad del HUD. [Un jugador del Global Launch Scale Test](https://space4games.com/en/games-en/aion-2-beginner-guide/) muestra **Combat → Auto Use**, **Combat → Looting** y **HUD Edit**. Son nombres del cliente de prueba; utiliza el equivalente actual y lee su descripción en vez de copiar un umbral o filtro de eliminación automática sin verificar.\n\n<GuideChecklist />"
+        },
+        {
+          "anchor": "main-story-first",
+          "position": "sectionEnd",
+          "text": "**Ejemplo: ves el destino de la historia, pero no puedes avanzar.** Abre el objetivo y copia el requisito en una nota: «Objetivo actual / nivel o progreso requerido / siguiente acción válida». Si pide progreso de Ascension, revisa los objetivos regionales aceptados. Si pide un requisito de objeto, compara tu equipo. Tras cumplir la condición mostrada, vuelve al mismo objetivo de campaña. Es un método para diagnosticar bloqueos, no una cadena de misiones Global inventada."
+        },
+        {
+          "anchor": "exploration-checklist",
+          "position": "sectionEnd",
+          "text": "<GuideVisual id=\"topic\" />"
+        },
+        {
+          "anchor": "next-session",
+          "position": "afterHeading",
+          "text": "<GuideVisual id=\"workflow\" />"
+        }
+      ]
+    },
+    "de": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "world-elyos",
+            "alt": "Offizielles Global-Weltmotiv der Elyos",
+            "caption": "Offizielles Global-Weltmotiv zur Orientierung. Es zeigt die Spielwelt, keine Quest-, Inventar- oder Freischaltoberfläche."
+          },
+          "workflow": {
+            "title": "Die erste Sitzung mit einem konkreten Ziel beenden",
+            "caption": "Entscheide den nächsten Schritt anhand deines aktuellen Clients. Stufe, Ausrüstungsanforderung und Ascension-Ziel sind unterschiedliche Prüfungen.",
+            "steps": [
+              {
+                "label": "Konto und Gruppe vorbereiten",
+                "description": "Aktualisiere den offiziellen Client und stimme Region, Fraktion, Server und Kampfrolle ab."
+              },
+              {
+                "label": "Der Kampagne folgen",
+                "description": "Erledige das aktuelle Hauptziel und lies den nächsten Journaleintrag."
+              },
+              {
+                "label": "Die tatsächliche Sperre erkennen",
+                "description": "Notiere, ob Charakterstufe, Quest, Ascension oder Ausrüstung verlangt wird."
+              },
+              {
+                "label": "Diese Anforderung erfüllen",
+                "description": "Wähle nahe gültige Inhalte oder eine gezielte Fertigkeits-/Ausrüstungsverbesserung statt zielloser Kämpfe."
+              },
+              {
+                "label": "Den nächsten Schritt festhalten",
+                "description": "Notiere vor dem Ende Zielort oder Anforderung und prüfe den Inventarplatz für die nächste Sitzung."
+              }
+            ]
+          }
+        },
+        "checklist": {
+          "title": "Checkliste für die erste Sitzung",
+          "items": [
+            {
+              "id": "official-client",
+              "label": "Offiziellen Global-Client installieren und aktualisieren"
+            },
+            {
+              "id": "coordinate-server",
+              "label": "Region, Fraktion und genauen Server mit Freunden abstimmen"
+            },
+            {
+              "id": "choose-class",
+              "label": "Eine Klasse für die gewünschte Rolle wählen"
+            },
+            {
+              "id": "create-character",
+              "label": "Den vorgesehenen Charakter auf diesem Server erstellen"
+            },
+            {
+              "id": "check-controls",
+              "label": "Bewegung, Kamera, Kampf und Beuteeinstellungen prüfen"
+            },
+            {
+              "id": "follow-story",
+              "label": "Das aktuelle Hauptstoryziel abschließen"
+            },
+            {
+              "id": "inspect-blocker",
+              "label": "Bei einem Stillstand die konkrete Anforderung lesen"
+            },
+            {
+              "id": "save-next-goal",
+              "label": "Einen nächsten Schritt notieren und Inventarplatz prüfen"
+            }
+          ]
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "start-global",
+          "position": "sectionEnd",
+          "text": "**Vor der ersten Quest:** Prüfe automatische Tranknutzung, Beuteauswahl und HUD-Lesbarkeit. [Ein Spieler aus dem Global Launch Scale Test](https://space4games.com/en/games-en/aion-2-beginner-guide/) zeigt **Combat → Auto Use**, **Combat → Looting** und **HUD Edit**. Das sind Bezeichnungen des Testclients; nutze die aktuelle Entsprechung und lies den Tooltip, statt einen ungeprüften Schwellenwert oder automatischen Entsorgungsfilter zu kopieren.\n\n<GuideChecklist />"
+        },
+        {
+          "anchor": "main-story-first",
+          "position": "sectionEnd",
+          "text": "**Beispiel: Das nächste Storyziel ist sichtbar, aber du kommst nicht weiter.** Öffne das Ziel und notiere kurz: „Aktuelles Ziel / verlangte Stufe oder Fortschritt / nächste gültige Handlung“. Bei Ascension-Fortschritt prüfst du die akzeptierten regionalen Aufgaben. Bei einer Ausrüstungsanforderung vergleichst du deine Gegenstände. Kehre nach dem Erfüllen der angezeigten Bedingung zum selben Kampagnenziel zurück. Das ist eine Methode zur Fehlersuche und keine erfundene Global-Questfolge."
+        },
+        {
+          "anchor": "exploration-checklist",
+          "position": "sectionEnd",
+          "text": "<GuideVisual id=\"topic\" />"
+        },
+        {
+          "anchor": "next-session",
+          "position": "afterHeading",
+          "text": "<GuideVisual id=\"workflow\" />"
+        }
+      ]
+    }
+  }
+}

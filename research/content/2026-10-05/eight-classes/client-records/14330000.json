@@ -1,0 +1,2010 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/14330000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "14330000",
+    "name": "Arrow Scattershot",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_033.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 5,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 5,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 8,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 11,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "14330010",
+        "description": "Absorbs 5% HP",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14330020",
+        "description": "Restores 120 MP on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14330030",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14330040",
+        "description": "Multi-Hit on hit",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14330050",
+        "description": "-1s all cooldowns on hit",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [
+      {
+        "id": "14000005",
+        "target": {
+          "code": "target"
+        },
+        "type": {
+          "code": "hasabnormaleffecttype"
+        },
+        "description": "Stagger Target",
+        "iconPath": "/images/ui/resource/texture/skill/icon_cond_groggy.webp",
+        "abnormalEffect": {
+          "code": "groggy"
+        }
+      }
+    ],
+    "requiredWeapons": [
+      {
+        "code": "bow",
+        "name": "Bow"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:96:70:4:4]]-[[damage:max:96:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 96,
+            "baseMax": 96,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 96,
+            "baseMax": 96,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 96,
+            "baseMax": 96,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 96,
+            "baseMax": 96,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:125:70:4:4]]-[[damage:max:125:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 125,
+            "baseMax": 125,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 125,
+            "baseMax": 125,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 125,
+            "baseMax": 125,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 125,
+            "baseMax": 125,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:169:70:4:4]]-[[damage:max:169:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 169,
+            "baseMax": 169,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 169,
+            "baseMax": 169,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 169,
+            "baseMax": 169,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 169,
+            "baseMax": 169,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:222:70:4:4]]-[[damage:max:222:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 222,
+            "baseMax": 222,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 222,
+            "baseMax": 222,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 222,
+            "baseMax": 222,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 222,
+            "baseMax": 222,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:287:70:4:4]]-[[damage:max:287:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 287,
+            "baseMax": 287,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 287,
+            "baseMax": 287,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 287,
+            "baseMax": 287,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 287,
+            "baseMax": 287,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:340:70:4:4]]-[[damage:max:340:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 340,
+            "baseMax": 340,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 340,
+            "baseMax": 340,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 340,
+            "baseMax": 340,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 340,
+            "baseMax": 340,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:394:70:4:4]]-[[damage:max:394:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 394,
+            "baseMax": 394,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 394,
+            "baseMax": 394,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 394,
+            "baseMax": 394,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 394,
+            "baseMax": 394,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:448:70:4:4]]-[[damage:max:448:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 448,
+            "baseMax": 448,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 448,
+            "baseMax": 448,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 448,
+            "baseMax": 448,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 448,
+            "baseMax": 448,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:502:70:4:4]]-[[damage:max:502:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 502,
+            "baseMax": 502,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 502,
+            "baseMax": 502,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 502,
+            "baseMax": 502,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 502,
+            "baseMax": 502,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:566:70:4:4]]-[[damage:max:566:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 566,
+            "baseMax": 566,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 566,
+            "baseMax": 566,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 566,
+            "baseMax": 566,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 566,
+            "baseMax": 566,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:620:70:4:4]]-[[damage:max:620:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 620,
+            "baseMax": 620,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 620,
+            "baseMax": 620,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 620,
+            "baseMax": 620,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 620,
+            "baseMax": 620,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:659:70:4:4]]-[[damage:max:659:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 659,
+            "baseMax": 659,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 659,
+            "baseMax": 659,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 659,
+            "baseMax": 659,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 659,
+            "baseMax": 659,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:688:70:4:4]]-[[damage:max:688:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 688,
+            "baseMax": 688,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 688,
+            "baseMax": 688,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 688,
+            "baseMax": 688,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 688,
+            "baseMax": 688,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:728:70:4:4]]-[[damage:max:728:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 728,
+            "baseMax": 728,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 728,
+            "baseMax": 728,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 728,
+            "baseMax": 728,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 728,
+            "baseMax": 728,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:767:70:4:4]]-[[damage:max:767:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 767,
+            "baseMax": 767,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 767,
+            "baseMax": 767,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 767,
+            "baseMax": 767,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 767,
+            "baseMax": 767,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:806:70:4:4]]-[[damage:max:806:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 806,
+            "baseMax": 806,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 806,
+            "baseMax": 806,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 806,
+            "baseMax": 806,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 806,
+            "baseMax": 806,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:846:70:4:4]]-[[damage:max:846:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 846,
+            "baseMax": 846,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 846,
+            "baseMax": 846,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 846,
+            "baseMax": 846,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 846,
+            "baseMax": 846,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:875:70:4:4]]-[[damage:max:875:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 875,
+            "baseMax": 875,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 875,
+            "baseMax": 875,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 875,
+            "baseMax": 875,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 875,
+            "baseMax": 875,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:904:70:4:4]]-[[damage:max:904:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 904,
+            "baseMax": 904,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 904,
+            "baseMax": 904,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 904,
+            "baseMax": 904,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 904,
+            "baseMax": 904,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:932:70:4:4]]-[[damage:max:932:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 932,
+            "baseMax": 932,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 932,
+            "baseMax": 932,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 932,
+            "baseMax": 932,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 932,
+            "baseMax": 932,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:961:70:4:4]]-[[damage:max:961:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 961,
+            "baseMax": 961,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 961,
+            "baseMax": 961,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 961,
+            "baseMax": 961,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 961,
+            "baseMax": 961,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:990:70:4:4]]-[[damage:max:990:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 990,
+            "baseMax": 990,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 990,
+            "baseMax": 990,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 990,
+            "baseMax": 990,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 990,
+            "baseMax": 990,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1019:70:4:4]]-[[damage:max:1019:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1019,
+            "baseMax": 1019,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1019,
+            "baseMax": 1019,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1019,
+            "baseMax": 1019,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1019,
+            "baseMax": 1019,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1048:70:4:4]]-[[damage:max:1048:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1048,
+            "baseMax": 1048,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1048,
+            "baseMax": 1048,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1048,
+            "baseMax": 1048,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1048,
+            "baseMax": 1048,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1077:70:4:4]]-[[damage:max:1077:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1077,
+            "baseMax": 1077,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1077,
+            "baseMax": 1077,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1077,
+            "baseMax": 1077,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1077,
+            "baseMax": 1077,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1106:70:4:4]]-[[damage:max:1106:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1106,
+            "baseMax": 1106,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1106,
+            "baseMax": 1106,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1106,
+            "baseMax": 1106,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1106,
+            "baseMax": 1106,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1135:70:4:4]]-[[damage:max:1135:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1135,
+            "baseMax": 1135,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1135,
+            "baseMax": 1135,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1135,
+            "baseMax": 1135,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1135,
+            "baseMax": 1135,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1163:70:4:4]]-[[damage:max:1163:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1163,
+            "baseMax": 1163,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1163,
+            "baseMax": 1163,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1163,
+            "baseMax": 1163,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1163,
+            "baseMax": 1163,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1192:70:4:4]]-[[damage:max:1192:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1192,
+            "baseMax": 1192,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1192,
+            "baseMax": 1192,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1192,
+            "baseMax": 1192,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1192,
+            "baseMax": 1192,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1221:70:4:4]]-[[damage:max:1221:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1221,
+            "baseMax": 1221,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1221,
+            "baseMax": 1221,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1221,
+            "baseMax": 1221,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1221,
+            "baseMax": 1221,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1250:70:4:4]]-[[damage:max:1250:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1250,
+            "baseMax": 1250,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1250,
+            "baseMax": 1250,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1250,
+            "baseMax": 1250,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1250,
+            "baseMax": 1250,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1279:70:4:4]]-[[damage:max:1279:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1279,
+            "baseMax": 1279,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1279,
+            "baseMax": 1279,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1279,
+            "baseMax": 1279,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1279,
+            "baseMax": 1279,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1308:70:4:4]]-[[damage:max:1308:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1308,
+            "baseMax": 1308,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1308,
+            "baseMax": 1308,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1308,
+            "baseMax": 1308,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1308,
+            "baseMax": 1308,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1337:70:4:4]]-[[damage:max:1337:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1337,
+            "baseMax": 1337,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1337,
+            "baseMax": 1337,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1337,
+            "baseMax": 1337,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1337,
+            "baseMax": 1337,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1366:70:4:4]]-[[damage:max:1366:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1366,
+            "baseMax": 1366,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1366,
+            "baseMax": 1366,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1366,
+            "baseMax": 1366,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1366,
+            "baseMax": 1366,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1394:70:4:4]]-[[damage:max:1394:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1394,
+            "baseMax": 1394,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1394,
+            "baseMax": 1394,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1394,
+            "baseMax": 1394,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1394,
+            "baseMax": 1394,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1423:70:4:4]]-[[damage:max:1423:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1423,
+            "baseMax": 1423,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1423,
+            "baseMax": 1423,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1423,
+            "baseMax": 1423,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1423,
+            "baseMax": 1423,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1452:70:4:4]]-[[damage:max:1452:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1452,
+            "baseMax": 1452,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1452,
+            "baseMax": 1452,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1452,
+            "baseMax": 1452,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1452,
+            "baseMax": 1452,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1481:70:4:4]]-[[damage:max:1481:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1481,
+            "baseMax": 1481,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1481,
+            "baseMax": 1481,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1481,
+            "baseMax": 1481,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1481,
+            "baseMax": 1481,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1510:70:4:4]]-[[damage:max:1510:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1510,
+            "baseMax": 1510,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1510,
+            "baseMax": 1510,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1510,
+            "baseMax": 1510,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1433000011",
+            "effectGroupId": "143300001",
+            "baseMin": 1510,
+            "baseMax": 1510,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "1942",
+        "level": 1,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 5,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1943",
+        "level": 2,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 5,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1944",
+        "level": 3,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 8,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1945",
+        "level": 4,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 11,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1946",
+        "level": 5,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1947",
+        "level": 6,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1948",
+        "level": 7,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1949",
+        "level": 8,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1950",
+        "level": 9,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1951",
+        "level": 10,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "14330010",
+        "skillId": "14330010",
+        "name": "Arrow Scattershot",
+        "description": "Absorbs 5% HP",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14330020",
+        "skillId": "14330020",
+        "name": "Arrow Scattershot",
+        "description": "Restores 120 MP on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14330030",
+        "skillId": "14330030",
+        "name": "Arrow Scattershot",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14330040",
+        "skillId": "14330040",
+        "name": "Arrow Scattershot",
+        "description": "Multi-Hit on hit",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14330050",
+        "skillId": "14330050",
+        "name": "Arrow Scattershot",
+        "description": "-1s all cooldowns on hit",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "classes": [
+      {
+        "code": "ranger",
+        "name": "Ranger"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Arrow Scattershot",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_033.webp",
+    "id": "14330000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:96:70:4:4]]-[[damage:max:96:70:4:4]]</> Wind damage to a target afflicted with Stagger within 20m."
+  }
+}

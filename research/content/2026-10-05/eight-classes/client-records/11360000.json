@@ -1,0 +1,2261 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/11360000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "11360000",
+    "name": "Rush Strike",
+    "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_036.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 34,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "11360010",
+        "description": "Restores 300 Stamina on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11360020",
+        "description": "+10m range",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11360030",
+        "description": "Changes to Charge Skill and deals AoE damage",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11360040",
+        "description": "-10s cooldown",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11360050",
+        "description": "+25% Knockdown Chance",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [
+      {
+        "id": "11000004",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormalgroupid"
+        },
+        "description": "On Dodge",
+        "iconPath": "/images/ui/resource/texture/skill/icon_cond_evade.webp",
+        "abnormalGroupId": 3015
+      },
+      {
+        "id": "11000012",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormalgroupid"
+        },
+        "description": "In Flight",
+        "iconPath": "/images/ui/resource/texture/abnormal/icon_abnormal_wing.webp",
+        "abnormalGroupId": 100000002
+      }
+    ],
+    "requiredWeapons": [
+      {
+        "code": "greatsword",
+        "name": "Greatsword"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:330:125:2:2]]-[[damage:max:330:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 330,
+            "baseMax": 330,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 330,
+            "baseMax": 330,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:433:125:2:2]]-[[damage:max:433:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 433,
+            "baseMax": 433,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 433,
+            "baseMax": 433,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:555:125:2:2]]-[[damage:max:555:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 555,
+            "baseMax": 555,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 555,
+            "baseMax": 555,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:658:125:2:2]]-[[damage:max:658:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 658,
+            "baseMax": 658,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 658,
+            "baseMax": 658,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:761:125:2:2]]-[[damage:max:761:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 761,
+            "baseMax": 761,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 761,
+            "baseMax": 761,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:864:125:2:2]]-[[damage:max:864:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 864,
+            "baseMax": 864,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 864,
+            "baseMax": 864,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:967:125:2:2]]-[[damage:max:967:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 967,
+            "baseMax": 967,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 967,
+            "baseMax": 967,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:1089:125:2:2]]-[[damage:max:1089:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 1089,
+            "baseMax": 1089,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 1089,
+            "baseMax": 1089,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:1192:125:2:2]]-[[damage:max:1192:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 1192,
+            "baseMax": 1192,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 1192,
+            "baseMax": 1192,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:1267:125:2:2]]-[[damage:max:1267:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 1267,
+            "baseMax": 1267,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 1267,
+            "baseMax": 1267,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:1323:125:2:2]]-[[damage:max:1323:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 1323,
+            "baseMax": 1323,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 1323,
+            "baseMax": 1323,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:1398:125:2:2]]-[[damage:max:1398:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 1398,
+            "baseMax": 1398,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 1398,
+            "baseMax": 1398,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:1473:125:2:2]]-[[damage:max:1473:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 1473,
+            "baseMax": 1473,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 1473,
+            "baseMax": 1473,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:1548:125:2:2]]-[[damage:max:1548:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 1548,
+            "baseMax": 1548,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 1548,
+            "baseMax": 1548,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:1623:125:2:2]]-[[damage:max:1623:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 1623,
+            "baseMax": 1623,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 1623,
+            "baseMax": 1623,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:1680:125:2:2]]-[[damage:max:1680:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 1680,
+            "baseMax": 1680,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 1680,
+            "baseMax": 1680,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:1736:125:2:2]]-[[damage:max:1736:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 1736,
+            "baseMax": 1736,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 1736,
+            "baseMax": 1736,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:1792:125:2:2]]-[[damage:max:1792:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 1792,
+            "baseMax": 1792,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 1792,
+            "baseMax": 1792,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:1848:125:2:2]]-[[damage:max:1848:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 1848,
+            "baseMax": 1848,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 1848,
+            "baseMax": 1848,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:1905:125:2:2]]-[[damage:max:1905:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 1905,
+            "baseMax": 1905,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 1905,
+            "baseMax": 1905,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:1961:125:2:2]]-[[damage:max:1961:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 1961,
+            "baseMax": 1961,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 1961,
+            "baseMax": 1961,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:2017:125:2:2]]-[[damage:max:2017:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 2017,
+            "baseMax": 2017,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 2017,
+            "baseMax": 2017,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:2073:125:2:2]]-[[damage:max:2073:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 2073,
+            "baseMax": 2073,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 2073,
+            "baseMax": 2073,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:2130:125:2:2]]-[[damage:max:2130:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 2130,
+            "baseMax": 2130,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 2130,
+            "baseMax": 2130,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:2186:125:2:2]]-[[damage:max:2186:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 2186,
+            "baseMax": 2186,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 2186,
+            "baseMax": 2186,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:2242:125:2:2]]-[[damage:max:2242:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 2242,
+            "baseMax": 2242,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 2242,
+            "baseMax": 2242,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:2298:125:2:2]]-[[damage:max:2298:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 2298,
+            "baseMax": 2298,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 2298,
+            "baseMax": 2298,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:2355:125:2:2]]-[[damage:max:2355:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 2355,
+            "baseMax": 2355,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 2355,
+            "baseMax": 2355,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:2411:125:2:2]]-[[damage:max:2411:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 2411,
+            "baseMax": 2411,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 2411,
+            "baseMax": 2411,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:2467:125:2:2]]-[[damage:max:2467:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 2467,
+            "baseMax": 2467,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 2467,
+            "baseMax": 2467,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:2523:125:2:2]]-[[damage:max:2523:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 2523,
+            "baseMax": 2523,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 2523,
+            "baseMax": 2523,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:2580:125:2:2]]-[[damage:max:2580:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 2580,
+            "baseMax": 2580,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 2580,
+            "baseMax": 2580,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:2636:125:2:2]]-[[damage:max:2636:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 2636,
+            "baseMax": 2636,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 2636,
+            "baseMax": 2636,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:2692:125:2:2]]-[[damage:max:2692:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 2692,
+            "baseMax": 2692,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 2692,
+            "baseMax": 2692,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:2748:125:2:2]]-[[damage:max:2748:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 2748,
+            "baseMax": 2748,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 2748,
+            "baseMax": 2748,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:2805:125:2:2]]-[[damage:max:2805:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 2805,
+            "baseMax": 2805,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 2805,
+            "baseMax": 2805,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:2861:125:2:2]]-[[damage:max:2861:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 2861,
+            "baseMax": 2861,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 2861,
+            "baseMax": 2861,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:2917:125:2:2]]-[[damage:max:2917:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 2917,
+            "baseMax": 2917,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 2917,
+            "baseMax": 2917,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:2973:125:2:2]]-[[damage:max:2973:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 2973,
+            "baseMax": 2973,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 2973,
+            "baseMax": 2973,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:3030:125:2:2]]-[[damage:max:3030:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1136000021",
+            "effectGroupId": "113600002",
+            "baseMin": 3030,
+            "baseMax": 3030,
+            "attackRatioPercent": 125
+          },
+          {
+            "effectId": "1136000031",
+            "effectGroupId": "113600003",
+            "baseMin": 3030,
+            "baseMax": 3030,
+            "attackRatioPercent": 125
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "325",
+        "level": 1,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "326",
+        "level": 2,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "327",
+        "level": 3,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "328",
+        "level": 4,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "329",
+        "level": 5,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "330",
+        "level": 6,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "331",
+        "level": 7,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "332",
+        "level": 8,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "333",
+        "level": 9,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "334",
+        "level": 10,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 34,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "11360010",
+        "skillId": "11360010",
+        "name": "Rush Strike",
+        "description": "Restores 300 Stamina on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11360020",
+        "skillId": "11360020",
+        "name": "Rush Strike",
+        "description": "+10m range",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11360030",
+        "skillId": "11360030",
+        "name": "Rush Strike",
+        "description": "Changes to Charge Skill and deals AoE damage",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11360040",
+        "skillId": "11360040",
+        "name": "Rush Strike",
+        "description": "-10s cooldown",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11360050",
+        "skillId": "11360050",
+        "name": "Rush Strike",
+        "description": "+25% Knockdown Chance",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 10,
+    "cooldownSeconds": 20,
+    "classes": [
+      {
+        "code": "gladiator",
+        "name": "Gladiator"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Rush Strike",
+    "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_036.webp",
+    "id": "11360000",
+    "entityType": "skill",
+    "description": "Moves to a target within 10m and deals <chat_combat>[[damage:min:330:125:2:2]]-[[damage:max:330:125:2:2]]</> damage with a 30% chance to inflict Knockdown for 3s after using [Dodge] or while flying.\n100% chance to inflict Knockdown on NPC targets.\n\n10 Stagger Gauge Damage"
+  }
+}

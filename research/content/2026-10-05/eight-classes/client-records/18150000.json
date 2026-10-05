@@ -1,0 +1,1984 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/18150000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "18150000",
+    "name": "Heat Wave Blow",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_015.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "18150010",
+        "description": "40% chance to inflict Stun for 3s",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18150020",
+        "description": "+20% Seal Chance",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18150030",
+        "description": "Up to +20% damage when more targets hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18150040",
+        "description": "Ignores Block and Evasion and lands as Multi-Hit",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18150050",
+        "description": "25% chance to reset [Heat Wave Blow] cooldown on Block",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "rectangle"
+      },
+      "reachMeters": 5.9,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [
+      {
+        "id": "18000006",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormaleffecttype"
+        },
+        "description": "On Parry",
+        "iconPath": "/images/ui/resource/texture/skill/icon_cond_weaponblock.webp",
+        "abnormalEffect": {
+          "code": "conddefenceweaponblock"
+        }
+      },
+      {
+        "id": "18000011",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormalgroupid"
+        },
+        "description": "On landing Rushing Smash",
+        "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_009.webp",
+        "abnormalGroupId": 180900302
+      }
+    ],
+    "requiredWeapons": [
+      {
+        "code": "staff",
+        "name": "Staff"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:345:182:1:1]]-[[damage:max:345:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 345,
+            "baseMax": 345,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:464:182:1:1]]-[[damage:max:464:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 464,
+            "baseMax": 464,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:610:182:1:1]]-[[damage:max:610:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 610,
+            "baseMax": 610,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:783:182:1:1]]-[[damage:max:783:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 783,
+            "baseMax": 783,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:929:182:1:1]]-[[damage:max:929:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 929,
+            "baseMax": 929,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:1075:182:1:1]]-[[damage:max:1075:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 1075,
+            "baseMax": 1075,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:1221:182:1:1]]-[[damage:max:1221:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 1221,
+            "baseMax": 1221,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:1367:182:1:1]]-[[damage:max:1367:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 1367,
+            "baseMax": 1367,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:1541:182:1:1]]-[[damage:max:1541:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 1541,
+            "baseMax": 1541,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:1687:182:1:1]]-[[damage:max:1687:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 1687,
+            "baseMax": 1687,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:1793:182:1:1]]-[[damage:max:1793:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 1793,
+            "baseMax": 1793,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:1872:182:1:1]]-[[damage:max:1872:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 1872,
+            "baseMax": 1872,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:1979:182:1:1]]-[[damage:max:1979:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 1979,
+            "baseMax": 1979,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:2085:182:1:1]]-[[damage:max:2085:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 2085,
+            "baseMax": 2085,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:2192:182:1:1]]-[[damage:max:2192:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 2192,
+            "baseMax": 2192,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:2298:182:1:1]]-[[damage:max:2298:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 2298,
+            "baseMax": 2298,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:2377:182:1:1]]-[[damage:max:2377:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 2377,
+            "baseMax": 2377,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:2457:182:1:1]]-[[damage:max:2457:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 2457,
+            "baseMax": 2457,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:2536:182:1:1]]-[[damage:max:2536:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 2536,
+            "baseMax": 2536,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:2615:182:1:1]]-[[damage:max:2615:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 2615,
+            "baseMax": 2615,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:2694:182:1:1]]-[[damage:max:2694:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 2694,
+            "baseMax": 2694,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:2773:182:1:1]]-[[damage:max:2773:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 2773,
+            "baseMax": 2773,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:2852:182:1:1]]-[[damage:max:2852:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 2852,
+            "baseMax": 2852,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:2932:182:1:1]]-[[damage:max:2932:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 2932,
+            "baseMax": 2932,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:3011:182:1:1]]-[[damage:max:3011:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 3011,
+            "baseMax": 3011,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:3090:182:1:1]]-[[damage:max:3090:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 3090,
+            "baseMax": 3090,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:3169:182:1:1]]-[[damage:max:3169:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 3169,
+            "baseMax": 3169,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:3248:182:1:1]]-[[damage:max:3248:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 3248,
+            "baseMax": 3248,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:3327:182:1:1]]-[[damage:max:3327:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 3327,
+            "baseMax": 3327,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:3407:182:1:1]]-[[damage:max:3407:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 3407,
+            "baseMax": 3407,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:3486:182:1:1]]-[[damage:max:3486:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 3486,
+            "baseMax": 3486,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:3565:182:1:1]]-[[damage:max:3565:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 3565,
+            "baseMax": 3565,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:3644:182:1:1]]-[[damage:max:3644:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 3644,
+            "baseMax": 3644,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:3723:182:1:1]]-[[damage:max:3723:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 3723,
+            "baseMax": 3723,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:3802:182:1:1]]-[[damage:max:3802:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 3802,
+            "baseMax": 3802,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:3882:182:1:1]]-[[damage:max:3882:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 3882,
+            "baseMax": 3882,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:3961:182:1:1]]-[[damage:max:3961:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 3961,
+            "baseMax": 3961,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:4040:182:1:1]]-[[damage:max:4040:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 4040,
+            "baseMax": 4040,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:4119:182:1:1]]-[[damage:max:4119:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 4119,
+            "baseMax": 4119,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:4198:182:1:1]]-[[damage:max:4198:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1815000011",
+            "effectGroupId": "181500001",
+            "baseMin": 4198,
+            "baseMax": 4198,
+            "attackRatioPercent": 182
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000801",
+            "name": "Seal",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Seal Status",
+            "effect": "Seal Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Seal",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_blockade.webp",
+              "id": "100000801"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "4150",
+        "level": 1,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4151",
+        "level": 2,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4152",
+        "level": 3,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4153",
+        "level": 4,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4154",
+        "level": 5,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4155",
+        "level": 6,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4156",
+        "level": 7,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4157",
+        "level": 8,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4158",
+        "level": 9,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4159",
+        "level": 10,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "18150010",
+        "skillId": "18150010",
+        "name": "Heat Wave Blow",
+        "description": "40% chance to inflict Stun for 3s",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18150020",
+        "skillId": "18150020",
+        "name": "Heat Wave Blow",
+        "description": "+20% Seal Chance",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18150030",
+        "skillId": "18150030",
+        "name": "Heat Wave Blow",
+        "description": "Up to +20% damage when more targets hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18150040",
+        "skillId": "18150040",
+        "name": "Heat Wave Blow",
+        "description": "Ignores Block and Evasion and lands as Multi-Hit",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18150050",
+        "skillId": "18150050",
+        "name": "Heat Wave Blow",
+        "description": "25% chance to reset [Heat Wave Blow] cooldown on Block",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 4,
+    "cooldownSeconds": 10,
+    "classes": [
+      {
+        "code": "chanter",
+        "name": "Chanter"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Heat Wave Blow",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_015.webp",
+    "id": "18150000",
+    "entityType": "skill",
+    "description": "Selects a target within 4m and deals <chat_combat>[[damage:min:345:182:1:1]]-[[damage:max:345:182:1:1]]</> damage to up to 4 enemies within 4m with a 40% chance to inflict Seal for 3s on Block.\n100% chance to inflict Seal on NPC targets.\n\n10 Stagger Gauge Damage"
+  }
+}

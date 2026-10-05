@@ -1,0 +1,66 @@
+AION 2 & Shugo.GG FAQ | Shugo.GG
+AION 2 & Shugo.GG FAQ
+Answers to common questions about Shugo.GG: supported regions and servers, the AION 2 Global launch, how profiles, leaderboards, the tier list and the item database work, and how to get help.
+What is Shugo.GG?
+Shugo.GG is a free, fan-made companion site for AION 2: character profiles and gear inspection (armory), a Combat Power leaderboard (characters ranked by NCSOFT's official score), a data-driven class tier list, an English item database, rift timers and English translations of the official patch notes and news. It is not affiliated with NCSOFT.
+Which regions and servers are supported?
+Global (NA East, NA West, Europe, South America, Asia), Korea (KR) and Taiwan (TW), with every server of the three regions. Global character search, profiles and the Combat Power leaderboard have been live since the September 30, 2026 Advanced Access (full launch October 5). Global item data follows as soon as NCSOFT publishes it; until then the "Global" entry of the item database stays disabled.
+How do I look up a character?
+Type the character name in the search bar on the
+home page
+, pick the region (Taiwan or Korea) and press Enter. Results list every match across servers; open one to see level, class, gear score, equipment with enchant levels, stigmas, arcana, legion and rankings. The profile URL can be shared or bookmarked.
+Why can't I find my character?
+Check the region first: a Korean character will not appear in a Taiwan search. Names must be spelled exactly as in game. Brand-new or recently renamed characters can take a while to show up in NCSOFT's search. If the official character API is down, the API status pill in the top-right corner of the site says so.
+How up to date are profiles, leaderboards and the tier list?
+Profiles are fetched live from the official API when you open them (with a short cache). The leaderboard is built from those profile opens: a character's Combat Power updates every time its profile is opened, and the top 500 of each region is re-checked nightly (see the next question). The tier list is recomputed from NCSOFT's official rankings, which have been unavailable since September 2026, so tier list updates are paused: the red dot in the navigation and the API status pill show the current state.
+How does the Combat Power leaderboard work?
+The
+leaderboard
+ranks AION 2 characters by NCSOFT's official Combat Power, the score shown in every profile header. It is built from the characters looked up on Shugo.GG: a character appears once its profile has been opened here at least once, its score updates every time the profile is opened, and the top 500 of each region is re-checked nightly. Search your character and open its profile to add it. Global, Korea and Taiwan are ranked separately because they run different game versions; filters cover server, class and faction, and you can sort by gear score instead.
+How is the class tier list built?
+The
+tier list
+is editorial but built from evidence only: damage logs from the community meters NotMeter and Abyss Logs, each class's share of NCSOFT's season rankings (the top 100 of all 42 Korean servers, and Taiwan's last snapshot), named editorial reviews and creators who show their data, with NCSOFT's balance notes for the facts. There is one list per game mode (PvE, PvP, solo farm), kept separate for the Global launch build and for Korea / Taiwan, which run a more advanced version with the Brawler; until Global has its own PvP and solo numbers, those two modes follow the Korea / Taiwan data. Boosting-service and content-farm lists are not used, every placement links to its sources and the list is reviewed after each balance patch.
+Where does the item database come from?
+From NCSOFT's official AION 2 item dictionary, with English names. Korea and Taiwan run the same game version, so one database covers both. Each item shows its grade, level requirements, class restrictions, base stats and random bonus stat ranges, plus a preview of the stats at every enchant level: Heroic gear goes to +20 with 5 breakthrough tiers, Unique to +15 with 5 tiers, Epic to +15, Rare to +10 and Common to +5.
+Are the patch notes official?
+They are English translations and summaries of NCSOFT's official Korean patch notes and notices, usually published the same day (Korean patches land most Wednesdays). Every article links to its official source. They are unofficial community translations. Announcements for the Global version carry a Global tag, and everything is available as an
+RSS feed
+.
+When does AION 2 Global launch?
+Advanced Access opens on September 30, 2026 for Founder's Pack owners and the free-to-play launch is on October 5, 2026, on Steam and PURPLE. NCSOFT has not announced the exact hours yet; the countdown on the home page assumes 6 AM PDT like every Global event so far. See the
+Launch Scale Test wrap-up
+for details.
+Is Shugo.GG free?
+Yes. Every feature is free to use; the site is supported by ads.
+What are favorites, and how do I link my own characters?
+The star on a profile saves it to your Favorites on the home page (stored in your browser, up to 50, drag to reorder). Log in with Discord to link characters to your Shugo.GG profile.
+What is the rift timer?
+The widget in the bottom-right corner counts down to the next Rift of Space-Time and shows when the current one ends, so you never miss an opening.
+Where do the event timers come from, and why can a time be wrong?
+The
+Timers
+page and the floating widget read one public schedule file (
+timers.json
+) with the events of each region in server time: Korea and Taiwan times come from NCSOFT's patch notes; the Global schedule follows what players observe in game until NCSOFT publishes it. Everything is converted to your local time in the browser. If an event is off on your server, tell us on
+Discord
+: the file is corrected without a site update.
+Which Specialty Skills does a character have, and why are the skill specializations missing?
+The Skills tab lists the Specialty Skills of the class (the game's name for the DP skills) in three groups: equipped, acquired and not yet acquired, with the level required to learn each one. What NCSOFT's character API does not expose is the specialization of each skill (the effects unlocked with Specialty Shards), so Shugo.GG cannot display it.
+How do I report a bug or suggest a feature?
+Join the
+Shugo.GG Discord
+and tell us. Everything that ships is listed on the
+changelog
+.
+Can I use Shugo.GG data in my own project?
+There is no public API. The
+RSS feed
+of news and patch notes is free to use with a credit and a link to Shugo.GG. Game data (characters, rankings, items) belongs to NCSOFT.
+Shugo.GG home
+·
+News
+·
+Item database
+·
+Changelog

@@ -1,0 +1,1123 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/15280000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "15280000",
+    "name": "Bittercold Wind",
+    "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_025.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 3,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 3,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 6,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 9,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "15280010",
+        "description": "+1s [Bittercold Wind] summon duration",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15280020",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15280030",
+        "description": "Pull effect",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15280040",
+        "description": "Ignores Block and Evasion and lands as a Critical Hit",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15280050",
+        "description": "-1s [Frost] cooldown on hit",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "circle"
+      },
+      "reachMeters": 4,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 150
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "magicbook",
+        "name": "Spellbook"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:238:232.25:7:7]]-[[damage:max:238:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:339:232.25:7:7]]-[[damage:max:339:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:440:232.25:7:7]]-[[damage:max:440:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:592:232.25:7:7]]-[[damage:max:592:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:778:232.25:7:7]]-[[damage:max:778:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:999:232.25:7:7]]-[[damage:max:999:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:1186:232.25:7:7]]-[[damage:max:1186:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:1372:232.25:7:7]]-[[damage:max:1372:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:1558:232.25:7:7]]-[[damage:max:1558:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:1745:232.25:7:7]]-[[damage:max:1745:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:1966:232.25:7:7]]-[[damage:max:1966:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:2152:232.25:7:7]]-[[damage:max:2152:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:2288:232.25:7:7]]-[[damage:max:2288:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:2389:232.25:7:7]]-[[damage:max:2389:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:2525:232.25:7:7]]-[[damage:max:2525:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:2661:232.25:7:7]]-[[damage:max:2661:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:2797:232.25:7:7]]-[[damage:max:2797:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:2933:232.25:7:7]]-[[damage:max:2933:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:3034:232.25:7:7]]-[[damage:max:3034:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:3135:232.25:7:7]]-[[damage:max:3135:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:3236:232.25:7:7]]-[[damage:max:3236:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:3337:232.25:7:7]]-[[damage:max:3337:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:3438:232.25:7:7]]-[[damage:max:3438:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:3539:232.25:7:7]]-[[damage:max:3539:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:3640:232.25:7:7]]-[[damage:max:3640:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:3741:232.25:7:7]]-[[damage:max:3741:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:3842:232.25:7:7]]-[[damage:max:3842:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:3943:232.25:7:7]]-[[damage:max:3943:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:4044:232.25:7:7]]-[[damage:max:4044:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:4145:232.25:7:7]]-[[damage:max:4145:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:4246:232.25:7:7]]-[[damage:max:4246:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:4347:232.25:7:7]]-[[damage:max:4347:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:4448:232.25:7:7]]-[[damage:max:4448:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:4549:232.25:7:7]]-[[damage:max:4549:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:4650:232.25:7:7]]-[[damage:max:4650:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:4751:232.25:7:7]]-[[damage:max:4751:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:4852:232.25:7:7]]-[[damage:max:4852:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:4953:232.25:7:7]]-[[damage:max:4953:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:5054:232.25:7:7]]-[[damage:max:5054:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:5155:232.25:7:7]]-[[damage:max:5155:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "2469",
+        "level": 1,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 3,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2470",
+        "level": 2,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 3,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2471",
+        "level": 3,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 6,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2472",
+        "level": 4,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 9,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2473",
+        "level": 5,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2474",
+        "level": 6,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2475",
+        "level": 7,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2476",
+        "level": 8,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2477",
+        "level": 9,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2478",
+        "level": 10,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "15280010",
+        "skillId": "15280010",
+        "name": "Bittercold Wind",
+        "description": "+1s [Bittercold Wind] summon duration",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15280020",
+        "skillId": "15280020",
+        "name": "Bittercold Wind",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15280030",
+        "skillId": "15280030",
+        "name": "Bittercold Wind",
+        "description": "Pull effect",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15280040",
+        "skillId": "15280040",
+        "name": "Bittercold Wind",
+        "description": "Ignores Block and Evasion and lands as a Critical Hit",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15280050",
+        "skillId": "15280050",
+        "name": "Bittercold Wind",
+        "description": "-1s [Frost] cooldown on hit",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 15,
+    "classes": [
+      {
+        "code": "sorcerer",
+        "name": "Sorcerer"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Bittercold Wind",
+    "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_025.webp",
+    "id": "15280000",
+    "entityType": "skill",
+    "description": "Selects a target within 20m and summons a Bittercold Wind lasting for 2s at their location. Deals <chat_combat>[[damage:min:238:232.25:7:7]]-[[damage:max:238:232.25:7:7]]</> Water damage to up to 4 enemies within 4m of the Bittercold Wind, with a 60% chance to inflict Root for 3s.\n100% chance to inflict Root on NPC targets.\n\n10 Stagger Gauge Damage"
+  }
+}

@@ -1,0 +1,1476 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/11190000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "11190000",
+    "name": "Leaping Slam",
+    "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_019.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "11190010",
+        "description": "Prepare for Battle effect on the caster for 3s",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11190020",
+        "description": "50% chance to trigger [Ankle Slice] on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11190030",
+        "description": "Resets cooldown on defeating an enemy",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11190040",
+        "description": "+20% PvE Damage Tolerance and +10 PvP Damage Tolerance for 3s",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11190050",
+        "description": "Changes to AoE skill and pulls in enemies",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "greatsword",
+        "name": "Greatsword"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:70:115:2:2]]-[[damage:max:70:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 70,
+            "baseMax": 70,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 70,
+            "baseMax": 70,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:122:115:2:2]]-[[damage:max:122:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 122,
+            "baseMax": 122,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 122,
+            "baseMax": 122,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:174:115:2:2]]-[[damage:max:174:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 174,
+            "baseMax": 174,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 174,
+            "baseMax": 174,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:225:115:2:2]]-[[damage:max:225:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 225,
+            "baseMax": 225,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 225,
+            "baseMax": 225,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:303:115:2:2]]-[[damage:max:303:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 303,
+            "baseMax": 303,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 303,
+            "baseMax": 303,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:398:115:2:2]]-[[damage:max:398:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 398,
+            "baseMax": 398,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 398,
+            "baseMax": 398,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:510:115:2:2]]-[[damage:max:510:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 510,
+            "baseMax": 510,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 510,
+            "baseMax": 510,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:605:115:2:2]]-[[damage:max:605:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 605,
+            "baseMax": 605,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 605,
+            "baseMax": 605,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:700:115:2:2]]-[[damage:max:700:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 700,
+            "baseMax": 700,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 700,
+            "baseMax": 700,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:795:115:2:2]]-[[damage:max:795:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 795,
+            "baseMax": 795,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 795,
+            "baseMax": 795,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:890:115:2:2]]-[[damage:max:890:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 890,
+            "baseMax": 890,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 890,
+            "baseMax": 890,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:1002:115:2:2]]-[[damage:max:1002:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 1002,
+            "baseMax": 1002,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 1002,
+            "baseMax": 1002,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:1097:115:2:2]]-[[damage:max:1097:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 1097,
+            "baseMax": 1097,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 1097,
+            "baseMax": 1097,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:1166:115:2:2]]-[[damage:max:1166:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 1166,
+            "baseMax": 1166,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 1166,
+            "baseMax": 1166,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:1217:115:2:2]]-[[damage:max:1217:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 1217,
+            "baseMax": 1217,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 1217,
+            "baseMax": 1217,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:1286:115:2:2]]-[[damage:max:1286:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 1286,
+            "baseMax": 1286,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 1286,
+            "baseMax": 1286,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:1355:115:2:2]]-[[damage:max:1355:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 1355,
+            "baseMax": 1355,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 1355,
+            "baseMax": 1355,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:1424:115:2:2]]-[[damage:max:1424:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 1424,
+            "baseMax": 1424,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 1424,
+            "baseMax": 1424,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:1493:115:2:2]]-[[damage:max:1493:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 1493,
+            "baseMax": 1493,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 1493,
+            "baseMax": 1493,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:1545:115:2:2]]-[[damage:max:1545:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 1545,
+            "baseMax": 1545,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 1545,
+            "baseMax": 1545,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:1597:115:2:2]]-[[damage:max:1597:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 1597,
+            "baseMax": 1597,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 1597,
+            "baseMax": 1597,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:1649:115:2:2]]-[[damage:max:1649:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 1649,
+            "baseMax": 1649,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 1649,
+            "baseMax": 1649,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:1700:115:2:2]]-[[damage:max:1700:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 1700,
+            "baseMax": 1700,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 1700,
+            "baseMax": 1700,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:1752:115:2:2]]-[[damage:max:1752:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 1752,
+            "baseMax": 1752,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 1752,
+            "baseMax": 1752,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:1804:115:2:2]]-[[damage:max:1804:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 1804,
+            "baseMax": 1804,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 1804,
+            "baseMax": 1804,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:1856:115:2:2]]-[[damage:max:1856:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 1856,
+            "baseMax": 1856,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 1856,
+            "baseMax": 1856,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:1907:115:2:2]]-[[damage:max:1907:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 1907,
+            "baseMax": 1907,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 1907,
+            "baseMax": 1907,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:1959:115:2:2]]-[[damage:max:1959:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 1959,
+            "baseMax": 1959,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 1959,
+            "baseMax": 1959,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:2011:115:2:2]]-[[damage:max:2011:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 2011,
+            "baseMax": 2011,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 2011,
+            "baseMax": 2011,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:2063:115:2:2]]-[[damage:max:2063:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 2063,
+            "baseMax": 2063,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 2063,
+            "baseMax": 2063,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:2114:115:2:2]]-[[damage:max:2114:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 2114,
+            "baseMax": 2114,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 2114,
+            "baseMax": 2114,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:2166:115:2:2]]-[[damage:max:2166:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 2166,
+            "baseMax": 2166,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 2166,
+            "baseMax": 2166,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:2218:115:2:2]]-[[damage:max:2218:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 2218,
+            "baseMax": 2218,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 2218,
+            "baseMax": 2218,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:2270:115:2:2]]-[[damage:max:2270:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 2270,
+            "baseMax": 2270,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 2270,
+            "baseMax": 2270,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:2321:115:2:2]]-[[damage:max:2321:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 2321,
+            "baseMax": 2321,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 2321,
+            "baseMax": 2321,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:2373:115:2:2]]-[[damage:max:2373:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 2373,
+            "baseMax": 2373,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 2373,
+            "baseMax": 2373,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:2425:115:2:2]]-[[damage:max:2425:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 2425,
+            "baseMax": 2425,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 2425,
+            "baseMax": 2425,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:2477:115:2:2]]-[[damage:max:2477:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 2477,
+            "baseMax": 2477,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 2477,
+            "baseMax": 2477,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:2528:115:2:2]]-[[damage:max:2528:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 2528,
+            "baseMax": 2528,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 2528,
+            "baseMax": 2528,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:2580:115:2:2]]-[[damage:max:2580:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1119000011",
+            "effectGroupId": "111900001",
+            "baseMin": 2580,
+            "baseMax": 2580,
+            "attackRatioPercent": 115
+          },
+          {
+            "effectId": "1119000021",
+            "effectGroupId": "111900002",
+            "baseMin": 2580,
+            "baseMax": 2580,
+            "attackRatioPercent": 115
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "264",
+        "level": 1,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "265",
+        "level": 2,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "266",
+        "level": 3,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "267",
+        "level": 4,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "268",
+        "level": 5,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "269",
+        "level": 6,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "270",
+        "level": 7,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "271",
+        "level": 8,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "272",
+        "level": 9,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "273",
+        "level": 10,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "11190010",
+        "skillId": "11190010",
+        "name": "Leaping Slam",
+        "description": "Prepare for Battle effect on the caster for 3s",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11190020",
+        "skillId": "11190020",
+        "name": "Leaping Slam",
+        "description": "50% chance to trigger [Ankle Slice] on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11190030",
+        "skillId": "11190030",
+        "name": "Leaping Slam",
+        "description": "Resets cooldown on defeating an enemy",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11190040",
+        "skillId": "11190040",
+        "name": "Leaping Slam",
+        "description": "+20% PvE Damage Tolerance and +10 PvP Damage Tolerance for 3s",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11190050",
+        "skillId": "11190050",
+        "name": "Leaping Slam",
+        "description": "Changes to AoE skill and pulls in enemies",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 15,
+    "classes": [
+      {
+        "code": "gladiator",
+        "name": "Gladiator"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Leaping Slam",
+    "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_019.webp",
+    "id": "11190000",
+    "entityType": "skill",
+    "description": "Leaps to a target within 20m and deals <chat_combat>[[damage:min:70:115:2:2]]-[[damage:max:70:115:2:2]]</> damage.\n\n10 Stagger Gauge Damage"
+  }
+}

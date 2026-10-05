@@ -1,0 +1,212 @@
+{
+  "next": "<GuideNext slug=\"builds\" />",
+  "sources": [
+    {
+      "id": "global-test-firsthand",
+      "title": "AION 2 Beginner Guide: 11 Tips You Should Know Before You Start",
+      "url": "https://space4games.com/en/games-en/aion-2-beginner-guide/",
+      "kind": "player",
+      "region": "Global",
+      "publishedAt": "2026-09-28",
+      "version": "Kevin Link's own Global Launch Scale Test; recommended guide levels and dungeon window distinguished; launch values must be read in current client; snapshot saved under research/content/2026-10-03/guide"
+    }
+  ],
+  "locales": {
+    "en": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "world-elyos",
+            "alt": "Official Global Elyos world landscape used to orient the Elyos route",
+            "caption": "Official Global world scene. Faction-specific routes are described below; the image is not a task-by-task route map."
+          },
+          "workflow": {
+            "title": "Resume the campaign at the actual gate",
+            "caption": "The same decision order applies to both factions; the campaign destinations and accepted regional objectives differ.",
+            "steps": [
+              {
+                "label": "Choose your faction's campaign",
+                "description": "Elyos follow their journal toward Verteron; Asmodians use their own Altgard destinations."
+              },
+              {
+                "label": "Read the next requirement",
+                "description": "Open the current objective and distinguish character level, Ascension, quest completion and equipment."
+              },
+              {
+                "label": "Use nearby accepted content",
+                "description": "Group objectives that satisfy this gate; do not import opposite-faction quest names or TW checkpoints."
+              },
+              {
+                "label": "Return and review rewards",
+                "description": "Turn in the campaign step, equip useful rewards and inspect newly available skills."
+              },
+              {
+                "label": "Finish the story at 45",
+                "description": "Reaching the cap does not complete remaining campaign objectives or every activity's entry requirements."
+              }
+            ]
+          }
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "global-leveling",
+          "position": "sectionEnd",
+          "text": "**First route check:** select your current campaign objective and compare its destination with the zone displayed by your character. [A Global Launch Scale Test player](https://space4games.com/en/games-en/aion-2-beginner-guide/) reports a gold-marked main quest and automatic travel after selecting a quest. Use the current tracking/navigation controls if available, then stop to inspect a gate or dangerous terrain. The test observation does not establish a permanent key binding or identical automation for every live quest.\n\n<GuideVisual id=\"topic\" />\n\n<GuideVisual id=\"workflow\" />"
+        },
+        {
+          "anchor": "dungeon-checkpoints",
+          "position": "sectionEnd",
+          "text": "**Worked entry check from a Global test:** [the same firsthand report](https://space4games.com/en/games-en/aion-2-beginner-guide/) lists **Krao Cave at character level 20 and item level 200** in the dungeon window, while its level guide recommends level 22. That example explains why a recommended milestone and an actual entry requirement can differ. If your character is level 20 but entry is denied, open the current dungeon panel and check the unlock quest and item requirement separately. The number 200 is a reported test value, not a new universal live requirement."
+        }
+      ]
+    },
+    "ja": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "world-elyos",
+            "alt": "天族ルートの場所を示す公式Global版天族の風景",
+            "caption": "公式Global版の世界風景です。陣営別の進め方は本文に記載しています。この画像はクエスト順のルートマップではありません。"
+          },
+          "workflow": {
+            "title": "実際の条件を確認してメインストーリーへ戻る",
+            "caption": "判断の順序は両陣営で共通ですが、目的地と条件に使える地域目標は異なります。",
+            "steps": [
+              {
+                "label": "自陣営のストーリーを選ぶ",
+                "description": "天族はジャーナルのVerteron方面、魔族は自分のAltgard側の目的地に従います。"
+              },
+              {
+                "label": "次の条件を読む",
+                "description": "現在の目標を開き、レベル、覚醒、クエスト完了、装備条件を区別します。"
+              },
+              {
+                "label": "近くの有効なコンテンツを使う",
+                "description": "条件を満たす目標をまとめます。別陣営のクエスト名やTWの節目を持ち込みません。"
+              },
+              {
+                "label": "戻って報酬を確認する",
+                "description": "メイン目標を報告し、有用な報酬を装備して、新しいスキルを確認します。"
+              },
+              {
+                "label": "45で残りのストーリーを終える",
+                "description": "上限到達だけで残りのメイン目標や全コンテンツの入場条件が完了するわけではありません。"
+              }
+            ]
+          }
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "global-leveling",
+          "position": "sectionEnd",
+          "text": "**最初のルート確認：** 現在のメイン目標を選び、目的地とキャラクターに表示された地域を照合します。[Global Launch Scale Testのプレイヤー](https://space4games.com/en/games-en/aion-2-beginner-guide/)は、金色のメインクエストと、選択後の自動移動を報告しています。現在の追跡・移動操作があれば使い、条件の確認や危険な地形では立ち止まってください。テストでの観察は、恒久的なキー設定や、すべての現行クエストで同じ自動操作を保証しません。\n\n<GuideVisual id=\"topic\" />\n\n<GuideVisual id=\"workflow\" />"
+        },
+        {
+          "anchor": "dungeon-checkpoints",
+          "position": "sectionEnd",
+          "text": "**Globalテストでの入場確認例：** [同じ実測報告](https://space4games.com/en/games-en/aion-2-beginner-guide/)では、ダンジョン画面の**Krao Caveはキャラクター20レベル、アイテムレベル200**でした。一方、レベルガイドは22を推奨していました。この例は、推奨時期と実際の入場条件が異なる理由を示しています。20レベルで入れなければ、現在のダンジョン画面を開き、解放クエストと装備条件を別々に確認してください。200はテスト時の報告値であり、現行の一律条件として追加した数字ではありません。"
+        }
+      ]
+    },
+    "es": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "world-elyos",
+            "alt": "Paisaje oficial Elios de Global para orientar la ruta de esa facción",
+            "caption": "Escena oficial del mundo Global. Las rutas de cada facción se describen abajo; no es un mapa de misiones paso a paso."
+          },
+          "workflow": {
+            "title": "Retoma la campaña al resolver el requisito real",
+            "caption": "El orden de decisión sirve para ambas facciones; cambian los destinos y los objetivos regionales válidos.",
+            "steps": [
+              {
+                "label": "Elige la campaña de tu facción",
+                "description": "Elios siguen el diario hacia Verteron; Asmodianos usan sus propios destinos de Altgard."
+              },
+              {
+                "label": "Lee el siguiente requisito",
+                "description": "Abre el objetivo y distingue nivel, Ascension, misión completada y equipo."
+              },
+              {
+                "label": "Usa contenido cercano válido",
+                "description": "Agrupa objetivos que resuelvan ese bloqueo; no importes misiones de otra facción ni hitos de TW."
+              },
+              {
+                "label": "Vuelve y revisa las recompensas",
+                "description": "Entrega el paso de campaña, equipa recompensas útiles y comprueba habilidades nuevas."
+              },
+              {
+                "label": "Acaba la historia al llegar a 45",
+                "description": "Alcanzar el límite no completa la campaña pendiente ni los requisitos de todas las actividades."
+              }
+            ]
+          }
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "global-leveling",
+          "position": "sectionEnd",
+          "text": "**Primera comprobación de ruta:** selecciona el objetivo de campaña actual y compara su destino con la zona de tu personaje. [Un jugador del Global Launch Scale Test](https://space4games.com/en/games-en/aion-2-beginner-guide/) describe la misión principal dorada y el desplazamiento automático al seleccionar una misión. Usa los controles actuales de seguimiento/navegación si están disponibles y detente ante un requisito o terreno peligroso. La observación de prueba no establece una tecla permanente ni la misma automatización para todas las misiones actuales.\n\n<GuideVisual id=\"topic\" />\n\n<GuideVisual id=\"workflow\" />"
+        },
+        {
+          "anchor": "dungeon-checkpoints",
+          "position": "sectionEnd",
+          "text": "**Ejemplo de requisito en una prueba Global:** [el mismo informe de primera mano](https://space4games.com/en/games-en/aion-2-beginner-guide/) muestra **Krao Cave con nivel de personaje 20 y nivel de objeto 200** en la ventana de mazmorra, mientras la guía de niveles recomienda 22. Ilustra por qué un hito recomendado y el acceso real pueden diferir. Si estás a nivel 20 y no puedes entrar, abre el panel actual y comprueba por separado misión de desbloqueo y requisito de equipo. El valor 200 pertenece al informe de prueba, no es un nuevo requisito universal del servicio actual."
+        }
+      ]
+    },
+    "de": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "world-elyos",
+            "alt": "Offizielle Global-Landschaft der Elyos zur Orientierung für deren Route",
+            "caption": "Offizielle Szene der Global-Spielwelt. Die fraktionsbezogenen Routen stehen im Text; das Bild ist keine Karte einer vollständigen Questfolge."
+          },
+          "workflow": {
+            "title": "Am tatsächlichen Hindernis zur Kampagne zurückkehren",
+            "caption": "Die Entscheidungsfolge gilt für beide Fraktionen; Kampagnenziele und anerkannte regionale Aufgaben unterscheiden sich.",
+            "steps": [
+              {
+                "label": "Kampagne der eigenen Fraktion wählen",
+                "description": "Elyos folgen dem Journal nach Verteron; Asmodier nutzen ihre eigenen Ziele in Altgard."
+              },
+              {
+                "label": "Nächste Anforderung lesen",
+                "description": "Unterscheide im aktuellen Ziel Charakterstufe, Ascension, Questabschluss und Ausrüstung."
+              },
+              {
+                "label": "Nahe gültige Inhalte nutzen",
+                "description": "Bündle Aufgaben für diese Sperre; übernimm keine gegnerischen Questnamen oder TW-Zwischenstufen."
+              },
+              {
+                "label": "Zurückkehren und Belohnungen prüfen",
+                "description": "Gib den Kampagnenschritt ab, rüste nützliche Belohnungen aus und prüfe neue Fertigkeiten."
+              },
+              {
+                "label": "Die Story auf Stufe 45 abschließen",
+                "description": "Die Maximalstufe erledigt weder offene Kampagnenziele noch sämtliche Zugangsvoraussetzungen."
+              }
+            ]
+          }
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "global-leveling",
+          "position": "sectionEnd",
+          "text": "**Erste Routenprüfung:** Wähle das aktuelle Kampagnenziel und vergleiche seinen Zielort mit der Zone deines Charakters. [Ein Spieler des Global Launch Scale Test](https://space4games.com/en/games-en/aion-2-beginner-guide/) berichtet von der goldfarbenen Hauptquest und automatischem Laufen nach einer Questauswahl. Nutze die aktuellen Verfolgungs-/Navigationsfunktionen, falls vorhanden, und halte bei einer Zugangssperre oder gefährlichem Gelände an. Die Testbeobachtung bestätigt weder eine dauerhafte Tastenbelegung noch identische Automatisierung jeder aktuellen Quest.\n\n<GuideVisual id=\"topic\" />\n\n<GuideVisual id=\"workflow\" />"
+        },
+        {
+          "anchor": "dungeon-checkpoints",
+          "position": "sectionEnd",
+          "text": "**Konkrete Zugangsprüfung aus einem Global-Test:** [Derselbe Erfahrungsbericht](https://space4games.com/en/games-en/aion-2-beginner-guide/) nennt im Dungeonfenster **Krao Cave mit Charakterstufe 20 und Gegenstandsstufe 200**, während der Stufenratgeber Stufe 22 empfiehlt. Das erklärt, warum empfohlene Meilensteine und tatsächlicher Zugang abweichen können. Wird dir auf Stufe 20 der Zutritt verweigert, prüfe im aktuellen Dungeonfenster Freischaltquest und Gegenstandsvoraussetzung getrennt. Der Wert 200 stammt aus dem Testbericht und ist keine neu behauptete allgemeine Live-Anforderung."
+        }
+      ]
+    }
+  }
+}

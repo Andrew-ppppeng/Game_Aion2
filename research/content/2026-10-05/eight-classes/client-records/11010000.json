@@ -1,0 +1,1694 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/11010000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "11010000",
+    "name": "Rending Blow",
+    "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_001.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "11010010",
+        "description": "-20% MP consumed",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11010020",
+        "description": "+200 Block while using skill",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11010030",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11010040",
+        "description": "Deals up to 12% more damage when less targets are hit",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11010050",
+        "description": "Restores 50 MP on landing a Critical Hit",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Nontarget</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "mainself"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "rectangle"
+      },
+      "reachMeters": 5.9,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 120
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "greatsword",
+        "name": "Greatsword"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:70:74.25:2:2]]-[[damage:max:70:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 70,
+            "baseMax": 70,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 70,
+            "baseMax": 70,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:104:74.25:2:2]]-[[damage:max:104:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 104,
+            "baseMax": 104,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 104,
+            "baseMax": 104,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:137:74.25:2:2]]-[[damage:max:137:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 137,
+            "baseMax": 137,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 137,
+            "baseMax": 137,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:170:74.25:2:2]]-[[damage:max:170:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 170,
+            "baseMax": 170,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 170,
+            "baseMax": 170,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:221:74.25:2:2]]-[[damage:max:221:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 221,
+            "baseMax": 221,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 221,
+            "baseMax": 221,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:282:74.25:2:2]]-[[damage:max:282:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 282,
+            "baseMax": 282,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 282,
+            "baseMax": 282,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:354:74.25:2:2]]-[[damage:max:354:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 354,
+            "baseMax": 354,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 354,
+            "baseMax": 354,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:415:74.25:2:2]]-[[damage:max:415:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 415,
+            "baseMax": 415,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 415,
+            "baseMax": 415,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:477:74.25:2:2]]-[[damage:max:477:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 477,
+            "baseMax": 477,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 477,
+            "baseMax": 477,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:538:74.25:2:2]]-[[damage:max:538:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 538,
+            "baseMax": 538,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 538,
+            "baseMax": 538,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:599:74.25:2:2]]-[[damage:max:599:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 599,
+            "baseMax": 599,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 599,
+            "baseMax": 599,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:672:74.25:2:2]]-[[damage:max:672:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 672,
+            "baseMax": 672,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 672,
+            "baseMax": 672,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:733:74.25:2:2]]-[[damage:max:733:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 733,
+            "baseMax": 733,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 733,
+            "baseMax": 733,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:777:74.25:2:2]]-[[damage:max:777:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 777,
+            "baseMax": 777,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 777,
+            "baseMax": 777,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:811:74.25:2:2]]-[[damage:max:811:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 811,
+            "baseMax": 811,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 811,
+            "baseMax": 811,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:855:74.25:2:2]]-[[damage:max:855:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 855,
+            "baseMax": 855,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 855,
+            "baseMax": 855,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:900:74.25:2:2]]-[[damage:max:900:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 900,
+            "baseMax": 900,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 900,
+            "baseMax": 900,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:944:74.25:2:2]]-[[damage:max:944:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 944,
+            "baseMax": 944,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 944,
+            "baseMax": 944,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:989:74.25:2:2]]-[[damage:max:989:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 989,
+            "baseMax": 989,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 989,
+            "baseMax": 989,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1022:74.25:2:2]]-[[damage:max:1022:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 1022,
+            "baseMax": 1022,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 1022,
+            "baseMax": 1022,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1056:74.25:2:2]]-[[damage:max:1056:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 1056,
+            "baseMax": 1056,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 1056,
+            "baseMax": 1056,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1089:74.25:2:2]]-[[damage:max:1089:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 1089,
+            "baseMax": 1089,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 1089,
+            "baseMax": 1089,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1123:74.25:2:2]]-[[damage:max:1123:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 1123,
+            "baseMax": 1123,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 1123,
+            "baseMax": 1123,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1156:74.25:2:2]]-[[damage:max:1156:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 1156,
+            "baseMax": 1156,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 1156,
+            "baseMax": 1156,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1189:74.25:2:2]]-[[damage:max:1189:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 1189,
+            "baseMax": 1189,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 1189,
+            "baseMax": 1189,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1223:74.25:2:2]]-[[damage:max:1223:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 1223,
+            "baseMax": 1223,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 1223,
+            "baseMax": 1223,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1256:74.25:2:2]]-[[damage:max:1256:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 1256,
+            "baseMax": 1256,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 1256,
+            "baseMax": 1256,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1290:74.25:2:2]]-[[damage:max:1290:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 1290,
+            "baseMax": 1290,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 1290,
+            "baseMax": 1290,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1323:74.25:2:2]]-[[damage:max:1323:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 1323,
+            "baseMax": 1323,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 1323,
+            "baseMax": 1323,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1357:74.25:2:2]]-[[damage:max:1357:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 1357,
+            "baseMax": 1357,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 1357,
+            "baseMax": 1357,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1390:74.25:2:2]]-[[damage:max:1390:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 1390,
+            "baseMax": 1390,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 1390,
+            "baseMax": 1390,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1423:74.25:2:2]]-[[damage:max:1423:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 1423,
+            "baseMax": 1423,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 1423,
+            "baseMax": 1423,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1457:74.25:2:2]]-[[damage:max:1457:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 1457,
+            "baseMax": 1457,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 1457,
+            "baseMax": 1457,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1490:74.25:2:2]]-[[damage:max:1490:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 1490,
+            "baseMax": 1490,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 1490,
+            "baseMax": 1490,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1524:74.25:2:2]]-[[damage:max:1524:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 1524,
+            "baseMax": 1524,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 1524,
+            "baseMax": 1524,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1557:74.25:2:2]]-[[damage:max:1557:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 1557,
+            "baseMax": 1557,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 1557,
+            "baseMax": 1557,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1590:74.25:2:2]]-[[damage:max:1590:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 1590,
+            "baseMax": 1590,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 1590,
+            "baseMax": 1590,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1624:74.25:2:2]]-[[damage:max:1624:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 1624,
+            "baseMax": 1624,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 1624,
+            "baseMax": 1624,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1657:74.25:2:2]]-[[damage:max:1657:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 1657,
+            "baseMax": 1657,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 1657,
+            "baseMax": 1657,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1691:74.25:2:2]]-[[damage:max:1691:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1101000011",
+            "effectGroupId": "110100001",
+            "baseMin": 1691,
+            "baseMax": 1691,
+            "attackRatioPercent": 74.25
+          },
+          {
+            "effectId": "1101000021",
+            "effectGroupId": "110100002",
+            "baseMin": 1691,
+            "baseMax": 1691,
+            "attackRatioPercent": 74.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "254",
+        "level": 1,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "255",
+        "level": 2,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "256",
+        "level": 3,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "257",
+        "level": 4,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "258",
+        "level": 5,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "259",
+        "level": 6,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "260",
+        "level": 7,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "261",
+        "level": 8,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "262",
+        "level": 9,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "263",
+        "level": 10,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "11010010",
+        "skillId": "11010010",
+        "name": "Rending Blow",
+        "description": "-20% MP consumed",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11010020",
+        "skillId": "11010020",
+        "name": "Rending Blow",
+        "description": "+200 Block while using skill",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11010030",
+        "skillId": "11010030",
+        "name": "Rending Blow",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11010040",
+        "skillId": "11010040",
+        "name": "Rending Blow",
+        "description": "Deals up to 12% more damage when less targets are hit",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11010050",
+        "skillId": "11010050",
+        "name": "Rending Blow",
+        "description": "Restores 50 MP on landing a Critical Hit",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [
+      {
+        "mainCategoryId": "skills",
+        "name": "Smashing Blow",
+        "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_042.webp",
+        "id": "11420000"
+      }
+    ],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 4,
+    "classes": [
+      {
+        "code": "gladiator",
+        "name": "Gladiator"
+      }
+    ],
+    "chainRole": {
+      "code": "opening",
+      "name": "Opening Skill"
+    },
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Rending Blow",
+    "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_001.webp",
+    "id": "11010000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:70:74.25:2:2]]-[[damage:max:70:74.25:2:2]]</> damage to up to 4 enemies within 4m and increases Enmity.\n\n2 Stagger Gauge Damage"
+  }
+}

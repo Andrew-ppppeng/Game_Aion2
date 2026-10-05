@@ -1,0 +1,2122 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/18060000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "18060000",
+    "name": "Impactful Crush",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_006.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 3,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 3,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 6,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 9,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "18060010",
+        "description": "Changes to AoE damage",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18060020",
+        "description": "+1s [Impactful Crush] Stun duration",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18060030",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18060040",
+        "description": "+30% Skill Speed",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18060050",
+        "description": "+20% [Impactful Crush] Stun Chance",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 100
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "staff",
+        "name": "Staff"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:224:218.4:1:1]]-[[damage:max:224:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 224,
+            "baseMax": 224,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:319:218.4:1:1]]-[[damage:max:319:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 319,
+            "baseMax": 319,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:414:218.4:1:1]]-[[damage:max:414:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 414,
+            "baseMax": 414,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:556:218.4:1:1]]-[[damage:max:556:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 556,
+            "baseMax": 556,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:732:218.4:1:1]]-[[damage:max:732:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 732,
+            "baseMax": 732,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:940:218.4:1:1]]-[[damage:max:940:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 940,
+            "baseMax": 940,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1115:218.4:1:1]]-[[damage:max:1115:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 1115,
+            "baseMax": 1115,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1290:218.4:1:1]]-[[damage:max:1290:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 1290,
+            "baseMax": 1290,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1466:218.4:1:1]]-[[damage:max:1466:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 1466,
+            "baseMax": 1466,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1641:218.4:1:1]]-[[damage:max:1641:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 1641,
+            "baseMax": 1641,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1849:218.4:1:1]]-[[damage:max:1849:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 1849,
+            "baseMax": 1849,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2024:218.4:1:1]]-[[damage:max:2024:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 2024,
+            "baseMax": 2024,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2152:218.4:1:1]]-[[damage:max:2152:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 2152,
+            "baseMax": 2152,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2247:218.4:1:1]]-[[damage:max:2247:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 2247,
+            "baseMax": 2247,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2375:218.4:1:1]]-[[damage:max:2375:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 2375,
+            "baseMax": 2375,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2502:218.4:1:1]]-[[damage:max:2502:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 2502,
+            "baseMax": 2502,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2630:218.4:1:1]]-[[damage:max:2630:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 2630,
+            "baseMax": 2630,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2758:218.4:1:1]]-[[damage:max:2758:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 2758,
+            "baseMax": 2758,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2853:218.4:1:1]]-[[damage:max:2853:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 2853,
+            "baseMax": 2853,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2948:218.4:1:1]]-[[damage:max:2948:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 2948,
+            "baseMax": 2948,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3043:218.4:1:1]]-[[damage:max:3043:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 3043,
+            "baseMax": 3043,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3138:218.4:1:1]]-[[damage:max:3138:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 3138,
+            "baseMax": 3138,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3233:218.4:1:1]]-[[damage:max:3233:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 3233,
+            "baseMax": 3233,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3328:218.4:1:1]]-[[damage:max:3328:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 3328,
+            "baseMax": 3328,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3423:218.4:1:1]]-[[damage:max:3423:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 3423,
+            "baseMax": 3423,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3518:218.4:1:1]]-[[damage:max:3518:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 3518,
+            "baseMax": 3518,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3613:218.4:1:1]]-[[damage:max:3613:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 3613,
+            "baseMax": 3613,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3708:218.4:1:1]]-[[damage:max:3708:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 3708,
+            "baseMax": 3708,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3803:218.4:1:1]]-[[damage:max:3803:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 3803,
+            "baseMax": 3803,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3898:218.4:1:1]]-[[damage:max:3898:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 3898,
+            "baseMax": 3898,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3993:218.4:1:1]]-[[damage:max:3993:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 3993,
+            "baseMax": 3993,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4088:218.4:1:1]]-[[damage:max:4088:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 4088,
+            "baseMax": 4088,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4183:218.4:1:1]]-[[damage:max:4183:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 4183,
+            "baseMax": 4183,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4278:218.4:1:1]]-[[damage:max:4278:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 4278,
+            "baseMax": 4278,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4373:218.4:1:1]]-[[damage:max:4373:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 4373,
+            "baseMax": 4373,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4468:218.4:1:1]]-[[damage:max:4468:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 4468,
+            "baseMax": 4468,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4563:218.4:1:1]]-[[damage:max:4563:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 4563,
+            "baseMax": 4563,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4658:218.4:1:1]]-[[damage:max:4658:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 4658,
+            "baseMax": 4658,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4753:218.4:1:1]]-[[damage:max:4753:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 4753,
+            "baseMax": 4753,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4848:218.4:1:1]]-[[damage:max:4848:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1806000011",
+            "effectGroupId": "180600001",
+            "baseMin": 4848,
+            "baseMax": 4848,
+            "attackRatioPercent": 218.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "4120",
+        "level": 1,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 3,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4121",
+        "level": 2,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 3,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4122",
+        "level": 3,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 6,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4123",
+        "level": 4,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 9,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4124",
+        "level": 5,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4125",
+        "level": 6,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4126",
+        "level": 7,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4127",
+        "level": 8,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4128",
+        "level": 9,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4129",
+        "level": 10,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "18060010",
+        "skillId": "18060010",
+        "name": "Impactful Crush",
+        "description": "Changes to AoE damage",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18060020",
+        "skillId": "18060020",
+        "name": "Impactful Crush",
+        "description": "+1s [Impactful Crush] Stun duration",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18060030",
+        "skillId": "18060030",
+        "name": "Impactful Crush",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18060040",
+        "skillId": "18060040",
+        "name": "Impactful Crush",
+        "description": "+30% Skill Speed",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18060050",
+        "skillId": "18060050",
+        "name": "Impactful Crush",
+        "description": "+20% [Impactful Crush] Stun Chance",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 15,
+    "classes": [
+      {
+        "code": "chanter",
+        "name": "Chanter"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Impactful Crush",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_006.webp",
+    "id": "18060000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:224:218.4:1:1]]-[[damage:max:224:218.4:1:1]]</> damage to a target within 20m. Has a 60% chance to inflict Stun for 3s.\n100% chance to inflict Stun on NPC targets.\n\n[Dark Crush] becomes available for 2s on skill use.\n10 Stagger Gauge Damage"
+  }
+}

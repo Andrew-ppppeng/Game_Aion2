@@ -1,0 +1,3482 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/11290000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "11290000",
+    "name": "Mocking Blade",
+    "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 3,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 3,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 6,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 9,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "11290010",
+        "description": "Absorbs 4% HP, absorbs 15% HP of target with Incapacitated Immunity",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11290020",
+        "description": "Changes to AoE damage on down strike",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11290030",
+        "description": "Adds 2 additional strikes",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11290040",
+        "description": "+1s Knockdown duration",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11290050",
+        "description": "Ignores Block and Evasion and lands as Multi-Hit",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 200
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "greatsword",
+        "name": "Greatsword"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:207:194.4:3:3]]-[[damage:max:207:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 207,
+            "baseMax": 207,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 207,
+            "baseMax": 207,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 207,
+            "baseMax": 207,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:294:194.4:3:3]]-[[damage:max:294:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 294,
+            "baseMax": 294,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 294,
+            "baseMax": 294,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 294,
+            "baseMax": 294,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:381:194.4:3:3]]-[[damage:max:381:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 381,
+            "baseMax": 381,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 381,
+            "baseMax": 381,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 381,
+            "baseMax": 381,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:513:194.4:3:3]]-[[damage:max:513:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 513,
+            "baseMax": 513,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 513,
+            "baseMax": 513,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 513,
+            "baseMax": 513,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:673:194.4:3:3]]-[[damage:max:673:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 673,
+            "baseMax": 673,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 673,
+            "baseMax": 673,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 673,
+            "baseMax": 673,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:863:194.4:3:3]]-[[damage:max:863:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 863,
+            "baseMax": 863,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 863,
+            "baseMax": 863,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 863,
+            "baseMax": 863,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1023:194.4:3:3]]-[[damage:max:1023:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 1023,
+            "baseMax": 1023,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 1023,
+            "baseMax": 1023,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 1023,
+            "baseMax": 1023,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1183:194.4:3:3]]-[[damage:max:1183:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 1183,
+            "baseMax": 1183,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 1183,
+            "baseMax": 1183,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 1183,
+            "baseMax": 1183,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1344:194.4:3:3]]-[[damage:max:1344:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 1344,
+            "baseMax": 1344,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 1344,
+            "baseMax": 1344,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 1344,
+            "baseMax": 1344,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1504:194.4:3:3]]-[[damage:max:1504:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 1504,
+            "baseMax": 1504,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 1504,
+            "baseMax": 1504,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 1504,
+            "baseMax": 1504,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1694:194.4:3:3]]-[[damage:max:1694:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 1694,
+            "baseMax": 1694,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 1694,
+            "baseMax": 1694,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 1694,
+            "baseMax": 1694,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1854:194.4:3:3]]-[[damage:max:1854:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 1854,
+            "baseMax": 1854,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 1854,
+            "baseMax": 1854,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 1854,
+            "baseMax": 1854,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1971:194.4:3:3]]-[[damage:max:1971:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 1971,
+            "baseMax": 1971,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 1971,
+            "baseMax": 1971,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 1971,
+            "baseMax": 1971,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2058:194.4:3:3]]-[[damage:max:2058:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 2058,
+            "baseMax": 2058,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 2058,
+            "baseMax": 2058,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 2058,
+            "baseMax": 2058,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2175:194.4:3:3]]-[[damage:max:2175:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 2175,
+            "baseMax": 2175,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 2175,
+            "baseMax": 2175,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 2175,
+            "baseMax": 2175,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2291:194.4:3:3]]-[[damage:max:2291:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 2291,
+            "baseMax": 2291,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 2291,
+            "baseMax": 2291,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 2291,
+            "baseMax": 2291,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2408:194.4:3:3]]-[[damage:max:2408:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 2408,
+            "baseMax": 2408,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 2408,
+            "baseMax": 2408,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 2408,
+            "baseMax": 2408,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2525:194.4:3:3]]-[[damage:max:2525:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 2525,
+            "baseMax": 2525,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 2525,
+            "baseMax": 2525,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 2525,
+            "baseMax": 2525,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2612:194.4:3:3]]-[[damage:max:2612:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 2612,
+            "baseMax": 2612,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 2612,
+            "baseMax": 2612,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 2612,
+            "baseMax": 2612,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2700:194.4:3:3]]-[[damage:max:2700:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 2700,
+            "baseMax": 2700,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 2700,
+            "baseMax": 2700,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 2700,
+            "baseMax": 2700,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2787:194.4:3:3]]-[[damage:max:2787:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 2787,
+            "baseMax": 2787,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 2787,
+            "baseMax": 2787,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 2787,
+            "baseMax": 2787,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2875:194.4:3:3]]-[[damage:max:2875:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 2875,
+            "baseMax": 2875,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 2875,
+            "baseMax": 2875,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 2875,
+            "baseMax": 2875,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2962:194.4:3:3]]-[[damage:max:2962:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 2962,
+            "baseMax": 2962,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 2962,
+            "baseMax": 2962,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 2962,
+            "baseMax": 2962,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3050:194.4:3:3]]-[[damage:max:3050:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 3050,
+            "baseMax": 3050,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 3050,
+            "baseMax": 3050,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 3050,
+            "baseMax": 3050,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3137:194.4:3:3]]-[[damage:max:3137:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 3137,
+            "baseMax": 3137,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 3137,
+            "baseMax": 3137,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 3137,
+            "baseMax": 3137,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3225:194.4:3:3]]-[[damage:max:3225:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 3225,
+            "baseMax": 3225,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 3225,
+            "baseMax": 3225,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 3225,
+            "baseMax": 3225,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3312:194.4:3:3]]-[[damage:max:3312:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 3312,
+            "baseMax": 3312,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 3312,
+            "baseMax": 3312,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 3312,
+            "baseMax": 3312,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3400:194.4:3:3]]-[[damage:max:3400:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 3400,
+            "baseMax": 3400,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 3400,
+            "baseMax": 3400,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 3400,
+            "baseMax": 3400,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3487:194.4:3:3]]-[[damage:max:3487:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 3487,
+            "baseMax": 3487,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 3487,
+            "baseMax": 3487,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 3487,
+            "baseMax": 3487,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3575:194.4:3:3]]-[[damage:max:3575:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 3575,
+            "baseMax": 3575,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 3575,
+            "baseMax": 3575,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 3575,
+            "baseMax": 3575,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3662:194.4:3:3]]-[[damage:max:3662:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 3662,
+            "baseMax": 3662,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 3662,
+            "baseMax": 3662,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 3662,
+            "baseMax": 3662,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3749:194.4:3:3]]-[[damage:max:3749:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 3749,
+            "baseMax": 3749,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 3749,
+            "baseMax": 3749,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 3749,
+            "baseMax": 3749,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3837:194.4:3:3]]-[[damage:max:3837:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 3837,
+            "baseMax": 3837,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 3837,
+            "baseMax": 3837,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 3837,
+            "baseMax": 3837,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3924:194.4:3:3]]-[[damage:max:3924:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 3924,
+            "baseMax": 3924,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 3924,
+            "baseMax": 3924,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 3924,
+            "baseMax": 3924,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4012:194.4:3:3]]-[[damage:max:4012:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 4012,
+            "baseMax": 4012,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 4012,
+            "baseMax": 4012,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 4012,
+            "baseMax": 4012,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4099:194.4:3:3]]-[[damage:max:4099:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 4099,
+            "baseMax": 4099,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 4099,
+            "baseMax": 4099,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 4099,
+            "baseMax": 4099,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4187:194.4:3:3]]-[[damage:max:4187:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 4187,
+            "baseMax": 4187,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 4187,
+            "baseMax": 4187,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 4187,
+            "baseMax": 4187,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4274:194.4:3:3]]-[[damage:max:4274:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 4274,
+            "baseMax": 4274,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 4274,
+            "baseMax": 4274,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 4274,
+            "baseMax": 4274,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4362:194.4:3:3]]-[[damage:max:4362:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 4362,
+            "baseMax": 4362,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 4362,
+            "baseMax": 4362,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 4362,
+            "baseMax": 4362,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4449:194.4:3:3]]-[[damage:max:4449:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1129000021",
+            "effectGroupId": "112900002",
+            "baseMin": 4449,
+            "baseMax": 4449,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000031",
+            "effectGroupId": "112900003",
+            "baseMin": 4449,
+            "baseMax": 4449,
+            "attackRatioPercent": 194.4
+          },
+          {
+            "effectId": "1129000041",
+            "effectGroupId": "112900004",
+            "baseMin": 4449,
+            "baseMax": 4449,
+            "attackRatioPercent": 194.4
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "112900001",
+            "name": "Rotate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Rotate",
+            "effect": "Rotate Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Rotate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+              "id": "112900001"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "274",
+        "level": 1,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 3,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "275",
+        "level": 2,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 3,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "276",
+        "level": 3,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 6,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "277",
+        "level": 4,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 9,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "278",
+        "level": 5,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "279",
+        "level": 6,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "280",
+        "level": 7,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "281",
+        "level": 8,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "282",
+        "level": 9,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "283",
+        "level": 10,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "11290010",
+        "skillId": "11290010",
+        "name": "Mocking Blade",
+        "description": "Absorbs 4% HP, absorbs 15% HP of target with Incapacitated Immunity",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11290020",
+        "skillId": "11290020",
+        "name": "Mocking Blade",
+        "description": "Changes to AoE damage on down strike",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11290030",
+        "skillId": "11290030",
+        "name": "Mocking Blade",
+        "description": "Adds 2 additional strikes",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11290040",
+        "skillId": "11290040",
+        "name": "Mocking Blade",
+        "description": "+1s Knockdown duration",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11290050",
+        "skillId": "11290050",
+        "name": "Mocking Blade",
+        "description": "Ignores Block and Evasion and lands as Multi-Hit",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 4,
+    "cooldownSeconds": 20,
+    "classes": [
+      {
+        "code": "gladiator",
+        "name": "Gladiator"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Mocking Blade",
+    "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_028.webp",
+    "id": "11290000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:207:194.4:3:3]]-[[damage:max:207:194.4:3:3]]</> damage to a target within 4m and inflicts Knockdown for 3s. Changes skill motion when attacking targets with Incapacitated Immunity.\n\n15 Stagger Gauge Damage"
+  }
+}

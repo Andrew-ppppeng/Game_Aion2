@@ -1,0 +1,1167 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/16010000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "16010000",
+    "name": "Cold Shock",
+    "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_001.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "16010010",
+        "description": "+20% MP restored",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16010020",
+        "description": "Absorbs 1% HP",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16010030",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16010040",
+        "description": "+2% Attack on landing [Earth Tremor] (Up to 5 stacks)",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16010050",
+        "description": "10% chance to remove 1 buff on landing [Earth Tremor]",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<Unique>Mobile</>",
+    "basic": true,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "orb",
+        "name": "Orb"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:54:51.5:1:1]]-[[damage:max:54:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 54,
+            "baseMax": 54,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:75:51.5:1:1]]-[[damage:max:75:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 75,
+            "baseMax": 75,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:97:51.5:1:1]]-[[damage:max:97:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 97,
+            "baseMax": 97,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:119:51.5:1:1]]-[[damage:max:119:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 119,
+            "baseMax": 119,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:151:51.5:1:1]]-[[damage:max:151:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 151,
+            "baseMax": 151,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:191:51.5:1:1]]-[[damage:max:191:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 191,
+            "baseMax": 191,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:239:51.5:1:1]]-[[damage:max:239:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 239,
+            "baseMax": 239,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:279:51.5:1:1]]-[[damage:max:279:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 279,
+            "baseMax": 279,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:320:51.5:1:1]]-[[damage:max:320:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 320,
+            "baseMax": 320,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:360:51.5:1:1]]-[[damage:max:360:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 360,
+            "baseMax": 360,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:400:51.5:1:1]]-[[damage:max:400:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 400,
+            "baseMax": 400,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:448:51.5:1:1]]-[[damage:max:448:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 448,
+            "baseMax": 448,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:488:51.5:1:1]]-[[damage:max:488:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 488,
+            "baseMax": 488,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:517:51.5:1:1]]-[[damage:max:517:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 517,
+            "baseMax": 517,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:539:51.5:1:1]]-[[damage:max:539:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 539,
+            "baseMax": 539,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:568:51.5:1:1]]-[[damage:max:568:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 568,
+            "baseMax": 568,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:598:51.5:1:1]]-[[damage:max:598:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 598,
+            "baseMax": 598,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:627:51.5:1:1]]-[[damage:max:627:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 627,
+            "baseMax": 627,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:656:51.5:1:1]]-[[damage:max:656:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 656,
+            "baseMax": 656,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:678:51.5:1:1]]-[[damage:max:678:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 678,
+            "baseMax": 678,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:700:51.5:1:1]]-[[damage:max:700:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 700,
+            "baseMax": 700,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:721:51.5:1:1]]-[[damage:max:721:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 721,
+            "baseMax": 721,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:743:51.5:1:1]]-[[damage:max:743:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 743,
+            "baseMax": 743,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:765:51.5:1:1]]-[[damage:max:765:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 765,
+            "baseMax": 765,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:786:51.5:1:1]]-[[damage:max:786:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 786,
+            "baseMax": 786,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:808:51.5:1:1]]-[[damage:max:808:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 808,
+            "baseMax": 808,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:829:51.5:1:1]]-[[damage:max:829:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 829,
+            "baseMax": 829,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:851:51.5:1:1]]-[[damage:max:851:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 851,
+            "baseMax": 851,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:873:51.5:1:1]]-[[damage:max:873:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 873,
+            "baseMax": 873,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:894:51.5:1:1]]-[[damage:max:894:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 894,
+            "baseMax": 894,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:916:51.5:1:1]]-[[damage:max:916:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 916,
+            "baseMax": 916,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:938:51.5:1:1]]-[[damage:max:938:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 938,
+            "baseMax": 938,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:959:51.5:1:1]]-[[damage:max:959:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 959,
+            "baseMax": 959,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:981:51.5:1:1]]-[[damage:max:981:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 981,
+            "baseMax": 981,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1002:51.5:1:1]]-[[damage:max:1002:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 1002,
+            "baseMax": 1002,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1024:51.5:1:1]]-[[damage:max:1024:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 1024,
+            "baseMax": 1024,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1046:51.5:1:1]]-[[damage:max:1046:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 1046,
+            "baseMax": 1046,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1067:51.5:1:1]]-[[damage:max:1067:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 1067,
+            "baseMax": 1067,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1089:51.5:1:1]]-[[damage:max:1089:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 1089,
+            "baseMax": 1089,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1111:51.5:1:1]]-[[damage:max:1111:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1601000011",
+            "effectGroupId": "160100001",
+            "baseMin": 1111,
+            "baseMax": 1111,
+            "attackRatioPercent": 51.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "2994",
+        "level": 1,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2995",
+        "level": 2,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2996",
+        "level": 3,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2997",
+        "level": 4,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2998",
+        "level": 5,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2999",
+        "level": 6,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3000",
+        "level": 7,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3001",
+        "level": 8,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3002",
+        "level": 9,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3003",
+        "level": 10,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "16010010",
+        "skillId": "16010010",
+        "name": "Cold Shock",
+        "description": "+20% MP restored",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16010020",
+        "skillId": "16010020",
+        "name": "Cold Shock",
+        "description": "Absorbs 1% HP",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16010030",
+        "skillId": "16010030",
+        "name": "Cold Shock",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16010040",
+        "skillId": "16010040",
+        "name": "Cold Shock",
+        "description": "+2% Attack on landing [Earth Tremor] (Up to 5 stacks)",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16010050",
+        "skillId": "16010050",
+        "name": "Cold Shock",
+        "description": "10% chance to remove 1 buff on landing [Earth Tremor]",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [
+      {
+        "mainCategoryId": "skills",
+        "name": "Vacuum Explosion",
+        "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_002.webp",
+        "id": "16020000"
+      }
+    ],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "classes": [
+      {
+        "code": "elementalist",
+        "name": "Spiritmaster"
+      }
+    ],
+    "chainRole": {
+      "code": "opening",
+      "name": "Opening Skill"
+    },
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Cold Shock",
+    "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_001.webp",
+    "id": "16010000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:54:51.5:1:1]]-[[damage:max:54:51.5:1:1]]</> Water damage to a target within 20m and restores 100 MP."
+  }
+}

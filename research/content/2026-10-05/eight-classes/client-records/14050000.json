@@ -1,0 +1,1971 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/14050000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "14050000",
+    "name": "Drill Dart",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_005.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "14050010",
+        "description": "Absorbs 3% HP",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14050020",
+        "description": "+2s Bleed duration",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14050030",
+        "description": "+20% Skill Speed",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14050040",
+        "description": "Multi-Hit on hit",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14050050",
+        "description": "Activates [Drill Dart] 1 extra time",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Mobile</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "circle"
+      },
+      "reachMeters": 4,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [
+      {
+        "id": "14000001",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormalgroupid"
+        },
+        "description": "On landing Critical Hit",
+        "iconPath": "/images/ui/resource/texture/skill/icon_cond_critical.webp",
+        "abnormalGroupId": 140500081
+      }
+    ],
+    "requiredWeapons": [
+      {
+        "code": "bow",
+        "name": "Bow"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:112:115.5:1:1]]-[[damage:max:112:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 112,
+            "baseMax": 112,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:159:115.5:1:1]]-[[damage:max:159:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 159,
+            "baseMax": 159,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 2,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:207:115.5:1:1]]-[[damage:max:207:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 207,
+            "baseMax": 207,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 3,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:278:115.5:1:1]]-[[damage:max:278:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 278,
+            "baseMax": 278,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 4,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:367:115.5:1:1]]-[[damage:max:367:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 367,
+            "baseMax": 367,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 5,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:473:115.5:1:1]]-[[damage:max:473:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 473,
+            "baseMax": 473,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 6,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:562:115.5:1:1]]-[[damage:max:562:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 562,
+            "baseMax": 562,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 7,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:651:115.5:1:1]]-[[damage:max:651:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 651,
+            "baseMax": 651,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 8,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:740:115.5:1:1]]-[[damage:max:740:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 740,
+            "baseMax": 740,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 9,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:829:115.5:1:1]]-[[damage:max:829:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 829,
+            "baseMax": 829,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 10,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:935:115.5:1:1]]-[[damage:max:935:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 935,
+            "baseMax": 935,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 11,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1023:115.5:1:1]]-[[damage:max:1023:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 1023,
+            "baseMax": 1023,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 12,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1088:115.5:1:1]]-[[damage:max:1088:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 1088,
+            "baseMax": 1088,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 13,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1136:115.5:1:1]]-[[damage:max:1136:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 1136,
+            "baseMax": 1136,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 14,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1201:115.5:1:1]]-[[damage:max:1201:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 1201,
+            "baseMax": 1201,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 15,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1266:115.5:1:1]]-[[damage:max:1266:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 1266,
+            "baseMax": 1266,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 16,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1331:115.5:1:1]]-[[damage:max:1331:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 1331,
+            "baseMax": 1331,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 17,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1396:115.5:1:1]]-[[damage:max:1396:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 1396,
+            "baseMax": 1396,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 18,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1444:115.5:1:1]]-[[damage:max:1444:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 1444,
+            "baseMax": 1444,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 19,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1491:115.5:1:1]]-[[damage:max:1491:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 1491,
+            "baseMax": 1491,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 20,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1539:115.5:1:1]]-[[damage:max:1539:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 1539,
+            "baseMax": 1539,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 21,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1586:115.5:1:1]]-[[damage:max:1586:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 1586,
+            "baseMax": 1586,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 22,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1634:115.5:1:1]]-[[damage:max:1634:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 1634,
+            "baseMax": 1634,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 23,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1682:115.5:1:1]]-[[damage:max:1682:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 1682,
+            "baseMax": 1682,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 24,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1729:115.5:1:1]]-[[damage:max:1729:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 1729,
+            "baseMax": 1729,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 25,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1777:115.5:1:1]]-[[damage:max:1777:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 1777,
+            "baseMax": 1777,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 26,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1825:115.5:1:1]]-[[damage:max:1825:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 1825,
+            "baseMax": 1825,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 27,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1872:115.5:1:1]]-[[damage:max:1872:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 1872,
+            "baseMax": 1872,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 28,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1920:115.5:1:1]]-[[damage:max:1920:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 1920,
+            "baseMax": 1920,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 29,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1968:115.5:1:1]]-[[damage:max:1968:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 1968,
+            "baseMax": 1968,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 30,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2015:115.5:1:1]]-[[damage:max:2015:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 2015,
+            "baseMax": 2015,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 31,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2063:115.5:1:1]]-[[damage:max:2063:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 2063,
+            "baseMax": 2063,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 32,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2111:115.5:1:1]]-[[damage:max:2111:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 2111,
+            "baseMax": 2111,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 33,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2158:115.5:1:1]]-[[damage:max:2158:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 2158,
+            "baseMax": 2158,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 34,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2206:115.5:1:1]]-[[damage:max:2206:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 2206,
+            "baseMax": 2206,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 35,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2253:115.5:1:1]]-[[damage:max:2253:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 2253,
+            "baseMax": 2253,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 36,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2301:115.5:1:1]]-[[damage:max:2301:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 2301,
+            "baseMax": 2301,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 37,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2349:115.5:1:1]]-[[damage:max:2349:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 2349,
+            "baseMax": 2349,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 38,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2396:115.5:1:1]]-[[damage:max:2396:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 2396,
+            "baseMax": 2396,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 39,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2444:115.5:1:1]]-[[damage:max:2444:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1405000011",
+            "effectGroupId": "140500001",
+            "baseMin": 2444,
+            "baseMax": 2444,
+            "attackRatioPercent": 115.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "140500001",
+            "name": "Bleed",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Bleed status",
+            "effect": "Taking Damage over Time from Bleed\n-<desc_point>60%</> Incoming Heal",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+            "effectLevel": 40,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Bleed",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_bleed.webp",
+              "id": "140500001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "1932",
+        "level": 1,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1933",
+        "level": 2,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1934",
+        "level": 3,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1935",
+        "level": 4,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1936",
+        "level": 5,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1937",
+        "level": 6,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1938",
+        "level": 7,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1939",
+        "level": 8,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1940",
+        "level": 9,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1941",
+        "level": 10,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "14050010",
+        "skillId": "14050010",
+        "name": "Drill Dart",
+        "description": "Absorbs 3% HP",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14050020",
+        "skillId": "14050020",
+        "name": "Drill Dart",
+        "description": "+2s Bleed duration",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14050030",
+        "skillId": "14050030",
+        "name": "Drill Dart",
+        "description": "+20% Skill Speed",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14050040",
+        "skillId": "14050040",
+        "name": "Drill Dart",
+        "description": "Multi-Hit on hit",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14050050",
+        "skillId": "14050050",
+        "name": "Drill Dart",
+        "description": "Activates [Drill Dart] 1 extra time",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 5,
+    "classes": [
+      {
+        "code": "ranger",
+        "name": "Ranger"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Drill Dart",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_005.webp",
+    "id": "14050000",
+    "entityType": "skill",
+    "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:112:115.5:1:1]]-[[damage:max:112:115.5:1:1]]</> Fire damage to up to 4 enemies within 4m of the target and restores 100 MP on landing a Critical Hit. Inflicts Bleed on targets, dealing <chat_combat>[[dot]]-[[dot]]</> Fire damage every 1s for 6s and reducing Incoming Heal by 60%.\n\nIncoming Heal reduction from [Drill Dart], [Debilitating Smash], and [Firestorm] does not stack.\n\n5 Stagger Gauge Damage"
+  }
+}

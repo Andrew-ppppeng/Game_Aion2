@@ -1,0 +1,1497 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/13710000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "13710000",
+    "name": "Heightened Sixth Sense",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+    "kind": "passive",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": []
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "relation": "anyone",
+      "shape": {
+        "code": "self"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "dagger",
+        "name": "Dagger"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137100001",
+            "name": "Heightened Sixth Sense",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion, HP, Max HP, restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>150</> HP\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heightened Sixth Sense",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+              "id": "137100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "1465",
+        "level": 1,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1466",
+        "level": 2,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1467",
+        "level": 3,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1468",
+        "level": 4,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1469",
+        "level": 5,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1470",
+        "level": 6,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1471",
+        "level": 7,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1472",
+        "level": 8,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1473",
+        "level": 9,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1474",
+        "level": 10,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "passive",
+    "kindName": "Passive",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "classes": [
+      {
+        "code": "assassin",
+        "name": "Assassin"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/passive"
+    ],
+    "name": "Heightened Sixth Sense",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_001.webp",
+    "id": "13710000",
+    "entityType": "skill",
+    "description": "Increases the caster's Evasion by 200 and HP by <chat_combat>150</>. Increases Max HP by an extra <chat_combat>6%</> and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s"
+  }
+}

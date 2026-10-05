@@ -1,0 +1,41 @@
+NotMeter es una herramienta comunitaria para registros de combate y clasificaciones de AION 2. Empieza por la [web del desarrollador](https://notmeter.com/) para identificar el proyecto y su distribución. La búsqueda de personajes distingue Corea, Taiwán y Global; esa opción por sí sola no demuestra que todas las versiones de escritorio funcionen con el parche Global actual.
+
+<h2 id="source-and-global-support">Comprueba la fuente y la compatibilidad con Global</h2>
+
+La web enlaza al [repositorio de versiones de Not4You-Dev](https://github.com/Not4You-Dev/NotMeter-Releases/releases). En esta revisión figura **v1.0.246**, publicada el 29 de agosto de 2026, como última versión. Su descripción no explica la compatibilidad con Global. Sigue el destino actual desde la web del desarrollador, sin asumir que otro repositorio antiguo con un nombre parecido sigue siendo el canal activo.
+
+Antes de utilizar una versión de escritorio, anota su número y consulta la información actual del desarrollador para tu región y parche. Esta guía no ha ejecutado el programa ni probado la captura en una sesión Global. Que funcione la búsqueda web, exista un ZIP y funcione la superposición de combate son comprobaciones distintas.
+
+<h2 id="maintainer-installation">Qué indican las instrucciones de instalación</h2>
+
+El desarrollador presenta esta secuencia para Windows:
+
+1. Instalar Npcap si todavía no está instalado.
+2. Descargar el ZIP de NotMeter desde el enlace de su web.
+3. Extraer el ZIP y ejecutar `NotMeter.exe`.
+
+[La web de Npcap](https://npcap.com/) lo describe como una biblioteca y un controlador de captura de red para Windows. Lee sus requisitos actuales y las instrucciones del desarrollador antes de elegir una versión del controlador. El instalador enlazado por NotMeter puede diferir del más reciente de Npcap; ser más nuevo no demuestra compatibilidad probada.
+
+Estos son los pasos publicados por el proyecto, no una instalación reproducida por esta web. Si las instrucciones o una solicitud de permisos difieren de la documentación, consulta el motivo con el desarrollador antes de cambiar ajustes del juego o de seguridad. No necesitas credenciales de NC para leer las páginas públicas enlazadas aquí.
+
+<h2 id="read-combat-records">Interpreta DPS y nDPS con contexto</h2>
+
+La interfaz pública distingue DPS de nDPS y describe la clasificación nDPS como ajustada por la contribución de los beneficios del grupo. Ofrece filtros de mazmorra, jefe, dificultad, intervalo de CP y periodo, además de detalles como daño total, duración y contribución de habilidades. Son métricas de la herramienta, no una evaluación de equilibrio de clases realizada por NC.
+
+Para comparar con sentido, anota el encuentro, la configuración y el resultado antes de mirar la cifra principal. La duración del combate, una mecánica de movimiento, otro grupo o el tiempo dedicado a recuperar a un aliado pueden cambiar el resultado. Compara varios intentos parecidos y después modifica un solo aspecto controlable de tu configuración. Un registro aislado no sirve como objetivo universal para subir de nivel o curar.
+
+<GuideVisual id="workflow" />
+
+<h2 id="missing-records">Si falta una búsqueda o un registro</h2>
+
+Distingue tres problemas: la búsqueda de personajes no carga, la herramienta de escritorio no registra combate o una pelea registrada no aparece en la clasificación pública. Cada uno requiere información diferente. Para una búsqueda, comprueba región, servidor y nombre exacto. Para la captura, comunica el parche y la versión de la herramienta. Para una clasificación, lee los criterios actuales de publicación y actualización.
+
+Un panel vacío no demuestra daño cero, ausencia de jugadores ni una clase incompatible. Guarda el error exacto y la hora. Utiliza el contacto enlazado por el desarrollador y no envíes contraseñas ni códigos de autenticación. Evita cambiar varios ajustes a la vez: perderías la información necesaria para saber qué modificación tuvo efecto.
+
+<h2 id="nc-policy">¿NotMeter tiene aprobación oficial?</h2>
+
+No hemos verificado una aprobación de NC para NotMeter. La [política de funcionamiento Global](https://www.plaync.com/policy/operation/aion2global/en) sanciona programas o dispositivos que eluden protecciones o interfieren en el servicio normal. Esa redacción general no clasifica esta herramienta por nombre. Para decidir sobre tu cuenta, consulta a NC y su política Global vigente; una explicación técnica del desarrollador no demuestra permiso del editor.
+
+Para mejorar una configuración sin depender de una cifra de clasificación, revisa habilidades desbloqueadas, opciones equipadas y una secuencia manual reproducible en la [guía de builds](/builds).
+
+<GuideNext slug="builds" />

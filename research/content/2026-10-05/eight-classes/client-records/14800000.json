@@ -1,0 +1,1497 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/14800000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "14800000",
+    "name": "Hunter's Soul",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+    "kind": "passive",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": []
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "relation": "anyone",
+      "shape": {
+        "code": "self"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "bow",
+        "name": "Bow"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:344:53.8:1:1]]-[[damage:max:344:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:386:53.8:1:1]]-[[damage:max:386:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:435:53.8:1:1]]-[[damage:max:435:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:476:53.8:1:1]]-[[damage:max:476:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:507:53.8:1:1]]-[[damage:max:507:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:529:53.8:1:1]]-[[damage:max:529:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:559:53.8:1:1]]-[[damage:max:559:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:589:53.8:1:1]]-[[damage:max:589:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:620:53.8:1:1]]-[[damage:max:620:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:650:53.8:1:1]]-[[damage:max:650:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:672:53.8:1:1]]-[[damage:max:672:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:694:53.8:1:1]]-[[damage:max:694:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:717:53.8:1:1]]-[[damage:max:717:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:739:53.8:1:1]]-[[damage:max:739:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:761:53.8:1:1]]-[[damage:max:761:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:783:53.8:1:1]]-[[damage:max:783:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:805:53.8:1:1]]-[[damage:max:805:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:827:53.8:1:1]]-[[damage:max:827:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:850:53.8:1:1]]-[[damage:max:850:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:872:53.8:1:1]]-[[damage:max:872:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:894:53.8:1:1]]-[[damage:max:894:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:916:53.8:1:1]]-[[damage:max:916:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:938:53.8:1:1]]-[[damage:max:938:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:961:53.8:1:1]]-[[damage:max:961:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:983:53.8:1:1]]-[[damage:max:983:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:1005:53.8:1:1]]-[[damage:max:1005:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:1027:53.8:1:1]]-[[damage:max:1027:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:1049:53.8:1:1]]-[[damage:max:1049:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:1072:53.8:1:1]]-[[damage:max:1072:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:1094:53.8:1:1]]-[[damage:max:1094:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:1116:53.8:1:1]]-[[damage:max:1116:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:1138:53.8:1:1]]-[[damage:max:1138:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:1160:53.8:1:1]]-[[damage:max:1160:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:1183:53.8:1:1]]-[[damage:max:1183:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:1205:53.8:1:1]]-[[damage:max:1205:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:1227:53.8:1:1]]-[[damage:max:1227:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:1249:53.8:1:1]]-[[damage:max:1249:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:1271:53.8:1:1]]-[[damage:max:1271:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:1294:53.8:1:1]]-[[damage:max:1294:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Has a 50% chance to deal <chat_combat>[[damage:min:1316:53.8:1:1]]-[[damage:max:1316:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "148000001",
+            "name": "Hunter's Soul",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage on Critical Hit",
+            "effect": "Deals extra Wind damage on Critical Hit",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Hunter's Soul",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+              "id": "148000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "2103",
+        "level": 1,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2104",
+        "level": 2,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2105",
+        "level": 3,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2106",
+        "level": 4,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2107",
+        "level": 5,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2108",
+        "level": 6,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2109",
+        "level": 7,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2110",
+        "level": 8,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2111",
+        "level": 9,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2112",
+        "level": 10,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "passive",
+    "kindName": "Passive",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "classes": [
+      {
+        "code": "ranger",
+        "name": "Ranger"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/passive"
+    ],
+    "name": "Hunter's Soul",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_007.webp",
+    "id": "14800000",
+    "entityType": "skill",
+    "description": "Has a 50% chance to deal <chat_combat>[[damage:min:344:53.8:1:1]]-[[damage:max:344:53.8:1:1]]</> Wind damage on a Critical Hit.\n\nCooldown: 1s"
+  }
+}

@@ -1,0 +1,1210 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/15050000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "15050000",
+    "name": "Blaze",
+    "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_005.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "15050010",
+        "description": "Absorbs 3% HP",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15050020",
+        "description": "+50% MP restored",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15050030",
+        "description": "Delayed Damage after 3s",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15050040",
+        "description": "Multi-Hit on hit",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15050050",
+        "description": "-3s [Wish of Concentration] cooldown on hit",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Mobile</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [
+      {
+        "id": "15000004",
+        "target": {
+          "code": "target"
+        },
+        "type": {
+          "code": "hasabnormalgroupid"
+        },
+        "description": "Fire Mark Target",
+        "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_002.webp",
+        "abnormalGroupId": 157100071
+      }
+    ],
+    "requiredWeapons": [
+      {
+        "code": "magicbook",
+        "name": "Spellbook"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:198:193.2:1:1]]-[[damage:max:198:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 198,
+            "baseMax": 198,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:282:193.2:1:1]]-[[damage:max:282:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 282,
+            "baseMax": 282,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:366:193.2:1:1]]-[[damage:max:366:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 366,
+            "baseMax": 366,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:492:193.2:1:1]]-[[damage:max:492:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 492,
+            "baseMax": 492,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:647:193.2:1:1]]-[[damage:max:647:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 647,
+            "baseMax": 647,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:831:193.2:1:1]]-[[damage:max:831:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 831,
+            "baseMax": 831,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:986:193.2:1:1]]-[[damage:max:986:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 986,
+            "baseMax": 986,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1141:193.2:1:1]]-[[damage:max:1141:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 1141,
+            "baseMax": 1141,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1296:193.2:1:1]]-[[damage:max:1296:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 1296,
+            "baseMax": 1296,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1451:193.2:1:1]]-[[damage:max:1451:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 1451,
+            "baseMax": 1451,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1635:193.2:1:1]]-[[damage:max:1635:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 1635,
+            "baseMax": 1635,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1790:193.2:1:1]]-[[damage:max:1790:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 1790,
+            "baseMax": 1790,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1903:193.2:1:1]]-[[damage:max:1903:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 1903,
+            "baseMax": 1903,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1988:193.2:1:1]]-[[damage:max:1988:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 1988,
+            "baseMax": 1988,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2101:193.2:1:1]]-[[damage:max:2101:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 2101,
+            "baseMax": 2101,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2214:193.2:1:1]]-[[damage:max:2214:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 2214,
+            "baseMax": 2214,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2327:193.2:1:1]]-[[damage:max:2327:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 2327,
+            "baseMax": 2327,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2440:193.2:1:1]]-[[damage:max:2440:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 2440,
+            "baseMax": 2440,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2524:193.2:1:1]]-[[damage:max:2524:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 2524,
+            "baseMax": 2524,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2608:193.2:1:1]]-[[damage:max:2608:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 2608,
+            "baseMax": 2608,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2692:193.2:1:1]]-[[damage:max:2692:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 2692,
+            "baseMax": 2692,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2776:193.2:1:1]]-[[damage:max:2776:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 2776,
+            "baseMax": 2776,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2860:193.2:1:1]]-[[damage:max:2860:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 2860,
+            "baseMax": 2860,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2944:193.2:1:1]]-[[damage:max:2944:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 2944,
+            "baseMax": 2944,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3028:193.2:1:1]]-[[damage:max:3028:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 3028,
+            "baseMax": 3028,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3112:193.2:1:1]]-[[damage:max:3112:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 3112,
+            "baseMax": 3112,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3196:193.2:1:1]]-[[damage:max:3196:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 3196,
+            "baseMax": 3196,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3280:193.2:1:1]]-[[damage:max:3280:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 3280,
+            "baseMax": 3280,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3364:193.2:1:1]]-[[damage:max:3364:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 3364,
+            "baseMax": 3364,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3448:193.2:1:1]]-[[damage:max:3448:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 3448,
+            "baseMax": 3448,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3532:193.2:1:1]]-[[damage:max:3532:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 3532,
+            "baseMax": 3532,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3616:193.2:1:1]]-[[damage:max:3616:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 3616,
+            "baseMax": 3616,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3700:193.2:1:1]]-[[damage:max:3700:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 3700,
+            "baseMax": 3700,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3784:193.2:1:1]]-[[damage:max:3784:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 3784,
+            "baseMax": 3784,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3868:193.2:1:1]]-[[damage:max:3868:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 3868,
+            "baseMax": 3868,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3952:193.2:1:1]]-[[damage:max:3952:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 3952,
+            "baseMax": 3952,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4036:193.2:1:1]]-[[damage:max:4036:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 4036,
+            "baseMax": 4036,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4120:193.2:1:1]]-[[damage:max:4120:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 4120,
+            "baseMax": 4120,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4204:193.2:1:1]]-[[damage:max:4204:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 4204,
+            "baseMax": 4204,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4289:193.2:1:1]]-[[damage:max:4289:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1505000011",
+            "effectGroupId": "150500001",
+            "baseMin": 4289,
+            "baseMax": 4289,
+            "attackRatioPercent": 193.2
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "2479",
+        "level": 1,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2480",
+        "level": 2,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2481",
+        "level": 3,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2482",
+        "level": 4,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2483",
+        "level": 5,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2484",
+        "level": 6,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2485",
+        "level": 7,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2486",
+        "level": 8,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2487",
+        "level": 9,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2488",
+        "level": 10,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "15050010",
+        "skillId": "15050010",
+        "name": "Blaze",
+        "description": "Absorbs 3% HP",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15050020",
+        "skillId": "15050020",
+        "name": "Blaze",
+        "description": "+50% MP restored",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15050030",
+        "skillId": "15050030",
+        "name": "Blaze",
+        "description": "Delayed Damage after 3s",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15050040",
+        "skillId": "15050040",
+        "name": "Blaze",
+        "description": "Multi-Hit on hit",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15050050",
+        "skillId": "15050050",
+        "name": "Blaze",
+        "description": "-3s [Wish of Concentration] cooldown on hit",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 5,
+    "classes": [
+      {
+        "code": "sorcerer",
+        "name": "Sorcerer"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Blaze",
+    "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_005.webp",
+    "id": "15050000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:198:193.2:1:1]]-[[damage:max:198:193.2:1:1]]</> Fire damage to a target afflicted with Fire Mark within 20m and restores 100 MP.\n\n7 Stagger Gauge Damage"
+  }
+}

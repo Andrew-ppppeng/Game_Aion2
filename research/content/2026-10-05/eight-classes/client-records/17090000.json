@@ -1,0 +1,1637 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/17090000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "17090000",
+    "name": "Light of Regeneration",
+    "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "17090010",
+        "description": "+5% Defense while healing",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17090020",
+        "description": "+20% amount healed when HP is 50% or less",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17090030",
+        "description": "+5% Incoming Heal during healing",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17090040",
+        "description": "+5% Move Speed during healing",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17090050",
+        "description": "+5% PvE Damage Tolerance and +2.5% PvP Damage Tolerance during healing",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Nontarget | Mobile</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "relation": "allies",
+      "shape": {
+        "code": "circle"
+      },
+      "reachMeters": 40,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "mace",
+        "name": "Mace"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 2,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 3,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 4,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 5,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 6,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 7,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 8,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 9,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 10,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 11,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 12,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 13,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 14,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 15,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 16,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 17,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 18,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 19,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 20,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 21,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 22,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 23,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 24,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 25,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 26,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 27,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 28,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 29,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 30,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 31,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 32,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 33,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 34,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 35,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 36,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 37,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 38,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 39,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "170900001",
+            "name": "Light of Regeneration",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Heals HP over Time",
+            "effect": "<desc_point>[[hot]]-[[hot]]</> Heal over Time",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+            "effectLevel": 40,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Light of Regeneration",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+              "id": "170900001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "3602",
+        "level": 1,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3603",
+        "level": 2,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3604",
+        "level": 3,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3605",
+        "level": 4,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3606",
+        "level": 5,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3607",
+        "level": 6,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3608",
+        "level": 7,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3609",
+        "level": 8,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3610",
+        "level": 9,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3611",
+        "level": 10,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "17090010",
+        "skillId": "17090010",
+        "name": "Light of Regeneration",
+        "description": "+5% Defense while healing",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17090020",
+        "skillId": "17090020",
+        "name": "Light of Regeneration",
+        "description": "+20% amount healed when HP is 50% or less",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17090030",
+        "skillId": "17090030",
+        "name": "Light of Regeneration",
+        "description": "+5% Incoming Heal during healing",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17090040",
+        "skillId": "17090040",
+        "name": "Light of Regeneration",
+        "description": "+5% Move Speed during healing",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17090050",
+        "skillId": "17090050",
+        "name": "Light of Regeneration",
+        "description": "+5% PvE Damage Tolerance and +2.5% PvP Damage Tolerance during healing",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "cooldownSeconds": 30,
+    "classes": [
+      {
+        "code": "cleric",
+        "name": "Cleric"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Light of Regeneration",
+    "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_009.webp",
+    "id": "17090000",
+    "entityType": "skill",
+    "description": "Restores <chat_combat>[[hot]]-[[hot]]</> HP every 2s for 30s to the caster and party members within 40m."
+  }
+}

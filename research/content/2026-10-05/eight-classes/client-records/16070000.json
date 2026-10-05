@@ -1,0 +1,2202 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/16070000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "16070000",
+    "name": "Soul's Cry",
+    "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 36,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "16070010",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16070020",
+        "description": "Inflicts Root for 5s",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16070030",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16070040",
+        "description": "-10s cooldown",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16070050",
+        "description": "+2s Fear duration",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 150
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "orb",
+        "name": "Orb"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:246:100:1:1]]-[[damage:max:246:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 246,
+            "baseMax": 246,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:324:100:1:1]]-[[damage:max:324:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 324,
+            "baseMax": 324,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:417:100:1:1]]-[[damage:max:417:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 417,
+            "baseMax": 417,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:495:100:1:1]]-[[damage:max:495:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 495,
+            "baseMax": 495,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:573:100:1:1]]-[[damage:max:573:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 573,
+            "baseMax": 573,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:651:100:1:1]]-[[damage:max:651:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 651,
+            "baseMax": 651,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:729:100:1:1]]-[[damage:max:729:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 729,
+            "baseMax": 729,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:822:100:1:1]]-[[damage:max:822:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 822,
+            "baseMax": 822,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:900:100:1:1]]-[[damage:max:900:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 900,
+            "baseMax": 900,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:957:100:1:1]]-[[damage:max:957:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 957,
+            "baseMax": 957,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:999:100:1:1]]-[[damage:max:999:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 999,
+            "baseMax": 999,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1056:100:1:1]]-[[damage:max:1056:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1056,
+            "baseMax": 1056,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1113:100:1:1]]-[[damage:max:1113:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1113,
+            "baseMax": 1113,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1170:100:1:1]]-[[damage:max:1170:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1170,
+            "baseMax": 1170,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1227:100:1:1]]-[[damage:max:1227:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1227,
+            "baseMax": 1227,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1269:100:1:1]]-[[damage:max:1269:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1269,
+            "baseMax": 1269,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1311:100:1:1]]-[[damage:max:1311:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1311,
+            "baseMax": 1311,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1353:100:1:1]]-[[damage:max:1353:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1353,
+            "baseMax": 1353,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1395:100:1:1]]-[[damage:max:1395:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1395,
+            "baseMax": 1395,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1437:100:1:1]]-[[damage:max:1437:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1437,
+            "baseMax": 1437,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1479:100:1:1]]-[[damage:max:1479:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1479,
+            "baseMax": 1479,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1521:100:1:1]]-[[damage:max:1521:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1521,
+            "baseMax": 1521,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1563:100:1:1]]-[[damage:max:1563:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1563,
+            "baseMax": 1563,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1605:100:1:1]]-[[damage:max:1605:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1605,
+            "baseMax": 1605,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1647:100:1:1]]-[[damage:max:1647:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1647,
+            "baseMax": 1647,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1689:100:1:1]]-[[damage:max:1689:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1689,
+            "baseMax": 1689,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1731:100:1:1]]-[[damage:max:1731:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1731,
+            "baseMax": 1731,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1773:100:1:1]]-[[damage:max:1773:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1773,
+            "baseMax": 1773,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1815:100:1:1]]-[[damage:max:1815:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1815,
+            "baseMax": 1815,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1857:100:1:1]]-[[damage:max:1857:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1857,
+            "baseMax": 1857,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1899:100:1:1]]-[[damage:max:1899:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1899,
+            "baseMax": 1899,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1941:100:1:1]]-[[damage:max:1941:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1941,
+            "baseMax": 1941,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1983:100:1:1]]-[[damage:max:1983:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 1983,
+            "baseMax": 1983,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2025:100:1:1]]-[[damage:max:2025:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 2025,
+            "baseMax": 2025,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2067:100:1:1]]-[[damage:max:2067:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 2067,
+            "baseMax": 2067,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2109:100:1:1]]-[[damage:max:2109:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 2109,
+            "baseMax": 2109,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2151:100:1:1]]-[[damage:max:2151:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 2151,
+            "baseMax": 2151,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2193:100:1:1]]-[[damage:max:2193:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 2193,
+            "baseMax": 2193,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2235:100:1:1]]-[[damage:max:2235:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 2235,
+            "baseMax": 2235,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2277:100:1:1]]-[[damage:max:2277:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1607000011",
+            "effectGroupId": "160700001",
+            "baseMin": 2277,
+            "baseMax": 2277,
+            "attackRatioPercent": 100
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "162100001",
+            "name": "Fear",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Fear status",
+            "effect": "Fear status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Fear",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+              "id": "162100001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "3084",
+        "level": 1,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3085",
+        "level": 2,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3086",
+        "level": 3,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3087",
+        "level": 4,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3088",
+        "level": 5,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3089",
+        "level": 6,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3090",
+        "level": 7,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3091",
+        "level": 8,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3092",
+        "level": 9,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3093",
+        "level": 10,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 36,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "16070010",
+        "skillId": "16070010",
+        "name": "Soul's Cry",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16070020",
+        "skillId": "16070020",
+        "name": "Soul's Cry",
+        "description": "Inflicts Root for 5s",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16070030",
+        "skillId": "16070030",
+        "name": "Soul's Cry",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16070040",
+        "skillId": "16070040",
+        "name": "Soul's Cry",
+        "description": "-10s cooldown",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16070050",
+        "skillId": "16070050",
+        "name": "Soul's Cry",
+        "description": "+2s Fear duration",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 45,
+    "classes": [
+      {
+        "code": "elementalist",
+        "name": "Spiritmaster"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Soul's Cry",
+    "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_007.webp",
+    "id": "16070000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:246:100:1:1]]-[[damage:max:246:100:1:1]]</> damage to a target within 20m, with a 70% chance to inflict Fear for 5s.\n100% chance to inflict Fear on NPC targets. \n\n15 Stagger Gauge Damage"
+  }
+}

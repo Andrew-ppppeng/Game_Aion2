@@ -1,0 +1,55 @@
+{
+  "title": "AION 2 プレイヤー数：SteamDB確認記録",
+  "description": "AION2のSteamプレイヤー数を日付付きで確認。同時接続数と最高値の違い、SteamChartsとSteamDBの利用状況、全クライアント合計への限界を説明します。",
+  "summary": "2026年10月3日15:48 UTCの確認時、SteamDBには同時接続146,250人、記録上の最高値171,530人が表示されました。第三者サイトの確認記録です。最新の値は参照元で確認してください。",
+  "quickAnswer": "2026年10月3日15:48 UTCの確認時、SteamDBはSteam同時接続146,250人、記録上の最高171,530人を表示していました。App 3393110の日時付き記録であり、PURPLEや全プレイヤー数を含むリアルタイム集計ではありません。",
+  "toc": [
+    {
+      "id": "steam-snapshot",
+      "title": "Steam人数の確認記録"
+    },
+    {
+      "id": "what-count-means",
+      "title": "数値が示す範囲"
+    },
+    {
+      "id": "steamcharts-and-steamdb",
+      "title": "SteamChartsとSteamDB"
+    },
+    {
+      "id": "compare-over-time",
+      "title": "同じ集計条件で比較"
+    },
+    {
+      "id": "choose-a-server",
+      "title": "人数とサーバー選び"
+    }
+  ],
+  "visuals": {
+    "workflow": {
+      "title": "人数の比較条件をそろえる",
+      "caption": "データを読むための編集上の手順です。別クライアントや各サーバーの人数を推計する図ではありません。",
+      "steps": [
+        {
+          "label": "アプリを特定",
+          "description": "AION2とSteamアプリ3393110であることを先に確認します。"
+        },
+        {
+          "label": "指標を区別",
+          "description": "現在の同時接続数、一定期間の最高値、過去最高値を分けます。"
+        },
+        {
+          "label": "時刻を保存",
+          "description": "参照元、確認時刻、タイムゾーンを各観測とともに記録します。"
+        },
+        {
+          "label": "状況を比較",
+          "description": "同じ時間範囲で比べ、アクセスやメンテナンスの告知を確認します。"
+        }
+      ]
+    }
+  },
+  "inlineNext": [
+    "server"
+  ]
+}

@@ -1,0 +1,88 @@
+How Our AION 2 Database Works – Methodology | MetaBot.GG
+How we read the AION 2 game files
+Everything in this section comes from the AION 2 global client, build 0.0.4387.0. Here is what that covers, what we calculate on top, and what no game-file database can know.
+Read More
+Read Less
+MetaBot Desktop
+Free · Windows 10+
+Guides, live overlays & auto match tracking — free on your PC.
+In-game overlays
+Live stats and tips without alt-tabbing
+Match tracking
+Your games recorded and broken down
+Desktop tools
+Planners, maps and tier lists in one app
+Download Free
+More info
+Validated by Overwolf — anti-cheat safe
+What the database contains
+Data
+Count
+Items
+6,671
+Gear pieces
+2,024
+Class skills
+280
+Monsters
+3,670
+Bosses
+48
+Dungeons
+219
+Quests
+1,043
+Crafting recipes
+512
+Zones
+333
+Hidden Cubes
+206
+Monster drop entries
+117,291
+Titles
+528
+Wings
+28
+Mounts
+207
+Skins
+1,461
+Where the data comes from
+We read the data tables shipped inside the AION 2 global client (build 0.0.4387.0) – the same files the game itself loads – and convert them into a database. Nothing comes from the Korean or Taiwanese versions, which are months ahead and use different numbers, and nothing is copied from other fan sites.
+Names and translations
+Item, skill, monster and place names are the game's own official text. The global client ships English, German, Spanish, French, Korean and Brazilian Portuguese; in those languages you see the official in-game names. Polish, Turkish, Vietnamese and Chinese pages use the official English names, so they always match what you type into the game.
+What we calculate
+Numbers marked Calculated are derived from game data, not read from it. Expected enhancement attempts add the game's per-failure bonus to each success chance; the lucky, typical and unlucky ranges are 4,000 simulated runs. Kills for a 90% chance use 1 − (1 − p)^n on the exact drop rate. Crafting totals expand every intermediate recipe down to raw materials.
+What the client does not contain
+Some things live only on the game servers: monster HP and combat stats, live market prices, player rankings and server populations. We never estimate them. Player data – rankings, character lookup and a class tier list based on real players – will be added once the official global API is live.
+Maps and spawn positions
+The maps use the game's own world-map art. Spawn points, Kibelisks, Hidden Cubes and dungeon entrances are placed with the client's own map calibration, and we check the result against the zone borders drawn in the game. Where a Hidden Cube can appear in several spots, every candidate spot is shown.
+Armory, leaderboards and class meta
+How the player data is collected and what the numbers mean.
+Character data comes from the official public AION 2 character search and character profile pages, the same pages anyone can open on the official site. MetaBot reads them at a modest rate through one rate-limited client, stores the reported values (level, combat power, item level, equipment, skills, Daevanion nodes, titles, wings, pets) and never recomputes combat power: its formula is not in the game files.
+Profiles are re-read on a schedule: the top 100 per class and region daily, the top 1000 every few days, other level-45 characters about every 10 days, and any character you look up in the armory on demand. Leaderboards refresh every 30 minutes; class meta is recomputed every 6 hours.
+Leaderboards rank level-45 characters whose profile was read in the last 14 days, by reported combat power. Class meta ("most used by top players") uses the top 1000 per class and region; each pick rate is the share of those characters with that skill, stigma, item, node, title, wing or pet. Pick rates describe what top players use, not what is strongest.
+A class's meta stays hidden until 50 characters are behind it; below 200 it is marked "Low sample". A gear slot needs 30 items behind it, a region split 100 characters, and a server leaderboard is indexed from 200 ranked characters. Only characters we have indexed are counted, so these are tracked characters, not official rankings.
+Want your character removed? Contact us through the site's contact page with the region, server and character name; hidden characters are excluded from profiles, leaderboards and every aggregate. Individual character pages are not indexed by search engines.
+AION 2 leaderboards
+·
+Armory: character search
+Why this matters
+Most AION 2 sites are built from the Korean servers, which run a different patch. Reading the global client means every name, drop chance and enhancement rate here is what players in North America and Europe actually get. When the client changes with a patch, we re-read it and update every page.
+See Also
+AION 2
+Item Database
+Enhancement Calculator
+Interactive Map
+🔍
+Help us maintain accuracy!
+If you notice incorrect stats, missing data, or any issues, your feedback directly improves the quality of our data for the entire community.
+Report an Issue
+Methodology FAQ
+Is this the Korean or the global version of AION 2?
+The global version: every value is read from the global client, build 0.0.4387.0.
+Why are monster HP and boss mechanics missing?
+They are stored on the game servers, not in the client files, so no database built from game files can show real values. We would rather show nothing than a guess.
+How often is the data updated?
+Whenever a patch changes the global client. The build number at the bottom of each page shows which client version the data comes from.

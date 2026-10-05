@@ -1,0 +1,2204 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/12090000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "12090000",
+    "name": "Punishment",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 14,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 35,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 38,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "12090010",
+        "description": "Absorbs 10% HP",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12090020",
+        "description": "Inflicts Damage over Time to target on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12090030",
+        "description": "+30% Skill Speed",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12090040",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12090050",
+        "description": "Ignores Block and Evasion and lands as a Critical Hit",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Charge Skill</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "circle"
+      },
+      "reachMeters": 4,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 200
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "sword",
+        "name": "Longsword"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1394:430.5:1:1]]-[[damage:max:4184:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 1394,
+            "baseMax": 1394,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1795:430.5:1:1]]-[[damage:max:5385:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 1795,
+            "baseMax": 1795,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2130:430.5:1:1]]-[[damage:max:6392:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 2130,
+            "baseMax": 2130,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2466:430.5:1:1]]-[[damage:max:7400:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 2466,
+            "baseMax": 2466,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2802:430.5:1:1]]-[[damage:max:8407:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 2802,
+            "baseMax": 2802,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3138:430.5:1:1]]-[[damage:max:9415:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 3138,
+            "baseMax": 3138,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3538:430.5:1:1]]-[[damage:max:10616:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 3538,
+            "baseMax": 3538,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3874:430.5:1:1]]-[[damage:max:11623:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 3874,
+            "baseMax": 3874,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4119:430.5:1:1]]-[[damage:max:12359:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 4119,
+            "baseMax": 4119,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4300:430.5:1:1]]-[[damage:max:12902:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 4300,
+            "baseMax": 4300,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4546:430.5:1:1]]-[[damage:max:13638:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 4546,
+            "baseMax": 4546,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4791:430.5:1:1]]-[[damage:max:14374:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 4791,
+            "baseMax": 4791,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:5036:430.5:1:1]]-[[damage:max:15110:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 5036,
+            "baseMax": 5036,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:5282:430.5:1:1]]-[[damage:max:15846:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 5282,
+            "baseMax": 5282,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:5463:430.5:1:1]]-[[damage:max:16389:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 5463,
+            "baseMax": 5463,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:5643:430.5:1:1]]-[[damage:max:16931:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 5643,
+            "baseMax": 5643,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:5824:430.5:1:1]]-[[damage:max:17473:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 5824,
+            "baseMax": 5824,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:6005:430.5:1:1]]-[[damage:max:18016:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 6005,
+            "baseMax": 6005,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:6186:430.5:1:1]]-[[damage:max:18558:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 6186,
+            "baseMax": 6186,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:6367:430.5:1:1]]-[[damage:max:19101:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 6367,
+            "baseMax": 6367,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:6547:430.5:1:1]]-[[damage:max:19643:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 6547,
+            "baseMax": 6547,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:6728:430.5:1:1]]-[[damage:max:20186:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 6728,
+            "baseMax": 6728,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:6909:430.5:1:1]]-[[damage:max:20728:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 6909,
+            "baseMax": 6909,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:7090:430.5:1:1]]-[[damage:max:21271:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 7090,
+            "baseMax": 7090,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:7271:430.5:1:1]]-[[damage:max:21813:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 7271,
+            "baseMax": 7271,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:7451:430.5:1:1]]-[[damage:max:22355:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 7451,
+            "baseMax": 7451,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:7632:430.5:1:1]]-[[damage:max:22898:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 7632,
+            "baseMax": 7632,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:7813:430.5:1:1]]-[[damage:max:23440:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 7813,
+            "baseMax": 7813,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:7994:430.5:1:1]]-[[damage:max:23983:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 7994,
+            "baseMax": 7994,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:8175:430.5:1:1]]-[[damage:max:24525:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 8175,
+            "baseMax": 8175,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:8356:430.5:1:1]]-[[damage:max:25068:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 8356,
+            "baseMax": 8356,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:8536:430.5:1:1]]-[[damage:max:25610:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 8536,
+            "baseMax": 8536,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:8717:430.5:1:1]]-[[damage:max:26152:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 8717,
+            "baseMax": 8717,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:8898:430.5:1:1]]-[[damage:max:26695:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 8898,
+            "baseMax": 8898,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:9079:430.5:1:1]]-[[damage:max:27237:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 9079,
+            "baseMax": 9079,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:9260:430.5:1:1]]-[[damage:max:27780:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 9260,
+            "baseMax": 9260,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:9440:430.5:1:1]]-[[damage:max:28322:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 9440,
+            "baseMax": 9440,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:9621:430.5:1:1]]-[[damage:max:28865:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 9621,
+            "baseMax": 9621,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:9802:430.5:1:1]]-[[damage:max:29407:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 9802,
+            "baseMax": 9802,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:9983:430.5:1:1]]-[[damage:max:29949:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1209000011",
+            "effectGroupId": "120900001",
+            "baseMin": 9983,
+            "baseMax": 9983,
+            "attackRatioPercent": 430.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "120900001",
+            "name": "Executor",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Increases Accuracy, PvE Damage Boost, PvP Damage Boost",
+            "effect": "+<desc_point>200</> Accuracy\n+<desc_point>20%</> PvE Damage Boost\n+<desc_point>10%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Executor",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+              "id": "120900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "895",
+        "level": 1,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 14,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "896",
+        "level": 2,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "897",
+        "level": 3,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "898",
+        "level": 4,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "899",
+        "level": 5,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "900",
+        "level": 6,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "901",
+        "level": 7,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "902",
+        "level": 8,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "903",
+        "level": 9,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 35,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "904",
+        "level": 10,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 38,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "12090010",
+        "skillId": "12090010",
+        "name": "Punishment",
+        "description": "Absorbs 10% HP",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12090020",
+        "skillId": "12090020",
+        "name": "Punishment",
+        "description": "Inflicts Damage over Time to target on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12090030",
+        "skillId": "12090030",
+        "name": "Punishment",
+        "description": "+30% Skill Speed",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12090040",
+        "skillId": "12090040",
+        "name": "Punishment",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12090050",
+        "skillId": "12090050",
+        "name": "Punishment",
+        "description": "Ignores Block and Evasion and lands as a Critical Hit",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 30,
+    "classes": [
+      {
+        "code": "templar",
+        "name": "Templar"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Punishment",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_009.webp",
+    "id": "12090000",
+    "entityType": "skill",
+    "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1394:430.5:1:1]]-[[damage:max:4184:1291.5:1:1]]</> damage to up to 4 enemies within 4m of the target and grants the Executor effect to the caster for 20s.\nExecutor: Increases Accuracy by 200, PvE Damage Boost by 20%, and PvP Damage Boost by 10%\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage"
+  }
+}

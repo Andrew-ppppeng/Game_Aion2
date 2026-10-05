@@ -1,0 +1,1496 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/15780000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "15780000",
+    "name": "Grace of Enhancement",
+    "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+    "kind": "passive",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": []
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "shape": {
+        "code": "self"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "magicbook",
+        "name": "Spellbook"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:106:18:1:1]]-[[damage:max:106:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:120:18:1:1]]-[[damage:max:120:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:135:18:1:1]]-[[damage:max:135:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:152:18:1:1]]-[[damage:max:152:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:166:18:1:1]]-[[damage:max:166:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:177:18:1:1]]-[[damage:max:177:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:185:18:1:1]]-[[damage:max:185:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:195:18:1:1]]-[[damage:max:195:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:206:18:1:1]]-[[damage:max:206:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:216:18:1:1]]-[[damage:max:216:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:227:18:1:1]]-[[damage:max:227:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:235:18:1:1]]-[[damage:max:235:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:243:18:1:1]]-[[damage:max:243:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:250:18:1:1]]-[[damage:max:250:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:258:18:1:1]]-[[damage:max:258:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:266:18:1:1]]-[[damage:max:266:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:274:18:1:1]]-[[damage:max:274:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:282:18:1:1]]-[[damage:max:282:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:289:18:1:1]]-[[damage:max:289:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:297:18:1:1]]-[[damage:max:297:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:305:18:1:1]]-[[damage:max:305:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:313:18:1:1]]-[[damage:max:313:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:321:18:1:1]]-[[damage:max:321:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:329:18:1:1]]-[[damage:max:329:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:336:18:1:1]]-[[damage:max:336:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:344:18:1:1]]-[[damage:max:344:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:352:18:1:1]]-[[damage:max:352:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:360:18:1:1]]-[[damage:max:360:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:368:18:1:1]]-[[damage:max:368:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:376:18:1:1]]-[[damage:max:376:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:383:18:1:1]]-[[damage:max:383:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:391:18:1:1]]-[[damage:max:391:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:399:18:1:1]]-[[damage:max:399:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:407:18:1:1]]-[[damage:max:407:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:415:18:1:1]]-[[damage:max:415:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:423:18:1:1]]-[[damage:max:423:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:430:18:1:1]]-[[damage:max:430:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:438:18:1:1]]-[[damage:max:438:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:446:18:1:1]]-[[damage:max:446:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:454:18:1:1]]-[[damage:max:454:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "157800001",
+            "name": "Grace of Enhancement",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases PvE Damage Boost by 20% and PvP Damage Boost by 10% when MP is 25% or more, has a 50% chance to deal extra damage on landing an attack",
+            "effect": "+20% PvE Damage Boost when MP is 25% or more\n+10% PvP Damage Boost when MP is 25% or more\n50% chance to deal extra damage on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Grace of Enhancement",
+              "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+              "id": "157800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "2631",
+        "level": 1,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2632",
+        "level": 2,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2633",
+        "level": 3,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2634",
+        "level": 4,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2635",
+        "level": 5,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2636",
+        "level": 6,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2637",
+        "level": 7,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2638",
+        "level": 8,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2639",
+        "level": 9,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2640",
+        "level": 10,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "passive",
+    "kindName": "Passive",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "classes": [
+      {
+        "code": "sorcerer",
+        "name": "Sorcerer"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/passive"
+    ],
+    "name": "Grace of Enhancement",
+    "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_passive_007.webp",
+    "id": "15780000",
+    "entityType": "skill",
+    "description": "Increases the caster's PvE Damage Boost by 20% and PvP Damage Boost by 10% when the caster's MP is 25% or more, and has a 50% chance to deal <chat_combat>[[damage:min:106:18:1:1]]-[[damage:max:106:18:1:1]]</> damage on landing an attack.\n\nCooldown: 1s"
+  }
+}

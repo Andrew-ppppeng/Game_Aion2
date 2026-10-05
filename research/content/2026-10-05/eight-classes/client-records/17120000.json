@@ -1,0 +1,877 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/17120000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "17120000",
+    "name": "Radiant Recovery",
+    "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_012.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 36,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "17120010",
+        "description": "Removes up to 2 debuffs",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17120020",
+        "description": "+1 consecutive use",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17120030",
+        "description": "-3s cooldown",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17120040",
+        "description": "+10% Incoming Heal for 10s",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17120050",
+        "description": "+5% HP restored",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Nontarget | Mobile | Cleansing</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "relation": "allies",
+      "shape": {
+        "code": "circle"
+      },
+      "reachMeters": 40,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "mace",
+        "name": "Mace"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "3632",
+        "level": 1,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3633",
+        "level": 2,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3634",
+        "level": 3,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3635",
+        "level": 4,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3636",
+        "level": 5,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3637",
+        "level": 6,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3638",
+        "level": 7,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3639",
+        "level": 8,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3640",
+        "level": 9,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3641",
+        "level": 10,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 36,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "17120010",
+        "skillId": "17120010",
+        "name": "Radiant Recovery",
+        "description": "Removes up to 2 debuffs",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17120020",
+        "skillId": "17120020",
+        "name": "Radiant Recovery",
+        "description": "+1 consecutive use",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17120030",
+        "skillId": "17120030",
+        "name": "Radiant Recovery",
+        "description": "-3s cooldown",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17120040",
+        "skillId": "17120040",
+        "name": "Radiant Recovery",
+        "description": "+10% Incoming Heal for 10s",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17120050",
+        "skillId": "17120050",
+        "name": "Radiant Recovery",
+        "description": "+5% HP restored",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "cooldownSeconds": 12,
+    "classes": [
+      {
+        "code": "cleric",
+        "name": "Cleric"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Radiant Recovery",
+    "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_012.webp",
+    "id": "17120000",
+    "entityType": "skill",
+    "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP and removes 1 debuff for the caster and party members within 40m."
+  }
+}

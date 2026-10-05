@@ -1,0 +1,1883 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/16130000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "16130000",
+    "name": "Summon: Earth Spirit",
+    "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_013.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "16130010",
+        "description": "-50% MP Cost",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16130020",
+        "description": "+20% PvE Damage Tolerance and +10 PvP Damage Tolerance to Earth Spirit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16130030",
+        "description": "10% chance to activate skill when Earth Spirit lands attack",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16130040",
+        "description": "5% chance to restore 5% of Spirit HP when landing Earth Spirit attack",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16130050",
+        "description": "+20% Earth Spirit Stats",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<Unique>Mobile</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "mainself"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 150
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "orb",
+        "name": "Orb"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:247:135:1:1]]-[[damage:max:247:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:332:135:1:1]]-[[damage:max:332:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:437:135:1:1]]-[[damage:max:437:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:562:135:1:1]]-[[damage:max:562:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:668:135:1:1]]-[[damage:max:668:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:773:135:1:1]]-[[damage:max:773:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:878:135:1:1]]-[[damage:max:878:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:984:135:1:1]]-[[damage:max:984:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:1109:135:1:1]]-[[damage:max:1109:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:1215:135:1:1]]-[[damage:max:1215:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:1291:135:1:1]]-[[damage:max:1291:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:1348:135:1:1]]-[[damage:max:1348:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:1425:135:1:1]]-[[damage:max:1425:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:1502:135:1:1]]-[[damage:max:1502:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:1579:135:1:1]]-[[damage:max:1579:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:1656:135:1:1]]-[[damage:max:1656:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:1713:135:1:1]]-[[damage:max:1713:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:1769:135:1:1]]-[[damage:max:1769:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:1826:135:1:1]]-[[damage:max:1826:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:1883:135:1:1]]-[[damage:max:1883:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:1939:135:1:1]]-[[damage:max:1939:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:1996:135:1:1]]-[[damage:max:1996:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:2053:135:1:1]]-[[damage:max:2053:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:2110:135:1:1]]-[[damage:max:2110:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:2166:135:1:1]]-[[damage:max:2166:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:2223:135:1:1]]-[[damage:max:2223:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:2280:135:1:1]]-[[damage:max:2280:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:2336:135:1:1]]-[[damage:max:2336:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:2393:135:1:1]]-[[damage:max:2393:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:2450:135:1:1]]-[[damage:max:2450:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:2506:135:1:1]]-[[damage:max:2506:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:2563:135:1:1]]-[[damage:max:2563:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:2620:135:1:1]]-[[damage:max:2620:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:2677:135:1:1]]-[[damage:max:2677:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:2733:135:1:1]]-[[damage:max:2733:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:2790:135:1:1]]-[[damage:max:2790:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:2847:135:1:1]]-[[damage:max:2847:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:2903:135:1:1]]-[[damage:max:2903:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:2960:135:1:1]]-[[damage:max:2960:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:3017:135:1:1]]-[[damage:max:3017:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "167300011",
+            "name": "Spirit's Descent",
+            "kind": "buff",
+            "category": "buff",
+            "summary": "Has a chance to deal extra damage on attack",
+            "effect": "50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "buff",
+              "name": "Spirit's Descent",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_passive_003.webp",
+              "id": "167300011"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "3054",
+        "level": 1,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3055",
+        "level": 2,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3056",
+        "level": 3,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3057",
+        "level": 4,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3058",
+        "level": 5,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3059",
+        "level": 6,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3060",
+        "level": 7,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3061",
+        "level": 8,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3062",
+        "level": 9,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3063",
+        "level": 10,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "16130010",
+        "skillId": "16130010",
+        "name": "Summon: Earth Spirit",
+        "description": "-50% MP Cost",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16130020",
+        "skillId": "16130020",
+        "name": "Summon: Earth Spirit",
+        "description": "+20% PvE Damage Tolerance and +10 PvP Damage Tolerance to Earth Spirit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16130030",
+        "skillId": "16130030",
+        "name": "Summon: Earth Spirit",
+        "description": "10% chance to activate skill when Earth Spirit lands attack",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16130040",
+        "skillId": "16130040",
+        "name": "Summon: Earth Spirit",
+        "description": "5% chance to restore 5% of Spirit HP when landing Earth Spirit attack",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16130050",
+        "skillId": "16130050",
+        "name": "Summon: Earth Spirit",
+        "description": "+20% Earth Spirit Stats",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 15,
+    "classes": [
+      {
+        "code": "elementalist",
+        "name": "Spiritmaster"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Summon: Earth Spirit",
+    "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_013.webp",
+    "id": "16130000",
+    "entityType": "skill",
+    "description": "Summons an Earth Spirit.\nThe Earth Spirit uses a skill that deals <chat_combat>[[damage:min:247:135:1:1]]-[[damage:max:247:135:1:1]]</> Earth damage to a target within 20m and increases Enmity by <chat_combat>3750</>. Has a 30% chance to inflict Taunt for 2s if the target is a player.\nThe Earth Spirit fights alongside the caster using basic attacks, with a 10% chance to use its skill and increasing Enmity each time an attack lands. It is dismissed upon selecting the summon icon.\nEach skill level increases the Earth Spirit's Defense and HP by 2%.\n\n7 Stagger Gauge Damage\nSpirit Skill Cooldown: 3s"
+  }
+}

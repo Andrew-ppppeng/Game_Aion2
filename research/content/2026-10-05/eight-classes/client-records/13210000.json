@@ -1,0 +1,1904 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/13210000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "13210000",
+    "name": "Whirlwind Slice",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_019.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "13210010",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13210020",
+        "description": "Changes to AoE damage",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13210030",
+        "description": "+16m range",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13210040",
+        "description": "+20% Stun Chance",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13210050",
+        "description": "25% chance to reset [Whirlwind Slice] cooldown on Evasion",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "rectangle"
+      },
+      "reachMeters": 5.9,
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [
+      {
+        "id": "13000002",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormaleffecttype"
+        },
+        "description": "On Evasion",
+        "iconPath": "/images/ui/resource/texture/skill/icon_cond_miss.webp",
+        "abnormalEffect": {
+          "code": "conddefencemiss"
+        }
+      },
+      {
+        "id": "13000003",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormalgroupid"
+        },
+        "description": "On landing Ambush",
+        "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_006.webp",
+        "abnormalGroupId": 130600471
+      }
+    ],
+    "requiredWeapons": [
+      {
+        "code": "dagger",
+        "name": "Dagger"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:300:177:1:1]]-[[damage:max:300:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 300,
+            "baseMax": 300,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:403:177:1:1]]-[[damage:max:403:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 403,
+            "baseMax": 403,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:533:177:1:1]]-[[damage:max:533:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 533,
+            "baseMax": 533,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:690:177:1:1]]-[[damage:max:690:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 690,
+            "baseMax": 690,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:820:177:1:1]]-[[damage:max:820:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 820,
+            "baseMax": 820,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:950:177:1:1]]-[[damage:max:950:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 950,
+            "baseMax": 950,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1080:177:1:1]]-[[damage:max:1080:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 1080,
+            "baseMax": 1080,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1210:177:1:1]]-[[damage:max:1210:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 1210,
+            "baseMax": 1210,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1367:177:1:1]]-[[damage:max:1367:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 1367,
+            "baseMax": 1367,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1497:177:1:1]]-[[damage:max:1497:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 1497,
+            "baseMax": 1497,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1593:177:1:1]]-[[damage:max:1593:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 1593,
+            "baseMax": 1593,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1662:177:1:1]]-[[damage:max:1662:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 1662,
+            "baseMax": 1662,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1757:177:1:1]]-[[damage:max:1757:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 1757,
+            "baseMax": 1757,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1853:177:1:1]]-[[damage:max:1853:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 1853,
+            "baseMax": 1853,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1948:177:1:1]]-[[damage:max:1948:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 1948,
+            "baseMax": 1948,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2044:177:1:1]]-[[damage:max:2044:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 2044,
+            "baseMax": 2044,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2113:177:1:1]]-[[damage:max:2113:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 2113,
+            "baseMax": 2113,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2182:177:1:1]]-[[damage:max:2182:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 2182,
+            "baseMax": 2182,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2251:177:1:1]]-[[damage:max:2251:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 2251,
+            "baseMax": 2251,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2320:177:1:1]]-[[damage:max:2320:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 2320,
+            "baseMax": 2320,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2389:177:1:1]]-[[damage:max:2389:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 2389,
+            "baseMax": 2389,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2458:177:1:1]]-[[damage:max:2458:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 2458,
+            "baseMax": 2458,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2527:177:1:1]]-[[damage:max:2527:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 2527,
+            "baseMax": 2527,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2596:177:1:1]]-[[damage:max:2596:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 2596,
+            "baseMax": 2596,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2665:177:1:1]]-[[damage:max:2665:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 2665,
+            "baseMax": 2665,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2734:177:1:1]]-[[damage:max:2734:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 2734,
+            "baseMax": 2734,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2803:177:1:1]]-[[damage:max:2803:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 2803,
+            "baseMax": 2803,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2872:177:1:1]]-[[damage:max:2872:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 2872,
+            "baseMax": 2872,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2941:177:1:1]]-[[damage:max:2941:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 2941,
+            "baseMax": 2941,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3010:177:1:1]]-[[damage:max:3010:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 3010,
+            "baseMax": 3010,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3079:177:1:1]]-[[damage:max:3079:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 3079,
+            "baseMax": 3079,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3148:177:1:1]]-[[damage:max:3148:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 3148,
+            "baseMax": 3148,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3217:177:1:1]]-[[damage:max:3217:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 3217,
+            "baseMax": 3217,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3286:177:1:1]]-[[damage:max:3286:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 3286,
+            "baseMax": 3286,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3355:177:1:1]]-[[damage:max:3355:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 3355,
+            "baseMax": 3355,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3424:177:1:1]]-[[damage:max:3424:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 3424,
+            "baseMax": 3424,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3493:177:1:1]]-[[damage:max:3493:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 3493,
+            "baseMax": 3493,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3563:177:1:1]]-[[damage:max:3563:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 3563,
+            "baseMax": 3563,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3632:177:1:1]]-[[damage:max:3632:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 3632,
+            "baseMax": 3632,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3701:177:1:1]]-[[damage:max:3701:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1321000011",
+            "effectGroupId": "132100001",
+            "baseMin": 3701,
+            "baseMax": 3701,
+            "attackRatioPercent": 177
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000301",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000301"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "1403",
+        "level": 1,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1404",
+        "level": 2,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1405",
+        "level": 3,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1406",
+        "level": 4,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1407",
+        "level": 5,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1408",
+        "level": 6,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1409",
+        "level": 7,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1410",
+        "level": 8,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1411",
+        "level": 9,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1412",
+        "level": 10,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "13210010",
+        "skillId": "13210010",
+        "name": "Whirlwind Slice",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13210020",
+        "skillId": "13210020",
+        "name": "Whirlwind Slice",
+        "description": "Changes to AoE damage",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13210030",
+        "skillId": "13210030",
+        "name": "Whirlwind Slice",
+        "description": "+16m range",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13210040",
+        "skillId": "13210040",
+        "name": "Whirlwind Slice",
+        "description": "+20% Stun Chance",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13210050",
+        "skillId": "13210050",
+        "name": "Whirlwind Slice",
+        "description": "25% chance to reset [Whirlwind Slice] cooldown on Evasion",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 4,
+    "cooldownSeconds": 10,
+    "classes": [
+      {
+        "code": "assassin",
+        "name": "Assassin"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Whirlwind Slice",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_019.webp",
+    "id": "13210000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:300:177:1:1]]-[[damage:max:300:177:1:1]]</> damage to a target within 4m with a 40% chance to rotate and inflict Stun for 3s on Evasion.\n100% to inflict Stun on NPC targets.\n\n7 Stagger Gauge Damage"
+  }
+}

@@ -1,0 +1,1167 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/14020000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "14020000",
+    "name": "Snipe",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_001.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "14020010",
+        "description": "+20% MP restored",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14020020",
+        "description": "Absorbs 0.7% HP",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14020030",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14020040",
+        "description": "-1s [Deadshot] cooldown on hit",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14020050",
+        "description": "Adds [Tempest Arrow] Chain Skill",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Mobile</>",
+    "basic": true,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "bow",
+        "name": "Bow"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:47:39.6:1:1]]-[[damage:max:47:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 47,
+            "baseMax": 47,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:63:39.6:1:1]]-[[damage:max:63:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 63,
+            "baseMax": 63,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:79:39.6:1:1]]-[[damage:max:79:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 79,
+            "baseMax": 79,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:96:39.6:1:1]]-[[damage:max:96:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 96,
+            "baseMax": 96,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:120:39.6:1:1]]-[[damage:max:120:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 120,
+            "baseMax": 120,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:151:39.6:1:1]]-[[damage:max:151:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 151,
+            "baseMax": 151,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:187:39.6:1:1]]-[[damage:max:187:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 187,
+            "baseMax": 187,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:217:39.6:1:1]]-[[damage:max:217:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 217,
+            "baseMax": 217,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:248:39.6:1:1]]-[[damage:max:248:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 248,
+            "baseMax": 248,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:278:39.6:1:1]]-[[damage:max:278:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 278,
+            "baseMax": 278,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:309:39.6:1:1]]-[[damage:max:309:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 309,
+            "baseMax": 309,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:345:39.6:1:1]]-[[damage:max:345:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 345,
+            "baseMax": 345,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:376:39.6:1:1]]-[[damage:max:376:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 376,
+            "baseMax": 376,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:398:39.6:1:1]]-[[damage:max:398:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 398,
+            "baseMax": 398,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:414:39.6:1:1]]-[[damage:max:414:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 414,
+            "baseMax": 414,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:436:39.6:1:1]]-[[damage:max:436:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 436,
+            "baseMax": 436,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:459:39.6:1:1]]-[[damage:max:459:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 459,
+            "baseMax": 459,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:481:39.6:1:1]]-[[damage:max:481:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 481,
+            "baseMax": 481,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:503:39.6:1:1]]-[[damage:max:503:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 503,
+            "baseMax": 503,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:520:39.6:1:1]]-[[damage:max:520:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 520,
+            "baseMax": 520,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:536:39.6:1:1]]-[[damage:max:536:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 536,
+            "baseMax": 536,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:552:39.6:1:1]]-[[damage:max:552:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 552,
+            "baseMax": 552,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:569:39.6:1:1]]-[[damage:max:569:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 569,
+            "baseMax": 569,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:585:39.6:1:1]]-[[damage:max:585:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 585,
+            "baseMax": 585,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:601:39.6:1:1]]-[[damage:max:601:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 601,
+            "baseMax": 601,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:618:39.6:1:1]]-[[damage:max:618:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 618,
+            "baseMax": 618,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:634:39.6:1:1]]-[[damage:max:634:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 634,
+            "baseMax": 634,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:650:39.6:1:1]]-[[damage:max:650:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 650,
+            "baseMax": 650,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:667:39.6:1:1]]-[[damage:max:667:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 667,
+            "baseMax": 667,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:683:39.6:1:1]]-[[damage:max:683:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 683,
+            "baseMax": 683,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:699:39.6:1:1]]-[[damage:max:699:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 699,
+            "baseMax": 699,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:716:39.6:1:1]]-[[damage:max:716:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 716,
+            "baseMax": 716,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:732:39.6:1:1]]-[[damage:max:732:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 732,
+            "baseMax": 732,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:748:39.6:1:1]]-[[damage:max:748:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 748,
+            "baseMax": 748,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:765:39.6:1:1]]-[[damage:max:765:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 765,
+            "baseMax": 765,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:781:39.6:1:1]]-[[damage:max:781:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 781,
+            "baseMax": 781,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:797:39.6:1:1]]-[[damage:max:797:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 797,
+            "baseMax": 797,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:814:39.6:1:1]]-[[damage:max:814:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 814,
+            "baseMax": 814,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:830:39.6:1:1]]-[[damage:max:830:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 830,
+            "baseMax": 830,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:846:39.6:1:1]]-[[damage:max:846:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1402000011",
+            "effectGroupId": "140200001",
+            "baseMin": 846,
+            "baseMax": 846,
+            "attackRatioPercent": 39.6
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "1891",
+        "level": 1,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1892",
+        "level": 2,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1893",
+        "level": 3,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1894",
+        "level": 4,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1895",
+        "level": 5,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1896",
+        "level": 6,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1897",
+        "level": 7,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1898",
+        "level": 8,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1899",
+        "level": 9,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1900",
+        "level": 10,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "14020010",
+        "skillId": "14020010",
+        "name": "Snipe",
+        "description": "+20% MP restored",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14020020",
+        "skillId": "14020020",
+        "name": "Snipe",
+        "description": "Absorbs 0.7% HP",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14020030",
+        "skillId": "14020030",
+        "name": "Snipe",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14020040",
+        "skillId": "14020040",
+        "name": "Snipe",
+        "description": "-1s [Deadshot] cooldown on hit",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14020050",
+        "skillId": "14020050",
+        "name": "Snipe",
+        "description": "Adds [Tempest Arrow] Chain Skill",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [
+      {
+        "mainCategoryId": "skills",
+        "name": "Rapid Fire",
+        "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_003.webp",
+        "id": "14030000"
+      }
+    ],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "classes": [
+      {
+        "code": "ranger",
+        "name": "Ranger"
+      }
+    ],
+    "chainRole": {
+      "code": "opening",
+      "name": "Opening Skill"
+    },
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Snipe",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_001.webp",
+    "id": "14020000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:47:39.6:1:1]]-[[damage:max:47:39.6:1:1]]</> Wind damage to a target within 20m and restores 120 MP."
+  }
+}

@@ -1,0 +1,2983 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/18080000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "18080000",
+    "name": "Wave Blow",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 36,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "18080010",
+        "description": "Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18080020",
+        "description": "+6m Range",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18080030",
+        "description": "+1s Knockdown duration",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18080040",
+        "description": "-15% target's PvE Damage Boost and -7.5% PvP Damage Boost for 10s",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18080050",
+        "description": "-5s cooldown",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [
+      {
+        "id": "18000001",
+        "target": {
+          "code": "target"
+        },
+        "type": {
+          "code": "hasabnormaleffecttype"
+        },
+        "description": "Stun Target",
+        "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_stun.webp",
+        "abnormalEffect": {
+          "code": "stun"
+        }
+      },
+      {
+        "id": "18000013",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormalgroupid"
+        },
+        "description": "On attacking Incapacitated Immunity Target",
+        "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_immuneabnormal.webp",
+        "abnormalGroupId": 180800381
+      }
+    ],
+    "requiredWeapons": [
+      {
+        "code": "staff",
+        "name": "Staff"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:538:211.2:2:2]]-[[damage:max:538:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 538,
+            "baseMax": 538,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 538,
+            "baseMax": 538,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:708:211.2:2:2]]-[[damage:max:708:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 708,
+            "baseMax": 708,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 708,
+            "baseMax": 708,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:909:211.2:2:2]]-[[damage:max:909:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 909,
+            "baseMax": 909,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 909,
+            "baseMax": 909,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1078:211.2:2:2]]-[[damage:max:1078:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 1078,
+            "baseMax": 1078,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 1078,
+            "baseMax": 1078,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1248:211.2:2:2]]-[[damage:max:1248:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 1248,
+            "baseMax": 1248,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 1248,
+            "baseMax": 1248,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1417:211.2:2:2]]-[[damage:max:1417:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 1417,
+            "baseMax": 1417,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 1417,
+            "baseMax": 1417,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1587:211.2:2:2]]-[[damage:max:1587:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 1587,
+            "baseMax": 1587,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 1587,
+            "baseMax": 1587,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1788:211.2:2:2]]-[[damage:max:1788:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 1788,
+            "baseMax": 1788,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 1788,
+            "baseMax": 1788,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1957:211.2:2:2]]-[[damage:max:1957:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 1957,
+            "baseMax": 1957,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 1957,
+            "baseMax": 1957,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2081:211.2:2:2]]-[[damage:max:2081:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 2081,
+            "baseMax": 2081,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 2081,
+            "baseMax": 2081,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2173:211.2:2:2]]-[[damage:max:2173:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 2173,
+            "baseMax": 2173,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 2173,
+            "baseMax": 2173,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2296:211.2:2:2]]-[[damage:max:2296:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 2296,
+            "baseMax": 2296,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 2296,
+            "baseMax": 2296,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2420:211.2:2:2]]-[[damage:max:2420:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 2420,
+            "baseMax": 2420,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 2420,
+            "baseMax": 2420,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2543:211.2:2:2]]-[[damage:max:2543:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 2543,
+            "baseMax": 2543,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 2543,
+            "baseMax": 2543,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2667:211.2:2:2]]-[[damage:max:2667:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 2667,
+            "baseMax": 2667,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 2667,
+            "baseMax": 2667,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2759:211.2:2:2]]-[[damage:max:2759:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 2759,
+            "baseMax": 2759,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 2759,
+            "baseMax": 2759,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2851:211.2:2:2]]-[[damage:max:2851:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 2851,
+            "baseMax": 2851,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 2851,
+            "baseMax": 2851,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2943:211.2:2:2]]-[[damage:max:2943:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 2943,
+            "baseMax": 2943,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 2943,
+            "baseMax": 2943,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3034:211.2:2:2]]-[[damage:max:3034:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 3034,
+            "baseMax": 3034,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 3034,
+            "baseMax": 3034,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3126:211.2:2:2]]-[[damage:max:3126:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 3126,
+            "baseMax": 3126,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 3126,
+            "baseMax": 3126,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3218:211.2:2:2]]-[[damage:max:3218:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 3218,
+            "baseMax": 3218,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 3218,
+            "baseMax": 3218,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3310:211.2:2:2]]-[[damage:max:3310:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 3310,
+            "baseMax": 3310,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 3310,
+            "baseMax": 3310,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3402:211.2:2:2]]-[[damage:max:3402:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 3402,
+            "baseMax": 3402,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 3402,
+            "baseMax": 3402,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3494:211.2:2:2]]-[[damage:max:3494:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 3494,
+            "baseMax": 3494,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 3494,
+            "baseMax": 3494,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3586:211.2:2:2]]-[[damage:max:3586:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 3586,
+            "baseMax": 3586,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 3586,
+            "baseMax": 3586,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3678:211.2:2:2]]-[[damage:max:3678:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 3678,
+            "baseMax": 3678,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 3678,
+            "baseMax": 3678,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3769:211.2:2:2]]-[[damage:max:3769:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 3769,
+            "baseMax": 3769,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 3769,
+            "baseMax": 3769,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3861:211.2:2:2]]-[[damage:max:3861:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 3861,
+            "baseMax": 3861,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 3861,
+            "baseMax": 3861,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3953:211.2:2:2]]-[[damage:max:3953:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 3953,
+            "baseMax": 3953,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 3953,
+            "baseMax": 3953,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4045:211.2:2:2]]-[[damage:max:4045:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 4045,
+            "baseMax": 4045,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 4045,
+            "baseMax": 4045,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4137:211.2:2:2]]-[[damage:max:4137:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 4137,
+            "baseMax": 4137,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 4137,
+            "baseMax": 4137,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4229:211.2:2:2]]-[[damage:max:4229:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 4229,
+            "baseMax": 4229,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 4229,
+            "baseMax": 4229,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4321:211.2:2:2]]-[[damage:max:4321:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 4321,
+            "baseMax": 4321,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 4321,
+            "baseMax": 4321,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4413:211.2:2:2]]-[[damage:max:4413:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 4413,
+            "baseMax": 4413,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 4413,
+            "baseMax": 4413,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4504:211.2:2:2]]-[[damage:max:4504:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 4504,
+            "baseMax": 4504,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 4504,
+            "baseMax": 4504,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4596:211.2:2:2]]-[[damage:max:4596:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 4596,
+            "baseMax": 4596,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 4596,
+            "baseMax": 4596,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4688:211.2:2:2]]-[[damage:max:4688:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 4688,
+            "baseMax": 4688,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 4688,
+            "baseMax": 4688,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4780:211.2:2:2]]-[[damage:max:4780:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 4780,
+            "baseMax": 4780,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 4780,
+            "baseMax": 4780,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4872:211.2:2:2]]-[[damage:max:4872:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 4872,
+            "baseMax": 4872,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 4872,
+            "baseMax": 4872,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4964:211.2:2:2]]-[[damage:max:4964:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1808000021",
+            "effectGroupId": "180800002",
+            "baseMin": 4964,
+            "baseMax": 4964,
+            "attackRatioPercent": 211.2
+          },
+          {
+            "effectId": "1808000031",
+            "effectGroupId": "180800003",
+            "baseMin": 4964,
+            "baseMax": 4964,
+            "attackRatioPercent": 211.2
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "180800004",
+            "name": "Wave Blow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Grab status",
+            "effect": "In an incapacitated state. It can be removed through the Defiance skill.",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Wave Blow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+              "id": "180800004"
+            }
+          },
+          {
+            "id": "100000321",
+            "name": "Knockdown",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Knockdown Status",
+            "effect": "Knockdown Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Knockdown",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+              "id": "100000321"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "4181",
+        "level": 1,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4182",
+        "level": 2,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4183",
+        "level": 3,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4184",
+        "level": 4,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4185",
+        "level": 5,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4186",
+        "level": 6,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4187",
+        "level": 7,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4188",
+        "level": 8,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4189",
+        "level": 9,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4190",
+        "level": 10,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 36,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "18080010",
+        "skillId": "18080010",
+        "name": "Wave Blow",
+        "description": "Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18080020",
+        "skillId": "18080020",
+        "name": "Wave Blow",
+        "description": "+6m Range",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18080030",
+        "skillId": "18080030",
+        "name": "Wave Blow",
+        "description": "+1s Knockdown duration",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18080040",
+        "skillId": "18080040",
+        "name": "Wave Blow",
+        "description": "-15% target's PvE Damage Boost and -7.5% PvP Damage Boost for 10s",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18080050",
+        "skillId": "18080050",
+        "name": "Wave Blow",
+        "description": "-5s cooldown",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 4,
+    "cooldownSeconds": 20,
+    "classes": [
+      {
+        "code": "chanter",
+        "name": "Chanter"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Wave Blow",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_008.webp",
+    "id": "18080000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:538:211.2:2:2]]-[[damage:max:538:211.2:2:2]]</> damage to a target afflicted with Stun within 4m and inflicts Knockdown for 3s.\nHas a 7% chance to trigger on attacking a target with Incapacitated Immunity, changing the skill motion.\n\n10 Stagger Gauge Damage"
+  }
+}

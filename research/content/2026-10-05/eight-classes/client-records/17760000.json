@@ -1,0 +1,1497 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/17760000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "17760000",
+    "name": "Heal Block",
+    "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_005.webp",
+    "kind": "passive",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 15,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 36,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 39,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": []
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "relation": "anyone",
+      "shape": {
+        "code": "self"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "mace",
+        "name": "Mace"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>32%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>34%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>36%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>38%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>40%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>42%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>44%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>46%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>48%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>50%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>52%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>54%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>56%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>58%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>60%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>62%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>64%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>66%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>68%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>70%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>72%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>74%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>76%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>78%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>80%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>82%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>84%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>86%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>88%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>90%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>92%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>94%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>96%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>98%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>100%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>102%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>104%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>106%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>108%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>110%</> for 5s on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "177600001",
+            "name": "Heal Block",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a chance to reduce target healing on landing an attack",
+            "effect": "7% chance to reduce enemy Incoming Heal by <desc_point>32%</> on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Heal Block",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_006.webp",
+              "id": "177600001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": true,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "3713",
+        "level": 1,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 15,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3714",
+        "level": 2,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3715",
+        "level": 3,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3716",
+        "level": 4,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3717",
+        "level": 5,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3718",
+        "level": 6,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3719",
+        "level": 7,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3720",
+        "level": 8,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3721",
+        "level": 9,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 36,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3722",
+        "level": 10,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 39,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "passive",
+    "kindName": "Passive",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "classes": [
+      {
+        "code": "cleric",
+        "name": "Cleric"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/passive"
+    ],
+    "name": "Heal Block",
+    "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_005.webp",
+    "id": "17760000",
+    "entityType": "skill",
+    "description": "Has a 7% chance to reduce the target's Incoming Heal by <chat_combat>32%</> for 5s on landing an attack.\n\nCooldown: 5s"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "checkedAt": "2026-10-04T07:15:50.169011+00:00",
+  "productionBase": "http://127.0.0.1:3032",
+  "deploymentPerformed": false,
+  "checks": [
+    {
+      "command": "npm run check",
+      "result": "pass",
+      "details": "Final ESLint and TypeScript passed after all code and test-harness edits"
+    },
+    {
+      "command": "npm run test:content",
+      "result": "pass",
+      "details": "124 localized articles, 30 sourced assets; original TW UI text localized; Mixed source-region enum normalized; tool-link Markdown verified"
+    },
+    {
+      "command": "npm run build",
+      "result": "pass",
+      "staticPages": 148
+    },
+    {
+      "command": "npm run test:smoke",
+      "result": "pass",
+      "pageChecks": 144,
+      "articles": 124,
+      "sitemapEntries": 132
+    },
+    {
+      "command": "npm run test:browser",
+      "result": "pass",
+      "details": "Final complete suite passed on fresh production process3032: responsive images/diagrams, four-locale navigation, class finder, checklists, region/faction filtering, zoom focus/keyboard, next steps, coupon behavior, and no runtime errors.",
+      "articleAssertionsPassed": 124
+    },
+    {
+      "command": "node .qa/keyword-refresh-visual.mjs",
+      "result": "pass",
+      "captures": 9,
+      "screenshots": 18,
+      "runtimeErrors": 0,
+      "documentOverflow": 0,
+      "visualInspection": "Desktop Database and mobile Wings/Database inspected after table word-wrap fix; readable words and horizontally scrollable tables",
+      "productionBase": "http://127.0.0.1:3032"
+    }
+  ],
+  "editorialReview": {
+    "newPageCrossReview": "12 articles; no unresolved P0/P1; explicit Wings enhancement conflict omitted",
+    "keywordAudit": "87 unique canonical terms; original63 retained; 24 approved additions; historical20 byte-for-byte unchanged; 26 candidate counts and material URLs independently checked"
+  },
+  "finalValidationPending": false,
+  "localizedToolLinkVerification": {
+    "en": "/tools/character",
+    "ja": "/ja/tools/character",
+    "es": "/es/tools/character",
+    "de": "/de/tools/character"
+  },
+  "sourcePreservation": {
+    "baselineFilesUnchanged": 122,
+    "exception": "Approved update of keywords.json; original63 preserved and before snapshot retained",
+    "materialsOriginalPrefixPreserved": true,
+    "historicalPriority20Unchanged": true
+  },
+  "browserWaitDiagnosis": "research/content/2026-10-04/keyword-refresh/new-pages/browser-layout-diagnosis.md",
+  "imageEndpointVerification": {
+    "originalAtreia": "200 JPEG 345227 bytes",
+    "optimized750": "200 JPEG 27970 bytes",
+    "optimized1200": "200 JPEG 56472 bytes",
+    "maximumObservedSeconds": 0.171
+  },
+  "previousProductionBase": "http://127.0.0.1:3031 (owned QA process stopped after WebP response-state failure)",
+  "homeImageDiagnosis": {
+    "file": "research/content/2026-10-04/keyword-refresh/new-pages/browser-home-image-diagnosis.md",
+    "freshProcess": "3032 native desktop/mobile helper passed without DOM or product changes",
+    "sameBuild": true,
+    "webp384Bytes": 7724,
+    "webp750Bytes": 19724,
+    "webpMaximumSeconds": 0.172,
+    "permanentFrameworkRootCauseEstablished": false
+  },
+  "gitDiffCheck": "pass",
+  "reproductionNotes": {
+    "homeLayouts": "Original networkidle waits replaced only in homepage viewport loop with domcontentloaded plus exact localized H1 and visible hero-button assertions; original layout/function assertions retained.",
+    "oldQaImageResponse": "Old process3031 WebP responses timed out despite JPEG/native Sharp working; unchanged product/build passed native desktop/mobile image helper and complete suite in process3032. Permanent root cause not established; no image load changes."
+  }
+}

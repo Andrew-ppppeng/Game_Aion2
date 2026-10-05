@@ -1,0 +1,2483 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/15110000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "15110000",
+    "name": "Winter's Shackles",
+    "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_011.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 8,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 8,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 11,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "15110010",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15110020",
+        "description": "30% chance to inflict Frost for 3s on landing [Winter's Shackles]",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15110030",
+        "description": "+20% PvE Damage Boost and +10% PvP Damage Boost for 5s on landing [Winter's Shackles]",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15110040",
+        "description": "Adds [Winter's Illusion] Chain Skill",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15110050",
+        "description": "-15s [Winter's Shackles] cooldown",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "circle"
+      },
+      "reachMeters": 4,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 200
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "magicbook",
+        "name": "Spellbook"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:275:145:1:1]]-[[damage:max:275:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 275,
+            "baseMax": 275,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 275,
+            "baseMax": 275,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:369:145:1:1]]-[[damage:max:369:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 369,
+            "baseMax": 369,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 369,
+            "baseMax": 369,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:486:145:1:1]]-[[damage:max:486:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 486,
+            "baseMax": 486,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 486,
+            "baseMax": 486,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:624:145:1:1]]-[[damage:max:624:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 624,
+            "baseMax": 624,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 624,
+            "baseMax": 624,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:740:145:1:1]]-[[damage:max:740:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 740,
+            "baseMax": 740,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 740,
+            "baseMax": 740,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:856:145:1:1]]-[[damage:max:856:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 856,
+            "baseMax": 856,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 856,
+            "baseMax": 856,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:973:145:1:1]]-[[damage:max:973:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 973,
+            "baseMax": 973,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 973,
+            "baseMax": 973,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1089:145:1:1]]-[[damage:max:1089:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 1089,
+            "baseMax": 1089,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 1089,
+            "baseMax": 1089,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1227:145:1:1]]-[[damage:max:1227:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 1227,
+            "baseMax": 1227,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 1227,
+            "baseMax": 1227,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1344:145:1:1]]-[[damage:max:1344:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 1344,
+            "baseMax": 1344,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 1344,
+            "baseMax": 1344,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1428:145:1:1]]-[[damage:max:1428:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 1428,
+            "baseMax": 1428,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 1428,
+            "baseMax": 1428,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1492:145:1:1]]-[[damage:max:1492:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 1492,
+            "baseMax": 1492,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 1492,
+            "baseMax": 1492,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1576:145:1:1]]-[[damage:max:1576:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 1576,
+            "baseMax": 1576,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 1576,
+            "baseMax": 1576,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1661:145:1:1]]-[[damage:max:1661:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 1661,
+            "baseMax": 1661,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 1661,
+            "baseMax": 1661,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1746:145:1:1]]-[[damage:max:1746:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 1746,
+            "baseMax": 1746,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 1746,
+            "baseMax": 1746,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1831:145:1:1]]-[[damage:max:1831:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 1831,
+            "baseMax": 1831,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 1831,
+            "baseMax": 1831,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1894:145:1:1]]-[[damage:max:1894:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 1894,
+            "baseMax": 1894,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 1894,
+            "baseMax": 1894,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1957:145:1:1]]-[[damage:max:1957:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 1957,
+            "baseMax": 1957,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 1957,
+            "baseMax": 1957,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2020:145:1:1]]-[[damage:max:2020:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 2020,
+            "baseMax": 2020,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 2020,
+            "baseMax": 2020,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2083:145:1:1]]-[[damage:max:2083:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 2083,
+            "baseMax": 2083,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 2083,
+            "baseMax": 2083,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2146:145:1:1]]-[[damage:max:2146:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 2146,
+            "baseMax": 2146,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 2146,
+            "baseMax": 2146,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2209:145:1:1]]-[[damage:max:2209:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 2209,
+            "baseMax": 2209,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 2209,
+            "baseMax": 2209,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2272:145:1:1]]-[[damage:max:2272:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 2272,
+            "baseMax": 2272,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 2272,
+            "baseMax": 2272,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2335:145:1:1]]-[[damage:max:2335:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 2335,
+            "baseMax": 2335,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 2335,
+            "baseMax": 2335,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2399:145:1:1]]-[[damage:max:2399:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 2399,
+            "baseMax": 2399,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 2399,
+            "baseMax": 2399,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2462:145:1:1]]-[[damage:max:2462:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 2462,
+            "baseMax": 2462,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 2462,
+            "baseMax": 2462,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2525:145:1:1]]-[[damage:max:2525:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 2525,
+            "baseMax": 2525,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 2525,
+            "baseMax": 2525,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2588:145:1:1]]-[[damage:max:2588:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 2588,
+            "baseMax": 2588,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 2588,
+            "baseMax": 2588,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2651:145:1:1]]-[[damage:max:2651:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 2651,
+            "baseMax": 2651,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 2651,
+            "baseMax": 2651,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2714:145:1:1]]-[[damage:max:2714:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 2714,
+            "baseMax": 2714,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 2714,
+            "baseMax": 2714,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2777:145:1:1]]-[[damage:max:2777:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 2777,
+            "baseMax": 2777,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 2777,
+            "baseMax": 2777,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2840:145:1:1]]-[[damage:max:2840:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 2840,
+            "baseMax": 2840,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 2840,
+            "baseMax": 2840,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2903:145:1:1]]-[[damage:max:2903:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 2903,
+            "baseMax": 2903,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 2903,
+            "baseMax": 2903,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2966:145:1:1]]-[[damage:max:2966:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 2966,
+            "baseMax": 2966,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 2966,
+            "baseMax": 2966,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3029:145:1:1]]-[[damage:max:3029:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 3029,
+            "baseMax": 3029,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 3029,
+            "baseMax": 3029,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3092:145:1:1]]-[[damage:max:3092:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 3092,
+            "baseMax": 3092,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 3092,
+            "baseMax": 3092,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3155:145:1:1]]-[[damage:max:3155:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 3155,
+            "baseMax": 3155,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 3155,
+            "baseMax": 3155,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3219:145:1:1]]-[[damage:max:3219:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 3219,
+            "baseMax": 3219,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 3219,
+            "baseMax": 3219,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3282:145:1:1]]-[[damage:max:3282:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 3282,
+            "baseMax": 3282,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 3282,
+            "baseMax": 3282,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3345:145:1:1]]-[[damage:max:3345:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1511000011",
+            "effectGroupId": "151100001",
+            "baseMin": 3345,
+            "baseMax": 3345,
+            "attackRatioPercent": 145
+          },
+          {
+            "effectId": "1511000012",
+            "effectGroupId": "151100001",
+            "baseMin": 3345,
+            "baseMax": 3345,
+            "attackRatioPercent": 145
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "150900001",
+            "name": "Slow",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Move Speed and Flight Speed",
+            "effect": "-<desc_point>40%</> Move Speed\n-<desc_point>40%</>Flight Speed",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Slow",
+              "iconPath": "/images/ui/resource/texture/skill/icon_common_abnormal_movespeeddown.webp",
+              "id": "150900001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "2509",
+        "level": 1,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 8,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2510",
+        "level": 2,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 8,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2511",
+        "level": 3,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 11,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2512",
+        "level": 4,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2513",
+        "level": 5,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2514",
+        "level": 6,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2515",
+        "level": 7,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2516",
+        "level": 8,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2517",
+        "level": 9,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2518",
+        "level": 10,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "15110010",
+        "skillId": "15110010",
+        "name": "Winter's Shackles",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15110020",
+        "skillId": "15110020",
+        "name": "Winter's Shackles",
+        "description": "30% chance to inflict Frost for 3s on landing [Winter's Shackles]",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15110030",
+        "skillId": "15110030",
+        "name": "Winter's Shackles",
+        "description": "+20% PvE Damage Boost and +10% PvP Damage Boost for 5s on landing [Winter's Shackles]",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15110040",
+        "skillId": "15110040",
+        "name": "Winter's Shackles",
+        "description": "Adds [Winter's Illusion] Chain Skill",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15110050",
+        "skillId": "15110050",
+        "name": "Winter's Shackles",
+        "description": "-15s [Winter's Shackles] cooldown",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 45,
+    "classes": [
+      {
+        "code": "sorcerer",
+        "name": "Sorcerer"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Winter's Shackles",
+    "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_011.webp",
+    "id": "15110000",
+    "entityType": "skill",
+    "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:275:145:1:1]]-[[damage:max:275:145:1:1]]</> Water damage to up to 4 enemies within 4m. Inflicts Slow for 3s."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "reviewedAt": "2026-10-04",
+  "region": "Global",
+  "source": {
+    "url": "https://www.youtube.com/watch?v=S_TjiOh33a4",
+    "timepointUrl": "https://www.youtube.com/watch?v=S_TjiOh33a4&t=3660s",
+    "title": "[AION 2] Dungeon Live Gameplay Showcase",
+    "author": "AION 2 Official",
+    "authorUrl": "https://www.youtube.com/@AION2Official",
+    "officialIdentityEvidence": "research/content/2026-10-02/leveling/S_TjiOh33a4-oembed.json",
+    "transcriptArchive": "research/content/2026-10-02/leveling/S_TjiOh33a4-transcript.json",
+    "readableTranscriptArchive": "research/content/2026-10-02/leveling/S_TjiOh33a4-transcript.txt",
+    "transcriptType": "English auto-generated"
+  },
+  "publicationDateEvidence": {
+    "dateUTC": "2026-09-04",
+    "basis": "Official channel live notification in the archived AION 2 Discord socials feed; not freshly fetched YouTube publish metadata.",
+    "archive": "research/discord/aion2_socials.json",
+    "originalArchive": "discord/extracted/aion2_socials/aion2_socials-page-1.html",
+    "messageId": "1545478600248266804",
+    "displayTimestamp": "09/05/2026 1:00 AM",
+    "utcTimestampFromDiscordSnowflake": "2026-09-04T17:00:11.903000+00:00",
+    "author": "NotifyMe",
+    "message": "AION 2 Official is live!",
+    "links": [
+      "https://youtube.com/@aion2official",
+      "https://youtu.be/S_TjiOh33a4"
+    ],
+    "dateDerivation": "Discord snowflake milliseconds = (message_id >> 22) + 1420070400000. The archived local display is September 5; the UTC live event is September 4."
+  },
+  "mechanisms": [
+    {
+      "timepoint": "61:00–61:15",
+      "startSeconds": 3660.16,
+      "scopeContextSeconds": 3662.0,
+      "crossFactionSeconds": 3664.767,
+      "crossServerSeconds": 3665.839,
+      "finding": "The official Global launch dungeon explanation allows parties with players of the opposite faction and different servers."
+    },
+    {
+      "timepoint": "61:16–61:29",
+      "startSeconds": 3676.48,
+      "optionSeconds": 3678.319,
+      "confirmationSeconds": 3685.359,
+      "finding": "My Faction Only is an optional checkbox for restricting dungeon groups to the player's faction."
+    }
+  ],
+  "limits": [
+    "Dungeon grouping is the verified scope; ordinary shared-world questing and cross-region parties are not established by this segment.",
+    "The caption at 3662 seconds reads four dungeons for spoken for dungeons; do not turn this into a dungeon-count fact.",
+    "The October 4 web open was throttled. Existing complete official transcript and oEmbed archives were reviewed; successful fresh playback is not claimed."
+  ]
+}

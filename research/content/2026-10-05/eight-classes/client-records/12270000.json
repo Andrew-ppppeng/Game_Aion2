@@ -1,0 +1,1984 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/12270000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "12270000",
+    "name": "Debilitating Smash",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "12270010",
+        "description": "30% chance to inflict Stun for 3s",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12270020",
+        "description": "+3s Debilitate duration",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12270030",
+        "description": "-60% Incoming Heal during Debilitate",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12270040",
+        "description": "Ignores Block and Evasion and lands as Multi-Hit",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12270050",
+        "description": "25% chance to reset cooldown on Block",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "rectangle"
+      },
+      "reachMeters": 5.9,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [
+      {
+        "id": "12000002",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormalgroupid"
+        },
+        "description": "On landing Shield Smite",
+        "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_010.webp",
+        "abnormalGroupId": 121000302
+      },
+      {
+        "id": "12000018",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormaleffecttype"
+        },
+        "description": "When Blocking",
+        "iconPath": "/images/ui/resource/texture/skill/icon_cond_shieldblock.webp",
+        "abnormalEffect": {
+          "code": "conddefenceblock"
+        }
+      }
+    ],
+    "requiredWeapons": [
+      {
+        "code": "sword",
+        "name": "Longsword"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:336:184:1:1]]-[[damage:max:336:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 336,
+            "baseMax": 336,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:452:184:1:1]]-[[damage:max:452:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 452,
+            "baseMax": 452,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:596:184:1:1]]-[[damage:max:596:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 596,
+            "baseMax": 596,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:767:184:1:1]]-[[damage:max:767:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 767,
+            "baseMax": 767,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:910:184:1:1]]-[[damage:max:910:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 910,
+            "baseMax": 910,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1054:184:1:1]]-[[damage:max:1054:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 1054,
+            "baseMax": 1054,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1197:184:1:1]]-[[damage:max:1197:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 1197,
+            "baseMax": 1197,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1341:184:1:1]]-[[damage:max:1341:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 1341,
+            "baseMax": 1341,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1512:184:1:1]]-[[damage:max:1512:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 1512,
+            "baseMax": 1512,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1656:184:1:1]]-[[damage:max:1656:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 1656,
+            "baseMax": 1656,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1760:184:1:1]]-[[damage:max:1760:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 1760,
+            "baseMax": 1760,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1838:184:1:1]]-[[damage:max:1838:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 1838,
+            "baseMax": 1838,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1943:184:1:1]]-[[damage:max:1943:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 1943,
+            "baseMax": 1943,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2047:184:1:1]]-[[damage:max:2047:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 2047,
+            "baseMax": 2047,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2152:184:1:1]]-[[damage:max:2152:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 2152,
+            "baseMax": 2152,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2257:184:1:1]]-[[damage:max:2257:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 2257,
+            "baseMax": 2257,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2334:184:1:1]]-[[damage:max:2334:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 2334,
+            "baseMax": 2334,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2412:184:1:1]]-[[damage:max:2412:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 2412,
+            "baseMax": 2412,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2489:184:1:1]]-[[damage:max:2489:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 2489,
+            "baseMax": 2489,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2566:184:1:1]]-[[damage:max:2566:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 2566,
+            "baseMax": 2566,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2644:184:1:1]]-[[damage:max:2644:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 2644,
+            "baseMax": 2644,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2721:184:1:1]]-[[damage:max:2721:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 2721,
+            "baseMax": 2721,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2798:184:1:1]]-[[damage:max:2798:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 2798,
+            "baseMax": 2798,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2875:184:1:1]]-[[damage:max:2875:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 2875,
+            "baseMax": 2875,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2953:184:1:1]]-[[damage:max:2953:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 2953,
+            "baseMax": 2953,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3030:184:1:1]]-[[damage:max:3030:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 3030,
+            "baseMax": 3030,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3107:184:1:1]]-[[damage:max:3107:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 3107,
+            "baseMax": 3107,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3185:184:1:1]]-[[damage:max:3185:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 3185,
+            "baseMax": 3185,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3262:184:1:1]]-[[damage:max:3262:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 3262,
+            "baseMax": 3262,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3339:184:1:1]]-[[damage:max:3339:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 3339,
+            "baseMax": 3339,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3416:184:1:1]]-[[damage:max:3416:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 3416,
+            "baseMax": 3416,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3494:184:1:1]]-[[damage:max:3494:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 3494,
+            "baseMax": 3494,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3571:184:1:1]]-[[damage:max:3571:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 3571,
+            "baseMax": 3571,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3648:184:1:1]]-[[damage:max:3648:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 3648,
+            "baseMax": 3648,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3726:184:1:1]]-[[damage:max:3726:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 3726,
+            "baseMax": 3726,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3803:184:1:1]]-[[damage:max:3803:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 3803,
+            "baseMax": 3803,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3880:184:1:1]]-[[damage:max:3880:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 3880,
+            "baseMax": 3880,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3957:184:1:1]]-[[damage:max:3957:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 3957,
+            "baseMax": 3957,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4035:184:1:1]]-[[damage:max:4035:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 4035,
+            "baseMax": 4035,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4112:184:1:1]]-[[damage:max:4112:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1227000011",
+            "effectGroupId": "122700001",
+            "baseMin": 4112,
+            "baseMax": 4112,
+            "attackRatioPercent": 184
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "122700001",
+            "name": "Debilitate",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces Defense",
+            "effect": "-<desc_point>25%</> Defense",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitate",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+              "id": "122700001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "854",
+        "level": 1,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "855",
+        "level": 2,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "856",
+        "level": 3,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "857",
+        "level": 4,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "858",
+        "level": 5,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "859",
+        "level": 6,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "860",
+        "level": 7,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "861",
+        "level": 8,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "862",
+        "level": 9,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "863",
+        "level": 10,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "12270010",
+        "skillId": "12270010",
+        "name": "Debilitating Smash",
+        "description": "30% chance to inflict Stun for 3s",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12270020",
+        "skillId": "12270020",
+        "name": "Debilitating Smash",
+        "description": "+3s Debilitate duration",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12270030",
+        "skillId": "12270030",
+        "name": "Debilitating Smash",
+        "description": "-60% Incoming Heal during Debilitate",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12270040",
+        "skillId": "12270040",
+        "name": "Debilitating Smash",
+        "description": "Ignores Block and Evasion and lands as Multi-Hit",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12270050",
+        "skillId": "12270050",
+        "name": "Debilitating Smash",
+        "description": "25% chance to reset cooldown on Block",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 4,
+    "cooldownSeconds": 10,
+    "classes": [
+      {
+        "code": "templar",
+        "name": "Templar"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Debilitating Smash",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_025.webp",
+    "id": "12270000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:336:184:1:1]]-[[damage:max:336:184:1:1]]</> damage to up to 4 enemies within 4m and inflicts Debilitate for 5s on Block.\nDebilitate: Reduces Defense by 25%\n\n10 Stagger Gauge Damage"
+  }
+}

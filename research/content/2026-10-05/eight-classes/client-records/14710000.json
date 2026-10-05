@@ -1,0 +1,1497 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/14710000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "14710000",
+    "name": "Vigilant Eye",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+    "kind": "passive",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": []
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "relation": "anyone",
+      "shape": {
+        "code": "self"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "bow",
+        "name": "Bow"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147100001",
+            "name": "Vigilant Eye",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Evasion and Max HP and restores HP on Evasion",
+            "effect": "+200 Evasion\n+<desc_point>6%</> Max HP\nRestores <desc_point>[[heal]]-[[heal]]</> HP on Evasion",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Vigilant Eye",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+              "id": "147100001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "2013",
+        "level": 1,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2014",
+        "level": 2,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2015",
+        "level": 3,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2016",
+        "level": 4,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2017",
+        "level": 5,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2018",
+        "level": 6,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2019",
+        "level": 7,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2020",
+        "level": 8,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2021",
+        "level": 9,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2022",
+        "level": 10,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "passive",
+    "kindName": "Passive",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "classes": [
+      {
+        "code": "ranger",
+        "name": "Ranger"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/passive"
+    ],
+    "name": "Vigilant Eye",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_004.webp",
+    "id": "14710000",
+    "entityType": "skill",
+    "description": "Increases the caster's Evasion by 200, Max HP by <chat_combat>6%</>, and restores <chat_combat>[[heal]]-[[heal]]</> HP on Evasion.\n\nCooldown: 3s"
+  }
+}

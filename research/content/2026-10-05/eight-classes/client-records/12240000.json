@@ -1,0 +1,1211 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/12240000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "12240000",
+    "name": "Judgment",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_004.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "12240010",
+        "description": "Absorbs 1% HP",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12240020",
+        "description": "Deals extra damage on attacking a target afflicted with Impact-type status",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12240030",
+        "description": "Extra damage on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12240040",
+        "description": "Critical Hit on hit",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12240050",
+        "description": "Remove cooldown",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Mobile</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "rectangle"
+      },
+      "reachMeters": 5.9,
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [
+      {
+        "id": "12000017",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormalgroupid"
+        },
+        "description": "When casting a shield skill\n- Shield Smite \n- Warding Strike \n- Shield Rush \n- Doom Shield",
+        "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_010.webp",
+        "abnormalGroupId": 122400071
+      }
+    ],
+    "requiredWeapons": [
+      {
+        "code": "sword",
+        "name": "Longsword"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:227:229.5:1:1]]-[[damage:max:227:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 227,
+            "baseMax": 227,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:323:229.5:1:1]]-[[damage:max:323:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 323,
+            "baseMax": 323,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:419:229.5:1:1]]-[[damage:max:419:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 419,
+            "baseMax": 419,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:564:229.5:1:1]]-[[damage:max:564:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 564,
+            "baseMax": 564,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:743:229.5:1:1]]-[[damage:max:743:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 743,
+            "baseMax": 743,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:957:229.5:1:1]]-[[damage:max:957:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 957,
+            "baseMax": 957,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1136:229.5:1:1]]-[[damage:max:1136:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 1136,
+            "baseMax": 1136,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1315:229.5:1:1]]-[[damage:max:1315:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 1315,
+            "baseMax": 1315,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1494:229.5:1:1]]-[[damage:max:1494:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 1494,
+            "baseMax": 1494,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1673:229.5:1:1]]-[[damage:max:1673:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 1673,
+            "baseMax": 1673,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1886:229.5:1:1]]-[[damage:max:1886:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 1886,
+            "baseMax": 1886,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2065:229.5:1:1]]-[[damage:max:2065:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 2065,
+            "baseMax": 2065,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2196:229.5:1:1]]-[[damage:max:2196:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 2196,
+            "baseMax": 2196,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2292:229.5:1:1]]-[[damage:max:2292:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 2292,
+            "baseMax": 2292,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2423:229.5:1:1]]-[[damage:max:2423:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 2423,
+            "baseMax": 2423,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2554:229.5:1:1]]-[[damage:max:2554:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 2554,
+            "baseMax": 2554,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2685:229.5:1:1]]-[[damage:max:2685:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 2685,
+            "baseMax": 2685,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2815:229.5:1:1]]-[[damage:max:2815:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 2815,
+            "baseMax": 2815,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2912:229.5:1:1]]-[[damage:max:2912:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 2912,
+            "baseMax": 2912,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3008:229.5:1:1]]-[[damage:max:3008:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 3008,
+            "baseMax": 3008,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3105:229.5:1:1]]-[[damage:max:3105:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 3105,
+            "baseMax": 3105,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3201:229.5:1:1]]-[[damage:max:3201:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 3201,
+            "baseMax": 3201,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3297:229.5:1:1]]-[[damage:max:3297:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 3297,
+            "baseMax": 3297,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3394:229.5:1:1]]-[[damage:max:3394:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 3394,
+            "baseMax": 3394,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3490:229.5:1:1]]-[[damage:max:3490:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 3490,
+            "baseMax": 3490,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3587:229.5:1:1]]-[[damage:max:3587:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 3587,
+            "baseMax": 3587,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3683:229.5:1:1]]-[[damage:max:3683:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 3683,
+            "baseMax": 3683,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3779:229.5:1:1]]-[[damage:max:3779:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 3779,
+            "baseMax": 3779,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3876:229.5:1:1]]-[[damage:max:3876:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 3876,
+            "baseMax": 3876,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3972:229.5:1:1]]-[[damage:max:3972:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 3972,
+            "baseMax": 3972,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4069:229.5:1:1]]-[[damage:max:4069:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 4069,
+            "baseMax": 4069,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4165:229.5:1:1]]-[[damage:max:4165:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 4165,
+            "baseMax": 4165,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4261:229.5:1:1]]-[[damage:max:4261:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 4261,
+            "baseMax": 4261,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4358:229.5:1:1]]-[[damage:max:4358:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 4358,
+            "baseMax": 4358,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4454:229.5:1:1]]-[[damage:max:4454:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 4454,
+            "baseMax": 4454,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4550:229.5:1:1]]-[[damage:max:4550:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 4550,
+            "baseMax": 4550,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4647:229.5:1:1]]-[[damage:max:4647:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 4647,
+            "baseMax": 4647,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4743:229.5:1:1]]-[[damage:max:4743:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 4743,
+            "baseMax": 4743,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4840:229.5:1:1]]-[[damage:max:4840:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 4840,
+            "baseMax": 4840,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:4936:229.5:1:1]]-[[damage:max:4936:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1224000011",
+            "effectGroupId": "122400001",
+            "baseMin": 4936,
+            "baseMax": 4936,
+            "attackRatioPercent": 229.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "834",
+        "level": 1,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "835",
+        "level": 2,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "836",
+        "level": 3,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "837",
+        "level": 4,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "838",
+        "level": 5,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "839",
+        "level": 6,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "840",
+        "level": 7,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "841",
+        "level": 8,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "842",
+        "level": 9,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "843",
+        "level": 10,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "12240010",
+        "skillId": "12240010",
+        "name": "Judgment",
+        "description": "Absorbs 1% HP",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12240020",
+        "skillId": "12240020",
+        "name": "Judgment",
+        "description": "Deals extra damage on attacking a target afflicted with Impact-type status",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12240030",
+        "skillId": "12240030",
+        "name": "Judgment",
+        "description": "Extra damage on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12240040",
+        "skillId": "12240040",
+        "name": "Judgment",
+        "description": "Critical Hit on hit",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12240050",
+        "skillId": "12240050",
+        "name": "Judgment",
+        "description": "Remove cooldown",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 4,
+    "cooldownSeconds": 5,
+    "classes": [
+      {
+        "code": "templar",
+        "name": "Templar"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Judgment",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_004.webp",
+    "id": "12240000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:227:229.5:1:1]]-[[damage:max:227:229.5:1:1]]</> damage to a target within 4m and increases Enmity.\n\n5 Stagger Gauge Damage"
+  }
+}

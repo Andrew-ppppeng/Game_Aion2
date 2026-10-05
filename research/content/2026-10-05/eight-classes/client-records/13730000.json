@@ -1,0 +1,1497 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/13730000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "13730000",
+    "name": "Apply Poison",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+    "kind": "passive",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 9,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 9,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": []
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "relation": "anyone",
+      "shape": {
+        "code": "self"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "dagger",
+        "name": "Dagger"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>12%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>14%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>16%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>18%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>20%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>22%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>24%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>26%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>28%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>30%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>32%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>34%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>36%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>38%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>40%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>42%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>44%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>46%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>48%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>50%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>52%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>54%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>56%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>58%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>60%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>62%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>64%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>66%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>68%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>70%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>72%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>74%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>76%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>78%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>80%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>82%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>84%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>86%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>88%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>90%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137300001",
+            "name": "Apply Poison",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effect": "Has a 15% chance to inflict Poison on the target on landing an attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Apply Poison",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+              "id": "137300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "1485",
+        "level": 1,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 9,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1486",
+        "level": 2,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 9,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1487",
+        "level": 3,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1488",
+        "level": 4,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1489",
+        "level": 5,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1490",
+        "level": 6,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1491",
+        "level": 7,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1492",
+        "level": 8,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1493",
+        "level": 9,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1494",
+        "level": 10,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "passive",
+    "kindName": "Passive",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "classes": [
+      {
+        "code": "assassin",
+        "name": "Assassin"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/passive"
+    ],
+    "name": "Apply Poison",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_003.webp",
+    "id": "13730000",
+    "entityType": "skill",
+    "description": "Has a 15% chance to reduce the target's Incoming Heal by <chat_combat>12%</> and inflict Poison for 10s on landing an attack. Poison deals <chat_combat>[[dot]]~[[dot]]</> Damage over Time every 1s.\n\nCooldown: 1s"
+  }
+}

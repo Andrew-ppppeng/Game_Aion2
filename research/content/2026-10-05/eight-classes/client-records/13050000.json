@@ -1,0 +1,2123 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/13050000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "13050000",
+    "name": "Flash Slice",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_005.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 8,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 8,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 11,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "13050010",
+        "description": "+2s Blind duration",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13050020",
+        "description": "+6m Range",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13050030",
+        "description": "Up to +20% damage when more targets hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13050040",
+        "description": "+1 consecutive use",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13050050",
+        "description": "50% chance to rotate and inflict Stun for 3s on hitting a target afflicted with Blind",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "circle"
+      },
+      "reachMeters": 4,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 50
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "dagger",
+        "name": "Dagger"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:181:107:1:1]]-[[damage:max:181:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 181,
+            "baseMax": 181,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:243:107:1:1]]-[[damage:max:243:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 243,
+            "baseMax": 243,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:322:107:1:1]]-[[damage:max:322:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 322,
+            "baseMax": 322,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:417:107:1:1]]-[[damage:max:417:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 417,
+            "baseMax": 417,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:495:107:1:1]]-[[damage:max:495:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 495,
+            "baseMax": 495,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:574:107:1:1]]-[[damage:max:574:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 574,
+            "baseMax": 574,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:653:107:1:1]]-[[damage:max:653:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 653,
+            "baseMax": 653,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:731:107:1:1]]-[[damage:max:731:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 731,
+            "baseMax": 731,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:826:107:1:1]]-[[damage:max:826:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 826,
+            "baseMax": 826,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:905:107:1:1]]-[[damage:max:905:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 905,
+            "baseMax": 905,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:963:107:1:1]]-[[damage:max:963:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 963,
+            "baseMax": 963,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1004:107:1:1]]-[[damage:max:1004:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1004,
+            "baseMax": 1004,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1062:107:1:1]]-[[damage:max:1062:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1062,
+            "baseMax": 1062,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1120:107:1:1]]-[[damage:max:1120:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1120,
+            "baseMax": 1120,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1178:107:1:1]]-[[damage:max:1178:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1178,
+            "baseMax": 1178,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1235:107:1:1]]-[[damage:max:1235:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1235,
+            "baseMax": 1235,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1277:107:1:1]]-[[damage:max:1277:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1277,
+            "baseMax": 1277,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1319:107:1:1]]-[[damage:max:1319:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1319,
+            "baseMax": 1319,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1361:107:1:1]]-[[damage:max:1361:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1361,
+            "baseMax": 1361,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1402:107:1:1]]-[[damage:max:1402:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1402,
+            "baseMax": 1402,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1444:107:1:1]]-[[damage:max:1444:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1444,
+            "baseMax": 1444,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1486:107:1:1]]-[[damage:max:1486:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1486,
+            "baseMax": 1486,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1527:107:1:1]]-[[damage:max:1527:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1527,
+            "baseMax": 1527,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1569:107:1:1]]-[[damage:max:1569:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1569,
+            "baseMax": 1569,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1611:107:1:1]]-[[damage:max:1611:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1611,
+            "baseMax": 1611,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1653:107:1:1]]-[[damage:max:1653:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1653,
+            "baseMax": 1653,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1694:107:1:1]]-[[damage:max:1694:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1694,
+            "baseMax": 1694,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1736:107:1:1]]-[[damage:max:1736:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1736,
+            "baseMax": 1736,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1778:107:1:1]]-[[damage:max:1778:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1778,
+            "baseMax": 1778,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1820:107:1:1]]-[[damage:max:1820:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1820,
+            "baseMax": 1820,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1861:107:1:1]]-[[damage:max:1861:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1861,
+            "baseMax": 1861,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1903:107:1:1]]-[[damage:max:1903:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1903,
+            "baseMax": 1903,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1945:107:1:1]]-[[damage:max:1945:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1945,
+            "baseMax": 1945,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:1986:107:1:1]]-[[damage:max:1986:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 1986,
+            "baseMax": 1986,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:2028:107:1:1]]-[[damage:max:2028:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 2028,
+            "baseMax": 2028,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:2070:107:1:1]]-[[damage:max:2070:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 2070,
+            "baseMax": 2070,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:2112:107:1:1]]-[[damage:max:2112:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 2112,
+            "baseMax": 2112,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:2153:107:1:1]]-[[damage:max:2153:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 2153,
+            "baseMax": 2153,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:2195:107:1:1]]-[[damage:max:2195:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 2195,
+            "baseMax": 2195,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:2237:107:1:1]]-[[damage:max:2237:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1305000021",
+            "effectGroupId": "130500002",
+            "baseMin": 2237,
+            "baseMax": 2237,
+            "attackRatioPercent": 107
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000701",
+            "name": "Blind",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Blind Status",
+            "effect": "Blind Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Blind",
+              "id": "100000701"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "1413",
+        "level": 1,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 8,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1414",
+        "level": 2,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 8,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1415",
+        "level": 3,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 11,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1416",
+        "level": 4,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1417",
+        "level": 5,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1418",
+        "level": 6,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1419",
+        "level": 7,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1420",
+        "level": 8,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1421",
+        "level": 9,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1422",
+        "level": 10,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "13050010",
+        "skillId": "13050010",
+        "name": "Flash Slice",
+        "description": "+2s Blind duration",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13050020",
+        "skillId": "13050020",
+        "name": "Flash Slice",
+        "description": "+6m Range",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13050030",
+        "skillId": "13050030",
+        "name": "Flash Slice",
+        "description": "Up to +20% damage when more targets hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13050040",
+        "skillId": "13050040",
+        "name": "Flash Slice",
+        "description": "+1 consecutive use",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13050050",
+        "skillId": "13050050",
+        "name": "Flash Slice",
+        "description": "50% chance to rotate and inflict Stun for 3s on hitting a target afflicted with Blind",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 4,
+    "cooldownSeconds": 10,
+    "classes": [
+      {
+        "code": "assassin",
+        "name": "Assassin"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Flash Slice",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_005.webp",
+    "id": "13050000",
+    "entityType": "skill",
+    "description": "Moves to the opposite side of a target within 4m and deals <chat_combat>[[damage:min:181:107:1:1]]-[[damage:max:181:107:1:1]]</> damage to up to 4 enemies, with a 40% chance to inflict Blind for 3s.\n100% chance to inflict Blind on NPC targets.\n\n7 Stagger Gauge Damage"
+  }
+}

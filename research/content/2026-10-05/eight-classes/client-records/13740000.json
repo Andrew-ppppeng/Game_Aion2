@@ -1,0 +1,1497 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/13740000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "13740000",
+    "name": "Rear Smite",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+    "kind": "passive",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 11,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 11,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 35,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": []
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "relation": "anyone",
+      "shape": {
+        "code": "self"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "dagger",
+        "name": "Dagger"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>.",
+        "descriptionComplete": true,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "137400001",
+            "name": "Rear Smite",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Back Attack Damage Boost, PvE Damage Boost, and PvP Damage Boost",
+            "effect": "+<desc_point>3%</> Back Attack Damage Boost\n+<desc_point>3%</> PvE Damage Boost\n+<desc_point>1.5%</> PvP Damage Boost",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Rear Smite",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+              "id": "137400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": true,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "1495",
+        "level": 1,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 11,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1496",
+        "level": 2,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 11,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1497",
+        "level": 3,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1498",
+        "level": 4,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1499",
+        "level": 5,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1500",
+        "level": 6,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1501",
+        "level": 7,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1502",
+        "level": 8,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1503",
+        "level": 9,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1504",
+        "level": 10,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 35,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "passive",
+    "kindName": "Passive",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "classes": [
+      {
+        "code": "assassin",
+        "name": "Assassin"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/passive"
+    ],
+    "name": "Rear Smite",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_004.webp",
+    "id": "13740000",
+    "entityType": "skill",
+    "description": "Increases the caster's Back Attack Damage Boost by <chat_combat>3%</>, PvE Damage Boost by <chat_combat>3%</>, and PvP Damage Boost by <chat_combat>1.5%</>."
+  }
+}

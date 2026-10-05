@@ -1,0 +1,69 @@
+{
+  "title": "Macros de AION 2: tecla y prioridad de habilidades",
+  "description": "Configura el macro de habilidades integrado de AION 2 según una demostración del lanzamiento, revisa prioridades y prueba el retardo sin copiar plantillas sin verificar.",
+  "summary": "Asigna la tecla, elige una pila pequeña y comprueba cada ataque. Conserva curación y otras decisiones accesibles; las recomendaciones antiguas de KR/TW necesitan comprobación Global.",
+  "quickAnswer": "Asigna la macro integrada en Key Settings → General → Gameplay, abre su editor y selecciona una pila de habilidades de la barra. Empieza con una secuencia corta de daño y deja curación, movimiento e interrupciones en controles separados; el menú procede de un informe de jugador.",
+  "toc": [
+    {
+      "id": "bind-and-open",
+      "title": "Asignar la tecla y abrir el editor"
+    },
+    {
+      "id": "priority-stack",
+      "title": "Entender la prioridad"
+    },
+    {
+      "id": "manual-actions",
+      "title": "Conservar decisiones separadas"
+    },
+    {
+      "id": "delay-and-basic-attack",
+      "title": "Probar retardo y ataque básico"
+    },
+    {
+      "id": "debug-one-stack",
+      "title": "Comprobar una pila"
+    },
+    {
+      "id": "built-in-and-policy",
+      "title": "Macros integrados y política de NC"
+    }
+  ],
+  "visuals": {
+    "workflow": {
+      "title": "Crea un macro pequeño que puedas explicar",
+      "caption": "Orden de prueba editorial basado en el recorrido documentado; no es una medición de daño.",
+      "steps": [
+        {
+          "label": "Prueba manualmente",
+          "description": "Confirma el ataque y sus condiciones antes de añadir repetición."
+        },
+        {
+          "label": "Asigna una pila",
+          "description": "Empieza por una casilla conocida y verifica la tecla de activación."
+        },
+        {
+          "label": "Observa cada entrada",
+          "description": "Comprueba si la prioridad o una habilidad no disponible impiden el ataque esperado."
+        },
+        {
+          "label": "Ensaya una respuesta",
+          "description": "Detén el macro, muévete y usa una habilidad reactiva antes de un encuentro de grupo."
+        }
+      ]
+    },
+    "macro-global-keybind": {
+      "assetId": "macro-global-keybind",
+      "alt": "Ajustes del cliente Global en alemán con la tecla del macro de habilidades dentro de Gameplay",
+      "caption": "Interfaz Global en alemán publicada el 30 de septiembre de 2026: la fila marcada está en Key Settings, General y Gameplay. Elige tu propio botón de activación."
+    },
+    "macro-global-editor": {
+      "assetId": "macro-global-editor",
+      "alt": "Pantalla de habilidades Global en alemán con el botón de macros sobre las habilidades activas",
+      "caption": "El botón marcado abre el editor de macros desde la pantalla de habilidades. Captura de Karsten Scholz / MeinMMO; muestra el acceso al menú, no una pila de clase probada."
+    }
+  },
+  "inlineNext": [
+    "builds"
+  ]
+}

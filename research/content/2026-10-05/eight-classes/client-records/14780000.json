@@ -1,0 +1,1497 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/14780000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "14780000",
+    "name": "Melee Fire",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+    "kind": "passive",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": []
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "relation": "anyone",
+      "shape": {
+        "code": "self"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "bow",
+        "name": "Bow"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:148:26.4:1:1]]-[[damage:max:148:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:169:26.4:1:1]]-[[damage:max:169:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:189:26.4:1:1]]-[[damage:max:189:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:213:26.4:1:1]]-[[damage:max:213:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:234:26.4:1:1]]-[[damage:max:234:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:248:26.4:1:1]]-[[damage:max:248:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:259:26.4:1:1]]-[[damage:max:259:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:274:26.4:1:1]]-[[damage:max:274:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:289:26.4:1:1]]-[[damage:max:289:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:304:26.4:1:1]]-[[damage:max:304:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:319:26.4:1:1]]-[[damage:max:319:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:330:26.4:1:1]]-[[damage:max:330:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:340:26.4:1:1]]-[[damage:max:340:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:351:26.4:1:1]]-[[damage:max:351:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:362:26.4:1:1]]-[[damage:max:362:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:373:26.4:1:1]]-[[damage:max:373:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:384:26.4:1:1]]-[[damage:max:384:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:395:26.4:1:1]]-[[damage:max:395:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:406:26.4:1:1]]-[[damage:max:406:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:417:26.4:1:1]]-[[damage:max:417:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:428:26.4:1:1]]-[[damage:max:428:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:438:26.4:1:1]]-[[damage:max:438:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:449:26.4:1:1]]-[[damage:max:449:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:460:26.4:1:1]]-[[damage:max:460:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:471:26.4:1:1]]-[[damage:max:471:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:482:26.4:1:1]]-[[damage:max:482:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:493:26.4:1:1]]-[[damage:max:493:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:504:26.4:1:1]]-[[damage:max:504:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:515:26.4:1:1]]-[[damage:max:515:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:526:26.4:1:1]]-[[damage:max:526:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:536:26.4:1:1]]-[[damage:max:536:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:547:26.4:1:1]]-[[damage:max:547:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:558:26.4:1:1]]-[[damage:max:558:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:569:26.4:1:1]]-[[damage:max:569:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:580:26.4:1:1]]-[[damage:max:580:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:591:26.4:1:1]]-[[damage:max:591:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:602:26.4:1:1]]-[[damage:max:602:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:613:26.4:1:1]]-[[damage:max:613:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:624:26.4:1:1]]-[[damage:max:624:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:634:26.4:1:1]]-[[damage:max:634:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "147800001",
+            "name": "Melee Fire",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra Wind damage to targets on attack and inflicts Knock Back on targets within 5m on attack",
+            "effect": "Deals extra Wind damage to targets on attack\nInflicts Knock Back on targets within 5m on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Melee Fire",
+              "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+              "id": "147800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "2083",
+        "level": 1,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2084",
+        "level": 2,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2085",
+        "level": 3,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2086",
+        "level": 4,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2087",
+        "level": 5,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2088",
+        "level": 6,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2089",
+        "level": 7,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2090",
+        "level": 8,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2091",
+        "level": 9,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2092",
+        "level": 10,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "passive",
+    "kindName": "Passive",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "classes": [
+      {
+        "code": "ranger",
+        "name": "Ranger"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/passive"
+    ],
+    "name": "Melee Fire",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_passive_013.webp",
+    "id": "14780000",
+    "entityType": "skill",
+    "description": "Has a 25% chance to inflict <chat_combat>[[damage:min:148:26.4:1:1]]-[[damage:max:148:26.4:1:1]]</> extra Wind damage when landing an attack. Has a 5% chance to inflict Knock Back when landing an attack on a target within 5m.\n\nCooldown: 1s"
+  }
+}

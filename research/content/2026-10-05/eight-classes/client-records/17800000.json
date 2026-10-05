@@ -1,0 +1,1497 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/17800000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "17800000",
+    "name": "Radiant Benediction",
+    "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+    "kind": "passive",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": []
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "relation": "anyone",
+      "shape": {
+        "code": "self"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "mace",
+        "name": "Mace"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "178000001",
+            "name": "Radiant Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Restores HP to the caster and party members on landing an attack",
+            "effect": "Restores <desc_point>[[heal]]-[[heal]]</> HP to the caster and party members on landing an attack",
+            "effectComplete": false,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Radiant Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_010.webp",
+              "id": "178000001"
+            }
+          }
+        ],
+        "abnormalsComplete": false
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "3753",
+        "level": 1,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3754",
+        "level": 2,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3755",
+        "level": 3,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3756",
+        "level": 4,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3757",
+        "level": 5,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3758",
+        "level": 6,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3759",
+        "level": 7,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3760",
+        "level": 8,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3761",
+        "level": 9,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3762",
+        "level": 10,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "passive",
+    "kindName": "Passive",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "classes": [
+      {
+        "code": "cleric",
+        "name": "Cleric"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/passive"
+    ],
+    "name": "Radiant Benediction",
+    "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_passive_007.webp",
+    "id": "17800000",
+    "entityType": "skill",
+    "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and party members within 40m on landing an attack.\n\nCooldown: 5s"
+  }
+}

@@ -1,0 +1,1683 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/14340000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "14340000",
+    "name": "Tempest Shot",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_034.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "14340010",
+        "description": "-20% MP consumed",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14340020",
+        "description": "+10% skill Critical Hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14340030",
+        "description": "Deals up to 12% more damage when less targets are hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14340040",
+        "description": "5% chance to inflict Knock Back on Critical Hit",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14340050",
+        "description": "+20% Skill Speed",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Mobile</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "circle"
+      },
+      "reachMeters": 4,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 120
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "bow",
+        "name": "Bow"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:56:56.7:2:2]]-[[damage:max:56:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 56,
+            "baseMax": 56,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 56,
+            "baseMax": 56,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:80:56.7:2:2]]-[[damage:max:80:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 80,
+            "baseMax": 80,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 80,
+            "baseMax": 80,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:103:56.7:2:2]]-[[damage:max:103:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 103,
+            "baseMax": 103,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 103,
+            "baseMax": 103,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:126:56.7:2:2]]-[[damage:max:126:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 126,
+            "baseMax": 126,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 126,
+            "baseMax": 126,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:161:56.7:2:2]]-[[damage:max:161:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 161,
+            "baseMax": 161,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 161,
+            "baseMax": 161,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:205:56.7:2:2]]-[[damage:max:205:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 205,
+            "baseMax": 205,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 205,
+            "baseMax": 205,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:257:56.7:2:2]]-[[damage:max:257:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 257,
+            "baseMax": 257,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 257,
+            "baseMax": 257,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:301:56.7:2:2]]-[[damage:max:301:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 301,
+            "baseMax": 301,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 301,
+            "baseMax": 301,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:344:56.7:2:2]]-[[damage:max:344:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 344,
+            "baseMax": 344,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 344,
+            "baseMax": 344,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:388:56.7:2:2]]-[[damage:max:388:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 388,
+            "baseMax": 388,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 388,
+            "baseMax": 388,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:431:56.7:2:2]]-[[damage:max:431:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 431,
+            "baseMax": 431,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 431,
+            "baseMax": 431,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:484:56.7:2:2]]-[[damage:max:484:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 484,
+            "baseMax": 484,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 484,
+            "baseMax": 484,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:527:56.7:2:2]]-[[damage:max:527:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 527,
+            "baseMax": 527,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 527,
+            "baseMax": 527,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:559:56.7:2:2]]-[[damage:max:559:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 559,
+            "baseMax": 559,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 559,
+            "baseMax": 559,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:582:56.7:2:2]]-[[damage:max:582:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 582,
+            "baseMax": 582,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 582,
+            "baseMax": 582,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:614:56.7:2:2]]-[[damage:max:614:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 614,
+            "baseMax": 614,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 614,
+            "baseMax": 614,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:646:56.7:2:2]]-[[damage:max:646:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 646,
+            "baseMax": 646,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 646,
+            "baseMax": 646,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:678:56.7:2:2]]-[[damage:max:678:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 678,
+            "baseMax": 678,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 678,
+            "baseMax": 678,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:710:56.7:2:2]]-[[damage:max:710:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 710,
+            "baseMax": 710,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 710,
+            "baseMax": 710,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:733:56.7:2:2]]-[[damage:max:733:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 733,
+            "baseMax": 733,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 733,
+            "baseMax": 733,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:757:56.7:2:2]]-[[damage:max:757:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 757,
+            "baseMax": 757,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 757,
+            "baseMax": 757,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:780:56.7:2:2]]-[[damage:max:780:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 780,
+            "baseMax": 780,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 780,
+            "baseMax": 780,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:804:56.7:2:2]]-[[damage:max:804:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 804,
+            "baseMax": 804,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 804,
+            "baseMax": 804,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:827:56.7:2:2]]-[[damage:max:827:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 827,
+            "baseMax": 827,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 827,
+            "baseMax": 827,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:850:56.7:2:2]]-[[damage:max:850:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 850,
+            "baseMax": 850,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 850,
+            "baseMax": 850,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:874:56.7:2:2]]-[[damage:max:874:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 874,
+            "baseMax": 874,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 874,
+            "baseMax": 874,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:897:56.7:2:2]]-[[damage:max:897:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 897,
+            "baseMax": 897,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 897,
+            "baseMax": 897,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:921:56.7:2:2]]-[[damage:max:921:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 921,
+            "baseMax": 921,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 921,
+            "baseMax": 921,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:944:56.7:2:2]]-[[damage:max:944:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 944,
+            "baseMax": 944,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 944,
+            "baseMax": 944,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:967:56.7:2:2]]-[[damage:max:967:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 967,
+            "baseMax": 967,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 967,
+            "baseMax": 967,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:991:56.7:2:2]]-[[damage:max:991:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 991,
+            "baseMax": 991,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 991,
+            "baseMax": 991,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1014:56.7:2:2]]-[[damage:max:1014:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 1014,
+            "baseMax": 1014,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 1014,
+            "baseMax": 1014,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1037:56.7:2:2]]-[[damage:max:1037:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 1037,
+            "baseMax": 1037,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 1037,
+            "baseMax": 1037,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1061:56.7:2:2]]-[[damage:max:1061:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 1061,
+            "baseMax": 1061,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 1061,
+            "baseMax": 1061,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1084:56.7:2:2]]-[[damage:max:1084:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 1084,
+            "baseMax": 1084,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 1084,
+            "baseMax": 1084,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1108:56.7:2:2]]-[[damage:max:1108:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 1108,
+            "baseMax": 1108,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 1108,
+            "baseMax": 1108,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1131:56.7:2:2]]-[[damage:max:1131:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 1131,
+            "baseMax": 1131,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 1131,
+            "baseMax": 1131,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1154:56.7:2:2]]-[[damage:max:1154:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 1154,
+            "baseMax": 1154,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 1154,
+            "baseMax": 1154,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1178:56.7:2:2]]-[[damage:max:1178:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 1178,
+            "baseMax": 1178,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 1178,
+            "baseMax": 1178,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 120
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1201:56.7:2:2]]-[[damage:max:1201:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1434000011",
+            "effectGroupId": "143400001",
+            "baseMin": 1201,
+            "baseMax": 1201,
+            "attackRatioPercent": 56.7
+          },
+          {
+            "effectId": "1434000021",
+            "effectGroupId": "143400002",
+            "baseMin": 1201,
+            "baseMax": 1201,
+            "attackRatioPercent": 56.7
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "1901",
+        "level": 1,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1902",
+        "level": 2,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1903",
+        "level": 3,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1904",
+        "level": 4,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1905",
+        "level": 5,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1906",
+        "level": 6,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1907",
+        "level": 7,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1908",
+        "level": 8,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1909",
+        "level": 9,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1910",
+        "level": 10,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "14340010",
+        "skillId": "14340010",
+        "name": "Tempest Shot",
+        "description": "-20% MP consumed",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14340020",
+        "skillId": "14340020",
+        "name": "Tempest Shot",
+        "description": "+10% skill Critical Hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14340030",
+        "skillId": "14340030",
+        "name": "Tempest Shot",
+        "description": "Deals up to 12% more damage when less targets are hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14340040",
+        "skillId": "14340040",
+        "name": "Tempest Shot",
+        "description": "5% chance to inflict Knock Back on Critical Hit",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14340050",
+        "skillId": "14340050",
+        "name": "Tempest Shot",
+        "description": "+20% Skill Speed",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "classes": [
+      {
+        "code": "ranger",
+        "name": "Ranger"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Tempest Shot",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_034.webp",
+    "id": "14340000",
+    "entityType": "skill",
+    "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:56:56.7:2:2]]-[[damage:max:56:56.7:2:2]]</> Wind damage to up to 4 enemies within 4m of the target.\n\n1 Stagger Gauge Damage"
+  }
+}

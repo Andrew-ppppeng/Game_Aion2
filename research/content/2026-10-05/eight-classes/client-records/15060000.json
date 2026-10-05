@@ -1,0 +1,1444 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/15060000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "15060000",
+    "name": "Hellfire",
+    "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_006.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 14,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 35,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 38,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "15060010",
+        "description": "+30% Skill Speed",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15060020",
+        "description": "Fire Damage over Time for 10s on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15060030",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15060040",
+        "description": "Ignores Block and Evasion and lands as Multi-Hit",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15060050",
+        "description": "-15s cooldown",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Charge Skill</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "circle"
+      },
+      "reachMeters": 4,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 200
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "magicbook",
+        "name": "Spellbook"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1137:339.25:1:1]]-[[damage:max:3412:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 1137,
+            "baseMax": 1137,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1460:339.25:1:1]]-[[damage:max:4381:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 1460,
+            "baseMax": 1460,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1732:339.25:1:1]]-[[damage:max:5198:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 1732,
+            "baseMax": 1732,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2004:339.25:1:1]]-[[damage:max:6014:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 2004,
+            "baseMax": 2004,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2277:339.25:1:1]]-[[damage:max:6831:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 2277,
+            "baseMax": 2277,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2549:339.25:1:1]]-[[damage:max:7648:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 2549,
+            "baseMax": 2549,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2872:339.25:1:1]]-[[damage:max:8617:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 2872,
+            "baseMax": 2872,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3144:339.25:1:1]]-[[damage:max:9434:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 3144,
+            "baseMax": 3144,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3343:339.25:1:1]]-[[damage:max:10029:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 3343,
+            "baseMax": 3343,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3490:339.25:1:1]]-[[damage:max:10472:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 3490,
+            "baseMax": 3490,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3689:339.25:1:1]]-[[damage:max:11068:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 3689,
+            "baseMax": 3689,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3887:339.25:1:1]]-[[damage:max:11663:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 3887,
+            "baseMax": 3887,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4086:339.25:1:1]]-[[damage:max:12258:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 4086,
+            "baseMax": 4086,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4284:339.25:1:1]]-[[damage:max:12854:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 4284,
+            "baseMax": 4284,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4432:339.25:1:1]]-[[damage:max:13296:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 4432,
+            "baseMax": 4432,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4579:339.25:1:1]]-[[damage:max:13739:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 4579,
+            "baseMax": 4579,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4727:339.25:1:1]]-[[damage:max:14182:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 4727,
+            "baseMax": 4727,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4875:339.25:1:1]]-[[damage:max:14625:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 4875,
+            "baseMax": 4875,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:5022:339.25:1:1]]-[[damage:max:15067:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 5022,
+            "baseMax": 5022,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:5170:339.25:1:1]]-[[damage:max:15510:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 5170,
+            "baseMax": 5170,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:5317:339.25:1:1]]-[[damage:max:15953:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 5317,
+            "baseMax": 5317,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:5465:339.25:1:1]]-[[damage:max:16395:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 5465,
+            "baseMax": 5465,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:5612:339.25:1:1]]-[[damage:max:16838:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 5612,
+            "baseMax": 5612,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:5760:339.25:1:1]]-[[damage:max:17281:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 5760,
+            "baseMax": 5760,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:5908:339.25:1:1]]-[[damage:max:17724:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 5908,
+            "baseMax": 5908,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:6055:339.25:1:1]]-[[damage:max:18166:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 6055,
+            "baseMax": 6055,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:6203:339.25:1:1]]-[[damage:max:18609:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 6203,
+            "baseMax": 6203,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:6350:339.25:1:1]]-[[damage:max:19052:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 6350,
+            "baseMax": 6350,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:6498:339.25:1:1]]-[[damage:max:19495:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 6498,
+            "baseMax": 6498,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:6645:339.25:1:1]]-[[damage:max:19937:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 6645,
+            "baseMax": 6645,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:6793:339.25:1:1]]-[[damage:max:20380:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 6793,
+            "baseMax": 6793,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:6941:339.25:1:1]]-[[damage:max:20823:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 6941,
+            "baseMax": 6941,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:7088:339.25:1:1]]-[[damage:max:21265:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 7088,
+            "baseMax": 7088,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:7236:339.25:1:1]]-[[damage:max:21708:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 7236,
+            "baseMax": 7236,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:7383:339.25:1:1]]-[[damage:max:22151:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 7383,
+            "baseMax": 7383,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:7531:339.25:1:1]]-[[damage:max:22594:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 7531,
+            "baseMax": 7531,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:7678:339.25:1:1]]-[[damage:max:23036:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 7678,
+            "baseMax": 7678,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:7826:339.25:1:1]]-[[damage:max:23479:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 7826,
+            "baseMax": 7826,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:7974:339.25:1:1]]-[[damage:max:23922:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 7974,
+            "baseMax": 7974,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:8121:339.25:1:1]]-[[damage:max:24364:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1506000011",
+            "effectGroupId": "150600001",
+            "baseMin": 8121,
+            "baseMax": 8121,
+            "attackRatioPercent": 339.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "2540",
+        "level": 1,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 14,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2541",
+        "level": 2,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2542",
+        "level": 3,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2543",
+        "level": 4,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2544",
+        "level": 5,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2545",
+        "level": 6,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2546",
+        "level": 7,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2547",
+        "level": 8,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2548",
+        "level": 9,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 35,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2549",
+        "level": 10,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 38,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "15060010",
+        "skillId": "15060010",
+        "name": "Hellfire",
+        "description": "+30% Skill Speed",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15060020",
+        "skillId": "15060020",
+        "name": "Hellfire",
+        "description": "Fire Damage over Time for 10s on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15060030",
+        "skillId": "15060030",
+        "name": "Hellfire",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15060040",
+        "skillId": "15060040",
+        "name": "Hellfire",
+        "description": "Ignores Block and Evasion and lands as Multi-Hit",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15060050",
+        "skillId": "15060050",
+        "name": "Hellfire",
+        "description": "-15s cooldown",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 45,
+    "classes": [
+      {
+        "code": "sorcerer",
+        "name": "Sorcerer"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Hellfire",
+    "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_006.webp",
+    "id": "15060000",
+    "entityType": "skill",
+    "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1137:339.25:1:1]]-[[damage:max:3412:1017.75:2:2]]</> Fire damage to up to 4 enemies within 4m of the target.\n\nMax 3 Charge Levels\n20-35 Stagger Gauge Damage"
+  }
+}

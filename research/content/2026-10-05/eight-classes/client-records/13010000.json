@@ -1,0 +1,1448 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/13010000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "13010000",
+    "name": "Quick Slice",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_001.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "13010010",
+        "description": "+20% MP restored",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13010020",
+        "description": "Absorbs 0.7% HP",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13010030",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13010040",
+        "description": "-1s [Insignia Explosion] cooldown on hit",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13010050",
+        "description": "Ignores Block and Evasion and lands as a Critical Hit",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Nontarget | Mobile</>",
+    "basic": true,
+    "targeting": {
+      "process": {
+        "code": "mainself"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "rectangle"
+      },
+      "reachMeters": 5.9,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "dagger",
+        "name": "Dagger"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:61:70:2:2]]-[[damage:max:61:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 61,
+            "baseMax": 61,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 61,
+            "baseMax": 61,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:89:70:2:2]]-[[damage:max:89:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 89,
+            "baseMax": 89,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 89,
+            "baseMax": 89,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:116:70:2:2]]-[[damage:max:116:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 116,
+            "baseMax": 116,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 116,
+            "baseMax": 116,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:143:70:2:2]]-[[damage:max:143:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 143,
+            "baseMax": 143,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 143,
+            "baseMax": 143,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:184:70:2:2]]-[[damage:max:184:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 184,
+            "baseMax": 184,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 184,
+            "baseMax": 184,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:236:70:2:2]]-[[damage:max:236:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 236,
+            "baseMax": 236,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 236,
+            "baseMax": 236,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:298:70:2:2]]-[[damage:max:298:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 298,
+            "baseMax": 298,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 298,
+            "baseMax": 298,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:349:70:2:2]]-[[damage:max:349:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 349,
+            "baseMax": 349,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 349,
+            "baseMax": 349,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:400:70:2:2]]-[[damage:max:400:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 400,
+            "baseMax": 400,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 400,
+            "baseMax": 400,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:452:70:2:2]]-[[damage:max:452:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 452,
+            "baseMax": 452,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 452,
+            "baseMax": 452,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:503:70:2:2]]-[[damage:max:503:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 503,
+            "baseMax": 503,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 503,
+            "baseMax": 503,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:565:70:2:2]]-[[damage:max:565:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 565,
+            "baseMax": 565,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 565,
+            "baseMax": 565,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:617:70:2:2]]-[[damage:max:617:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 617,
+            "baseMax": 617,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 617,
+            "baseMax": 617,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:655:70:2:2]]-[[damage:max:655:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 655,
+            "baseMax": 655,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 655,
+            "baseMax": 655,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:682:70:2:2]]-[[damage:max:682:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 682,
+            "baseMax": 682,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 682,
+            "baseMax": 682,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:720:70:2:2]]-[[damage:max:720:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 720,
+            "baseMax": 720,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 720,
+            "baseMax": 720,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:757:70:2:2]]-[[damage:max:757:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 757,
+            "baseMax": 757,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 757,
+            "baseMax": 757,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:795:70:2:2]]-[[damage:max:795:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 795,
+            "baseMax": 795,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 795,
+            "baseMax": 795,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:833:70:2:2]]-[[damage:max:833:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 833,
+            "baseMax": 833,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 833,
+            "baseMax": 833,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:860:70:2:2]]-[[damage:max:860:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 860,
+            "baseMax": 860,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 860,
+            "baseMax": 860,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:888:70:2:2]]-[[damage:max:888:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 888,
+            "baseMax": 888,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 888,
+            "baseMax": 888,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:915:70:2:2]]-[[damage:max:915:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 915,
+            "baseMax": 915,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 915,
+            "baseMax": 915,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:942:70:2:2]]-[[damage:max:942:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 942,
+            "baseMax": 942,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 942,
+            "baseMax": 942,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:970:70:2:2]]-[[damage:max:970:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 970,
+            "baseMax": 970,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 970,
+            "baseMax": 970,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:997:70:2:2]]-[[damage:max:997:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 997,
+            "baseMax": 997,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 997,
+            "baseMax": 997,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1024:70:2:2]]-[[damage:max:1024:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 1024,
+            "baseMax": 1024,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 1024,
+            "baseMax": 1024,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1051:70:2:2]]-[[damage:max:1051:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 1051,
+            "baseMax": 1051,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 1051,
+            "baseMax": 1051,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1079:70:2:2]]-[[damage:max:1079:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 1079,
+            "baseMax": 1079,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 1079,
+            "baseMax": 1079,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1106:70:2:2]]-[[damage:max:1106:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 1106,
+            "baseMax": 1106,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 1106,
+            "baseMax": 1106,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1133:70:2:2]]-[[damage:max:1133:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 1133,
+            "baseMax": 1133,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 1133,
+            "baseMax": 1133,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1161:70:2:2]]-[[damage:max:1161:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 1161,
+            "baseMax": 1161,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 1161,
+            "baseMax": 1161,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1188:70:2:2]]-[[damage:max:1188:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 1188,
+            "baseMax": 1188,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 1188,
+            "baseMax": 1188,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1215:70:2:2]]-[[damage:max:1215:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 1215,
+            "baseMax": 1215,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 1215,
+            "baseMax": 1215,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1243:70:2:2]]-[[damage:max:1243:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 1243,
+            "baseMax": 1243,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 1243,
+            "baseMax": 1243,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1270:70:2:2]]-[[damage:max:1270:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 1270,
+            "baseMax": 1270,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 1270,
+            "baseMax": 1270,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1297:70:2:2]]-[[damage:max:1297:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 1297,
+            "baseMax": 1297,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 1297,
+            "baseMax": 1297,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1324:70:2:2]]-[[damage:max:1324:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 1324,
+            "baseMax": 1324,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 1324,
+            "baseMax": 1324,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1352:70:2:2]]-[[damage:max:1352:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 1352,
+            "baseMax": 1352,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 1352,
+            "baseMax": 1352,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1379:70:2:2]]-[[damage:max:1379:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 1379,
+            "baseMax": 1379,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 1379,
+            "baseMax": 1379,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1406:70:2:2]]-[[damage:max:1406:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1301000011",
+            "effectGroupId": "130100001",
+            "baseMin": 1406,
+            "baseMax": 1406,
+            "attackRatioPercent": 70
+          },
+          {
+            "effectId": "1301000021",
+            "effectGroupId": "130100002",
+            "baseMin": 1406,
+            "baseMax": 1406,
+            "attackRatioPercent": 70
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "1342",
+        "level": 1,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1343",
+        "level": 2,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1344",
+        "level": 3,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1345",
+        "level": 4,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1346",
+        "level": 5,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1347",
+        "level": 6,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1348",
+        "level": 7,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1349",
+        "level": 8,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1350",
+        "level": 9,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1351",
+        "level": 10,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "13010010",
+        "skillId": "13010010",
+        "name": "Quick Slice",
+        "description": "+20% MP restored",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13010020",
+        "skillId": "13010020",
+        "name": "Quick Slice",
+        "description": "Absorbs 0.7% HP",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13010030",
+        "skillId": "13010030",
+        "name": "Quick Slice",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13010040",
+        "skillId": "13010040",
+        "name": "Quick Slice",
+        "description": "-1s [Insignia Explosion] cooldown on hit",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "13010050",
+        "skillId": "13010050",
+        "name": "Quick Slice",
+        "description": "Ignores Block and Evasion and lands as a Critical Hit",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "assassin",
+          "name": "Assassin"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [
+      {
+        "mainCategoryId": "skills",
+        "name": "Breaking Slice",
+        "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_003.webp",
+        "id": "13030000"
+      }
+    ],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 4,
+    "classes": [
+      {
+        "code": "assassin",
+        "name": "Assassin"
+      }
+    ],
+    "chainRole": {
+      "code": "opening",
+      "name": "Opening Skill"
+    },
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Quick Slice",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_001.webp",
+    "id": "13010000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:61:70:2:2]]-[[damage:max:61:70:2:2]]</> damage to up to 4 enemies within 4m and restores 100 MP."
+  }
+}

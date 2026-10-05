@@ -1,0 +1,1724 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/18290000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "18290000",
+    "name": "Spinning Strike",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_029.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 14,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 35,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 38,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "18290010",
+        "description": "-5s cooldown",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18290020",
+        "description": "+10% Heal Boost (up to 20%)",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18290030",
+        "description": "Up to +20% damage when less targets hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18290040",
+        "description": "40% chance to inflict Seal for 3s",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18290050",
+        "description": "Ignores Block and Evasion and lands as a Critical Hit",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Mobile</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "circle"
+      },
+      "reachMeters": 4,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 250
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "staff",
+        "name": "Staff"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2347:700.13:1:1]]-[[damage:max:2347:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 2347,
+            "baseMax": 2347,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 2347,
+            "baseMax": 2347,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3014:700.13:1:1]]-[[damage:max:3014:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 3014,
+            "baseMax": 3014,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 3014,
+            "baseMax": 3014,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3575:700.13:1:1]]-[[damage:max:3575:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 3575,
+            "baseMax": 3575,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 3575,
+            "baseMax": 3575,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4137:700.13:1:1]]-[[damage:max:4137:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 4137,
+            "baseMax": 4137,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 4137,
+            "baseMax": 4137,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4699:700.13:1:1]]-[[damage:max:4699:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 4699,
+            "baseMax": 4699,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 4699,
+            "baseMax": 4699,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:5261:700.13:1:1]]-[[damage:max:5261:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 5261,
+            "baseMax": 5261,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 5261,
+            "baseMax": 5261,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:5928:700.13:1:1]]-[[damage:max:5928:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 5928,
+            "baseMax": 5928,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 5928,
+            "baseMax": 5928,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:6490:700.13:1:1]]-[[damage:max:6490:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 6490,
+            "baseMax": 6490,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 6490,
+            "baseMax": 6490,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:6899:700.13:1:1]]-[[damage:max:6899:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 6899,
+            "baseMax": 6899,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 6899,
+            "baseMax": 6899,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:7204:700.13:1:1]]-[[damage:max:7204:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 7204,
+            "baseMax": 7204,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 7204,
+            "baseMax": 7204,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:7613:700.13:1:1]]-[[damage:max:7613:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 7613,
+            "baseMax": 7613,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 7613,
+            "baseMax": 7613,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:8023:700.13:1:1]]-[[damage:max:8023:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 8023,
+            "baseMax": 8023,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 8023,
+            "baseMax": 8023,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:8433:700.13:1:1]]-[[damage:max:8433:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 8433,
+            "baseMax": 8433,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 8433,
+            "baseMax": 8433,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:8842:700.13:1:1]]-[[damage:max:8842:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 8842,
+            "baseMax": 8842,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 8842,
+            "baseMax": 8842,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:9147:700.13:1:1]]-[[damage:max:9147:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 9147,
+            "baseMax": 9147,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 9147,
+            "baseMax": 9147,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:9451:700.13:1:1]]-[[damage:max:9451:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 9451,
+            "baseMax": 9451,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 9451,
+            "baseMax": 9451,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:9756:700.13:1:1]]-[[damage:max:9756:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 9756,
+            "baseMax": 9756,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 9756,
+            "baseMax": 9756,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:10060:700.13:1:1]]-[[damage:max:10060:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 10060,
+            "baseMax": 10060,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 10060,
+            "baseMax": 10060,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:10365:700.13:1:1]]-[[damage:max:10365:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 10365,
+            "baseMax": 10365,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 10365,
+            "baseMax": 10365,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:10669:700.13:1:1]]-[[damage:max:10669:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 10669,
+            "baseMax": 10669,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 10669,
+            "baseMax": 10669,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:10974:700.13:1:1]]-[[damage:max:10974:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 10974,
+            "baseMax": 10974,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 10974,
+            "baseMax": 10974,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:11279:700.13:1:1]]-[[damage:max:11279:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 11279,
+            "baseMax": 11279,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 11279,
+            "baseMax": 11279,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:11583:700.13:1:1]]-[[damage:max:11583:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 11583,
+            "baseMax": 11583,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 11583,
+            "baseMax": 11583,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:11888:700.13:1:1]]-[[damage:max:11888:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 11888,
+            "baseMax": 11888,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 11888,
+            "baseMax": 11888,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:12192:700.13:1:1]]-[[damage:max:12192:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 12192,
+            "baseMax": 12192,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 12192,
+            "baseMax": 12192,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:12497:700.13:1:1]]-[[damage:max:12497:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 12497,
+            "baseMax": 12497,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 12497,
+            "baseMax": 12497,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:12801:700.13:1:1]]-[[damage:max:12801:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 12801,
+            "baseMax": 12801,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 12801,
+            "baseMax": 12801,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:13106:700.13:1:1]]-[[damage:max:13106:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 13106,
+            "baseMax": 13106,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 13106,
+            "baseMax": 13106,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:13410:700.13:1:1]]-[[damage:max:13410:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 13410,
+            "baseMax": 13410,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 13410,
+            "baseMax": 13410,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:13715:700.13:1:1]]-[[damage:max:13715:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 13715,
+            "baseMax": 13715,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 13715,
+            "baseMax": 13715,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:14020:700.13:1:1]]-[[damage:max:14020:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 14020,
+            "baseMax": 14020,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 14020,
+            "baseMax": 14020,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:14324:700.13:1:1]]-[[damage:max:14324:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 14324,
+            "baseMax": 14324,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 14324,
+            "baseMax": 14324,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:14629:700.13:1:1]]-[[damage:max:14629:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 14629,
+            "baseMax": 14629,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 14629,
+            "baseMax": 14629,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:14933:700.13:1:1]]-[[damage:max:14933:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 14933,
+            "baseMax": 14933,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 14933,
+            "baseMax": 14933,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:15238:700.13:1:1]]-[[damage:max:15238:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 15238,
+            "baseMax": 15238,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 15238,
+            "baseMax": 15238,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:15542:700.13:1:1]]-[[damage:max:15542:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 15542,
+            "baseMax": 15542,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 15542,
+            "baseMax": 15542,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:15847:700.13:1:1]]-[[damage:max:15847:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 15847,
+            "baseMax": 15847,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 15847,
+            "baseMax": 15847,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:16151:700.13:1:1]]-[[damage:max:16151:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 16151,
+            "baseMax": 16151,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 16151,
+            "baseMax": 16151,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:16456:700.13:1:1]]-[[damage:max:16456:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 16456,
+            "baseMax": 16456,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 16456,
+            "baseMax": 16456,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 30,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 250
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:16761:700.13:1:1]]-[[damage:max:16761:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1829000011",
+            "effectGroupId": "182900001",
+            "baseMin": 16761,
+            "baseMax": 16761,
+            "attackRatioPercent": 700.13
+          },
+          {
+            "effectId": "1829000012",
+            "effectGroupId": "182900001",
+            "baseMin": 16761,
+            "baseMax": 16761,
+            "attackRatioPercent": 700.13
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "4191",
+        "level": 1,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 14,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4192",
+        "level": 2,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4193",
+        "level": 3,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4194",
+        "level": 4,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4195",
+        "level": 5,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4196",
+        "level": 6,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4197",
+        "level": 7,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4198",
+        "level": 8,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4199",
+        "level": 9,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 35,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4200",
+        "level": 10,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 38,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "18290010",
+        "skillId": "18290010",
+        "name": "Spinning Strike",
+        "description": "-5s cooldown",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18290020",
+        "skillId": "18290020",
+        "name": "Spinning Strike",
+        "description": "+10% Heal Boost (up to 20%)",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18290030",
+        "skillId": "18290030",
+        "name": "Spinning Strike",
+        "description": "Up to +20% damage when less targets hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18290040",
+        "skillId": "18290040",
+        "name": "Spinning Strike",
+        "description": "40% chance to inflict Seal for 3s",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18290050",
+        "skillId": "18290050",
+        "name": "Spinning Strike",
+        "description": "Ignores Block and Evasion and lands as a Critical Hit",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 30,
+    "classes": [
+      {
+        "code": "chanter",
+        "name": "Chanter"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Spinning Strike",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_029.webp",
+    "id": "18290000",
+    "entityType": "skill",
+    "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2347:700.13:1:1]]-[[damage:max:2347:700.13:1:1]]</> damage to up to 4 enemies nearby. Increases the caster's Critical Damage Boost by 15% for 30s on hit. Stacks up to 2 times.\n\n[Dark Crush] becomes available for 2s on skill use.\n15 Stagger Gauge Damage"
+  }
+}

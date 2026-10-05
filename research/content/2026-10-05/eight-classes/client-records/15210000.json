@@ -1,0 +1,1167 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/15210000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "15210000",
+    "name": "Flame Arrow",
+    "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_020.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "15210010",
+        "description": "+20% MP restored",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15210020",
+        "description": "Absorbs 1% HP",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15210030",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15210040",
+        "description": "+5% Fire Damage Boost for 10s on activating [Pyroclasm]",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15210050",
+        "description": "Reset [Blaze] cooldown on landing [Pyroclasm]",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Mobile</>",
+    "basic": true,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "magicbook",
+        "name": "Spellbook"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:62:63:1:1]]-[[damage:max:62:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 62,
+            "baseMax": 62,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:89:63:1:1]]-[[damage:max:89:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 89,
+            "baseMax": 89,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:117:63:1:1]]-[[damage:max:117:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 117,
+            "baseMax": 117,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:144:63:1:1]]-[[damage:max:144:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 144,
+            "baseMax": 144,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:185:63:1:1]]-[[damage:max:185:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 185,
+            "baseMax": 185,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:236:63:1:1]]-[[damage:max:236:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 236,
+            "baseMax": 236,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:296:63:1:1]]-[[damage:max:296:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 296,
+            "baseMax": 296,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:346:63:1:1]]-[[damage:max:346:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 346,
+            "baseMax": 346,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:397:63:1:1]]-[[damage:max:397:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 397,
+            "baseMax": 397,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:447:63:1:1]]-[[damage:max:447:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 447,
+            "baseMax": 447,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:498:63:1:1]]-[[damage:max:498:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 498,
+            "baseMax": 498,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:558:63:1:1]]-[[damage:max:558:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 558,
+            "baseMax": 558,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:609:63:1:1]]-[[damage:max:609:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 609,
+            "baseMax": 609,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:645:63:1:1]]-[[damage:max:645:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 645,
+            "baseMax": 645,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:673:63:1:1]]-[[damage:max:673:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 673,
+            "baseMax": 673,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:710:63:1:1]]-[[damage:max:710:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 710,
+            "baseMax": 710,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:746:63:1:1]]-[[damage:max:746:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 746,
+            "baseMax": 746,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:783:63:1:1]]-[[damage:max:783:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 783,
+            "baseMax": 783,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:820:63:1:1]]-[[damage:max:820:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 820,
+            "baseMax": 820,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:848:63:1:1]]-[[damage:max:848:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 848,
+            "baseMax": 848,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:875:63:1:1]]-[[damage:max:875:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 875,
+            "baseMax": 875,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:902:63:1:1]]-[[damage:max:902:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 902,
+            "baseMax": 902,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:930:63:1:1]]-[[damage:max:930:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 930,
+            "baseMax": 930,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:957:63:1:1]]-[[damage:max:957:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 957,
+            "baseMax": 957,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:985:63:1:1]]-[[damage:max:985:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 985,
+            "baseMax": 985,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1012:63:1:1]]-[[damage:max:1012:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 1012,
+            "baseMax": 1012,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1039:63:1:1]]-[[damage:max:1039:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 1039,
+            "baseMax": 1039,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1067:63:1:1]]-[[damage:max:1067:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 1067,
+            "baseMax": 1067,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1094:63:1:1]]-[[damage:max:1094:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 1094,
+            "baseMax": 1094,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1122:63:1:1]]-[[damage:max:1122:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 1122,
+            "baseMax": 1122,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1149:63:1:1]]-[[damage:max:1149:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 1149,
+            "baseMax": 1149,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1176:63:1:1]]-[[damage:max:1176:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 1176,
+            "baseMax": 1176,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1204:63:1:1]]-[[damage:max:1204:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 1204,
+            "baseMax": 1204,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1231:63:1:1]]-[[damage:max:1231:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 1231,
+            "baseMax": 1231,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1259:63:1:1]]-[[damage:max:1259:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 1259,
+            "baseMax": 1259,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1286:63:1:1]]-[[damage:max:1286:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 1286,
+            "baseMax": 1286,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1313:63:1:1]]-[[damage:max:1313:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 1313,
+            "baseMax": 1313,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1341:63:1:1]]-[[damage:max:1341:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 1341,
+            "baseMax": 1341,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1368:63:1:1]]-[[damage:max:1368:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 1368,
+            "baseMax": 1368,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1396:63:1:1]]-[[damage:max:1396:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1521000011",
+            "effectGroupId": "152100001",
+            "baseMin": 1396,
+            "baseMax": 1396,
+            "attackRatioPercent": 63
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "2439",
+        "level": 1,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2440",
+        "level": 2,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2441",
+        "level": 3,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2442",
+        "level": 4,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2443",
+        "level": 5,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2444",
+        "level": 6,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2445",
+        "level": 7,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2446",
+        "level": 8,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2447",
+        "level": 9,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "2448",
+        "level": 10,
+        "characterClass": "sorcerer",
+        "characterClassName": "Sorcerer",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "15210010",
+        "skillId": "15210010",
+        "name": "Flame Arrow",
+        "description": "+20% MP restored",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15210020",
+        "skillId": "15210020",
+        "name": "Flame Arrow",
+        "description": "Absorbs 1% HP",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15210030",
+        "skillId": "15210030",
+        "name": "Flame Arrow",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15210040",
+        "skillId": "15210040",
+        "name": "Flame Arrow",
+        "description": "+5% Fire Damage Boost for 10s on activating [Pyroclasm]",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "15210050",
+        "skillId": "15210050",
+        "name": "Flame Arrow",
+        "description": "Reset [Blaze] cooldown on landing [Pyroclasm]",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "sorcerer",
+          "name": "Sorcerer"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [
+      {
+        "mainCategoryId": "skills",
+        "name": "Burst",
+        "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_003.webp",
+        "id": "15030000"
+      }
+    ],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "classes": [
+      {
+        "code": "sorcerer",
+        "name": "Sorcerer"
+      }
+    ],
+    "chainRole": {
+      "code": "opening",
+      "name": "Opening Skill"
+    },
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Flame Arrow",
+    "iconPath": "/images/ui/resource/texture/skill/icon_so_skill_020.webp",
+    "id": "15210000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:62:63:1:1]]-[[damage:max:62:63:1:1]]</> Fire damage to a target within 20m and restores 100 MP."
+  }
+}

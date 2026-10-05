@@ -1,0 +1,1889 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/14070000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "14070000",
+    "name": "Suppressing Arrow",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_007.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 36,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "14070010",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14070020",
+        "description": "+1s Stun duration",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14070030",
+        "description": "+20% Skill Speed",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14070040",
+        "description": "+20% Stun Chance",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14070050",
+        "description": "25% chance to reset cooldown on hit",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [
+      {
+        "id": "14000012",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormalgroupid"
+        },
+        "description": "Precision Status",
+        "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_031.webp",
+        "abnormalGroupId": 140900001
+      }
+    ],
+    "requiredWeapons": [
+      {
+        "code": "bow",
+        "name": "Bow"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:362:150:1:1]]-[[damage:max:362:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 362,
+            "baseMax": 362,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:477:150:1:1]]-[[damage:max:477:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 477,
+            "baseMax": 477,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:615:150:1:1]]-[[damage:max:615:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 615,
+            "baseMax": 615,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:730:150:1:1]]-[[damage:max:730:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 730,
+            "baseMax": 730,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:846:150:1:1]]-[[damage:max:846:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 846,
+            "baseMax": 846,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:961:150:1:1]]-[[damage:max:961:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 961,
+            "baseMax": 961,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1076:150:1:1]]-[[damage:max:1076:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 1076,
+            "baseMax": 1076,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1214:150:1:1]]-[[damage:max:1214:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 1214,
+            "baseMax": 1214,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1329:150:1:1]]-[[damage:max:1329:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 1329,
+            "baseMax": 1329,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1414:150:1:1]]-[[damage:max:1414:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 1414,
+            "baseMax": 1414,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1476:150:1:1]]-[[damage:max:1476:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 1476,
+            "baseMax": 1476,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1560:150:1:1]]-[[damage:max:1560:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 1560,
+            "baseMax": 1560,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1644:150:1:1]]-[[damage:max:1644:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 1644,
+            "baseMax": 1644,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1729:150:1:1]]-[[damage:max:1729:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 1729,
+            "baseMax": 1729,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1813:150:1:1]]-[[damage:max:1813:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 1813,
+            "baseMax": 1813,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1875:150:1:1]]-[[damage:max:1875:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 1875,
+            "baseMax": 1875,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1937:150:1:1]]-[[damage:max:1937:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 1937,
+            "baseMax": 1937,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1999:150:1:1]]-[[damage:max:1999:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 1999,
+            "baseMax": 1999,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2061:150:1:1]]-[[damage:max:2061:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 2061,
+            "baseMax": 2061,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2122:150:1:1]]-[[damage:max:2122:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 2122,
+            "baseMax": 2122,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2184:150:1:1]]-[[damage:max:2184:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 2184,
+            "baseMax": 2184,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2246:150:1:1]]-[[damage:max:2246:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 2246,
+            "baseMax": 2246,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2308:150:1:1]]-[[damage:max:2308:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 2308,
+            "baseMax": 2308,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2370:150:1:1]]-[[damage:max:2370:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 2370,
+            "baseMax": 2370,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2432:150:1:1]]-[[damage:max:2432:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 2432,
+            "baseMax": 2432,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2494:150:1:1]]-[[damage:max:2494:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 2494,
+            "baseMax": 2494,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2556:150:1:1]]-[[damage:max:2556:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 2556,
+            "baseMax": 2556,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2617:150:1:1]]-[[damage:max:2617:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 2617,
+            "baseMax": 2617,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2679:150:1:1]]-[[damage:max:2679:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 2679,
+            "baseMax": 2679,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2741:150:1:1]]-[[damage:max:2741:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 2741,
+            "baseMax": 2741,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2803:150:1:1]]-[[damage:max:2803:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 2803,
+            "baseMax": 2803,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2865:150:1:1]]-[[damage:max:2865:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 2865,
+            "baseMax": 2865,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2927:150:1:1]]-[[damage:max:2927:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 2927,
+            "baseMax": 2927,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2989:150:1:1]]-[[damage:max:2989:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 2989,
+            "baseMax": 2989,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3051:150:1:1]]-[[damage:max:3051:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 3051,
+            "baseMax": 3051,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3112:150:1:1]]-[[damage:max:3112:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 3112,
+            "baseMax": 3112,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3174:150:1:1]]-[[damage:max:3174:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 3174,
+            "baseMax": 3174,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3236:150:1:1]]-[[damage:max:3236:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 3236,
+            "baseMax": 3236,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3298:150:1:1]]-[[damage:max:3298:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 3298,
+            "baseMax": 3298,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:3360:150:1:1]]-[[damage:max:3360:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1407000011",
+            "effectGroupId": "140700001",
+            "baseMin": 3360,
+            "baseMax": 3360,
+            "attackRatioPercent": 150
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "1982",
+        "level": 1,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1983",
+        "level": 2,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1984",
+        "level": 3,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1985",
+        "level": 4,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1986",
+        "level": 5,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1987",
+        "level": 6,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1988",
+        "level": 7,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1989",
+        "level": 8,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1990",
+        "level": 9,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1991",
+        "level": 10,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 36,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "14070010",
+        "skillId": "14070010",
+        "name": "Suppressing Arrow",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14070020",
+        "skillId": "14070020",
+        "name": "Suppressing Arrow",
+        "description": "+1s Stun duration",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14070030",
+        "skillId": "14070030",
+        "name": "Suppressing Arrow",
+        "description": "+20% Skill Speed",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14070040",
+        "skillId": "14070040",
+        "name": "Suppressing Arrow",
+        "description": "+20% Stun Chance",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14070050",
+        "skillId": "14070050",
+        "name": "Suppressing Arrow",
+        "description": "25% chance to reset cooldown on hit",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 20,
+    "classes": [
+      {
+        "code": "ranger",
+        "name": "Ranger"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Suppressing Arrow",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_007.webp",
+    "id": "14070000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:362:150:1:1]]-[[damage:max:362:150:1:1]]</> Wind damage to a target within 20m with a 40% chance to inflict Stun for 3s while Precision is active.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage"
+  }
+}

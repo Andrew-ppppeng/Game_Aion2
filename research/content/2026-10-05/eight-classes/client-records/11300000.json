@@ -1,0 +1,2229 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/11300000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "11300000",
+    "name": "Aerial Snare",
+    "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_015.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 36,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "11300010",
+        "description": "Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11300020",
+        "description": "+25% [Aerial Snare] Airborne Chance",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11300030",
+        "description": "+100% damage to targets with Incapacitated Immunity",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11300040",
+        "description": "Adds [Forced Fall] Chain Skill",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11300050",
+        "description": "-50% [Aerial Snare] cooldown",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 150
+      }
+    ],
+    "conditions": [
+      {
+        "id": "11000001",
+        "target": {
+          "code": "target"
+        },
+        "type": {
+          "code": "hasabnormaleffecttype"
+        },
+        "description": "Knockdown Target",
+        "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_knockdown.webp",
+        "abnormalEffect": {
+          "code": "knockdowninstant"
+        }
+      },
+      {
+        "id": "11000007",
+        "target": {
+          "code": "target"
+        },
+        "type": {
+          "code": "hasabnormalgroupid"
+        },
+        "description": "On attacking Incapacitated Immunity Target",
+        "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_immuneabnormal.webp",
+        "abnormalGroupId": 113000381
+      }
+    ],
+    "requiredWeapons": [
+      {
+        "code": "greatsword",
+        "name": "Greatsword"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:479:181.5:1:1]]-[[damage:max:479:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 479,
+            "baseMax": 479,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:628:181.5:1:1]]-[[damage:max:628:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 628,
+            "baseMax": 628,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:805:181.5:1:1]]-[[damage:max:805:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 805,
+            "baseMax": 805,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:955:181.5:1:1]]-[[damage:max:955:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 955,
+            "baseMax": 955,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1105:181.5:1:1]]-[[damage:max:1105:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 1105,
+            "baseMax": 1105,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1255:181.5:1:1]]-[[damage:max:1255:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 1255,
+            "baseMax": 1255,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1404:181.5:1:1]]-[[damage:max:1404:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 1404,
+            "baseMax": 1404,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1581:181.5:1:1]]-[[damage:max:1581:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 1581,
+            "baseMax": 1581,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1731:181.5:1:1]]-[[damage:max:1731:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 1731,
+            "baseMax": 1731,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1840:181.5:1:1]]-[[damage:max:1840:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 1840,
+            "baseMax": 1840,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1922:181.5:1:1]]-[[damage:max:1922:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 1922,
+            "baseMax": 1922,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2030:181.5:1:1]]-[[damage:max:2030:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 2030,
+            "baseMax": 2030,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2139:181.5:1:1]]-[[damage:max:2139:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 2139,
+            "baseMax": 2139,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2248:181.5:1:1]]-[[damage:max:2248:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 2248,
+            "baseMax": 2248,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2357:181.5:1:1]]-[[damage:max:2357:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 2357,
+            "baseMax": 2357,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2439:181.5:1:1]]-[[damage:max:2439:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 2439,
+            "baseMax": 2439,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2521:181.5:1:1]]-[[damage:max:2521:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 2521,
+            "baseMax": 2521,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2602:181.5:1:1]]-[[damage:max:2602:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 2602,
+            "baseMax": 2602,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2684:181.5:1:1]]-[[damage:max:2684:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 2684,
+            "baseMax": 2684,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2766:181.5:1:1]]-[[damage:max:2766:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 2766,
+            "baseMax": 2766,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2847:181.5:1:1]]-[[damage:max:2847:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 2847,
+            "baseMax": 2847,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2929:181.5:1:1]]-[[damage:max:2929:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 2929,
+            "baseMax": 2929,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3011:181.5:1:1]]-[[damage:max:3011:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 3011,
+            "baseMax": 3011,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3092:181.5:1:1]]-[[damage:max:3092:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 3092,
+            "baseMax": 3092,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3174:181.5:1:1]]-[[damage:max:3174:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 3174,
+            "baseMax": 3174,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3256:181.5:1:1]]-[[damage:max:3256:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 3256,
+            "baseMax": 3256,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3337:181.5:1:1]]-[[damage:max:3337:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 3337,
+            "baseMax": 3337,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3419:181.5:1:1]]-[[damage:max:3419:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 3419,
+            "baseMax": 3419,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3501:181.5:1:1]]-[[damage:max:3501:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 3501,
+            "baseMax": 3501,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3582:181.5:1:1]]-[[damage:max:3582:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 3582,
+            "baseMax": 3582,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3664:181.5:1:1]]-[[damage:max:3664:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 3664,
+            "baseMax": 3664,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3746:181.5:1:1]]-[[damage:max:3746:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 3746,
+            "baseMax": 3746,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3827:181.5:1:1]]-[[damage:max:3827:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 3827,
+            "baseMax": 3827,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3909:181.5:1:1]]-[[damage:max:3909:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 3909,
+            "baseMax": 3909,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3991:181.5:1:1]]-[[damage:max:3991:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 3991,
+            "baseMax": 3991,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4072:181.5:1:1]]-[[damage:max:4072:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 4072,
+            "baseMax": 4072,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4154:181.5:1:1]]-[[damage:max:4154:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 4154,
+            "baseMax": 4154,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4236:181.5:1:1]]-[[damage:max:4236:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 4236,
+            "baseMax": 4236,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4317:181.5:1:1]]-[[damage:max:4317:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 4317,
+            "baseMax": 4317,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 45,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 150
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:4399:181.5:1:1]]-[[damage:max:4399:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1130000011",
+            "effectGroupId": "113000001",
+            "baseMin": 4399,
+            "baseMax": 4399,
+            "attackRatioPercent": 181.5
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000331",
+            "name": "Airborne",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Damage Tolerance reduction and Airborne Status",
+            "effect": "-<desc_point>20%</> Damage Tolerance\nAirborne Status",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Airborne",
+              "iconPath": "/images/ui/resource/texture/skill/icon_abnormal_airborne.webp",
+              "id": "100000331"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "336",
+        "level": 1,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "337",
+        "level": 2,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "338",
+        "level": 3,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "339",
+        "level": 4,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "340",
+        "level": 5,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "341",
+        "level": 6,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "342",
+        "level": 7,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "343",
+        "level": 8,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "344",
+        "level": 9,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "345",
+        "level": 10,
+        "characterClass": "gladiator",
+        "characterClassName": "Gladiator",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 36,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "11300010",
+        "skillId": "11300010",
+        "name": "Aerial Snare",
+        "description": "Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11300020",
+        "skillId": "11300020",
+        "name": "Aerial Snare",
+        "description": "+25% [Aerial Snare] Airborne Chance",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11300030",
+        "skillId": "11300030",
+        "name": "Aerial Snare",
+        "description": "+100% damage to targets with Incapacitated Immunity",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11300040",
+        "skillId": "11300040",
+        "name": "Aerial Snare",
+        "description": "Adds [Forced Fall] Chain Skill",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "11300050",
+        "skillId": "11300050",
+        "name": "Aerial Snare",
+        "description": "-50% [Aerial Snare] cooldown",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "gladiator",
+          "name": "Gladiator"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 4,
+    "cooldownSeconds": 45,
+    "classes": [
+      {
+        "code": "gladiator",
+        "name": "Gladiator"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Aerial Snare",
+    "iconPath": "/images/ui/resource/texture/skill/icon_gl_skill_015.webp",
+    "id": "11300000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:479:181.5:1:1]]-[[damage:max:479:181.5:1:1]]</> damage to a target afflicted with Knockdown within 4m with a 50% chance to inflict Airborne for 3s.\n100% chance to inflict Airborne on NPC targets.\nHas a 5% chance to trigger on attacking a target with Incapacitated Immunity.\n\n20 Stagger Gauge Damage"
+  }
+}

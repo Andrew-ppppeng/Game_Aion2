@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================
+       IDENTIDADE DO SITE
+  ============================= -->
+  <title>Elysion - AION 2 Wiki</title>
+  <meta name="application-name" content="Elysion">
+  <meta name="apple-mobile-web-app-title" content="Elysion">
+
+  <!-- ============================
+       SEO PRINCIPAL
+  ============================= -->
+  <meta name="description" content="Elysion is the most complete wiki for AION 2. Items, classes, maps, crafting, builds and much more." />
+  <meta name="keywords" content="AION 2, AION2 Wiki, Elysion, AION2 database, AION2 items, AION2 classes, AION2 crafting, AION2 builds" />
+  <meta name="author" content="Elysion" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://www.elysion.quest/" />
+
+  <!-- ============================
+       OPEN GRAPH (Facebook / Discord)
+  ============================= -->
+  <meta property="og:site_name" content="Elysion" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.elysion.quest/" />
+  <meta property="og:title" content="Elysion - AION 2 Wiki" />
+  <meta property="og:description" content="Elysion is the most complete wiki for AION 2. Items, classes, maps, crafting, builds and much more." />
+  <meta property="og:image" content="https://www.elysion.quest/logo_tipo.png" />
+  <meta property="og:image:alt" content="Elysion - AION 2 Wiki" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- ============================
+       TWITTER / X
+  ============================= -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.elysion.quest/" />
+  <meta name="twitter:title" content="Elysion - AION 2 Wiki" />
+  <meta name="twitter:description" content="Elysion is the most complete wiki for AION 2. Items, classes, maps, crafting, builds and much more." />
+  <meta name="twitter:image" content="https://www.elysion.quest/logo_tipo.png" />
+
+  <!-- ============================
+       JSON-LD — DADOS ESTRUTURADOS
+  ============================= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.elysion.quest/#website",
+        "name": "Elysion",
+        "alternateName": "Elysion - AION 2 Wiki",
+        "url": "https://www.elysion.quest/",
+        "description": "Elysion is the most complete wiki for AION 2.",
+        "inLanguage": "en-US",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.elysion.quest/?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.elysion.quest/#webpage",
+        "url": "https://www.elysion.quest/",
+        "name": "Elysion - AION 2 Wiki",
+        "isPartOf": { "@id": "https://www.elysion.quest/#website" },
+        "description": "Elysion is the most complete wiki for AION 2. Items, classes, maps, crafting, builds and much more.",
+        "inLanguage": "en-US"
+      }
+    ]
+  }
+  </script>
+
+  <!-- ============================
+       VERIFICAÇÃO & SEGURANÇA
+  ============================= -->
+  <meta name="google-site-verification" content="h4SptHhy4iFXCB1bJn_aF8Yp9k8fxJ_RkaIF3AiBCp0" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self';
+             base-uri 'self';
+             object-src 'none';
+             form-action 'self';
+             script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com https://apis.google.com https://accounts.google.com;
+             style-src 'self' 'unsafe-inline';
+             img-src 'self' data: https: blob:;
+             frame-src https://accounts.google.com https://codexfall.firebaseapp.com;
+             child-src https://accounts.google.com https://codexfall.firebaseapp.com;
+             connect-src 'self' https://api.elysion.quest https://proxy.elysion.quest https://api.steamcmd.net https://api.iconify.design https://api.unisvg.com https://api.simplesvg.com https://www.googleapis.com https://apis.google.com https://securetoken.googleapis.com https://identitytoolkit.googleapis.com https://firebase.googleapis.com https://firebaseinstallations.googleapis.com https://firebaselogging-pa.googleapis.com https://cloudflareinsights.com https://api.codetabs.com https://ipapi.co;
+             font-src 'self';
+             worker-src 'self' blob:;
+             manifest-src 'self';
+             upgrade-insecure-requests;">
+  <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin-allow-popups">
+
+  <script src="/spa-redirect.js"></script>
+  <script type="module" crossorigin src="/assets/index-BNWiUoh4.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/vue-vendor-C7XwFEfe.js">
+  <link rel="modulepreload" crossorigin href="/assets/i18n-D2kegZD9.js">
+  <link rel="modulepreload" crossorigin href="/assets/pixi-DB6z1EXU.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-BT2qJytx.css">
+</head>
+
+<body>
+  <div id="app"></div>
+<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "87e740232e584d76ba59472f80f90067"}'></script><!-- Cloudflare Pages Analytics --></body>
+
+</html>

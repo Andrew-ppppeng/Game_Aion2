@@ -1,0 +1,1497 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/13800000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "13800000",
+    "name": "Determination",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+    "kind": "passive",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": []
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "relation": "anyone",
+      "shape": {
+        "code": "self"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "dagger",
+        "name": "Dagger"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:228:37.5:1:1]]-[[damage:max:228:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:256:37.5:1:1]]-[[damage:max:256:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:289:37.5:1:1]]-[[damage:max:289:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:317:37.5:1:1]]-[[damage:max:317:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:337:37.5:1:1]]-[[damage:max:337:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:352:37.5:1:1]]-[[damage:max:352:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:372:37.5:1:1]]-[[damage:max:372:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:392:37.5:1:1]]-[[damage:max:392:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:412:37.5:1:1]]-[[damage:max:412:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:433:37.5:1:1]]-[[damage:max:433:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:447:37.5:1:1]]-[[damage:max:447:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:462:37.5:1:1]]-[[damage:max:462:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:477:37.5:1:1]]-[[damage:max:477:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:491:37.5:1:1]]-[[damage:max:491:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:506:37.5:1:1]]-[[damage:max:506:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:520:37.5:1:1]]-[[damage:max:520:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:535:37.5:1:1]]-[[damage:max:535:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:550:37.5:1:1]]-[[damage:max:550:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:564:37.5:1:1]]-[[damage:max:564:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:579:37.5:1:1]]-[[damage:max:579:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:594:37.5:1:1]]-[[damage:max:594:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:608:37.5:1:1]]-[[damage:max:608:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:623:37.5:1:1]]-[[damage:max:623:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:637:37.5:1:1]]-[[damage:max:637:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:652:37.5:1:1]]-[[damage:max:652:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:667:37.5:1:1]]-[[damage:max:667:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:681:37.5:1:1]]-[[damage:max:681:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:696:37.5:1:1]]-[[damage:max:696:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:711:37.5:1:1]]-[[damage:max:711:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:725:37.5:1:1]]-[[damage:max:725:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:740:37.5:1:1]]-[[damage:max:740:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:754:37.5:1:1]]-[[damage:max:754:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:769:37.5:1:1]]-[[damage:max:769:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:784:37.5:1:1]]-[[damage:max:784:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:798:37.5:1:1]]-[[damage:max:798:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:813:37.5:1:1]]-[[damage:max:813:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:828:37.5:1:1]]-[[damage:max:828:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:842:37.5:1:1]]-[[damage:max:842:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:857:37.5:1:1]]-[[damage:max:857:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:871:37.5:1:1]]-[[damage:max:871:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "138000001",
+            "name": "Determination",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Deals extra damage when landing an attack on a target with low HP",
+            "effect": "Deals extra damage when landing an attack on a target with <desc_point>30%</> HP or less",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Determination",
+              "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+              "id": "138000001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "1555",
+        "level": 1,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1556",
+        "level": 2,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1557",
+        "level": 3,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1558",
+        "level": 4,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1559",
+        "level": 5,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1560",
+        "level": 6,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1561",
+        "level": 7,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1562",
+        "level": 8,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1563",
+        "level": 9,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1564",
+        "level": 10,
+        "characterClass": "assassin",
+        "characterClassName": "Assassin",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "passive",
+    "kindName": "Passive",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "classes": [
+      {
+        "code": "assassin",
+        "name": "Assassin"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/passive"
+    ],
+    "name": "Determination",
+    "iconPath": "/images/ui/resource/texture/skill/icon_as_skill_passive_010.webp",
+    "id": "13800000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:228:37.5:1:1]]-[[damage:max:228:37.5:1:1]]</> damage when landing an attack on a target with <chat_combat>30%</> HP or less.\n\nCooldown: 1s"
+  }
+}

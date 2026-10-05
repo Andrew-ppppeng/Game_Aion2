@@ -1,0 +1,227 @@
+{
+  "next": "<GuideNext slug=\"character-creation\" />",
+  "sourceUpdates": [
+    {
+      "id": "style-shop",
+      "version": "Public Global Style Shop region/period/sort controls verified in browser 2026-10-03, signed out; screenshot and AX saved; no in-game import or purchase test"
+    }
+  ],
+  "locales": {
+    "en": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "style-shop-global-filters",
+            "alt": "Official English Style Shop with region, period and popularity-sort controls above player appearance previews",
+            "caption": "Official Global Style Shop, October 3, 2026: signed-out view with North America - West, Past 7 Days and Most Downloaded selected. Previews are player creations. This screenshot verifies browsing controls, not a completed download or paid application."
+          },
+          "workflow": {
+            "title": "Send a style to the intended existing character",
+            "caption": "The download and in-game application are separate steps. This sequence follows the cited Global player's report; always inspect the current confirmation.",
+            "steps": [
+              {
+                "label": "Match identity and recipient",
+                "description": "Sign in with your playing platform and select the intended character in Change Character."
+              },
+              {
+                "label": "Choose a Global listing",
+                "description": "Set your region, inspect the author's preview and open the desired appearance."
+              },
+              {
+                "label": "Download to an offered slot",
+                "description": "Use the slots presented to your account; do not infer a permanent count from a guide."
+              },
+              {
+                "label": "Refresh on the same character",
+                "description": "Open Customizations → Manage Appearance in game and refresh before choosing the preview."
+              },
+              {
+                "label": "Review before applying",
+                "description": "Check the actual appearance and current Quna or voucher terms before confirmation."
+              }
+            ]
+          }
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "find-presets",
+          "position": "sectionEnd",
+          "text": "**First visit without spending:** open the official page, select the region containing your recipient, then inspect the period and **Most Downloaded / Most Liked** sort. Our signed-out example used **North America - West → Past 7 Days → Most Downloaded** on October 3. The first three previews belonged to **Angels, Selina and Nesche** at capture time. Preserve a creator's listing when choosing a look; current rankings and download counters can change. Browsing this page does not transfer a style to your account.\n\n<GuideVisual id=\"topic\" />"
+        },
+        {
+          "anchor": "download-apply",
+          "position": "afterHeading",
+          "text": "<GuideVisual id=\"workflow\" />"
+        },
+        {
+          "anchor": "preset-troubleshooting",
+          "position": "sectionEnd",
+          "text": "**If Refresh still shows nothing:** compare the website's selected character and server with the character currently open in game, then confirm the platform identity and region. Return to the website to inspect the intended download slot before attempting another application. Keep the appearance link and record the selected recipient and time for support. A missing preview is not a reason to confirm a second paid appearance change."
+        }
+      ]
+    },
+    "ja": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "style-shop-global-filters",
+            "alt": "プレイヤー外観の上に地域、期間、人気順の選択が表示された公式英語Style Shop",
+            "caption": "2026年10月3日の公式Global Style Shop。未ログインでNorth America - West、Past 7 Days、Most Downloadedを選んだ画面です。外観はプレイヤー作品です。閲覧操作を確認した画像であり、ダウンロード完了や有料適用を確認したものではありません。"
+          },
+          "workflow": {
+            "title": "既存の目的キャラクターに外観を送る",
+            "caption": "ダウンロードとゲーム内での適用は別の操作です。以下は引用したGlobalプレイヤーの報告に基づきます。現在の確認画面を必ず読みます。",
+            "steps": [
+              {
+                "label": "ログインと受取先を合わせる",
+                "description": "プレイに使うプラットフォームでログインし、Change Characterで目的のキャラクターを選びます。"
+              },
+              {
+                "label": "Globalの掲載を選ぶ",
+                "description": "地域を設定し、作者のプレビューを確認して使いたい外観を開きます。"
+              },
+              {
+                "label": "表示された枠に保存する",
+                "description": "アカウントに表示される枠を使います。攻略の説明から恒久的な枠数を推測しません。"
+              },
+              {
+                "label": "同じキャラクターで更新する",
+                "description": "ゲームでCustomizations → Manage Appearanceを開き、Refreshしてからプレビューを選びます。"
+              },
+              {
+                "label": "適用前に確認する",
+                "description": "実際の外観と現在のQuna料金や券の条件を確認してから確定します。"
+              }
+            ]
+          }
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "find-presets",
+          "position": "sectionEnd",
+          "text": "**課金せずに初回の閲覧を行う：** 公式ページを開き、受取キャラクターの地域を選んでから、期間と**Most Downloaded / Most Liked**の並び順を確認します。10月3日の未ログイン例では**North America - West → Past 7 Days → Most Downloaded**を使いました。撮影時の上位三つのプレビューは**Angels、Selina、Nesche**の作品でした。使う外観を決めたら作者の掲載ページを保存してください。順位やダウンロード数は変わります。このページを閲覧するだけでは、外観は自分のアカウントへ送られません。\n\n<GuideVisual id=\"topic\" />"
+        },
+        {
+          "anchor": "download-apply",
+          "position": "afterHeading",
+          "text": "<GuideVisual id=\"workflow\" />"
+        },
+        {
+          "anchor": "preset-troubleshooting",
+          "position": "sectionEnd",
+          "text": "**Refresh後も表示されない場合：** サイトで選択したキャラクターとサーバーを、現在ゲームで開いているキャラクターと照合し、プラットフォームのログインと地域を確認します。再び適用を試す前に、サイトに戻って目的のダウンロード枠を確認してください。外観のリンク、受取キャラクター、操作時刻をサポート用に控えます。プレビューが見つからないからといって、二度目の有料外観変更を確定しないでください。"
+        }
+      ]
+    },
+    "es": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "style-shop-global-filters",
+            "alt": "Style Shop oficial en inglés con controles de región, periodo y orden de popularidad sobre apariencias creadas por jugadores",
+            "caption": "Style Shop oficial de Global, 3 de octubre de 2026: vista sin iniciar sesión con North America - West, Past 7 Days y Most Downloaded. Las vistas previas son obras de jugadores. La captura comprueba los controles de navegación, no una descarga o aplicación de pago completada."
+          },
+          "workflow": {
+            "title": "Envía el estilo al personaje existente correcto",
+            "caption": "La descarga y la aplicación en el juego son pasos separados. La secuencia sigue el informe del jugador Global citado; revisa siempre la confirmación actual.",
+            "steps": [
+              {
+                "label": "Comprueba cuenta y destinatario",
+                "description": "Inicia sesión con tu plataforma de juego y elige el personaje en Change Character."
+              },
+              {
+                "label": "Elige una publicación Global",
+                "description": "Selecciona tu región, revisa la vista del autor y abre la apariencia deseada."
+              },
+              {
+                "label": "Descarga en una ranura disponible",
+                "description": "Usa las ranuras que ofrece tu cuenta; no deduzcas una cantidad permanente de una guía."
+              },
+              {
+                "label": "Actualiza con el mismo personaje",
+                "description": "Abre Customizations → Manage Appearance en el juego y actualiza antes de elegir la vista previa."
+              },
+              {
+                "label": "Revisa antes de aplicar",
+                "description": "Comprueba el aspecto real y los términos actuales de Quna o del vale antes de confirmar."
+              }
+            ]
+          }
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "find-presets",
+          "position": "sectionEnd",
+          "text": "**Primera visita sin gastar:** abre la página oficial, selecciona la región de tu destinatario y revisa el periodo y el orden **Most Downloaded / Most Liked**. El ejemplo sin iniciar sesión usó **North America - West → Past 7 Days → Most Downloaded** el 3 de octubre. Las tres primeras vistas eran de **Angels, Selina y Nesche** cuando se tomó la captura. Guarda la publicación del creador al elegir una apariencia; las posiciones y los contadores de descargas pueden cambiar. Visitar esta página no envía un estilo a tu cuenta.\n\n<GuideVisual id=\"topic\" />"
+        },
+        {
+          "anchor": "download-apply",
+          "position": "afterHeading",
+          "text": "<GuideVisual id=\"workflow\" />"
+        },
+        {
+          "anchor": "preset-troubleshooting",
+          "position": "sectionEnd",
+          "text": "**Si Refresh sigue sin mostrar nada:** compara el personaje y servidor seleccionados en la web con el personaje abierto en el juego y confirma después la identidad de plataforma y la región. Vuelve a la web para revisar la ranura de descarga deseada antes de intentar otra aplicación. Guarda el enlace de la apariencia y anota destinatario y hora para soporte. Que no aparezca una vista previa no justifica confirmar un segundo cambio de apariencia de pago."
+        }
+      ]
+    },
+    "de": {
+      "metadata": {
+        "visuals": {
+          "topic": {
+            "assetId": "style-shop-global-filters",
+            "alt": "Offizieller englischer Style Shop mit Regions-, Zeitraum- und Beliebtheitsfiltern über von Spielern erstellten Aussehensvorschauen",
+            "caption": "Offizieller Global Style Shop am 3. Oktober 2026: abgemeldete Ansicht mit North America - West, Past 7 Days und Most Downloaded. Die Vorschauen sind Spielerwerke. Der Screenshot bestätigt die Auswahloberfläche, keinen abgeschlossenen Download oder bezahlten Wechsel."
+          },
+          "workflow": {
+            "title": "Einen Stil an den richtigen bestehenden Charakter senden",
+            "caption": "Download und Anwendung im Spiel sind getrennte Schritte. Diese Reihenfolge folgt dem zitierten Global-Spielerbericht; lies stets die aktuelle Bestätigung.",
+            "steps": [
+              {
+                "label": "Konto und Empfänger abgleichen",
+                "description": "Melde dich mit deiner Spielplattform an und wähle den gewünschten Charakter unter Change Character."
+              },
+              {
+                "label": "Einen Global-Eintrag wählen",
+                "description": "Stelle deine Region ein, prüfe die Vorschau des Urhebers und öffne das gewünschte Aussehen."
+              },
+              {
+                "label": "In einen angebotenen Platz laden",
+                "description": "Nutze die deinem Konto angezeigten Plätze; leite keine dauerhafte Anzahl aus einem Guide ab."
+              },
+              {
+                "label": "Mit demselben Charakter aktualisieren",
+                "description": "Öffne im Spiel Customizations → Manage Appearance und aktualisiere vor der Vorschauauswahl."
+              },
+              {
+                "label": "Vor der Anwendung prüfen",
+                "description": "Vergleiche das Aussehen und die aktuellen Quna- oder Gutscheinbedingungen vor der Bestätigung."
+              }
+            ]
+          }
+        }
+      },
+      "insertions": [
+        {
+          "anchor": "find-presets",
+          "position": "sectionEnd",
+          "text": "**Erster Besuch ohne Ausgabe:** Öffne die offizielle Seite, wähle die Region des Empfängers und prüfe Zeitraum sowie **Most Downloaded / Most Liked**. Unser abgemeldetes Beispiel verwendete am 3. Oktober **North America - West → Past 7 Days → Most Downloaded**. Die ersten drei Vorschauen stammten zum Aufnahmezeitpunkt von **Angels, Selina und Nesche**. Bewahre den Eintrag des Urhebers auf, wenn du einen Stil auswählst; Rangfolge und Downloadzahlen können sich ändern. Ein Seitenbesuch sendet noch keinen Stil an dein Konto.\n\n<GuideVisual id=\"topic\" />"
+        },
+        {
+          "anchor": "download-apply",
+          "position": "afterHeading",
+          "text": "<GuideVisual id=\"workflow\" />"
+        },
+        {
+          "anchor": "preset-troubleshooting",
+          "position": "sectionEnd",
+          "text": "**Wenn Refresh weiterhin nichts zeigt:** Vergleiche den auf der Website gewählten Charakter samt Server mit dem gerade im Spiel geöffneten Charakter und prüfe Plattformkonto sowie Region. Kehre zur Website zurück und kontrolliere den gewünschten Downloadplatz vor einer erneuten Anwendung. Bewahre den Aussehenslink auf und notiere Empfänger sowie Zeitpunkt für den Support. Eine fehlende Vorschau ist kein Grund, einen zweiten bezahlten Aussehenswechsel zu bestätigen."
+        }
+      ]
+    }
+  }
+}

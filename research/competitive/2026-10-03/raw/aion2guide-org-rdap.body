@@ -1,0 +1,209 @@
+{
+  "rdapConformance": [
+    "rdap_level_0",
+    "icann_rdap_response_profile_1",
+    "icann_rdap_technical_implementation_guide_1",
+    "redacted"
+  ],
+  "notices": [
+    {
+      "title": "Terms of Service",
+      "description": [
+        "Public Interest Registry provides this RDAP service for informational purposes only, and to assist persons in obtaining information about or related to a domain name registration record. Public Interest Registry does not guarantee its accuracy. Users accessing the Public Interest Registry RDAP service agree to use the data only for lawful purposes, and under no circumstances may this data be used to: a) allow, enable, or otherwise support the transmission by e-mail, telephone, or facsimile of mass unsolicited, commercial advertising or solicitations to entities other than the registrar's own existing customers and b) enable high volume, automated, electronic processes that send queries or data to the systems of Public Interest Registry or any ICANN-accredited registrar, except as reasonably necessary to register domain names or modify existing registrations. When using the Public Interest Registry RDAP service, please consider the following: the RDAP service is not a replacement for standard EPP commands to the SRS service. RDAP is not considered authoritative for registered domain objects. The RDAP service may be scheduled for downtime during production or OT&E maintenance periods. Queries to the RDAP services are throttled. If too many queries are received from a single IP address within a specified time, the service will begin to reject further queries for a period of time to prevent disruption of RDAP service access. Abuse of the RDAP system through data mining is mitigated by detecting and limiting bulk query access from single sources. Where applicable, the presence of a [Non-Public Data] tag indicates that such data is not made publicly available due to applicable data privacy laws or requirements. Should you wish to contact the registrant, please refer to the RDAP records available through the registrar URL listed above. Access to non-public data may be provided, upon request, where it can be reasonably confirmed that the requester holds a specific legitimate interest and a proper legal basis for accessing the withheld data. Access to this data can be requested by submitting a request to WHOISrequest@pir.org. Public Interest Registry Inc. reserves the right to modify these terms at any time. By submitting this query, you agree to abide by this policy."
+      ],
+      "links": [
+        {
+          "value": "https://rdap.publicinterestregistry.org/rdap/domain/aion2guide.org",
+          "rel": "terms-of-service",
+          "href": "https://thenew.org/org-people/about-pir/policies/",
+          "type": "text/html"
+        }
+      ]
+    },
+    {
+      "title": "Status Codes",
+      "description": [
+        "For more information on domain status codes, please visit https://icann.org/epp"
+      ],
+      "links": [
+        {
+          "value": "https://rdap.publicinterestregistry.org/rdap/domain/aion2guide.org",
+          "rel": "glossary",
+          "href": "https://icann.org/epp",
+          "type": "application/rdap+json"
+        }
+      ]
+    },
+    {
+      "title": "RDDS Inaccuracy Complaint Form",
+      "description": [
+        "URL of the ICANN RDDS Inaccuracy Complaint Form: https://icann.org/wicf"
+      ],
+      "links": [
+        {
+          "value": "https://rdap.publicinterestregistry.org/rdap/domain/aion2guide.org",
+          "rel": "help",
+          "href": "https://icann.org/wicf",
+          "type": "application/rdap+json"
+        }
+      ]
+    }
+  ],
+  "ldhName": "aion2guide.org",
+  "unicodeName": "aion2guide.org",
+  "nameservers": [
+    {
+      "ldhName": "elisabeth.ns.cloudflare.com",
+      "unicodeName": "elisabeth.ns.cloudflare.com",
+      "objectClassName": "nameserver",
+      "handle": "95bc0738a5364798aea8b9c02a047f3c-LROR",
+      "status": [
+        "associated"
+      ]
+    },
+    {
+      "ldhName": "trace.ns.cloudflare.com",
+      "unicodeName": "trace.ns.cloudflare.com",
+      "objectClassName": "nameserver",
+      "handle": "bb868b223fa14de8af9e867799de75f6-LROR",
+      "status": [
+        "associated"
+      ]
+    }
+  ],
+  "secureDNS": {
+    "delegationSigned": false,
+    "maxSigLife": 1
+  },
+  "redacted": [
+    {
+      "name": {
+        "type": "Registry Domain ID"
+      },
+      "prePath": "$.handle",
+      "pathLang": "jsonpath",
+      "method": "removal"
+    }
+  ],
+  "objectClassName": "domain",
+  "status": [
+    "client transfer prohibited"
+  ],
+  "events": [
+    {
+      "eventAction": "expiration",
+      "eventDate": "2027-09-21T22:46:50.123Z"
+    },
+    {
+      "eventAction": "registration",
+      "eventDate": "2026-09-21T22:46:50.123Z"
+    },
+    {
+      "eventAction": "last changed",
+      "eventDate": "2026-09-26T22:47:44.606Z"
+    },
+    {
+      "eventAction": "last update of RDAP database",
+      "eventDate": "2026-10-02T18:32:40.818Z"
+    }
+  ],
+  "entities": [
+    {
+      "vcardArray": [
+        "vcard",
+        [
+          [
+            "version",
+            {},
+            "text",
+            "4.0"
+          ],
+          [
+            "fn",
+            {},
+            "text",
+            "Spaceship, Inc."
+          ]
+        ]
+      ],
+      "roles": [
+        "registrar"
+      ],
+      "publicIds": [
+        {
+          "type": "IANA Registrar ID",
+          "identifier": "3862"
+        }
+      ],
+      "objectClassName": "entity",
+      "handle": "3862",
+      "entities": [
+        {
+          "vcardArray": [
+            "vcard",
+            [
+              [
+                "version",
+                {},
+                "text",
+                "4.0"
+              ],
+              [
+                "fn",
+                {},
+                "text",
+                ""
+              ],
+              [
+                "tel",
+                {
+                  "type": "voice"
+                },
+                "uri",
+                "tel:+1.9854014545"
+              ],
+              [
+                "email",
+                {},
+                "text",
+                "abuse@spaceship.com"
+              ]
+            ]
+          ],
+          "roles": [
+            "abuse"
+          ],
+          "objectClassName": "entity"
+        }
+      ],
+      "links": [
+        {
+          "value": "https://rdap.publicinterestregistry.org/rdap/entity/3862",
+          "rel": "self",
+          "href": "https://rdap.publicinterestregistry.org/rdap/entity/3862",
+          "type": "application/rdap+json"
+        },
+        {
+          "value": "https://rdap.spaceship.com",
+          "rel": "about",
+          "href": "https://rdap.spaceship.com",
+          "type": "application/rdap+json"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "value": "https://rdap.publicinterestregistry.org/rdap/domain/aion2guide.org",
+      "rel": "related",
+      "href": "https://rdap.spaceship.com/domain/aion2guide.org",
+      "type": "application/rdap+json"
+    },
+    {
+      "value": "https://rdap.publicinterestregistry.org/rdap/domain/aion2guide.org",
+      "rel": "self",
+      "href": "https://rdap.publicinterestregistry.org/rdap/domain/aion2guide.org",
+      "type": "application/rdap+json"
+    }
+  ]
+}

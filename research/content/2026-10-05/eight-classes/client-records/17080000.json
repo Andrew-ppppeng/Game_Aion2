@@ -1,0 +1,2484 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/17080000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "17080000",
+    "name": "Debilitating Mark",
+    "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "17080010",
+        "description": "Removes MP Consumed and restores 150 MP",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17080020",
+        "description": "-15% target Defense for duration of Damage over Time",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17080030",
+        "description": "Has a 20% chance to inflict Stun on the target for 3s",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17080040",
+        "description": "+10% PvE Damage Boost reduction and +5% PvP Damage Boost reduction",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17080050",
+        "description": "Ignores Block and Evasion and reduces Damage over Time interval by 50%",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Mobile</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "circle"
+      },
+      "reachMeters": 4,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 100
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "mace",
+        "name": "Mace"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:59:113.3:1:1]]-[[damage:max:59:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 59,
+            "baseMax": 59,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 59,
+            "baseMax": 59,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:103:113.3:1:1]]-[[damage:max:103:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 103,
+            "baseMax": 103,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 103,
+            "baseMax": 103,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 2,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:147:113.3:1:1]]-[[damage:max:147:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 147,
+            "baseMax": 147,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 147,
+            "baseMax": 147,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 3,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:192:113.3:1:1]]-[[damage:max:192:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 192,
+            "baseMax": 192,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 192,
+            "baseMax": 192,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 4,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:258:113.3:1:1]]-[[damage:max:258:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 258,
+            "baseMax": 258,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 258,
+            "baseMax": 258,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 5,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:341:113.3:1:1]]-[[damage:max:341:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 341,
+            "baseMax": 341,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 341,
+            "baseMax": 341,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 6,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:441:113.3:1:1]]-[[damage:max:441:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 441,
+            "baseMax": 441,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 441,
+            "baseMax": 441,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 7,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:525:113.3:1:1]]-[[damage:max:525:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 525,
+            "baseMax": 525,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 525,
+            "baseMax": 525,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 8,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:608:113.3:1:1]]-[[damage:max:608:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 608,
+            "baseMax": 608,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 608,
+            "baseMax": 608,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 9,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:691:113.3:1:1]]-[[damage:max:691:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 691,
+            "baseMax": 691,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 691,
+            "baseMax": 691,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 10,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:774:113.3:1:1]]-[[damage:max:774:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 774,
+            "baseMax": 774,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 774,
+            "baseMax": 774,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 11,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:875:113.3:1:1]]-[[damage:max:875:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 875,
+            "baseMax": 875,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 875,
+            "baseMax": 875,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 12,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:958:113.3:1:1]]-[[damage:max:958:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 958,
+            "baseMax": 958,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 958,
+            "baseMax": 958,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 13,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1019:113.3:1:1]]-[[damage:max:1019:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 1019,
+            "baseMax": 1019,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 1019,
+            "baseMax": 1019,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 14,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1063:113.3:1:1]]-[[damage:max:1063:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 1063,
+            "baseMax": 1063,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 1063,
+            "baseMax": 1063,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 15,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1125:113.3:1:1]]-[[damage:max:1125:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 1125,
+            "baseMax": 1125,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 1125,
+            "baseMax": 1125,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 16,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1186:113.3:1:1]]-[[damage:max:1186:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 1186,
+            "baseMax": 1186,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 1186,
+            "baseMax": 1186,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 17,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1247:113.3:1:1]]-[[damage:max:1247:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 1247,
+            "baseMax": 1247,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 1247,
+            "baseMax": 1247,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 18,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1308:113.3:1:1]]-[[damage:max:1308:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 1308,
+            "baseMax": 1308,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 1308,
+            "baseMax": 1308,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 19,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1352:113.3:1:1]]-[[damage:max:1352:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 1352,
+            "baseMax": 1352,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 1352,
+            "baseMax": 1352,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 20,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1396:113.3:1:1]]-[[damage:max:1396:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 1396,
+            "baseMax": 1396,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 1396,
+            "baseMax": 1396,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 21,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1441:113.3:1:1]]-[[damage:max:1441:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 1441,
+            "baseMax": 1441,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 1441,
+            "baseMax": 1441,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 22,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1485:113.3:1:1]]-[[damage:max:1485:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 1485,
+            "baseMax": 1485,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 1485,
+            "baseMax": 1485,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 23,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1529:113.3:1:1]]-[[damage:max:1529:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 1529,
+            "baseMax": 1529,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 1529,
+            "baseMax": 1529,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 24,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1573:113.3:1:1]]-[[damage:max:1573:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 1573,
+            "baseMax": 1573,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 1573,
+            "baseMax": 1573,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 25,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1617:113.3:1:1]]-[[damage:max:1617:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 1617,
+            "baseMax": 1617,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 1617,
+            "baseMax": 1617,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 26,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1662:113.3:1:1]]-[[damage:max:1662:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 1662,
+            "baseMax": 1662,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 1662,
+            "baseMax": 1662,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 27,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1706:113.3:1:1]]-[[damage:max:1706:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 1706,
+            "baseMax": 1706,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 1706,
+            "baseMax": 1706,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 28,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1750:113.3:1:1]]-[[damage:max:1750:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 1750,
+            "baseMax": 1750,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 1750,
+            "baseMax": 1750,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 29,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1794:113.3:1:1]]-[[damage:max:1794:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 1794,
+            "baseMax": 1794,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 1794,
+            "baseMax": 1794,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 30,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1838:113.3:1:1]]-[[damage:max:1838:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 1838,
+            "baseMax": 1838,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 1838,
+            "baseMax": 1838,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 31,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1883:113.3:1:1]]-[[damage:max:1883:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 1883,
+            "baseMax": 1883,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 1883,
+            "baseMax": 1883,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 32,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1927:113.3:1:1]]-[[damage:max:1927:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 1927,
+            "baseMax": 1927,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 1927,
+            "baseMax": 1927,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 33,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1971:113.3:1:1]]-[[damage:max:1971:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 1971,
+            "baseMax": 1971,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 1971,
+            "baseMax": 1971,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 34,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2015:113.3:1:1]]-[[damage:max:2015:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 2015,
+            "baseMax": 2015,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 2015,
+            "baseMax": 2015,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 35,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2059:113.3:1:1]]-[[damage:max:2059:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 2059,
+            "baseMax": 2059,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 2059,
+            "baseMax": 2059,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 36,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2103:113.3:1:1]]-[[damage:max:2103:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 2103,
+            "baseMax": 2103,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 2103,
+            "baseMax": 2103,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 37,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2148:113.3:1:1]]-[[damage:max:2148:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 2148,
+            "baseMax": 2148,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 2148,
+            "baseMax": 2148,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 38,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2192:113.3:1:1]]-[[damage:max:2192:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 2192,
+            "baseMax": 2192,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 2192,
+            "baseMax": 2192,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 39,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 100
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2236:113.3:1:1]]-[[damage:max:2236:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1708000011",
+            "effectGroupId": "170800001",
+            "baseMin": 2236,
+            "baseMax": 2236,
+            "attackRatioPercent": 113.3
+          },
+          {
+            "effectId": "1708000012",
+            "effectGroupId": "170800001",
+            "baseMin": 2236,
+            "baseMax": 2236,
+            "attackRatioPercent": 113.3
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "170800001",
+            "name": "Debilitating Mark",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Reduces PvE Damage Boost and PvP Damage Boost, deals Damage over Time",
+            "effect": "-<desc_point>5%</> PvE Damage Boost\n-<desc_point>2.5%</> PvP Damage Boost\nDamage over Time",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+            "effectLevel": 40,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Debilitating Mark",
+              "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+              "id": "170800001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "3562",
+        "level": 1,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3563",
+        "level": 2,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3564",
+        "level": 3,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3565",
+        "level": 4,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3566",
+        "level": 5,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3567",
+        "level": 6,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3568",
+        "level": 7,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3569",
+        "level": 8,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3570",
+        "level": 9,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3571",
+        "level": 10,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "17080010",
+        "skillId": "17080010",
+        "name": "Debilitating Mark",
+        "description": "Removes MP Consumed and restores 150 MP",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17080020",
+        "skillId": "17080020",
+        "name": "Debilitating Mark",
+        "description": "-15% target Defense for duration of Damage over Time",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17080030",
+        "skillId": "17080030",
+        "name": "Debilitating Mark",
+        "description": "Has a 20% chance to inflict Stun on the target for 3s",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17080040",
+        "skillId": "17080040",
+        "name": "Debilitating Mark",
+        "description": "+10% PvE Damage Boost reduction and +5% PvP Damage Boost reduction",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17080050",
+        "skillId": "17080050",
+        "name": "Debilitating Mark",
+        "description": "Ignores Block and Evasion and reduces Damage over Time interval by 50%",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 10,
+    "classes": [
+      {
+        "code": "cleric",
+        "name": "Cleric"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Debilitating Mark",
+    "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_008.webp",
+    "id": "17080000",
+    "entityType": "skill",
+    "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:59:113.3:1:1]]-[[damage:max:59:113.3:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Reduces enemy PvE Damage Boost by 5%, PvP Damage Boost by 2.5%, and deals <chat_combat>[[dot]]</> Damage over Time every 1s for 10s.\n\n10 Stagger Gauge Damage"
+  }
+}

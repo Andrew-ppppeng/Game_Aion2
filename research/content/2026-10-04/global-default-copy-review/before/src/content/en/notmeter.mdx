@@ -1,0 +1,67 @@
+NotMeter is a third-party **AION 2 DPS meter** with a combat-record and ranking website. Choose the feature you need before installing anything: character search and existing records work through the website; capturing a new fight uses the desktop tool.
+
+<h2 id="website-or-desktop">Website records or desktop damage capture?</h2>
+
+| What you want | Where to start | Important condition |
+| --- | --- | --- |
+| Find a character's equipment, skills or records | [NotMeter website](https://notmeter.com/) | Select KR, TW or Global, then the correct server and character name |
+| Compare existing damage records | Website encounter and ranking filters | Match boss, difficulty, period and CP range |
+| Capture your own combat | Maintainer's desktop distribution | Check game-region and patch compatibility before installing |
+
+**Global:** website character search is available; current desktop combat-capture compatibility is unconfirmed.
+
+This guide covers NotMeter's Npcap-dependent setup. OCR tools read screen text and use a different setup; do not mix their installation instructions with NotMeter's.
+
+<h2 id="dps-meter-options">Choose a DPS meter by capture method and region</h2>
+
+| Tool | Method and setup | Region and cost conditions |
+| --- | --- | --- |
+| [NotMeter](https://notmeter.com/) | Website records; Npcap-dependent desktop capture | KR/TW/Global website search; current Global desktop compatibility unconfirmed |
+| [aion2t DPS Meter](https://github.com/Grachy/aion2t-dps-meter) | Windows network capture with Npcap | Global (EU) and TW release paths; some features require Premium |
+| [Aletheia](https://github.com/p62003/aletheia_AION2_DPS_Meter) | Windows network capture with Npcap; English and Chinese interfaces | TW-focused; free overlay and Sponsor features; Discord sign-in and report-upload consent required |
+| [Projack OCR meter](https://github.com/ProjackL2/aion2_dps_meter) | Screenshots of the combat log; Windows, Python 3.12 and Tesseract | Large UI and Aion 1 control mode required; current Global compatibility unconfirmed |
+
+**Free does not mean every feature is included.** Aletheia's basic overlay does not require a Sponsor key; advanced analysis does. Its free tier automatically uploads eligible reports after consent. Review each tool's current feature and data-sharing settings before use.
+
+For OCR, keep the combat log visible at the size and position configured in the tool. Changes to log language, UI scale or window position can affect text recognition. For network capture, confirm the release supports your service region and game patch.
+
+<h2 id="source-and-global-support">Download the right desktop version</h2>
+
+Open [notmeter.com](https://notmeter.com/) and follow its download link to the [Not4You-Dev releases](https://github.com/Not4You-Dev/NotMeter-Releases/releases). Use that distribution channel to find release notes and updates.
+
+Before installing, check that the desktop release supports your service region and game patch. Keep its version number for troubleshooting. Website character search and desktop combat capture are separate features.
+
+<h2 id="maintainer-installation">Install NotMeter on Windows</h2>
+
+1. Open [notmeter.com](https://notmeter.com/) and use its linked [Npcap installer](https://npcap.com/) if Npcap is not already installed.
+2. Download the NotMeter ZIP from the linked [maintainer releases](https://github.com/Not4You-Dev/NotMeter-Releases/releases).
+3. Extract the ZIP into a folder before running `NotMeter.exe`; keep the included files together.
+4. Confirm the release's supported service region and patch before attempting combat capture. If it records nothing, use the checks below rather than assuming a successful installation means compatibility.
+
+Npcap is a Windows network-capture library and driver. Use the driver version specified by NotMeter's installation instructions and check the requirements before installing. If the process shows an unexpected error or permission request, save the exact message for the tool's support channel.
+
+<h2 id="read-combat-records">Read DPS and nDPS in context</h2>
+
+DPS measures damage per second; nDPS adjusts rankings for party-buff contribution. Filter by dungeon, boss, difficulty, CP range and period before comparing records. Open a fight's details to inspect total damage, duration and each skill's contribution.
+
+For a useful comparison, write down the encounter, character configuration and outcome before looking at the headline number. A longer fight, a movement mechanic, a different party or time spent recovering an ally can change the result. Compare several similar attempts, then change one controllable part of your build. Do not treat an isolated leaderboard record as a universal target for levelling or healing.
+
+<GuideVisual id="workflow" />
+
+<h2 id="missing-records">When a search or record is missing</h2>
+
+| Problem | What to check |
+| --- | --- |
+| Character search will not load | Service region, server and exact character name |
+| Desktop tool records no combat | Supported game patch, tool version and capture setup |
+| A recorded fight is absent from rankings | Ranking eligibility, filters and update status |
+
+Save the exact error and when it occurred, then use the support channel linked on NotMeter's website. Change one setting at a time so you can identify what fixed the problem. Keep passwords and authentication codes private.
+
+<h2 id="nc-policy">NC policy and account use</h2>
+
+NotMeter has no confirmed NC approval. NC's Global operation policy sanctions programs or devices that circumvent protection or interfere with normal service. Direct account-policy questions to NC support before using the desktop tool.
+
+To improve a build without relying on a leaderboard number, start with unlocked skills, equipped options and a repeatable manual attack loop in the [builds guide](/builds).
+
+<GuideNext slug="builds" />

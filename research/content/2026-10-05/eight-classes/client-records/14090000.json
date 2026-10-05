@@ -1,0 +1,1442 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/14090000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "14090000",
+    "name": "Marking Shot",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_031.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 3,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 3,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 6,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 9,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "14090010",
+        "description": "+5% Perfect Chance for the duration",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14090020",
+        "description": "30% chance to inflict Knock Back on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14090030",
+        "description": "+5s duration",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14090040",
+        "description": "+1 consecutive use",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14090050",
+        "description": "Ignores Block and Evasion and lands as a Critical Hit",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 50
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "bow",
+        "name": "Bow"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:142:146.25:1:1]]-[[damage:max:142:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 142,
+            "baseMax": 142,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:202:146.25:1:1]]-[[damage:max:202:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 202,
+            "baseMax": 202,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:262:146.25:1:1]]-[[damage:max:262:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 262,
+            "baseMax": 262,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:353:146.25:1:1]]-[[damage:max:353:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 353,
+            "baseMax": 353,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:465:146.25:1:1]]-[[damage:max:465:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 465,
+            "baseMax": 465,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:599:146.25:1:1]]-[[damage:max:599:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 599,
+            "baseMax": 599,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:712:146.25:1:1]]-[[damage:max:712:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 712,
+            "baseMax": 712,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:824:146.25:1:1]]-[[damage:max:824:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 824,
+            "baseMax": 824,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:937:146.25:1:1]]-[[damage:max:937:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 937,
+            "baseMax": 937,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1049:146.25:1:1]]-[[damage:max:1049:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 1049,
+            "baseMax": 1049,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1184:146.25:1:1]]-[[damage:max:1184:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 1184,
+            "baseMax": 1184,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1296:146.25:1:1]]-[[damage:max:1296:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 1296,
+            "baseMax": 1296,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1378:146.25:1:1]]-[[damage:max:1378:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 1378,
+            "baseMax": 1378,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1439:146.25:1:1]]-[[damage:max:1439:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 1439,
+            "baseMax": 1439,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1521:146.25:1:1]]-[[damage:max:1521:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 1521,
+            "baseMax": 1521,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1603:146.25:1:1]]-[[damage:max:1603:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 1603,
+            "baseMax": 1603,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1685:146.25:1:1]]-[[damage:max:1685:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 1685,
+            "baseMax": 1685,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1768:146.25:1:1]]-[[damage:max:1768:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 1768,
+            "baseMax": 1768,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1828:146.25:1:1]]-[[damage:max:1828:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 1828,
+            "baseMax": 1828,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1888:146.25:1:1]]-[[damage:max:1888:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 1888,
+            "baseMax": 1888,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:1949:146.25:1:1]]-[[damage:max:1949:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 1949,
+            "baseMax": 1949,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2009:146.25:1:1]]-[[damage:max:2009:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 2009,
+            "baseMax": 2009,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2069:146.25:1:1]]-[[damage:max:2069:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 2069,
+            "baseMax": 2069,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2130:146.25:1:1]]-[[damage:max:2130:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 2130,
+            "baseMax": 2130,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2190:146.25:1:1]]-[[damage:max:2190:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 2190,
+            "baseMax": 2190,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2250:146.25:1:1]]-[[damage:max:2250:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 2250,
+            "baseMax": 2250,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2311:146.25:1:1]]-[[damage:max:2311:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 2311,
+            "baseMax": 2311,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2371:146.25:1:1]]-[[damage:max:2371:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 2371,
+            "baseMax": 2371,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2431:146.25:1:1]]-[[damage:max:2431:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 2431,
+            "baseMax": 2431,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2492:146.25:1:1]]-[[damage:max:2492:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 2492,
+            "baseMax": 2492,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2552:146.25:1:1]]-[[damage:max:2552:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 2552,
+            "baseMax": 2552,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2612:146.25:1:1]]-[[damage:max:2612:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 2612,
+            "baseMax": 2612,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2673:146.25:1:1]]-[[damage:max:2673:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 2673,
+            "baseMax": 2673,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2733:146.25:1:1]]-[[damage:max:2733:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 2733,
+            "baseMax": 2733,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2793:146.25:1:1]]-[[damage:max:2793:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 2793,
+            "baseMax": 2793,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2854:146.25:1:1]]-[[damage:max:2854:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 2854,
+            "baseMax": 2854,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2914:146.25:1:1]]-[[damage:max:2914:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 2914,
+            "baseMax": 2914,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:2974:146.25:1:1]]-[[damage:max:2974:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 2974,
+            "baseMax": 2974,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3035:146.25:1:1]]-[[damage:max:3035:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 3035,
+            "baseMax": 3035,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Deals <chat_combat>[[damage:min:3095:146.25:1:1]]-[[damage:max:3095:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1409000021",
+            "effectGroupId": "140900002",
+            "baseMin": 3095,
+            "baseMax": 3095,
+            "attackRatioPercent": 146.25
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "1921",
+        "level": 1,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 3,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1922",
+        "level": 2,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 3,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1923",
+        "level": 3,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 6,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1924",
+        "level": 4,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 9,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1925",
+        "level": 5,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1926",
+        "level": 6,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1927",
+        "level": 7,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1928",
+        "level": 8,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1929",
+        "level": 9,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1930",
+        "level": 10,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "14090010",
+        "skillId": "14090010",
+        "name": "Marking Shot",
+        "description": "+5% Perfect Chance for the duration",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14090020",
+        "skillId": "14090020",
+        "name": "Marking Shot",
+        "description": "30% chance to inflict Knock Back on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14090030",
+        "skillId": "14090030",
+        "name": "Marking Shot",
+        "description": "+5s duration",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14090040",
+        "skillId": "14090040",
+        "name": "Marking Shot",
+        "description": "+1 consecutive use",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14090050",
+        "skillId": "14090050",
+        "name": "Marking Shot",
+        "description": "Ignores Block and Evasion and lands as a Critical Hit",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 10,
+    "classes": [
+      {
+        "code": "ranger",
+        "name": "Ranger"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Marking Shot",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_031.webp",
+    "id": "14090000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:142:146.25:1:1]]-[[damage:max:142:146.25:1:1]]</> Wind damage to a target within 20m. Moves the caster in the input direction and grants Precision for 10s.\nPrecision: Increases Critical Hit by 300\n\n7 Stagger Gauge Damage"
+  }
+}

@@ -1,0 +1,1443 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/14110000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "14110000",
+    "name": "Gale Arrow",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_011.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "14110010",
+        "description": "+5s duration",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14110020",
+        "description": "50% chance to inflict Knock Back on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14110030",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14110040",
+        "description": "Increases Combat Speed, PvE Damage Boost, and PvP Damage Boost when less targets hit",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14110050",
+        "description": "-10s cooldown",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "circle"
+      },
+      "reachMeters": 4,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 200
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "bow",
+        "name": "Bow"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:365:203.5:1:1]]-[[damage:max:365:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 365,
+            "baseMax": 365,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:491:203.5:1:1]]-[[damage:max:491:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 491,
+            "baseMax": 491,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:647:203.5:1:1]]-[[damage:max:647:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 647,
+            "baseMax": 647,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:834:203.5:1:1]]-[[damage:max:834:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 834,
+            "baseMax": 834,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:991:203.5:1:1]]-[[damage:max:991:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 991,
+            "baseMax": 991,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1147:203.5:1:1]]-[[damage:max:1147:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 1147,
+            "baseMax": 1147,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1304:203.5:1:1]]-[[damage:max:1304:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 1304,
+            "baseMax": 1304,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1460:203.5:1:1]]-[[damage:max:1460:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 1460,
+            "baseMax": 1460,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1647:203.5:1:1]]-[[damage:max:1647:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 1647,
+            "baseMax": 1647,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1804:203.5:1:1]]-[[damage:max:1804:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 1804,
+            "baseMax": 1804,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1918:203.5:1:1]]-[[damage:max:1918:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 1918,
+            "baseMax": 1918,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2002:203.5:1:1]]-[[damage:max:2002:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 2002,
+            "baseMax": 2002,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2116:203.5:1:1]]-[[damage:max:2116:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 2116,
+            "baseMax": 2116,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2231:203.5:1:1]]-[[damage:max:2231:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 2231,
+            "baseMax": 2231,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2345:203.5:1:1]]-[[damage:max:2345:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 2345,
+            "baseMax": 2345,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2460:203.5:1:1]]-[[damage:max:2460:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 2460,
+            "baseMax": 2460,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2544:203.5:1:1]]-[[damage:max:2544:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 2544,
+            "baseMax": 2544,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2628:203.5:1:1]]-[[damage:max:2628:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 2628,
+            "baseMax": 2628,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2712:203.5:1:1]]-[[damage:max:2712:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 2712,
+            "baseMax": 2712,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2796:203.5:1:1]]-[[damage:max:2796:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 2796,
+            "baseMax": 2796,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2880:203.5:1:1]]-[[damage:max:2880:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 2880,
+            "baseMax": 2880,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:2963:203.5:1:1]]-[[damage:max:2963:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 2963,
+            "baseMax": 2963,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3047:203.5:1:1]]-[[damage:max:3047:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 3047,
+            "baseMax": 3047,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3131:203.5:1:1]]-[[damage:max:3131:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 3131,
+            "baseMax": 3131,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3215:203.5:1:1]]-[[damage:max:3215:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 3215,
+            "baseMax": 3215,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3299:203.5:1:1]]-[[damage:max:3299:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 3299,
+            "baseMax": 3299,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3383:203.5:1:1]]-[[damage:max:3383:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 3383,
+            "baseMax": 3383,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3467:203.5:1:1]]-[[damage:max:3467:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 3467,
+            "baseMax": 3467,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3551:203.5:1:1]]-[[damage:max:3551:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 3551,
+            "baseMax": 3551,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3635:203.5:1:1]]-[[damage:max:3635:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 3635,
+            "baseMax": 3635,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3719:203.5:1:1]]-[[damage:max:3719:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 3719,
+            "baseMax": 3719,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3803:203.5:1:1]]-[[damage:max:3803:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 3803,
+            "baseMax": 3803,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3887:203.5:1:1]]-[[damage:max:3887:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 3887,
+            "baseMax": 3887,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:3971:203.5:1:1]]-[[damage:max:3971:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 3971,
+            "baseMax": 3971,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4055:203.5:1:1]]-[[damage:max:4055:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 4055,
+            "baseMax": 4055,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4139:203.5:1:1]]-[[damage:max:4139:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 4139,
+            "baseMax": 4139,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4223:203.5:1:1]]-[[damage:max:4223:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 4223,
+            "baseMax": 4223,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4307:203.5:1:1]]-[[damage:max:4307:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 4307,
+            "baseMax": 4307,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4391:203.5:1:1]]-[[damage:max:4391:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 4391,
+            "baseMax": 4391,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 20,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 200
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:4474:203.5:1:1]]-[[damage:max:4474:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1411000011",
+            "effectGroupId": "141100001",
+            "baseMin": 4474,
+            "baseMax": 4474,
+            "attackRatioPercent": 203.5
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "1952",
+        "level": 1,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1953",
+        "level": 2,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1954",
+        "level": 3,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1955",
+        "level": 4,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1956",
+        "level": 5,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1957",
+        "level": 6,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1958",
+        "level": 7,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1959",
+        "level": 8,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1960",
+        "level": 9,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "1961",
+        "level": 10,
+        "characterClass": "ranger",
+        "characterClassName": "Ranger",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "14110010",
+        "skillId": "14110010",
+        "name": "Gale Arrow",
+        "description": "+5s duration",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14110020",
+        "skillId": "14110020",
+        "name": "Gale Arrow",
+        "description": "50% chance to inflict Knock Back on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14110030",
+        "skillId": "14110030",
+        "name": "Gale Arrow",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14110040",
+        "skillId": "14110040",
+        "name": "Gale Arrow",
+        "description": "Increases Combat Speed, PvE Damage Boost, and PvP Damage Boost when less targets hit",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "14110050",
+        "skillId": "14110050",
+        "name": "Gale Arrow",
+        "description": "-10s cooldown",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "ranger",
+          "name": "Ranger"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 20,
+    "classes": [
+      {
+        "code": "ranger",
+        "name": "Ranger"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Gale Arrow",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ra_skill_011.webp",
+    "id": "14110000",
+    "entityType": "skill",
+    "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:365:203.5:1:1]]-[[damage:max:365:203.5:1:1]]</> Wind damage to up to 4 enemies within 4m of the target. Grants Gale to the caster for 10s.\nGale: Increases Combat Speed by 7%, PvE Damage Boost by 7%, and PvP Damage Boost by 3.5%\n\n10 Stagger Gauge Damage"
+  }
+}

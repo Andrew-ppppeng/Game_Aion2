@@ -1,0 +1,1123 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/17100000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "17100000",
+    "name": "Healing Light",
+    "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_010.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 34,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "17100010",
+        "description": "+2 consecutive uses",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17100020",
+        "description": "+20% amount healed when HP is 50% or less",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17100030",
+        "description": "50% chance to remove 1 debuff",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17100040",
+        "description": "+2% HP restored",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17100050",
+        "description": "-2s cooldown",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Nontarget | Mobile</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "relation": "allies",
+      "shape": {
+        "code": "circle"
+      },
+      "reachMeters": 40,
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 50
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "mace",
+        "name": "Mace"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 6,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 50
+          }
+        ],
+        "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m.",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "3622",
+        "level": 1,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3623",
+        "level": 2,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3624",
+        "level": 3,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3625",
+        "level": 4,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3626",
+        "level": 5,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3627",
+        "level": 6,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3628",
+        "level": 7,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3629",
+        "level": 8,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3630",
+        "level": 9,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3631",
+        "level": 10,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 34,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "17100010",
+        "skillId": "17100010",
+        "name": "Healing Light",
+        "description": "+2 consecutive uses",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17100020",
+        "skillId": "17100020",
+        "name": "Healing Light",
+        "description": "+20% amount healed when HP is 50% or less",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17100030",
+        "skillId": "17100030",
+        "name": "Healing Light",
+        "description": "50% chance to remove 1 debuff",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17100040",
+        "skillId": "17100040",
+        "name": "Healing Light",
+        "description": "+2% HP restored",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17100050",
+        "skillId": "17100050",
+        "name": "Healing Light",
+        "description": "-2s cooldown",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "cooldownSeconds": 6,
+    "classes": [
+      {
+        "code": "cleric",
+        "name": "Cleric"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Healing Light",
+    "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_010.webp",
+    "id": "17100000",
+    "entityType": "skill",
+    "description": "Restores <chat_combat>[[heal]]-[[heal]]</> HP to the caster and the party member with the lowest HP within 40m."
+  }
+}

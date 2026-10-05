@@ -1,0 +1,2051 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/17350000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "17350000",
+    "name": "Condemnation",
+    "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_035.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 8,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 8,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 11,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "17350010",
+        "description": "Restores 100 MP on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17350020",
+        "description": "Up to +12% damage when less targets hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17350030",
+        "description": "20% chance to inflict Root for 3s",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17350040",
+        "description": "Resets cooldown on landing a Critical Hit with [Condemnation]",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17350050",
+        "description": "Multi-Hit on hit",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Mobile</>",
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "circle"
+      },
+      "reachMeters": 4,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [
+      {
+        "id": "17000003",
+        "target": {
+          "code": "target"
+        },
+        "type": {
+          "code": "hasabnormalgroupid"
+        },
+        "description": "Chain of Torment Target",
+        "iconPath": "/images/ui/resource/texture/skill/icon_cond_cl_skill_007.webp",
+        "abnormalGroupId": 170700001
+      }
+    ],
+    "requiredWeapons": [
+      {
+        "code": "mace",
+        "name": "Mace"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:325:192.05:1:1]]-[[damage:max:325:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 325,
+            "baseMax": 325,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 325,
+            "baseMax": 325,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 325,
+            "baseMax": 325,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 325,
+            "baseMax": 325,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:437:192.05:1:1]]-[[damage:max:437:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 437,
+            "baseMax": 437,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 437,
+            "baseMax": 437,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 437,
+            "baseMax": 437,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 437,
+            "baseMax": 437,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:579:192.05:1:1]]-[[damage:max:579:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 579,
+            "baseMax": 579,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 579,
+            "baseMax": 579,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 579,
+            "baseMax": 579,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 579,
+            "baseMax": 579,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:748:192.05:1:1]]-[[damage:max:748:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 748,
+            "baseMax": 748,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 748,
+            "baseMax": 748,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 748,
+            "baseMax": 748,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 748,
+            "baseMax": 748,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:890:192.05:1:1]]-[[damage:max:890:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 890,
+            "baseMax": 890,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 890,
+            "baseMax": 890,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 890,
+            "baseMax": 890,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 890,
+            "baseMax": 890,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:1031:192.05:1:1]]-[[damage:max:1031:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 1031,
+            "baseMax": 1031,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 1031,
+            "baseMax": 1031,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 1031,
+            "baseMax": 1031,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 1031,
+            "baseMax": 1031,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:1172:192.05:1:1]]-[[damage:max:1172:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 1172,
+            "baseMax": 1172,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 1172,
+            "baseMax": 1172,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 1172,
+            "baseMax": 1172,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 1172,
+            "baseMax": 1172,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:1313:192.05:1:1]]-[[damage:max:1313:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 1313,
+            "baseMax": 1313,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 1313,
+            "baseMax": 1313,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 1313,
+            "baseMax": 1313,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 1313,
+            "baseMax": 1313,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:1483:192.05:1:1]]-[[damage:max:1483:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 1483,
+            "baseMax": 1483,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 1483,
+            "baseMax": 1483,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 1483,
+            "baseMax": 1483,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 1483,
+            "baseMax": 1483,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:1624:192.05:1:1]]-[[damage:max:1624:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 1624,
+            "baseMax": 1624,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 1624,
+            "baseMax": 1624,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 1624,
+            "baseMax": 1624,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 1624,
+            "baseMax": 1624,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:1728:192.05:1:1]]-[[damage:max:1728:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 1728,
+            "baseMax": 1728,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 1728,
+            "baseMax": 1728,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 1728,
+            "baseMax": 1728,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 1728,
+            "baseMax": 1728,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:1803:192.05:1:1]]-[[damage:max:1803:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 1803,
+            "baseMax": 1803,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 1803,
+            "baseMax": 1803,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 1803,
+            "baseMax": 1803,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 1803,
+            "baseMax": 1803,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:1907:192.05:1:1]]-[[damage:max:1907:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 1907,
+            "baseMax": 1907,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 1907,
+            "baseMax": 1907,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 1907,
+            "baseMax": 1907,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 1907,
+            "baseMax": 1907,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:2010:192.05:1:1]]-[[damage:max:2010:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 2010,
+            "baseMax": 2010,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 2010,
+            "baseMax": 2010,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 2010,
+            "baseMax": 2010,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 2010,
+            "baseMax": 2010,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:2114:192.05:1:1]]-[[damage:max:2114:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 2114,
+            "baseMax": 2114,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 2114,
+            "baseMax": 2114,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 2114,
+            "baseMax": 2114,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 2114,
+            "baseMax": 2114,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:2218:192.05:1:1]]-[[damage:max:2218:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 2218,
+            "baseMax": 2218,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 2218,
+            "baseMax": 2218,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 2218,
+            "baseMax": 2218,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 2218,
+            "baseMax": 2218,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:2293:192.05:1:1]]-[[damage:max:2293:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 2293,
+            "baseMax": 2293,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 2293,
+            "baseMax": 2293,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 2293,
+            "baseMax": 2293,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 2293,
+            "baseMax": 2293,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:2367:192.05:1:1]]-[[damage:max:2367:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 2367,
+            "baseMax": 2367,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 2367,
+            "baseMax": 2367,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 2367,
+            "baseMax": 2367,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 2367,
+            "baseMax": 2367,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:2442:192.05:1:1]]-[[damage:max:2442:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 2442,
+            "baseMax": 2442,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 2442,
+            "baseMax": 2442,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 2442,
+            "baseMax": 2442,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 2442,
+            "baseMax": 2442,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:2517:192.05:1:1]]-[[damage:max:2517:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 2517,
+            "baseMax": 2517,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 2517,
+            "baseMax": 2517,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 2517,
+            "baseMax": 2517,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 2517,
+            "baseMax": 2517,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:2592:192.05:1:1]]-[[damage:max:2592:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 2592,
+            "baseMax": 2592,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 2592,
+            "baseMax": 2592,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 2592,
+            "baseMax": 2592,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 2592,
+            "baseMax": 2592,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:2667:192.05:1:1]]-[[damage:max:2667:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 2667,
+            "baseMax": 2667,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 2667,
+            "baseMax": 2667,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 2667,
+            "baseMax": 2667,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 2667,
+            "baseMax": 2667,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:2742:192.05:1:1]]-[[damage:max:2742:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 2742,
+            "baseMax": 2742,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 2742,
+            "baseMax": 2742,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 2742,
+            "baseMax": 2742,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 2742,
+            "baseMax": 2742,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:2817:192.05:1:1]]-[[damage:max:2817:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 2817,
+            "baseMax": 2817,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 2817,
+            "baseMax": 2817,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 2817,
+            "baseMax": 2817,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 2817,
+            "baseMax": 2817,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:2892:192.05:1:1]]-[[damage:max:2892:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 2892,
+            "baseMax": 2892,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 2892,
+            "baseMax": 2892,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 2892,
+            "baseMax": 2892,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 2892,
+            "baseMax": 2892,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:2967:192.05:1:1]]-[[damage:max:2967:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 2967,
+            "baseMax": 2967,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 2967,
+            "baseMax": 2967,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 2967,
+            "baseMax": 2967,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 2967,
+            "baseMax": 2967,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:3042:192.05:1:1]]-[[damage:max:3042:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 3042,
+            "baseMax": 3042,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 3042,
+            "baseMax": 3042,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 3042,
+            "baseMax": 3042,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 3042,
+            "baseMax": 3042,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:3116:192.05:1:1]]-[[damage:max:3116:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 3116,
+            "baseMax": 3116,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 3116,
+            "baseMax": 3116,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 3116,
+            "baseMax": 3116,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 3116,
+            "baseMax": 3116,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:3191:192.05:1:1]]-[[damage:max:3191:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 3191,
+            "baseMax": 3191,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 3191,
+            "baseMax": 3191,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 3191,
+            "baseMax": 3191,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 3191,
+            "baseMax": 3191,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:3266:192.05:1:1]]-[[damage:max:3266:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 3266,
+            "baseMax": 3266,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 3266,
+            "baseMax": 3266,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 3266,
+            "baseMax": 3266,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 3266,
+            "baseMax": 3266,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:3341:192.05:1:1]]-[[damage:max:3341:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 3341,
+            "baseMax": 3341,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 3341,
+            "baseMax": 3341,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 3341,
+            "baseMax": 3341,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 3341,
+            "baseMax": 3341,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:3416:192.05:1:1]]-[[damage:max:3416:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 3416,
+            "baseMax": 3416,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 3416,
+            "baseMax": 3416,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 3416,
+            "baseMax": 3416,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 3416,
+            "baseMax": 3416,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:3491:192.05:1:1]]-[[damage:max:3491:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 3491,
+            "baseMax": 3491,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 3491,
+            "baseMax": 3491,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 3491,
+            "baseMax": 3491,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 3491,
+            "baseMax": 3491,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:3566:192.05:1:1]]-[[damage:max:3566:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 3566,
+            "baseMax": 3566,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 3566,
+            "baseMax": 3566,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 3566,
+            "baseMax": 3566,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 3566,
+            "baseMax": 3566,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:3641:192.05:1:1]]-[[damage:max:3641:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 3641,
+            "baseMax": 3641,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 3641,
+            "baseMax": 3641,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 3641,
+            "baseMax": 3641,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 3641,
+            "baseMax": 3641,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:3716:192.05:1:1]]-[[damage:max:3716:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 3716,
+            "baseMax": 3716,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 3716,
+            "baseMax": 3716,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 3716,
+            "baseMax": 3716,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 3716,
+            "baseMax": 3716,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:3791:192.05:1:1]]-[[damage:max:3791:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 3791,
+            "baseMax": 3791,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 3791,
+            "baseMax": 3791,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 3791,
+            "baseMax": 3791,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 3791,
+            "baseMax": 3791,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:3865:192.05:1:1]]-[[damage:max:3865:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 3865,
+            "baseMax": 3865,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 3865,
+            "baseMax": 3865,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 3865,
+            "baseMax": 3865,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 3865,
+            "baseMax": 3865,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:3940:192.05:1:1]]-[[damage:max:3940:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 3940,
+            "baseMax": 3940,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 3940,
+            "baseMax": 3940,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 3940,
+            "baseMax": 3940,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 3940,
+            "baseMax": 3940,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 3,
+        "costs": [],
+        "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:4015:192.05:1:1]]-[[damage:max:4015:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1735000011",
+            "effectGroupId": "173500001",
+            "baseMin": 4015,
+            "baseMax": 4015,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000012",
+            "effectGroupId": "173500001",
+            "baseMin": 4015,
+            "baseMax": 4015,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000013",
+            "effectGroupId": "173500001",
+            "baseMin": 4015,
+            "baseMax": 4015,
+            "attackRatioPercent": 192.05
+          },
+          {
+            "effectId": "1735000014",
+            "effectGroupId": "173500001",
+            "baseMin": 4015,
+            "baseMax": 4015,
+            "attackRatioPercent": 192.05
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "3612",
+        "level": 1,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 8,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3613",
+        "level": 2,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 8,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3614",
+        "level": 3,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 11,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3615",
+        "level": 4,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3616",
+        "level": 5,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3617",
+        "level": 6,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3618",
+        "level": 7,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3619",
+        "level": 8,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3620",
+        "level": 9,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3621",
+        "level": 10,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 32,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "17350010",
+        "skillId": "17350010",
+        "name": "Condemnation",
+        "description": "Restores 100 MP on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17350020",
+        "skillId": "17350020",
+        "name": "Condemnation",
+        "description": "Up to +12% damage when less targets hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17350030",
+        "skillId": "17350030",
+        "name": "Condemnation",
+        "description": "20% chance to inflict Root for 3s",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17350040",
+        "skillId": "17350040",
+        "name": "Condemnation",
+        "description": "Resets cooldown on landing a Critical Hit with [Condemnation]",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17350050",
+        "skillId": "17350050",
+        "name": "Condemnation",
+        "description": "Multi-Hit on hit",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 3,
+    "classes": [
+      {
+        "code": "cleric",
+        "name": "Cleric"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Condemnation",
+    "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_035.webp",
+    "id": "17350000",
+    "entityType": "skill",
+    "description": "Selects a target within 20m afflicted with Chain of Torment and deals <chat_combat>[[damage:min:325:192.05:1:1]]-[[damage:max:325:192.05:1:1]]</> Earth damage to up to 4 enemies within 4m of the target.\n\n7 Stagger Gauge Damage"
+  }
+}

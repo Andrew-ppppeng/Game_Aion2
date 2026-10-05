@@ -1,0 +1,65 @@
+{
+  "reviewRecordedAt": "2026-10-03T15:58:37+00:00",
+  "reviewDate": "2026-10-03",
+  "method": "Public web source reads and existing original Discord archive; observations below are review notes rather than an HTML snapshot.",
+  "sources": [
+    {
+      "url": "https://steamcommunity.com/app/3393110/discussions/6/802345327968609673/",
+      "region": "Global",
+      "version": "Developer-pinned official Discord invitation",
+      "publicationDate": "2026-04-20",
+      "observations": [
+        "nc_community marked developer",
+        "Links discord.gg/aion2official",
+        "Official post has translations including Japanese, Spanish and German"
+      ]
+    },
+    {
+      "url": "https://www.twitch.tv/aion2official",
+      "region": "Global",
+      "version": "Official broadcast channel",
+      "publicationDate": null,
+      "archive": "research/discord/aion2_news.json",
+      "observations": [
+        "Archived Global announcement links this channel alongside @AION2Official YouTube",
+        "No current stream schedule inferred"
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/Aion2/",
+      "region": "Mixed",
+      "version": "Community landing page",
+      "publicationDate": null,
+      "observations": [
+        "Page identity r/Aion2 read in web source",
+        "Questions, guides and third-party tools present",
+        "Individual post game version and author must be checked separately"
+      ]
+    },
+    {
+      "url": "https://forum.gamer.com.tw/B.php?bsn=82913",
+      "region": "TW",
+      "version": "Community board identity only",
+      "publicationDate": null,
+      "identitySource": "https://forum.gamer.com.tw/C.php?bsn=82913&snA=3807",
+      "observations": [
+        "Indexed native Bahamut post labels AION2 board with bsn=82913",
+        "Direct board read returned 403 Forbidden",
+        "No current Global instructions extracted or endorsed"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/app/3393110/allnews/?l=dutch",
+      "region": "Global",
+      "version": "Indexed launch FAQ fragment only",
+      "publicationDate": null,
+      "observations": [
+        "Search returned NC statement that controller is playable but not officially supported",
+        "Opening the news feed showed recent posts and omitted that older FAQ",
+        "Specific news page was unavailable in browser region; not used as fully read launch FAQ",
+        "Public guide retains bounded support description instead of supplying an untested configuration"
+      ]
+    }
+  ],
+  "regionalEntryReview": "research/content/2026-10-03/class-launch-sources/tw-entry-web-review.json"
+}

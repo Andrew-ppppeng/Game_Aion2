@@ -1,0 +1,1197 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/18090000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "18090000",
+    "name": "Rushing Smash",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_009.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "18090010",
+        "description": "-20% target's Impact-type Resist for 5s",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18090020",
+        "description": "Changes to Charge Skill, dealing up to 200% more damage",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18090030",
+        "description": "50% chance to trigger [Heat Wave Blow] on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18090040",
+        "description": "Resets cooldown on defeating an enemy",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18090050",
+        "description": "Ignores Block and Evasion and lands as Multi-Hit",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "rectangle"
+      },
+      "reachMeters": 5,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "staff",
+        "name": "Staff"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:112:189.75:1:1]]-[[damage:max:112:189.75:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 112,
+            "baseMax": 112,
+            "attackRatioPercent": 189.75
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:194:189:1:1]]-[[damage:max:194:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 194,
+            "baseMax": 194,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:276:189:1:1]]-[[damage:max:276:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 276,
+            "baseMax": 276,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:358:189:1:1]]-[[damage:max:358:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 358,
+            "baseMax": 358,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:481:189:1:1]]-[[damage:max:481:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 481,
+            "baseMax": 481,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:633:189:1:1]]-[[damage:max:633:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 633,
+            "baseMax": 633,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:813:189:1:1]]-[[damage:max:813:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 813,
+            "baseMax": 813,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:965:189:1:1]]-[[damage:max:965:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 965,
+            "baseMax": 965,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:1116:189:1:1]]-[[damage:max:1116:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 1116,
+            "baseMax": 1116,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:1268:189:1:1]]-[[damage:max:1268:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 1268,
+            "baseMax": 1268,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:1420:189:1:1]]-[[damage:max:1420:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 1420,
+            "baseMax": 1420,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:1600:189:1:1]]-[[damage:max:1600:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 1600,
+            "baseMax": 1600,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:1752:189:1:1]]-[[damage:max:1752:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 1752,
+            "baseMax": 1752,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:1862:189:1:1]]-[[damage:max:1862:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 1862,
+            "baseMax": 1862,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:1944:189:1:1]]-[[damage:max:1944:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 1944,
+            "baseMax": 1944,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:2055:189:1:1]]-[[damage:max:2055:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 2055,
+            "baseMax": 2055,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:2165:189:1:1]]-[[damage:max:2165:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 2165,
+            "baseMax": 2165,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:2276:189:1:1]]-[[damage:max:2276:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 2276,
+            "baseMax": 2276,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:2387:189:1:1]]-[[damage:max:2387:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 2387,
+            "baseMax": 2387,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:2469:189:1:1]]-[[damage:max:2469:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 2469,
+            "baseMax": 2469,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:2551:189:1:1]]-[[damage:max:2551:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 2551,
+            "baseMax": 2551,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:2633:189:1:1]]-[[damage:max:2633:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 2633,
+            "baseMax": 2633,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:2715:189:1:1]]-[[damage:max:2715:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 2715,
+            "baseMax": 2715,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:2798:189:1:1]]-[[damage:max:2798:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 2798,
+            "baseMax": 2798,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:2880:189:1:1]]-[[damage:max:2880:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 2880,
+            "baseMax": 2880,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:2962:189:1:1]]-[[damage:max:2962:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 2962,
+            "baseMax": 2962,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:3044:189:1:1]]-[[damage:max:3044:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 3044,
+            "baseMax": 3044,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:3127:189:1:1]]-[[damage:max:3127:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 3127,
+            "baseMax": 3127,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:3209:189:1:1]]-[[damage:max:3209:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 3209,
+            "baseMax": 3209,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:3291:189:1:1]]-[[damage:max:3291:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 3291,
+            "baseMax": 3291,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:3373:189:1:1]]-[[damage:max:3373:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 3373,
+            "baseMax": 3373,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:3455:189:1:1]]-[[damage:max:3455:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 3455,
+            "baseMax": 3455,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:3538:189:1:1]]-[[damage:max:3538:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 3538,
+            "baseMax": 3538,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:3620:189:1:1]]-[[damage:max:3620:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 3620,
+            "baseMax": 3620,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:3702:189:1:1]]-[[damage:max:3702:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 3702,
+            "baseMax": 3702,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:3784:189:1:1]]-[[damage:max:3784:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 3784,
+            "baseMax": 3784,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:3866:189:1:1]]-[[damage:max:3866:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 3866,
+            "baseMax": 3866,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:3949:189:1:1]]-[[damage:max:3949:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 3949,
+            "baseMax": 3949,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:4031:189:1:1]]-[[damage:max:4031:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 4031,
+            "baseMax": 4031,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 15,
+        "costs": [],
+        "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:4113:189:1:1]]-[[damage:max:4113:189:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1809000021",
+            "effectGroupId": "180900002",
+            "baseMin": 4113,
+            "baseMax": 4113,
+            "attackRatioPercent": 189
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "4110",
+        "level": 1,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4111",
+        "level": 2,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4112",
+        "level": 3,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4113",
+        "level": 4,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4114",
+        "level": 5,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4115",
+        "level": 6,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4116",
+        "level": 7,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4117",
+        "level": 8,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4118",
+        "level": 9,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4119",
+        "level": 10,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "18090010",
+        "skillId": "18090010",
+        "name": "Rushing Smash",
+        "description": "-20% target's Impact-type Resist for 5s",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18090020",
+        "skillId": "18090020",
+        "name": "Rushing Smash",
+        "description": "Changes to Charge Skill, dealing up to 200% more damage",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18090030",
+        "skillId": "18090030",
+        "name": "Rushing Smash",
+        "description": "50% chance to trigger [Heat Wave Blow] on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18090040",
+        "skillId": "18090040",
+        "name": "Rushing Smash",
+        "description": "Resets cooldown on defeating an enemy",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18090050",
+        "skillId": "18090050",
+        "name": "Rushing Smash",
+        "description": "Ignores Block and Evasion and lands as Multi-Hit",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 15,
+    "classes": [
+      {
+        "code": "chanter",
+        "name": "Chanter"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Rushing Smash",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_009.webp",
+    "id": "18090000",
+    "entityType": "skill",
+    "description": "Rushes at a target within 20m and deals <chat_combat>[[damage:min:112:189.75:1:1]]-[[damage:max:112:189.75:1:1]]</> damage to up to 4 enemies and restores 100 MP.\n\n10 Stagger Gauge Damage"
+  }
+}

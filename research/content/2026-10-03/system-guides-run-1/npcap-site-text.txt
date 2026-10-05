@@ -1,0 +1,221 @@
+Docs
+Download
+Licensing
+Windows 11
+WinPcap
+Npcap
+Library
+Networking Library
+Microsoft Windows 11
+Microsoft Windows 10
+Microsoft Windows Server 2019
+Microsoft Windows Server 2016
+Microsoft Windows 8.1
+Microsoft Windows Server 2012 R2
+Microsoft Windows 8
+Microsoft Windows Server 2012
+Microsoft Windows 7
+Microsoft Windows Server 2008 R2
+Download Npcap
+Npcap License
+Npcap Changelog
+1.89
+2026-09-12
+Packet capture library for Windows
+Npcap is the Nmap Project's packet capture (and sending) library
+for Microsoft Windows. It implements the
+open
+Pcap API
+using a
+custom Windows kernel driver alongside our Windows build
+of
+the excellent libpcap
+library
+.  This allows Windows software to capture raw network
+traffic (including wireless networks, wired ethernet, localhost
+traffic, and many VPNs) using a simple, portable API.  Npcap
+allows for sending raw packets as well.  Mac and Linux systems already
+include the Pcap API, so Npcap allows popular software such
+as
+Nmap
+and
+Wireshark
+to run on all
+these platforms (and more) with a single codebase.  Npcap began in
+2013 as some improvements to the (now discontinued) WinPcap library,
+but has been largely rewritten since then
+with
+hundreds of releases
+improving Npcap's speed, portability, security, and efficiency. In
+particular, Npcap now offers:
+Loopback Packet Capture and Injection
+: Npcap is able to sniff loopback packets
+  (transmissions between services on the same machine) by using the
+Windows Filtering Platform (WFP)
+. After installation, Npcap supplies an
+  interface named
+NPF_Loopback
+, with the description “Adapter for loopback capture”.
+  Wireshark users can choose this adapter to capture all loopback traffic the same way as other non-loopback adapters. Packet injection works as well with the
+pcap_inject() function
+.
+Support for all Current Windows Releases
+: Npcap supports all versions of Windows and Windows Server that
+Microsoft themselves still support.  To avoid limiting ourselves just to the features and API's of our oldest supported
+Windows release, we build and ship drivers for each major platform generation.  That way we can use all of Microsoft's
+latest technology in our Win10 driver while still supporting legacy systems. Npcap works on Windows 7 and later by
+making use of the
+NDIS 6 Light-Weight Filter (LWF)
+API. It's faster than the deprecated
+NDIS 5
+API used by WinPcap. Also, the driver is signed with
+    our EV certificate and countersigned by Microsoft so that it works
+    even with the stricter driver signing requirements imposed by
+    Windows 10. We don't know exactly when Microsoft will remove NDIS
+    5 or cease the grandfathering of older less secure driver
+    signatures, but WinPcap will cease working when that happens.
+Libpcap API
+: Npcap uses the
+  excellent
+Libpcap library
+,
+  enabling Windows applications to use a portable packet capturing API
+  that is also supported on Linux and MacOS.  While WinPcap was
+  based on LibPcap 1.0.0 from 2009, Npcap includes the latest Libpcap
+  release along with all of the improvements we contribute back
+  upstream to them.
+Support for all Windows architectures (x86, x86-64, and
+  ARM)
+: Npcap has always supported both Windows 64-bit and 32-bit
+  Intel x86 platforms. But starting with version 1.50 we also support
+  the
+  new
+Windows
+  on ARM architecture
+! This allows PC's to use the same
+  power-efficient mobile chipsets as smartphones for all-day battery
+  life and always-on LTE connectivity.  Users can now run apps
+  like
+Nmap
+and
+Wireshark
+on a new generation of devices like
+  the
+Microsoft
+  Surface Pro X tablet
+and
+  the
+Samsung
+  Galaxy Book Go laptop
+.
+Extra Security
+: Npcap can (optionally) be restricted so that only
+  Administrators can sniff packets. If a non-Admin user tries to utilize
+  Npcap through software such as
+Nmap
+or
+Wireshark
+, the user will have to pass a
+User Account Control (UAC)
+dialog to utilize the driver.  This is
+  conceptually similar to UNIX, where root access is generally required to
+  capture packets.  We've also enabled the Windows ASLR and DEP security
+  features and signed the driver, DLLs, and executables to prevent tampering.
+WinPcap compatibility
+: Software written for WinPcap is
+  generally source-code compatible with WinPcap so it simply needs to
+  be recompiled with the Npcap SDK to receive all of Npcap's
+  performance, compatability, and security benefits. In fact there is
+  even some binary compatability—software compiled with the
+  WinPcap SDK often still works with modern Npcap.  We don't suggest
+  relying on that, however, since compilers and other stack technology
+  has changed dramatically since the last WinPcap SDK release in 2013.
+  When porting legacy WinPcap software to Npcap, we do
+  suggest
+a
+  few minor changes
+, mostly to ensure your software uses Npcap in
+  preference to WinPcap on systems with both libraries installed. By
+  default Npcap replaces any old WinPcap software installs with its
+  own drivers, but you can install both by unchecking Npcap's
+  “WinPcap Compatible Mode.” installer option.
+Raw (monitor mode) 802.11 wireless capture
+: Npcap can be configured to read raw 802.11 traffic, including radiotap header details, and this functionality is directly supported by Wireshark.  More details
+can be found here
+.
+Many more details about Npcap are available in the
+Npcap User/Developer Guide
+.  We've also created a
+feature comparison between Npcap and WinPcap
+.
+Downloading and Installing Npcap Free Edition
+The free version of Npcap may be used (but not externally
+  redistributed) on up to 5 systems (
+free license details
+).  It may also be used on unlimited systems where it is only used
+  with
+Nmap
+,
+Wireshark
+, and/or
+Microsoft Defender for Identity
+. Simply
+  run the executable installer.  The full source code for each release
+  is available, and developers can build their apps against the SDK.
+  The improvements for each release are documented in
+  the
+Npcap
+  Changelog
+.
+Npcap 1.89 installer
+for Windows 7/2008R2, 8/2012, 8.1/2012R2, 10/2016, 2019, 11 (x86, x64, and ARM64).
+Npcap SDK 1.16
+(ZIP).
+Npcap 1.89 debug symbols
+(ZIP).
+Npcap 1.89 source code
+(ZIP).
+The latest development source is in our
+Github source repository
+.
+Windows XP and earlier are not supported; you can use
+WinPcap
+for these versions.
+Npcap OEM for Commercial Use and Redistribution
+We fund the Npcap project by selling Npcap OEM.  This special version of Npcap includes enterprise features such as the silent installer and commercial support as well as special license rights allowing customers to redistribute Npcap with their products or to install it on more systems within their organization with easy enterprise deployment.  The
+Npcap free license
+only allows five installs (with a few exceptions) and does not allow for any redistribution.  We offer two commercial license types:
+Npcap OEM Redistribution License
+: The redistribution license is for companies that wish to distribute Npcap OEM within their products (the free Npcap edition
+does not allow this
+). Licensees generally use the Npcap OEM silent installer, ensuring a seamless experience for end users. Licensees may choose between a perpetual unlimited license or an annual term license, along with options for commercial support and updates. [
+Redistribution license details
+]
+Npcap OEM Internal-Use License
+: The corporate internal license is for organizations that wish to use Npcap OEM internally, without redistribution outside their organization.  This allows them to bypass the
+5-system usage cap
+of the Npcap free edition. It includes commercial support and update options, and provides the extra Npcap OEM features such as the silent installer for enterprise-wide deployment. [
+Internal-use license details
+]
+Documentation
+The primary documentation for Npcap is the
+Npcap User's Guide
+. You can also refer to the
+README file
+on Github.  The changes in each new release are documented in the
+Npcap Changelog
+.
+Patches, Bug Reports, Questions, Suggestions, etc
+Npcap bug reports can be filed on the
+Npcap Issues Tracker
+. Please test with the latest version of Npcap first to ensure it hasn't already been fixed.  It is also helpful if you search the current issues first to find out if it has already been reported.  Then you can leave a comment on the existing issue rather than creating duplicates.  Feature enhancement requests can be made on the tracker as well
+Questions, comments and bug reports are always welcome. One option is the Nmap
+development mailing list (nmap-dev). To subscribe, please visit:
+http://nmap.org/mailman/listinfo/dev
+.
+Code patches to fix bugs are even better than bug reports. Instructions for
+creating patch files and sending them are
+available here.
+Bug reports for Npcap can also be filed on the
+Npcap bug tracker
+.

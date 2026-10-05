@@ -1,0 +1,45 @@
+Empieza por el macro de habilidades integrado en AION 2: asigna su tecla, selecciona una pila de la barra en el menú de habilidades y prueba una secuencia breve. [El tutorial de Karsten Scholz del 30 de septiembre](https://mein-mmo.de/aion-2-makro-mehr-schaden/) muestra este recorrido de menús durante el lanzamiento. Los pasos describen esa demostración de jugador; esta web no ha reproducido la configuración en una sesión Global.
+
+<h2 id="bind-and-open">Asigna la tecla y abre el editor</h2>
+
+En la interfaz mostrada, la asignación del macro aparece en **Key Settings → General → Gameplay**. Elige un botón accesible y abre el editor de macros del menú de habilidades. Añade un macro y selecciona la casilla de la barra que contiene tu pila de habilidades. En ese ejemplo, mantener pulsado el botón repite la pila; no hace falta pulsar continuamente cada tecla de habilidad.
+
+El texto del menú cambia según el idioma del cliente. Identifica el control de macros del propio juego, no un script del fabricante del ratón ni un macro de comandos del AION original. Si el menú difiere, consulta la ayuda del cliente actual antes de dar por válida una captura antigua. Haz la primera prueba con una sola pila para reconocer qué habilidades activa.
+
+<GuideVisual id="macro-global-keybind" />
+
+<GuideVisual id="macro-global-editor" />
+
+<h2 id="priority-stack">Entiende la prioridad antes de añadir habilidades</h2>
+
+Scholz describe una lista de prioridad que comprueba primero la habilidad inferior y después las situadas encima. Una habilidad sin tiempo de reutilización en una posición prioritaria puede impedir que se utilicen las superiores. Empieza con pocos ataques repetibles y comprueba que cada ataque previsto se ejecuta.
+
+Piensa en la función de cada botón antes de colocarlo. Un ataque que quieres usar siempre que esté disponible es diferente de otro que requiere un estado concreto del objetivo. Anota condiciones, alcance y recursos, y compruébalos manualmente. Añadir todas las habilidades desbloqueadas dificulta identificar una entrada no disponible o una prioridad mal elegida.
+
+<GuideVisual id="workflow" />
+
+<h2 id="manual-actions">Deja las decisiones en controles separados</h2>
+
+Recomendamos empezar dejando movimiento, interrupciones, protección y recuperación en botones separados y accesibles. En Cleric, conserva curación, limpieza y resurrección para cuando el grupo las necesita. En Ranger, mantén el control de la distancia y de un disparo que deba apuntarse o prepararse para una oportunidad concreta. Es una recomendación de diseño práctico, no una plantilla de macro de clase verificada.
+
+Una secuencia breve debe permitir responder al encuentro. Prueba a detener el macro, salir de una mecánica y usar una habilidad reactiva antes de un combate de grupo difícil. Si resulta incómodo, cambia la asignación o reduce la pila. Más daño contra un objetivo inmóvil no compensa fallar una mecánica.
+
+<h2 id="delay-and-basic-attack">Prueba el retardo y el ataque básico</h2>
+
+El tutorial del lanzamiento muestra el ataque básico por separado mientras se mantiene pulsado el macro. Trátalo como una configuración que comparar en tu cliente, no como una mejora de daño garantizada para todas las clases y parches. Repite una prueba breve manualmente y con el macro integrado, manteniendo comparables la configuración y el encuentro.
+
+Algunas guías antiguas recomiendan un retardo fijo según el ping. [La demostración de Cleric de aLuckyRO](https://www.youtube.com/watch?v=UPjsUVC0DtA) explica el retardo con un personaje de nivel bajo de un servidor existente para modelar la progresión Global. No constituye una tabla de retardos probada en Global. Si el editor actual ofrece ese ajuste, anota el valor inicial y cambia uno cada vez. Comprueba ataques omitidos y respuesta, sin asumir que la cifra menor siempre es mejor.
+
+<h2 id="debug-one-stack">Comprueba una pila cada vez</h2>
+
+Si no se activa nada, comprueba primero la asignación y la casilla de la barra seleccionada. Si se repite un solo ataque, revisa su prioridad y disponibilidad. Si faltan ataques, úsalos manualmente contra el mismo objetivo: reutilización, alcance, recursos o una condición necesaria pueden explicar la diferencia.
+
+Después reproduce la secuencia al moverte y tras cambiar de objetivo. Anota tus cambios. Cuando una opción de habilidad o un parche modifique un ataque, vuelve a probar la pila antes de copiar otra plantilla. Un ejemplo para habilidades avanzadas de KR/TW puede contener interacciones que tu personaje Global no tiene desbloqueadas.
+
+<h2 id="built-in-and-policy">Macros integrados y política de NC</h2>
+
+Utiliza el editor del juego para este procedimiento. La [política de funcionamiento Global](https://www.plaync.com/policy/operation/aion2global/en) sanciona programas o dispositivos que eluden protecciones o interfieren en el servicio normal. Esta guía no demuestra permiso para automatizar entradas externamente. Si necesitas una adaptación de accesibilidad más allá de los controles integrados, consúltala con NC mediante la política actual.
+
+Elige habilidades y función antes de simplificar los controles. La [guía de builds](/builds) ayuda a separar los ataques repetibles de las decisiones que requieren atención.
+
+<GuideNext slug="builds" />

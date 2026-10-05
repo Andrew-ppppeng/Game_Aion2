@@ -1,0 +1,1901 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/18210000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "18210000",
+    "name": "Tremor Crush",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_021.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 34,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "18210010",
+        "description": "Restores 300 Stamina on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18210020",
+        "description": "+10m [Tremor Crush] range",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18210030",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18210040",
+        "description": "Adds [Surging Strike] Chain Skill",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18210050",
+        "description": "+25% [Tremor Crush] Stun Chance",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [
+      {
+        "id": "18000008",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormalgroupid"
+        },
+        "description": "On Dodge",
+        "iconPath": "/images/ui/resource/texture/skill/icon_cond_evade.webp",
+        "abnormalGroupId": 3015
+      },
+      {
+        "id": "18000016",
+        "target": {
+          "code": "self"
+        },
+        "type": {
+          "code": "hasabnormalgroupid"
+        },
+        "description": "In Flight",
+        "iconPath": "/images/ui/resource/texture/abnormal/icon_abnormal_wing.webp",
+        "abnormalGroupId": 100000002
+      }
+    ],
+    "requiredWeapons": [
+      {
+        "code": "staff",
+        "name": "Staff"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:260:102:1:1]]-[[damage:max:260:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 260,
+            "baseMax": 260,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:341:102:1:1]]-[[damage:max:341:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 341,
+            "baseMax": 341,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:439:102:1:1]]-[[damage:max:439:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 439,
+            "baseMax": 439,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:520:102:1:1]]-[[damage:max:520:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 520,
+            "baseMax": 520,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:602:102:1:1]]-[[damage:max:602:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 602,
+            "baseMax": 602,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:684:102:1:1]]-[[damage:max:684:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 684,
+            "baseMax": 684,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:766:102:1:1]]-[[damage:max:766:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 766,
+            "baseMax": 766,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:863:102:1:1]]-[[damage:max:863:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 863,
+            "baseMax": 863,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:945:102:1:1]]-[[damage:max:945:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 945,
+            "baseMax": 945,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1005:102:1:1]]-[[damage:max:1005:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1005,
+            "baseMax": 1005,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1049:102:1:1]]-[[damage:max:1049:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1049,
+            "baseMax": 1049,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1109:102:1:1]]-[[damage:max:1109:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1109,
+            "baseMax": 1109,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1168:102:1:1]]-[[damage:max:1168:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1168,
+            "baseMax": 1168,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1228:102:1:1]]-[[damage:max:1228:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1228,
+            "baseMax": 1228,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1288:102:1:1]]-[[damage:max:1288:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1288,
+            "baseMax": 1288,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1332:102:1:1]]-[[damage:max:1332:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1332,
+            "baseMax": 1332,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1377:102:1:1]]-[[damage:max:1377:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1377,
+            "baseMax": 1377,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1421:102:1:1]]-[[damage:max:1421:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1421,
+            "baseMax": 1421,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1465:102:1:1]]-[[damage:max:1465:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1465,
+            "baseMax": 1465,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1510:102:1:1]]-[[damage:max:1510:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1510,
+            "baseMax": 1510,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1554:102:1:1]]-[[damage:max:1554:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1554,
+            "baseMax": 1554,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1598:102:1:1]]-[[damage:max:1598:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1598,
+            "baseMax": 1598,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1643:102:1:1]]-[[damage:max:1643:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1643,
+            "baseMax": 1643,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1687:102:1:1]]-[[damage:max:1687:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1687,
+            "baseMax": 1687,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1731:102:1:1]]-[[damage:max:1731:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1731,
+            "baseMax": 1731,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1776:102:1:1]]-[[damage:max:1776:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1776,
+            "baseMax": 1776,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1820:102:1:1]]-[[damage:max:1820:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1820,
+            "baseMax": 1820,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1865:102:1:1]]-[[damage:max:1865:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1865,
+            "baseMax": 1865,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1909:102:1:1]]-[[damage:max:1909:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1909,
+            "baseMax": 1909,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1953:102:1:1]]-[[damage:max:1953:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1953,
+            "baseMax": 1953,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:1998:102:1:1]]-[[damage:max:1998:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 1998,
+            "baseMax": 1998,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:2042:102:1:1]]-[[damage:max:2042:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 2042,
+            "baseMax": 2042,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:2086:102:1:1]]-[[damage:max:2086:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 2086,
+            "baseMax": 2086,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:2131:102:1:1]]-[[damage:max:2131:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 2131,
+            "baseMax": 2131,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:2175:102:1:1]]-[[damage:max:2175:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 2175,
+            "baseMax": 2175,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:2220:102:1:1]]-[[damage:max:2220:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 2220,
+            "baseMax": 2220,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:2264:102:1:1]]-[[damage:max:2264:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 2264,
+            "baseMax": 2264,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:2308:102:1:1]]-[[damage:max:2308:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 2308,
+            "baseMax": 2308,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:2353:102:1:1]]-[[damage:max:2353:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 2353,
+            "baseMax": 2353,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 20,
+        "costs": [],
+        "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:2397:102:1:1]]-[[damage:max:2397:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1821000021",
+            "effectGroupId": "182100002",
+            "baseMin": 2397,
+            "baseMax": 2397,
+            "attackRatioPercent": 102
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "100000311",
+            "name": "Stun",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Stun Status",
+            "effect": "Stun Status",
+            "effectComplete": true,
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Stun",
+              "id": "100000311"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "4170",
+        "level": 1,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4171",
+        "level": 2,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4172",
+        "level": 3,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4173",
+        "level": 4,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4174",
+        "level": 5,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4175",
+        "level": 6,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4176",
+        "level": 7,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4177",
+        "level": 8,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4178",
+        "level": 9,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 31,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "4179",
+        "level": 10,
+        "characterClass": "chanter",
+        "characterClassName": "Chanter",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 34,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "18210010",
+        "skillId": "18210010",
+        "name": "Tremor Crush",
+        "description": "Restores 300 Stamina on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18210020",
+        "skillId": "18210020",
+        "name": "Tremor Crush",
+        "description": "+10m [Tremor Crush] range",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18210030",
+        "skillId": "18210030",
+        "name": "Tremor Crush",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18210040",
+        "skillId": "18210040",
+        "name": "Tremor Crush",
+        "description": "Adds [Surging Strike] Chain Skill",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "18210050",
+        "skillId": "18210050",
+        "name": "Tremor Crush",
+        "description": "+25% [Tremor Crush] Stun Chance",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "chanter",
+          "name": "Chanter"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 10,
+    "cooldownSeconds": 20,
+    "classes": [
+      {
+        "code": "chanter",
+        "name": "Chanter"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Tremor Crush",
+    "iconPath": "/images/ui/resource/texture/skill/icon_ch_skill_021.webp",
+    "id": "18210000",
+    "entityType": "skill",
+    "description": "Move to a target within 10m and deal <chat_combat>[[damage:min:260:102:1:1]]-[[damage:max:260:102:1:1]]</> damage with a 50% chance to inflict Stun for 3s after using [Dodge] or while flying.\n100% chance to inflict Stun on NPC targets.\n\n10 Stagger Gauge Damage"
+  }
+}

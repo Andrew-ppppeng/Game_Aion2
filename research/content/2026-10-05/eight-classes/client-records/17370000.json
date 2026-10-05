@@ -1,0 +1,2010 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/17370000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "17370000",
+    "name": "Lightning Strike Scattershot",
+    "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_037.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 5,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 5,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 8,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 11,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "17370010",
+        "description": "Absorbs 5% HP",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17370020",
+        "description": "Restores 120 MP",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17370030",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17370040",
+        "description": "Multi-Hit on hit",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17370050",
+        "description": "-1s all skill cooldowns on hit",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "single"
+      },
+      "maxTargets": 1,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [
+      {
+        "id": "17000004",
+        "target": {
+          "code": "target"
+        },
+        "type": {
+          "code": "hasabnormaleffecttype"
+        },
+        "description": "Stagger Target",
+        "iconPath": "/images/ui/resource/texture/skill/icon_cond_groggy.webp",
+        "abnormalEffect": {
+          "code": "groggy"
+        }
+      }
+    ],
+    "requiredWeapons": [
+      {
+        "code": "mace",
+        "name": "Mace"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:147:113:4:4]]-[[damage:max:147:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 147,
+            "baseMax": 147,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 147,
+            "baseMax": 147,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 147,
+            "baseMax": 147,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 147,
+            "baseMax": 147,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:191:113:4:4]]-[[damage:max:191:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 191,
+            "baseMax": 191,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 191,
+            "baseMax": 191,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 191,
+            "baseMax": 191,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 191,
+            "baseMax": 191,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:257:113:4:4]]-[[damage:max:257:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 257,
+            "baseMax": 257,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 257,
+            "baseMax": 257,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 257,
+            "baseMax": 257,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 257,
+            "baseMax": 257,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:340:113:4:4]]-[[damage:max:340:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 340,
+            "baseMax": 340,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 340,
+            "baseMax": 340,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 340,
+            "baseMax": 340,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 340,
+            "baseMax": 340,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:440:113:4:4]]-[[damage:max:440:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 440,
+            "baseMax": 440,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 440,
+            "baseMax": 440,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 440,
+            "baseMax": 440,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 440,
+            "baseMax": 440,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:523:113:4:4]]-[[damage:max:523:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 523,
+            "baseMax": 523,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 523,
+            "baseMax": 523,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 523,
+            "baseMax": 523,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 523,
+            "baseMax": 523,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:606:113:4:4]]-[[damage:max:606:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 606,
+            "baseMax": 606,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 606,
+            "baseMax": 606,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 606,
+            "baseMax": 606,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 606,
+            "baseMax": 606,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:689:113:4:4]]-[[damage:max:689:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 689,
+            "baseMax": 689,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 689,
+            "baseMax": 689,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 689,
+            "baseMax": 689,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 689,
+            "baseMax": 689,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:772:113:4:4]]-[[damage:max:772:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 772,
+            "baseMax": 772,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 772,
+            "baseMax": 772,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 772,
+            "baseMax": 772,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 772,
+            "baseMax": 772,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:872:113:4:4]]-[[damage:max:872:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 872,
+            "baseMax": 872,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 872,
+            "baseMax": 872,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 872,
+            "baseMax": 872,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 872,
+            "baseMax": 872,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:955:113:4:4]]-[[damage:max:955:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 955,
+            "baseMax": 955,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 955,
+            "baseMax": 955,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 955,
+            "baseMax": 955,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 955,
+            "baseMax": 955,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1017:113:4:4]]-[[damage:max:1017:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1017,
+            "baseMax": 1017,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1017,
+            "baseMax": 1017,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1017,
+            "baseMax": 1017,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1017,
+            "baseMax": 1017,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1061:113:4:4]]-[[damage:max:1061:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1061,
+            "baseMax": 1061,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1061,
+            "baseMax": 1061,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1061,
+            "baseMax": 1061,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1061,
+            "baseMax": 1061,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1122:113:4:4]]-[[damage:max:1122:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1122,
+            "baseMax": 1122,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1122,
+            "baseMax": 1122,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1122,
+            "baseMax": 1122,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1122,
+            "baseMax": 1122,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1183:113:4:4]]-[[damage:max:1183:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1183,
+            "baseMax": 1183,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1183,
+            "baseMax": 1183,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1183,
+            "baseMax": 1183,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1183,
+            "baseMax": 1183,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1244:113:4:4]]-[[damage:max:1244:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1244,
+            "baseMax": 1244,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1244,
+            "baseMax": 1244,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1244,
+            "baseMax": 1244,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1244,
+            "baseMax": 1244,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1305:113:4:4]]-[[damage:max:1305:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1305,
+            "baseMax": 1305,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1305,
+            "baseMax": 1305,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1305,
+            "baseMax": 1305,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1305,
+            "baseMax": 1305,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1349:113:4:4]]-[[damage:max:1349:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1349,
+            "baseMax": 1349,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1349,
+            "baseMax": 1349,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1349,
+            "baseMax": 1349,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1349,
+            "baseMax": 1349,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1393:113:4:4]]-[[damage:max:1393:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1393,
+            "baseMax": 1393,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1393,
+            "baseMax": 1393,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1393,
+            "baseMax": 1393,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1393,
+            "baseMax": 1393,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1437:113:4:4]]-[[damage:max:1437:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1437,
+            "baseMax": 1437,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1437,
+            "baseMax": 1437,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1437,
+            "baseMax": 1437,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1437,
+            "baseMax": 1437,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1481:113:4:4]]-[[damage:max:1481:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1481,
+            "baseMax": 1481,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1481,
+            "baseMax": 1481,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1481,
+            "baseMax": 1481,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1481,
+            "baseMax": 1481,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1525:113:4:4]]-[[damage:max:1525:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1525,
+            "baseMax": 1525,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1525,
+            "baseMax": 1525,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1525,
+            "baseMax": 1525,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1525,
+            "baseMax": 1525,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1569:113:4:4]]-[[damage:max:1569:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1569,
+            "baseMax": 1569,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1569,
+            "baseMax": 1569,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1569,
+            "baseMax": 1569,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1569,
+            "baseMax": 1569,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1613:113:4:4]]-[[damage:max:1613:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1613,
+            "baseMax": 1613,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1613,
+            "baseMax": 1613,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1613,
+            "baseMax": 1613,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1613,
+            "baseMax": 1613,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1657:113:4:4]]-[[damage:max:1657:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1657,
+            "baseMax": 1657,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1657,
+            "baseMax": 1657,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1657,
+            "baseMax": 1657,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1657,
+            "baseMax": 1657,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1701:113:4:4]]-[[damage:max:1701:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1701,
+            "baseMax": 1701,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1701,
+            "baseMax": 1701,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1701,
+            "baseMax": 1701,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1701,
+            "baseMax": 1701,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1745:113:4:4]]-[[damage:max:1745:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1745,
+            "baseMax": 1745,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1745,
+            "baseMax": 1745,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1745,
+            "baseMax": 1745,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1745,
+            "baseMax": 1745,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1789:113:4:4]]-[[damage:max:1789:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1789,
+            "baseMax": 1789,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1789,
+            "baseMax": 1789,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1789,
+            "baseMax": 1789,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1789,
+            "baseMax": 1789,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1833:113:4:4]]-[[damage:max:1833:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1833,
+            "baseMax": 1833,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1833,
+            "baseMax": 1833,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1833,
+            "baseMax": 1833,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1833,
+            "baseMax": 1833,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1878:113:4:4]]-[[damage:max:1878:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1878,
+            "baseMax": 1878,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1878,
+            "baseMax": 1878,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1878,
+            "baseMax": 1878,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1878,
+            "baseMax": 1878,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1922:113:4:4]]-[[damage:max:1922:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1922,
+            "baseMax": 1922,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1922,
+            "baseMax": 1922,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1922,
+            "baseMax": 1922,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1922,
+            "baseMax": 1922,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1966:113:4:4]]-[[damage:max:1966:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1966,
+            "baseMax": 1966,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1966,
+            "baseMax": 1966,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1966,
+            "baseMax": 1966,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 1966,
+            "baseMax": 1966,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2010:113:4:4]]-[[damage:max:2010:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2010,
+            "baseMax": 2010,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2010,
+            "baseMax": 2010,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2010,
+            "baseMax": 2010,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2010,
+            "baseMax": 2010,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2054:113:4:4]]-[[damage:max:2054:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2054,
+            "baseMax": 2054,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2054,
+            "baseMax": 2054,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2054,
+            "baseMax": 2054,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2054,
+            "baseMax": 2054,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2098:113:4:4]]-[[damage:max:2098:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2098,
+            "baseMax": 2098,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2098,
+            "baseMax": 2098,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2098,
+            "baseMax": 2098,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2098,
+            "baseMax": 2098,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2142:113:4:4]]-[[damage:max:2142:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2142,
+            "baseMax": 2142,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2142,
+            "baseMax": 2142,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2142,
+            "baseMax": 2142,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2142,
+            "baseMax": 2142,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2186:113:4:4]]-[[damage:max:2186:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2186,
+            "baseMax": 2186,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2186,
+            "baseMax": 2186,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2186,
+            "baseMax": 2186,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2186,
+            "baseMax": 2186,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2230:113:4:4]]-[[damage:max:2230:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2230,
+            "baseMax": 2230,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2230,
+            "baseMax": 2230,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2230,
+            "baseMax": 2230,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2230,
+            "baseMax": 2230,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2274:113:4:4]]-[[damage:max:2274:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2274,
+            "baseMax": 2274,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2274,
+            "baseMax": 2274,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2274,
+            "baseMax": 2274,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2274,
+            "baseMax": 2274,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2318:113:4:4]]-[[damage:max:2318:113:4:4]]</> damage to a target afflicted with Stagger within 20m.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2318,
+            "baseMax": 2318,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2318,
+            "baseMax": 2318,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2318,
+            "baseMax": 2318,
+            "attackRatioPercent": 113
+          },
+          {
+            "effectId": "1737000011",
+            "effectGroupId": "173700001",
+            "baseMin": 2318,
+            "baseMax": 2318,
+            "attackRatioPercent": 113
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "3592",
+        "level": 1,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 5,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3593",
+        "level": 2,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 5,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3594",
+        "level": 3,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 8,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3595",
+        "level": 4,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 11,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3596",
+        "level": 5,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 14,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3597",
+        "level": 6,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 17,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3598",
+        "level": 7,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 20,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3599",
+        "level": 8,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 23,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3600",
+        "level": 9,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 26,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3601",
+        "level": 10,
+        "characterClass": "cleric",
+        "characterClassName": "Cleric",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 29,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "17370010",
+        "skillId": "17370010",
+        "name": "Lightning Strike Scattershot",
+        "description": "Absorbs 5% HP",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17370020",
+        "skillId": "17370020",
+        "name": "Lightning Strike Scattershot",
+        "description": "Restores 120 MP",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17370030",
+        "skillId": "17370030",
+        "name": "Lightning Strike Scattershot",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17370040",
+        "skillId": "17370040",
+        "name": "Lightning Strike Scattershot",
+        "description": "Multi-Hit on hit",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "17370050",
+        "skillId": "17370050",
+        "name": "Lightning Strike Scattershot",
+        "description": "-1s all skill cooldowns on hit",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "cleric",
+          "name": "Cleric"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "classes": [
+      {
+        "code": "cleric",
+        "name": "Cleric"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Lightning Strike Scattershot",
+    "iconPath": "/images/ui/resource/texture/skill/icon_cl_skill_037.webp",
+    "id": "17370000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:147:113:4:4]]-[[damage:max:147:113:4:4]]</> damage to a target afflicted with Stagger within 20m."
+  }
+}

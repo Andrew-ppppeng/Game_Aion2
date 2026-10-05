@@ -1,0 +1,39 @@
+AION 2 player-count searches usually need a Steam concurrency figure. At our October 3, 2026 check, [SteamDB's AION 2 charts](https://steamdb.info/app/3393110/charts/) displayed **146,250 players**, with a recorded peak of **171,530**. The figures below are a dated third-party snapshot for Steam app **3393110**. Follow the source for its latest display.
+
+<h2 id="steam-snapshot">Steam player-count snapshot</h2>
+
+Checked **October 3, 2026 at 15:48 UTC**. This is when we read the page, rather than a provider-supplied measurement timestamp.
+
+| SteamDB metric | Value | How to read it |
+| --- | --- | --- |
+| Players shown at the check | 146,250 | The concurrency figure displayed when this guide was reviewed |
+| Peak during the preceding 24 hours | 146,250 | The highest concurrent figure in the provider's rolling window |
+| Recorded all-time peak | 171,530 | The provider's historical maximum, dated 2026-09-30 |
+
+This guide does not refresh those values automatically. SteamDB is an independent service; this snapshot was read from its rendered chart page, and the direct official API request did not produce usable JSON during our review. A failed request must not be converted into a count of zero.
+
+<h2 id="what-count-means">Concurrent players, daily players and total accounts</h2>
+
+[Steam's current-player documentation](https://partner.steamgames.com/doc/webapi/ISteamUserStats) defines its measure as players active in an app on Steam; it excludes players who are not connected to Steam. Keep that scope beside any number you share.
+
+Concurrency describes simultaneous activity. It cannot tell you how many different people logged in throughout a day, how many accounts exist, or how many players use another client. Do not add a current figure to a peak: those measurements overlap. We have no verified total combining Steam, PURPLE and the regional services.
+
+<GuideVisual id="workflow" />
+
+<h2 id="steamcharts-and-steamdb">Find AION 2 on SteamCharts and SteamDB</h2>
+
+Check the application identity before comparing charts: use **AION 2**, app **3393110**, developer and publisher **NC**. SteamDB's Charts tab supplied the snapshot above. Its metadata tab serves a different purpose, such as identifying the app and its changes.
+
+The [SteamCharts lookup for app 3393110](https://steamcharts.com/app/3393110) returned a Page Not Found message at this check. We therefore have no SteamCharts figure to compare. An absent page is an availability issue for that source, not a player-population result. If it becomes available later, compare the date, app and metric labels before treating the two services as interchangeable.
+
+<h2 id="compare-over-time">Compare player counts without mixing windows</h2>
+
+Save the source, reading time, timezone and metric with each observation. Compare similar weekday and time-of-day slots, and note announcements that may affect access. Use the [maintenance guide](/maintenance) for dated Global announcements.
+
+A single lower reading cannot establish a long-term decline. First check whether one reading is a current figure and the other is a peak, or whether their time windows differ. Several comparable observations make a trend more interpretable; no percentage trend is calculated here because we have not captured a matching series.
+
+<h2 id="choose-a-server">Use population data when choosing a server</h2>
+
+A game-wide Steam count does not show faction balance, your server's group availability or queues. Choose your region and server using the [Global server guide](/server), then assess the activity relevant to your own play hours. The chart is background context, not a per-server census.
+
+<GuideNext slug="server" />

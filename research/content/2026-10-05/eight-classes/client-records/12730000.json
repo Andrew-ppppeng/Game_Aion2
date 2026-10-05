@@ -1,0 +1,1492 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/12730000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "12730000",
+    "name": "Punishing Benediction",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+    "kind": "passive",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 9,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 9,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": []
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "self"
+      },
+      "filterResolved": false
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "sword",
+        "name": "Longsword"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:69:38:1:1]]-[[damage:max:69:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:93:38:1:1]]-[[damage:max:93:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:123:38:1:1]]-[[damage:max:123:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:158:38:1:1]]-[[damage:max:158:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:188:38:1:1]]-[[damage:max:188:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:217:38:1:1]]-[[damage:max:217:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:247:38:1:1]]-[[damage:max:247:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:277:38:1:1]]-[[damage:max:277:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:312:38:1:1]]-[[damage:max:312:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:342:38:1:1]]-[[damage:max:342:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:363:38:1:1]]-[[damage:max:363:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:379:38:1:1]]-[[damage:max:379:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:401:38:1:1]]-[[damage:max:401:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:422:38:1:1]]-[[damage:max:422:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:444:38:1:1]]-[[damage:max:444:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:466:38:1:1]]-[[damage:max:466:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:482:38:1:1]]-[[damage:max:482:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:498:38:1:1]]-[[damage:max:498:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:514:38:1:1]]-[[damage:max:514:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:530:38:1:1]]-[[damage:max:530:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:546:38:1:1]]-[[damage:max:546:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:562:38:1:1]]-[[damage:max:562:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:577:38:1:1]]-[[damage:max:577:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:593:38:1:1]]-[[damage:max:593:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:609:38:1:1]]-[[damage:max:609:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:625:38:1:1]]-[[damage:max:625:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:641:38:1:1]]-[[damage:max:641:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:657:38:1:1]]-[[damage:max:657:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:673:38:1:1]]-[[damage:max:673:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:689:38:1:1]]-[[damage:max:689:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:705:38:1:1]]-[[damage:max:705:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:721:38:1:1]]-[[damage:max:721:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:737:38:1:1]]-[[damage:max:737:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:753:38:1:1]]-[[damage:max:753:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:769:38:1:1]]-[[damage:max:769:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:785:38:1:1]]-[[damage:max:785:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:801:38:1:1]]-[[damage:max:801:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:817:38:1:1]]-[[damage:max:817:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:833:38:1:1]]-[[damage:max:833:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:849:38:1:1]]-[[damage:max:849:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s",
+        "descriptionComplete": false,
+        "damage": [],
+        "abnormals": [
+          {
+            "id": "127300001",
+            "name": "Punishing Benediction",
+            "kind": "passive",
+            "category": "buff",
+            "summary": "Increases Critical Hit, has chance to deal extra damage on attack",
+            "effect": "+<desc_point>100</> Critical Hit\n50% chance to deal extra damage on attack",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "passive",
+              "name": "Punishing Benediction",
+              "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+              "id": "127300001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "936",
+        "level": 1,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 9,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "937",
+        "level": 2,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 9,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "938",
+        "level": 3,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 12,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "939",
+        "level": 4,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 15,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "940",
+        "level": 5,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 18,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "941",
+        "level": 6,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 21,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "942",
+        "level": 7,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 24,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "943",
+        "level": 8,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 27,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "944",
+        "level": 9,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 30,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "945",
+        "level": 10,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 33,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "passive",
+    "kindName": "Passive",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "classes": [
+      {
+        "code": "templar",
+        "name": "Templar"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/passive"
+    ],
+    "name": "Punishing Benediction",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_passive_003.webp",
+    "id": "12730000",
+    "entityType": "skill",
+    "description": "Increases the caster's Critical Hit by <chat_combat>100</> and grants Punishing Benediction for 10s when landing an attack.\nPunishing Benediction: Has a 50% chance to deal <chat_combat>[[damage:min:69:38:1:1]]-[[damage:max:69:38:1:1]]</> extra damage to the target when landing an attack.\n\nCooldown: 1s"
+  }
+}

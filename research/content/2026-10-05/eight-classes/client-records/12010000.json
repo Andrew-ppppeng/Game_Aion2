@@ -1,0 +1,1168 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/12010000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "12010000",
+    "name": "Vicious Strike",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_001.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "12010010",
+        "description": "+20% MP restored",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12010020",
+        "description": "Absorbs 1% HP",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12010030",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12010040",
+        "description": "-2s [Warding Strike] cooldown on hit",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12010050",
+        "description": "Adds [Threatening Blow] Chain Skill",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "specification": "<unique>Nontarget | Mobile</>",
+    "basic": true,
+    "targeting": {
+      "process": {
+        "code": "mainself"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "rectangle"
+      },
+      "reachMeters": 5.9,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "sword",
+        "name": "Longsword"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:79:94.8:1:1]]-[[damage:max:79:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 79,
+            "baseMax": 79,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:118:94.8:1:1]]-[[damage:max:118:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 118,
+            "baseMax": 118,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:158:94.8:1:1]]-[[damage:max:158:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 158,
+            "baseMax": 158,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:198:94.8:1:1]]-[[damage:max:198:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 198,
+            "baseMax": 198,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:258:94.8:1:1]]-[[damage:max:258:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 258,
+            "baseMax": 258,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:332:94.8:1:1]]-[[damage:max:332:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 332,
+            "baseMax": 332,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:420:94.8:1:1]]-[[damage:max:420:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 420,
+            "baseMax": 420,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:494:94.8:1:1]]-[[damage:max:494:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 494,
+            "baseMax": 494,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:568:94.8:1:1]]-[[damage:max:568:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 568,
+            "baseMax": 568,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:642:94.8:1:1]]-[[damage:max:642:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 642,
+            "baseMax": 642,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:716:94.8:1:1]]-[[damage:max:716:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 716,
+            "baseMax": 716,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:804:94.8:1:1]]-[[damage:max:804:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 804,
+            "baseMax": 804,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:878:94.8:1:1]]-[[damage:max:878:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 878,
+            "baseMax": 878,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:932:94.8:1:1]]-[[damage:max:932:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 932,
+            "baseMax": 932,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:972:94.8:1:1]]-[[damage:max:972:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 972,
+            "baseMax": 972,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1026:94.8:1:1]]-[[damage:max:1026:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1026,
+            "baseMax": 1026,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1080:94.8:1:1]]-[[damage:max:1080:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1080,
+            "baseMax": 1080,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1134:94.8:1:1]]-[[damage:max:1134:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1134,
+            "baseMax": 1134,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1188:94.8:1:1]]-[[damage:max:1188:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1188,
+            "baseMax": 1188,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1228:94.8:1:1]]-[[damage:max:1228:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1228,
+            "baseMax": 1228,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1267:94.8:1:1]]-[[damage:max:1267:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1267,
+            "baseMax": 1267,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1307:94.8:1:1]]-[[damage:max:1307:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1307,
+            "baseMax": 1307,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1347:94.8:1:1]]-[[damage:max:1347:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1347,
+            "baseMax": 1347,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1387:94.8:1:1]]-[[damage:max:1387:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1387,
+            "baseMax": 1387,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1427:94.8:1:1]]-[[damage:max:1427:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1427,
+            "baseMax": 1427,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1466:94.8:1:1]]-[[damage:max:1466:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1466,
+            "baseMax": 1466,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1506:94.8:1:1]]-[[damage:max:1506:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1506,
+            "baseMax": 1506,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1546:94.8:1:1]]-[[damage:max:1546:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1546,
+            "baseMax": 1546,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1586:94.8:1:1]]-[[damage:max:1586:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1586,
+            "baseMax": 1586,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1626:94.8:1:1]]-[[damage:max:1626:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1626,
+            "baseMax": 1626,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1665:94.8:1:1]]-[[damage:max:1665:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1665,
+            "baseMax": 1665,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1705:94.8:1:1]]-[[damage:max:1705:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1705,
+            "baseMax": 1705,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1745:94.8:1:1]]-[[damage:max:1745:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1745,
+            "baseMax": 1745,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1785:94.8:1:1]]-[[damage:max:1785:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1785,
+            "baseMax": 1785,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1825:94.8:1:1]]-[[damage:max:1825:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1825,
+            "baseMax": 1825,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1865:94.8:1:1]]-[[damage:max:1865:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1865,
+            "baseMax": 1865,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1904:94.8:1:1]]-[[damage:max:1904:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1904,
+            "baseMax": 1904,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1944:94.8:1:1]]-[[damage:max:1944:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1944,
+            "baseMax": 1944,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:1984:94.8:1:1]]-[[damage:max:1984:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 1984,
+            "baseMax": 1984,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "costs": [],
+        "description": "Deals <chat_combat>[[damage:min:2024:94.8:1:1]]-[[damage:max:2024:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP.",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1201000011",
+            "effectGroupId": "120100001",
+            "baseMin": 2024,
+            "baseMax": 2024,
+            "attackRatioPercent": 94.8
+          }
+        ],
+        "abnormals": [],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "794",
+        "level": 1,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "795",
+        "level": 2,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 1,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "796",
+        "level": 3,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "797",
+        "level": 4,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "798",
+        "level": 5,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "799",
+        "level": 6,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "800",
+        "level": 7,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "801",
+        "level": 8,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "802",
+        "level": 9,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "803",
+        "level": 10,
+        "characterClass": "templar",
+        "characterClassName": "Templar",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "12010010",
+        "skillId": "12010010",
+        "name": "Vicious Strike",
+        "description": "+20% MP restored",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12010020",
+        "skillId": "12010020",
+        "name": "Vicious Strike",
+        "description": "Absorbs 1% HP",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12010030",
+        "skillId": "12010030",
+        "name": "Vicious Strike",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12010040",
+        "skillId": "12010040",
+        "name": "Vicious Strike",
+        "description": "-2s [Warding Strike] cooldown on hit",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "12010050",
+        "skillId": "12010050",
+        "name": "Vicious Strike",
+        "description": "Adds [Threatening Blow] Chain Skill",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "templar",
+          "name": "Templar"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [
+      {
+        "mainCategoryId": "skills",
+        "name": "Decisive Strike",
+        "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_002.webp",
+        "id": "12020000"
+      }
+    ],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 4,
+    "classes": [
+      {
+        "code": "templar",
+        "name": "Templar"
+      }
+    ],
+    "chainRole": {
+      "code": "opening",
+      "name": "Opening Skill"
+    },
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Vicious Strike",
+    "iconPath": "/images/ui/resource/texture/skill/icon_te_skill_001.webp",
+    "id": "12010000",
+    "entityType": "skill",
+    "description": "Deals <chat_combat>[[damage:min:79:94.8:1:1]]-[[damage:max:79:94.8:1:1]]</> damage to up to 4 enemies within 4m and increases Enmity. Restores 100 MP."
+  }
+}

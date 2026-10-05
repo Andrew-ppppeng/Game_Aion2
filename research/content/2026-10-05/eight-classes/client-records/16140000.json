@@ -1,0 +1,2483 @@
+{
+  "url": "https://cdn-hosted.gaming.tools/aion2/data/en/skills/16140000.d.json?version=1791128411844",
+  "checkedAt": "2026-10-05",
+  "region": "Global",
+  "version": "gaming.tools Global 1.0.21.0, updated 2026-09-30",
+  "skill": {
+    "id": "16140000",
+    "name": "Jointstrike: Curse",
+    "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+    "kind": "active",
+    "stigma": false,
+    "maxLevel": 40,
+    "learning": [
+      {
+        "level": 1,
+        "autoLearn": true,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 2,
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 3,
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 4,
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 5,
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 6,
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 7,
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 8,
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 9,
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      },
+      {
+        "level": 10,
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "requiredSkillLevel": 8,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "requiredSkillLevel": 12,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "requiredSkillLevel": 20,
+        "editable": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "16140010",
+        "description": "+2s Curse duration",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16140020",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16140030",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16140040",
+        "description": "-2s cooldown",
+        "requiredParentLevel": 12,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16140050",
+        "description": "[Jointstrike: Curse] ignores Block and Evasion and lands as a Critical Hit",
+        "requiredParentLevel": 16,
+        "addedChainSkills": []
+      }
+    ]
+  },
+  "response": {
+    "basic": false,
+    "targeting": {
+      "process": {
+        "code": "maintarget"
+      },
+      "relation": "enemies",
+      "shape": {
+        "code": "circle"
+      },
+      "reachMeters": 4,
+      "maxTargets": 4,
+      "filterResolved": true
+    },
+    "costs": [
+      {
+        "resource": "mp",
+        "resourceName": "MP",
+        "amount": 80
+      }
+    ],
+    "conditions": [],
+    "requiredWeapons": [
+      {
+        "code": "orb",
+        "name": "Orb"
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:74:75:1:1]]-[[damage:max:74:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:99:101:1:1]]-[[damage:max:99:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:119:121:5:5]]-[[damage:max:119:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:92:93:2:2]]-[[damage:max:92:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:29:30:5:5]]-[[damage:max:29:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:170:172.5:1:1]]-[[damage:max:170:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 74,
+            "baseMax": 74,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 74,
+            "baseMax": 74,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 1,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 2,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:105:75:1:1]]-[[damage:max:105:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:142:101:1:1]]-[[damage:max:142:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:170:121:5:5]]-[[damage:max:170:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:131:93:2:2]]-[[damage:max:131:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:42:30:5:5]]-[[damage:max:42:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:243:172.5:1:1]]-[[damage:max:243:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 105,
+            "baseMax": 105,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 105,
+            "baseMax": 105,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 2,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 3,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:137:75:1:1]]-[[damage:max:137:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:184:101:1:1]]-[[damage:max:184:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:221:121:5:5]]-[[damage:max:221:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:170:93:2:2]]-[[damage:max:170:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:54:30:5:5]]-[[damage:max:54:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:315:172.5:1:1]]-[[damage:max:315:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 137,
+            "baseMax": 137,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 137,
+            "baseMax": 137,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 3,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 4,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:184:75:1:1]]-[[damage:max:184:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:248:101:1:1]]-[[damage:max:248:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:297:121:5:5]]-[[damage:max:297:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:228:93:2:2]]-[[damage:max:228:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:73:30:5:5]]-[[damage:max:73:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:424:172.5:1:1]]-[[damage:max:424:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 184,
+            "baseMax": 184,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 184,
+            "baseMax": 184,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 4,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 5,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:243:75:1:1]]-[[damage:max:243:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:327:101:1:1]]-[[damage:max:327:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:392:121:5:5]]-[[damage:max:392:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:301:93:2:2]]-[[damage:max:301:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:97:30:5:5]]-[[damage:max:97:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:558:172.5:1:1]]-[[damage:max:558:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 243,
+            "baseMax": 243,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 243,
+            "baseMax": 243,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 5,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 6,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:312:75:1:1]]-[[damage:max:312:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:421:101:1:1]]-[[damage:max:421:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:504:121:5:5]]-[[damage:max:504:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:387:93:2:2]]-[[damage:max:387:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:125:30:5:5]]-[[damage:max:125:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:719:172.5:1:1]]-[[damage:max:719:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 312,
+            "baseMax": 312,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 312,
+            "baseMax": 312,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 6,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 7,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:371:75:1:1]]-[[damage:max:371:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:499:101:1:1]]-[[damage:max:499:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:598:121:5:5]]-[[damage:max:598:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:460:93:2:2]]-[[damage:max:460:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:148:30:5:5]]-[[damage:max:148:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:853:172.5:1:1]]-[[damage:max:853:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 371,
+            "baseMax": 371,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 371,
+            "baseMax": 371,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 7,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 8,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:429:75:1:1]]-[[damage:max:429:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:578:101:1:1]]-[[damage:max:578:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:693:121:5:5]]-[[damage:max:693:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:532:93:2:2]]-[[damage:max:532:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:171:30:5:5]]-[[damage:max:171:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:988:172.5:1:1]]-[[damage:max:988:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 429,
+            "baseMax": 429,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 429,
+            "baseMax": 429,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 8,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 9,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:488:75:1:1]]-[[damage:max:488:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:657:101:1:1]]-[[damage:max:657:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:787:121:5:5]]-[[damage:max:787:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:605:93:2:2]]-[[damage:max:605:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:195:30:5:5]]-[[damage:max:195:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:1122:172.5:1:1]]-[[damage:max:1122:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 488,
+            "baseMax": 488,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 488,
+            "baseMax": 488,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 9,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 10,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:546:75:1:1]]-[[damage:max:546:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:736:101:1:1]]-[[damage:max:736:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:882:121:5:5]]-[[damage:max:882:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:677:93:2:2]]-[[damage:max:677:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:218:30:5:5]]-[[damage:max:218:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:1257:172.5:1:1]]-[[damage:max:1257:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 546,
+            "baseMax": 546,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 546,
+            "baseMax": 546,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 10,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 11,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:616:75:1:1]]-[[damage:max:616:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:830:101:1:1]]-[[damage:max:830:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:994:121:5:5]]-[[damage:max:994:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:764:93:2:2]]-[[damage:max:764:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:246:30:5:5]]-[[damage:max:246:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:1417:172.5:1:1]]-[[damage:max:1417:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 616,
+            "baseMax": 616,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 616,
+            "baseMax": 616,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 11,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 12,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:675:75:1:1]]-[[damage:max:675:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:909:101:1:1]]-[[damage:max:909:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:1089:121:5:5]]-[[damage:max:1089:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:837:93:2:2]]-[[damage:max:837:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:270:30:5:5]]-[[damage:max:270:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:1552:172.5:1:1]]-[[damage:max:1552:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 675,
+            "baseMax": 675,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 675,
+            "baseMax": 675,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 12,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 13,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:717:75:1:1]]-[[damage:max:717:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:966:101:1:1]]-[[damage:max:966:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:1157:121:5:5]]-[[damage:max:1157:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:890:93:2:2]]-[[damage:max:890:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:287:30:5:5]]-[[damage:max:287:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:1650:172.5:1:1]]-[[damage:max:1650:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 717,
+            "baseMax": 717,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 717,
+            "baseMax": 717,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 13,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 14,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:749:75:1:1]]-[[damage:max:749:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1008:101:1:1]]-[[damage:max:1008:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:1208:121:5:5]]-[[damage:max:1208:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:929:93:2:2]]-[[damage:max:929:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:299:30:5:5]]-[[damage:max:299:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:1723:172.5:1:1]]-[[damage:max:1723:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 749,
+            "baseMax": 749,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 749,
+            "baseMax": 749,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 14,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 15,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:792:75:1:1]]-[[damage:max:792:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1066:101:1:1]]-[[damage:max:1066:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:1277:121:5:5]]-[[damage:max:1277:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:982:93:2:2]]-[[damage:max:982:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:316:30:5:5]]-[[damage:max:316:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:1821:172.5:1:1]]-[[damage:max:1821:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 792,
+            "baseMax": 792,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 792,
+            "baseMax": 792,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 15,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 16,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:834:75:1:1]]-[[damage:max:834:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1124:101:1:1]]-[[damage:max:1124:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:1346:121:5:5]]-[[damage:max:1346:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1035:93:2:2]]-[[damage:max:1035:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:333:30:5:5]]-[[damage:max:333:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:1919:172.5:1:1]]-[[damage:max:1919:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 834,
+            "baseMax": 834,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 834,
+            "baseMax": 834,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 16,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 17,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:877:75:1:1]]-[[damage:max:877:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1181:101:1:1]]-[[damage:max:1181:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:1415:121:5:5]]-[[damage:max:1415:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1088:93:2:2]]-[[damage:max:1088:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:351:30:5:5]]-[[damage:max:351:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:2018:172.5:1:1]]-[[damage:max:2018:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 877,
+            "baseMax": 877,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 877,
+            "baseMax": 877,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 17,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 18,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:920:75:1:1]]-[[damage:max:920:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1239:101:1:1]]-[[damage:max:1239:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:1484:121:5:5]]-[[damage:max:1484:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1141:93:2:2]]-[[damage:max:1141:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:368:30:5:5]]-[[damage:max:368:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:2116:172.5:1:1]]-[[damage:max:2116:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 920,
+            "baseMax": 920,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 920,
+            "baseMax": 920,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 18,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 19,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:951:75:1:1]]-[[damage:max:951:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1281:101:1:1]]-[[damage:max:1281:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:1535:121:5:5]]-[[damage:max:1535:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1180:93:2:2]]-[[damage:max:1180:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:380:30:5:5]]-[[damage:max:380:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:2189:172.5:1:1]]-[[damage:max:2189:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 951,
+            "baseMax": 951,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 951,
+            "baseMax": 951,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 19,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 20,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:983:75:1:1]]-[[damage:max:983:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1324:101:1:1]]-[[damage:max:1324:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:1586:121:5:5]]-[[damage:max:1586:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1219:93:2:2]]-[[damage:max:1219:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:393:30:5:5]]-[[damage:max:393:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:2261:172.5:1:1]]-[[damage:max:2261:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 983,
+            "baseMax": 983,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 983,
+            "baseMax": 983,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 20,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 21,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1014:75:1:1]]-[[damage:max:1014:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1366:101:1:1]]-[[damage:max:1366:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:1637:121:5:5]]-[[damage:max:1637:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1258:93:2:2]]-[[damage:max:1258:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:405:30:5:5]]-[[damage:max:405:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:2333:172.5:1:1]]-[[damage:max:2333:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 1014,
+            "baseMax": 1014,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 1014,
+            "baseMax": 1014,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 21,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 22,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1046:75:1:1]]-[[damage:max:1046:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1408:101:1:1]]-[[damage:max:1408:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:1687:121:5:5]]-[[damage:max:1687:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1297:93:2:2]]-[[damage:max:1297:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:418:30:5:5]]-[[damage:max:418:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:2406:172.5:1:1]]-[[damage:max:2406:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 1046,
+            "baseMax": 1046,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 1046,
+            "baseMax": 1046,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 22,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 23,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1077:75:1:1]]-[[damage:max:1077:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1451:101:1:1]]-[[damage:max:1451:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:1738:121:5:5]]-[[damage:max:1738:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1336:93:2:2]]-[[damage:max:1336:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:431:30:5:5]]-[[damage:max:431:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:2478:172.5:1:1]]-[[damage:max:2478:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 1077,
+            "baseMax": 1077,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 1077,
+            "baseMax": 1077,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 23,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 24,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1109:75:1:1]]-[[damage:max:1109:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1493:101:1:1]]-[[damage:max:1493:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:1789:121:5:5]]-[[damage:max:1789:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1375:93:2:2]]-[[damage:max:1375:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:443:30:5:5]]-[[damage:max:443:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:2551:172.5:1:1]]-[[damage:max:2551:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 1109,
+            "baseMax": 1109,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 1109,
+            "baseMax": 1109,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 24,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 25,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1140:75:1:1]]-[[damage:max:1140:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1536:101:1:1]]-[[damage:max:1536:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:1840:121:5:5]]-[[damage:max:1840:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1414:93:2:2]]-[[damage:max:1414:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:456:30:5:5]]-[[damage:max:456:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:2623:172.5:1:1]]-[[damage:max:2623:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 1140,
+            "baseMax": 1140,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 1140,
+            "baseMax": 1140,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 25,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 26,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1172:75:1:1]]-[[damage:max:1172:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1578:101:1:1]]-[[damage:max:1578:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:1891:121:5:5]]-[[damage:max:1891:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1453:93:2:2]]-[[damage:max:1453:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:468:30:5:5]]-[[damage:max:468:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:2696:172.5:1:1]]-[[damage:max:2696:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 1172,
+            "baseMax": 1172,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 1172,
+            "baseMax": 1172,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 26,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 27,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1203:75:1:1]]-[[damage:max:1203:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1621:101:1:1]]-[[damage:max:1621:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:1942:121:5:5]]-[[damage:max:1942:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1492:93:2:2]]-[[damage:max:1492:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:481:30:5:5]]-[[damage:max:481:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:2768:172.5:1:1]]-[[damage:max:2768:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 1203,
+            "baseMax": 1203,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 1203,
+            "baseMax": 1203,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 27,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 28,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1235:75:1:1]]-[[damage:max:1235:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1663:101:1:1]]-[[damage:max:1663:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:1992:121:5:5]]-[[damage:max:1992:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1531:93:2:2]]-[[damage:max:1531:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:494:30:5:5]]-[[damage:max:494:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:2841:172.5:1:1]]-[[damage:max:2841:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 1235,
+            "baseMax": 1235,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 1235,
+            "baseMax": 1235,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 28,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 29,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1266:75:1:1]]-[[damage:max:1266:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1705:101:1:1]]-[[damage:max:1705:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:2043:121:5:5]]-[[damage:max:2043:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1570:93:2:2]]-[[damage:max:1570:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:506:30:5:5]]-[[damage:max:506:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:2913:172.5:1:1]]-[[damage:max:2913:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 1266,
+            "baseMax": 1266,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 1266,
+            "baseMax": 1266,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 29,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 30,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1298:75:1:1]]-[[damage:max:1298:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1748:101:1:1]]-[[damage:max:1748:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:2094:121:5:5]]-[[damage:max:2094:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1609:93:2:2]]-[[damage:max:1609:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:519:30:5:5]]-[[damage:max:519:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:2985:172.5:1:1]]-[[damage:max:2985:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 1298,
+            "baseMax": 1298,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 1298,
+            "baseMax": 1298,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 30,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 31,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1329:75:1:1]]-[[damage:max:1329:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1790:101:1:1]]-[[damage:max:1790:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:2145:121:5:5]]-[[damage:max:2145:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1648:93:2:2]]-[[damage:max:1648:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:531:30:5:5]]-[[damage:max:531:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:3058:172.5:1:1]]-[[damage:max:3058:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 1329,
+            "baseMax": 1329,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 1329,
+            "baseMax": 1329,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 31,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 32,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1361:75:1:1]]-[[damage:max:1361:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1833:101:1:1]]-[[damage:max:1833:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:2196:121:5:5]]-[[damage:max:2196:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1687:93:2:2]]-[[damage:max:1687:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:544:30:5:5]]-[[damage:max:544:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:3130:172.5:1:1]]-[[damage:max:3130:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 1361,
+            "baseMax": 1361,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 1361,
+            "baseMax": 1361,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 32,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 33,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1392:75:1:1]]-[[damage:max:1392:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1875:101:1:1]]-[[damage:max:1875:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:2246:121:5:5]]-[[damage:max:2246:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1727:93:2:2]]-[[damage:max:1727:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:557:30:5:5]]-[[damage:max:557:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:3203:172.5:1:1]]-[[damage:max:3203:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 1392,
+            "baseMax": 1392,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 1392,
+            "baseMax": 1392,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 33,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 34,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1424:75:1:1]]-[[damage:max:1424:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1917:101:1:1]]-[[damage:max:1917:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:2297:121:5:5]]-[[damage:max:2297:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1766:93:2:2]]-[[damage:max:1766:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:569:30:5:5]]-[[damage:max:569:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:3275:172.5:1:1]]-[[damage:max:3275:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 1424,
+            "baseMax": 1424,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 1424,
+            "baseMax": 1424,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 34,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 35,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1455:75:1:1]]-[[damage:max:1455:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:1960:101:1:1]]-[[damage:max:1960:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:2348:121:5:5]]-[[damage:max:2348:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1805:93:2:2]]-[[damage:max:1805:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:582:30:5:5]]-[[damage:max:582:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:3348:172.5:1:1]]-[[damage:max:3348:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 1455,
+            "baseMax": 1455,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 1455,
+            "baseMax": 1455,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 35,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 36,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1487:75:1:1]]-[[damage:max:1487:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:2002:101:1:1]]-[[damage:max:2002:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:2399:121:5:5]]-[[damage:max:2399:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1844:93:2:2]]-[[damage:max:1844:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:594:30:5:5]]-[[damage:max:594:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:3420:172.5:1:1]]-[[damage:max:3420:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 1487,
+            "baseMax": 1487,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 1487,
+            "baseMax": 1487,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 36,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 37,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1518:75:1:1]]-[[damage:max:1518:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:2045:101:1:1]]-[[damage:max:2045:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:2450:121:5:5]]-[[damage:max:2450:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1883:93:2:2]]-[[damage:max:1883:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:607:30:5:5]]-[[damage:max:607:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:3493:172.5:1:1]]-[[damage:max:3493:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 1518,
+            "baseMax": 1518,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 1518,
+            "baseMax": 1518,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 37,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 38,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1550:75:1:1]]-[[damage:max:1550:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:2087:101:1:1]]-[[damage:max:2087:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:2501:121:5:5]]-[[damage:max:2501:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1922:93:2:2]]-[[damage:max:1922:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:620:30:5:5]]-[[damage:max:620:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:3565:172.5:1:1]]-[[damage:max:3565:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 1550,
+            "baseMax": 1550,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 1550,
+            "baseMax": 1550,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 38,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 39,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1581:75:1:1]]-[[damage:max:1581:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:2130:101:1:1]]-[[damage:max:2130:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:2551:121:5:5]]-[[damage:max:2551:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:1961:93:2:2]]-[[damage:max:1961:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:632:30:5:5]]-[[damage:max:632:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:3638:172.5:1:1]]-[[damage:max:3638:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 1581,
+            "baseMax": 1581,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 1581,
+            "baseMax": 1581,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 39,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      },
+      {
+        "level": 40,
+        "cooldownSeconds": 10,
+        "costs": [
+          {
+            "resource": "mp",
+            "resourceName": "MP",
+            "amount": 80
+          }
+        ],
+        "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:1613:75:1:1]]-[[damage:max:1613:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:2172:101:1:1]]-[[damage:max:2172:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:2602:121:5:5]]-[[damage:max:2602:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:2000:93:2:2]]-[[damage:max:2000:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:645:30:5:5]]-[[damage:max:645:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:3710:172.5:1:1]]-[[damage:max:3710:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage",
+        "descriptionComplete": false,
+        "damage": [
+          {
+            "effectId": "1614000011",
+            "effectGroupId": "161400001",
+            "baseMin": 1613,
+            "baseMax": 1613,
+            "attackRatioPercent": 75
+          },
+          {
+            "effectId": "1614000012",
+            "effectGroupId": "161400001",
+            "baseMin": 1613,
+            "baseMax": 1613,
+            "attackRatioPercent": 75
+          }
+        ],
+        "abnormals": [
+          {
+            "id": "161400001",
+            "name": "Curse",
+            "kind": "debuff",
+            "category": "debuff",
+            "summary": "Deals Damage over Time and reduces damage dealt to Spiritmaster",
+            "effect": "Damage over Time every 1s\n-10% damage dealt to Spiritmaster",
+            "effectComplete": true,
+            "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+            "effectLevel": 40,
+            "statusEffect": {
+              "mainCategoryId": "status-effects",
+              "kind": "debuff",
+              "name": "Curse",
+              "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+              "id": "161400001"
+            }
+          }
+        ],
+        "abnormalsComplete": true
+      }
+    ],
+    "levelDescriptionsComplete": false,
+    "damageFormulaVerified": false,
+    "learning": [
+      {
+        "id": "3034",
+        "level": 1,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": true,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 0,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3035",
+        "level": 2,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 4,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3036",
+        "level": 3,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 7,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3037",
+        "level": 4,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 10,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 1,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3038",
+        "level": 5,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 13,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3039",
+        "level": 6,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 16,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3040",
+        "level": 7,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 19,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 2,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3041",
+        "level": 8,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 22,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3042",
+        "level": 9,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 25,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      },
+      {
+        "id": "3043",
+        "level": 10,
+        "characterClass": "elementalist",
+        "characterClassName": "Spiritmaster",
+        "method": "mastery",
+        "methodName": "Mastery",
+        "autoLearn": false,
+        "requiredCharacterLevel": 28,
+        "requiredAscensionGrade": "none",
+        "skillPoints": 4,
+        "stigmaPoints": 0,
+        "superiorStigmaPoints": 0,
+        "superiorStigmaPointsGained": 0,
+        "requiredSkills": [],
+        "requiredItems": [],
+        "requirementsComplete": true
+      }
+    ],
+    "specializations": [
+      {
+        "id": "16140010",
+        "skillId": "16140010",
+        "name": "Jointstrike: Curse",
+        "description": "+2s Curse duration",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16140020",
+        "skillId": "16140020",
+        "name": "Jointstrike: Curse",
+        "description": "+50% Multi-Hit on hit",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16140030",
+        "skillId": "16140030",
+        "name": "Jointstrike: Curse",
+        "description": "Changes to mobile skill",
+        "requiredParentLevel": 8,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16140040",
+        "skillId": "16140040",
+        "name": "Jointstrike: Curse",
+        "description": "-2s cooldown",
+        "requiredParentLevel": 12,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      },
+      {
+        "id": "16140050",
+        "skillId": "16140050",
+        "name": "Jointstrike: Curse",
+        "description": "[Jointstrike: Curse] ignores Block and Evasion and lands as a Critical Hit",
+        "requiredParentLevel": 16,
+        "characterClass": {
+          "code": "elementalist",
+          "name": "Spiritmaster"
+        },
+        "requirementsComplete": true,
+        "addedChainSkills": []
+      }
+    ],
+    "specializationSlots": [
+      {
+        "slot": 1,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 8,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 2,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 12,
+        "visible": true,
+        "editable": true
+      },
+      {
+        "slot": 3,
+        "learningMethod": {
+          "code": "mastery",
+          "name": "Mastery"
+        },
+        "requiredSkillLevel": 20,
+        "visible": true,
+        "editable": true
+      }
+    ],
+    "nextChainSkills": [],
+    "kind": "active",
+    "kindName": "Active",
+    "rarity": "common",
+    "rarityName": "Common",
+    "maxLevel": 40,
+    "stigma": false,
+    "rangeMeters": 20,
+    "cooldownSeconds": 10,
+    "classes": [
+      {
+        "code": "elementalist",
+        "name": "Spiritmaster"
+      }
+    ],
+    "mainCategoryId": "skills",
+    "categories": [
+      "skills/mastery/active"
+    ],
+    "name": "Jointstrike: Curse",
+    "iconPath": "/images/ui/resource/texture/skill/icon_el_skill_014.webp",
+    "id": "16140000",
+    "entityType": "skill",
+    "description": "Selects a target within 20m and deals <chat_combat>[[damage:min:74:75:1:1]]-[[damage:max:74:75:1:1]]</> damage to up to 4 enemies within 4m of the target, and inflicts Curse.\n\nCurse: Deals <chat_combat>[[dot]]-[[dot]]</> Damage over Time every 1s and reduces damage dealt to the Spiritmaster by 10% for 5s.\n\nThe Spirit joins for a coordinated assault.\nFire: <chat_combat>[[damage:min:99:101:1:1]]-[[damage:max:99:101:1:1]]</> AoE damage\nWater: <chat_combat>[[damage:min:119:121:5:5]]-[[damage:max:119:121:5:5]]</> damage\nEarth: <chat_combat>[[damage:min:92:93:2:2]]-[[damage:max:92:93:2:2]]</> damage and reduces Status Effect Resist by 10%\nWind: <chat_combat>[[damage:min:29:30:5:5]]-[[damage:max:29:30:5:5]]</> AoE damage and <chat_combat>[[dot]]-[[dot]]</> Damage over Time\nAncient: <chat_combat>[[damage:min:170:172.5:1:1]]-[[damage:max:170:172.5:1:1]]</> AoE damage\n\n10 Stagger Gauge Damage"
+  }
+}
