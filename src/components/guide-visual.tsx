@@ -4,9 +4,12 @@ import {guideMessages} from '@/i18n/guide-messages';
 import {getGuideAsset} from '@/lib/guide-assets';
 import type {GuideVisualData} from '@/lib/article-types';
 import {GuideImage} from './guide-image';
+import {GuideSpecializationTree} from './guide-build-visuals';
+import skills from '@/content/class-skills.json';
 
 export function GuideVisual({id, visual, locale}: {id: string; visual: GuideVisualData; locale: Locale}) {
   const m = guideMessages[locale];
+  if (visual.specializationTree) return <div data-visual-id={id}><GuideSpecializationTree locale={locale} skillName={skills.sorcerer.find(({id}) => id === '15060000')!.names[locale]} title={visual.title!} caption={visual.caption} /></div>;
   if (visual.assetId) {
     const asset = getGuideAsset(visual.assetId);
     return <figure className="guide-figure" data-visual-id={id} data-asset-id={asset.id}>

@@ -35,9 +35,23 @@
   ],
   "visuals": {
     "topic": {
-      "assetId": "class-chanter",
-      "alt": "Offizielle Klassenillustration des Kantors",
-      "caption": "Offizielle Klassenillustration des Kantors"
+      "specializationTree": true,
+      "title": "Hellfire: eine Rangschwelle, drei Optionen",
+      "caption": "Wähle auf Fertigkeitsrang 8 einen Effekt für denselben Spezialisierungsplatz.",
+      "steps": [
+        {
+          "label": "Schnelleres Wirken",
+          "description": "Erhöht die Fertigkeitsgeschwindigkeit um 30%."
+        },
+        {
+          "label": "Schaden über Zeit",
+          "description": "Verursacht bei einem Treffer 10 Sekunden lang Feuerschaden über Zeit."
+        },
+        {
+          "label": "Wirken in Bewegung",
+          "description": "Erlaubt Bewegung beim Wirken."
+        }
+      ]
     },
     "workflow": {
       "title": "Einen funktionierenden Build erstellen",

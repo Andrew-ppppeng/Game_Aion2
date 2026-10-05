@@ -116,6 +116,10 @@ try {
       const prefix = locale === 'en' ? '' : `/${locale}`;
       for (const link of await page.locator('.article-body a[href^="/"]').all()) {
         const href = await link.getAttribute('href');
+        if (href.startsWith('/media/')) {
+          assert.ok((await readFile(new URL(`../public${href}`, import.meta.url))).length > 0, `${locale}/${slug}: downloadable diagram exists`);
+          continue;
+        }
         assert.ok(href.startsWith(`${prefix}/`) && !href.startsWith('/en/'), `${locale}/${slug} localized internal link: ${href}`);
       }
       for (const section of meta.toc) await expect(page.locator(`#${section.id}`)).toHaveCount(1);

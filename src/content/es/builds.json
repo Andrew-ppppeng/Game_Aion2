@@ -35,9 +35,23 @@
   ],
   "visuals": {
     "topic": {
-      "assetId": "class-chanter",
-      "alt": "Ilustración oficial del Cantor",
-      "caption": "Ilustración oficial del Cantor"
+      "specializationTree": true,
+      "title": "Hellfire: un umbral, tres opciones",
+      "caption": "En rango de habilidad 8, elige un efecto para la misma ranura de especialización.",
+      "steps": [
+        {
+          "label": "Lanzamiento más rápido",
+          "description": "Añade un 30% de velocidad de habilidad."
+        },
+        {
+          "label": "Daño prolongado",
+          "description": "Añade daño de fuego durante 10 segundos al acertar."
+        },
+        {
+          "label": "Lanzamiento en movimiento",
+          "description": "Permite moverte mientras lanzas."
+        }
+      ]
     },
     "workflow": {
       "title": "Prepara una build funcional",

@@ -35,9 +35,23 @@
   ],
   "visuals": {
     "topic": {
-      "assetId": "class-chanter",
-      "alt": "Official Chanter class artwork",
-      "caption": "Official Chanter class artwork"
+      "specializationTree": true,
+      "title": "Hellfire: one rank threshold, three choices",
+      "caption": "At skill rank 8, choose one effect for the same specialization slot.",
+      "steps": [
+        {
+          "label": "Faster casting",
+          "description": "Adds 30% skill speed."
+        },
+        {
+          "label": "Damage over time",
+          "description": "Adds fire damage over 10 seconds on hit."
+        },
+        {
+          "label": "Mobile casting",
+          "description": "Allows movement while casting."
+        }
+      ]
     },
     "workflow": {
       "title": "Assemble a working build",

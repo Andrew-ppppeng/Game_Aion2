@@ -35,9 +35,23 @@
   ],
   "visuals": {
     "topic": {
-      "assetId": "class-chanter",
-      "alt": "公式チャンタークラスアート",
-      "caption": "公式チャンタークラスアート"
+      "specializationTree": true,
+      "title": "Hellfire：同じ条件で3種類の選択肢",
+      "caption": "スキルLv8で、同じ特化枠の効果を1つ選びます。",
+      "steps": [
+        {
+          "label": "詠唱を高速化",
+          "description": "スキル速度が30%上昇。"
+        },
+        {
+          "label": "持続ダメージ",
+          "description": "命中時に10秒間の火属性持続ダメージ。"
+        },
+        {
+          "label": "移動しながら詠唱",
+          "description": "詠唱中に移動可能。"
+        }
+      ]
     },
     "workflow": {
       "title": "動くビルドを作る",

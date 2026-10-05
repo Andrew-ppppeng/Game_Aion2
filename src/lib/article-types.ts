@@ -14,6 +14,7 @@ export type ArticleMetadata = {
 };
 
 export type GuideVisualData = {
+  specializationTree?: boolean;
   assetId?: string;
   alt?: string;
   title?: string;

@@ -1,6 +1,7 @@
 import skills from '@/content/class-skills.json';
 import focus from '@/content/class-skill-focus.json';
 import type {Locale} from '@/i18n/routing';
+import Image from 'next/image';
 import {GuideTable} from './guide-table';
 
 export type ClassId = keyof typeof skills;
@@ -16,7 +17,7 @@ export function GuideSkillFocus({locale, classId}: {locale: Locale; classId: Cla
   return <div className="class-skill-focus" data-skill-focus={classId}><GuideTable><thead><tr><th scope="col">{m.skill}</th><th scope="col">{m.use}</th></tr></thead>
     <tbody>{focus[classId].map((entry) => {
       const skill = skills[classId].find((item) => item.id === entry.id)!;
-      return <tr key={entry.id}><th scope="row">{skill.names[locale]}{locale !== 'en' && skill.names[locale] !== skill.names.en && <small lang="en">{skill.names.en}</small>}</th><td>{entry.text[locale]}</td></tr>;
+      return <tr key={entry.id} id={`skill-${skill.id}`}><th scope="row"><span className="skill-name-with-icon"><Image src={`/media/skills/${skill.id}.webp`} width={40} height={40} alt="" unoptimized /><span>{skill.names[locale]}{locale !== 'en' && skill.names[locale] !== skill.names.en && <small lang="en">{skill.names.en}</small>}</span></span></th><td>{entry.text[locale]}</td></tr>;
     })}</tbody>
   </GuideTable></div>;
 }
@@ -31,7 +32,7 @@ export function GuideSkillList({locale, classId}: {locale: Locale; classId: Clas
         <summary>{m[kind]} ({entries.length})</summary>
         <GuideTable><thead><tr><th scope="col">{m.skill}</th><th scope="col">{m.level}</th></tr></thead>
           <tbody>{entries.map((skill) => <tr key={skill.id} data-skill-id={skill.id}>
-            <th scope="row">{skill.names[locale]}{locale !== 'en' && skill.names[locale] !== skill.names.en && <small lang="en">{skill.names.en}</small>}</th>
+            <th scope="row"><span className="skill-name-with-icon"><Image src={`/media/skills/${skill.id}.webp`} width={40} height={40} alt="" unoptimized /><span>{skill.names[locale]}{locale !== 'en' && skill.names[locale] !== skill.names.en && <small lang="en">{skill.names.en}</small>}</span></span></th>
             <td>{skill.learnedAt}</td>
           </tr>)}</tbody>
         </GuideTable>

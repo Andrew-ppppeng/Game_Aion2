@@ -20,6 +20,10 @@ import {GuideEquipment} from './tools/guide-equipment';
 import {gameEvents} from '@/lib/aion2/data';
 import {shareImagePath} from '@/lib/share-images';
 import {GuideSkillList, GuideSkillFocus, type ClassId} from './guide-skill-list';
+import {GuideSkillMap} from './guide-skill-map';
+import {GuideClassVideo, GuideClassVideos} from './guide-class-video';
+import {GuideBuildMaps} from './guide-build-visuals';
+import classIdentities from '@/content/class-identities.json';
 
 export async function ArticlePage({locale, slug}: {locale: Locale; slug: string}) {
   const article = getArticle(locale, slug);
@@ -48,6 +52,10 @@ export async function ArticlePage({locale, slug}: {locale: Locale; slug: string}
     GuideClasses: () => <ClassFinder locale={locale} assets={classAssets} />,
     GuideSkillList: ({classId}: {classId: ClassId}) => <GuideSkillList locale={locale} classId={classId} />,
     GuideSkillFocus: ({classId}: {classId: ClassId}) => <GuideSkillFocus locale={locale} classId={classId} />,
+    GuideSkillMap: ({classId}: {classId: ClassId}) => <GuideSkillMap locale={locale} classId={classId} />,
+    GuideClassVideo: ({classId}: {classId: ClassId}) => <GuideClassVideo locale={locale} classId={classId} />,
+    GuideClassVideos: () => <GuideClassVideos locale={locale} />,
+    GuideBuildMaps: () => <GuideBuildMaps locale={locale}>{classIdentities.map(({id}) => <GuideSkillMap key={id} locale={locale} classId={id as ClassId} />)}</GuideBuildMaps>,
     GuideFaction: ({faction, children}: {faction: string; children: ReactNode}) => <div data-faction-section={faction}>{children}</div>,
     GuideRegion: ({region, children}: {region: string; children: ReactNode}) => <div data-region-section={region}>{children}</div>,
     GuideNext: ({slug: target}: {slug: string}) => <ArticleNext locale={locale} slug={target} inline />,

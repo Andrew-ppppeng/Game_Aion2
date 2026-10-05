@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import {readFile, readdir} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
 
 const root = new URL('../', import.meta.url);
 const read = (path) => readFile(new URL(path, root), 'utf8');
@@ -23,6 +24,9 @@ const assetIds = new Set(assets.map(({id}) => id));
 const classIdentities = await json('src/content/class-identities.json');
 const classSkills = await json('src/content/class-skills.json');
 const classFocus = await json('src/content/class-skill-focus.json');
+const classMaps = await json('src/content/class-skill-maps.json');
+const classVideos = await json('src/content/class-videos.json');
+const skillIcons = await json('src/content/skill-icons.json');
 assert.equal(classIdentities.length, 8, 'Eight class detail destinations');
 const skillIds = [];
 for (const identity of classIdentities) {
@@ -39,6 +43,33 @@ for (const identity of classIdentities) {
   for (const entry of classFocus[identity.id]) for (const locale of locales) assert.ok(entry.text[locale]?.trim().length > 20, `${identity.id}/${entry.id}: useful translated trigger note`);
 }
 assert.equal(new Set(skillIds).size, 280, '280 distinct class skills');
+assert.deepEqual(skillIcons.map(({id}) => id).sort(), [...skillIds].sort(), 'Every class skill has an actual icon');
+for (const icon of skillIcons) {
+  assert.equal(icon.src, `/media/skills/${icon.id}.webp`, `${icon.id}: stable local icon path`);
+  assert.ok(icon.width >= 32 && icon.height >= 32 && icon.region && icon.version && icon.checkedAt, `${icon.id}: image identity and provenance`);
+  const bytes = await readFile(new URL(`public${icon.src}`, root));
+  assert.equal(createHash('sha256').update(bytes).digest('hex'), icon.sha256, `${icon.id}: exact archived image`);
+}
+for (const identity of classIdentities) {
+  const id = identity.id;
+  assert.ok(/^[\w-]{11}$/.test(classVideos[id]?.videoId), `${id}: real video ID`);
+  assert.ok(assetIds.has(`class-${id}-combat`), `${id}: archived video poster`);
+  assert.equal(classMaps[id]?.length, 3, `${id}: meaningful skill relationships`);
+  for (const row of classMaps[id]) {
+    assert.ok(['trigger', 'specialization', 'response', 'resource'].includes(row.kind), `${id}: relationship meaning`);
+    for (const node of [...row.sources, ...row.targets]) {
+      if (typeof node === 'string') assert.ok(classSkills[id].some(({id: skillId}) => node === skillId), `${id}/${node}: diagram uses this class's actual skill`);
+      else for (const locale of locales) assert.ok(node.label[locale]?.trim(), `${id}: translated status node`);
+    }
+    for (const locale of locales) assert.ok(row.caption[locale]?.trim(), `${id}: translated trigger condition`);
+  }
+}
+const diagramImages = await json('src/content/class-diagram-images.json');
+assert.equal(diagramImages.length, 36, '32 class diagrams and four specialization diagrams');
+for (const diagram of diagramImages) {
+  const bytes = await readFile(new URL(`public/media/guides/${diagram.file}`, root));
+  assert.equal(createHash('sha256').update(bytes).digest('hex'), diagram.sha256, `${diagram.file}: usable export`);
+}
 assert.equal(assetIds.size, assets.length, 'Unique media asset IDs');
 for (const asset of assets) {
   assert.match(asset.src, /^\/media\/guides\//, `${asset.id}: local media`);
@@ -117,6 +148,12 @@ for (const locale of locales) {
     if (classSkills[slug]) {
       assert.match(body, new RegExp(`<GuideSkillFocus classId="${slug}"\\s*/>`), `${label}: functional skill explanations`);
       assert.match(body, new RegExp(`<GuideSkillList classId="${slug}"\\s*/>`), `${label}: complete class skill list`);
+      assert.match(body, new RegExp(`<GuideSkillMap classId="${slug}"\\s*/>`), `${label}: visual skill relationships`);
+      assert.match(body, new RegExp(`<GuideClassVideo classId="${slug}"\\s*/>`), `${label}: combat demonstration`);
+    }
+    if (slug === 'builds') {
+      assert.match(body, /<GuideBuildMaps\s*\/>/, `${label}: interactive class diagram selection`);
+      assert.equal(meta.visuals.topic.specializationTree, true, `${label}: rank threshold and effect alternatives`);
     }
     if (slug === 'builds') for (const identity of classIdentities) assert.match(body, new RegExp(`\\]\\(/${identity.id}#key-skills\\)`), `${label}: class loop destination ${identity.id}`);
     if (slug === 'leveling') for (const faction of ['elyos', 'asmodians']) assert.ok(body.includes(`<GuideFaction faction="${faction}">`), `${label}: faction group ${faction}`);

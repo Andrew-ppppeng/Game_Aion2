@@ -1,0 +1,448 @@
+{
+  "gladiator": [
+    {
+      "sources": [
+        "11020000"
+      ],
+      "targets": [
+        "11100000"
+      ],
+      "kind": "specialization",
+      "caption": {
+        "en": "Skill rank 12 • select cooldown reduction • land a hit",
+        "ja": "スキルLv12・クールタイム短縮を選択・攻撃を命中させる",
+        "es": "Rango 12 • selecciona reducción de enfriamiento • acierta",
+        "de": "Fertigkeitsrang 12 • Abklingzeitverkürzung wählen • treffen"
+      }
+    },
+    {
+      "sources": [
+        "11290000"
+      ],
+      "targets": [
+        "11170000"
+      ],
+      "kind": "trigger",
+      "caption": {
+        "en": "Knockdown opens the follow-up; immune targets use their proc",
+        "ja": "ノックダウンで追撃可能。無効な対象には専用の発動条件",
+        "es": "Derribo activa el seguimiento; los inmunes usan su activación",
+        "de": "Niederschlag ermöglicht den Folgeangriff; immune Ziele nutzen ihren Auslöser"
+      }
+    },
+    {
+      "sources": [
+        {
+          "label": {
+            "en": "Staggered target",
+            "ja": "対象がグロッギー",
+            "es": "Objetivo en Stagger",
+            "de": "Ziel in Stagger"
+          }
+        }
+      ],
+      "targets": [
+        "11280000"
+      ],
+      "kind": "trigger",
+      "caption": {
+        "en": "Use during the target’s Stagger window",
+        "ja": "対象のグロッギー中に使用",
+        "es": "Usa durante la ventana de Stagger",
+        "de": "Während des Stagger-Fensters einsetzen"
+      }
+    }
+  ],
+  "templar": [
+    {
+      "sources": [
+        "12100000",
+        "12350000"
+      ],
+      "targets": [
+        "12240000"
+      ],
+      "kind": "trigger",
+      "caption": {
+        "en": "Either shield attack → Judgment within 2 seconds",
+        "ja": "どちらかの盾攻撃 → 2秒以内に追撃",
+        "es": "Cualquiera de los dos ataques → Judgment en 2 segundos",
+        "de": "Einer der Schildangriffe → Judgment innerhalb von 2 Sekunden"
+      }
+    },
+    {
+      "sources": [
+        "12040000"
+      ],
+      "targets": [
+        "12090000"
+      ],
+      "kind": "specialization",
+      "caption": {
+        "en": "Skill rank 12 • select cooldown reduction • land a hit",
+        "ja": "スキルLv12・クールタイム短縮を選択・攻撃を命中させる",
+        "es": "Rango 12 • selecciona reducción de enfriamiento • acierta",
+        "de": "Fertigkeitsrang 12 • Abklingzeitverkürzung wählen • treffen"
+      }
+    },
+    {
+      "sources": [
+        {
+          "label": {
+            "en": "Successful block",
+            "ja": "ブロック成功",
+            "es": "Bloqueo exitoso",
+            "de": "Erfolgreicher Block"
+          }
+        }
+      ],
+      "targets": [
+        "12270000"
+      ],
+      "kind": "trigger",
+      "caption": {
+        "en": "Block opens the defense-reducing follow-up",
+        "ja": "ブロック後に防御低下の追撃が可能",
+        "es": "El bloqueo activa el seguimiento que reduce defensa",
+        "de": "Block ermöglicht den Folgeangriff mit Verteidigungssenkung"
+      }
+    }
+  ],
+  "assassin": [
+    {
+      "sources": [
+        "13100000"
+      ],
+      "targets": [
+        "13130000"
+      ],
+      "kind": "trigger",
+      "caption": {
+        "en": "Build Insignia on the same target • up to 5 stacks",
+        "ja": "同じ対象に刻印を蓄積・最大5スタック",
+        "es": "Acumula Insignia en el mismo objetivo • hasta 5 cargas",
+        "de": "Insignia auf demselben Ziel aufbauen • bis zu 5 Stapel"
+      }
+    },
+    {
+      "sources": [
+        {
+          "label": {
+            "en": "Critical hit",
+            "ja": "クリティカルヒット",
+            "es": "Golpe crítico",
+            "de": "Kritischer Treffer"
+          }
+        }
+      ],
+      "targets": [
+        "13350000"
+      ],
+      "kind": "trigger",
+      "caption": {
+        "en": "React to the critical-hit opportunity",
+        "ja": "クリティカル発生時の追撃機会に反応",
+        "es": "Reacciona a la oportunidad tras un crítico",
+        "de": "Auf die Gelegenheit nach einem kritischen Treffer reagieren"
+      }
+    },
+    {
+      "sources": [
+        "13010000"
+      ],
+      "targets": [
+        "13130000"
+      ],
+      "kind": "specialization",
+      "caption": {
+        "en": "Skill rank 12 • select cooldown reduction • land a hit",
+        "ja": "スキルLv12・クールタイム短縮を選択・攻撃を命中させる",
+        "es": "Rango 12 • selecciona reducción de enfriamiento • acierta",
+        "de": "Fertigkeitsrang 12 • Abklingzeitverkürzung wählen • treffen"
+      }
+    }
+  ],
+  "ranger": [
+    {
+      "sources": [
+        "14090000"
+      ],
+      "targets": [
+        "14070000",
+        "14010000"
+      ],
+      "kind": "trigger",
+      "caption": {
+        "en": "Precision enables Suppressing Arrow and boosts Deadshot",
+        "ja": "精密で制圧矢が使用可能・狙撃の威力上昇",
+        "es": "Precision activa Suppressing Arrow y mejora Deadshot",
+        "de": "Precision ermöglicht Suppressing Arrow und verstärkt Deadshot"
+      }
+    },
+    {
+      "sources": [
+        "14130000"
+      ],
+      "targets": [
+        "14080000"
+      ],
+      "kind": "trigger",
+      "caption": {
+        "en": "Slow or Root must be active on the target",
+        "ja": "対象がスロウまたはルート状態であること",
+        "es": "El objetivo debe tener ralentización o inmovilización",
+        "de": "Verlangsamung oder Wurzel muss auf dem Ziel aktiv sein"
+      }
+    },
+    {
+      "sources": [
+        {
+          "label": {
+            "en": "Critical hit",
+            "ja": "クリティカルヒット",
+            "es": "Golpe crítico",
+            "de": "Kritischer Treffer"
+          }
+        }
+      ],
+      "targets": [
+        "14050000"
+      ],
+      "kind": "trigger",
+      "caption": {
+        "en": "A critical hit opens Drill Dart; its own crit restores MP",
+        "ja": "クリティカルで発動。自身もクリティカルならMP回復",
+        "es": "Un crítico activa Drill Dart; su propio crítico recupera MP",
+        "de": "Kritischer Treffer ermöglicht Drill Dart; sein eigener kritischer Treffer stellt MP her"
+      }
+    }
+  ],
+  "chanter": [
+    {
+      "sources": [
+        "18060000",
+        "18290000"
+      ],
+      "targets": [
+        "18100000"
+      ],
+      "kind": "trigger",
+      "caption": {
+        "en": "Either attack → Dark Crush within 2 seconds",
+        "ja": "どちらかの攻撃 → 2秒以内に追撃",
+        "es": "Cualquiera de los dos ataques → Dark Crush en 2 segundos",
+        "de": "Einer der Angriffe → Dark Crush innerhalb von 2 Sekunden"
+      }
+    },
+    {
+      "sources": [
+        "18010000"
+      ],
+      "targets": [
+        "18290000"
+      ],
+      "kind": "specialization",
+      "caption": {
+        "en": "Skill rank 12 • select cooldown reduction • land a hit",
+        "ja": "スキルLv12・クールタイム短縮を選択・攻撃を命中させる",
+        "es": "Rango 12 • selecciona reducción de enfriamiento • acierta",
+        "de": "Fertigkeitsrang 12 • Abklingzeitverkürzung wählen • treffen"
+      }
+    },
+    {
+      "sources": [
+        {
+          "label": {
+            "en": "Successful parry",
+            "ja": "パリィ成功",
+            "es": "Desvío exitoso",
+            "de": "Erfolgreiche Parade"
+          }
+        }
+      ],
+      "targets": [
+        "18150000"
+      ],
+      "kind": "trigger",
+      "caption": {
+        "en": "Parry opens the follow-up; a selected Rushing Smash option also triggers it",
+        "ja": "パリィ後に追撃可能。接近技の発動特化を選んだ場合も使用可能",
+        "es": "El desvío activa el seguimiento; una opción elegida de Rushing Smash también lo activa",
+        "de": "Parade ermöglicht den Folgeangriff; eine gewählte Rushing-Smash-Option löst ihn ebenfalls aus"
+      }
+    }
+  ],
+  "cleric": [
+    {
+      "sources": [
+        "17070000"
+      ],
+      "targets": [
+        "17350000"
+      ],
+      "kind": "trigger",
+      "caption": {
+        "en": "Chain of Torment must be active on this target",
+        "ja": "同じ対象に苦痛の連鎖が付与されていること",
+        "es": "Chain of Torment debe estar activo en este objetivo",
+        "de": "Chain of Torment muss auf diesem Ziel aktiv sein"
+      }
+    },
+    {
+      "sources": [
+        {
+          "label": {
+            "en": "Critical hit",
+            "ja": "クリティカルヒット",
+            "es": "Golpe crítico",
+            "de": "Kritischer Treffer"
+          }
+        }
+      ],
+      "targets": [
+        "17350000"
+      ],
+      "kind": "specialization",
+      "caption": {
+        "en": "Condemnation crit • selected rank-12 reset • keep Chain of Torment active",
+        "ja": "追撃のクリティカル・Lv12のリセット特化を選択・苦痛の連鎖を維持",
+        "es": "Crítico de Condemnation • reinicio de rango 12 elegido • mantén Chain of Torment",
+        "de": "Condemnation-Krit • gewählter Reset auf Rang 12 • Chain of Torment aufrechterhalten"
+      }
+    },
+    {
+      "sources": [
+        {
+          "label": {
+            "en": "Party takes damage + a removable debuff",
+            "ja": "味方の被ダメージ＋解除可能なデバフ",
+            "es": "Daño de grupo + perjuicio eliminable",
+            "de": "Gruppenschaden + entfernbarer Debuff"
+          }
+        }
+      ],
+      "targets": [
+        "17120000"
+      ],
+      "kind": "response",
+      "caption": {
+        "en": "Heal the party and remove one debuff with the base skill",
+        "ja": "基本効果でパーティーを回復し、デバフを1個解除",
+        "es": "La habilidad base cura al grupo y elimina un perjuicio",
+        "de": "Die Grundfertigkeit heilt die Gruppe und entfernt einen Debuff"
+      }
+    }
+  ],
+  "sorcerer": [
+    {
+      "sources": [
+        "15210000",
+        "15710000"
+      ],
+      "targets": [
+        "15050000"
+      ],
+      "kind": "trigger",
+      "caption": {
+        "en": "Flame Arrow applies Fire Mark through the passive → Blaze",
+        "ja": "パッシブにより火矢で火の印を付与 → 追撃",
+        "es": "Flame Arrow aplica Fire Mark mediante la pasiva → Blaze",
+        "de": "Flame Arrow setzt durch die passive Fertigkeit Fire Mark → Blaze"
+      }
+    },
+    {
+      "sources": [
+        "15040000"
+      ],
+      "targets": [
+        "15060000"
+      ],
+      "kind": "specialization",
+      "caption": {
+        "en": "Skill rank 12 • select cooldown reduction • land a hit",
+        "ja": "スキルLv12・クールタイム短縮を選択・攻撃を命中させる",
+        "es": "Rango 12 • selecciona reducción de enfriamiento • acierta",
+        "de": "Fertigkeitsrang 12 • Abklingzeitverkürzung wählen • treffen"
+      }
+    },
+    {
+      "sources": [
+        "15150000"
+      ],
+      "targets": [
+        "15220000"
+      ],
+      "kind": "trigger",
+      "caption": {
+        "en": "Frost enables the follow-up; immune targets use their proc",
+        "ja": "凍結で追撃可能。無効な対象には専用の発動条件",
+        "es": "Frost activa el seguimiento; los inmunes usan su activación",
+        "de": "Frost ermöglicht den Folgeangriff; immune Ziele nutzen ihren Auslöser"
+      }
+    }
+  ],
+  "spiritmaster": [
+    {
+      "sources": [
+        {
+          "label": {
+            "en": "4 spirit-skill activations",
+            "ja": "精霊スキルを4回使用",
+            "es": "4 activaciones de habilidades de espíritu",
+            "de": "4 Anwendungen von Geisterfertigkeiten"
+          }
+        }
+      ],
+      "targets": [
+        "16300000"
+      ],
+      "kind": "trigger",
+      "caption": {
+        "en": "Four Elements → spend Fusion before gaining more stacks",
+        "ja": "四元素 → 融合を使用してから次のスタックを獲得",
+        "es": "Four Elements → usa Fusion antes de acumular más cargas",
+        "de": "Four Elements → Fusion einsetzen, bevor weitere Stapel gesammelt werden"
+      }
+    },
+    {
+      "sources": [
+        "16100000",
+        "16110000",
+        "16120000",
+        "16130000"
+      ],
+      "targets": [
+        "16330000"
+      ],
+      "kind": "trigger",
+      "caption": {
+        "en": "A summon or spirit-skill action opens a brief window",
+        "ja": "召喚または精霊スキル後の短い発動ウィンドウ",
+        "es": "Una invocación o acción del espíritu abre una ventana breve",
+        "de": "Beschwörung oder Geisteraktion öffnet ein kurzes Fenster"
+      }
+    },
+    {
+      "sources": [
+        "16110000"
+      ],
+      "targets": [
+        {
+          "label": {
+            "en": "MP recovery",
+            "ja": "MP回復",
+            "es": "Recuperación de MP",
+            "de": "MP-Regeneration"
+          }
+        }
+      ],
+      "kind": "resource",
+      "caption": {
+        "en": "Water Spirit restores your MP when its attacks land",
+        "ja": "水の精霊の攻撃命中で本人のMPが回復",
+        "es": "Water Spirit recupera tus MP cuando acierta sus ataques",
+        "de": "Treffer des Wassergeists stellen deine MP wieder her"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+import {chromium} from '@playwright/test';
+import {writeFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+const output=new URL('./',import.meta.url);
+const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});
+const page=await browser.newPage({viewport:{width:1440,height:1000},deviceScaleFactor:1});
+await page.goto('https://aion2.gaming.tools/build-planner',{waitUntil:'domcontentloaded',timeout:60000});
+await page.waitForTimeout(4000);
+console.log((await page.locator('body').innerText()).slice(0,8500));
+await writeFile(new URL('planner-browser.html',output),await page.content());
+await page.screenshot({path:fileURLToPath(new URL('planner-initial.png',output)),fullPage:false});
+await browser.close();
