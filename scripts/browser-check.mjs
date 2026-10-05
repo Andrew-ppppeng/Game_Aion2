@@ -3,7 +3,7 @@ import {existsSync} from 'node:fs';
 import {mkdir, readFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {chromium, expect} from '@playwright/test';
-import {installGameFixtures} from './qa-fixtures.mjs';
+import {installGameFixtures, installItemIconFixtures} from './qa-fixtures.mjs';
 
 const base = process.env.QA_BASE_URL || 'http://127.0.0.1:3000';
 const output = new URL('../.qa/', import.meta.url);
@@ -19,6 +19,8 @@ const browser = await chromium.launch({headless: true, executablePath});
 const failures = [];
 const context = await browser.newContext({viewport: {width: 1440, height: 1000}, reducedMotion: 'reduce'});
 await installGameFixtures(context);
+await installItemIconFixtures(context);
+await context.route('**/api/analytics', (route) => route.fulfill({status: 204}));
 await context.grantPermissions(['clipboard-read', 'clipboard-write'], {origin: base});
 const page = await context.newPage();
 page.on('pageerror', (error) => failures.push(error.message));
@@ -140,8 +142,8 @@ try {
         for (const identity of classIdentities) {
           const row = page.locator(`[data-class-icon="${identity.id}"]`);
           const asset = guideAssets.find(({id}) => id === `emblem-${identity.id}`);
-          await expect(row.locator('td').nth(1)).toHaveText(identity.names.en);
-          await expect(row.locator('td').nth(2)).toHaveText(identity.names[locale]);
+          await expect(row.locator('h3')).toHaveText(identity.names[locale]);
+          if (locale !== 'en') await expect(row.locator('.class-english-name')).toHaveText(identity.names.en);
           await expect(row.locator('img')).toHaveAttribute('width', String(asset.width));
           await expect(row.locator('img')).toHaveAttribute('height', String(asset.height));
           const source = await row.locator('img').evaluate((image) => {
@@ -151,9 +153,29 @@ try {
           assert.equal(source, asset.src, `${locale}/${identity.id}: matching official emblem`);
           await expect(row.locator('button')).toHaveAttribute('aria-label', new RegExp(identity.names[locale]));
         }
-        for (const classSlug of ['gladiator', 'ranger', 'spiritmaster'].filter((classSlug) => slugs.includes(classSlug))) {
+        for (const classSlug of classIdentities.map(({id}) => id)) {
           await expect(page.locator(`.class-guide-card[data-class="${classSlug}"] a`)).toHaveAttribute('href', `${locale === 'en' ? '' : `/${locale}`}/${classSlug}`);
         }
+        await expect(page.locator('h2#class-icons')).toHaveCount(0);
+      }
+      if (classIdentities.some(({id}) => id === slug)) {
+        await expect(page.locator(`[data-skill-focus="${slug}"] tbody tr`)).toHaveCount(12);
+        const groups = page.locator(`[data-skill-class="${slug}"] details`);
+        await expect(groups).toHaveCount(3);
+        await expect(groups.nth(0)).toHaveAttribute('open', '');
+        await expect(groups.nth(1)).not.toHaveAttribute('open');
+        await expect(groups.nth(2)).not.toHaveAttribute('open');
+        for (const [index, count] of [12, 10, 13].entries()) {
+          await expect(groups.nth(index).locator('tbody tr')).toHaveCount(count);
+          if (index > 0) {
+            await groups.nth(index).locator('summary').click();
+            await expect(groups.nth(index).locator('tbody tr').first()).toBeVisible();
+            await groups.nth(index).locator('summary').click();
+            await expect(groups.nth(index).locator('tbody tr').first()).toBeHidden();
+          }
+        }
+        if (slug === 'ranger' || slug === 'spiritmaster') await expect(page.locator('#solo-party-and-pvp')).toHaveCount(1);
+        if (slug === 'chanter') await expect(page.locator('#party-role-switch')).toHaveCount(1);
       }
       await expect(page.locator('.guide-figure, .guide-diagram')).not.toHaveCount(0);
       for (const [id, visual] of Object.entries(meta.visuals)) await expect(page.locator(`[data-visual-id="${id}"] figcaption p`)).toHaveText(visual.caption);
@@ -210,7 +232,7 @@ try {
   await page.locator('.class-finder button').filter({hasText: 'Healing & recovery'}).click();
   await expect(page.locator('.class-guide-card')).toHaveCount(1);
   await expect(page.locator('.class-guide-card')).toHaveAttribute('data-class', 'cleric');
-  const imageTrigger = page.locator('.class-guide-card .guide-image-button');
+  const imageTrigger = page.locator('.class-guide-card > .guide-image-button');
   await imageTrigger.click();
   await expect(page.locator('.guide-image-dialog')).toBeVisible();
   assert.equal(await page.evaluate(() => document.body.style.overflow), 'hidden');
@@ -231,9 +253,10 @@ try {
     await page.goto(`${base}/classes`, {waitUntil: 'networkidle'});
   }
   const templarRoleLink = page.locator('.class-guide-card[data-class="templar"] a');
-  await expect(templarRoleLink).toHaveAttribute('href', '#choose-a-role');
+  await expect(templarRoleLink).toHaveAttribute('href', '/templar');
   await templarRoleLink.click();
-  await expect(page.locator('#choose-a-role')).toBeInViewport();
+  await page.waitForURL('**/templar');
+  await expect(page.locator('h1')).toHaveText((await readJson('src/content/en/templar.json')).title);
 
   await page.goto(`${base}/leveling`, {waitUntil: 'networkidle'});
   await page.locator('[data-guide-filter="faction"] select').selectOption('elyos');

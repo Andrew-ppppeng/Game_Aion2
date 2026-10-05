@@ -531,14 +531,18 @@ h1, h2, h3, p {margin: 0;}
 .guide-filter select {background: #17283c; border: 1px solid #ffffff23; border-radius: 4px; padding: 9px 12px; min-height: 44px; font-size: 14px; max-width: 100%;}
 [data-faction-section][hidden], [data-region-section][hidden] {display: none !important;}
 .class-finder {margin: 22px 0 30px;}
-.class-icon-reference {margin: 22px 0 30px;}
-.class-icon-reference .guide-table-block {margin-top: 16px;}
-.class-icon-reference th:first-child {width: 112px;}
-.class-icon-preview {width: 64px;}
-.class-icon-preview .guide-image-button {min-height: 66px;}
-.class-icon-preview .guide-image-zoom {right: 2px; bottom: 2px; padding: 3px;}
+.class-card-heading {display: flex; align-items: center; gap: 10px; margin: 12px 13px 7px;}
+.class-card-heading > div:last-child {min-width: 0;}
+.class-icon-preview {width: 48px; flex-shrink: 0;}
+.class-icon-preview .guide-image-button {min-height: 49px; border-radius: 4px;}
+.class-guide-card .class-icon-preview .guide-image-button > img {aspect-ratio: auto;}
+.class-english-name {display: block; font-size: 12px; color: #8eacc3;}
+.class-skill-list details {margin: 12px 0; border: 1px solid #ffffff18; border-radius: 6px; padding: 12px;}
+.class-skill-list summary {cursor: pointer; min-height: 32px; font-weight: 600;}
+.class-skill-list th small, .class-skill-focus th small {display: block; font-weight: 400; color: #8eacc3; font-size: 12px;}
+.class-icon-preview .guide-image-zoom {right: 2px; bottom: 2px; padding: 3px; opacity: 0;}
+.class-icon-preview .guide-image-button:hover .guide-image-zoom, .class-icon-preview .guide-image-button:focus-visible .guide-image-zoom {opacity: 1;}
 .class-icon-preview .guide-image-zoom > span {display: none;}
-.class-icon-reference .guide-asset-credit {margin-top: 12px;}
 .article-body .class-finder-note {font-size: 14px; color: #a6bdd2;}
 .class-finder fieldset {border: 0; padding: 0; margin: 0 0 20px;}
 .class-finder legend {font-size: 14px; color: #cbdeef; margin-bottom: 10px;}
@@ -550,8 +554,7 @@ h1, h2, h3, p {margin: 0;}
 .class-guide-card .guide-image-button {border: 0; border-radius: 0;}
 .class-guide-card .guide-image-button > img {aspect-ratio: 1.55; object-fit: contain;}
 .class-guide-card .guide-image-zoom > span {display: none;}
-.article-body .class-guide-card h3 {display: flex; align-items: center; gap: 8px; font-size: 16px; margin: 12px 13px 7px; line-height: 1.4;}
-.class-guide-card h3 img {flex-shrink: 0;}
+.article-body .class-guide-card h3 {font-size: 16px; margin: 0; line-height: 1.4; overflow-wrap: anywhere;}
 .article-body .class-guide-card p {margin: 0 13px 8px; font-size: 14px; line-height: 1.65; color: #8eacc3;}
 .class-guide-card > a {display: inline-flex; min-height: 44px; align-items: center; font-size: 14px; margin: 0 13px;}
 .class-finder > .guide-asset-credit {margin-top: 15px;}
@@ -574,6 +577,10 @@ h1, h2, h3, p {margin: 0;}
   .article-layout {gap: 23px;}
 }
 @media (max-width: 639px) {
+  .article-body .class-skill-focus table, .article-body .class-skill-list table {min-width: 0; width: 100%; table-layout: fixed;}
+  .article-body .class-skill-focus th, .article-body .class-skill-focus td, .article-body .class-skill-list th, .article-body .class-skill-list td {overflow-wrap: anywhere; padding: 10px;}
+  .class-skill-focus th:first-child {width: 37%;}
+  .class-skill-list th:first-child {width: 65%;}
   .article-body {font-size: 16px; line-height: 1.85;}
   .article-header {margin-bottom: 23px;}
   .article-region-note {font-size: 12px;}
@@ -586,8 +593,9 @@ h1, h2, h3, p {margin: 0;}
   .guide-checklist label {font-size: 15px;}
   .guide-figure figcaption {font-size: 13px;}
   .class-card-grid {grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px;}
-  .article-body .class-guide-card h3 {font-size: 14px; margin-left: 10px; margin-right: 10px; gap: 5px; overflow-wrap: normal;}
-  .class-guide-card h3 img {width: 22px; height: 23px;}
+  .class-card-heading {margin-left: 10px; margin-right: 10px; gap: 7px;}
+  .article-body .class-guide-card h3 {font-size: 14px;}
+  .class-icon-preview {width: 40px;}
   .article-body .class-guide-card p {margin-left: 10px; margin-right: 10px;}
   .class-guide-card > a {margin-left: 10px; margin-right: 10px;}
   .article-next-section {grid-template-columns: 1fr;}

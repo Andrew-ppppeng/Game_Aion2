@@ -9,7 +9,7 @@ import {localePath, site} from '@/lib/site';
 import {CouponCard} from './coupon-card';
 import {ArticleToc} from './article-toc';
 import {GuideVisual} from './guide-visual';
-import {GuideChecklist, GuideFilter, ClassFinder, ClassIconTable, EventTimers, BudgetPlanner} from './guide-interactions';
+import {GuideChecklist, GuideFilter, ClassFinder, EventTimers, BudgetPlanner} from './guide-interactions';
 import {ArticleNext} from './article-next';
 import {guideAssets} from '@/lib/guide-assets';
 import {nextGuides} from '@/lib/reading-paths';
@@ -19,6 +19,7 @@ import {GuideTable} from './guide-table';
 import {GuideEquipment} from './tools/guide-equipment';
 import {gameEvents} from '@/lib/aion2/data';
 import {shareImagePath} from '@/lib/share-images';
+import {GuideSkillList, GuideSkillFocus, type ClassId} from './guide-skill-list';
 
 export async function ArticlePage({locale, slug}: {locale: Locale; slug: string}) {
   const article = getArticle(locale, slug);
@@ -45,7 +46,8 @@ export async function ArticlePage({locale, slug}: {locale: Locale; slug: string}
       return <GuideChecklist {...metadata.checklist} slug={slug} locale={locale} />;
     },
     GuideClasses: () => <ClassFinder locale={locale} assets={classAssets} />,
-    GuideClassIcons: () => <ClassIconTable locale={locale} assets={classAssets.filter((asset) => asset.id.startsWith('emblem-'))} />,
+    GuideSkillList: ({classId}: {classId: ClassId}) => <GuideSkillList locale={locale} classId={classId} />,
+    GuideSkillFocus: ({classId}: {classId: ClassId}) => <GuideSkillFocus locale={locale} classId={classId} />,
     GuideFaction: ({faction, children}: {faction: string; children: ReactNode}) => <div data-faction-section={faction}>{children}</div>,
     GuideRegion: ({region, children}: {region: string; children: ReactNode}) => <div data-region-section={region}>{children}</div>,
     GuideNext: ({slug: target}: {slug: string}) => <ArticleNext locale={locale} slug={target} inline />,

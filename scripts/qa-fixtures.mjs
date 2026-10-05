@@ -3,6 +3,16 @@ import {readFile} from 'node:fs/promises';
 
 export const readQaJson = async (path) => JSON.parse(await readFile(new URL(`../${path}`, import.meta.url), 'utf8'));
 
+// Keep layout checks independent of transient CDN connections while retaining
+// the exact official icons, dimensions and original image URLs.
+export async function installItemIconFixtures(context) {
+  const manifest = await readQaJson('tests/fixtures/item-icons/sources.json');
+  for (const entry of manifest) {
+    const body = await readFile(new URL(`../tests/fixtures/item-icons/${entry.file}`, import.meta.url));
+    await context.route(entry.sourceUrl, (route) => route.fulfill({status: 200, contentType: 'image/png', body}));
+  }
+}
+
 // Browser checks use archived public responses and never query NC's live API.
 export async function installGameFixtures(context) {
   const [metadata, items, character] = await Promise.all([

@@ -1,0 +1,882 @@
+{
+  "gladiator": [
+    {
+      "id": "11020000",
+      "text": {
+        "en": "Keen Strike restores MP and builds threat. Its rank-12 cooldown option feeds Ruinous Blow.",
+        "ja": "MPを回復し、敵対値を増やします。ランク12の特化でRuinous Blowの再使用を早めます。",
+        "es": "Recupera MP y genera amenaza. La opción de rango 12 reduce la recarga de Ruinous Blow.",
+        "de": "Stellt MP her und erzeugt Bedrohung. Die Option auf Rang 12 verkürzt die Abklingzeit von Ruinous Blow."
+      }
+    },
+    {
+      "id": "11010000",
+      "text": {
+        "en": "Rending Blow hits nearby enemies. Choose reduced MP cost for sustain or the mobility option for movement.",
+        "ja": "近くの敵を攻撃します。継戦にはMP消費軽減、移動が必要なら移動可能化を選びます。",
+        "es": "Golpea enemigos cercanos. Elige menos coste de MP para sostener ataques o movilidad para desplazarte.",
+        "de": "Trifft nahe Gegner. Wähle geringere MP-Kosten für längere Kämpfe oder die Bewegungsoption."
+      }
+    },
+    {
+      "id": "11190000",
+      "text": {
+        "en": "Leaping Slam closes distance. Its on-kill reset is useful between small-enemy pulls.",
+        "ja": "距離を詰めます。敵を倒した際の再使用リセットは連続した雑魚狩りに役立ちます。",
+        "es": "Cierra distancia. Su reinicio al derrotar enemigos sirve para encadenar grupos pequeños.",
+        "de": "Überbrückt Distanz. Der Rücksetzeffekt nach einem Kill hilft bei aufeinanderfolgenden kleinen Gegnergruppen."
+      }
+    },
+    {
+      "id": "11290000",
+      "text": {
+        "en": "Mocking Blade knocks down vulnerable enemies and opens knockdown follow-ups.",
+        "ja": "転倒が有効な敵を倒し、転倒を条件とする追撃につなげます。",
+        "es": "Derriba a enemigos vulnerables y habilita ataques que requieren derribo.",
+        "de": "Wirft anfällige Gegner zu Boden und eröffnet Folgeangriffe mit dieser Voraussetzung."
+      }
+    },
+    {
+      "id": "11170000",
+      "text": {
+        "en": "Overhead Slam requires Knockdown, or a proc against control-immune targets. Use it when the opportunity appears.",
+        "ja": "転倒、または行動不能免疫の敵への発動が条件です。使用可能になったら追撃します。",
+        "es": "Requiere derribo o una activación contra enemigos inmunes al control. Úsalo cuando esté disponible.",
+        "de": "Benötigt Niederschlag oder eine Auslösung gegen kontrollimmune Ziele. Nutze das tatsächliche Zeitfenster."
+      }
+    },
+    {
+      "id": "11280000",
+      "text": {
+        "en": "Sword Aura Rampage requires Stagger. Save it for the stagger window; its movement and resource options change usability.",
+        "ja": "スタガー中の敵に使います。移動や資源回復の特化で、その時間帯の使い勝手が変わります。",
+        "es": "Requiere tambaleo. Resérvalo para esa ventana; las opciones de movimiento y recursos cambian su uso.",
+        "de": "Benötigt Taumeln. Hebe es für dieses Fenster auf; Bewegungs- und Ressourcenoptionen ändern die Nutzbarkeit."
+      }
+    },
+    {
+      "id": "11200000",
+      "text": {
+        "en": "Ankle Slice opens after Parry, or after Leaping Slam with its trigger option. It roots enemies; a specialization adds knockdown.",
+        "ja": "パリィ後、または発動特化を選んだLeaping Slam後に使用できます。束縛を付与し、特化で転倒も狙えます。",
+        "es": "Se abre tras parar o mediante la opción de activación de Leaping Slam. Inmoviliza; una especialización añade derribo.",
+        "de": "Öffnet nach Parieren oder mit der Auslöseoption von Leaping Slam. Hält fest; eine Spezialisierung ergänzt Niederschlag."
+      }
+    },
+    {
+      "id": "11050000",
+      "text": {
+        "en": "Crushing Wave attacks around you. Choose HP absorption for recovery; its critical reset requires the selected option.",
+        "ja": "周囲を攻撃します。回復にはHP吸収を選択。クリティカルでのリセットには対応特化が必要です。",
+        "es": "Ataca a tu alrededor. Usa absorción de HP para recuperarte; el reinicio por crítico requiere su opción.",
+        "de": "Greift um dich herum an. HP-Absorption hilft bei Heilung; der kritische Reset benötigt die gewählte Option."
+      }
+    },
+    {
+      "id": "11360000",
+      "text": {
+        "en": "Rush Strike approaches after Dodge or while flying. Keep it separate from attacks when movement is situational.",
+        "ja": "回避後または飛行中に接近します。状況に応じた移動用に、反復攻撃とは分けて使います。",
+        "es": "Se aproxima tras esquivar o al volar. Sepáralo de ataques repetidos cuando necesites controlar el movimiento.",
+        "de": "Nähert sich nach Ausweichen oder im Flug. Halte es für situationsabhängige Bewegung getrennt."
+      }
+    },
+    {
+      "id": "11300000",
+      "text": {
+        "en": "Aerial Snare follows Knockdown, with a proc against control-immune targets. Its immunity-damage option suits those targets.",
+        "ja": "転倒後、または行動不能免疫の敵への発動時に使います。免疫対象へのダメージ特化を選べます。",
+        "es": "Sigue a un derribo o se activa contra inmunes al control. La opción de daño contra inmunidad sirve para esos objetivos.",
+        "de": "Folgt auf Niederschlag oder löst gegen kontrollimmune Ziele aus. Die Option gegen Immunität passt zu diesen Gegnern."
+      }
+    },
+    {
+      "id": "11100000",
+      "text": {
+        "en": "Ruinous Blow approaches and grants Prepare for Battle. Use its damage buff before your main attack window.",
+        "ja": "接近し、Prepare for Battleを付与します。主要な攻撃時間の前に強化を得ます。",
+        "es": "Se aproxima y otorga Prepare for Battle. Activa su mejora antes de la ventana principal de daño.",
+        "de": "Nähert sich und gewährt Prepare for Battle. Nutze den Schadensbuff vor deinem Hauptangriffsfenster."
+      }
+    },
+    {
+      "id": "11260000",
+      "text": {
+        "en": "Removes Stun, Knockdown, Airborne, Grab, Frost and Fear, then grants status immunity for 5s. Cooldown reduction does not affect it; keep this control break manual.",
+        "ja": "スタン、転倒、空中拘束、つかみ、凍結、恐怖を解除し、5秒の状態異常免疫を得ます。再使用短縮の影響は受けません。独立操作にします。",
+        "es": "Elimina aturdimiento, derribo, elevación, agarre, congelación y miedo; da inmunidad a estados durante 5s. No recibe reducción de recarga. Mantén control manual.",
+        "de": "Entfernt Betäubung, Niederschlag, Luftbindung, Griff, Frost und Furcht, danach 5s Statusimmunität. Abklingverkürzung wirkt nicht; separat bedienen."
+      }
+    }
+  ],
+  "templar": [
+    {
+      "id": "12010000",
+      "text": {
+        "en": "Vicious Strike restores MP and builds threat. Its rank-12 option reduces Warding Strike cooldown on hit.",
+        "ja": "MPを回復し、敵対値を増やします。ランク12の特化で命中時にWarding Strikeの再使用を短縮します。",
+        "es": "Recupera MP y genera amenaza. Su opción de rango 12 reduce la recarga de Warding Strike al golpear.",
+        "de": "Stellt MP her und erzeugt Bedrohung. Die Option auf Rang 12 verkürzt bei Treffern Warding Strike."
+      }
+    },
+    {
+      "id": "12040000",
+      "text": {
+        "en": "Pummel builds threat. Select its Punishment cooldown reduction when building that damage loop.",
+        "ja": "敵対値を増やします。Punishmentを軸にする場合は、その再使用短縮を選びます。",
+        "es": "Genera amenaza. Selecciona la reducción de recarga de Punishment para ese ciclo de daño.",
+        "de": "Erzeugt Bedrohung. Wähle die Verkürzung von Punishment für diesen Schadensablauf."
+      }
+    },
+    {
+      "id": "12130000",
+      "text": {
+        "en": "Poach pulls a vulnerable target. Its immunity option moves you to an unpullable target; its kill reset helps farming.",
+        "ja": "引き寄せ可能な敵を引きます。免疫対象へ自分が接近する特化や、撃破時リセットを選べます。",
+        "es": "Atrae a un objetivo vulnerable. Una opción te acerca al inmune; el reinicio al matar facilita el farmeo.",
+        "de": "Zieht ein anfälliges Ziel heran. Eine Option bewegt dich zu immunen Zielen; Kill-Resets helfen beim Farmen."
+      }
+    },
+    {
+      "id": "12100000",
+      "text": {
+        "en": "Shield Smite opens Judgment for a short window. Its MP option removes the cost and restores MP on hit.",
+        "ja": "短いJudgmentの使用時間を作ります。MP特化で消費をなくし、命中時にMPを回復します。",
+        "es": "Habilita Judgment durante una ventana breve. La opción de MP elimina el coste y recupera MP al golpear.",
+        "de": "Öffnet ein kurzes Fenster für Judgment. Die MP-Option entfernt Kosten und stellt bei Treffern MP her."
+      }
+    },
+    {
+      "id": "12240000",
+      "text": {
+        "en": "Follow up within 2s of Shield Smite, Warding Strike or Shield Rush, or within 3s of Doom Shield. Spend this window before activating another trigger.",
+        "ja": "Shield Smite、Warding Strike、Shield Rush後は2秒、Doom Shield後は3秒以内に使用。次の発動スキルの前に追撃します。",
+        "es": "Úsalo en los 2s tras Shield Smite, Warding Strike o Shield Rush, o 3s tras Doom Shield. Consume la ventana antes de otro disparador.",
+        "de": "Innerhalb 2s nach Shield Smite, Warding Strike oder Shield Rush, beziehungsweise 3s nach Doom Shield. Vor neuem Auslöser verbrauchen."
+      }
+    },
+    {
+      "id": "12340000",
+      "text": {
+        "en": "Flash Rampage requires a staggered target. Spend the stagger window on this attack rather than waiting for normal control.",
+        "ja": "スタガー中の敵が条件です。通常の行動阻害を待たず、スタガーの時間に使います。",
+        "es": "Requiere un objetivo tambaleándose. Aprovéchalo en esa ventana en vez de esperar un control normal.",
+        "de": "Benötigt ein taumelndes Ziel. Nutze dieses Fenster, statt auf normale Kontrolle zu warten."
+      }
+    },
+    {
+      "id": "12270000",
+      "text": {
+        "en": "Debilitating Smash opens after Block, or through Shield Smite’s trigger option. It reduces enemy defense.",
+        "ja": "ブロック後、またはShield Smiteの発動特化で使用でき、敵の防御を下げます。",
+        "es": "Se abre tras bloquear o mediante la opción de activación de Shield Smite. Reduce defensa.",
+        "de": "Öffnet nach Blocken oder durch Shield Smites Auslöseoption. Senkt die gegnerische Verteidigung."
+      }
+    },
+    {
+      "id": "12350000",
+      "text": {
+        "en": "Warding Strike heals you, adds damage tolerance and opens Judgment. Vicious Strike can shorten its wait.",
+        "ja": "自分を回復し、被ダメージ耐性を上げ、Judgmentを使えるようにします。Vicious Strikeで待ち時間を短縮できます。",
+        "es": "Te cura, añade tolerancia al daño y habilita Judgment. Vicious Strike puede reducir la espera.",
+        "de": "Heilt dich, erhöht Schadenstoleranz und öffnet Judgment. Vicious Strike kann die Wartezeit verkürzen."
+      }
+    },
+    {
+      "id": "12430000",
+      "text": {
+        "en": "Shield Rush requires Dodge or flight, closes distance and opens Judgment. Avoid moving a boss away from your group.",
+        "ja": "回避後または飛行中に接近し、Judgmentを開きます。ボスを味方から引き離さないよう使います。",
+        "es": "Requiere esquivar o volar, cierra distancia y habilita Judgment. Evita alejar al jefe del grupo.",
+        "de": "Benötigt Ausweichen oder Flug, überbrückt Distanz und öffnet Judgment. Ziehe den Boss dabei nicht von der Gruppe weg."
+      }
+    },
+    {
+      "id": "12300000",
+      "text": {
+        "en": "Annihilate requires Stun or Knockdown, or a proc against control-immune targets. Choose its immunity-damage option for bosses.",
+        "ja": "スタン、転倒、または免疫対象への発動が条件です。ボスには免疫対象へのダメージ特化を検討します。",
+        "es": "Requiere aturdimiento, derribo o activación contra inmunes. Usa su opción de daño contra inmunidad para jefes.",
+        "de": "Benötigt Betäubung, Niederschlag oder eine Auslösung gegen immune Ziele. Wähle dafür die passende Schadensoption."
+      }
+    },
+    {
+      "id": "12090000",
+      "text": {
+        "en": "Punishment is a charged area attack that grants Executor. Faster casting or mobile casting helps finish it safely.",
+        "ja": "チャージ範囲攻撃でExecutorを得ます。詠唱速度や移動可能化の特化で、安全に完了しやすくなります。",
+        "es": "Es un ataque de área cargado que otorga Executor. La velocidad o movilidad de lanzamiento ayudan a terminarlo seguro.",
+        "de": "Ist ein aufgeladener Flächenangriff mit Executor. Schnellere oder mobile Ausführung erleichtert einen sicheren Abschluss."
+      }
+    },
+    {
+      "id": "12260000",
+      "text": {
+        "en": "Removes Stun, Knockdown, Airborne, Grab, Frost and Fear, then grants status immunity for 5s. Cooldown reduction does not affect it; keep this control break manual.",
+        "ja": "スタン、転倒、空中拘束、つかみ、凍結、恐怖を解除し、5秒の状態異常免疫を得ます。再使用短縮の影響は受けません。独立操作にします。",
+        "es": "Elimina aturdimiento, derribo, elevación, agarre, congelación y miedo; da inmunidad a estados durante 5s. No recibe reducción de recarga. Mantén control manual.",
+        "de": "Entfernt Betäubung, Niederschlag, Luftbindung, Griff, Frost und Furcht, danach 5s Statusimmunität. Abklingverkürzung wirkt nicht; separat bedienen."
+      }
+    }
+  ],
+  "assassin": [
+    {
+      "id": "13010000",
+      "text": {
+        "en": "Quick Slice restores MP. Its rank-12 cooldown option helps you use Insignia Explosion more often.",
+        "ja": "MPを回復します。ランク12の特化でInsignia Explosionの使用回数を増やせます。",
+        "es": "Recupera MP. Su opción de rango 12 permite usar Insignia Explosion con más frecuencia.",
+        "de": "Stellt MP her. Die Option auf Rang 12 ermöglicht häufigere Insignia Explosion."
+      }
+    },
+    {
+      "id": "13100000",
+      "text": {
+        "en": "Engraves one Insignia for 10s. Build target stacks before Insignia Explosion; another target does not inherit them.",
+        "ja": "10秒のInsigniaを1層刻みます。対象の層をためてからInsignia Explosion。別の対象に層は移りません。",
+        "es": "Graba una Insignia durante 10s. Acumula en el objetivo antes de Insignia Explosion; otro objetivo no hereda marcas.",
+        "de": "Graviert eine Insignia für 10s. Zielstapel vor Insignia Explosion aufbauen; andere Ziele übernehmen sie nicht."
+      }
+    },
+    {
+      "id": "13070000",
+      "text": {
+        "en": "Shadowstrike moves behind the target. Its critical-damage option and Ambush Stance support the following attack window.",
+        "ja": "対象の背後へ移動します。クリティカルダメージ特化とAmbush Stanceを次の攻撃時間に活用します。",
+        "es": "Te coloca detrás del objetivo. Su opción de daño crítico y Ambush Stance apoyan los ataques siguientes.",
+        "de": "Bewegt dich hinter das Ziel. Die kritische Schadensoption und Ambush Stance unterstützen folgende Angriffe."
+      }
+    },
+    {
+      "id": "13060000",
+      "text": {
+        "en": "Ambush gains damage from a back attack. Face the target from behind before using it.",
+        "ja": "背面攻撃でダメージが増えます。敵の背後から向き直って使います。",
+        "es": "Gana daño al atacar por detrás. Colócate y orienta el ataque desde la espalda.",
+        "de": "Verursacht bei einem Rückenangriff mehr Schaden. Positioniere und richte dich vorher hinter dem Ziel aus."
+      }
+    },
+    {
+      "id": "13350000",
+      "text": {
+        "en": "Heart Gore opens after a critical hit and restores MP. Its critical reset requires the later specialization.",
+        "ja": "クリティカル後に使え、MPも回復します。クリティカルでの再使用リセットは後の特化が必要です。",
+        "es": "Se habilita tras un crítico y recupera MP. El reinicio por crítico requiere una especialización posterior.",
+        "de": "Wird nach einem kritischen Treffer verfügbar und stellt MP her. Kritische Resets benötigen die spätere Spezialisierung."
+      }
+    },
+    {
+      "id": "13340000",
+      "text": {
+        "en": "Storm Rampage requires Stagger. Use the opportunity while the target is staggered.",
+        "ja": "スタガー中の対象に使います。使用可能な時間内に攻撃します。",
+        "es": "Requiere tambaleo. Aprovecha la ventana mientras el objetivo sigue tambaleándose.",
+        "de": "Benötigt Taumeln. Nutze das Zeitfenster, solange der Zustand anhält."
+      }
+    },
+    {
+      "id": "13210000",
+      "text": {
+        "en": "Whirlwind Slice follows Evasion, or Ambush with its trigger option. It can rotate or stun the target.",
+        "ja": "回避後、または発動特化を選んだAmbush後に使え、敵の向き変更やスタンを狙えます。",
+        "es": "Sigue a evasión o a Ambush con su opción de activación. Puede girar o aturdir al objetivo.",
+        "de": "Folgt auf Ausweichen oder Ambush mit seiner Auslöseoption. Kann das Ziel drehen oder betäuben."
+      }
+    },
+    {
+      "id": "13050000",
+      "text": {
+        "en": "Flash Slice crosses to the other side of the target and can blind it. Recheck your position afterward.",
+        "ja": "対象の反対側へ移動し、暗闇を付与できます。使用後の立ち位置を確認します。",
+        "es": "Cruza al otro lado del objetivo y puede cegarlo. Revisa tu posición después.",
+        "de": "Wechselt auf die andere Seite des Ziels und kann blenden. Prüfe danach deine Position."
+      }
+    },
+    {
+      "id": "13360000",
+      "text": {
+        "en": "Infiltrate requires Dodge or flight and moves behind the target. Save it for actual access or repositioning.",
+        "ja": "回避後または飛行中に背後へ移動します。接近や位置調整が必要な場面に使います。",
+        "es": "Requiere esquivar o volar y te coloca detrás. Resérvalo para acceder o recolocarte.",
+        "de": "Benötigt Ausweichen oder Flug und bewegt dich hinter das Ziel. Hebe es für Zugang oder neue Positionierung auf."
+      }
+    },
+    {
+      "id": "13220000",
+      "text": {
+        "en": "Shadow Fall follows Stun, or a proc against control-immune targets. Its HP absorption option provides recovery.",
+        "ja": "スタン後、または免疫対象への発動時に使います。HP吸収の特化で回復できます。",
+        "es": "Sigue a un aturdimiento o se activa contra inmunes. Su opción de absorción de HP aporta recuperación.",
+        "de": "Folgt auf Betäubung oder löst gegen immune Ziele aus. Die HP-Absorption liefert Heilung."
+      }
+    },
+    {
+      "id": "13130000",
+      "text": {
+        "en": "Insignia Explosion scales with target stacks, up to five. Avoid spending a small stack when a full finisher is available.",
+        "ja": "対象のInsigniaが最大5スタックまで多いほど強くなります。十分ためられる場面で早く消費しすぎないようにします。",
+        "es": "Escala con las marcas del objetivo, hasta cinco. Evita gastar pocas si puedes completar el remate.",
+        "de": "Skaliert mit bis zu fünf Zielstapeln. Verbrauche wenige Stapel nicht vorschnell, wenn ein voller Abschluss möglich ist."
+      }
+    },
+    {
+      "id": "13260000",
+      "text": {
+        "en": "Removes Stun, Knockdown, Airborne, Grab, Frost and Fear, then grants status immunity for 5s. Cooldown reduction does not affect it; keep this control break manual.",
+        "ja": "スタン、転倒、空中拘束、つかみ、凍結、恐怖を解除し、5秒の状態異常免疫を得ます。再使用短縮の影響は受けません。独立操作にします。",
+        "es": "Elimina aturdimiento, derribo, elevación, agarre, congelación y miedo; da inmunidad a estados durante 5s. No recibe reducción de recarga. Mantén control manual.",
+        "de": "Entfernt Betäubung, Niederschlag, Luftbindung, Griff, Frost und Furcht, danach 5s Statusimmunität. Abklingverkürzung wirkt nicht; separat bedienen."
+      }
+    }
+  ],
+  "sorcerer": [
+    {
+      "id": "15210000",
+      "text": {
+        "en": "Flame Arrow restores MP and applies Fire Mark through the passive. Its Pyroclasm option adds a fire-damage buff.",
+        "ja": "MPを回復し、パッシブでFire Markを付与します。Pyroclasmの特化は火属性ダメージ強化を追加します。",
+        "es": "Recupera MP y aplica Fire Mark mediante la pasiva. La opción de Pyroclasm añade daño de fuego.",
+        "de": "Stellt MP her und bringt über die passive Fertigkeit Fire Mark an. Die Pyroclasm-Option ergänzt einen Feuerbuff."
+      }
+    },
+    {
+      "id": "15090000",
+      "text": {
+        "en": "Ice Chain slows enemies. Select its Winter’s Shackles cooldown option to connect control and damage buffs.",
+        "ja": "敵を減速します。Winter’s Shacklesの再使用短縮を選ぶと、減速と攻撃強化をつなげられます。",
+        "es": "Ralentiza enemigos. Su opción de recarga de Winter’s Shackles enlaza control y mejoras de daño.",
+        "de": "Verlangsamt Gegner. Die Option für Winter’s Shackles verbindet Kontrolle mit Schadensbuffs."
+      }
+    },
+    {
+      "id": "15040000",
+      "text": {
+        "en": "Firestorm reduces Hellfire cooldown with its rank-12 option. Its MP-cost option supports repeated casts.",
+        "ja": "ランク12の特化でHellfireの再使用を短縮します。MP消費軽減は反復詠唱に役立ちます。",
+        "es": "Reduce la recarga de Hellfire con su opción de rango 12. Menor coste de MP facilita repetirlo.",
+        "de": "Verkürzt mit der Rang-12-Option Hellfire. Geringere MP-Kosten helfen bei wiederholter Nutzung."
+      }
+    },
+    {
+      "id": "15280000",
+      "text": {
+        "en": "Bittercold Wind places an area attack at the target and can root enemies. Cast where the group will remain.",
+        "ja": "対象位置に範囲攻撃を置き、束縛できます。敵が留まる場所に使います。",
+        "es": "Coloca un ataque de área en el objetivo y puede inmovilizar. Lánzalo donde permanezcan los enemigos.",
+        "de": "Platziert einen Flächenangriff am Ziel und kann festhalten. Wirke ihn dort, wo die Gegner bleiben."
+      }
+    },
+    {
+      "id": "15050000",
+      "text": {
+        "en": "Blaze requires Fire Mark and restores MP. Choose delayed damage for offense or HP absorption for solo recovery.",
+        "ja": "Fire Markが条件でMPも回復します。攻撃には遅延ダメージ、ソロ回復にはHP吸収を選べます。",
+        "es": "Requiere Fire Mark y recupera MP. Elige daño retardado para atacar o absorción de HP para jugar solo.",
+        "de": "Benötigt Fire Mark und stellt MP her. Wähle verzögerten Schaden oder HP-Absorption für Soloheilung."
+      }
+    },
+    {
+      "id": "15010000",
+      "text": {
+        "en": "Flame Scattershot requires Stagger. A mobile-casting option helps keep attacking during movement.",
+        "ja": "スタガー中の対象に使います。移動可能化の特化で移動中も攻撃しやすくなります。",
+        "es": "Requiere tambaleo. La opción de lanzamiento móvil ayuda a seguir atacando al desplazarte.",
+        "de": "Benötigt Taumeln. Die mobile Option hilft bei Angriffen während der Bewegung."
+      }
+    },
+    {
+      "id": "15150000",
+      "text": {
+        "en": "Frost can freeze vulnerable targets and open Frost Burst. Its MP option provides another resource tool.",
+        "ja": "凍結が有効な対象に使い、Frost Burstにつなげます。MP特化は追加の資源回復手段です。",
+        "es": "Puede congelar objetivos vulnerables y habilitar Frost Burst. Su opción de MP añade recuperación de recursos.",
+        "de": "Kann anfällige Ziele einfrieren und Frost Burst öffnen. Die MP-Option liefert zusätzliche Ressourcen."
+      }
+    },
+    {
+      "id": "15110000",
+      "text": {
+        "en": "Winter’s Shackles slows enemies. Its damage-boost option adds a short offensive window.",
+        "ja": "敵を減速します。ダメージ強化の特化で短い攻撃時間を作ります。",
+        "es": "Ralentiza enemigos. Su opción de aumento de daño crea una ventana ofensiva breve.",
+        "de": "Verlangsamt Gegner. Die Schadensoption erzeugt ein kurzes offensives Fenster."
+      }
+    },
+    {
+      "id": "15220000",
+      "text": {
+        "en": "Frost Burst requires Frost, or a proc against control-immune targets. Use its actual trigger, not a fixed button order.",
+        "ja": "Frost、または免疫対象への発動が条件です。固定の順番ではなく、実際の発動を見て使います。",
+        "es": "Requiere Frost o una activación contra inmunes. Sigue la condición real, no un orden fijo.",
+        "de": "Benötigt Frost oder eine Auslösung gegen immune Ziele. Folge der echten Bedingung statt einer festen Tastenfolge."
+      }
+    },
+    {
+      "id": "15310000",
+      "text": {
+        "en": "Wish of Concentration increases Attack and Accuracy. Use it before charged damage; choose resource options if MP collapses.",
+        "ja": "攻撃力と命中を強化します。チャージ攻撃前に使い、MPが続かない場合は資源特化を選びます。",
+        "es": "Aumenta ataque y precisión. Úsalo antes del daño cargado; elige recursos si el MP se agota.",
+        "de": "Erhöht Angriff und Genauigkeit. Nutze es vor aufgeladenem Schaden; wähle Ressourcenoptionen bei MP-Problemen."
+      }
+    },
+    {
+      "id": "15060000",
+      "text": {
+        "en": "Hellfire is a charged area attack. Faster or mobile casting trades a specialization choice for a safer cast window.",
+        "ja": "チャージ範囲攻撃です。高速化や移動可能化を選ぶと、安全に詠唱できる時間を確保しやすくなります。",
+        "es": "Es un ataque de área cargado. Lanzamiento rápido o móvil facilita completar la carga con seguridad.",
+        "de": "Ist ein aufgeladener Flächenangriff. Schnellere oder mobile Ausführung erleichtert ein sicheres Zeitfenster."
+      }
+    },
+    {
+      "id": "15240000",
+      "text": {
+        "en": "Removes Stun, Knockdown, Airborne, Grab, Frost and Fear, then grants status immunity for 5s. Cooldown reduction does not affect it; keep this control break manual.",
+        "ja": "スタン、転倒、空中拘束、つかみ、凍結、恐怖を解除し、5秒の状態異常免疫を得ます。再使用短縮の影響は受けません。独立操作にします。",
+        "es": "Elimina aturdimiento, derribo, elevación, agarre, congelación y miedo; da inmunidad a estados durante 5s. No recibe reducción de recarga. Mantén control manual.",
+        "de": "Entfernt Betäubung, Niederschlag, Luftbindung, Griff, Frost und Furcht, danach 5s Statusimmunität. Abklingverkürzung wirkt nicht; separat bedienen."
+      }
+    }
+  ],
+  "ranger": [
+    {
+      "id": "14020000",
+      "text": {
+        "en": "Snipe restores MP. Its rank-12 option reduces Deadshot cooldown on hit.",
+        "ja": "MPを回復します。ランク12の特化で命中時にDeadshotの再使用を短縮します。",
+        "es": "Recupera MP. Su opción de rango 12 reduce la recarga de Deadshot al golpear.",
+        "de": "Stellt MP her. Die Option auf Rang 12 verkürzt bei Treffern Deadshot."
+      }
+    },
+    {
+      "id": "14340000",
+      "text": {
+        "en": "Tempest Shot attacks a small area around your target. Lower MP cost supports repeated pulls.",
+        "ja": "対象周辺の小範囲を攻撃します。MP消費軽減は連続した狩りに役立ちます。",
+        "es": "Ataca una zona pequeña alrededor del objetivo. Menor coste de MP ayuda en grupos sucesivos.",
+        "de": "Trifft einen kleinen Bereich um das Ziel. Niedrigere MP-Kosten helfen bei wiederholten Gruppen."
+      }
+    },
+    {
+      "id": "14130000",
+      "text": {
+        "en": "Snare Shot slows enemies and enables Burst Arrow. Use control before its dependent attack.",
+        "ja": "敵を減速し、Burst Arrowの条件を作ります。必要な減速を先に付けます。",
+        "es": "Ralentiza enemigos y habilita Burst Arrow. Aplica el control antes del ataque dependiente.",
+        "de": "Verlangsamt Gegner und ermöglicht Burst Arrow. Wende die Kontrolle vor dem abhängigen Angriff an."
+      }
+    },
+    {
+      "id": "14090000",
+      "text": {
+        "en": "Marking Shot moves you in the input direction and grants Precision. Use it before Deadshot and watch your landing position.",
+        "ja": "入力方向へ移動しPrecisionを得ます。Deadshotの前に使い、移動先の安全も確認します。",
+        "es": "Te mueve en la dirección indicada y otorga Precision. Úsalo antes de Deadshot y vigila dónde terminas.",
+        "de": "Bewegt dich in Eingaberichtung und gewährt Precision. Nutze es vor Deadshot und beachte die neue Position."
+      }
+    },
+    {
+      "id": "14050000",
+      "text": {
+        "en": "Drill Dart opens after a critical hit. It applies bleeding and healing reduction, and restores MP if its own hit is critical.",
+        "ja": "クリティカル命中後に使用できます。出血と被回復量減少を付与し、この攻撃もクリティカルならMPを回復します。",
+        "es": "Se habilita tras un crítico. Aplica sangrado y reducción de curación; recupera MP si su propio golpe es crítico.",
+        "de": "Öffnet nach einem kritischen Treffer. Verursacht Blutung und Heilreduktion; ein eigener kritischer Treffer stellt MP her."
+      }
+    },
+    {
+      "id": "14330000",
+      "text": {
+        "en": "Arrow Scattershot requires Stagger. Use the boss stagger window rather than forcing it into every opener.",
+        "ja": "スタガーが条件です。毎回の起手に固定せず、ボスのスタガー時間に使います。",
+        "es": "Requiere tambaleo. Úsalo en esa ventana del jefe, sin forzarlo en cada apertura.",
+        "de": "Benötigt Taumeln. Nutze das Bossfenster, statt es in jede Eröffnung zu zwingen."
+      }
+    },
+    {
+      "id": "14110000",
+      "text": {
+        "en": "Gale Arrow grants combat speed and damage boosts after hitting. Use it to prepare your attack window.",
+        "ja": "命中後に戦闘速度とダメージ強化を得ます。攻撃時間の準備に使います。",
+        "es": "Otorga velocidad de combate y daño al golpear. Prepara con ella tu ventana de ataque.",
+        "de": "Gewährt bei Treffern Kampftempo und Schadensbuffs. Bereite damit dein Angriffsfenster vor."
+      }
+    },
+    {
+      "id": "14170000",
+      "text": {
+        "en": "Explosion Trap is placed at your location and triggers when stepped on. Place it on the enemy’s approach path.",
+        "ja": "自分の場所に設置し、踏まれると発動します。敵が近づく経路に置きます。",
+        "es": "Se coloca donde estás y se activa al pisarla. Sitúala en la ruta de aproximación del enemigo.",
+        "de": "Liegt an deinem Standort und löst beim Betreten aus. Platziere sie im Annäherungsweg des Gegners."
+      }
+    },
+    {
+      "id": "14080000",
+      "text": {
+        "en": "Burst Arrow requires Slow or Root. Confirm the effect is active on the target before using it.",
+        "ja": "減速または束縛が条件です。対象にその効果が残っている間に使います。",
+        "es": "Requiere ralentización o inmovilización. Confirma que el efecto siga activo antes de usarla.",
+        "de": "Benötigt Verlangsamung oder Festhalten. Prüfe den aktiven Zustand am Ziel vor der Nutzung."
+      }
+    },
+    {
+      "id": "14070000",
+      "text": {
+        "en": "Suppressing Arrow requires Precision and can stun. Marking Shot supplies that buff.",
+        "ja": "Precisionが条件で、スタンを狙えます。Marking Shotで強化を得ます。",
+        "es": "Requiere Precision y puede aturdir. Marking Shot proporciona la mejora.",
+        "de": "Benötigt Precision und kann betäuben. Marking Shot liefert diesen Buff."
+      }
+    },
+    {
+      "id": "14010000",
+      "text": {
+        "en": "Deadshot is charged and deals more damage during Precision. Use Marking Shot first and avoid unsafe stationary casts.",
+        "ja": "チャージ攻撃でPrecision中にダメージが増えます。Marking Shotを先に使い、危険な場所で立ち止まらないようにします。",
+        "es": "Se carga y gana daño durante Precision. Usa Marking Shot primero y evita cargas inmóviles peligrosas.",
+        "de": "Wird aufgeladen und verursacht mit Precision mehr Schaden. Nutze zuerst Marking Shot und lade nicht an gefährlichen Stellen."
+      }
+    },
+    {
+      "id": "14260000",
+      "text": {
+        "en": "Removes Stun, Knockdown, Airborne, Grab, Frost and Fear, then grants status immunity for 5s. Cooldown reduction does not affect it; keep this control break manual.",
+        "ja": "スタン、転倒、空中拘束、つかみ、凍結、恐怖を解除し、5秒の状態異常免疫を得ます。再使用短縮の影響は受けません。独立操作にします。",
+        "es": "Elimina aturdimiento, derribo, elevación, agarre, congelación y miedo; da inmunidad a estados durante 5s. No recibe reducción de recarga. Mantén control manual.",
+        "de": "Entfernt Betäubung, Niederschlag, Luftbindung, Griff, Frost und Furcht, danach 5s Statusimmunität. Abklingverkürzung wirkt nicht; separat bedienen."
+      }
+    }
+  ],
+  "spiritmaster": [
+    {
+      "id": "16010000",
+      "text": {
+        "en": "Cold Shock restores MP. Use it between spirit actions instead of waiting with no resource recovery.",
+        "ja": "MPを回復します。精霊の行動の合間に使い、資源を回復しながら攻撃します。",
+        "es": "Recupera MP. Úsalo entre acciones del espíritu en vez de esperar sin recuperar recursos.",
+        "de": "Stellt MP her. Nutze es zwischen Geistaktionen, statt ohne Ressourcenregeneration zu warten."
+      }
+    },
+    {
+      "id": "16040000",
+      "text": {
+        "en": "Combustion attacks around the target. Choose lower MP cost for sustain or single-target damage for bosses.",
+        "ja": "対象周辺を攻撃します。継戦にはMP軽減、ボスには単体向けダメージ特化を選べます。",
+        "es": "Ataca alrededor del objetivo. Elige menor coste de MP para sostenerte o daño a un objetivo para jefes.",
+        "de": "Greift um das Ziel an. Wähle geringere MP-Kosten oder Einzelzielschaden für Bosse."
+      }
+    },
+    {
+      "id": "16100000",
+      "text": {
+        "en": "Fire Spirit delivers area damage. Its skill activation option helps produce more spirit-skill opportunities.",
+        "ja": "範囲ダメージを与える精霊です。スキル発動率の特化で、精霊スキルの機会を増やします。",
+        "es": "Aporta daño de área. Su opción de activación genera más oportunidades de habilidades del espíritu.",
+        "de": "Liefert Flächenschaden. Die Auslöseoption schafft mehr Gelegenheiten für Geistfertigkeiten."
+      }
+    },
+    {
+      "id": "16110000",
+      "text": {
+        "en": "Water Spirit attacks one target and restores your MP when its attacks land. Use it when resources limit the loop.",
+        "ja": "単体を攻撃し、命中時に自分のMPを回復します。MP不足で攻撃が止まる場面に役立ちます。",
+        "es": "Ataca un objetivo y recupera tu MP al golpear. Úsalo cuando los recursos limiten el ciclo.",
+        "de": "Greift ein Ziel an und stellt bei Treffern deine MP her. Nutze ihn, wenn Ressourcen den Ablauf begrenzen."
+      }
+    },
+    {
+      "id": "16140000",
+      "text": {
+        "en": "Jointstrike: Curse applies damage over time and reduces damage dealt to you. Its coordinated attack depends on the active spirit.",
+        "ja": "持続ダメージを付け、自分へのダメージを減らします。連携攻撃の内容は現在の精霊で変わります。",
+        "es": "Aplica daño periódico y reduce el daño hacia ti. El ataque coordinado depende del espíritu activo.",
+        "de": "Verursacht Schaden über Zeit und verringert Schaden gegen dich. Der gemeinsame Angriff hängt vom aktiven Geist ab."
+      }
+    },
+    {
+      "id": "16340000",
+      "text": {
+        "en": "Rapid Scattershot requires Stagger. Use it during the stagger opportunity while preserving summon management.",
+        "ja": "スタガーが条件です。精霊管理を続けながら、その時間帯に使います。",
+        "es": "Requiere tambaleo. Aprovecha la ventana manteniendo la gestión de invocaciones.",
+        "de": "Benötigt Taumeln. Nutze das Fenster und behalte die Beschwörungsverwaltung bei."
+      }
+    },
+    {
+      "id": "16130000",
+      "text": {
+        "en": "Earth Spirit builds threat and has defensive stat scaling. Watch its health when using it to hold an enemy.",
+        "ja": "敵対値を増やし、防御向けに成長します。敵を引き受けさせる際は精霊のHPも見ます。",
+        "es": "Genera amenaza y escala defensivamente. Vigila su HP si lo usas para retener enemigos.",
+        "de": "Erzeugt Bedrohung und wächst defensiv. Beobachte seine HP, wenn er Gegner halten soll."
+      }
+    },
+    {
+      "id": "16330000",
+      "text": {
+        "en": "Dimensional Control briefly opens after a summon or spirit-skill activation. Use the available window promptly; it also restores MP.",
+        "ja": "精霊召喚や精霊スキル発動後の短い使用可能時間に使います。MPも回復します。",
+        "es": "Se abre brevemente tras una invocación o activación de habilidad del espíritu. Aprovecha la ventana; también recupera MP.",
+        "de": "Öffnet kurz nach Beschwörung oder Geistfertigkeit. Nutze das verfügbare Fenster; es stellt auch MP her."
+      }
+    },
+    {
+      "id": "16120000",
+      "text": {
+        "en": "Wind Spirit supplies area damage and healing to you. It is useful when recovery matters more than a shorter summon sequence.",
+        "ja": "範囲攻撃と自分の回復を行います。召喚回数を減らすより回復が必要な場面で役立ちます。",
+        "es": "Aporta daño de área y te cura. Sirve cuando recuperarte importa más que acortar las invocaciones.",
+        "de": "Liefert Flächenschaden und heilt dich. Hilft, wenn Heilung wichtiger als eine kürzere Beschwörungsfolge ist."
+      }
+    },
+    {
+      "id": "16070000",
+      "text": {
+        "en": "Soul’s Cry fears vulnerable enemies. Keep it available for control instead of burying it in boss damage.",
+        "ja": "恐怖が有効な敵を制御します。ボス用の反復攻撃に埋め込まず、必要な時に使います。",
+        "es": "Causa miedo a enemigos vulnerables. Resérvalo para control en vez de incluirlo en daño repetido al jefe.",
+        "de": "Versetzt anfällige Gegner in Furcht. Halte es für Kontrolle statt im wiederholten Bossschaden bereit."
+      }
+    },
+    {
+      "id": "16300000",
+      "text": {
+        "en": "Elemental Fusion requires Four Elements from four spirit-skill activations. Spend it before further activations are wasted.",
+        "ja": "精霊スキル4回分でFour Elementsを得ると使えます。追加の獲得が止まるため、使える時に消費します。",
+        "es": "Requiere Four Elements tras cuatro activaciones de habilidades de espíritu. Gástalo antes de desperdiciar nuevas activaciones.",
+        "de": "Benötigt Four Elements aus vier Geistfertigkeits-Auslösungen. Verbrauche es, bevor weitere Auslösungen verloren gehen."
+      }
+    },
+    {
+      "id": "16200000",
+      "text": {
+        "en": "Removes Stun, Knockdown, Airborne, Grab, Frost and Fear, then grants status immunity for 5s. Cooldown reduction does not affect it; keep this control break manual.",
+        "ja": "スタン、転倒、空中拘束、つかみ、凍結、恐怖を解除し、5秒の状態異常免疫を得ます。再使用短縮の影響は受けません。独立操作にします。",
+        "es": "Elimina aturdimiento, derribo, elevación, agarre, congelación y miedo; da inmunidad a estados durante 5s. No recibe reducción de recarga. Mantén control manual.",
+        "de": "Entfernt Betäubung, Niederschlag, Luftbindung, Griff, Frost und Furcht, danach 5s Statusimmunität. Abklingverkürzung wirkt nicht; separat bedienen."
+      }
+    }
+  ],
+  "cleric": [
+    {
+      "id": "17010000",
+      "text": {
+        "en": "Earth’s Retribution restores MP. Its Discharge cooldown option brings Bolt back sooner.",
+        "ja": "MPを回復します。Dischargeの再使用短縮特化でBoltを早く使えるようにします。",
+        "es": "Recupera MP. Su opción de recarga mediante Discharge permite reutilizar Bolt antes.",
+        "de": "Stellt MP her. Die Discharge-Option lässt Bolt früher wieder verfügbar werden."
+      }
+    },
+    {
+      "id": "17040000",
+      "text": {
+        "en": "Judgment Thunder hits around the target. Use it when healing is stable and the damage window is safe.",
+        "ja": "対象周辺を攻撃します。回復が安定している安全な攻撃時間に使います。",
+        "es": "Golpea alrededor del objetivo. Úsalo cuando la curación esté estable y puedas atacar seguro.",
+        "de": "Trifft um das Ziel herum. Nutze es bei stabiler Heilung und einem sicheren Angriffsfenster."
+      }
+    },
+    {
+      "id": "17080000",
+      "text": {
+        "en": "Debilitating Mark reduces enemy damage output and applies damage over time. Its defense-reduction option adds offense.",
+        "ja": "敵の与ダメージを下げ、持続ダメージを付けます。防御低下の特化は攻撃面も補います。",
+        "es": "Reduce el daño enemigo y aplica daño periódico. Su opción de reducción de defensa añade presión ofensiva.",
+        "de": "Senkt gegnerischen Schaden und verursacht Schaden über Zeit. Die Verteidigungsoption ergänzt die Offensive."
+      }
+    },
+    {
+      "id": "17150000",
+      "text": {
+        "en": "Divine Aura stays where summoned and attacks a selected target. Place it where it can keep contributing during the fight.",
+        "ja": "召喚位置に留まり、選んだ対象を攻撃します。戦闘中も攻撃が届く場所に置きます。",
+        "es": "Permanece donde la invocas y ataca al objetivo elegido. Colócala donde pueda seguir contribuyendo.",
+        "de": "Bleibt am Beschwörungsort und greift das gewählte Ziel an. Platziere sie für anhaltenden Beitrag im Kampf."
+      }
+    },
+    {
+      "id": "17070000",
+      "text": {
+        "en": "Chain of Torment reduces enemy damage tolerance and opens Condemnation on that target. Refresh the debuff before it expires.",
+        "ja": "敵のダメージ耐性を下げ、Condemnationの条件を作ります。減益の切れ目を短くします。",
+        "es": "Reduce la tolerancia al daño y habilita Condemnation. Renueva el perjuicio antes de que expire.",
+        "de": "Senkt Schadenstoleranz und öffnet Condemnation am Ziel. Erneuere den Effekt vor seinem Ablauf."
+      }
+    },
+    {
+      "id": "17370000",
+      "text": {
+        "en": "Lightning Strike Scattershot requires Stagger. Use it during a safe stagger window without delaying needed healing.",
+        "ja": "スタガーが条件です。必要な回復を遅らせず、安全な時間帯に使います。",
+        "es": "Requiere tambaleo. Úsalo en una ventana segura sin retrasar curaciones necesarias.",
+        "de": "Benötigt Taumeln. Nutze ein sicheres Fenster, ohne nötige Heilung zu verzögern."
+      }
+    },
+    {
+      "id": "17090000",
+      "text": {
+        "en": "Light of Regeneration provides party healing over time. Start it before damage accumulates, then add direct healing if needed.",
+        "ja": "パーティを継続回復します。被ダメージが重なる前に使い、必要に応じて即時回復を追加します。",
+        "es": "Cura periódicamente al grupo. Actívala antes de acumular daño y añade curación directa si hace falta.",
+        "de": "Heilt die Gruppe über Zeit. Starte vor anwachsenden Schäden und ergänze bei Bedarf direkte Heilung."
+      }
+    },
+    {
+      "id": "17350000",
+      "text": {
+        "en": "Condemnation requires Chain of Torment. A later critical-reset option changes how often you can repeat it.",
+        "ja": "Chain of Tormentが条件です。後のクリティカルリセット特化で繰り返せる頻度が変わります。",
+        "es": "Requiere Chain of Torment. Una opción posterior de reinicio por crítico cambia su repetición.",
+        "de": "Benötigt Chain of Torment. Eine spätere kritische Reset-Option verändert die Wiederholbarkeit."
+      }
+    },
+    {
+      "id": "17100000",
+      "text": {
+        "en": "Healing Light heals you and the party member with the lowest HP in range. It is not a freely aimed single-ally heal.",
+        "ja": "範囲内で自分とHPが最も低いパーティメンバーを回復します。任意の味方一人を狙う回復ではありません。",
+        "es": "Te cura y cura al miembro con menos HP dentro del alcance. No apunta libremente a un aliado concreto.",
+        "de": "Heilt dich und das Gruppenmitglied mit den niedrigsten HP in Reichweite. Es ist keine frei gezielte Einzelheilung."
+      }
+    },
+    {
+      "id": "17120000",
+      "text": {
+        "en": "Radiant Recovery heals the party and removes one debuff by default. Keep it ready for removable harmful effects.",
+        "ja": "基本効果でパーティを回復し、減益を1つ解除します。解除可能な有害効果に使えるようにします。",
+        "es": "Cura al grupo y elimina un perjuicio de base. Tenla preparada para efectos dañinos eliminables.",
+        "de": "Heilt die Gruppe und entfernt bereits standardmäßig einen negativen Effekt. Halte es für entfernbare Effekte bereit."
+      }
+    },
+    {
+      "id": "17060000",
+      "text": {
+        "en": "Bolt is charged area damage. Faster casting helps complete it between mechanics; cancel offense for urgent recovery.",
+        "ja": "チャージ範囲攻撃です。高速化でギミックの合間に完了しやすくなりますが、緊急回復を優先します。",
+        "es": "Es daño de área cargado. Lanzar más rápido ayuda entre mecánicas; interrumpe daño para recuperar al grupo.",
+        "de": "Verursacht aufgeladenen Flächenschaden. Schnellere Ausführung hilft zwischen Mechaniken; unterbrich für dringende Heilung."
+      }
+    },
+    {
+      "id": "17240000",
+      "text": {
+        "en": "Removes Stun, Knockdown, Airborne, Grab, Frost and Fear, then grants status immunity for 5s. Cooldown reduction does not affect it; keep this control break manual.",
+        "ja": "スタン、転倒、空中拘束、つかみ、凍結、恐怖を解除し、5秒の状態異常免疫を得ます。再使用短縮の影響は受けません。独立操作にします。",
+        "es": "Elimina aturdimiento, derribo, elevación, agarre, congelación y miedo; da inmunidad a estados durante 5s. No recibe reducción de recarga. Mantén control manual.",
+        "de": "Entfernt Betäubung, Niederschlag, Luftbindung, Griff, Frost und Furcht, danach 5s Statusimmunität. Abklingverkürzung wirkt nicht; separat bedienen."
+      }
+    }
+  ],
+  "chanter": [
+    {
+      "id": "18010000",
+      "text": {
+        "en": "Onslaught restores MP. Its rank-12 option shortens Spinning Strike cooldown on hit.",
+        "ja": "MPを回復します。ランク12の特化で命中時にSpinning Strikeの再使用を短縮します。",
+        "es": "Recupera MP. Su opción de rango 12 reduce la recarga de Spinning Strike al golpear.",
+        "de": "Stellt MP her. Die Option auf Rang 12 verkürzt bei Treffern Spinning Strike."
+      }
+    },
+    {
+      "id": "18040000",
+      "text": {
+        "en": "Incandescent Blow attacks nearby enemies. Lower MP cost keeps ordinary attacks sustainable.",
+        "ja": "近くの敵を攻撃します。MP消費軽減で通常の攻撃を継続しやすくなります。",
+        "es": "Ataca enemigos cercanos. Menor coste de MP ayuda a sostener ataques ordinarios.",
+        "de": "Trifft nahe Gegner. Niedrigere MP-Kosten halten normale Angriffe aufrecht."
+      }
+    },
+    {
+      "id": "18090000",
+      "text": {
+        "en": "Rushing Smash closes distance and restores MP. The on-kill reset helps repeated small pulls.",
+        "ja": "接近しMPを回復します。撃破時リセットは連続した小規模の狩りに役立ちます。",
+        "es": "Cierra distancia y recupera MP. El reinicio al matar ayuda en grupos pequeños sucesivos.",
+        "de": "Überbrückt Distanz und stellt MP her. Der Kill-Reset hilft bei aufeinanderfolgenden kleinen Gruppen."
+      }
+    },
+    {
+      "id": "18060000",
+      "text": {
+        "en": "Opens Dark Crush for 2s. Use the follow-up within that window before spending another trigger.",
+        "ja": "2秒間Dark Crushを使用可能にします。次の発動スキルの前に追撃を使います。",
+        "es": "Abre Dark Crush durante 2s. Úsalo en esa ventana antes de gastar otro disparador.",
+        "de": "Öffnet Dark Crush für 2s. Folgeangriff vor einem weiteren Auslöser nutzen."
+      }
+    },
+    {
+      "id": "18100000",
+      "text": {
+        "en": "Dark Crush is the triggered attack. Wait for its cooldown until the cooldown-removal specialization is selected.",
+        "ja": "起点から発動する攻撃です。再使用時間削除の特化を選ぶまではクールダウンを待ちます。",
+        "es": "Es el ataque activado. Espera su recarga hasta seleccionar la especialización que la elimina.",
+        "de": "Ist der ausgelöste Angriff. Warte auf seine Abklingzeit, bis die entfernende Spezialisierung gewählt ist."
+      }
+    },
+    {
+      "id": "18300000",
+      "text": {
+        "en": "Gust Rampage requires Stagger. Use it during stagger without losing access to party recovery.",
+        "ja": "スタガーが条件です。その間もパーティ回復を使えるようにして攻撃します。",
+        "es": "Requiere tambaleo. Úsalo sin perder acceso a la recuperación del grupo.",
+        "de": "Benötigt Taumeln. Nutze es, ohne den Zugriff auf Gruppenheilung zu verlieren."
+      }
+    },
+    {
+      "id": "18150000",
+      "text": {
+        "en": "Heat Wave Blow follows Parry, or Rushing Smash with its trigger option. It can seal the enemy.",
+        "ja": "パリィ後、または発動特化を選んだRushing Smash後に使用でき、敵を封印できます。",
+        "es": "Sigue a parar o a Rushing Smash con su opción de activación. Puede sellar al enemigo.",
+        "de": "Folgt auf Parieren oder Rushing Smash mit seiner Auslöseoption. Kann den Gegner versiegeln."
+      }
+    },
+    {
+      "id": "18120000",
+      "text": {
+        "en": "Recuperation heals and removes one debuff, then continues healing over time. More cleansing is a specialization choice.",
+        "ja": "回復と減益1つの解除を行い、その後も継続回復します。解除数の追加は特化で選べます。",
+        "es": "Cura, elimina un perjuicio y sigue curando periódicamente. Más limpieza es una opción de especialización.",
+        "de": "Heilt, entfernt einen negativen Effekt und heilt weiter über Zeit. Mehr Reinigung ist eine Spezialisierungsoption."
+      }
+    },
+    {
+      "id": "18210000",
+      "text": {
+        "en": "Tremor Crush requires Dodge or flight and approaches the target. Keep its movement under manual control.",
+        "ja": "回避後または飛行中に接近します。移動先を判断して手動で使います。",
+        "es": "Requiere esquivar o volar y te aproxima. Controla manualmente el desplazamiento.",
+        "de": "Benötigt Ausweichen oder Flug und nähert sich dem Ziel. Steuere die Bewegung manuell."
+      }
+    },
+    {
+      "id": "18080000",
+      "text": {
+        "en": "Wave Blow follows Stun, or a proc against control-immune targets. Use the actual opportunity.",
+        "ja": "スタン後、または免疫対象への発動時に使います。実際に使える機会を見て追撃します。",
+        "es": "Sigue a un aturdimiento o se activa contra inmunes. Usa la oportunidad real.",
+        "de": "Folgt auf Betäubung oder löst gegen immune Ziele aus. Nutze die tatsächliche Gelegenheit."
+      }
+    },
+    {
+      "id": "18290000",
+      "text": {
+        "en": "Grants a critical-damage buff and opens Dark Crush for 2s. Its single-target option suits bosses; its cooldown option creates more trigger windows.",
+        "ja": "クリティカルダメージ強化と2秒のDark Crush発動。単体特化はボス向け、再使用短縮は発動時間を増やします。",
+        "es": "Mejora daño crítico y abre Dark Crush durante 2s. La opción individual ayuda en jefes; menor recarga abre más ventanas.",
+        "de": "Gibt kritischen Schadensbuff und öffnet Dark Crush für 2s. Einzelzieloption für Bosse, Abklingoption für häufigere Fenster."
+      }
+    },
+    {
+      "id": "18200000",
+      "text": {
+        "en": "Removes Stun, Knockdown, Airborne, Grab, Frost and Fear, then grants status immunity for 5s. Cooldown reduction does not affect it; keep this control break manual.",
+        "ja": "スタン、転倒、空中拘束、つかみ、凍結、恐怖を解除し、5秒の状態異常免疫を得ます。再使用短縮の影響は受けません。独立操作にします。",
+        "es": "Elimina aturdimiento, derribo, elevación, agarre, congelación y miedo; da inmunidad a estados durante 5s. No recibe reducción de recarga. Mantén control manual.",
+        "de": "Entfernt Betäubung, Niederschlag, Luftbindung, Griff, Frost und Furcht, danach 5s Statusimmunität. Abklingverkürzung wirkt nicht; separat bedienen."
+      }
+    }
+  ]
+}

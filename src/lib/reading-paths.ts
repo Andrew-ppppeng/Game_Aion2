@@ -2,6 +2,8 @@ import type {TopicSlug} from './topics';
 
 export const nextGuides: Record<TopicSlug, [TopicSlug, TopicSlug]> = {
   guide: ['leveling', 'builds'], gathering: ['map', 'monetization'], leveling: ['map', 'builds'],
+  templar: ['builds', 'gladiator'], assassin: ['builds', 'pvp'],
+  sorcerer: ['builds', 'spiritmaster'], cleric: ['cleric-build', 'chanter'],
   classes: ['builds', 'tier-list'], chanter: ['builds', 'pvp'], 'tier-list': ['classes', 'builds'],
   map: ['gathering', 'leveling'], code: ['twitch-drops', 'presets'],
   'character-creation': ['guide', 'presets'], presets: ['character-creation', 'monetization'],

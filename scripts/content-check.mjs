@@ -20,6 +20,25 @@ const bodies = {};
 const reserved = ['article-top', 'article-sources', 'sources-title', 'related-title'];
 const assets = await json('src/content/guide-assets.json');
 const assetIds = new Set(assets.map(({id}) => id));
+const classIdentities = await json('src/content/class-identities.json');
+const classSkills = await json('src/content/class-skills.json');
+const classFocus = await json('src/content/class-skill-focus.json');
+assert.equal(classIdentities.length, 8, 'Eight class detail destinations');
+const skillIds = [];
+for (const identity of classIdentities) {
+  const entries = classSkills[identity.id];
+  assert.equal(identity.href, `/${identity.id}`, `${identity.id}: direct class guide`);
+  assert.ok(slugs.includes(identity.id), `${identity.id}: published detail destination`);
+  assert.deepEqual(['active', 'passive', 'stigma'].map((kind) => entries.filter((entry) => entry.kind === kind).length), [12, 10, 13], `${identity.id}: complete skill groups`);
+  for (const skill of entries) {
+    skillIds.push(skill.id);
+    assert.ok(Number.isInteger(skill.learnedAt) && skill.learnedAt > 0, `${identity.id}/${skill.id}: character level requirement`);
+    for (const locale of locales) assert.ok(skill.names[locale]?.trim(), `${identity.id}/${skill.id}: translated skill name`);
+  }
+  assert.deepEqual(classFocus[identity.id].map(({id}) => id).sort(), entries.filter(({kind}) => kind === 'active').map(({id}) => id).sort(), `${identity.id}: every active skill explained`);
+  for (const entry of classFocus[identity.id]) for (const locale of locales) assert.ok(entry.text[locale]?.trim().length > 20, `${identity.id}/${entry.id}: useful translated trigger note`);
+}
+assert.equal(new Set(skillIds).size, 280, '280 distinct class skills');
 assert.equal(assetIds.size, assets.length, 'Unique media asset IDs');
 for (const asset of assets) {
   assert.match(asset.src, /^\/media\/guides\//, `${asset.id}: local media`);
@@ -92,8 +111,14 @@ for (const locale of locales) {
     for (const [, target] of body.matchAll(/<GuideNext\s+slug="([a-z0-9-]+)"\s*\/>/g)) assert.ok(slugs.includes(target) && target !== slug, `${label}: next guide ${target}`);
     if (slug === 'classes') {
       assert.match(body, /<GuideClasses\s*\/>/, `${label}: class finder`);
-      assert.match(body, /<GuideClassIcons\s*\/>/, `${label}: class icon reference`);
+      assert.doesNotMatch(body, /<GuideClassIcons|<h2 id="class-icons">/, `${label}: icons integrated in roster`);
+      assert.match(body, /<span id="class-icons"\s*\/>/, `${label}: legacy icon anchor retained`);
     }
+    if (classSkills[slug]) {
+      assert.match(body, new RegExp(`<GuideSkillFocus classId="${slug}"\\s*/>`), `${label}: functional skill explanations`);
+      assert.match(body, new RegExp(`<GuideSkillList classId="${slug}"\\s*/>`), `${label}: complete class skill list`);
+    }
+    if (slug === 'builds') for (const identity of classIdentities) assert.match(body, new RegExp(`\\]\\(/${identity.id}#key-skills\\)`), `${label}: class loop destination ${identity.id}`);
     if (slug === 'leveling') for (const faction of ['elyos', 'asmodians']) assert.ok(body.includes(`<GuideFaction faction="${faction}">`), `${label}: faction group ${faction}`);
     if (slug === 'server') for (const region of ['eu', 'naWest', 'naEast', 'latam', 'asia']) assert.ok(body.includes(`<GuideRegion region="${region}">`), `${label}: region group ${region}`);
     for (const [, href] of body.matchAll(/\]\((\/[^\s)]*)\)/g)) {
@@ -138,7 +163,7 @@ for (let i = 0; i < slugs.length; i++) {
       assert.deepEqual(translated.rows?.map(({values}) => values), visual.rows?.map(({values}) => values), `${locale}/${slug}/${id}: preserved comparison values`);
     }
     if (metadata.en[slug].checklist) assert.deepEqual(metadata[locale][slug].checklist.items.map(({id}) => id), metadata.en[slug].checklist.items.map(({id}) => id), `${locale}/${slug}: shared checklist progress`);
-    const components = (body) => [...body.matchAll(/<Guide(?:Visual|Next|Faction|Region)\s+[^>]+>|<Guide(?:Classes|ClassIcons)\s*\/>/g)].map(([tag]) => tag);
+    const components = (body) => [...body.matchAll(/<Guide(?:Visual|Next|Faction|Region|SkillList|SkillFocus)\s+[^>]+>|<GuideClasses\s*\/>/g)].map(([tag]) => tag);
     assert.deepEqual(components(bodies[locale][slug]), components(bodies.en[slug]), `${locale}/${slug}: stable interactive and image placements`);
     assert.notEqual(bodies[locale][slug].trim(), bodies.en[slug].trim(), `${locale}/${slug}: translated body`);
     for (const paragraph of paragraphs) assert.ok(!bodies[locale][slug].includes(paragraph), `${locale}/${slug}: untranslated paragraph`);

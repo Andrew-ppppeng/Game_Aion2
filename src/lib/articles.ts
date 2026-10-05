@@ -158,7 +158,32 @@ import meta_de_wings from '@/content/de/wings.json';
 import meta_de_database from '@/content/de/database.json';
 import meta_de_global_changes from '@/content/de/global-changes.json';
 
+import data_templar from '@/content/article-data/templar.json';
+import data_assassin from '@/content/article-data/assassin.json';
+import data_sorcerer from '@/content/article-data/sorcerer.json';
+import data_cleric from '@/content/article-data/cleric.json';
+import meta_en_templar from '@/content/en/templar.json';
+import meta_en_assassin from '@/content/en/assassin.json';
+import meta_en_sorcerer from '@/content/en/sorcerer.json';
+import meta_en_cleric from '@/content/en/cleric.json';
+import meta_ja_templar from '@/content/ja/templar.json';
+import meta_ja_assassin from '@/content/ja/assassin.json';
+import meta_ja_sorcerer from '@/content/ja/sorcerer.json';
+import meta_ja_cleric from '@/content/ja/cleric.json';
+import meta_es_templar from '@/content/es/templar.json';
+import meta_es_assassin from '@/content/es/assassin.json';
+import meta_es_sorcerer from '@/content/es/sorcerer.json';
+import meta_es_cleric from '@/content/es/cleric.json';
+import meta_de_templar from '@/content/de/templar.json';
+import meta_de_assassin from '@/content/de/assassin.json';
+import meta_de_sorcerer from '@/content/de/sorcerer.json';
+import meta_de_cleric from '@/content/de/cleric.json';
+
 const sharedData = {
+  'templar': data_templar,
+  'assassin': data_assassin,
+  'sorcerer': data_sorcerer,
+  'cleric': data_cleric,
   'guide': data_guide,
   'gathering': data_gathering,
   'leveling': data_leveling,
@@ -194,6 +219,10 @@ const sharedData = {
 
 const entries: Record<Locale, Record<TopicSlug, ArticleEntry>> = {
   en: {
+    'templar': {metadata: meta_en_templar, load: () => import('@/content/en/templar.mdx')},
+    'assassin': {metadata: meta_en_assassin, load: () => import('@/content/en/assassin.mdx')},
+    'sorcerer': {metadata: meta_en_sorcerer, load: () => import('@/content/en/sorcerer.mdx')},
+    'cleric': {metadata: meta_en_cleric, load: () => import('@/content/en/cleric.mdx')},
     'guide': {metadata: meta_en_guide, load: () => import('@/content/en/guide.mdx')},
     'gathering': {metadata: meta_en_gathering, load: () => import('@/content/en/gathering.mdx')},
     'leveling': {metadata: meta_en_leveling, load: () => import('@/content/en/leveling.mdx')},
@@ -227,6 +256,10 @@ const entries: Record<Locale, Record<TopicSlug, ArticleEntry>> = {
     'global-changes': {metadata: meta_en_global_changes, load: () => import('@/content/en/global-changes.mdx')},
   },
   ja: {
+    'templar': {metadata: meta_ja_templar, load: () => import('@/content/ja/templar.mdx')},
+    'assassin': {metadata: meta_ja_assassin, load: () => import('@/content/ja/assassin.mdx')},
+    'sorcerer': {metadata: meta_ja_sorcerer, load: () => import('@/content/ja/sorcerer.mdx')},
+    'cleric': {metadata: meta_ja_cleric, load: () => import('@/content/ja/cleric.mdx')},
     'guide': {metadata: meta_ja_guide, load: () => import('@/content/ja/guide.mdx')},
     'gathering': {metadata: meta_ja_gathering, load: () => import('@/content/ja/gathering.mdx')},
     'leveling': {metadata: meta_ja_leveling, load: () => import('@/content/ja/leveling.mdx')},
@@ -260,6 +293,10 @@ const entries: Record<Locale, Record<TopicSlug, ArticleEntry>> = {
     'global-changes': {metadata: meta_ja_global_changes, load: () => import('@/content/ja/global-changes.mdx')},
   },
   es: {
+    'templar': {metadata: meta_es_templar, load: () => import('@/content/es/templar.mdx')},
+    'assassin': {metadata: meta_es_assassin, load: () => import('@/content/es/assassin.mdx')},
+    'sorcerer': {metadata: meta_es_sorcerer, load: () => import('@/content/es/sorcerer.mdx')},
+    'cleric': {metadata: meta_es_cleric, load: () => import('@/content/es/cleric.mdx')},
     'guide': {metadata: meta_es_guide, load: () => import('@/content/es/guide.mdx')},
     'gathering': {metadata: meta_es_gathering, load: () => import('@/content/es/gathering.mdx')},
     'leveling': {metadata: meta_es_leveling, load: () => import('@/content/es/leveling.mdx')},
@@ -293,6 +330,10 @@ const entries: Record<Locale, Record<TopicSlug, ArticleEntry>> = {
     'global-changes': {metadata: meta_es_global_changes, load: () => import('@/content/es/global-changes.mdx')},
   },
   de: {
+    'templar': {metadata: meta_de_templar, load: () => import('@/content/de/templar.mdx')},
+    'assassin': {metadata: meta_de_assassin, load: () => import('@/content/de/assassin.mdx')},
+    'sorcerer': {metadata: meta_de_sorcerer, load: () => import('@/content/de/sorcerer.mdx')},
+    'cleric': {metadata: meta_de_cleric, load: () => import('@/content/de/cleric.mdx')},
     'guide': {metadata: meta_de_guide, load: () => import('@/content/de/guide.mdx')},
     'gathering': {metadata: meta_de_gathering, load: () => import('@/content/de/gathering.mdx')},
     'leveling': {metadata: meta_de_leveling, load: () => import('@/content/de/leveling.mdx')},

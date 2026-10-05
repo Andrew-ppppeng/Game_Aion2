@@ -1,97 +1,85 @@
-AION2のビルドは、クラス名と装備スキル一覧だけでは決まりません。地域、成長段階、遊ぶ内容、パーティーの役割に合わせましょう。開放済みの設定で操作できる構成を作り、実戦で具体的な問題が出たら調整します。
+MP回復、追撃を開くスキル、担当役割の防御・回復から始めます。解放済み特化を選び、枠内でスティグマを装備し、反復コンボ前に手動で練習します。
 
-<h2 id="find-a-starting-build">役割に合う序盤ビルドを探す</h2>
+<h2 id="find-a-starting-build">8職の序盤ビルドを選ぶ</h2>
 
-| 起点 | 例の使い方 | 次に読むもの |
+| クラスガイド | 中心となる判断 | 最初の有効強化 |
 | --- | --- | --- |
-| チャンター | 攻撃とマントラ、編成別の支援調整 | [チャンターガイド](/chanter) |
-| クレリック | 回復、弱体効果、序盤PvEのStigma例 | [クレリックビルド](/cleric-build) |
-| アサシン | 強化、位置、攻撃機会、フィニッシャーを理解してから連携を簡略化 | [役割と操作](/classes#choose-a-role) |
-| その他のクラス | まず役割と戦闘スタイルを選ぶ | [8クラス比較](/classes) |
+| [グラディエーター](/gladiator) | MP継戦と前衛攻撃。タンクなら防御維持 | Keen StrikeのMPとRuinous Blow短縮 |
+| [テンプラー](/templar) | Judgment、敵対値、盾の時間合わせ | Vicious Strike→Warding Strike、Pummel→Punishment短縮 |
+| [アサシン](/assassin) | 背面攻撃と対象ごとのInsignia | Quick Sliceの継戦とExplosion短縮、クリティカル時Heart Gore |
+| [レンジャー](/ranger) | 射程、クリティカル追撃、Deadshot | SnipeのMPと命中時Deadshot短縮 |
+| [チャンター](/chanter) | Dark Crushの発動時間とマントラ | Spinning Strike短縮とDark Crush特化。回復役なら支援追加 |
+| [クレリック](/cleric) | 自動直接回復、解除、安全な攻撃 | Radiant Recoveryの選択と、攻撃可能ならCondemnationリセット |
+| [ソーサラー](/sorcerer) | 完了できるチャージとMP条件 | Firestorm→Hellfire、Ice Chain→Winter’s Shackles短縮 |
+| [スピリット マスター](/spiritmaster) | 残す精霊、短い発動、Four Elements | Cold Shock継戦、精霊強化、Fusion特化 |
 
-スキル、選択済み専門化、装備Stigma、手動の攻撃連携の4つを組み合わせます。
+<h2 id="check-region-and-progression">進行度とスキルランクを合わせる</h2>
 
-<h2 id="check-region-and-progression">自分の成長段階に合わせる</h2>
+**キャラクターレベル**は習得や購入ランクを解放し、**スキルランク**は特化を解放します。多くの攻撃は8・12・16で選択肢を得ますが、閾値はスキルごとに違います。ランク12の例はキャラクターレベル12ではありません。
 
-保存する構成には次を添えましょう。
+到達後に特化を選びます。同じ枠の効果は代替選択。例えばHellfireのランク8は高速化、継続ダメージ、移動可能化から選び、全部を同時に得るわけではありません。
 
-- 地域、キャラクターレベル、ソロ・パーティーPvE・PvPの用途。
-- スキルレベルと選択した専門化。
-- 開放Stigma枠、装備スキル、使える強化ポイント。
-- Daevanion、装備、仲間の支援。
+購入ランクと装備・Arcana・Daevanionの追加ランクを別々に記録。現在到達できない特化は、低ランクの連携で運用します。
 
-Stigmaの開放と装備は別です。使える枠に役割のスキルを装備しましょう。成長したキャラクターでは枠や設定が増えるため、追加より先に基本連携を作ります。
+スティグマは実際の枠数と強化ポイントを確認。習得だけで枠は増えません。地域でDaevanionの配置や値は異なるため、KR/TW画像を写すより自分の盤面で目的効果を探します。
 
 <GuideVisual id="workflow" />
 
-<h2 id="skills-stigmas-and-daevanion">スキル・Stigma・Daevanionを組み合わせる</h2>
+<h2 id="skills-stigmas-and-daevanion">スキル・スティグマ・Daevanion・装備</h2>
 
-主な役割に使うスキルを決め、予算内で育て、開放した専門化を手動で選びます。ポイントを使うだけでは新しい設定は有効になりません。
-
-次に、攻撃を全部選ぶのではなく、現在の戦闘に合わせてStigmaを選びましょう。クレリックは回復操作、チャンターは他のヒーラーの有無が重要です。Daevanionは実際に使うスキルとパッシブ効果に合う経路を調べます。育ったキャラクターの盤面が、新しいキャラクターの効率的な経路とは限りません。
-
-一つずつ変更して試してください。期待する効果が出ない場合は、装備を変える前に、現在の説明、選択した設定、前提条件を確認します。
+| 構成要素 | 行うこと |
+| --- | --- |
+| アクティブ | 使う通常攻撃、主力、回復に投資。即MPが尽きる長い連携より継戦。 |
+| 特化 | 再使用、資源、移動、発動効果を選択。必要ランクと枠を確認。 |
+| パッシブ | アサシンの背面、レンジャーのクリティカル、精霊攻撃、チャンターの攻撃盾など実際の発動へ。 |
+| スティグマ | 解放枠内で役割を装備。失敗原因に合う防御、解除、回復へ攻撃枠を交換。 |
+| Daevanion | 目的スキルまでの総コストを比較。特化到達は無関係な周辺ステータスより連携を変えます。 |
+| 装備・Arcana | 選んだ特化を完成させるランクを計算。装備交換で閾値を失わないか確認。 |
 
 <GuideVisual id="topic" />
 
-<h2 id="three-concrete-examples">3つの具体的な起点</h2>
+<h2 id="three-concrete-examples">8職の手動連携</h2>
 
-**アサシン**は強化、接近、攻撃でのリソース生成、フィニッシャーでの消費が基本です。ボタンをまとめる前に、手動で生成と消費を覚えましょう。
-
-**チャンター（TW序盤）**はUndefeated Mantraと動くDark Crush連携を優先します。仲間に必要な回復・防御を加え、選択したクールダウン設定に合わせて操作します。
-
-**クレリック（TW序盤）**はパーティー防御、復活、Earth’s Punishment、攻撃か回復の選択を組み合わせます。回復を押しやすくし、チャンターと重複する強化を分担します。
-
-<h3>練習する3つの起点構成</h3>
-
-| 例 | 最初に動く設定へ入れるもの | 次の段階をコピーする前の確認 |
+| クラス | 手動の練習連携 | 条件と独立操作 |
 | --- | --- | --- |
-| チャンター · TW | Undefeated Mantraを優先。Rushing Smash → Spinning Strike → Dark Crush、クールダウンを待ち、Impactful Crush → Dark Crush | 使える攻撃・クリティカル設定を選び、Recuperationは別操作にする。編成別交換は[スキル・Stigmaカード](/chanter#starting-priorities)へ。 |
-| クレリック · TW | パーティー防御、Resurrection、Earth's Punishment、Noble Auraか追加回復。Debilitating Mark → Chains of Torment → Earth's Punishmentから使えるCondemnationへ | 開放済みならRadiant Recoveryの解除設定を選び、回復・復活は別操作にする。[スキル・設定カード](/cleric-build#damage-and-debuff-order)へ。 |
-| アサシン | 強化、接近手段、必要なリソースを作る攻撃、消費するフィニッシャー | リソースを生成する攻撃とフィニッシャーで消費する機会を覚える |
+| [グラディエーター](/gladiator#key-skills) | 強化→Ruinous Blow→Rage Burst→Overhead Slam。合間にKeen StrikeとRending Blow | Overhead Slamは対象条件やRage Burstが必要。タンクのFocused Blockは手動。 |
+| [テンプラー](/templar#key-skills) | Shield Smite→Judgment、Warding Strike→Judgment、安全なPunishment、合間にVicious StrikeとPummel | 短いJudgmentを消費してから次の発動。Tauntと盾は独立。 |
+| [アサシン](/assassin#key-skills) | 強化→背後へ→Savage Roarの層→Insignia Explosion。クリティカル時Heart Gore | Insigniaは対象限定で短時間。Illusive Cloneの再使用削除は効果時間内。 |
+| [レンジャー](/ranger#key-skills) | Gale Arrow→Marking Shot→Suppressing Arrow。DeadshotとSnipe、クリティカル時Drill Dart | Burst Arrowには減速・束縛。移動後は射程へ戻る。 |
+| [チャンター](/chanter#key-skills) | Rushing Smash→Spinning Strike→Dark Crush。次にImpactful Crushや遠距離スティグマ | ランク16の再使用削除前は待機。Recuperationは別操作。 |
+| [クレリック](/cleric#key-skills) | Light of Regeneration→Debilitating Mark→Chain of Torment、Earth Punishment→Condemnation | 急な回復・解除で中断。リセットには特化とクリティカル。 |
+| [ソーサラー](/sorcerer#key-skills) | 強化→火攻撃とBlaze。安全なHellfire→Firestorm、Ice Chain→Winter’s Shackles | BlazeはFire Mark。MP条件を維持し防御を残す。 |
+| [スピリット マスター](/spiritmaster#key-skills) | 必要な精霊→Dimensional Control→自分の攻撃→Four ElementsでFusion | 精霊スキルで層を得て先に消費。MPは水、HPは風。 |
 
-保存前に連携を手動で練習しましょう。枠やポイントが足りなければ、追加攻撃より仲間が必要とする役割を優先します。
+<h2 id="combos-and-reactive-skills">反応操作を攻撃連携から分ける</h2>
 
-<h2 id="combos-and-reactive-skills">繰り返す攻撃と反応操作を分ける</h2>
+これは序盤の優先順位で、固定の最終連携ではありません。装備・解放したスキルだけ使います。攻撃強化は完了できる時間へ、条件付き追撃は実際の発動後へ。各職ページに交換枠と全スキルがあります。
 
-最初に手動で連携を覚え、実際にその順で繰り返したい攻撃をゲーム内の連携設定に入れましょう。緊急回復、復活、防御、状況限定の強化は別に使いやすく置きます。高レベルの攻撃速度やクールダウン短縮によって、その順序が自分には合わない場合があります。
+**Defiance、防御、緊急回復、解除、復活、状況別移動**は反復攻撃から分離。スタガー限定技は通常の穴埋めではありません。次のボタンに置くだけでクリティカルは保証されません。
 
-移動する敵とギミックで連携を試しましょう。攻撃を止めて移動、防御、仲間の回復ができる状態にします。
+通常連携、移動から復帰、役割のため中断を練習。その順で繰り返したい攻撃だけまとめます。[ゲーム内マクロ](/macro-guide)で操作を確認。他のキャラの速度や再使用は自分と違う場合があります。
 
-<h3>一つの変更で一つの疑問を確かめる</h3>
+<h2 id="talent-calculator">スキルビルドプランナーを使う</h2>
 
-チャンターの追撃が出ないなら、選択済み設定で発動条件を試します。クレリックの再使用が起きないなら、攻撃ボタンを増やす前に連動を確認します。アサシンのフィニッシャーが不規則に感じたら、自動連携を止め、手動でリソースの増減を見ましょう。単独で動いたら移動中にも試し、役割を果たすために中断できるかを確認します。
+[AION 2 Build Planner](https://aion2.gaming.tools/build-planner)で職と種族を選び、**Skills**の**Raise / Lower**でランクを変更。特化を選びポイント合計を確認します。枠数と追加ランク入力も実キャラに合わせます。
 
-「この設定で起点から追撃が出る」「この連携では回復を使いにくい」のように記録します。ダメージ合計だけを保存するより、次の改善につながります。
+ゲーム内で振る前に2案を比較。ローカル構成はそのブラウザーに保存され、アカウントの**Save to My Builds**はログインが必要です。別ブラウザーへ移すなら別途記録します。
 
-**加点しても連携が変わらないのは？** 開放と選択は別です。専門化を選び、発動条件を確認しましょう。
+プランナーは配分の道具です。戦闘中の役割や安全な詠唱時間は、実キャラで発動・回復・防御を確認します。
 
-**ポイントが少ないときは何を優先？** 主力攻撃と必要な支援、その動作に必要な設定を確保し、対応するパッシブとDaevanionを育てます。
+<h2 id="save-and-improve-your-build">構成を保存し弱点を改善する</h2>
 
-<GuideEquipment />
+| 失敗 | 最初に変える点 |
+| --- | --- |
+| MPが尽きる | 通常攻撃のMP回復や範囲技の消費軽減。回復攻撃の命中も確認。 |
+| 追撃が出ない | 対象状態、クリティカル、資源、短い発動時間を確認。 |
+| 再使用が例と違う | 選んだ短縮と総ランク、装備変更で失った追加ランクを確認。 |
+| チャージが止まる | 速度・移動特化か、より長い安全な使用時間。 |
+| 味方回復が足りない | 不要な攻撃枠を必要な回復・盾・解除へ。別操作を確保。 |
+| 支援が重複する | MantraとLight of Protectionの火力、FuryとExperienced Counterstrikeは重複しません。 |
 
-成長段階の[地域間の違い](/global-changes)を確認し、[翼の装着効果と所有効果](/wings#equipped-and-owned-effects)は別々に比較します。
+職、活動、担当役割、装備・Arcana、購入・追加ランク、特化、スティグマ、Daevanion経路を保存。振り直し前に動く構成を残します。
 
-<h2 id="talent-calculator">タレント計算機でスキルを計画する</h2>
+同じ敵、装備、戦闘時間で1点を比較。ダメージだけでなくMP、追撃成功、中断、支援の使用可能性を記録。回復が間に合わなくなる瞬間火力は回復役の改善にはなりません。[PvP構成](/pvp)は制御、退避、圧力下の回復を別に準備。
 
-**AION 2のタレント計算機**を探す場合は、自分の地域と成長段階に合うスキル計画ツールを使います。[Build Planner](https://aion2.gaming.tools/build-planner)は装備・スキル・Daevanionをまとめて扱い、スキルポイントの計画は**Skills**タブから始めます。
-
-1. クラスと種族を選ぶ。
-2. **Skills**を開き、表示されたスキルポイントとStigmaの予算を見る。
-3. **Raise**でスキルレベルを上げ、**Lower**で戻す。次のスキルに使う前に消費ポイントを確認する。
-4. Active・Passive・Stigmaを分けて確認し、役割に必要な回復や防御を残す。
-5. 自分のキャラクターが実際に使えるレベルと選択肢だけをゲーム内に反映する。
-
-計画は現在のブラウザに残り、ページを再読み込みしても保持されます。サイトの保存機能**Save to My Builds**にはアカウントが必要です。ブラウザデータ削除や端末変更前に、選択内容を別にも保存してください。ツールの合計は計画用です。反映するときは現在の説明と解放済み枠を優先します。
-
-同じクラス名でも、KR/TWの配分をそのままコピーしないでください。
-
-<h2 id="save-and-improve-your-build">構成を保存し、弱い部分を改善する</h2>
-
-[Aion2Hubのクレリック一覧](https://aion2hub.com/builds/cleric/)はGlobal Launch Scale TestとKR/TWのビルドを分けています。KR/TWの装備・数値・Gear ScoreはGlobal用ではなく、テスト版の例も開始後とは異なる場合があります。自分のサービスに合う例を選び、使えるスキルと比較してください。
-
-実戦後は原因を特定しましょう。命中しないなら命中と対象、死亡ならギミックと生存、効果が出ないなら設定とタイミング、仲間が崩れるなら回復体制を確認します。その問題から直し、試す前に動く構成を保存してください。対人戦へ変える場合は[PvPモード](/pvp)を別に確認しましょう。
-
-序盤のスキル選択は[グラディエーター](/gladiator)、[レンジャー](/ranger)、[スピリット マスター](/spiritmaster)へ。[マクロガイド](/macro-guide)はゲーム内連携、[Notmeter](/notmeter)は外部ツールを説明します。
-
-<GuideNext slug="chanter" />
+<GuideNext slug="classes" />

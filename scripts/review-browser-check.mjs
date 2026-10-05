@@ -16,7 +16,7 @@ const fixtures = await installGameFixtures(context);
 const page = await context.newPage();
 const errors = [];
 const checks = [];
-const starterEditions = {'cleric-build': 'TW', chanter: 'TW', ranger: 'TW', gladiator: 'KR/TW', spiritmaster: 'KR/TW'};
+const classGuides = ['cleric-build', 'chanter', 'ranger', 'gladiator', 'spiritmaster', 'templar', 'assassin', 'sorcerer', 'cleric'];
 const feedbackPlaceholder = /has not been configured|No hay un contacto configurado|連絡先はまだ設定|noch nicht eingerichtet/i;
 let failure = null;
 page.on('pageerror', (error) => errors.push(error.message));
@@ -52,18 +52,7 @@ async function assertAnswer(locale, slug) {
   const articleSchema = await page.locator('article script[type="application/ld+json"]').evaluate((element) => JSON.parse(element.textContent)['@graph'].find((entry) => entry['@type'] === 'Article'));
   assert.equal(articleSchema.author?.['@type'], 'Organization');
   assert.equal(articleSchema.author?.name, 'AION 2 Wiki editorial team');
-  if (starterEditions[slug]) {
-    await expect(page.locator('[data-article-edition]')).toHaveText(starterEditions[slug]);
-    await expect(page.locator('.article-body > p').nth(1)).toContainText(starterEditions[slug]);
-  }
-  // The final edited guides scope the starter examples to TW and unlocked
-  // options up front, without unsupported numeric Global requirements.
-  if (['cleric-build', 'chanter'].includes(slug)) {
-    const scope = page.locator('.article-body > p').nth(1);
-    await expect(scope).toContainText('TW');
-    const unlocked = {en: /unlocked/, ja: /開放済み/, es: /desbloqueados/, de: /freigeschaltete/};
-    await expect(scope).toContainText(unlocked[locale]);
-  }
+  if (classGuides.includes(slug)) await expect(page.locator('[data-article-edition]')).toHaveCount(0);
 }
 
 try {

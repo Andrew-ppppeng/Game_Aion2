@@ -10,7 +10,7 @@ const en = {
   faction: 'Choose a faction route', elyos: 'Elyos', asmodians: 'Asmodians', region: 'Filter server region',
   eu: 'Europe', naWest: 'NA West', naEast: 'NA East', latam: 'South America', asia: 'Asia',
   roster: 'Official class portraits', inspect: 'Compare roles below',
-  iconTable: 'Eight class icons', classIcon: 'Class icon', englishName: 'English name', localName: 'Class name',
+  classGuide: 'Skills & build', iconTable: 'Eight class icons', classIcon: 'Class icon', englishName: 'English name', localName: 'Class name',
   iconNote: 'Match each class to its emblem. Select an icon to enlarge it.',
 };
 type GuideMessages = {[K in keyof typeof en]: string};
@@ -27,7 +27,7 @@ export const guideMessages = {
     faction: '種族の育成ルートを選ぶ', elyos: '天族', asmodians: '魔族', region: 'サーバー地域で絞り込む',
     eu: 'ヨーロッパ', naWest: '北米西部', naEast: '北米東部', latam: '南米', asia: 'アジア',
     roster: '公式クラスイラスト', inspect: '本文で役割を比較する',
-    iconTable: '8クラスのアイコン', classIcon: 'クラスアイコン', englishName: '英語名', localName: '日本語名',
+    classGuide: 'スキルとビルド', iconTable: '8クラスのアイコン', classIcon: 'クラスアイコン', englishName: '英語名', localName: '日本語名',
     iconNote: 'クラス名と紋章を照合できます。アイコンを選ぶと拡大表示されます。',
   },
   es: {
@@ -40,7 +40,7 @@ export const guideMessages = {
     faction: 'Elige la ruta de tu facción', elyos: 'Elios', asmodians: 'Asmodianos', region: 'Filtrar región del servidor',
     eu: 'Europa', naWest: 'Norteamérica oeste', naEast: 'Norteamérica este', latam: 'Sudamérica', asia: 'Asia',
     roster: 'Ilustraciones oficiales de las clases', inspect: 'Compara las funciones en la guía',
-    iconTable: 'Iconos de las ocho clases', classIcon: 'Icono de clase', englishName: 'Nombre en inglés', localName: 'Nombre en español',
+    classGuide: 'Habilidades y build', iconTable: 'Iconos de las ocho clases', classIcon: 'Icono de clase', englishName: 'Nombre en inglés', localName: 'Nombre en español',
     iconNote: 'Relaciona cada clase con su emblema. Selecciona un icono para ampliarlo.',
   },
   de: {
@@ -53,7 +53,7 @@ export const guideMessages = {
     faction: 'Wähle den Levelweg deiner Fraktion', elyos: 'Elyos', asmodians: 'Asmodier', region: 'Serverregion filtern',
     eu: 'Europa', naWest: 'NA West', naEast: 'NA Ost', latam: 'Südamerika', asia: 'Asien',
     roster: 'Offizielle Klassenillustrationen', inspect: 'Rollen im Guide vergleichen',
-    iconTable: 'Symbole der acht Klassen', classIcon: 'Klassensymbol', englishName: 'Englischer Name', localName: 'Deutscher Name',
+    classGuide: 'Fertigkeiten & Build', iconTable: 'Symbole der acht Klassen', classIcon: 'Klassensymbol', englishName: 'Englischer Name', localName: 'Deutscher Name',
     iconNote: 'Ordne jeder Klasse ihr Symbol zu. Wähle ein Symbol aus, um es zu vergrößern.',
   },
 } satisfies Record<Locale, GuideMessages>;
