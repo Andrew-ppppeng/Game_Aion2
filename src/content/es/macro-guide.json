@@ -1,57 +1,35 @@
 {
   "title": "Macros de AION 2: tecla y prioridad de habilidades",
-  "description": "Configura el macro integrado de AION 2, asigna la tecla, ordena prioridades y resuelve ataques ausentes o retardo.",
-  "summary": "Asigna una tecla, empieza con una pila pequeña y observa cada ataque. Mantén curación, interrupciones y movimiento accesibles y prueba al cambiar de objetivo o responder a mecánicas.",
-  "quickAnswer": "Asigna el macro en Key Settings → General → Gameplay, abre el editor y selecciona una pila. Mantener la tecla la repite. Empieza con daño breve y deja curación, movimiento e interrupciones aparte.",
+  "description": "Crea una macro funcional: teclas, prioridad y condiciones de clase.",
+  "summary": "Asigna la tecla de macro, ordena las prioridades y conserva las reacciones de clase en botones separados.",
+  "quickAnswer": "Asigna la tecla en Key Settings → General → Gameplay, selecciona toda la cadena y mantén pulsado. La habilidad inferior tiene prioridad: pon el relleno encima de ataques condicionales. Curación, movimiento e interrupción van separados.",
   "toc": [
     {
       "id": "bind-and-open",
-      "title": "Asignar la tecla y abrir el editor"
+      "title": "Crea una macro funcional"
     },
     {
       "id": "priority-stack",
-      "title": "Entender la prioridad"
+      "title": "Prioridad y ejemplo Ranger"
     },
     {
       "id": "manual-actions",
-      "title": "Conservar decisiones separadas"
+      "title": "Acciones por clase en teclas directas"
     },
     {
       "id": "delay-and-basic-attack",
-      "title": "Retardo y ataque básico"
+      "title": "Retardo de macro: valor inicial"
     },
     {
       "id": "debug-one-stack",
-      "title": "Comprobar una pila"
+      "title": "Arregla una macro que falla"
     },
     {
       "id": "built-in-and-policy",
-      "title": "Macros integrados y política de NC"
+      "title": "Usa el editor integrado"
     }
   ],
   "visuals": {
-    "workflow": {
-      "title": "Crea un macro pequeño que puedas explicar",
-      "caption": "Crea una pila y prueba sus ataques y los controles reactivos.",
-      "steps": [
-        {
-          "label": "Prueba manualmente",
-          "description": "Confirma el ataque y sus condiciones antes de añadir repetición."
-        },
-        {
-          "label": "Asigna una pila",
-          "description": "Empieza por una casilla conocida y verifica la tecla de activación."
-        },
-        {
-          "label": "Observa cada entrada",
-          "description": "Comprueba si la prioridad o una habilidad no disponible impiden el ataque esperado."
-        },
-        {
-          "label": "Ensaya una respuesta",
-          "description": "Detén el macro, muévete y usa una habilidad reactiva antes de un encuentro de grupo."
-        }
-      ]
-    },
     "macro-global-keybind": {
       "assetId": "macro-global-keybind",
       "alt": "Ajustes del cliente en alemán con la tecla del macro de habilidades dentro de Gameplay",

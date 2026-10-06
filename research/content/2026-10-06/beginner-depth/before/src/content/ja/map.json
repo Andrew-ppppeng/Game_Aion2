@@ -1,0 +1,64 @@
+{
+  "title": "AION 2 マップ：採集資源と3Dルート",
+  "description": "AION 2の採集資源を絞り込み、洞窟の高さを確認し、短いルートと収集進捗の保存を進める。",
+  "summary": "Aion2Tで資源を絞り、Aion2Mapsで洞窟入口と高さを確認。種族のエリアを選び、ブラウザ変更前に進捗を保存します。",
+  "quickAnswer": "Aion2Tでエリアを選び、Hide Allから必要な資源だけを表示します。洞窟の高さ、階層表示、進捗の書き出しはAion2Mapsを使います。",
+  "toc": [
+    {
+      "id": "choose-map",
+      "title": "マップを選ぶ"
+    },
+    {
+      "id": "faction-zones",
+      "title": "種族とエリアを選ぶ"
+    },
+    {
+      "id": "ingame-filters",
+      "title": "ゲーム内の表示設定"
+    },
+    {
+      "id": "gathering-map-filters",
+      "title": "採集マップで必要な資源だけを表示する"
+    },
+    {
+      "id": "resource-route",
+      "title": "役立つルートを作る"
+    },
+    {
+      "id": "map-troubleshooting",
+      "title": "洞窟の地点を探し、収集進捗を保存する"
+    }
+  ],
+  "visuals": {
+    "topic": {
+      "assetId": "aion2t-verteron-aria",
+      "alt": "VerteronでAriaの草薬マーカーだけを選択したAion2Tの英語マップ画面",
+      "caption": "Aion2Tで表示したVerteronのAria採集地点。"
+    },
+    "workflow": {
+      "title": "短い資源ルートを作る",
+      "caption": "素材を一つに絞り、地形の経路を考えて完了地点を記録します。",
+      "steps": [
+        {
+          "label": "陣営と地域を合わせる",
+          "description": "キャラクターに表示された地域を確認し、ツールでも同じ地域を選びます。"
+        },
+        {
+          "label": "素材を一種類に絞る",
+          "description": "不要なレイヤーを非表示にして、レシピで必要な素材だけを選びます。"
+        },
+        {
+          "label": "進入経路と高さを確認する",
+          "description": "近くの地点を並べる前に、目印、道、洞窟の入口を比較します。"
+        },
+        {
+          "label": "試して記録する",
+          "description": "短いルートを一度回り、不在のノード、収量、完了状況を記録してから繰り返します。"
+        }
+      ]
+    }
+  },
+  "inlineNext": [
+    "gathering"
+  ]
+}

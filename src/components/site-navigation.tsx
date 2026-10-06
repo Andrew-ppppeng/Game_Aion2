@@ -3,7 +3,7 @@
 import {memo, useCallback, useEffect, useRef, useState} from 'react';
 import {
   ArrowUpRight, BookOpen, ChevronDown, Coins, Download, Gift, Home, Layers3, ChartNoAxesCombined,
-  Map, Menu, Monitor, Server, Sparkles, Swords, Ticket, WandSparkles, X, Flag, Keyboard, UserRound, Calculator, ListChecks, Feather, Database, Globe2,
+  Map, Menu, Monitor, Server, Sparkles, Swords, Ticket, WandSparkles, X, Flag, Keyboard, UserRound, Calculator, ListChecks, Feather, Database, Play,
 } from 'lucide-react';
 import {useTranslations} from 'next-intl';
 import {Link, usePathname} from '@/i18n/navigation';
@@ -35,7 +35,6 @@ const icons = {
   macros: Keyboard,
   wingsAndFlight: Feather,
   databases: Database,
-  regionalDifferences: Globe2,
 };
 
 const NavigationContent = memo(function NavigationContent({groups, onNavigate}: {groups: NavGroup[]; onNavigate?: () => void}) {
@@ -54,6 +53,7 @@ const NavigationContent = memo(function NavigationContent({groups, onNavigate}: 
           <Link className={`nav-single ${pathname === '/tools/character' ? 'active' : ''}`} href="/tools/character" aria-current={pathname === '/tools/character' ? 'page' : undefined} onClick={onNavigate}><UserRound size={16} aria-hidden="true" /><span>{t('characterLookup')}</span></Link>
           <Link className="nav-single" href="/monetization#material-budget" onClick={onNavigate}><Calculator size={16} aria-hidden="true" /><span>{t('materialBudget')}</span></Link>
           <Link className="nav-single" href="/guide#starter-checklist" onClick={onNavigate}><ListChecks size={16} aria-hidden="true" /><span>{t('starterChecklist')}</span></Link>
+          <Link className="nav-single" href="/beginner-videos" onClick={onNavigate}><Play size={16} aria-hidden="true" /><span>{t('beginnerVideos')}</span></Link>
           <p className="nav-overline">{t('browse')}</p>
           {groups.map((group) => {
             const Icon = icons[group.id];

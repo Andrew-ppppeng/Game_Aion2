@@ -8,7 +8,7 @@ const hashes = new Set();
 await mkdir(new URL('../.qa/', import.meta.url), {recursive: true});
 let checked = 0;
 for (const locale of locales) {
-  for (const slug of ['guide', 'chanter', 'twitch-drops', 'character', 'player-count']) {
+  for (const slug of ['guide', 'chanter', 'twitch-drops', 'character', 'player-count', 'settings', 'gear-progression', 'daily-weekly-checklist', 'crafting']) {
     const response = await fetch(`${base}/api/share/${locale}/${slug}`, {signal: AbortSignal.timeout(30_000)});
     assert.equal(response.status, 200, `${locale}/${slug}: available image`);
     assert.match(response.headers.get('content-type') || '', /image\/png/, `${locale}/${slug}: PNG type`);
@@ -22,6 +22,7 @@ for (const locale of locales) {
     if (slug === 'guide' && ['en', 'ja'].includes(locale)) await writeFile(new URL(`../.qa/share-${locale}.png`, import.meta.url), png);
     if (slug === 'player-count' && locale === 'ja') await writeFile(new URL('../.qa/share-ja-player-count.png', import.meta.url), png);
     if (slug === 'chanter' && locale === 'en') await writeFile(new URL('../.qa/share-en-chanter.png', import.meta.url), png);
+    if (locale === 'ja' && ['settings', 'gear-progression', 'daily-weekly-checklist', 'crafting'].includes(slug)) await writeFile(new URL(`../.qa/share-ja-${slug}.png`, import.meta.url), png);
     checked++;
   }
   const prefix = locale === 'en' ? '' : `/${locale}`;

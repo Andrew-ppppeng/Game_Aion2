@@ -1,0 +1,45 @@
+AION 2's built-in skill macro repeats a hotbar skill stack while you hold its activation key. Bind a reachable button and start with a short damage sequence. Keep actions that need timing on separate controls.
+
+<h2 id="bind-and-open">Bind the macro key and open the editor</h2>
+
+Find the ability-macro binding under **Key Settings → General → Gameplay**. Choose an activation button, open the skill menu's ability-macro editor, add a macro and select the hotbar slot containing your skill stack. Hold the bound button to repeat the stack.
+
+Menu names depend on the client language. Start with one hotbar stack so you can see which skills activate and how to stop the sequence.
+
+<GuideVisual id="macro-global-keybind" />
+
+<GuideVisual id="macro-global-editor" />
+
+<h2 id="priority-stack">Understand priority before adding more skills</h2>
+
+The stack checks the bottom skill first, then the entries above it. A high-priority skill without a cooldown can prevent other entries from firing. Start with a small set of repeatable attacks and watch each intended skill activate.
+
+Think about the job of each button before arranging it. A damage button you want whenever available is different from an attack that needs a particular target state. Write down any condition, range or resource requirement, and verify it during a manual attempt. Adding every unlocked skill makes it harder to identify an unavailable entry or a poorly chosen priority.
+
+<GuideVisual id="workflow" />
+
+<h2 id="manual-actions">Keep decisions on separate controls</h2>
+
+Keep movement, interrupts, protection and recovery on reachable separate controls. As Cleric, retain direct access to healing, cleanse and resurrection. As Ranger, keep control of distance and attacks reserved for a specific opening.
+
+A short repeatable damage sequence should leave you able to respond to the encounter. Test stopping the macro, moving out of a mechanic and using a reactive skill before trying it in a difficult party fight. If those actions become awkward, change the binding or reduce the stack. A higher damage result on a stationary target does not compensate for missing a mechanic.
+
+<h2 id="delay-and-basic-attack">Tune delay and basic attacks</h2>
+
+Compare the macro with manual attacks using the same build, target and attempt length. Include a separate basic attack in the comparison if that is part of your intended rotation. Check damage, missed attacks and the ability to react to mechanics.
+
+If the editor offers a delay setting, record the starting value and adjust it one step at a time. Choose a value that lets intended attacks fire while preserving responsive movement and reactive skills.
+
+<h2 id="debug-one-stack">Troubleshoot one stack at a time</h2>
+
+If nothing fires, first check the activation binding and that the macro refers to the intended hotbar slot. If only one attack repeats, inspect its priority and availability. If some attacks disappear, test those attacks manually against the same target: cooldown, range, resource or a required condition may explain the difference.
+
+Test the sequence while moving and after changing target. Retest when you unlock or change a skill option, and include only skills your character can currently use.
+
+<h2 id="built-in-and-policy">Built-in macros and NC policy</h2>
+
+Use the game's own macro editor. NC's operation policy sanctions programs or devices that circumvent protection or interfere with normal operation. For accessibility arrangements beyond the built-in controls, consult NC support and the current policy.
+
+Choose the skills and role first, then simplify their controls. The [builds guide](/builds) helps separate repeatable attacks from decisions that require attention.
+
+<GuideNext slug="builds" />

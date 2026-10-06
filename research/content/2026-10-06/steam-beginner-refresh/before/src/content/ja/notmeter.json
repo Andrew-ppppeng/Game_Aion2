@@ -1,0 +1,63 @@
+{
+  "title": "AION 2 DPSメーター：NotMeterの導入とダメージ記録",
+  "description": "NotMeterでAION 2のDPS・nDPSを比較し、Npcapを導入する手順を確認。戦闘の記録前にデスクトップ版の地域対応とアカウント規約を確認します。",
+  "summary": "NotMeterは第三者製のAION 2 DPSメーターと戦闘記録サイトです。Web検索とデスクトップ記録は別機能で、現行版での記録互換性は未確認です。",
+  "quickAnswer": "NotMeterは第三者製のAION 2ダメージ記録ツールです。WindowsではNpcapとNotMeterのZIPを導入します。Web検索は利用できますが、現行版のデスクトップ記録互換性は未確認です。導入前に地域対応と規約を確認してください。",
+  "toc": [
+    {
+      "id": "website-or-desktop",
+      "title": "Webの記録を見る？デスクトップで記録する？"
+    },
+    {
+      "id": "dps-meter-options",
+      "title": "記録方式と地域でDPSメーターを選ぶ"
+    },
+    {
+      "id": "source-and-global-support",
+      "title": "デスクトップ版と対応"
+    },
+    {
+      "id": "maintainer-installation",
+      "title": "Windowsでの導入"
+    },
+    {
+      "id": "read-combat-records",
+      "title": "DPS と nDPS の読み方"
+    },
+    {
+      "id": "missing-records",
+      "title": "検索や記録がない場合"
+    },
+    {
+      "id": "nc-policy",
+      "title": "NCの方針と利用"
+    }
+  ],
+  "visuals": {
+    "workflow": {
+      "title": "戦闘比較を改善につなげる",
+      "caption": "近い条件の戦闘を比較し、構成を一つ変えて結果を確認します。",
+      "steps": [
+        {
+          "label": "条件を記録",
+          "description": "サービス地域、パッチ、ツールの版、相手、構成を記録する。"
+        },
+        {
+          "label": "似た条件で比較",
+          "description": "複数の近い条件の試行を使い、パーティーと役割も揃える。"
+        },
+        {
+          "label": "一項目だけ変更",
+          "description": "一つのスキルや構成だけを変え、結果の原因を追えるようにする。"
+        },
+        {
+          "label": "結果を確認",
+          "description": "ダメージに加え、クリア、生存、パーティーへの貢献を見る。"
+        }
+      ]
+    }
+  },
+  "inlineNext": [
+    "builds"
+  ]
+}

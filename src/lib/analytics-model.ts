@@ -1,11 +1,11 @@
-export const eventNames = ['page_view', 'new_browser', 'session_start', 'return_7d', 'next_guide_click', 'tool_use', 'bookmark_save', 'budget_save', 'checklist_save', 'web_vital'] as const;
+export const eventNames = ['page_view', 'new_browser', 'session_start', 'return_7d', 'next_guide_click', 'video_click', 'tool_use', 'bookmark_save', 'budget_save', 'checklist_save', 'web_vital'] as const;
 export type AnalyticsEvent = {
   name: typeof eventNames[number]; path: string; locale: 'en' | 'ja' | 'es' | 'de';
-  target?: 'character' | 'budget' | 'checklist' | 'calendar' | 'equipment' | 'classes';
+  target?: 'character' | 'budget' | 'checklist' | 'calendar' | 'equipment' | 'classes' | 'videos';
   metric?: 'LCP' | 'INP' | 'CLS'; value?: number; cohort?: string;
 };
 const allowedKeys = new Set(['name', 'path', 'locale', 'target', 'metric', 'value', 'cohort']);
-const targets = ['character', 'budget', 'checklist', 'calendar', 'equipment', 'classes'];
+const targets = ['character', 'budget', 'checklist', 'calendar', 'equipment', 'classes', 'videos'];
 export function isIsoDate(value: string) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
   const timestamp = Date.parse(`${value}T00:00:00Z`);

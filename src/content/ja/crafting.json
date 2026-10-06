@@ -1,0 +1,60 @@
+{
+  "title": "AION 2 製作：職業・レシピ・素材",
+  "description": "製作職業を選び、2つの初期レシピからOrichalcum装備の連鎖へ進みます。",
+  "summary": "製作職業を選び、2つの初期レシピからOrichalcum装備の連鎖へ進みます。",
+  "quickAnswer": "Blacksmithingは近接武器とGuard、Handicraftingは弓・杖・装飾品を製作。Orichalcum LongswordはIngot 3、Refining Stone 5、Odyle 2。Ingot 1つにはOre 2とSolvent 1が必要です。",
+  "toc": [
+    {
+      "id": "start-with-a-recipe",
+      "title": "装備を作る製作職業"
+    },
+    {
+      "id": "different-material-systems",
+      "title": "必要な素材の入手先"
+    },
+    {
+      "id": "prepare-a-batch",
+      "title": "実例：Orichalcum Longswordを1本作る"
+    },
+    {
+      "id": "gather-or-buy",
+      "title": "Splendentの連鎖：通常品だけでは進めない理由"
+    },
+    {
+      "id": "first-craft",
+      "title": "高価な連鎖の前に製作レベルを上げる"
+    },
+    {
+      "id": "crafting-blockers",
+      "title": "素材不足になる理由"
+    }
+  ],
+  "visuals": {
+    "workflow": {
+      "title": "AION 2 製作：職業・レシピ・素材",
+      "caption": "製作職業を選び、2つの初期レシピからOrichalcum装備の連鎖へ進みます。",
+      "steps": [
+        {
+          "label": "鉱石を精錬",
+          "description": "Ore 2 + Solvent 1 → Ingot 1。"
+        },
+        {
+          "label": "初期の剣を作る",
+          "description": "1回：Ingot 3 + Refining Stone 5 + Odyle 2。"
+        },
+        {
+          "label": "Splendent品を保管",
+          "description": "Expertレシピは通常品ではなくSplendentの剣を消費。"
+        }
+      ]
+    },
+    "recipe": {
+      "assetId": "craft-orichalcum-ingot",
+      "alt": "Orichalcum Ingotレシピ：Ore 2とSolvent 1。",
+      "caption": "Orichalcum Ingotレシピ：Ore 2とSolvent 1。"
+    }
+  },
+  "inlineNext": [
+    "gathering"
+  ]
+}

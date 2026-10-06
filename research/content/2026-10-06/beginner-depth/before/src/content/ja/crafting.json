@@ -1,0 +1,55 @@
+{
+  "title": "AION2 製作",
+  "description": "使う予定のアイテムのレシピを選び、専門分野と素材条件を確認して一回分を用意します。採集、装備抽出、Substance Morphは異なる入力を扱います。製作前に正確なアイテム名とBound条件を照合してください。",
+  "summary": "レシピの素材と帰属条件を照合し、採集と購入の費用を比べてから最初の一回を製作します。",
+  "quickAnswer": "使う予定のアイテムのレシピを選び、専門分野と素材条件を確認して一回分を用意します。採集、装備抽出、Substance Morphは異なる入力を扱います。製作前に正確なアイテム名とBound条件を照合してください。",
+  "toc": [
+    {
+      "id": "start-with-a-recipe",
+      "title": "専門分野より先に完成品を選ぶ"
+    },
+    {
+      "id": "different-material-systems",
+      "title": "採集・抽出・変換を区別する"
+    },
+    {
+      "id": "prepare-a-batch",
+      "title": "一回分の素材を準備する"
+    },
+    {
+      "id": "gather-or-buy",
+      "title": "不足分を採集するか購入するか"
+    },
+    {
+      "id": "first-craft",
+      "title": "最初の製作結果を確認する"
+    },
+    {
+      "id": "crafting-blockers",
+      "title": "製作できない原因を解決する"
+    }
+  ],
+  "visuals": {
+    "workflow": {
+      "title": "条件を確認し、準備して確定する",
+      "caption": "選択画面、アイテム、現在の条件を確認します。 再実行や追加投資の前に結果を試します。",
+      "steps": [
+        {
+          "label": "条件を読む",
+          "description": "選択画面、アイテム、現在の条件を確認します。"
+        },
+        {
+          "label": "一回分を準備する",
+          "description": "確定前に入力、キー、費用を確認します。"
+        },
+        {
+          "label": "結果を確認する",
+          "description": "再実行や追加投資の前に結果を試します。"
+        }
+      ]
+    }
+  },
+  "inlineNext": [
+    "gathering"
+  ]
+}

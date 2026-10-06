@@ -1,7 +1,11 @@
 import type {TopicSlug} from './topics';
 
 export const nextGuides: Record<TopicSlug, [TopicSlug, TopicSlug]> = {
-  guide: ['leveling', 'builds'], gathering: ['map', 'monetization'], leveling: ['map', 'builds'],
+  'settings': ['guide', 'guide'],
+  'gear-progression': ['daily-weekly-checklist', 'leveling'],
+  'daily-weekly-checklist': ['gear-progression', 'guide'],
+  'crafting': ['gathering', 'gear-progression'],
+  guide: ['settings', 'leveling'], gathering: ['crafting', 'map'], leveling: ['gear-progression', 'builds'],
   templar: ['builds', 'gladiator'], assassin: ['builds', 'pvp'],
   sorcerer: ['builds', 'spiritmaster'], cleric: ['cleric-build', 'chanter'],
   classes: ['builds', 'tier-list'], chanter: ['builds', 'pvp'], 'tier-list': ['classes', 'builds'],
@@ -19,5 +23,4 @@ export const nextGuides: Record<TopicSlug, [TopicSlug, TopicSlug]> = {
   'macro-guide': ['builds', 'notmeter'], 'server-transfer': ['server', 'maintenance'],
   'wings': ['builds', 'pvp'],
   'database': ['map', 'builds'],
-  'global-changes': ['guide', 'monetization'],
 };

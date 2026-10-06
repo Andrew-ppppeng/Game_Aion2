@@ -1,64 +1,47 @@
 {
   "title": "Recolección de AION 2: habilidades y rutas",
-  "description": "Empieza a recolectar en AION 2, sigue Essence Extraction, elige especialización, completa promociones y crea rutas de materiales.",
-  "summary": "Lee requisitos de nodos, distingue competencia y fabricación y elige materiales para la próxima receta. Compara una ruta corta con el precio de compra.",
-  "quickAnswer": "Empieza con un nodo accesible durante los primeros niveles y sigue la competencia en Essence Extraction. Revisa requisitos, reúne materiales y completa la promoción al alcanzar el límite de etapa.",
+  "description": "Recolecta para tu primera receta: cantidades, promoción y rutas.",
+  "summary": "Materiales iniciales, puntos de recolección y promoción Ruby Asmodian en Novice 50.",
+  "quickAnswer": "Para una espada inicial, recoge 6 Orichalcum Ore y 2 Odyle, compra 3 Solvent y consigue 5 Refining Stones. Especializa Odyle y el recurso de tu receta. En Novice 50, Asmodian completa la promoción Ruby de Alzirr en Safe Haven.",
   "toc": [
     {
       "id": "start-gathering",
-      "title": "Empieza sin importar el requisito de otra región"
+      "title": "Recolecta para tu primera receta"
     },
     {
       "id": "experience-specialization",
-      "title": "Distingue experiencia, especialización y fabricación"
-    },
-    {
-      "id": "choose-materials",
-      "title": "Elige materiales y habilidades para un objetivo real"
+      "title": "Competencia y puntos de recolección"
     },
     {
       "id": "gathering-routes",
-      "title": "Encuentra nodos y crea una ruta compacta"
+      "title": "Dos rutas con un objetivo concreto"
     },
     {
       "id": "route-results",
-      "title": "Comprueba por qué falla una ruta"
-    },
-    {
-      "id": "promotion-and-value",
-      "title": "Resuelve bloqueos y decide entre recolectar o comprar"
+      "title": "Resuelve el bloqueo de recolección"
     }
   ],
   "visuals": {
-    "topic": {
-      "assetId": "aion2t-verteron-aria",
-      "alt": "Mapa comunitario Aion2T con solo los marcadores de la hierba Aria en Verteron",
-      "caption": "Marcadores de la hierba Aria en Verteron, en Aion2T."
-    },
     "workflow": {
-      "title": "Prueba un material antes de crear un circuito",
-      "caption": "Una prueba breve separa la demanda de la receta, el acceso real a los nodos y el valor de repetir una ruta.",
+      "title": "Ruta de materiales de la primera espada",
+      "caption": "Materiales por intento antes de fallos.",
       "steps": [
         {
-          "label": "Identifica el ingrediente",
-          "description": "Copia el nombre exacto y la cantidad que pide tu receta o pantalla de mejora actual."
+          "label": "Orichalcum Ore ×6",
+          "description": "Recoge nodos de mena."
         },
         {
-          "label": "Prueba un nodo accesible",
-          "description": "Lee el requisito, observa los indicadores de éxito y fracaso y comprueba material y competencia."
+          "label": "Odyle ×2",
+          "description": "Extrae nodos Odyle."
         },
         {
-          "label": "Filtra un grupo cercano",
-          "description": "Selecciona la zona de tu facción y muestra solo el material objetivo; los marcadores son paradas posibles."
-        },
-        {
-          "label": "Compara un recorrido cronometrado",
-          "description": "Anota rendimiento útil, intentos fallidos y desplazamiento antes de invertir puntos o comprar el lote."
+          "label": "Solvent ×3 + Refining Stone ×5",
+          "description": "Compra Solvent y consigue piedras de monstruos."
         }
       ]
     }
   },
   "inlineNext": [
-    "map"
+    "crafting"
   ]
 }

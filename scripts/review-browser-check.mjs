@@ -134,12 +134,12 @@ try {
   await expect(page.locator('#launch-rewards')).toBeVisible();
 
   const equipmentStart = fixtures.fulfilled.length;
-  await page.goto(`${base}/builds`, {waitUntil: 'networkidle'});
+  await page.goto(`${base}/cleric-build`, {waitUntil: 'networkidle'});
   const equipment = page.locator('[data-equipment-cards]');
   await expect(equipment.locator('[data-item-id]')).toHaveCount(2);
   assert.equal(fixtures.fulfilled.slice(equipmentStart).filter(({url}) => url.includes('/equipment-examples')).length, 0);
   await equipment.locator('[data-more-equipment] > summary').click();
-  await expect(equipment.locator('[data-item-id]')).toHaveCount(22);
+  await expect(equipment.locator('[data-item-id]')).toHaveCount(7);
   await equipment.locator('[data-more-equipment] > summary').click();
   await equipment.locator('[data-more-equipment] > summary').click();
   assert.equal(fixtures.fulfilled.slice(equipmentStart).filter(({url}) => url.includes('/equipment-examples')).length, 1, 'Additional cards fetched only once per mounted guide');
@@ -170,7 +170,7 @@ try {
     const implementation = new RegExp(`["']${marker}["']\\s*:`);
     assert.ok(!implementation.test(scriptText), `/steam does not load unused ${marker} implementation`);
   }
-  for (const [slug, marker] of [['tools/character', 'data-character-tool'], ['monetization', 'data-budget-planner'], ['twitch-drops', 'data-event-timers'], ['builds', 'data-more-equipment'], ['classes', 'data-class-icon']]) {
+  for (const [slug, marker] of [['tools/character', 'data-character-tool'], ['monetization', 'data-budget-planner'], ['twitch-drops', 'data-event-timers'], ['cleric-build', 'data-more-equipment'], ['classes', 'data-class-icon']]) {
     scripts.length = 0;
     await ordinaryPage.goto(`${base}/${slug}`, {waitUntil: 'networkidle'});
     assert.ok(new RegExp(`["']${marker}["']\\s*:`).test((await Promise.all(scripts)).join('\n')), `${slug}: loaded widget signature is recognized`);

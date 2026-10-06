@@ -1,0 +1,69 @@
+{
+  "title": "AION 2 Macro Guide: Keybind and Skill Priority",
+  "description": "Set up AION 2’s built-in skill macro, bind the activation key, arrange skill priorities and troubleshoot missing attacks or delay.",
+  "summary": "Bind an activation key, start with a small hotbar stack and watch each attack. Keep healing, interrupts and movement reachable, then test the sequence while changing targets and reacting to mechanics.",
+  "quickAnswer": "Bind the ability macro under Key Settings → General → Gameplay, open its editor and select a hotbar skill stack. Holding the key repeats the stack. Start with a short damage sequence and keep healing, movement and interrupts separate.",
+  "toc": [
+    {
+      "id": "bind-and-open",
+      "title": "Bind the key and open the editor"
+    },
+    {
+      "id": "priority-stack",
+      "title": "Understand skill priority"
+    },
+    {
+      "id": "manual-actions",
+      "title": "Keep decisions on separate controls"
+    },
+    {
+      "id": "delay-and-basic-attack",
+      "title": "Tune delay and basic attacks"
+    },
+    {
+      "id": "debug-one-stack",
+      "title": "Troubleshoot one stack"
+    },
+    {
+      "id": "built-in-and-policy",
+      "title": "Built-in macros and NC policy"
+    }
+  ],
+  "visuals": {
+    "workflow": {
+      "title": "Build a small macro you can explain",
+      "caption": "Build one skill stack and test both its attacks and your reactive controls.",
+      "steps": [
+        {
+          "label": "Play it manually",
+          "description": "Confirm the intended attack and each required condition before adding repetition."
+        },
+        {
+          "label": "Bind one stack",
+          "description": "Start with one known hotbar slot and verify its activation key."
+        },
+        {
+          "label": "Watch every entry",
+          "description": "Check whether priority or an unavailable skill prevents the expected attack."
+        },
+        {
+          "label": "Test a response",
+          "description": "Stop, move and use a reactive skill before taking the setup into a party encounter."
+        }
+      ]
+    },
+    "macro-global-keybind": {
+      "assetId": "macro-global-keybind",
+      "alt": "German settings page showing the ability-macro keybind under Gameplay",
+      "caption": "Ability-macro keybind under Key Settings → General → Gameplay."
+    },
+    "macro-global-editor": {
+      "assetId": "macro-global-editor",
+      "alt": "German skill page with the ability-macro button above the active skills",
+      "caption": "Button for opening the skill-macro editor."
+    }
+  },
+  "inlineNext": [
+    "builds"
+  ]
+}

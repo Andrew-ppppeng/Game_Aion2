@@ -94,7 +94,7 @@ assert.equal(new URL(englishRedirect.headers.get('location'), base).pathname, '/
 const {html: rootWithPreference} = await request('/', {headers: {'Accept-Language': 'ja', Cookie: 'NEXT_LOCALE=de'}});
 assert.match(rootWithPreference, /<html\b[^>]*\blang="en"/);
 const {html: sitemap} = await request('/sitemap.xml');
-const sitemapEntries = locales.length * (slugs.length + 2);
+const sitemapEntries = locales.length * (slugs.length + 3);
 assert.equal((sitemap.match(/<loc>/g) || []).length, sitemapEntries);
 for (const locale of locales) assert.ok(sitemap.includes(`${origin}${path(locale, 'tools/character')}</loc>`));
 for (const locale of locales) for (const slug of slugs) assert.ok(sitemap.includes(`${origin}${path(locale, slug)}</loc>`));

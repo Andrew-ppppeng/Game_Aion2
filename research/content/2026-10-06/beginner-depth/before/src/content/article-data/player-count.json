@@ -1,0 +1,43 @@
+{
+  "slug": "player-count",
+  "keyword": "aion 2 player count",
+  "checkedAt": "2026-10-04",
+  "revision": "2026-10-04.global-default-1",
+  "regions": [
+    "Global"
+  ],
+  "related": [
+    "steam",
+    "server",
+    "maintenance"
+  ],
+  "sources": [
+    {
+      "id": "steamdb-player-snapshot",
+      "title": "AION 2 Steam Charts · SteamDB",
+      "url": "https://steamdb.info/app/3393110/charts/",
+      "kind": "tool",
+      "region": "Global",
+      "publishedAt": null,
+      "version": "App 3393110 browser snapshot checked October 3, 2026 at 15:48 UTC; third-party Steam concurrency display, not an all-client total"
+    },
+    {
+      "id": "steam-player-definition",
+      "title": "ISteamUserStats Interface — GetNumberOfCurrentPlayers",
+      "url": "https://partner.steamgames.com/doc/webapi/ISteamUserStats",
+      "kind": "official",
+      "region": "Global",
+      "publishedAt": null,
+      "version": "Steamworks documentation checked October 3, 2026; describes active Steam players and excludes players not connected to Steam"
+    },
+    {
+      "id": "steamcharts-missing-app",
+      "title": "SteamCharts app 3393110 lookup",
+      "url": "https://steamcharts.com/app/3393110",
+      "kind": "tool",
+      "region": "Global",
+      "publishedAt": null,
+      "version": "Browser lookup October 3, 2026 returned Page Not Found; no player metric obtained"
+    }
+  ]
+}

@@ -10,7 +10,7 @@ export const site = {
   discord: 'https://discord.gg/aion2official',
   youtube: 'https://www.youtube.com/@Aion2Official',
   characters: 'https://aion2.plaync.com/en-us/characters/index',
-  launchAnnouncement: 'https://about.ncsoft.com/news/article/A2_update_20261001',
+  launchAnnouncement: 'https://steamcommunity.com/games/3393110/announcements/detail/712288224875119583',
   maintenanceAnnouncement: 'https://aion2.plaync.com/en-us/board/notice/list',
 };
 

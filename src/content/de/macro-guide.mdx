@@ -1,45 +1,41 @@
-AION 2s eingebautes Fertigkeitsmakro wiederholt einen Hotbar-Stapel, während du die Aktivierungstaste hältst. Wähle eine gut erreichbare Taste und beginne mit einer kurzen Schadensfolge. Lass Aktionen mit gezieltem Timing auf eigenen Tasten.
+<h2 id="bind-and-open">Ein funktionierendes Makro erstellen</h2>
 
-<h2 id="bind-and-open">Makrotaste festlegen und Editor öffnen</h2>
-
-Die Belegung liegt unter **Tasteneinstellungen → Allgemein → Gameplay**. Wähle eine Aktivierungstaste, öffne den Makroeditor im Fertigkeitsmenü, füge ein Makro hinzu und wähle den Hotbar-Platz mit deinem Stapel. Halte die Taste zum Wiederholen.
-
-Menünamen hängen von der Client-Sprache ab. Beginne mit einem Stapel, damit du ausgelöste Fertigkeiten und das Stoppen der Folge erkennst.
+1. Unter **Key Settings → General → Gameplay** Aktivierungstaste belegen; **Q** ist nach Verschieben der bisherigen Aktion möglich.
+2. Im Fertigkeitsmenü **ability-macro editor** öffnen und Makro hinzufügen.
+3. Die **Hotbar-Kette/den Stapel** wählen, nicht nur das sichtbare Fertigkeitssymbol.
+4. Taste für Ausführung halten, zum Stoppen loslassen.
 
 <GuideVisual id="macro-global-keybind" />
 
 <GuideVisual id="macro-global-editor" />
 
-<h2 id="priority-stack">Priorität verstehen, bevor du mehr Fertigkeiten ergänzt</h2>
+<h2 id="priority-stack">Priorität und Ranger-Beispiel</h2>
 
-Der Stapel prüft zuerst die unterste Fertigkeit und danach die Einträge darüber. Eine hoch priorisierte Fertigkeit ohne Abklingzeit kann andere Einträge blockieren. Beginne mit wenigen wiederholbaren Angriffen und beobachte jede Auslösung.
+Der Stapel prüft die **unterste Fertigkeit zuerst**. Bedingte Angriffe unten und Füller ohne Abklingzeit darüber anordnen. Ohne Voraussetzung löst der Folgeangriff nicht aus; ein Füller unten kann obere Einträge verdrängen.
 
-Überlege vor dem Einordnen, welche Aufgabe jeder Knopf erfüllt. Ein Angriff, den du bei Verfügbarkeit verwenden willst, unterscheidet sich von einem Angriff, der einen bestimmten Zielzustand benötigt. Notiere Bedingungen, Reichweite und Ressourcen und prüfe sie in einem manuellen Versuch. Alle freigeschalteten Fertigkeiten hinzuzufügen erschwert die Suche nach einem nicht verfügbaren Eintrag oder einer ungünstigen Priorität.
+Beim [Ranger](/ranger#manual-loop): **Marking Shot → Precision → Suppressing Arrow**, dazwischen **Snipe** für MP. **Drill Dart** braucht einen kritischen Treffer, **Burst Arrow** Slow oder Root. Das Makro erzeugt diese Bedingungen nicht. Bereite Folgeangriffe vor Füllern priorisieren und Zielkontrolle separat halten.
 
-<GuideVisual id="workflow" />
+<h2 id="manual-actions">Klassenaktionen auf direkten Tasten</h2>
 
-<h2 id="manual-actions">Entscheidungen auf eigenen Tasten lassen</h2>
+| Klasse | Direkte Aktion und Bedingung |
+| --- | --- |
+| [Assassine](/assassin#manual-loop) | Insignia Explosion bei **fünf Insignias**; nur sicher hinter das Ziel bewegen |
+| [Beschwörer](/spiritmaster#summon-sequence) | Elemental Fusion bei **Four Elements**; Water für MP, Wind für HP |
+| [Ranger](/ranger#manual-loop) | Fallen, Flucht und Deadshot in sicheren Wirkfenstern |
+| [Kleriker](/cleric#manual-loop) | Heilung, Reinigung, Wiederbelebung; Schaden bei Notfällen stoppen |
 
-Lass Bewegung, Unterbrechungen, Schutz und Erholung auf gut erreichbaren eigenen Tasten. Halte als Cleric Heilung, Reinigung und Wiederbelebung direkt verfügbar. Behalte als Ranger die Kontrolle über Abstand und Angriffe für bestimmte Öffnungen.
+Ausweichen/Blocken und Unterbrechen außerhalb des Schadensstapels halten.
 
-Eine kurze Schadensfolge muss dir Zeit für die Begegnung lassen. Teste vor schwierigen Gruppenkämpfen, ob du das Makro stoppen, einer Mechanik ausweichen und eine Reaktionsfertigkeit nutzen kannst. Wenn das umständlich wird, ändere die Belegung oder verkleinere den Stapel. Mehr Schaden an einem unbewegten Ziel gleicht eine verpasste Mechanik nicht aus.
+<h2 id="delay-and-basic-attack">Makroverzögerung: Startwert</h2>
 
-<h2 id="delay-and-basic-attack">Verzögerung und Basisangriff abstimmen</h2>
+Wenn der Editor Verzögerung anbietet, sind **50 ms** ein vorsichtiger Start. Bei stabiler niedriger Latenz sind **10 ms** eine Option, solange alle gewünschten Angriffe auslösen. Überspringt ein voller Zyklus einen bereiten Eintrag, zuerst die Verzögerung erhöhen. MP-wiederherstellenden Grundangriff verfügbar halten.
 
-Vergleiche Makro und manuelle Angriffe mit gleichem Build, Ziel und gleicher Dauer. Beziehe einen separat ausgelösten Basisangriff ein, wenn er zur Rotation gehört. Prüfe Schaden, fehlende Angriffe und Reaktion auf Mechaniken.
+<h2 id="debug-one-stack">Ein fehlerhaftes Makro korrigieren</h2>
 
-Bietet der Editor eine Verzögerung, notiere den Startwert und ändere ihn schrittweise. Wähle einen Wert, bei dem gewünschte Angriffe auslösen und Bewegung sowie Reaktionsfertigkeiten gut reagieren.
+**Nichts löst aus:** Aktivierungstaste und gewählte Hotbar-Kette. **Nur Füller:** unterste Priorität. **Folgeangriff fehlt:** Abklingzeit, MP, Reichweite oder Zustand/kritischer Proc. **Charakter läuft vor:** Verfolgung in [Einstellungen](/settings) aus. Vier Klassenbeispiele im Klassenfilter der [Videothek](/beginner-videos).
 
-<h2 id="debug-one-stack">Einen Stapel nach dem anderen prüfen</h2>
+<h2 id="built-in-and-policy">Den eingebauten Editor nutzen</h2>
 
-Wenn nichts ausgelöst wird, prüfe zuerst Aktivierungstaste und den gewählten Platz der Fertigkeitsleiste. Wiederholt sich nur ein Angriff, kontrolliere dessen Priorität und Verfügbarkeit. Fehlen Angriffe, teste sie manuell am selben Ziel: Abklingzeit, Reichweite, Ressourcen oder eine notwendige Bedingung können den Unterschied erklären.
-
-Teste die Folge in Bewegung und nach Zielwechseln. Prüfe sie nach Freischaltung oder Änderung einer Fertigkeitsoption erneut und nutze nur aktuell verfügbare Fertigkeiten.
-
-<h2 id="built-in-and-policy">Eingebaute Makros und NC-Richtlinie</h2>
-
-Verwende den Makroeditor des Spiels. NCs Betriebsrichtlinie sanktioniert Programme oder Geräte, die Schutzmaßnahmen umgehen oder den normalen Betrieb stören. Kläre Barrierefreiheitslösungen außerhalb der eingebauten Steuerung mit NC-Support und aktueller Richtlinie.
-
-Wähle zuerst Fertigkeiten und Rolle und vereinfache dann die Bedienung. Der [Build-Guide](/builds) trennt wiederholbare Angriffe von Entscheidungen, die Aufmerksamkeit verlangen.
+Diese Schritte nutzen den Spieleeditor. NC sanktioniert Programme oder Geräte, die Schutz umgehen oder normalen Betrieb stören. Für Barrierefreiheit außerhalb eingebauter Steuerung NC-Support und aktuelle Richtlinie konsultieren.
 
 <GuideNext slug="builds" />

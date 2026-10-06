@@ -7,7 +7,7 @@ import {DataError} from '@/lib/aion2/model';
 
 export const dynamic = 'force-dynamic';
 const headers = {'Cache-Control': 'private, no-store', 'X-Robots-Tag': 'noindex, nofollow'};
-const pages = new Set(['/', '/tools/character', ...legalSlugs.map((slug) => `/${slug}`), ...topics.map(({slug}) => `/${slug}`)]);
+const pages = new Set(['/', '/tools/character', '/beginner-videos', ...legalSlugs.map((slug) => `/${slug}`), ...topics.map(({slug}) => `/${slug}`)]);
 function sameOrigin(request: Request) {
   // Next can normalize request.url to localhost behind the local server or a
   // proxy. The Host authority is the address actually used by the browser.

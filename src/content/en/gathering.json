@@ -1,64 +1,47 @@
 {
   "title": "AION 2 Gathering: Skills and Node Routes",
-  "description": "Start AION 2 gathering, track Essence Extraction proficiency, choose specialization skills, complete promotions and build useful material routes.",
-  "summary": "Read node requirements, track gathering proficiency separately from crafting and choose materials for your next recipe. Compare a short route with the cost of buying the batch.",
-  "quickAnswer": "Start with an accessible node during early leveling and track proficiency under Essence Extraction. Check the node requirement, gather materials for a recipe and follow a promotion quest when your stage is capped.",
+  "description": "Gather materials for your first recipe: material quantities, promotion and resource routes.",
+  "summary": "Exact starter materials, a gathering allocation and the Asmodian Novice-50 Ruby promotion.",
+  "quickAnswer": "For one starter sword attempt, gather 6 Orichalcum Ore and 2 Odyle, buy 3 Solvent and collect 5 Refining Stones. Specialize in Odyle plus your recipe resource. At Novice 50, Asmodians complete Alzirr’s Ruby promotion in Safe Haven.",
   "toc": [
     {
       "id": "start-gathering",
-      "title": "Start gathering"
+      "title": "Gather materials for your first recipe"
     },
     {
       "id": "experience-specialization",
-      "title": "Experience and specialization"
-    },
-    {
-      "id": "choose-materials",
-      "title": "Choose materials and skills"
+      "title": "Gathering proficiency and skill points"
     },
     {
       "id": "gathering-routes",
-      "title": "Build a node route"
+      "title": "Two routes with a concrete purpose"
     },
     {
       "id": "route-results",
-      "title": "Check why a gathering route fails"
-    },
-    {
-      "id": "promotion-and-value",
-      "title": "Promotion blocks and value"
+      "title": "Fix the gathering block"
     }
   ],
   "visuals": {
-    "topic": {
-      "assetId": "aion2t-verteron-aria",
-      "alt": "Aion2T community map showing only Aria herb markers in Verteron",
-      "caption": "Aria herb markers in Verteron on Aion2T."
-    },
     "workflow": {
-      "title": "Test a material before building a farming loop",
-      "caption": "A small test separates recipe demand, actual node access and the value of repeating a route.",
+      "title": "First sword material route",
+      "caption": "Materials for one attempt before failed crafts.",
       "steps": [
         {
-          "label": "Name the missing ingredient",
-          "description": "Copy the exact material and quantity from your current recipe or upgrade screen."
+          "label": "Orichalcum Ore ×6",
+          "description": "Gather ore nodes."
         },
         {
-          "label": "Test one accessible node",
-          "description": "Read its requirement, watch the success/failure gauges and check the resulting material and proficiency."
+          "label": "Odyle ×2",
+          "description": "Extract Odyle nodes."
         },
         {
-          "label": "Filter a compact cluster",
-          "description": "Match your faction's zone and show only the intended material; treat markers as possible stops."
-        },
-        {
-          "label": "Compare one timed run",
-          "description": "Record useful yield, failed attempts and travel time before investing points or buying the batch."
+          "label": "Solvent ×3 + Refining Stone ×5",
+          "description": "Buy Solvent and collect monster-drop stones."
         }
       ]
     }
   },
   "inlineNext": [
-    "map"
+    "crafting"
   ]
 }

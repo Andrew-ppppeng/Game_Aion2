@@ -18,7 +18,7 @@ const information = {
     ],
     termsSummary: 'AION 2 Wiki is an independent fan guide maintained by the AION 2 Wiki editorial team. This page explains how we maintain articles and handle corrections.',
     terms: [
-      ['editorial-policy', 'Editorial responsibility and sources', 'The AION 2 Wiki editorial team maintains the guides and translations. Game facts prioritize official notices, Steam and official Discord. Research logs retain source links, dates, regions and version context; guides use short labels for KR and TW examples.'],
+      ['editorial-policy', 'Editorial responsibility and sources', 'The AION 2 Wiki editorial team maintains guides for the Steam release and their translations. Game facts prioritize official notices, Steam and official Discord. Source links, dates and version context remain in internal research records.'],
       ['maintenance-policy', 'How updates are maintained', 'We update affected guides when game rules change and keep the four language versions aligned. The date at the top records the article update. Event tables and timers show scheduled event windows.'],
       ['terms-of-use', 'Using the guides and tools', 'Use the guides as sourced starting points and compare their dated instructions with your current game client before spending resources. This site is not operated or endorsed by NC. Game artwork and trademarks belong to their respective owners. Public-data tools do not provide account access; do not enter passwords or private account information into them.'],
     ],
@@ -26,7 +26,7 @@ const information = {
     correctionsBody: 'Include the page, region, client or patch date, the statement to correct and an official source or reproducible example. Avoid account secrets or other players’ private information. The template is prepared locally and is not submitted by this site.',
     contact: 'Open feedback contact',
     templateLabel: 'Correction template', copy: 'Copy correction template', copied: 'Template copied. No report was sent.', select: 'Template selected. Copy it using your browser.',
-    template: 'Page URL:\nRegion (Global / KR / TW):\nClient version or patch date:\nStatement to correct:\nProposed correction:\nSource URL / reproducible steps:\n',
+    template: 'Page URL:\nSteam server region and server:\nClient version or patch date:\nStatement to correct:\nProposed correction:\nSource URL / reproducible steps:\n',
   },
   ja: {
     privacySummary: 'チェックリスト、保存キャラクター、素材計画はこのブラウザに保存します。日別集計とGoogle Analyticsを使用し、下の設定から変更できます。',
@@ -40,14 +40,14 @@ const information = {
     ],
     termsSummary: 'AION 2 WikiはAION 2 Wiki編集チームが管理する独立したファンガイドです。記事の更新方針と訂正方法を説明します。',
     terms: [
-      ['editorial-policy', '編集責任と出典', 'AION 2 Wiki編集チームがガイドと翻訳を管理します。ゲーム情報は公式告知、Steam、公式Discordを優先します。出典リンク、日付、地域、バージョンは研究ログに保存し、ガイド内のKR・TWの例には短い地域表示を付けます。'],
+      ['editorial-policy', '編集責任と出典', 'AION 2 Wiki編集チームがSteam版のガイドと翻訳を管理します。ゲーム情報は公式告知、Steam、公式Discordを優先します。出典リンク、日付、バージョンは内部研究記録に保存します。'],
       ['maintenance-policy', '更新方針', 'ゲームのルールが変わった場合は該当ガイドを更新し、4言語の内容を揃えます。ページ上部の日付は記事の更新日です。イベント表とタイマーは予定された開催期間を表示します。'],
       ['terms-of-use', 'ガイドとツールの利用', 'ガイドを出典付きの起点として使い、資源を消費する前に現在のクライアントと照合してください。当サイトはNCの運営・公認サイトではありません。ゲーム画像や商標は各権利者に帰属します。公開情報ツールはアカウントへのアクセスを提供せず、パスワードや非公開のアカウント情報を入力する必要はありません。'],
     ],
     corrections: '訂正と連絡', correctionsBody: 'ページ、地域、クライアントまたはパッチの日付、訂正箇所、公式出典や再現例を記入してください。アカウントの秘密や他のプレイヤーの非公開情報は含めないでください。テンプレートは端末内で準備し、このサイトからは送信しません。',
     contact: 'フィードバックの連絡先を開く',
     templateLabel: '訂正テンプレート', copy: '訂正テンプレートをコピー', copied: 'コピーしました。報告は送信していません。', select: 'テンプレートを選択しました。ブラウザでコピーしてください。',
-    template: 'ページURL:\n地域（Global / KR / TW）:\nクライアント版またはパッチ日:\n訂正する記述:\n訂正案:\n出典URL / 再現手順:\n',
+    template: 'ページURL:\nSteamのサーバー地域とサーバー名:\nクライアント版またはパッチ日:\n訂正する記述:\n訂正案:\n出典URL / 再現手順:\n',
   },
   es: {
     privacySummary: 'Tus listas, personajes guardados y planes de materiales permanecen en este navegador. Usamos totales diarios y Google Analytics, con controles abajo.',
@@ -61,14 +61,14 @@ const information = {
     ],
     termsSummary: 'AION 2 Wiki es una guía independiente de aficionados mantenida por el equipo editorial de AION 2 Wiki. Esta página explica las actualizaciones y correcciones.',
     terms: [
-      ['editorial-policy', 'Responsabilidad editorial y fuentes', 'El equipo editorial de AION 2 Wiki mantiene las guías y traducciones. Los datos del juego priorizan los avisos oficiales, Steam y Discord oficial. Los registros de investigación conservan enlaces, fechas, regiones y versiones; las guías usan etiquetas breves para los ejemplos de KR y TW.'],
+      ['editorial-policy', 'Responsabilidad editorial y fuentes', 'El equipo editorial de AION 2 Wiki mantiene las guías de la versión de Steam y sus traducciones. Los datos del juego priorizan los avisos oficiales, Steam y Discord oficial. Los enlaces, fechas y versiones se conservan en registros internos.'],
       ['maintenance-policy', 'Mantenimiento de las guías', 'Actualizamos las guías afectadas cuando cambian las reglas del juego y mantenemos alineados los cuatro idiomas. La fecha superior indica la actualización del artículo. Las tablas y los temporizadores muestran los periodos programados de los eventos.'],
       ['terms-of-use', 'Uso de guías y herramientas', 'Usa las guías como punto de partida documentado y compara sus instrucciones fechadas con tu cliente antes de gastar recursos. NC no opera ni respalda este sitio. El arte y las marcas pertenecen a sus titulares. Las herramientas de datos públicos no dan acceso a cuentas; no introduzcas contraseñas ni información privada en ellas.'],
     ],
     corrections: 'Correcciones y contacto', correctionsBody: 'Incluye página, región, versión o fecha de parche, afirmación que corregir y fuente oficial o ejemplo reproducible. Evita secretos de cuentas e información privada de otros jugadores. La plantilla se prepara localmente y este sitio no la envía.',
     contact: 'Abrir contacto para comentarios',
     templateLabel: 'Plantilla de corrección', copy: 'Copiar plantilla de corrección', copied: 'Plantilla copiada. No se envió ningún informe.', select: 'Plantilla seleccionada. Cópiala con tu navegador.',
-    template: 'URL de la página:\nRegión (Global / KR / TW):\nVersión del cliente o fecha del parche:\nAfirmación que corregir:\nCorrección propuesta:\nURL de fuente / pasos para reproducir:\n',
+    template: 'URL de la página:\nRegión y servidor de Steam:\nVersión del cliente o fecha del parche:\nAfirmación que corregir:\nCorrección propuesta:\nURL de fuente / pasos para reproducir:\n',
   },
   de: {
     privacySummary: 'Checklisten, gespeicherte Charaktere und Materialpläne bleiben in diesem Browser. Wir verwenden Tagesstatistiken und Google Analytics, mit Einstellungen unten.',
@@ -82,14 +82,14 @@ const information = {
     ],
     termsSummary: 'AION 2 Wiki ist ein unabhängiger Fanguide des AION 2 Wiki-Redaktionsteams. Hier erklären wir Artikelpflege und Korrekturen.',
     terms: [
-      ['editorial-policy', 'Redaktionelle Verantwortung und Quellen', 'Das Redaktionsteam von AION 2 Wiki pflegt Guides und Übersetzungen. Spielinformationen beruhen vorrangig auf offiziellen Meldungen, Steam und dem offiziellen Discord. Forschungsprotokolle bewahren Links, Daten, Regionen und Versionsangaben; Guides kennzeichnen KR- und TW-Beispiele mit kurzen Regionslabels.'],
+      ['editorial-policy', 'Redaktionelle Verantwortung und Quellen', 'Das Redaktionsteam von AION 2 Wiki pflegt Guides zur Steam-Fassung und deren Übersetzungen. Spielinformationen beruhen vorrangig auf offiziellen Meldungen, Steam und dem offiziellen Discord. Quellenlinks, Daten und Versionsangaben bleiben in internen Forschungsaufzeichnungen.'],
       ['maintenance-policy', 'Artikelpflege', 'Bei geänderten Spielregeln aktualisieren wir die betroffenen Guides und gleichen alle vier Sprachen ab. Das Datum oben bezeichnet die Artikelaktualisierung. Ereignistabellen und Timer zeigen die geplanten Veranstaltungszeiten.'],
       ['terms-of-use', 'Guides und Tools verwenden', 'Nutze die Guides als belegten Ausgangspunkt und gleiche datierte Anweisungen vor dem Ressourceneinsatz mit deinem aktuellen Client ab. NC betreibt oder bestätigt diese Website nicht. Spielgrafiken und Marken gehören ihren jeweiligen Rechteinhabern. Öffentliche Datentools gewähren keinen Kontozugang; gib dort keine Passwörter oder privaten Kontodaten ein.'],
     ],
     corrections: 'Korrekturen und Kontakt', correctionsBody: 'Nenne Seite, Region, Clientversion oder Patchdatum, die zu korrigierende Aussage und eine offizielle Quelle oder ein reproduzierbares Beispiel. Vermeide Kontogeheimnisse und private Daten anderer Spieler. Die Vorlage wird lokal vorbereitet und von dieser Website nicht verschickt.',
     contact: 'Rückmeldungskontakt öffnen',
     templateLabel: 'Korrekturvorlage', copy: 'Korrekturvorlage kopieren', copied: 'Vorlage kopiert. Kein Bericht wurde gesendet.', select: 'Vorlage ausgewählt. Kopiere sie mit deinem Browser.',
-    template: 'Seiten-URL:\nRegion (Global / KR / TW):\nClientversion oder Patchdatum:\nZu korrigierende Aussage:\nVorgeschlagene Korrektur:\nQuellen-URL / Reproduktionsschritte:\n',
+    template: 'Seiten-URL:\nSteam-Serverregion und Server:\nClientversion oder Patchdatum:\nZu korrigierende Aussage:\nVorgeschlagene Korrektur:\nQuellen-URL / Reproduktionsschritte:\n',
   },
 };
 

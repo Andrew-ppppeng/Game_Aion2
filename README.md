@@ -28,6 +28,7 @@ npm run start
 ```sh
 npm run test:smoke
 npm run test:browser
+npm run test:beginner
 npm run test:tools
 npm run test:review
 npm run test:navigation
@@ -37,7 +38,7 @@ npm run test:site-info
 npm run test:performance
 ```
 
-浏览器测试默认使用本机 Chrome；未安装时可运行 `npx playwright install chromium`，或者通过 `PLAYWRIGHT_BROWSER_PATH` 指定浏览器可执行文件。桌面与手机截图保存在 `.qa/`。`QA_BASE_URL` 可指定另一个本地端口。性能脚本用手机视口、冷缓存、1.6Mbps 和 4 倍 CPU 降速，采样三次，覆盖首页、攻略、装备页和角色工具。预算默认 LCP 2500ms、CLS 0.1、总传输 700KB、脚本 220KB、实验室交互 200ms；超预算退出失败。结果保存在 `.qa/performance-after.json`，其中交互测量是实验室检查，真实 INP 由匿名访问统计采集。
+浏览器测试默认使用本机 Chrome；未安装时可运行 `npx playwright install chromium`，或者通过 `PLAYWRIGHT_BROWSER_PATH` 指定浏览器可执行文件。桌面与手机截图保存在 `.qa/`。`QA_BASE_URL` 可指定另一个本地端口。性能脚本用手机视口、冷缓存、1.6Mbps 和 4 倍 CPU 降速，采样三次，覆盖首页、攻略、装备页、角色工具及视频中心。预算默认 LCP 2500ms、CLS 0.1、总传输 700KB、脚本 220KB、实验室交互 200ms；超预算退出失败。结果保存在 `.qa/performance-after.json`，其中交互测量是实验室检查，真实 INP 由匿名访问统计采集。当前 GA4 开启时，总脚本超过 220KB 目标；本次保留该失败结果，并新增站内/第三方脚本拆分记录，没有关闭统计或提高预算。
 
 将 `.env.example` 复制为 `.env.local`，设置 `NEXT_PUBLIC_SITE_URL` 为正式域名，然后重新构建。canonical、语言替代链接、站点地图和分享信息会使用该地址。本地默认域名为 `http://localhost:3000`。
 
@@ -57,7 +58,7 @@ npm run test:performance
 - `src/lib/topics.ts`：稳定的主题ID、slug与分类，后续工具或数据库可复用这些ID。
 - `src/lib/coupons.ts`：官方Global兑换码来源和UTC到期时间。页面在浏览器内根据时间更新过期状态；兑换码仅经公告核实，未做游戏内兑换测试。
 - `assets.sources.json`：图片和首页事实的来源记录。
-- `src/content/guide-assets.json`：内页的 28 条图片来源记录；含原图地址、发布者、核对日期、地区、版本、尺寸和用途。图片在 `public/media/guides/`，保留原图，不伪造游戏界面。
+- `src/content/guide-assets.json`：内页图片来源记录；含原图地址、发布者、核对日期、地区、版本、尺寸和用途。图片在 `public/media/guides/`，保留原图，不伪造游戏界面。
 - `src/i18n/guide-messages.ts`：图片放大、目录、筛选、清单和下一篇卡片的四语界面文字。
 - `src/lib/reading-paths.ts`：各主题推荐的下一篇攻略；正文卡片、页尾卡片和相关链接会去重。
 
@@ -67,7 +68,13 @@ npm run test:performance
 
 修改英语事实稿后，须同步日、西、德对应正文和 metadata。四语保持目录 ID、操作链接、数值、地区与适用版本一致；`npm run test:content` 校验覆盖、内部来源、链接、锚点与编码，事实和翻译语义还需人工审校。正文直接描述机制和操作，图片说明只描述画面；来源分析、视频时间点、核对过程与无关的证据边界保存在研究日志。影响付费、过期时间、兼容性或玩法选择的实质限制应简洁说明，不把未经核实的猜测写成事实。
 
-逐主题补采原文与研究说明在 `research/content/2026-10-02/` 和 `research/content/2026-10-03/`。本次玩家视角内容审查、修改前全文和逐组记录在 `research/content/2026-10-04/player-content-review/`。Global 是主体；必要的 KR/TW 范围使用简短标签，原始评级及未核实细节在内部记录中保留。
+逐主题补采原文与研究说明在 `research/content/2026-10-02/` 和 `research/content/2026-10-03/`。玩家视角内容审查、修改前全文和逐组记录在 `research/content/2026-10-04/player-content-review/`。公开页面只服务 Steam AION 2 Global 玩家；其他地区服资料和原始评级保留在内部研究库。
+
+2026-10-06 更新新增 `settings`、`gear-progression`、`daily-weekly-checklist`、`crafting` 四个完整四语言主题，当前共 38 个主题、152 篇攻略。旧 `global-changes` 页面永久跳转到同语言新手指南。修改前全文、官方公告快照、字幕核对和实施记录在 [本次更新记录](research/content/2026-10-06/steam-beginner-refresh/implementation.md)。一次性迁移脚本只供审计，不应重复执行。
+
+`/beginner-videos` 提供四语言视频中心，收录 17 支教程，首页推荐 6 支，相关攻略最多推荐 3 支。支持主题筛选、标题/作者搜索、隐藏职业补充视频和章节跳转。`src/content/beginner-videos.json` 是公开推荐清单，`src/i18n/video-messages.ts` 保存四语言界面文字。卡片使用本地封面并直接链接 YouTube，不嵌入播放器；无脚本时仍可打开全部视频。添加推荐时核对资料、适用版本、过时操作与章节字幕，保留内部记录，再填写四语言标题、推荐理由、关联主题和时间点。
+
+后续重写了 8 个主题的 32 篇四语言攻略，补充具体配方、装备路线、日常额度和宏操作，新增 3 张实际操作界面图。20 支视频的取舍、事实核对和验收记录在 [内容深化记录](research/content/2026-10-06/beginner-depth/completion.json)。原始视频大文件保留本地，Git 提交包含可复核的来源、字幕和研究记录。
 
 ## 配图与互动组件
 
@@ -101,6 +108,6 @@ npm run test:performance
 
 ## 游戏数据与工具
 
-已加入 22 件人工选择的装备例子、公开角色查询与固定属性比较、活动时区/倒计时/日历，以及手动素材预算，均提供四语言界面。装备在 builds、cleric-build、chanter 中展示；计时器在 maintenance、twitch-drops、code、spacetime-rift 中展示；预算在 monetization 中展示，gathering 提供入口。
+已加入 22 件人工选择的装备例子、公开角色查询与固定属性比较、活动时区/倒计时/日历，以及手动素材预算，均提供四语言界面。cleric-build 和 chanter 展示对应职业的装备；计时器在 maintenance、twitch-drops、code、spacetime-rift 中展示；预算在 monetization 中展示，gathering 提供入口。
 
 接入、数据边界、缓存策略和维护方法见 [docs/AION2-DATA.md](docs/AION2-DATA.md)。浏览器测试使用已归档的真实公开角色响应，运行中的真实接口检查可用 `npm run test:api`；该检查会有限查询官方站，不能在未配置共享缓存的 Vercel 环境中通过。

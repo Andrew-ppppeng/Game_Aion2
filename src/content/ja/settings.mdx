@@ -1,0 +1,42 @@
+<h2 id="control-mode">AION 1とAION 2の操作の違い</h2>
+
+**Settings → Combat → Controls**を開きます。**AION 2 mode**はマウスでカメラを動かし、カーソルは非表示。**Alt**を押してUIを操作します。**AION 1 mode**は従来型のカーソルとターゲット操作です。カメラで照準を合わせるならAION 2、ターゲットやパーティー欄をカーソルで選ぶならAION 1を選びます。
+
+<h2 id="targeting-and-pursuit">ターゲットと移動の初期設定</h2>
+
+| メニュー | 項目 | 初期値と用途 |
+| --- | --- | --- |
+| Combat → Target Scanning | Preferred Search Direction | **Front of Camera**：背後ではなく戦闘方向の敵を選ぶ |
+| Combat → Controls | Pursue Targets with Skill Activation | 遠距離戦や位置取りが重要なボスは**OFF**、近接の通常狩りは**ON** |
+| Combat → Controls | Auto Target upon Skill Use | 通常PvEは**ON**、PvPで対象を指定するなら**OFF** |
+| Combat → Controls | Skill Queue | **ON**：現在の動作中に次のスキルを予約 |
+| Combat → Movement | Interact after Auto Move | **ON**：クエストNPCや対象に到着すると操作 |
+| Combat → Movement | Auto Sprint | クエスト移動では**ON** |
+
+<GuideVisual id="controls" />
+
+<h2 id="potions-and-loot">ポーション条件と自動バフ</h2>
+
+**Combat → Auto Use**：戦闘を覚える間はHPポーションを**70%**で自動使用。危険の少ない狩りは**40～50%**で節約できますが、瞬間ダメージへの余裕は減ります。効果の違いではなく初期設定の提案です。**Buff Auto Use Conditions → In Combat**にして街でのバフやスクロール消費を防ぎます。手動ポーションのキーも残します。**Combat → Looting**の収集設定と装備抽出は別で、抽出は対象装備を消費します。
+
+<h2 id="keybinds-and-hud">マクロとは別に残すキー</h2>
+
+**回避・防御、中断、ポーション、回復、解除**は直接キーに割り当てます。繰り返す攻撃は[ゲーム内マクロ](/macro-guide)へ。**HUD Edit**でHP/MPをスキル欄の近くに置き、回復用のパーティー欄を見える位置にします。**Info Display → Common**でネームプレートを調整。自分の表示を消してもHUDのHP欄は残します。
+
+<h2 id="graphics-and-crowds">大人数戦の画質設定</h2>
+
+| 項目 | 初期値 | 結果 |
+| --- | --- | --- |
+| Identical Player Appearance | **ON** | 他キャラクターの外見モデルを簡略化 |
+| Other Players' Effects | **Self / Party** | 敵の予告を覆うエフェクトを減らす |
+| Shadows | **Low** | 影の細部と描画負荷を減らす |
+| Reflections | **Low** | 反射の細部と描画負荷を減らす |
+| Upscaling | 対応する**DLSS / FSR** | ネイティブ描画をアップスケーリングに置換。GPUにより対応が異なる |
+
+敵の攻撃予告は見える状態を保ちます。回避に必要な表示を消す前に、反射と影を下げます。
+
+<h2 id="test-your-settings">よくある操作の問題3つ</h2>
+
+**詠唱時に敵へ走る**：Pursue Targets with Skill ActivationをOFF。**背後の敵を選ぶ**：Front of Cameraへ。**移動中にバフを消費**：Buff Auto Use ConditionsをAlwaysからIn Combatへ。
+
+<GuideNext slug="guide" />

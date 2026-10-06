@@ -23,7 +23,6 @@ const categoryIds: Record<string, CategoryId> = {
   macros: 'macros',
   'wings and flight': 'wingsAndFlight',
   'databases': 'databases',
-  'regional differences': 'regionalDifferences',
 };
 
 export type Topic = {

@@ -1,57 +1,35 @@
 {
   "title": "AION 2 Makro-Guide: Taste und Fertigkeitspriorität",
-  "description": "Richte AION 2s Fertigkeitsmakro ein, belege die Taste, ordne Prioritäten und behebe fehlende Angriffe oder Verzögerungen.",
-  "summary": "Belege die Taste, beginne mit einem kleinen Stapel und beobachte jeden Angriff. Halte Heilung, Unterbrechungen und Bewegung erreichbar und teste bei Zielwechseln und Mechaniken.",
-  "quickAnswer": "Belege das Makro unter Tasteneinstellungen → Allgemein → Gameplay, öffne den Editor und wähle einen Hotbar-Stapel. Halten wiederholt ihn. Beginne mit einer kurzen Schadensfolge und halte Heilung, Bewegung und Unterbrechungen separat.",
+  "description": "Ein funktionierendes Makro erstellen: Tasten, Kettenpriorität und Klassenbedingungen.",
+  "summary": "Makrotaste belegen, Fertigkeiten priorisieren und Klassenreaktionen auf eigenen Tasten behalten.",
+  "quickAnswer": "Makrotaste unter Key Settings → General → Gameplay belegen, ganze Hotbar-Kette wählen und Taste halten. Die unterste Fertigkeit hat Vorrang; Füller über bedingten Angriffen anordnen. Heilung, Bewegung und Unterbrechen direkt belegen.",
   "toc": [
     {
       "id": "bind-and-open",
-      "title": "Taste belegen und Editor öffnen"
+      "title": "Ein funktionierendes Makro erstellen"
     },
     {
       "id": "priority-stack",
-      "title": "Fertigkeitspriorität verstehen"
+      "title": "Priorität und Ranger-Beispiel"
     },
     {
       "id": "manual-actions",
-      "title": "Entscheidungen getrennt lassen"
+      "title": "Klassenaktionen auf direkten Tasten"
     },
     {
       "id": "delay-and-basic-attack",
-      "title": "Verzögerung und Basisangriff"
+      "title": "Makroverzögerung: Startwert"
     },
     {
       "id": "debug-one-stack",
-      "title": "Einen Stapel prüfen"
+      "title": "Ein fehlerhaftes Makro korrigieren"
     },
     {
       "id": "built-in-and-policy",
-      "title": "Eingebaute Makros und NC-Richtlinie"
+      "title": "Den eingebauten Editor nutzen"
     }
   ],
   "visuals": {
-    "workflow": {
-      "title": "Ein kleines, erklärbares Makro erstellen",
-      "caption": "Erstelle einen Stapel und teste Angriffe und Reaktionssteuerung.",
-      "steps": [
-        {
-          "label": "Manuell spielen",
-          "description": "Bestätige Angriff und erforderliche Bedingungen, bevor du Wiederholung hinzufügst."
-        },
-        {
-          "label": "Einen Stapel belegen",
-          "description": "Beginne mit einem bekannten Leistenplatz und prüfe die Aktivierungstaste."
-        },
-        {
-          "label": "Jeden Eintrag beobachten",
-          "description": "Prüfe, ob Priorität oder eine nicht verfügbare Fertigkeit den erwarteten Angriff verhindern."
-        },
-        {
-          "label": "Reaktion testen",
-          "description": "Stoppe, bewege dich und nutze eine Reaktionsfertigkeit vor einem Gruppenkampf."
-        }
-      ]
-    },
     "macro-global-keybind": {
       "assetId": "macro-global-keybind",
       "alt": "Einstellungsmenü auf Deutsch mit der Fäh.-Makros-Belegung unter Gameplay",

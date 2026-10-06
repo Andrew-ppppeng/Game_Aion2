@@ -66,6 +66,7 @@ export function SiteAnalytics({locale}: {locale: Locale}) {
       const action = element.closest('[data-analytics]')?.getAttribute('data-analytics');
       if (action === 'bookmark_save') send('bookmark_save', 'character');
       if (action === 'calendar') send('tool_use', 'calendar');
+      if (action === 'video') send('video_click', 'videos');
       if (element.closest('[data-more-equipment] > summary')) send('tool_use', 'equipment');
       const link = element.closest('a[href]');
       if (link) {

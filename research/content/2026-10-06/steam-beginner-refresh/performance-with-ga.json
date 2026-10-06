@@ -1,0 +1,1453 @@
+{
+  "measuredAtUtc": "2026-10-06T10:54:13.457Z",
+  "baseUrl": "http://127.0.0.1:3100",
+  "environment": {
+    "appVersion": "0.1.0",
+    "nextVersion": "16.3.8",
+    "node": "v22.17.0",
+    "chrome": "153.0.8010.12",
+    "executablePath": "Playwright Chromium",
+    "gitHead": "1aa4de0bdf218e30b3f3aeb706c675b2d3e6ba34",
+    "buildId": "JKgrnI9NoUcLmpC_m46Im"
+  },
+  "conditions": {
+    "viewport": "390x844",
+    "coldCache": true,
+    "latencyMs": 150,
+    "downloadBytesPerSecond": 200000,
+    "uploadBytesPerSecond": 93750,
+    "cpuSlowdown": 4,
+    "samples": 3,
+    "aggregation": "median per URL",
+    "paths": [
+      "/",
+      "/guide",
+      "/classes",
+      "/map",
+      "/builds",
+      "/cleric-build",
+      "/tools/character",
+      "/beginner-videos",
+      "/gear-progression"
+    ]
+  },
+  "measurementNotes": [
+    "CDP encoded transfer bytes include HTML and all completed initial-load resources.",
+    "Resource Timing including the navigation is retained as a second transfer measurement.",
+    "Fixture game API responses avoid live upstream queries. If CDP reports zero wire bytes for an intercepted response, its recorded JSON payload bytes are added to totalBytes as fixtureTransferAdjustmentBytes.",
+    "Scripted Event Timing is a laboratory interaction measurement, not real-user INP. readyMs includes Playwright and response waiting; it has no INP interpretation."
+  ],
+  "thresholds": {
+    "lcpMs": 2500,
+    "cls": 0.1,
+    "totalBytes": 716800,
+    "scriptBytes": 225280,
+    "eventDurationMs": 200
+  },
+  "results": [
+    {
+      "url": "http://127.0.0.1:3100/",
+      "samples": [
+        {
+          "sample": 1,
+          "measuredAtUtc": "2026-10-06T10:51:48.911Z",
+          "lcpMs": 1056,
+          "cls": 0,
+          "navigationTransferBytes": 17829,
+          "resourceTimingBytes": 292597,
+          "loadEventMs": 1628,
+          "articleRevision": null,
+          "htmlBytes": 18340,
+          "scriptBytes": 368337,
+          "firstPartyScriptBytes": 189420,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 481863,
+          "requestCount": 38,
+          "interaction": {
+            "target": "mobile-menu-button",
+            "readyMs": 123,
+            "eventTimingSupported": true,
+            "eventDurationMs": 80,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5310.399999976158,
+                "duration": 80
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5310.399999976158,
+                "duration": 80
+              },
+              {
+                "name": "click",
+                "startTime": 5310.399999976158,
+                "duration": 80
+              }
+            ]
+          },
+          "fixtureResponses": []
+        },
+        {
+          "sample": 2,
+          "measuredAtUtc": "2026-10-06T10:51:54.187Z",
+          "lcpMs": 1036,
+          "cls": 0,
+          "navigationTransferBytes": 17829,
+          "resourceTimingBytes": 292598,
+          "loadEventMs": 1622,
+          "articleRevision": null,
+          "htmlBytes": 18340,
+          "scriptBytes": 368337,
+          "firstPartyScriptBytes": 189420,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 481863,
+          "requestCount": 38,
+          "interaction": {
+            "target": "mobile-menu-button",
+            "readyMs": 113,
+            "eventTimingSupported": true,
+            "eventDurationMs": 72,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5019.899999976158,
+                "duration": 72
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5020,
+                "duration": 72
+              },
+              {
+                "name": "click",
+                "startTime": 5020,
+                "duration": 72
+              }
+            ]
+          },
+          "fixtureResponses": []
+        },
+        {
+          "sample": 3,
+          "measuredAtUtc": "2026-10-06T10:51:59.941Z",
+          "lcpMs": 1048,
+          "cls": 0,
+          "navigationTransferBytes": 17829,
+          "resourceTimingBytes": 292599,
+          "loadEventMs": 1623,
+          "articleRevision": null,
+          "htmlBytes": 18340,
+          "scriptBytes": 368337,
+          "firstPartyScriptBytes": 189420,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 481863,
+          "requestCount": 38,
+          "interaction": {
+            "target": "mobile-menu-button",
+            "readyMs": 116,
+            "eventTimingSupported": true,
+            "eventDurationMs": 80,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5499.699999988079,
+                "duration": 80
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5499.699999988079,
+                "duration": 80
+              },
+              {
+                "name": "click",
+                "startTime": 5499.699999988079,
+                "duration": 80
+              }
+            ]
+          },
+          "fixtureResponses": []
+        }
+      ],
+      "medians": {
+        "lcpMs": 1048,
+        "cls": 0,
+        "totalBytes": 481863,
+        "scriptBytes": 368337,
+        "eventDurationMs": 80
+      },
+      "violations": [
+        {
+          "metric": "scriptBytes",
+          "observed": 368337,
+          "limit": 225280
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:3100/guide",
+      "samples": [
+        {
+          "sample": 1,
+          "measuredAtUtc": "2026-10-06T10:52:05.540Z",
+          "lcpMs": 1020,
+          "cls": 0,
+          "navigationTransferBytes": 23250,
+          "resourceTimingBytes": 330783,
+          "loadEventMs": 1579,
+          "articleRevision": "2026-10-06.steam-beginner-1",
+          "htmlBytes": 23796,
+          "scriptBytes": 369809,
+          "firstPartyScriptBytes": 190871,
+          "thirdPartyScriptBytes": 178938,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 528583,
+          "requestCount": 52,
+          "interaction": {
+            "target": null,
+            "readyMs": 81,
+            "eventTimingSupported": true,
+            "eventDurationMs": 32,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5371.799999952316,
+                "duration": 32
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5371.799999952316,
+                "duration": 32
+              },
+              {
+                "name": "click",
+                "startTime": 5371.799999952316,
+                "duration": 32
+              }
+            ]
+          },
+          "fixtureResponses": []
+        },
+        {
+          "sample": 2,
+          "measuredAtUtc": "2026-10-06T10:52:11.066Z",
+          "lcpMs": 1004,
+          "cls": 0,
+          "navigationTransferBytes": 23250,
+          "resourceTimingBytes": 330782,
+          "loadEventMs": 1593,
+          "articleRevision": "2026-10-06.steam-beginner-1",
+          "htmlBytes": 23796,
+          "scriptBytes": 369788,
+          "firstPartyScriptBytes": 190871,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 528562,
+          "requestCount": 52,
+          "interaction": {
+            "target": null,
+            "readyMs": 74,
+            "eventTimingSupported": true,
+            "eventDurationMs": 32,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5307.599999964237,
+                "duration": 32
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5307.599999964237,
+                "duration": 32
+              },
+              {
+                "name": "click",
+                "startTime": 5307.599999964237,
+                "duration": 32
+              }
+            ]
+          },
+          "fixtureResponses": []
+        },
+        {
+          "sample": 3,
+          "measuredAtUtc": "2026-10-06T10:52:16.497Z",
+          "lcpMs": 1016,
+          "cls": 0,
+          "navigationTransferBytes": 23250,
+          "resourceTimingBytes": 330781,
+          "loadEventMs": 1579,
+          "articleRevision": "2026-10-06.steam-beginner-1",
+          "htmlBytes": 23796,
+          "scriptBytes": 369788,
+          "firstPartyScriptBytes": 190871,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 528562,
+          "requestCount": 52,
+          "interaction": {
+            "target": null,
+            "readyMs": 79,
+            "eventTimingSupported": true,
+            "eventDurationMs": 32,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5218.100000023842,
+                "duration": 32
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5218.100000023842,
+                "duration": 32
+              },
+              {
+                "name": "click",
+                "startTime": 5218.100000023842,
+                "duration": 32
+              }
+            ]
+          },
+          "fixtureResponses": []
+        }
+      ],
+      "medians": {
+        "lcpMs": 1016,
+        "cls": 0,
+        "totalBytes": 528562,
+        "scriptBytes": 369788,
+        "eventDurationMs": 32
+      },
+      "violations": [
+        {
+          "metric": "scriptBytes",
+          "observed": 369788,
+          "limit": 225280
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:3100/classes",
+      "samples": [
+        {
+          "sample": 1,
+          "measuredAtUtc": "2026-10-06T10:52:22.254Z",
+          "lcpMs": 1000,
+          "cls": 0,
+          "navigationTransferBytes": 21377,
+          "resourceTimingBytes": 417874,
+          "loadEventMs": 1963,
+          "articleRevision": "2026-10-06.steam-beginner-1",
+          "htmlBytes": 21935,
+          "scriptBytes": 369959,
+          "firstPartyScriptBytes": 191042,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 612538,
+          "requestCount": 58,
+          "interaction": {
+            "target": null,
+            "readyMs": 85,
+            "eventTimingSupported": true,
+            "eventDurationMs": 32,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5537.600000023842,
+                "duration": 32
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5537.699999988079,
+                "duration": 32
+              },
+              {
+                "name": "click",
+                "startTime": 5537.699999988079,
+                "duration": 32
+              }
+            ]
+          },
+          "fixtureResponses": []
+        },
+        {
+          "sample": 2,
+          "measuredAtUtc": "2026-10-06T10:52:28.010Z",
+          "lcpMs": 976,
+          "cls": 0,
+          "navigationTransferBytes": 21377,
+          "resourceTimingBytes": 417872,
+          "loadEventMs": 1962,
+          "articleRevision": "2026-10-06.steam-beginner-1",
+          "htmlBytes": 21935,
+          "scriptBytes": 369959,
+          "firstPartyScriptBytes": 191042,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 612538,
+          "requestCount": 58,
+          "interaction": {
+            "target": null,
+            "readyMs": 92,
+            "eventTimingSupported": true,
+            "eventDurationMs": 32,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5528.799999952316,
+                "duration": 32
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5528.899999976158,
+                "duration": 32
+              },
+              {
+                "name": "click",
+                "startTime": 5528.899999976158,
+                "duration": 32
+              }
+            ]
+          },
+          "fixtureResponses": []
+        },
+        {
+          "sample": 3,
+          "measuredAtUtc": "2026-10-06T10:52:33.718Z",
+          "lcpMs": 1008,
+          "cls": 0,
+          "navigationTransferBytes": 21377,
+          "resourceTimingBytes": 417872,
+          "loadEventMs": 2043,
+          "articleRevision": "2026-10-06.steam-beginner-1",
+          "htmlBytes": 21935,
+          "scriptBytes": 369959,
+          "firstPartyScriptBytes": 191042,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 612538,
+          "requestCount": 58,
+          "interaction": {
+            "target": null,
+            "readyMs": 84,
+            "eventTimingSupported": true,
+            "eventDurationMs": 32,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5479.599999964237,
+                "duration": 32
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5479.599999964237,
+                "duration": 32
+              },
+              {
+                "name": "click",
+                "startTime": 5479.599999964237,
+                "duration": 32
+              }
+            ]
+          },
+          "fixtureResponses": []
+        }
+      ],
+      "medians": {
+        "lcpMs": 1000,
+        "cls": 0,
+        "totalBytes": 612538,
+        "scriptBytes": 369959,
+        "eventDurationMs": 32
+      },
+      "violations": [
+        {
+          "metric": "scriptBytes",
+          "observed": 369959,
+          "limit": 225280
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:3100/map",
+      "samples": [
+        {
+          "sample": 1,
+          "measuredAtUtc": "2026-10-06T10:52:38.966Z",
+          "lcpMs": 996,
+          "cls": 0,
+          "navigationTransferBytes": 20196,
+          "resourceTimingBytes": 306326,
+          "loadEventMs": 1712,
+          "articleRevision": "2026-10-06.steam-beginner-1",
+          "htmlBytes": 20729,
+          "scriptBytes": 368337,
+          "firstPartyScriptBytes": 189420,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 495749,
+          "requestCount": 38,
+          "interaction": {
+            "target": null,
+            "readyMs": 74,
+            "eventTimingSupported": true,
+            "eventDurationMs": 32,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5015,
+                "duration": 32
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5015,
+                "duration": 32
+              },
+              {
+                "name": "click",
+                "startTime": 5015,
+                "duration": 32
+              }
+            ]
+          },
+          "fixtureResponses": []
+        },
+        {
+          "sample": 2,
+          "measuredAtUtc": "2026-10-06T10:52:44.323Z",
+          "lcpMs": 996,
+          "cls": 0,
+          "navigationTransferBytes": 20196,
+          "resourceTimingBytes": 306327,
+          "loadEventMs": 1733,
+          "articleRevision": "2026-10-06.steam-beginner-1",
+          "htmlBytes": 20729,
+          "scriptBytes": 368337,
+          "firstPartyScriptBytes": 189420,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 495749,
+          "requestCount": 38,
+          "interaction": {
+            "target": null,
+            "readyMs": 82,
+            "eventTimingSupported": true,
+            "eventDurationMs": 32,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5133.5,
+                "duration": 32
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5133.5,
+                "duration": 32
+              },
+              {
+                "name": "click",
+                "startTime": 5133.5,
+                "duration": 32
+              }
+            ]
+          },
+          "fixtureResponses": []
+        },
+        {
+          "sample": 3,
+          "measuredAtUtc": "2026-10-06T10:52:49.625Z",
+          "lcpMs": 1008,
+          "cls": 0,
+          "navigationTransferBytes": 20196,
+          "resourceTimingBytes": 306329,
+          "loadEventMs": 1721,
+          "articleRevision": "2026-10-06.steam-beginner-1",
+          "htmlBytes": 20729,
+          "scriptBytes": 368337,
+          "firstPartyScriptBytes": 189420,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 495749,
+          "requestCount": 38,
+          "interaction": {
+            "target": null,
+            "readyMs": 74,
+            "eventTimingSupported": true,
+            "eventDurationMs": 32,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5093.5,
+                "duration": 32
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5093.599999964237,
+                "duration": 32
+              },
+              {
+                "name": "click",
+                "startTime": 5093.599999964237,
+                "duration": 32
+              }
+            ]
+          },
+          "fixtureResponses": []
+        }
+      ],
+      "medians": {
+        "lcpMs": 996,
+        "cls": 0,
+        "totalBytes": 495749,
+        "scriptBytes": 368337,
+        "eventDurationMs": 32
+      },
+      "violations": [
+        {
+          "metric": "scriptBytes",
+          "observed": 368337,
+          "limit": 225280
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:3100/builds",
+      "samples": [
+        {
+          "sample": 1,
+          "measuredAtUtc": "2026-10-06T10:52:55.460Z",
+          "lcpMs": 1004,
+          "cls": 0,
+          "navigationTransferBytes": 24953,
+          "resourceTimingBytes": 291053,
+          "loadEventMs": 1586,
+          "articleRevision": "2026-10-06.steam-beginner-1",
+          "htmlBytes": 25506,
+          "scriptBytes": 368337,
+          "firstPartyScriptBytes": 189420,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 481497,
+          "requestCount": 39,
+          "interaction": {
+            "target": null,
+            "readyMs": 71,
+            "eventTimingSupported": true,
+            "eventDurationMs": 24,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5622.300000011921,
+                "duration": 24
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5622.300000011921,
+                "duration": 24
+              },
+              {
+                "name": "click",
+                "startTime": 5622.300000011921,
+                "duration": 24
+              }
+            ]
+          },
+          "fixtureResponses": []
+        },
+        {
+          "sample": 2,
+          "measuredAtUtc": "2026-10-06T10:53:00.598Z",
+          "lcpMs": 972,
+          "cls": 0,
+          "navigationTransferBytes": 24953,
+          "resourceTimingBytes": 291056,
+          "loadEventMs": 1572,
+          "articleRevision": "2026-10-06.steam-beginner-1",
+          "htmlBytes": 25506,
+          "scriptBytes": 368355,
+          "firstPartyScriptBytes": 189420,
+          "thirdPartyScriptBytes": 178935,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 481515,
+          "requestCount": 39,
+          "interaction": {
+            "target": null,
+            "readyMs": 72,
+            "eventTimingSupported": true,
+            "eventDurationMs": 24,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 4925.300000011921,
+                "duration": 24
+              },
+              {
+                "name": "pointerup",
+                "startTime": 4925.300000011921,
+                "duration": 24
+              },
+              {
+                "name": "click",
+                "startTime": 4925.300000011921,
+                "duration": 24
+              }
+            ]
+          },
+          "fixtureResponses": []
+        },
+        {
+          "sample": 3,
+          "measuredAtUtc": "2026-10-06T10:53:06.260Z",
+          "lcpMs": 968,
+          "cls": 0,
+          "navigationTransferBytes": 24953,
+          "resourceTimingBytes": 291056,
+          "loadEventMs": 1557,
+          "articleRevision": "2026-10-06.steam-beginner-1",
+          "htmlBytes": 25506,
+          "scriptBytes": 368329,
+          "firstPartyScriptBytes": 189420,
+          "thirdPartyScriptBytes": 178909,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 481489,
+          "requestCount": 39,
+          "interaction": {
+            "target": null,
+            "readyMs": 73,
+            "eventTimingSupported": true,
+            "eventDurationMs": 24,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5451.199999988079,
+                "duration": 24
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5451.300000011921,
+                "duration": 24
+              },
+              {
+                "name": "click",
+                "startTime": 5451.300000011921,
+                "duration": 24
+              }
+            ]
+          },
+          "fixtureResponses": []
+        }
+      ],
+      "medians": {
+        "lcpMs": 972,
+        "cls": 0,
+        "totalBytes": 481497,
+        "scriptBytes": 368337,
+        "eventDurationMs": 24
+      },
+      "violations": [
+        {
+          "metric": "scriptBytes",
+          "observed": 368337,
+          "limit": 225280
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:3100/cleric-build",
+      "samples": [
+        {
+          "sample": 1,
+          "measuredAtUtc": "2026-10-06T10:53:11.889Z",
+          "lcpMs": 984,
+          "cls": 0,
+          "navigationTransferBytes": 22701,
+          "resourceTimingBytes": 316167,
+          "loadEventMs": 1767,
+          "articleRevision": "2026-10-05.eight-class-skills-1",
+          "htmlBytes": 23288,
+          "scriptBytes": 378402,
+          "firstPartyScriptBytes": 199485,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 505733,
+          "requestCount": 39,
+          "interaction": {
+            "target": null,
+            "readyMs": 164,
+            "eventTimingSupported": true,
+            "eventDurationMs": 24,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5341.5,
+                "duration": 24
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5341.5,
+                "duration": 24
+              },
+              {
+                "name": "click",
+                "startTime": 5341.5,
+                "duration": 24
+              }
+            ]
+          },
+          "fixtureResponses": [
+            {
+              "url": "http://127.0.0.1:3100/api/aion2/equipment-examples?locale=en&slug=cleric-build",
+              "bytes": 10503
+            }
+          ]
+        },
+        {
+          "sample": 2,
+          "measuredAtUtc": "2026-10-06T10:53:17.488Z",
+          "lcpMs": 988,
+          "cls": 0,
+          "navigationTransferBytes": 22701,
+          "resourceTimingBytes": 316168,
+          "loadEventMs": 1758,
+          "articleRevision": "2026-10-05.eight-class-skills-1",
+          "htmlBytes": 23288,
+          "scriptBytes": 378402,
+          "firstPartyScriptBytes": 199485,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 505733,
+          "requestCount": 39,
+          "interaction": {
+            "target": null,
+            "readyMs": 157,
+            "eventTimingSupported": true,
+            "eventDurationMs": 24,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5329.400000035763,
+                "duration": 24
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5329.400000035763,
+                "duration": 24
+              },
+              {
+                "name": "click",
+                "startTime": 5329.400000035763,
+                "duration": 24
+              }
+            ]
+          },
+          "fixtureResponses": [
+            {
+              "url": "http://127.0.0.1:3100/api/aion2/equipment-examples?locale=en&slug=cleric-build",
+              "bytes": 10503
+            }
+          ]
+        },
+        {
+          "sample": 3,
+          "measuredAtUtc": "2026-10-06T10:53:23.291Z",
+          "lcpMs": 984,
+          "cls": 0,
+          "navigationTransferBytes": 22701,
+          "resourceTimingBytes": 316169,
+          "loadEventMs": 1749,
+          "articleRevision": "2026-10-05.eight-class-skills-1",
+          "htmlBytes": 23288,
+          "scriptBytes": 378402,
+          "firstPartyScriptBytes": 199485,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 505733,
+          "requestCount": 39,
+          "interaction": {
+            "target": null,
+            "readyMs": 168,
+            "eventTimingSupported": true,
+            "eventDurationMs": 24,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5506.600000023842,
+                "duration": 24
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5506.600000023842,
+                "duration": 24
+              },
+              {
+                "name": "click",
+                "startTime": 5506.600000023842,
+                "duration": 24
+              }
+            ]
+          },
+          "fixtureResponses": [
+            {
+              "url": "http://127.0.0.1:3100/api/aion2/equipment-examples?locale=en&slug=cleric-build",
+              "bytes": 10503
+            }
+          ]
+        }
+      ],
+      "medians": {
+        "lcpMs": 984,
+        "cls": 0,
+        "totalBytes": 505733,
+        "scriptBytes": 378402,
+        "eventDurationMs": 24
+      },
+      "violations": [
+        {
+          "metric": "scriptBytes",
+          "observed": 378402,
+          "limit": 225280
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:3100/tools/character",
+      "samples": [
+        {
+          "sample": 1,
+          "measuredAtUtc": "2026-10-06T10:53:29.002Z",
+          "lcpMs": 900,
+          "cls": 0,
+          "navigationTransferBytes": 17522,
+          "resourceTimingBytes": 290391,
+          "loadEventMs": 1634,
+          "articleRevision": null,
+          "htmlBytes": 18062,
+          "scriptBytes": 382738,
+          "firstPartyScriptBytes": 203803,
+          "thirdPartyScriptBytes": 178935,
+          "fixtureResponseBytes": 3779,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 477762,
+          "requestCount": 36,
+          "interaction": {
+            "target": "tool-button primary",
+            "readyMs": 156,
+            "eventTimingSupported": true,
+            "eventDurationMs": 80,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5417,
+                "duration": 80
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5417,
+                "duration": 80
+              },
+              {
+                "name": "click",
+                "startTime": 5417,
+                "duration": 80
+              }
+            ]
+          },
+          "fixtureResponses": [
+            {
+              "url": "http://127.0.0.1:3100/api/aion2/meta?region=nae&locale=en",
+              "bytes": 3779
+            },
+            {
+              "url": "http://127.0.0.1:3100/api/aion2/characters/search?locale=en&region=nae&q=Testa&page=1",
+              "bytes": 702
+            }
+          ]
+        },
+        {
+          "sample": 2,
+          "measuredAtUtc": "2026-10-06T10:53:34.323Z",
+          "lcpMs": 876,
+          "cls": 0,
+          "navigationTransferBytes": 17522,
+          "resourceTimingBytes": 290393,
+          "loadEventMs": 1613,
+          "articleRevision": null,
+          "htmlBytes": 18062,
+          "scriptBytes": 382720,
+          "firstPartyScriptBytes": 203803,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 3779,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 477744,
+          "requestCount": 36,
+          "interaction": {
+            "target": "tool-button primary",
+            "readyMs": 165,
+            "eventTimingSupported": true,
+            "eventDurationMs": 80,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5010.400000035763,
+                "duration": 80
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5010.400000035763,
+                "duration": 80
+              },
+              {
+                "name": "click",
+                "startTime": 5010.400000035763,
+                "duration": 80
+              }
+            ]
+          },
+          "fixtureResponses": [
+            {
+              "url": "http://127.0.0.1:3100/api/aion2/meta?region=nae&locale=en",
+              "bytes": 3779
+            },
+            {
+              "url": "http://127.0.0.1:3100/api/aion2/characters/search?locale=en&region=nae&q=Testa&page=1",
+              "bytes": 702
+            }
+          ]
+        },
+        {
+          "sample": 3,
+          "measuredAtUtc": "2026-10-06T10:53:39.659Z",
+          "lcpMs": 868,
+          "cls": 0,
+          "navigationTransferBytes": 17522,
+          "resourceTimingBytes": 290392,
+          "loadEventMs": 1620,
+          "articleRevision": null,
+          "htmlBytes": 18062,
+          "scriptBytes": 382712,
+          "firstPartyScriptBytes": 203803,
+          "thirdPartyScriptBytes": 178909,
+          "fixtureResponseBytes": 3779,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 477736,
+          "requestCount": 36,
+          "interaction": {
+            "target": "tool-button primary",
+            "readyMs": 129,
+            "eventTimingSupported": true,
+            "eventDurationMs": 72,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5071.799999952316,
+                "duration": 72
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5071.899999976158,
+                "duration": 72
+              },
+              {
+                "name": "click",
+                "startTime": 5071.899999976158,
+                "duration": 72
+              }
+            ]
+          },
+          "fixtureResponses": [
+            {
+              "url": "http://127.0.0.1:3100/api/aion2/meta?region=nae&locale=en",
+              "bytes": 3779
+            },
+            {
+              "url": "http://127.0.0.1:3100/api/aion2/characters/search?locale=en&region=nae&q=Testa&page=1",
+              "bytes": 702
+            }
+          ]
+        }
+      ],
+      "medians": {
+        "lcpMs": 876,
+        "cls": 0,
+        "totalBytes": 477744,
+        "scriptBytes": 382720,
+        "eventDurationMs": 80
+      },
+      "violations": [
+        {
+          "metric": "scriptBytes",
+          "observed": 382720,
+          "limit": 225280
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:3100/beginner-videos",
+      "samples": [
+        {
+          "sample": 1,
+          "measuredAtUtc": "2026-10-06T10:53:44.874Z",
+          "lcpMs": 1360,
+          "cls": 0,
+          "navigationTransferBytes": 11897,
+          "resourceTimingBytes": 290262,
+          "loadEventMs": 1685,
+          "articleRevision": null,
+          "htmlBytes": 12495,
+          "scriptBytes": 368337,
+          "firstPartyScriptBytes": 189420,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 478637,
+          "requestCount": 37,
+          "interaction": {
+            "target": null,
+            "readyMs": 78,
+            "eventTimingSupported": true,
+            "eventDurationMs": 32,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 4997.599999964237,
+                "duration": 32
+              },
+              {
+                "name": "pointerup",
+                "startTime": 4997.599999964237,
+                "duration": 32
+              },
+              {
+                "name": "click",
+                "startTime": 4997.599999964237,
+                "duration": 32
+              }
+            ]
+          },
+          "fixtureResponses": []
+        },
+        {
+          "sample": 2,
+          "measuredAtUtc": "2026-10-06T10:53:50.550Z",
+          "lcpMs": 1352,
+          "cls": 0,
+          "navigationTransferBytes": 11897,
+          "resourceTimingBytes": 290262,
+          "loadEventMs": 1689,
+          "articleRevision": null,
+          "htmlBytes": 12495,
+          "scriptBytes": 368337,
+          "firstPartyScriptBytes": 189420,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 478637,
+          "requestCount": 37,
+          "interaction": {
+            "target": null,
+            "readyMs": 73,
+            "eventTimingSupported": true,
+            "eventDurationMs": 24,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5472.5,
+                "duration": 24
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5472.5,
+                "duration": 24
+              },
+              {
+                "name": "click",
+                "startTime": 5472.5,
+                "duration": 24
+              }
+            ]
+          },
+          "fixtureResponses": []
+        },
+        {
+          "sample": 3,
+          "measuredAtUtc": "2026-10-06T10:53:56.031Z",
+          "lcpMs": 1352,
+          "cls": 0,
+          "navigationTransferBytes": 11897,
+          "resourceTimingBytes": 290262,
+          "loadEventMs": 1713,
+          "articleRevision": null,
+          "htmlBytes": 12495,
+          "scriptBytes": 368337,
+          "firstPartyScriptBytes": 189420,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 478637,
+          "requestCount": 37,
+          "interaction": {
+            "target": null,
+            "readyMs": 95,
+            "eventTimingSupported": true,
+            "eventDurationMs": 48,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5249.200000047684,
+                "duration": 48
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5249.200000047684,
+                "duration": 48
+              },
+              {
+                "name": "click",
+                "startTime": 5249.200000047684,
+                "duration": 48
+              }
+            ]
+          },
+          "fixtureResponses": []
+        }
+      ],
+      "medians": {
+        "lcpMs": 1352,
+        "cls": 0,
+        "totalBytes": 478637,
+        "scriptBytes": 368337,
+        "eventDurationMs": 32
+      },
+      "violations": [
+        {
+          "metric": "scriptBytes",
+          "observed": 368337,
+          "limit": 225280
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:3100/gear-progression",
+      "samples": [
+        {
+          "sample": 1,
+          "measuredAtUtc": "2026-10-06T10:54:01.473Z",
+          "lcpMs": 1084,
+          "cls": 0,
+          "navigationTransferBytes": 16863,
+          "resourceTimingBytes": 294420,
+          "loadEventMs": 1622,
+          "articleRevision": "2026-10-06.steam-beginner-1",
+          "htmlBytes": 17473,
+          "scriptBytes": 368337,
+          "firstPartyScriptBytes": 189420,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 487584,
+          "requestCount": 43,
+          "interaction": {
+            "target": null,
+            "readyMs": 79,
+            "eventTimingSupported": true,
+            "eventDurationMs": 32,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5200.800000011921,
+                "duration": 32
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5200.800000011921,
+                "duration": 32
+              },
+              {
+                "name": "click",
+                "startTime": 5200.800000011921,
+                "duration": 32
+              }
+            ]
+          },
+          "fixtureResponses": []
+        },
+        {
+          "sample": 2,
+          "measuredAtUtc": "2026-10-06T10:54:07.818Z",
+          "lcpMs": 980,
+          "cls": 0,
+          "navigationTransferBytes": 16863,
+          "resourceTimingBytes": 294422,
+          "loadEventMs": 1577,
+          "articleRevision": "2026-10-06.steam-beginner-1",
+          "htmlBytes": 17473,
+          "scriptBytes": 368337,
+          "firstPartyScriptBytes": 189420,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 487584,
+          "requestCount": 43,
+          "interaction": {
+            "target": null,
+            "readyMs": 83,
+            "eventTimingSupported": true,
+            "eventDurationMs": 32,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 6116.899999976158,
+                "duration": 32
+              },
+              {
+                "name": "pointerup",
+                "startTime": 6116.899999976158,
+                "duration": 32
+              },
+              {
+                "name": "click",
+                "startTime": 6116.899999976158,
+                "duration": 32
+              }
+            ]
+          },
+          "fixtureResponses": []
+        },
+        {
+          "sample": 3,
+          "measuredAtUtc": "2026-10-06T10:54:13.449Z",
+          "lcpMs": 1004,
+          "cls": 0,
+          "navigationTransferBytes": 16863,
+          "resourceTimingBytes": 294421,
+          "loadEventMs": 1589,
+          "articleRevision": "2026-10-06.steam-beginner-1",
+          "htmlBytes": 17473,
+          "scriptBytes": 368337,
+          "firstPartyScriptBytes": 189420,
+          "thirdPartyScriptBytes": 178917,
+          "fixtureResponseBytes": 0,
+          "fixtureTransferAdjustmentBytes": 0,
+          "totalBytes": 487584,
+          "requestCount": 43,
+          "interaction": {
+            "target": null,
+            "readyMs": 78,
+            "eventTimingSupported": true,
+            "eventDurationMs": 32,
+            "eventEntries": [
+              {
+                "name": "pointerdown",
+                "startTime": 5407.200000047684,
+                "duration": 32
+              },
+              {
+                "name": "pointerup",
+                "startTime": 5407.300000011921,
+                "duration": 32
+              },
+              {
+                "name": "click",
+                "startTime": 5407.300000011921,
+                "duration": 32
+              }
+            ]
+          },
+          "fixtureResponses": []
+        }
+      ],
+      "medians": {
+        "lcpMs": 1004,
+        "cls": 0,
+        "totalBytes": 487584,
+        "scriptBytes": 368337,
+        "eventDurationMs": 32
+      },
+      "violations": [
+        {
+          "metric": "scriptBytes",
+          "observed": 368337,
+          "limit": 225280
+        }
+      ]
+    }
+  ],
+  "failures": [
+    {
+      "url": "http://127.0.0.1:3100/",
+      "metric": "scriptBytes",
+      "observed": 368337,
+      "limit": 225280
+    },
+    {
+      "url": "http://127.0.0.1:3100/guide",
+      "metric": "scriptBytes",
+      "observed": 369788,
+      "limit": 225280
+    },
+    {
+      "url": "http://127.0.0.1:3100/classes",
+      "metric": "scriptBytes",
+      "observed": 369959,
+      "limit": 225280
+    },
+    {
+      "url": "http://127.0.0.1:3100/map",
+      "metric": "scriptBytes",
+      "observed": 368337,
+      "limit": 225280
+    },
+    {
+      "url": "http://127.0.0.1:3100/builds",
+      "metric": "scriptBytes",
+      "observed": 368337,
+      "limit": 225280
+    },
+    {
+      "url": "http://127.0.0.1:3100/cleric-build",
+      "metric": "scriptBytes",
+      "observed": 378402,
+      "limit": 225280
+    },
+    {
+      "url": "http://127.0.0.1:3100/tools/character",
+      "metric": "scriptBytes",
+      "observed": 382720,
+      "limit": 225280
+    },
+    {
+      "url": "http://127.0.0.1:3100/beginner-videos",
+      "metric": "scriptBytes",
+      "observed": 368337,
+      "limit": 225280
+    },
+    {
+      "url": "http://127.0.0.1:3100/gear-progression",
+      "metric": "scriptBytes",
+      "observed": 368337,
+      "limit": 225280
+    }
+  ],
+  "passed": false
+}

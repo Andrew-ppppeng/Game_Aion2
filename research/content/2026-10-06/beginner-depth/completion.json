@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-06",
+  "revision": "2026-10-06.beginner-depth-2",
+  "status": "implemented-and-checked-locally",
+  "deployed": false,
+  "preview": "http://localhost:3100",
+  "scope": {
+    "publicVersion": "Steam AION 2 Global",
+    "locales": ["en", "ja", "es", "de"],
+    "topics": ["settings", "gear-progression", "daily-weekly-checklist", "crafting", "guide", "leveling", "gathering", "macro-guide"],
+    "rewrittenArticles": 32,
+    "reviewedCollectedVideos": 20,
+    "publishedChapterRecommendations": 17,
+    "homepageRecommendations": 6,
+    "maximumRecommendationsPerArticle": 3,
+    "newOperationalFigures": 3
+  },
+  "videoDecisions": {
+    "public": "Use relevant task chapters with timed main links and chapter shortcuts. All 17 appear by default in the library; homepage and topic cards select a smaller relevant set.",
+    "internalOnly": {
+      "p5UXLn7XDF8": "Explicit TW Elyos Ranger route.",
+      "N_weZCpUbKY": "Explicit TW Asmodian Ranger route.",
+      "ZjkBi0bDIPM": "Secondary other-service compilation duplicating stronger first-hand task tutorials."
+    },
+    "filters": "Ten topic categories, localized keyword/creator search and optional hiding of four class supplements.",
+    "privacy": "Local covers and ordinary external links. No YouTube iframe or connection before a link is followed. The 17 video links remain available without JavaScript.",
+    "spiritmasterCover": "NdsTPYuL6E4-macro.jpg uses the 260-second macro-editor frame instead of the old sponsor slide. Main link begins at 214 seconds."
+  },
+  "contentChanges": [
+    "Replace generic discussion with menu paths, starter setting values and specific control fixes.",
+    "Explain profession products, exact starter ingot/sword quantities, failure assumptions and Splendent-chain inputs.",
+    "Order level-45 equipment steps and show the +10 green Noble Belt morph operation.",
+    "Separate daily, weekly, character and server allowances; explain clear versus paid reward claim.",
+    "Provide a six-item manually reset session checklist with persistent state.",
+    "Shorten first-session, leveling and gathering copy while retaining faction landmarks and recipe/promotion details.",
+    "Explain macro activation, bottom-first priority, conditional attacks and class actions kept on direct keys.",
+    "Synchronize titles, descriptions, quick answers, summaries, TOCs, figure captions and checklist copy across four languages.",
+    "Preserve old chapter anchors and useful navigation. Remove repeated workflow graphics and irrelevant historical bug commentary.",
+    "Replace mechanical minimum word/TOC/figure quotas with meaningful completeness checks; retain source, localization, asset, link and metadata validation."
+  ],
+  "validation": {
+    "lint": "passed",
+    "typecheck": "passed",
+    "dataTests": {"passed": 27, "failed": 0},
+    "content": "152 articles, 35 registered source assets, 17 localized video recommendations passed.",
+    "productionBuild": "180 static pages generated successfully.",
+    "articleBrowser": "152 articles: interactions, images, visual blocks, faction/region filters, checklists, navigation, keyboard/focus and responsive rendering passed; no runtime errors.",
+    "beginnerBrowser": "36 localized pages: all topic filters, single/multiple keyword search, creator search, class hiding, chapter/main-link targets, checklist reload/reset, no-JS links, external-link privacy, 320/390/1440px layouts and 200% video text passed.",
+    "shareImages": "36 localized image/metadata cases plus invalid-request 404 passed; Japanese font refreshed and crafting image inspected.",
+    "manualVisualReview": "Desktop/mobile video library; mobile crafting hero and recipe figure; Japanese crafting hero; daily checklist; macro editor; Spiritmaster card; German library at 320px with 200% text inspected."
+  },
+  "researchLimits": [
+    "Review covers metadata, timestamped subtitle passages and selected UI frames; it does not claim full-length playback or independent identification of every video's exact client patch.",
+    "Recommendations endorse the named demonstration chapters, not all claims within a video.",
+    "Unsupported quotas, fixed reset weekdays, guaranteed crafting results and sponsor performance promises were omitted. Detailed decisions and fact evidence are in video-review.json and fact-ledger.json.",
+    "Original YouTube index, manifest, metadata, subtitles and video archives were preserved."
+  ],
+  "maintenance": [
+    "The author_*.py, finish_content.py and tweak_public.py files are one-time migration scripts, not safe update commands: rerunning them would overwrite subsequent editorial corrections.",
+    "capture_review.mjs only captures the local production preview.",
+    "Preexisting unrelated workspace changes were preserved. No commit, push or deployment was performed."
+  ]
+}

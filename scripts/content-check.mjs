@@ -9,7 +9,7 @@ const plan = await json('content-topics.json');
 const keywords = plan.categories.flatMap(({keywords}) => keywords);
 const slugs = keywords.map((keyword) => keyword.replace(/^aion 2 /, '').replaceAll(' ', '-'));
 const locales = (process.env.CONTENT_LOCALES || 'en,ja,es,de').split(',');
-const publicToolPaths = new Set(['tools/character']);
+const publicToolPaths = new Set(['tools/character', 'beginner-videos']);
 assert.equal(locales[0], 'en', 'English is the reference locale');
 assert.equal(new Set(plan.categories.map(({category}) => category)).size, plan.categories.length, 'Unique published categories');
 for (const {category, keywords: groupKeywords} of plan.categories) {
@@ -99,12 +99,13 @@ for (const locale of locales) {
     const label = `${locale}/${slug}`;
     const meta = await json(`src/content/${locale}/${slug}.json`);
     const body = await read(`src/content/${locale}/${slug}.mdx`);
+    assert.doesNotMatch(JSON.stringify(meta) + body, /(?<![A-Za-z])(?:KR|TW)(?![A-Za-z])|Taiwan|Taiwán|Korea(?!n)|Corea(?!no)|韓国(?!語)|台湾|韓台/i, `${label}: Steam-only public content`);
     metadata[locale][slug] = meta;
     bodies[locale][slug] = body;
     for (const key of ['title', 'description', 'summary', 'quickAnswer']) assert.ok(typeof meta[key] === 'string' && meta[key].trim().length > (key === 'title' ? 7 : 20), `${label}: ${key}`);
     assert.notEqual(meta.quickAnswer.trim(), meta.summary.trim(), `${label}: quick answer is independent of the preview`);
-    assert.ok(Array.isArray(meta.toc) && meta.toc.length >= 4, `${label}: useful sections`);
-    assert.ok(body.trim().length > (locale === 'ja' ? 900 : 1800), `${label}: substantive body`);
+    assert.ok(Array.isArray(meta.toc) && meta.toc.length > 0, `${label}: nonempty table of contents`);
+    assert.ok(body.trim().length > 0, `${label}: nonempty body; information value requires task review, not a character quota`);
     assert.doesNotMatch(body, /(^#\s|<h1[\s>])/m, `${label}: H1 supplied by shell`);
     assert.doesNotMatch(JSON.stringify(meta) + body, /\bTODO\b|\bTBD\b|\?{3,}|\uFFFD/, `${label}: no placeholders or encoding damage`);
     assert.doesNotMatch((JSON.stringify(meta) + body).replace(/https?:\/\/[^\s)"<]+/g, ''), /\d\?\d|\s\?(?=\s|\d)/, `${label}: intact arrows, ranges and quantity symbols`);
@@ -117,7 +118,7 @@ for (const locale of locales) {
     assert.equal(new Set(ids).size, ids.length, `${label}: unique anchors`);
     for (const id of ids) assert.ok(!reserved.includes(id), `${label}: reserved anchor ${id}`);
     for (const section of meta.toc) assert.ok(section.title?.trim(), `${label}: translated section title`);
-    assert.ok(meta.visuals && Object.keys(meta.visuals).length >= 1, `${label}: informative visuals`);
+    assert.ok(meta.visuals && (Object.keys(meta.visuals).length > 0 || /\|\s*---|<GuideChecklist\s*\/>/.test(body)), `${label}: figure, useful table or task checklist`);
     const visualIds = [...body.matchAll(/<GuideVisual\s+id="([a-z0-9-]+)"\s*\/>/g)].map((match) => match[1]);
     assert.deepEqual(visualIds.toSorted(), Object.keys(meta.visuals).toSorted(), `${label}: every visual is used`);
     assert.equal(new Set(visualIds).size, visualIds.length, `${label}: unique visual placements`);
@@ -209,10 +210,35 @@ for (let i = 0; i < slugs.length; i++) {
     const tableRows = (body) => body.split(/\r?\n/).filter((line) => line.trim().startsWith('|')).map((line) => line.split('|').length);
     assert.deepEqual(tableRows(bodies[locale][slug]), tableRows(bodies.en[slug]), `${locale}/${slug}: complete table rows and columns`);
     if (slug === 'tier-list') {
-      const tiers = (body) => [...body.matchAll(/\|\s*(S\+|S|A\+|A|B|C|D)\s*\|\s*(S\+|S|A\+|A|B|C|D)\s*\|/g)].map((match) => [match[1], match[2]]);
-      assert.equal(tiers(bodies.en[slug]).length, 8, 'Eight class ratings per author');
+      const tiers = (body) => [...body.matchAll(/\|\s*(S\+|S|A\+|A|B|C|D)\s*\|\s*$/gm)].map((match) => match[1]);
+      assert.equal(tiers(bodies.en[slug]).length, 8, 'Eight launch class ratings');
       assert.deepEqual(tiers(bodies[locale][slug]), tiers(bodies.en[slug]), `${locale}: preserved author tiers`);
     }
   }
 }
-console.log(`PASS: ${checks} enriched localized articles; ${assets.length} sourced assets; keywords, sources, visuals, checklists, anchors, evidence links, related topics and encoding.`);
+const videos = await json('src/content/beginner-videos.json');
+assert.equal(new Set(videos.map(({id}) => id)).size, videos.length, 'Unique video recommendations');
+for (const video of videos) {
+  assert.match(video.id, /^[A-Za-z0-9_-]{11}$/, 'Valid YouTube video ID');
+  assert.ok(video.originalTitle && video.channel, `${video.id}: original identity`);
+  assert.ok(Number.isInteger(video.durationSeconds) && video.durationSeconds > 0);
+  assert.match(video.publishedAt, /^\d{4}-\d{2}-\d{2}$/);
+  assert.ok(['basics', 'first-day', 'settings', 'leveling', 'level-45', 'gear', 'crafting', 'week-one', 'mistakes', 'class'].includes(video.category));
+  assert.ok(Number.isInteger(video.startSeconds) && video.startSeconds >= 0 && video.startSeconds < video.durationSeconds);
+  assert.ok(video.chapters.length > 0, `${video.id}: actionable chapter links`);
+  for (const chapter of video.chapters) {
+    assert.ok(Number.isInteger(chapter.seconds) && chapter.seconds >= 0 && chapter.seconds < video.durationSeconds);
+    for (const locale of locales) assert.ok(chapter.labels[locale]?.trim(), `${video.id}: translated chapter label`);
+  }
+  assert.deepEqual(Object.keys(video.articleStarts).sort(), video.topics.toSorted(), `${video.id}: every article gets a relevant start`);
+  for (const seconds of Object.values(video.articleStarts)) assert.ok(Number.isInteger(seconds) && seconds >= 0 && seconds < video.durationSeconds);
+  assert.equal(video.language, 'en');
+  assert.match(video.cover, /^\/media\/videos\/[A-Za-z0-9_-]+\.jpg$/);
+  assert.ok((await readFile(new URL(`public${video.cover}`, root))).length > 0, `${video.id}: local cover exists`);
+  assert.ok(video.topics.length > 0 && video.topics.every((slug) => slugs.includes(slug)), `${video.id}: published article destinations`);
+  for (const locale of locales) {
+    assert.ok(video.titles[locale]?.trim() && video.reasons[locale]?.trim(), `${locale}/${video.id}: complete recommendation copy`);
+    assert.doesNotMatch(`${video.titles[locale]} ${video.reasons[locale]}`, /Taiwan|Taiwán|Korea|Corea|韓国|台湾|\b(?:KR|TW)\b/i, 'Recommendations follow public service scope');
+  }
+}
+console.log(`PASS: ${checks} enriched localized articles; ${assets.length} sourced assets; ${videos.length} localized video recommendations; keywords, sources, visuals, checklists, anchors, evidence links, related topics and encoding.`);

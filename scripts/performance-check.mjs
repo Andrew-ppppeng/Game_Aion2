@@ -6,7 +6,7 @@ import {installGameFixtures, readQaJson} from './qa-fixtures.mjs';
 
 const base = (process.env.QA_BASE_URL || 'http://127.0.0.1:3000').replace(/\/$/, '');
 const homeOnly = process.argv.includes('--home-only');
-const paths = homeOnly ? ['/'] : ['/', '/guide', '/classes', '/map', '/builds', '/tools/character'];
+const paths = homeOnly ? ['/'] : ['/', '/guide', '/classes', '/map', '/builds', '/cleric-build', '/tools/character', '/beginner-videos', '/gear-progression'];
 const filename = process.env.QA_PERFORMANCE_OUTPUT || (homeOnly ? 'performance-home.json' : 'performance-after.json');
 if (!/^[a-z0-9-]+\.json$/i.test(filename)) throw new Error('Use a plain JSON filename for QA_PERFORMANCE_OUTPUT');
 function budget(name, fallback) {
@@ -89,6 +89,8 @@ try {
       const sum = (type) => network.filter((entry) => !type || entry.type === type).reduce((total, entry) => total + entry.bytes, 0);
       load.htmlBytes = sum('Document');
       load.scriptBytes = sum('Script');
+      load.firstPartyScriptBytes = network.filter((entry) => entry.type === 'Script' && new URL(entry.url).origin === new URL(base).origin).reduce((total, entry) => total + entry.bytes, 0);
+      load.thirdPartyScriptBytes = load.scriptBytes - load.firstPartyScriptBytes;
       load.fixtureResponseBytes = fixture.fulfilled.reduce((total, entry) => total + entry.bytes, 0);
       // Intercepted responses can report zero CDP wire bytes. Count the archived
       // JSON payload in that case so mocked tools do not get a free byte budget.
@@ -100,7 +102,8 @@ try {
       let target;
       let ready;
       if (path === '/') {target = page.locator('.mobile-menu-button'); ready = () => expect(page.locator('#mobile-navigation')).toBeVisible();}
-      else if (path === '/builds') {target = page.locator('[data-more-equipment] > summary'); ready = () => expect(page.locator('[data-equipment-cards] [data-item-id]')).toHaveCount(22);}
+      else if (path === '/beginner-videos') {target = page.locator('[data-category="crafting"]'); ready = () => expect(page.locator('.video-card')).toHaveCount(1);}
+      else if (path === '/cleric-build') {target = page.locator('[data-more-equipment] > summary'); ready = () => expect(page.locator('[data-equipment-cards] [data-item-id]')).toHaveCount(7);}
       else if (path === '/tools/character') {
         await page.locator('[data-character-tool] input').first().fill('Testa');
         target = page.locator('[data-character-tool] button[type="submit"]'); ready = () => expect(page.locator('.character-match')).toHaveCount(1);

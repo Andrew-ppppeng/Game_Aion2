@@ -37,7 +37,11 @@ await context.route('**/api/aion2/**', async (route) => {
   }
   if (url.pathname.endsWith('/equipment-examples')) {
     equipmentRequests.push(url.href);
-    return respond(route, {items: items.slice(2).map((record) => ({data: record.locales[locale].item, meta: {...record.locales[locale].meta, service: 'Global', region: 'nae', locale, freshness: 'snapshot'}, error: null}))});
+    const selected = url.searchParams.get('slug') === 'cleric-build' ? [115030041, 210130038, 210530038, 310140035, 311030001] : items.slice(2).map(({id}) => id);
+    return respond(route, {items: selected.map((id) => {
+      const record = items.find((entry) => entry.id === id);
+      return {data: record.locales[locale].item, meta: {...record.locales[locale].meta, service: 'Global', region: 'nae', locale, freshness: 'snapshot'}, error: null};
+    })});
   }
   if (url.pathname.endsWith('/search')) {
     searchRequest = url;
@@ -63,13 +67,13 @@ const overflow = async (label) => assert.ok(await page.evaluate(() => document.d
 try {
   await page.clock.install({time: new Date('2026-10-03T11:00:00Z')});
   for (const locale of ['en', 'ja', 'es', 'de']) {
-    await page.goto(path(locale, 'builds'));
+    await page.goto(path(locale, 'cleric-build'));
     const equipment = page.locator('[data-equipment-cards]');
     await expect(equipment).toBeVisible();
     await expect(equipment.locator('[data-item-id]')).toHaveCount(2);
     assert.equal(equipmentRequests.length, ['en', 'ja', 'es', 'de'].indexOf(locale), 'Collapsed equipment does not request additional cards');
     await equipment.locator(':scope > details > summary').click();
-    await expect(equipment.locator('[data-item-id]')).toHaveCount(22);
+    await expect(equipment.locator('[data-item-id]')).toHaveCount(7);
     assert.equal(equipmentRequests.length, ['en', 'ja', 'es', 'de'].indexOf(locale) + 1, 'First expansion makes one request');
     await expect(equipment.locator('[data-item-id="110760001"]')).toBeVisible();
     await overflow(`${locale} equipment cards`);

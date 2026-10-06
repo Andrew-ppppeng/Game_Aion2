@@ -7,6 +7,7 @@ import type {Locale} from '@/i18n/routing';
 import {officialLinks, site} from '@/lib/site';
 import {getArticle, isArticlePublished} from '@/lib/articles';
 import {ReturnTools} from './return-tools';
+import {VideoRecommendations} from './video-recommendations';
 
 async function messages() {
   return getSiteMessages(await getLocale() as Locale);
@@ -43,6 +44,10 @@ export async function PlayerTools() {
   const locale = await getLocale() as Locale;
   const ids = getArticle(locale, 'guide')?.metadata.checklist?.items.map((item) => item.id) || [];
   return <ReturnTools locale={locale} checklistIds={ids} />;
+}
+
+export async function BeginnerVideos() {
+  return <VideoRecommendations locale={await getLocale() as Locale} />;
 }
 
 const journeyRoutes = ['/guide', '/classes', '/leveling', '/pvp'];

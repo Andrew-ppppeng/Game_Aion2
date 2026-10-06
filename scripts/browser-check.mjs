@@ -32,7 +32,7 @@ try {
   await page.goto(base, {waitUntil: 'networkidle'});
   await expect(page.locator('html')).toHaveAttribute('lang', 'en');
   await expect(page.locator('h1')).toHaveText('AION 2');
-  await expect(page.locator('.desktop-sidebar nav a')).toHaveCount(slugs.length + 4);
+  await expect(page.locator('.desktop-sidebar nav a')).toHaveCount(slugs.length + 5);
   await expect(page.locator('.desktop-sidebar .sidebar-status, .desktop-sidebar .coupon-details')).toHaveCount(0);
   await expect(page.locator('.journey-card')).toHaveCount(4);
   await expect(page.locator('.desktop-sidebar .coupon-state')).toHaveText('Announced');
@@ -181,7 +181,7 @@ try {
         if (slug === 'ranger' || slug === 'spiritmaster') await expect(page.locator('#solo-party-and-pvp')).toHaveCount(1);
         if (slug === 'chanter') await expect(page.locator('#party-role-switch')).toHaveCount(1);
       }
-      await expect(page.locator('.guide-figure, .guide-diagram')).not.toHaveCount(0);
+      await expect(page.locator('.guide-figure, .guide-diagram, .mdx-table-wrap, .guide-checklist')).not.toHaveCount(0);
       for (const [id, visual] of Object.entries(meta.visuals)) await expect(page.locator(`[data-visual-id="${id}"] figcaption p`)).toHaveText(visual.caption);
       await expect(page.locator('.article-next-section .article-next-card')).toHaveCount(2);
       const nextTargets = await page.locator('.article-next-card').evaluateAll((cards) => cards.map((card) => card.dataset.nextGuide));

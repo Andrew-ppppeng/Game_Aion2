@@ -1,45 +1,41 @@
-AION 2's built-in skill macro repeats a hotbar skill stack while you hold its activation key. Bind a reachable button and start with a short damage sequence. Keep actions that need timing on separate controls.
+<h2 id="bind-and-open">Create one working macro</h2>
 
-<h2 id="bind-and-open">Bind the macro key and open the editor</h2>
-
-Find the ability-macro binding under **Key Settings → General → Gameplay**. Choose an activation button, open the skill menu's ability-macro editor, add a macro and select the hotbar slot containing your skill stack. Hold the bound button to repeat the stack.
-
-Menu names depend on the client language. Start with one hotbar stack so you can see which skills activate and how to stop the sequence.
+1. Open **Key Settings → General → Gameplay** and bind the ability-macro activation key; **Q** is one option after moving its previous action.
+2. Open the skill menu’s **ability-macro editor** and add a macro.
+3. Select the **hotbar chain/stack**, not just the skill icon currently showing in that slot.
+4. Hold the activation key to run the selected stack; release it to stop.
 
 <GuideVisual id="macro-global-keybind" />
 
 <GuideVisual id="macro-global-editor" />
 
-<h2 id="priority-stack">Understand priority before adding more skills</h2>
+<h2 id="priority-stack">Skill priority and a Ranger example</h2>
 
-The stack checks the bottom skill first, then the entries above it. A high-priority skill without a cooldown can prevent other entries from firing. Start with a small set of repeatable attacks and watch each intended skill activate.
+The stack checks the **bottom skill first**. Put conditional attacks lower in the priority stack and the cooldown-free filler above them. When a condition is unavailable, the follow-up cannot fire; a filler at the bottom can instead occupy the stack and stop upper entries from firing.
 
-Think about the job of each button before arranging it. A damage button you want whenever available is different from an attack that needs a particular target state. Write down any condition, range or resource requirement, and verify it during a manual attempt. Adding every unlocked skill makes it harder to identify an unavailable entry or a poorly chosen priority.
+For [Ranger](/ranger#manual-loop), the useful sequence is **Marking Shot → Precision → Suppressing Arrow**, with **Snipe** supplying MP between attacks. **Drill Dart** needs a critical hit; **Burst Arrow** needs Slow or Root. A macro cannot create those prerequisites. Put a ready follow-up ahead of the filler, and keep target-control skills separate.
 
-<GuideVisual id="workflow" />
+<h2 id="manual-actions">Class actions to keep on direct keys</h2>
 
-<h2 id="manual-actions">Keep decisions on separate controls</h2>
+| Class | Direct action and condition |
+| --- | --- |
+| [Assassin](/assassin#manual-loop) | Insignia Explosion after **five Insignias**; movement to the back only when safe |
+| [Spiritmaster](/spiritmaster#summon-sequence) | Elemental Fusion at **Four Elements**; choose Water for MP or Wind for HP |
+| [Ranger](/ranger#manual-loop) | Traps, escape and charged Deadshot when a safe cast window exists |
+| [Cleric](/cleric#manual-loop) | Healing, cleanse and resurrection; stop damage for urgent recovery |
 
-Keep movement, interrupts, protection and recovery on reachable separate controls. As Cleric, retain direct access to healing, cleanse and resurrection. As Ranger, keep control of distance and attacks reserved for a specific opening.
+Keep dodge/block and interrupt outside the damage stack for every class.
 
-A short repeatable damage sequence should leave you able to respond to the encounter. Test stopping the macro, moving out of a mechanic and using a reactive skill before trying it in a difficult party fight. If those actions become awkward, change the binding or reduce the stack. A higher damage result on a stationary target does not compensate for missing a mechanic.
+<h2 id="delay-and-basic-attack">Macro delay: a starting value</h2>
 
-<h2 id="delay-and-basic-attack">Tune delay and basic attacks</h2>
+If the editor exposes delay, **50 ms** is a conservative starting value. With stable low latency, **10 ms** is an option to try; a shorter delay is useful only if the intended attacks still fire. Watch one full cooldown cycle: if a ready entry is skipped, raise delay before changing skill priorities. Keep the MP-restoring basic attack available rather than replacing it with a chain that drains MP.
 
-Compare the macro with manual attacks using the same build, target and attempt length. Include a separate basic attack in the comparison if that is part of your intended rotation. Check damage, missed attacks and the ability to react to mechanics.
+<h2 id="debug-one-stack">Fix a macro that does not work</h2>
 
-If the editor offers a delay setting, record the starting value and adjust it one step at a time. Choose a value that lets intended attacks fire while preserving responsive movement and reactive skills.
+**Nothing fires:** activation binding and chosen hotbar chain. **Only the filler repeats:** bottom-first priority. **Follow-up missing:** cooldown, MP, range or its required status/critical proc. **Character runs forward:** turn pursuit off in [settings](/settings). For the four class walkthroughs, use the Class supplements filter in the [video library](/beginner-videos).
 
-<h2 id="debug-one-stack">Troubleshoot one stack at a time</h2>
+<h2 id="built-in-and-policy">Use the built-in editor</h2>
 
-If nothing fires, first check the activation binding and that the macro refers to the intended hotbar slot. If only one attack repeats, inspect its priority and availability. If some attacks disappear, test those attacks manually against the same target: cooldown, range, resource or a required condition may explain the difference.
-
-Test the sequence while moving and after changing target. Retest when you unlock or change a skill option, and include only skills your character can currently use.
-
-<h2 id="built-in-and-policy">Built-in macros and NC policy</h2>
-
-Use the game's own macro editor. NC's operation policy sanctions programs or devices that circumvent protection or interfere with normal operation. For accessibility arrangements beyond the built-in controls, consult NC support and the current policy.
-
-Choose the skills and role first, then simplify their controls. The [builds guide](/builds) helps separate repeatable attacks from decisions that require attention.
+These steps use the game’s own editor. NC’s operation policy sanctions programs or devices that circumvent protection or interfere with normal operation. For accessibility arrangements beyond built-in controls, consult NC support and its current policy.
 
 <GuideNext slug="builds" />

@@ -12,7 +12,7 @@ const browser = await chromium.launch({headless: true, executablePath: process.e
 const errors = [];
 const allEvents = [];
 const allowedKeys = new Set(['name', 'path', 'locale', 'target', 'metric', 'value', 'cohort']);
-const validEvents = new Set(['page_view', 'new_browser', 'session_start', 'return_7d', 'next_guide_click', 'tool_use', 'bookmark_save', 'budget_save', 'checklist_save', 'web_vital']);
+const validEvents = new Set(['page_view', 'new_browser', 'session_start', 'return_7d', 'next_guide_click', 'video_click', 'tool_use', 'bookmark_save', 'budget_save', 'checklist_save', 'web_vital']);
 let cases = 0;
 
 async function contextFor({privacy, visit, forceFetch} = {}) {
@@ -70,6 +70,14 @@ async function contextFor({privacy, visit, forceFetch} = {}) {
 }
 
 async function flush(page) {await page.waitForTimeout(2300);}
+async function video(page) {
+  await page.goto(`${base}/beginner-videos?qa_private=${privateValue}`);
+  // Stop the external navigation after the real click reaches the analytics handler.
+  await page.evaluate(() => document.addEventListener('click', (event) => {
+    if (event.target.closest('[data-analytics="video"]')) event.preventDefault();
+  }));
+  await page.locator('.video-card-copy a').first().click();
+}
 async function checklist(page) {
   await page.goto(`${base}/guide?qa_private=${privateValue}#starter-checklist`);
   const box = page.locator('[data-checklist="guide"] input').first();
@@ -112,7 +120,9 @@ try {
   await checklist(ordinary.page); await flush(ordinary.page);
   await budget(ordinary.page); await flush(ordinary.page);
   await character(ordinary.page); await flush(ordinary.page);
-  for (const event of ['next_guide_click', 'checklist_save', 'budget_save', 'bookmark_save', 'tool_use']) assert.ok(ordinary.events.some((entry) => entry.name === event), `Expected ${event} without recording private values`);
+  await video(ordinary.page); await flush(ordinary.page);
+  for (const event of ['next_guide_click', 'video_click', 'checklist_save', 'budget_save', 'bookmark_save', 'tool_use']) assert.ok(ordinary.events.some((entry) => entry.name === event), `Expected ${event} without recording private values`);
+  assert.ok(ordinary.events.some((event) => event.name === 'video_click' && event.path === '/beginner-videos' && event.target === 'videos'));
   assert.equal(ordinary.events.filter((event) => event.name === 'new_browser').length, 1, 'Reloads/navigation do not create another browser');
   await ordinary.context.close(); cases++;
 
@@ -123,7 +133,7 @@ try {
 
   for (const privacy of ['dnt', 'gpc', 'optout']) {
     const sample = await contextFor({privacy});
-    await checklist(sample.page); await budget(sample.page); await character(sample.page); await flush(sample.page);
+    await checklist(sample.page); await budget(sample.page); await character(sample.page); await video(sample.page); await flush(sample.page);
     assert.deepEqual(sample.events, [], `${privacy} blocks analytics requests while all three tools continue working`);
     await sample.context.close(); cases++;
   }

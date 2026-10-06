@@ -1,45 +1,41 @@
-El macro integrado de AION 2 repite una pila de habilidades mientras mantienes pulsada su tecla. Asigna un botón cómodo y empieza con una secuencia breve de daño. Deja las acciones que requieren timing en controles separados.
+<h2 id="bind-and-open">Crea una macro funcional</h2>
 
-<h2 id="bind-and-open">Asigna la tecla y abre el editor</h2>
-
-Busca la asignación del macro en **Key Settings → General → Gameplay**. Elige un botón, abre el editor desde el menú de habilidades, añade un macro y selecciona la casilla con tu pila. Mantén pulsado el botón para repetirla.
-
-Los nombres cambian según el idioma del cliente. Empieza con una sola pila para observar qué habilidades se activan y cómo detenerla.
+1. En **Key Settings → General → Gameplay**, asigna la tecla de macro; **Q** sirve si mueves su acción anterior.
+2. Abre **ability-macro editor** en habilidades y añade una macro.
+3. Selecciona la **cadena/pila de la barra**, no solo el icono visible.
+4. Mantén la tecla para ejecutar y suéltala para parar.
 
 <GuideVisual id="macro-global-keybind" />
 
 <GuideVisual id="macro-global-editor" />
 
-<h2 id="priority-stack">Entiende la prioridad antes de añadir habilidades</h2>
+<h2 id="priority-stack">Prioridad y ejemplo Ranger</h2>
 
-La pila comprueba primero la habilidad inferior y después las de arriba. Una habilidad de prioridad alta sin enfriamiento puede impedir que se activen otras. Empieza con pocos ataques repetibles y observa cada uno.
+La pila revisa **primero la habilidad inferior**. Pon ataques condicionales abajo y el relleno sin enfriamiento arriba. Sin su requisito, una continuación no se activa; un relleno abajo puede impedir las habilidades superiores.
 
-Piensa en la función de cada botón antes de colocarlo. Un ataque que quieres usar siempre que esté disponible es diferente de otro que requiere un estado concreto del objetivo. Anota condiciones, alcance y recursos, y compruébalos manualmente. Añadir todas las habilidades desbloqueadas dificulta identificar una entrada no disponible o una prioridad mal elegida.
+En [Ranger](/ranger#manual-loop), usa **Marking Shot → Precision → Suppressing Arrow**, con **Snipe** para MP. **Drill Dart** exige crítico y **Burst Arrow** Slow o Root. La macro no crea requisitos. Prioriza la continuación disponible sobre relleno y deja control de objetivos separado.
 
-<GuideVisual id="workflow" />
+<h2 id="manual-actions">Acciones por clase en teclas directas</h2>
 
-<h2 id="manual-actions">Deja las decisiones en controles separados</h2>
+| Clase | Acción directa y condición |
+| --- | --- |
+| [Assassin](/assassin#manual-loop) | Insignia Explosion con **cinco Insignias**; ve detrás solo si es seguro |
+| [Spiritmaster](/spiritmaster#summon-sequence) | Elemental Fusion con **Four Elements**; Water para MP, Wind para HP |
+| [Ranger](/ranger#manual-loop) | Trampas, escape y Deadshot con ventana segura |
+| [Cleric](/cleric#manual-loop) | Curación, limpieza y resurrección; detén daño para emergencias |
 
-Deja movimiento, interrupciones, protección y recuperación en controles separados cómodos. Como Cleric, mantén acceso directo a curación, limpieza y resurrección. Como Ranger, controla la distancia y los ataques reservados para una apertura.
+Deja esquiva/bloqueo e interrupción fuera de la pila de daño.
 
-Una secuencia breve debe permitir responder al encuentro. Prueba a detener el macro, salir de una mecánica y usar una habilidad reactiva antes de un combate de grupo difícil. Si resulta incómodo, cambia la asignación o reduce la pila. Más daño contra un objetivo inmóvil no compensa fallar una mecánica.
+<h2 id="delay-and-basic-attack">Retardo de macro: valor inicial</h2>
 
-<h2 id="delay-and-basic-attack">Ajusta el retardo y el ataque básico</h2>
+Si el editor permite retardo, **50 ms** es un inicio conservador. Con latencia baja y estable puedes probar **10 ms**, si todos los ataques siguen ejecutándose. Observa un ciclo: si omite una habilidad lista, sube retardo antes de cambiar prioridades. Conserva el ataque básico que recupera MP.
 
-Compara macro y ataques manuales con la misma configuración, objetivo y duración. Incluye el ataque básico por separado si forma parte de tu rotación. Revisa daño, ataques perdidos y respuesta a mecánicas.
+<h2 id="debug-one-stack">Arregla una macro que falla</h2>
 
-Si el editor ofrece retardo, anota el valor inicial y ajústalo de un paso en un paso. Busca que se activen los ataques previstos y que movimiento y habilidades reactivas respondan bien.
+**Nada se activa:** tecla y cadena seleccionada. **Solo relleno:** prioridad inferior. **Falta continuación:** enfriamiento, MP, alcance o estado/crítico. **Corres hacia delante:** desactiva persecución en [ajustes](/settings). Los cuatro ejemplos están en el filtro de clases de [vídeos](/beginner-videos).
 
-<h2 id="debug-one-stack">Comprueba una pila cada vez</h2>
+<h2 id="built-in-and-policy">Usa el editor integrado</h2>
 
-Si no se activa nada, comprueba primero la asignación y la casilla de la barra seleccionada. Si se repite un solo ataque, revisa su prioridad y disponibilidad. Si faltan ataques, úsalos manualmente contra el mismo objetivo: reutilización, alcance, recursos o una condición necesaria pueden explicar la diferencia.
-
-Prueba la secuencia al moverte y tras cambiar de objetivo. Repite la prueba cuando desbloquees o cambies una opción e incluye solo habilidades disponibles para tu personaje.
-
-<h2 id="built-in-and-policy">Macros integrados y política de NC</h2>
-
-Usa el editor de macros del juego. La política de NC sanciona programas o dispositivos que evadan protecciones o interfieran con el funcionamiento normal. Para adaptaciones de accesibilidad fuera de los controles integrados, consulta al soporte de NC y la política actual.
-
-Elige habilidades y función antes de simplificar los controles. La [guía de builds](/builds) ayuda a separar los ataques repetibles de las decisiones que requieren atención.
+Estos pasos usan el editor del juego. NC sanciona programas o dispositivos que eluden protección o interfieren con funcionamiento normal. Para accesibilidad fuera de controles integrados, consulta soporte y la política vigente.
 
 <GuideNext slug="builds" />

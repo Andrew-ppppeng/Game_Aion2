@@ -12,5 +12,11 @@ export default withNextIntl(withMDX({
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
   poweredByHeader: false,
   devIndicators: false,
+  async redirects() {
+    return [
+      {source: '/global-changes', destination: '/guide', permanent: true},
+      ...['en', 'ja', 'es', 'de'].map((locale) => ({source: `/${locale}/global-changes`, destination: locale === 'en' ? '/guide' : `/${locale}/guide`, permanent: true})),
+    ];
+  },
   agentRules: false,
 }));

@@ -24,6 +24,7 @@ import {GuideSkillMap} from './guide-skill-map';
 import {GuideClassVideo, GuideClassVideos} from './guide-class-video';
 import {GuideBuildMaps} from './guide-build-visuals';
 import classIdentities from '@/content/class-identities.json';
+import {VideoRecommendations} from './video-recommendations';
 
 export async function ArticlePage({locale, slug}: {locale: Locale; slug: string}) {
   const article = getArticle(locale, slug);
@@ -90,6 +91,7 @@ export async function ArticlePage({locale, slug}: {locale: Locale; slug: string}
         {slug === 'code' && <div className="article-coupon"><CouponCard /></div>}
         {(slug === 'leveling' || slug === 'server') && <GuideFilter kind={slug === 'leveling' ? 'faction' : 'region'} locale={locale} />}
         <div className="article-body"><Content components={components} /></div>
+        <VideoRecommendations locale={locale} slug={slug} />
         <section className="article-next-section" aria-label={guideMessages[locale].next}>{next.map((target) => <ArticleNext key={target} locale={locale} slug={target} />)}</section>
         <section className="article-related" aria-labelledby="related-title"><h2 id="related-title"><BookOpen size={18} aria-hidden="true" />{a.related}</h2><div>{data.related.filter((related) => !recommended.has(related)).map((related) => {
           const relatedArticle = getArticle(locale, related);

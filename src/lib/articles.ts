@@ -1,3 +1,23 @@
+import data_settings from '@/content/article-data/settings.json';
+import meta_en_settings from '@/content/en/settings.json';
+import meta_ja_settings from '@/content/ja/settings.json';
+import meta_es_settings from '@/content/es/settings.json';
+import meta_de_settings from '@/content/de/settings.json';
+import data_gear_progression from '@/content/article-data/gear-progression.json';
+import meta_en_gear_progression from '@/content/en/gear-progression.json';
+import meta_ja_gear_progression from '@/content/ja/gear-progression.json';
+import meta_es_gear_progression from '@/content/es/gear-progression.json';
+import meta_de_gear_progression from '@/content/de/gear-progression.json';
+import data_daily_weekly_checklist from '@/content/article-data/daily-weekly-checklist.json';
+import meta_en_daily_weekly_checklist from '@/content/en/daily-weekly-checklist.json';
+import meta_ja_daily_weekly_checklist from '@/content/ja/daily-weekly-checklist.json';
+import meta_es_daily_weekly_checklist from '@/content/es/daily-weekly-checklist.json';
+import meta_de_daily_weekly_checklist from '@/content/de/daily-weekly-checklist.json';
+import data_crafting from '@/content/article-data/crafting.json';
+import meta_en_crafting from '@/content/en/crafting.json';
+import meta_ja_crafting from '@/content/ja/crafting.json';
+import meta_es_crafting from '@/content/es/crafting.json';
+import meta_de_crafting from '@/content/de/crafting.json';
 import type {Locale} from '@/i18n/routing';
 import type {TopicSlug} from './topics';
 import {getTopic, topics} from './topics';
@@ -32,7 +52,6 @@ import data_ranger from '@/content/article-data/ranger.json';
 import data_gladiator from '@/content/article-data/gladiator.json';
 import data_wings from '@/content/article-data/wings.json';
 import data_database from '@/content/article-data/database.json';
-import data_global_changes from '@/content/article-data/global-changes.json';
 import meta_en_guide from '@/content/en/guide.json';
 import meta_en_gathering from '@/content/en/gathering.json';
 import meta_en_leveling from '@/content/en/leveling.json';
@@ -63,7 +82,6 @@ import meta_en_ranger from '@/content/en/ranger.json';
 import meta_en_gladiator from '@/content/en/gladiator.json';
 import meta_en_wings from '@/content/en/wings.json';
 import meta_en_database from '@/content/en/database.json';
-import meta_en_global_changes from '@/content/en/global-changes.json';
 import meta_ja_guide from '@/content/ja/guide.json';
 import meta_ja_gathering from '@/content/ja/gathering.json';
 import meta_ja_leveling from '@/content/ja/leveling.json';
@@ -94,7 +112,6 @@ import meta_ja_ranger from '@/content/ja/ranger.json';
 import meta_ja_gladiator from '@/content/ja/gladiator.json';
 import meta_ja_wings from '@/content/ja/wings.json';
 import meta_ja_database from '@/content/ja/database.json';
-import meta_ja_global_changes from '@/content/ja/global-changes.json';
 import meta_es_guide from '@/content/es/guide.json';
 import meta_es_gathering from '@/content/es/gathering.json';
 import meta_es_leveling from '@/content/es/leveling.json';
@@ -125,7 +142,6 @@ import meta_es_ranger from '@/content/es/ranger.json';
 import meta_es_gladiator from '@/content/es/gladiator.json';
 import meta_es_wings from '@/content/es/wings.json';
 import meta_es_database from '@/content/es/database.json';
-import meta_es_global_changes from '@/content/es/global-changes.json';
 import meta_de_guide from '@/content/de/guide.json';
 import meta_de_gathering from '@/content/de/gathering.json';
 import meta_de_leveling from '@/content/de/leveling.json';
@@ -156,7 +172,6 @@ import meta_de_ranger from '@/content/de/ranger.json';
 import meta_de_gladiator from '@/content/de/gladiator.json';
 import meta_de_wings from '@/content/de/wings.json';
 import meta_de_database from '@/content/de/database.json';
-import meta_de_global_changes from '@/content/de/global-changes.json';
 
 import data_templar from '@/content/article-data/templar.json';
 import data_assassin from '@/content/article-data/assassin.json';
@@ -180,6 +195,10 @@ import meta_de_sorcerer from '@/content/de/sorcerer.json';
 import meta_de_cleric from '@/content/de/cleric.json';
 
 const sharedData = {
+  'settings': data_settings,
+  'gear-progression': data_gear_progression,
+  'daily-weekly-checklist': data_daily_weekly_checklist,
+  'crafting': data_crafting,
   'templar': data_templar,
   'assassin': data_assassin,
   'sorcerer': data_sorcerer,
@@ -214,11 +233,14 @@ const sharedData = {
   'gladiator': data_gladiator,
   'wings': data_wings,
   'database': data_database,
-  'global-changes': data_global_changes,
 } as Record<TopicSlug, ArticleData>;
 
 const entries: Record<Locale, Record<TopicSlug, ArticleEntry>> = {
   en: {
+    'settings': {metadata: meta_en_settings, load: () => import('@/content/en/settings.mdx')},
+    'gear-progression': {metadata: meta_en_gear_progression, load: () => import('@/content/en/gear-progression.mdx')},
+    'daily-weekly-checklist': {metadata: meta_en_daily_weekly_checklist, load: () => import('@/content/en/daily-weekly-checklist.mdx')},
+    'crafting': {metadata: meta_en_crafting, load: () => import('@/content/en/crafting.mdx')},
     'templar': {metadata: meta_en_templar, load: () => import('@/content/en/templar.mdx')},
     'assassin': {metadata: meta_en_assassin, load: () => import('@/content/en/assassin.mdx')},
     'sorcerer': {metadata: meta_en_sorcerer, load: () => import('@/content/en/sorcerer.mdx')},
@@ -253,9 +275,12 @@ const entries: Record<Locale, Record<TopicSlug, ArticleEntry>> = {
     'gladiator': {metadata: meta_en_gladiator, load: () => import('@/content/en/gladiator.mdx')},
     'wings': {metadata: meta_en_wings, load: () => import('@/content/en/wings.mdx')},
     'database': {metadata: meta_en_database, load: () => import('@/content/en/database.mdx')},
-    'global-changes': {metadata: meta_en_global_changes, load: () => import('@/content/en/global-changes.mdx')},
   },
   ja: {
+    'settings': {metadata: meta_ja_settings, load: () => import('@/content/ja/settings.mdx')},
+    'gear-progression': {metadata: meta_ja_gear_progression, load: () => import('@/content/ja/gear-progression.mdx')},
+    'daily-weekly-checklist': {metadata: meta_ja_daily_weekly_checklist, load: () => import('@/content/ja/daily-weekly-checklist.mdx')},
+    'crafting': {metadata: meta_ja_crafting, load: () => import('@/content/ja/crafting.mdx')},
     'templar': {metadata: meta_ja_templar, load: () => import('@/content/ja/templar.mdx')},
     'assassin': {metadata: meta_ja_assassin, load: () => import('@/content/ja/assassin.mdx')},
     'sorcerer': {metadata: meta_ja_sorcerer, load: () => import('@/content/ja/sorcerer.mdx')},
@@ -290,9 +315,12 @@ const entries: Record<Locale, Record<TopicSlug, ArticleEntry>> = {
     'gladiator': {metadata: meta_ja_gladiator, load: () => import('@/content/ja/gladiator.mdx')},
     'wings': {metadata: meta_ja_wings, load: () => import('@/content/ja/wings.mdx')},
     'database': {metadata: meta_ja_database, load: () => import('@/content/ja/database.mdx')},
-    'global-changes': {metadata: meta_ja_global_changes, load: () => import('@/content/ja/global-changes.mdx')},
   },
   es: {
+    'settings': {metadata: meta_es_settings, load: () => import('@/content/es/settings.mdx')},
+    'gear-progression': {metadata: meta_es_gear_progression, load: () => import('@/content/es/gear-progression.mdx')},
+    'daily-weekly-checklist': {metadata: meta_es_daily_weekly_checklist, load: () => import('@/content/es/daily-weekly-checklist.mdx')},
+    'crafting': {metadata: meta_es_crafting, load: () => import('@/content/es/crafting.mdx')},
     'templar': {metadata: meta_es_templar, load: () => import('@/content/es/templar.mdx')},
     'assassin': {metadata: meta_es_assassin, load: () => import('@/content/es/assassin.mdx')},
     'sorcerer': {metadata: meta_es_sorcerer, load: () => import('@/content/es/sorcerer.mdx')},
@@ -327,9 +355,12 @@ const entries: Record<Locale, Record<TopicSlug, ArticleEntry>> = {
     'gladiator': {metadata: meta_es_gladiator, load: () => import('@/content/es/gladiator.mdx')},
     'wings': {metadata: meta_es_wings, load: () => import('@/content/es/wings.mdx')},
     'database': {metadata: meta_es_database, load: () => import('@/content/es/database.mdx')},
-    'global-changes': {metadata: meta_es_global_changes, load: () => import('@/content/es/global-changes.mdx')},
   },
   de: {
+    'settings': {metadata: meta_de_settings, load: () => import('@/content/de/settings.mdx')},
+    'gear-progression': {metadata: meta_de_gear_progression, load: () => import('@/content/de/gear-progression.mdx')},
+    'daily-weekly-checklist': {metadata: meta_de_daily_weekly_checklist, load: () => import('@/content/de/daily-weekly-checklist.mdx')},
+    'crafting': {metadata: meta_de_crafting, load: () => import('@/content/de/crafting.mdx')},
     'templar': {metadata: meta_de_templar, load: () => import('@/content/de/templar.mdx')},
     'assassin': {metadata: meta_de_assassin, load: () => import('@/content/de/assassin.mdx')},
     'sorcerer': {metadata: meta_de_sorcerer, load: () => import('@/content/de/sorcerer.mdx')},
@@ -364,7 +395,6 @@ const entries: Record<Locale, Record<TopicSlug, ArticleEntry>> = {
     'gladiator': {metadata: meta_de_gladiator, load: () => import('@/content/de/gladiator.mdx')},
     'wings': {metadata: meta_de_wings, load: () => import('@/content/de/wings.mdx')},
     'database': {metadata: meta_de_database, load: () => import('@/content/de/database.mdx')},
-    'global-changes': {metadata: meta_de_global_changes, load: () => import('@/content/de/global-changes.mdx')},
   },
 };
 
