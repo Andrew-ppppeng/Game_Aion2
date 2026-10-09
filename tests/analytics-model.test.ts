@@ -33,7 +33,7 @@ test('privacy whitelist rejects names, IDs, raw URLs, query strings, storage val
 });
 
 test('tool targets and metric/cohort fields cannot carry arbitrary strings', () => {
-  for (const target of ['character', 'budget', 'checklist', 'calendar', 'equipment', 'classes']) {
+  for (const target of ['character', 'budget', 'checklist', 'calendar', 'equipment', 'classes', 'videos', 'growth']) {
     assert.ok(validateEvents([{...view, name: 'tool_use', target}], pages, now));
   }
   assert.equal(validateEvents([{...view, name: 'tool_use', target: 'PrivateCharacter'}], pages, now), null);

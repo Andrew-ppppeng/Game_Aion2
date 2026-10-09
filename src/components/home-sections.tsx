@@ -5,9 +5,10 @@ import {Link} from '@/i18n/navigation';
 import {getSiteMessages} from '@/i18n/messages';
 import type {Locale} from '@/i18n/routing';
 import {officialLinks, site} from '@/lib/site';
-import {getArticle, isArticlePublished} from '@/lib/articles';
+import {getArticle} from '@/lib/articles';
 import {ReturnTools} from './return-tools';
 import {VideoRecommendations} from './video-recommendations';
+import {structureMessages} from '@/i18n/structure-messages';
 
 async function messages() {
   return getSiteMessages(await getLocale() as Locale);
@@ -50,21 +51,23 @@ export async function BeginnerVideos() {
   return <VideoRecommendations locale={await getLocale() as Locale} />;
 }
 
-const journeyRoutes = ['/guide', '/classes', '/leveling', '/pvp'];
-const journeyIcons = [Compass, Swords, Gem, Shield];
+const journeyRoutes = ['/guide', '/tools/growth-checklist', '/classes', '/resources'];
+const journeyIcons = [Compass, Gem, Swords, Shield];
 
 export async function Journey() {
   const m = await messages();
   const locale = await getLocale() as Locale;
+  const s = structureMessages[locale];
+  const cards = [{title: s.start, description: s.startNote}, {title: s.continue, description: s.continueNote}, {title: s.choose, description: s.chooseNote}, {title: s.resources, description: s.resourcesNote}];
   return <section className="content-section journey-section" id="journey" aria-labelledby="journey-title">
     <div className="section-topline"><span className="eyebrow">{m.home.start.eyebrow}</span><span className="section-index">01 /</span></div>
     <div className="section-heading"><div><h2 id="journey-title">{m.home.start.title}</h2><p>{m.ui.journeyDescription}</p></div><span className="section-decoration" aria-hidden="true">✧</span></div>
-    <div className="journey-grid">{m.home.start.cards.map((card, index) => {
+    <div className="journey-grid">{cards.map((card, index) => {
       const Icon = journeyIcons[index];
-      return <Link key={card.number} href={journeyRoutes[index]} className={`journey-card journey-card-${index + 1}`}>
-        <div className="journey-card-top"><span className="journey-icon"><Icon size={22} strokeWidth={1.5} aria-hidden="true" /></span><span className="journey-number" aria-hidden="true">0{card.number}</span></div>
+      return <Link key={journeyRoutes[index]} href={journeyRoutes[index]} className={`journey-card journey-card-${index + 1}`}>
+        <div className="journey-card-top"><span className="journey-icon"><Icon size={22} strokeWidth={1.5} aria-hidden="true" /></span><span className="journey-number" aria-hidden="true">0{index + 1}</span></div>
         <h3>{card.title}</h3><p>{card.description}</p>
-        <div className="journey-card-bottom"><span>{m.ui.openGuide}<ArrowRight size={14} aria-hidden="true" /></span>{!isArticlePublished(locale, journeyRoutes[index].slice(1)) && <span className="coming-soon-badge">{m.ui.comingSoon}</span>}</div>
+        <div className="journey-card-bottom"><span>{s.allTopics}<ArrowRight size={14} aria-hidden="true" /></span></div>
       </Link>;
     })}</div>
   </section>;

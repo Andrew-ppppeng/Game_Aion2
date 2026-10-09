@@ -25,6 +25,9 @@ import {GuideClassVideo, GuideClassVideos} from './guide-class-video';
 import {GuideBuildMaps} from './guide-build-visuals';
 import classIdentities from '@/content/class-identities.json';
 import {VideoRecommendations} from './video-recommendations';
+import {sectionByTopic, sectionPaths} from '@/lib/site-structure';
+import {structureMessages} from '@/i18n/structure-messages';
+import {SectionDirectory} from './section-directory';
 
 export async function ArticlePage({locale, slug}: {locale: Locale; slug: string}) {
   const article = getArticle(locale, slug);
@@ -34,6 +37,9 @@ export async function ArticlePage({locale, slug}: {locale: Locale; slug: string}
   const {default: Content} = await article.load();
   const m = getSiteMessages(locale);
   const a = articleMessages[locale];
+  const section = sectionByTopic[topic.slug];
+  const sectionCopy = structureMessages[locale];
+  const isSectionRoot = sectionPaths[section] === `/${slug}`;
   const reviewed = new Intl.DateTimeFormat(locale, {dateStyle: 'long', timeZone: 'UTC'}).format(new Date(`${data.checkedAt}T00:00:00Z`));
   const url = `${site.url}${localePath(locale, `/${slug}`)}`;
   const next = [...new Set([...nextGuides[topic.slug], ...data.related])].filter((target) => !metadata.inlineNext?.includes(target)).slice(0, 2);
@@ -72,19 +78,22 @@ export async function ArticlePage({locale, slug}: {locale: Locale; slug: string}
       },
       {'@type': 'BreadcrumbList', itemListElement: [
         {'@type': 'ListItem', position: 1, name: m.ui.home, item: `${site.url}${localePath(locale)}`},
-        {'@type': 'ListItem', position: 2, name: metadata.title, item: url},
+        ...(!isSectionRoot ? [{'@type': 'ListItem', position: 2, name: sectionCopy.sections[section].title, item: `${site.url}${localePath(locale, sectionPaths[section])}`}] : []),
+        {'@type': 'ListItem', position: isSectionRoot ? 2 : 3, name: metadata.title, item: url},
       ]},
     ],
   };
   return <article className="article-page" data-page-status="published" data-article-slug={slug} data-article-revision={data.revision}>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(structuredData).replace(/</g, '\\u003c')}} />
-    <nav className="breadcrumbs" aria-label={m.ui.navLabel}><Link href="/">{m.ui.home}</Link><ChevronRight size={13} aria-hidden="true" /><span>{m.topics[topic.slug]}</span></nav>
+    <nav className="breadcrumbs" aria-label={m.ui.navLabel}><Link href="/">{m.ui.home}</Link><ChevronRight size={13} aria-hidden="true" />{!isSectionRoot && <><Link href={sectionPaths[section]}>{sectionCopy.sections[section].title}</Link><ChevronRight size={13} aria-hidden="true" /></>}<span>{m.topics[topic.slug]}</span></nav>
     <header className="article-header" id="article-top">
       <span className="eyebrow">{m.categories[topic.category]}</span>
       <h1>{metadata.title}</h1>
       <div className="article-meta">{data.edition && data.edition !== 'Global' && <span data-article-edition>{data.edition}</span>}<span>{a.checkedAt}: <time dateTime={data.checkedAt}>{reviewed}</time></span><Link href="/terms-of-service#editorial-policy" data-article-author>{a.author}</Link></div>
       <div className="article-answer"><span>{a.quickAnswer}</span><p>{metadata.quickAnswer}</p></div>
     </header>
+    {slug === 'classes' && <SectionDirectory locale={locale} section="classes" compact />}
+    {['guide', 'leveling', 'gear-progression', 'builds', 'cleric-build', 'chanter', 'templar', 'gladiator', 'assassin', 'ranger', 'sorcerer', 'spiritmaster', 'cleric'].includes(slug) && <Link className="growth-article-link" href="/tools/growth-checklist"><span><strong>{sectionCopy.tools.growth.title}</strong><small>{sectionCopy.tools.growth.description}</small></span><ArrowRight size={18} aria-hidden="true" /></Link>}
     <div className="article-layout">
       <ArticleToc sections={metadata.toc} title={a.onThisPage} locale={locale} />
       <div className="article-main">

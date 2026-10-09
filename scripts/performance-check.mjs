@@ -6,7 +6,7 @@ import {installGameFixtures, readQaJson} from './qa-fixtures.mjs';
 
 const base = (process.env.QA_BASE_URL || 'http://127.0.0.1:3000').replace(/\/$/, '');
 const homeOnly = process.argv.includes('--home-only');
-const paths = homeOnly ? ['/'] : ['/', '/guide', '/classes', '/map', '/builds', '/cleric-build', '/tools/character', '/beginner-videos', '/gear-progression'];
+const paths = homeOnly ? ['/'] : ['/', '/guide', '/classes', '/map', '/builds', '/cleric-build', '/tools/character', '/beginner-videos', '/gear-progression', '/tools', '/guides', '/resources', '/tools/growth-checklist'];
 const filename = process.env.QA_PERFORMANCE_OUTPUT || (homeOnly ? 'performance-home.json' : 'performance-after.json');
 if (!/^[a-z0-9-]+\.json$/i.test(filename)) throw new Error('Use a plain JSON filename for QA_PERFORMANCE_OUTPUT');
 function budget(name, fallback) {
@@ -102,6 +102,8 @@ try {
       let target;
       let ready;
       if (path === '/') {target = page.locator('.mobile-menu-button'); ready = () => expect(page.locator('#mobile-navigation')).toBeVisible();}
+      else if (path === '/tools/growth-checklist') {target = page.locator('[data-growth-goal="manual-loop"] input'); ready = () => expect(target).toBeChecked();}
+      else if (['/tools', '/guides', '/resources'].includes(path)) {target = page.locator('.mobile-menu-button'); ready = () => expect(page.locator('#mobile-navigation')).toBeVisible();}
       else if (path === '/beginner-videos') {target = page.locator('[data-category="crafting"]'); ready = () => expect(page.locator('.video-card')).toHaveCount(1);}
       else if (path === '/cleric-build') {target = page.locator('[data-more-equipment] > summary'); ready = () => expect(page.locator('[data-equipment-cards] [data-item-id]')).toHaveCount(7);}
       else if (path === '/tools/character') {

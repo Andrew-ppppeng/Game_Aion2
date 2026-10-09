@@ -3,8 +3,8 @@ import {fileURLToPath} from 'node:url';
 
 const dayMs = 86400000;
 const metrics = ['LCP', 'INP', 'CLS'];
-const eventNames = new Set(['page_view', 'new_browser', 'session_start', 'return_7d', 'next_guide_click', 'tool_use', 'bookmark_save', 'budget_save', 'checklist_save', 'web_vital']);
-const targets = new Set(['character', 'budget', 'checklist', 'calendar', 'equipment', 'classes']);
+const eventNames = new Set(['page_view', 'new_browser', 'session_start', 'return_7d', 'next_guide_click', 'video_click', 'tool_use', 'bookmark_save', 'budget_save', 'checklist_save', 'web_vital']);
+const targets = new Set(['character', 'budget', 'checklist', 'calendar', 'equipment', 'classes', 'videos', 'growth']);
 
 /** @param {string} date */
 function dateTime(date) {

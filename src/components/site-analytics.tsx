@@ -73,6 +73,7 @@ export function SiteAnalytics({locale}: {locale: Locale}) {
         const destination = new URL(link.getAttribute('href')!, location.origin);
         if (destination.origin === location.origin) {
           if (destination.pathname.endsWith('/tools/character')) send('tool_use', 'character');
+          if (destination.pathname.endsWith('/tools/growth-checklist')) send('tool_use', 'growth');
           if (destination.hash === '#material-budget') send('tool_use', 'budget');
           if (destination.hash === '#starter-checklist') send('tool_use', 'checklist');
         }
@@ -85,6 +86,7 @@ export function SiteAnalytics({locale}: {locale: Locale}) {
     }
     function changed(event: Event) {
       if ((event as CustomEvent<{key?: string}>).detail?.key === 'aion2-budget-v1') send('budget_save', 'budget');
+      if ((event as CustomEvent<{key?: string}>).detail?.key === 'aion2-growth-checklist-v1') send('checklist_save', 'growth');
     }
     const checklist = () => send('checklist_save', 'checklist');
     const hide = () => {if (document.visibilityState === 'hidden') flush();};

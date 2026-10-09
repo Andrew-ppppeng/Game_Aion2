@@ -32,17 +32,24 @@ npm run test:beginner
 npm run test:tools
 npm run test:review
 npm run test:navigation
+npm run test:structure
 npm run test:analytics
 npm run test:share
 npm run test:site-info
 npm run test:performance
 ```
 
-浏览器测试默认使用本机 Chrome；未安装时可运行 `npx playwright install chromium`，或者通过 `PLAYWRIGHT_BROWSER_PATH` 指定浏览器可执行文件。桌面与手机截图保存在 `.qa/`。`QA_BASE_URL` 可指定另一个本地端口。性能脚本用手机视口、冷缓存、1.6Mbps 和 4 倍 CPU 降速，采样三次，覆盖首页、攻略、装备页、角色工具及视频中心。预算默认 LCP 2500ms、CLS 0.1、总传输 700KB、脚本 220KB、实验室交互 200ms；超预算退出失败。结果保存在 `.qa/performance-after.json`，其中交互测量是实验室检查，真实 INP 由匿名访问统计采集。当前 GA4 开启时，总脚本超过 220KB 目标；本次保留该失败结果，并新增站内/第三方脚本拆分记录，没有关闭统计或提高预算。
+浏览器测试默认使用本机 Chrome；未安装时可运行 `npx playwright install chromium`，或者通过 `PLAYWRIGHT_BROWSER_PATH` 指定浏览器可执行文件。桌面与手机截图保存在 `.qa/`。`QA_BASE_URL` 可指定另一个本地端口。性能脚本用手机视口、冷缓存、1.6Mbps 和 4 倍 CPU 降速，采样三次，覆盖首页、攻略、装备页、角色工具、视频中心、新栏目及成长清单。预算默认 LCP 2500ms、CLS 0.1、总传输 700KB、脚本 220KB、实验室交互 200ms；超预算退出失败。结果保存在 `.qa/performance-after.json`，其中交互测量是实验室检查，真实 INP 由匿名访问统计采集。当前 GA4 开启时，总脚本超过 220KB 目标；本次保留该失败结果，并新增站内/第三方脚本拆分记录，没有关闭统计或提高预算。
 
 将 `.env.example` 复制为 `.env.local`，设置 `NEXT_PUBLIC_SITE_URL` 为正式域名，然后重新构建。canonical、语言替代链接、站点地图和分享信息会使用该地址。本地默认域名为 `http://localhost:3000`。
 
 ## 内容与维护
+
+2026-10-09 页面结构整理为 Tools、Guides、Classes、Resources。`src/lib/site-structure.ts` 集中管理全部 38 个主题的唯一栏目归属、导航分组及工具入口；`content-topics.json` 继续作为发布清单，文章旧网址及关键词文件保持原样。新增 `/tools`、`/guides`、`/resources` 四语言聚合页，`/classes` 沿用职业总览并连接配装与评级。
+
+`/tools/growth-checklist` 提供全职业通用成长清单：复用新手六项目标，再加入升级/技能三项及装备三项，共十二项。首次打开继承当前浏览器的新手完成项，之后按稳定目标 ID 独立保存于 `aion2-growth-checklist-v1`，包含 schemaVersion、templateRevision、completedIds；更新模板保留历史完成记录。可从任意阶段开始，手动完成、撤销及确认后重置；切换语言与刷新保持进度，浏览器禁止存储时提示临时状态，无 JavaScript 时保留目标和攻略链接。首页显示续做进度，旧新手与日周清单独立保存。
+
+Tools 的第三方工具区域明确显示外部入口及本站教程；桌面采集兼容性未确认的 NotMeter 只链接教程，不展示为已确认可用的本站功能。职业专用成长清单及后续数据验证记录在 [拓展 TODO](docs/AION2-EXPANSION-TODO.md)。`npm run test:structure` 验证新栏目与成长流程；`test:data` 覆盖归属、继承、模板更新与攻略锚点。匿名统计只新增固定 `growth` target，初始化继承不算玩家保存，不上传勾选内容。
 
 - `home.en.json`：原始英语首页文案，直接作为英语内容源，保留原文件。
 - `src/messages/`：首页和导航界面文案；文章公共标签在 `src/i18n/article-messages.ts`。

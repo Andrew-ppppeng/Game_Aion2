@@ -72,6 +72,7 @@ try {
           if (width < 1024) {
             await page.locator('.mobile-menu-button').click();
             await expect(page.locator('#mobile-navigation')).toBeVisible();
+            await page.locator('#mobile-navigation [data-nav-section="tools"] > summary').click();
             await expect(page.locator(`#mobile-navigation a[href="${prefix}/tools/character"]`)).toBeVisible();
             await page.keyboard.press('Escape');
           }
@@ -96,9 +97,13 @@ try {
 
     await page.setViewportSize({width: 1440, height: 1000});
     await page.goto(url(locale), {waitUntil: 'networkidle'});
+    await page.locator(`.desktop-sidebar .sidebar-sections a[href="${prefix}/tools"]`).click();
+    await page.waitForURL(`**${prefix}/tools`);
     await page.locator(`.desktop-sidebar a[href="${prefix}/guide#starter-checklist"]`).click();
     await page.waitForURL(`**${prefix}/guide#starter-checklist`);
     await expect(page.locator('#starter-checklist')).toBeInViewport();
+    await page.locator(`.desktop-sidebar .sidebar-sections a[href="${prefix}/tools"]`).click();
+    await page.waitForURL(`**${prefix}/tools`);
     await page.locator(`.desktop-sidebar a[href="${prefix}/monetization#material-budget"]`).click();
     await page.waitForURL(`**${prefix}/monetization#material-budget`);
     await expect(page.locator('#material-budget')).toBeInViewport();

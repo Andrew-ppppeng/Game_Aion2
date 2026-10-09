@@ -1,0 +1,98 @@
+import type {Locale} from './routing';
+import type {SectionGroupId, SectionId} from '@/lib/site-structure';
+
+type StructureMessages = {
+  sections: Record<SectionId, {title: string; description: string}>;
+  groups: Record<SectionGroupId, string>;
+  ownTools: string; externalTools: string; externalNote: string; external: string; openExternal: string; readGuide: string; allTopics: string;
+  tools: Record<'growth' | 'character' | 'budget' | 'starter' | 'session', {title: string; description: string}>;
+  externalDescriptions: Record<'map' | 'database' | 'planner' | 'meter', string>;
+  start: string; startNote: string; continue: string; continueNote: string; choose: string; chooseNote: string; resources: string; resourcesNote: string;
+  growth: {
+    title: string; intro: string; note: string; next: string; finished: string; complete: string; reset: string; confirmReset: string; confirm: string; cancel: string;
+    saved: string; temporary: string; noScript: string; support: string; stages: [string, string, string];
+    tasks: Record<'campaign-route' | 'skill-options' | 'manual-loop' | 'starting-rewards' | 'daevanion-points' | 'equipment-upgrade', {label: string; condition: string}>;
+  };
+};
+
+export const structureMessages: Record<Locale, StructureMessages> = {
+  en: {
+    sections: {
+      tools: {title: 'Tools', description: 'Look up a character, plan material costs and save your next growth goals.'},
+      guides: {title: 'Guides', description: 'Find practical steps for getting started, leveling, equipment, crafting and combat.'},
+      classes: {title: 'Classes', description: 'Compare eight classes, learn their skills and choose a starting build.'},
+      resources: {title: 'Resources', description: 'Find installation help, server information, rewards and tutorial videos.'},
+    },
+    groups: {toolGuides: 'Tool guides', gettingStarted: 'Getting started', progression: 'Leveling & progression', explorationCombat: 'Exploration & combat', currency: 'Currency & trading', classSelection: 'Choosing a class & build', classDetails: 'Eight class guides', installation: 'Installation & platforms', servers: 'Servers & service information', rewards: 'Codes & rewards'},
+    ownTools: 'Player tools', externalTools: 'External tools', externalNote: 'These tools are provided by other websites. Open a tool or read its setup guide.', external: 'External', openExternal: 'Open tool', readGuide: 'Read guide', allTopics: 'Browse this section',
+    tools: {
+      growth: {title: 'Growth checklist', description: 'Save long-term goals from your first session to your first equipment upgrades.'},
+      character: {title: 'Character lookup', description: 'Find a character, bookmark it and inspect equipped items.'},
+      budget: {title: 'Material budget', description: 'Enter quantities, inventory and prices to calculate missing materials and spending.'},
+      starter: {title: 'First-session checklist', description: 'Prepare your installation, server, character and controls.'},
+      session: {title: 'Daily & weekly checklist', description: 'Organize repeatable activities and reset the list for your next session.'},
+    },
+    externalDescriptions: {map: 'Filter resource and collectible locations on an interactive map.', database: 'Search item records, skills and linked acquisition routes.', planner: 'Plan skill ranks, specializations and Stigma choices.', meter: 'Read the setup guide. Desktop combat-capture compatibility is unconfirmed.'},
+    start: 'Start playing', startNote: 'Install, set up controls and follow the first-session guide.', continue: 'Continue your growth', continueNote: 'Keep your next goal and completed steps in one place.', choose: 'Choose your class', chooseNote: 'Compare roles, skills and eight starting builds.', resources: 'Useful resources', resourcesNote: 'Find servers, rewards and installation help.',
+    growth: {
+      title: 'Growth checklist', intro: 'A saved route for every class: get started, configure your skills and work toward your first equipment upgrades. Mark each goal when you have completed it.',
+      note: 'Start at any stage. Use the linked guide for each goal; gathering, crafting and daily activities can support your next upgrade.', next: 'Your next goal', finished: 'All goals complete. Use the equipment and session guides to choose your next upgrade.', complete: 'complete', reset: 'Reset progress', confirmReset: 'Clear all growth progress in this browser? Your original first-session and daily checklists will keep their own progress.', confirm: 'Reset growth progress', cancel: 'Keep progress', saved: 'Progress is saved in this browser. Switching language keeps your goals.', temporary: 'Browser storage is unavailable. You can use this checklist now, but progress will not survive a reload.', noScript: 'Enable JavaScript to save progress. All goals and guide links remain available below.', support: 'Tools and guides for your next upgrade', stages: ['First-session preparation', 'Leveling & skills', 'Equipment progression'],
+      tasks: {
+        'campaign-route': {label: 'Finish the current leveling route', condition: 'Complete the Episode and Ascension route to the current level cap; check the leveling guide for its checkpoints.'},
+        'skill-options': {label: 'Configure available skills, specializations and Stigma', condition: 'Assign your available skill ranks and equip the options you have unlocked for your intended activity.'},
+        'manual-loop': {label: 'Practice your class’s manual attack loop', condition: 'Practice the loop in the build guide and keep movement, defense and emergency skills on reachable keys.'},
+        'starting-rewards': {label: 'Claim the starting task and exploration rewards', condition: 'Follow the equipment guide’s regional quests, sealed dungeons and strongholds; collect the rewards for your next upgrade.'},
+        'daevanion-points': {label: 'Allocate the Daevanion points you have earned', condition: 'Use the earned Crystals and spend your available board points on the bonuses needed for your route.'},
+        'equipment-upgrade': {label: 'Complete one equipment upgrade', condition: 'Use the equipment route to enhance or replace one piece. Check its required materials and acquisition conditions before spending.'},
+      },
+    },
+  },
+  ja: {
+    sections: {tools: {title: 'ツール', description: 'キャラクター検索、素材予算、成長目標の保存。'}, guides: {title: 'ガイド', description: '初期設定、レベル上げ、装備、製作、戦闘の具体的な手順。'}, classes: {title: 'クラス', description: '8クラスの役割とスキルを比較して初期ビルドを選びます。'}, resources: {title: 'リソース', description: 'インストール、サーバー、報酬、解説動画を探せます。'}},
+    groups: {toolGuides: 'ツールの使い方', gettingStarted: 'ゲームを始める', progression: 'レベル上げと成長', explorationCombat: '探索と戦闘', currency: '通貨と取引', classSelection: 'クラスとビルド選び', classDetails: '8クラスのガイド', installation: 'インストールと対応環境', servers: 'サーバーとサービス情報', rewards: 'コードと報酬'},
+    ownTools: 'プレイヤーツール', externalTools: '外部ツール', externalNote: '他のサイトが提供するツールです。ツールを開くか、使い方を確認できます。', external: '外部', openExternal: 'ツールを開く', readGuide: 'ガイドを読む', allTopics: 'この項目を見る',
+    tools: {growth: {title: '成長チェックリスト', description: '初回プレイから最初の装備強化まで、長期目標を保存します。'}, character: {title: 'キャラクター検索', description: 'キャラクターを検索・保存して装備を確認します。'}, budget: {title: '素材予算', description: '数量、所持数、価格を入力し、不足素材と支出を計算します。'}, starter: {title: '初回プレイのチェックリスト', description: 'インストール、サーバー、キャラクター、操作を準備します。'}, session: {title: 'デイリー・ウィークリーチェックリスト', description: '繰り返す活動を整理し、次のプレイ時にリセットします。'}},
+    externalDescriptions: {map: 'インタラクティブマップで素材と収集物の場所を絞り込みます。', database: 'アイテム、スキル、関連する入手方法を検索します。', planner: 'スキルランク、特化、スティグマを計画します。', meter: '設定ガイドを確認してください。デスクトップ版の戦闘記録機能の互換性は未確認です。'},
+    start: 'ゲームを始める', startNote: 'インストールと操作設定を済ませ、初回ガイドを進めます。', continue: '成長の続きを進める', continueNote: '次の目標と完了した手順をまとめて保存します。', choose: 'クラスを選ぶ', chooseNote: '役割、スキル、8クラスの初期ビルドを比較します。', resources: '便利なリソース', resourcesNote: 'サーバー、報酬、インストール情報を確認します。',
+    growth: {title: '成長チェックリスト', intro: '全クラス向けの保存できる成長ルートです。ゲーム開始、スキル設定、最初の装備更新を進め、達成した目標にチェックを入れます。', note: 'どの段階からでも始められます。各目標のガイドを確認し、採集、製作、日常活動を次の装備更新に役立てましょう。', next: '次の目標', finished: 'すべての目標を達成しました。装備と日常活動のガイドで次の更新を選べます。', complete: '完了', reset: '進捗をリセット', confirmReset: 'このブラウザーの成長進捗をすべて消しますか？元の初回プレイと日常活動のチェックリストの進捗は保持されます。', confirm: '成長進捗をリセット', cancel: '進捗を保持', saved: '進捗はこのブラウザーに保存されます。言語を変更しても目標は保持されます。', temporary: 'ブラウザーに保存できません。現在のページでは使えますが、再読み込みすると進捗は失われます。', noScript: '進捗の保存にはJavaScriptが必要です。目標とガイドへのリンクは以下で確認できます。', support: '次の装備更新に役立つツールとガイド', stages: ['初回プレイの準備', 'レベル上げとスキル', '装備の成長'], tasks: {
+      'campaign-route': {label: '現在のレベル上げルートを終える', condition: 'エピソードとアセンションを進めて現在のレベル上限に到達します。到達地点はレベル上げガイドで確認してください。'},
+      'skill-options': {label: '使えるスキル、特化、スティグマを設定する', condition: '使えるスキルランクを割り振り、目的の活動に合う解放済みの選択肢を装備します。'},
+      'manual-loop': {label: 'クラスの手動攻撃ループを練習する', condition: 'ビルドガイドのループを練習し、移動、防御、緊急スキルを押しやすいキーに配置します。'},
+      'starting-rewards': {label: '初期の任務と探索報酬を受け取る', condition: '装備ガイドの地域クエスト、封印ダンジョン、拠点を進め、次の装備更新に必要な報酬を受け取ります。'},
+      'daevanion-points': {label: '獲得したディーヴァニオンポイントを割り振る', condition: '獲得したクリスタルを使い、利用できるボードポイントを成長ルートに必要な効果へ割り振ります。'},
+      'equipment-upgrade': {label: '装備を1つ強化または交換する', condition: '装備ルートに沿って1部位を強化または交換します。支出前に必要素材と入手条件を確認します。'},
+    }},
+  },
+  es: {
+    sections: {tools: {title: 'Herramientas', description: 'Busca personajes, calcula materiales y guarda tus objetivos de progreso.'}, guides: {title: 'Guías', description: 'Pasos prácticos para empezar, subir de nivel, mejorar equipo, fabricar y combatir.'}, classes: {title: 'Clases', description: 'Compara ocho clases, aprende sus habilidades y elige una configuración inicial.'}, resources: {title: 'Recursos', description: 'Ayuda de instalación, servidores, recompensas y vídeos de aprendizaje.'}},
+    groups: {toolGuides: 'Guías de herramientas', gettingStarted: 'Primeros pasos', progression: 'Nivel y progreso', explorationCombat: 'Exploración y combate', currency: 'Monedas y comercio', classSelection: 'Elegir clase y configuración', classDetails: 'Guías de las ocho clases', installation: 'Instalación y plataformas', servers: 'Servidores y servicio', rewards: 'Códigos y recompensas'},
+    ownTools: 'Herramientas del jugador', externalTools: 'Herramientas externas', externalNote: 'Estas herramientas pertenecen a otros sitios. Abre una herramienta o consulta su guía.', external: 'Externa', openExternal: 'Abrir herramienta', readGuide: 'Leer guía', allTopics: 'Explorar esta sección',
+    tools: {growth: {title: 'Lista de progreso', description: 'Guarda objetivos desde tu primera sesión hasta las primeras mejoras de equipo.'}, character: {title: 'Buscar personaje', description: 'Busca y guarda personajes para consultar su equipo.'}, budget: {title: 'Presupuesto de materiales', description: 'Introduce cantidades, inventario y precios para calcular materiales pendientes y gastos.'}, starter: {title: 'Lista de la primera sesión', description: 'Prepara la instalación, el servidor, el personaje y los controles.'}, session: {title: 'Lista diaria y semanal', description: 'Organiza actividades repetibles y reinicia la lista para la siguiente sesión.'}},
+    externalDescriptions: {map: 'Filtra ubicaciones de recursos y coleccionables en un mapa interactivo.', database: 'Busca objetos, habilidades y sus vías de obtención.', planner: 'Planifica rangos de habilidad, especializaciones y Stigma.', meter: 'Consulta la guía. La compatibilidad de la captura de combate de escritorio no está confirmada.'},
+    start: 'Empieza a jugar', startNote: 'Instala, configura los controles y sigue la guía de la primera sesión.', continue: 'Continúa tu progreso', continueNote: 'Guarda tu próximo objetivo y los pasos completados.', choose: 'Elige tu clase', chooseNote: 'Compara funciones, habilidades y ocho configuraciones iniciales.', resources: 'Recursos útiles', resourcesNote: 'Encuentra servidores, recompensas y ayuda de instalación.',
+    growth: {title: 'Lista de progreso', intro: 'Una ruta guardada para todas las clases: empieza a jugar, configura habilidades y mejora tus primeras piezas de equipo. Marca cada objetivo cuando lo completes.', note: 'Empieza en cualquier etapa. Consulta la guía de cada objetivo; la recolección, la fabricación y las actividades diarias pueden apoyar tu próxima mejora.', next: 'Tu próximo objetivo', finished: 'Has completado todos los objetivos. Consulta las guías de equipo y actividades para elegir tu próxima mejora.', complete: 'completado', reset: 'Reiniciar progreso', confirmReset: '¿Borrar todo el progreso de esta lista en el navegador? Las listas originales de primera sesión y actividades conservarán su progreso.', confirm: 'Reiniciar esta lista', cancel: 'Conservar progreso', saved: 'El progreso se guarda en este navegador y se conserva al cambiar de idioma.', temporary: 'El almacenamiento del navegador no está disponible. Puedes usar la lista ahora, pero el progreso se perderá al recargar.', noScript: 'Activa JavaScript para guardar el progreso. Puedes consultar todos los objetivos y enlaces a continuación.', support: 'Herramientas y guías para tu próxima mejora', stages: ['Preparación de la primera sesión', 'Nivel y habilidades', 'Progreso de equipo'], tasks: {
+      'campaign-route': {label: 'Completar la ruta de nivel actual', condition: 'Completa la ruta de Episode y Ascension hasta el límite de nivel actual; consulta sus etapas en la guía de nivel.'},
+      'skill-options': {label: 'Configurar habilidades, especializaciones y Stigma disponibles', condition: 'Asigna los rangos disponibles y equipa las opciones desbloqueadas para la actividad que quieres realizar.'},
+      'manual-loop': {label: 'Practicar la secuencia manual de tu clase', condition: 'Practica la secuencia de la guía de configuraciones y deja movimiento, defensa y emergencias en teclas accesibles.'},
+      'starting-rewards': {label: 'Recoger las recompensas iniciales de tareas y exploración', condition: 'Sigue las misiones regionales, mazmorras selladas y fortalezas de la guía de equipo; recoge las recompensas para tu próxima mejora.'},
+      'daevanion-points': {label: 'Asignar los puntos Daevanion obtenidos', condition: 'Usa los cristales obtenidos y asigna los puntos disponibles del tablero a las bonificaciones necesarias para tu ruta.'},
+      'equipment-upgrade': {label: 'Completar una mejora de equipo', condition: 'Sigue la ruta de equipo para mejorar o sustituir una pieza. Comprueba materiales y condiciones de obtención antes de gastar.'},
+    }},
+  },
+  de: {
+    sections: {tools: {title: 'Werkzeuge', description: 'Charaktere suchen, Materialkosten planen und Wachstumsziele speichern.'}, guides: {title: 'Guides', description: 'Konkrete Schritte für Einstieg, Leveln, Ausrüstung, Herstellung und Kampf.'}, classes: {title: 'Klassen', description: 'Acht Klassen vergleichen, ihre Fähigkeiten lernen und einen Einstiegsbuild wählen.'}, resources: {title: 'Ressourcen', description: 'Installationshilfe, Serverinformationen, Belohnungen und Lernvideos.'}},
+    groups: {toolGuides: 'Werkzeug-Guides', gettingStarted: 'Erste Schritte', progression: 'Leveln und Fortschritt', explorationCombat: 'Erkundung und Kampf', currency: 'Währungen und Handel', classSelection: 'Klasse und Build wählen', classDetails: 'Guides für acht Klassen', installation: 'Installation und Plattformen', servers: 'Server und Service', rewards: 'Codes und Belohnungen'},
+    ownTools: 'Spielerwerkzeuge', externalTools: 'Externe Werkzeuge', externalNote: 'Diese Werkzeuge werden von anderen Websites angeboten. Öffne ein Werkzeug oder lies seinen Guide.', external: 'Extern', openExternal: 'Werkzeug öffnen', readGuide: 'Guide lesen', allTopics: 'Bereich ansehen',
+    tools: {growth: {title: 'Fortschrittscheckliste', description: 'Ziele vom ersten Spielstart bis zu den ersten Ausrüstungsverbesserungen speichern.'}, character: {title: 'Charaktersuche', description: 'Charaktere finden, speichern und ihre Ausrüstung ansehen.'}, budget: {title: 'Materialbudget', description: 'Mengen, Vorräte und Preise eingeben, um fehlende Materialien und Ausgaben zu berechnen.'}, starter: {title: 'Checkliste für den Spielstart', description: 'Installation, Server, Charakter und Steuerung vorbereiten.'}, session: {title: 'Tägliche und wöchentliche Checkliste', description: 'Wiederholbare Aktivitäten ordnen und die Liste für die nächste Sitzung zurücksetzen.'}},
+    externalDescriptions: {map: 'Rohstoffe und Sammelobjekte auf einer interaktiven Karte filtern.', database: 'Gegenstände, Fähigkeiten und verknüpfte Bezugswege suchen.', planner: 'Fähigkeitsränge, Spezialisierungen und Stigma planen.', meter: 'Lies den Einrichtungs-Guide. Die Kompatibilität der Desktop-Kampfaufzeichnung ist nicht bestätigt.'},
+    start: 'Mit dem Spielen beginnen', startNote: 'Installieren, Steuerung einstellen und dem Einstiegs-Guide folgen.', continue: 'Fortschritt fortsetzen', continueNote: 'Nächstes Ziel und erledigte Schritte an einem Ort speichern.', choose: 'Klasse wählen', chooseNote: 'Rollen, Fähigkeiten und acht Einstiegsbuilds vergleichen.', resources: 'Nützliche Ressourcen', resourcesNote: 'Server, Belohnungen und Installationshilfe finden.',
+    growth: {title: 'Fortschrittscheckliste', intro: 'Ein gespeicherter Weg für jede Klasse: anfangen, Fähigkeiten einstellen und erste Ausrüstung verbessern. Markiere jedes Ziel, sobald du es erreicht hast.', note: 'Beginne in jeder beliebigen Phase. Nutze den zugehörigen Guide; Sammeln, Herstellung und tägliche Aktivitäten helfen beim nächsten Upgrade.', next: 'Dein nächstes Ziel', finished: 'Alle Ziele sind erreicht. Wähle mit den Ausrüstungs- und Aktivitäten-Guides dein nächstes Upgrade.', complete: 'abgeschlossen', reset: 'Fortschritt zurücksetzen', confirmReset: 'Den gesamten Fortschritt dieser Liste im Browser löschen? Die ursprünglichen Einstiegs- und Aktivitätenlisten behalten ihren eigenen Fortschritt.', confirm: 'Diese Liste zurücksetzen', cancel: 'Fortschritt behalten', saved: 'Der Fortschritt bleibt in diesem Browser gespeichert, auch beim Sprachwechsel.', temporary: 'Der Browserspeicher ist nicht verfügbar. Du kannst die Liste jetzt verwenden, aber beim Neuladen geht der Fortschritt verloren.', noScript: 'Aktiviere JavaScript, um Fortschritt zu speichern. Alle Ziele und Guide-Links sind unten verfügbar.', support: 'Werkzeuge und Guides für dein nächstes Upgrade', stages: ['Vorbereitung für den Spielstart', 'Leveln und Fähigkeiten', 'Ausrüstungsfortschritt'], tasks: {
+      'campaign-route': {label: 'Den aktuellen Levelweg abschließen', condition: 'Folge Episode und Ascension bis zur aktuellen Levelgrenze. Der Level-Guide zeigt die Stationen.'},
+      'skill-options': {label: 'Verfügbare Fähigkeiten, Spezialisierungen und Stigma einstellen', condition: 'Verteile verfügbare Fähigkeitsränge und rüste freigeschaltete Optionen für deine geplante Aktivität aus.'},
+      'manual-loop': {label: 'Die manuelle Angriffsfolge deiner Klasse üben', condition: 'Übe die Folge aus dem Build-Guide. Bewegung, Verteidigung und Notfallfähigkeiten bleiben auf erreichbaren Tasten.'},
+      'starting-rewards': {label: 'Erste Aufgaben- und Erkundungsbelohnungen abholen', condition: 'Folge regionalen Quests, versiegelten Dungeons und Festungen aus dem Ausrüstungs-Guide und hole die Belohnungen für dein nächstes Upgrade ab.'},
+      'daevanion-points': {label: 'Erhaltene Daevanion-Punkte verteilen', condition: 'Nutze erhaltene Kristalle und verteile verfügbare Brett-Punkte auf die Boni für deinen Fortschrittsweg.'},
+      'equipment-upgrade': {label: 'Eine Ausrüstungsverbesserung abschließen', condition: 'Verbessere oder ersetze ein Teil entlang des Ausrüstungswegs. Prüfe vorher Materialien und Bezugsbedingungen.'},
+    }},
+  },
+};

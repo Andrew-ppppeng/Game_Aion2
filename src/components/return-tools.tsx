@@ -4,6 +4,8 @@ import {useMemo, useSyncExternalStore} from 'react';
 import {ArrowRight, Calculator, ListChecks, UserRound} from 'lucide-react';
 import {Link} from '@/i18n/navigation';
 import type {Locale} from '@/i18n/routing';
+import {completedGrowth, growthGoals} from '@/lib/growth-checklist';
+import {useGrowthProgress} from './tools/growth-store';
 
 const copy = {
   en: {title: 'Your player tools', note: 'Pick up where you left off. Saved progress stays in this browser.', character: 'Character lookup', budget: 'Material budget', checklist: 'First-session checklist', bookmarks: 'saved characters', saved: 'Saved plan', create: 'Plan your next upgrade', complete: 'complete', lookup: 'Find and bookmark your character'},
@@ -21,6 +23,10 @@ function parse(text: string): unknown {try {return JSON.parse(text);} catch {ret
 
 export function ReturnTools({locale, checklistIds}: {locale: Locale; checklistIds: string[]}) {
   const m = copy[locale];
+  const growthCopy = {en: {title: 'Continue your growth', tools: 'All tools'}, ja: {title: '成長の続きを進める', tools: 'すべてのツール'}, es: {title: 'Continúa tu progreso', tools: 'Todas las herramientas'}, de: {title: 'Fortschritt fortsetzen', tools: 'Alle Werkzeuge'}}[locale];
+  const {progress} = useGrowthProgress(checklistIds);
+  const growthIds = [...checklistIds, ...growthGoals.map((goal) => goal.id)];
+  const growthComplete = completedGrowth(progress, growthIds).size;
   const bookmarks = useSyncExternalStore(subscribe, () => stored('aion2-characters-v1'), () => 'null');
   const budget = useSyncExternalStore(subscribe, () => stored('aion2-budget-v1'), () => 'null');
   const checklist = useSyncExternalStore(subscribe, () => stored('aion2-checklist-v1:guide'), () => 'null');
@@ -37,9 +43,10 @@ export function ReturnTools({locale, checklistIds}: {locale: Locale; checklistId
   return <section className="player-tools" aria-labelledby="player-tools-title" data-return-tools>
     <div><h2 id="player-tools-title">{m.title}</h2><p>{m.note}</p></div>
     <div className="player-tools-grid">
+      <Link href="/tools/growth-checklist" data-growth-resume><ListChecks size={20} aria-hidden="true" /><span><strong>{growthCopy.title}</strong><small>{growthComplete} / {growthIds.length} {m.complete}</small></span><ArrowRight size={17} aria-hidden="true" /></Link>
       <Link href="/tools/character"><UserRound size={20} aria-hidden="true" /><span><strong>{m.character}</strong><small>{state.count ? `${state.count} ${m.bookmarks}` : m.lookup}</small></span><ArrowRight size={17} aria-hidden="true" /></Link>
       <Link href="/monetization#material-budget"><Calculator size={20} aria-hidden="true" /><span><strong>{m.budget}</strong><small>{state.plan ? m.saved : m.create}</small></span><ArrowRight size={17} aria-hidden="true" /></Link>
-      <Link href="/guide#starter-checklist"><ListChecks size={20} aria-hidden="true" /><span><strong>{m.checklist}</strong><small>{state.completed} / {checklistIds.length} {m.complete}</small></span><ArrowRight size={17} aria-hidden="true" /></Link>
     </div>
+    <div className="return-tool-shortcuts"><Link href="/tools">{growthCopy.tools}<ArrowRight size={14} aria-hidden="true" /></Link><Link href="/guide#starter-checklist">{m.checklist}: {state.completed} / {checklistIds.length}</Link></div>
   </section>;
 }

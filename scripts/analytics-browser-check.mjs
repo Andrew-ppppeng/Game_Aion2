@@ -84,6 +84,13 @@ async function checklist(page) {
   await expect(box).toBeVisible(); await box.check();
   assert.ok((await page.evaluate(() => localStorage.getItem('aion2-checklist-v1:guide')))?.includes('official-client'), 'Checklist still saves independently of analytics');
 }
+
+async function growth(page) {
+  await page.goto(`${base}/tools/growth-checklist?qa_private=${privateValue}`);
+  const box = page.locator('[data-growth-goal="manual-loop"] input');
+  await expect(box).toBeEnabled(); await box.check();
+  assert.ok(JSON.parse(await page.evaluate(() => localStorage.getItem('aion2-growth-checklist-v1'))).completedIds.includes('manual-loop'), 'Growth keeps saving when analytics is disabled');
+}
 async function budget(page) {
   await page.goto(`${base}/monetization?qa_private=${privateValue}#material-budget`);
   const tool = page.locator('[data-budget-planner]');
@@ -118,6 +125,8 @@ try {
   await ordinary.page.locator('.article-next-card a').first().click();
   await expect.poll(() => ordinary.events.some((event) => event.name === 'next_guide_click')).toBe(true);
   await checklist(ordinary.page); await flush(ordinary.page);
+  await growth(ordinary.page); await flush(ordinary.page);
+  assert.ok(ordinary.events.some((event) => event.name === 'checklist_save' && event.target === 'growth'));
   await budget(ordinary.page); await flush(ordinary.page);
   await character(ordinary.page); await flush(ordinary.page);
   await video(ordinary.page); await flush(ordinary.page);
@@ -133,8 +142,8 @@ try {
 
   for (const privacy of ['dnt', 'gpc', 'optout']) {
     const sample = await contextFor({privacy});
-    await checklist(sample.page); await budget(sample.page); await character(sample.page); await video(sample.page); await flush(sample.page);
-    assert.deepEqual(sample.events, [], `${privacy} blocks analytics requests while all three tools continue working`);
+    await checklist(sample.page); await growth(sample.page); await budget(sample.page); await character(sample.page); await video(sample.page); await flush(sample.page);
+    assert.deepEqual(sample.events, [], `${privacy} blocks analytics requests while player tools continue working`);
     await sample.context.close(); cases++;
   }
 

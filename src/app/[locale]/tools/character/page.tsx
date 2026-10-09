@@ -12,6 +12,7 @@ import {curatedIds, snapshotItem, snapshotMeta} from '@/lib/aion2/data';
 import {characterId, positiveInteger, readRegion} from '@/lib/aion2/model';
 import {regions} from '@/lib/aion2/types';
 import {CharacterTool} from '@/components/tools/character-tool';
+import {structureMessages} from '@/i18n/structure-messages';
 
 type Props = {params: Promise<{locale: string}>; searchParams: Promise<Record<string, string | string[] | undefined>>};
 export async function generateMetadata({params, searchParams}: Props): Promise<Metadata> {
@@ -37,7 +38,7 @@ export default async function CharacterPage({params, searchParams}: Props) {
   }
   const metadata = Object.fromEntries(regions.map((region) => [region, snapshotMeta(region, locale).data!])) as Parameters<typeof CharacterTool>[0]['metadata'];
   const candidates = curatedIds.map((id) => snapshotItem(id, locale).data!);
-  return <div className="tools-page"><nav className="breadcrumbs"><Link href="/">{getSiteMessages(locale).ui.home}</Link><span> / </span><span>{m.characterTitle}</span></nav>
+  return <div className="tools-page"><nav className="breadcrumbs"><Link href="/">{getSiteMessages(locale).ui.home}</Link><span> / </span><Link href="/tools">{structureMessages[locale].sections.tools.title}</Link><span> / </span><span>{m.characterTitle}</span></nav>
     <header className="article-header"><h1>{m.characterTitle}</h1><p>{m.characterIntro}</p></header>
     <CharacterTool locale={locale} metadata={metadata} candidates={candidates} initialCharacter={initialCharacter} />
   </div>;

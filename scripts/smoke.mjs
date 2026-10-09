@@ -94,9 +94,18 @@ assert.equal(new URL(englishRedirect.headers.get('location'), base).pathname, '/
 const {html: rootWithPreference} = await request('/', {headers: {'Accept-Language': 'ja', Cookie: 'NEXT_LOCALE=de'}});
 assert.match(rootWithPreference, /<html\b[^>]*\blang="en"/);
 const {html: sitemap} = await request('/sitemap.xml');
-const sitemapEntries = locales.length * (slugs.length + 3);
+const sitemapEntries = locales.length * (slugs.length + 7);
 assert.equal((sitemap.match(/<loc>/g) || []).length, sitemapEntries);
 for (const locale of locales) assert.ok(sitemap.includes(`${origin}${path(locale, 'tools/character')}</loc>`));
+for (const locale of locales) for (const slug of ['tools', 'guides', 'resources', 'tools/growth-checklist']) {
+  const {response, html} = await request(path(locale, slug));
+  assert.equal(response.status, 200, `${locale}/${slug} new public route`);
+  assert.ok(html.includes(`href="${origin}${path(locale, slug)}"`), `${locale}/${slug} canonical`);
+  assert.equal((html.match(/<link[^>]*rel="alternate"/g) || []).length, 5);
+  assert.equal((html.match(/<h1[ >]/g) || []).length, 1);
+  assert.ok(sitemap.includes(`${origin}${path(locale, slug)}</loc>`));
+  checks++;
+}
 for (const locale of locales) for (const slug of slugs) assert.ok(sitemap.includes(`${origin}${path(locale, slug)}</loc>`));
 assert.ok(!sitemap.includes('privacy-policy') && !sitemap.includes('terms-of-service'));
 const {html: robots} = await request('/robots.txt');
